@@ -1,0 +1,105 @@
+{
+  "matchesMain": true,
+  "images": [
+    {
+      "src": "assets/images/hero-welcome.webp",
+      "srcset": "assets/images/hero-welcome-small.webp 480w, assets/images/hero-welcome.webp 1024w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1024",
+      "height": "771",
+      "loading": "",
+      "fetchpriority": "high",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/hero-welcome.webp",
+      "srcset": "assets/images/hero-welcome-small.webp 480w, assets/images/hero-welcome.webp 1024w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1024",
+      "height": "771",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/judaica-blessing.webp",
+      "srcset": "assets/images/judaica-blessing-small.webp 480w, assets/images/judaica-blessing.webp 834w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "834",
+      "height": "1024",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/kitchen-board.webp",
+      "srcset": "assets/images/kitchen-board-small.webp 480w, assets/images/kitchen-board.webp 1200w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1200",
+      "height": "900",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/workshop.webp",
+      "srcset": "assets/images/workshop-small.webp 480w, assets/images/workshop.webp 1200w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1200",
+      "height": "594",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/judaica-blessing.webp",
+      "srcset": "assets/images/judaica-blessing-small.webp 480w, assets/images/judaica-blessing.webp 834w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "834",
+      "height": "1024",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/hero-welcome.webp",
+      "srcset": "assets/images/hero-welcome-small.webp 480w, assets/images/hero-welcome.webp 1024w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1024",
+      "height": "771",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/kitchen-board.webp",
+      "srcset": "assets/images/kitchen-board-small.webp 480w, assets/images/kitchen-board.webp 1200w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1200",
+      "height": "900",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/workshop.webp",
+      "srcset": "assets/images/workshop-small.webp 480w, assets/images/workshop.webp 1200w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "1200",
+      "height": "594",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    },
+    {
+      "src": "assets/images/orchid.webp",
+      "srcset": "assets/images/orchid-small.webp 480w, assets/images/orchid.webp 773w",
+      "sizes": "(max-width: 760px) 90vw, 50vw",
+      "width": "773",
+      "height": "1024",
+      "loading": "lazy",
+      "fetchpriority": "",
+      "decoding": "async"
+    }
+  ]
+}

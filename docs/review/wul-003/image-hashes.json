@@ -1,0 +1,52 @@
+[
+  {
+    "path": "assets/images/hero-welcome-small.webp",
+    "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/hero-welcome.webp",
+    "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/judaica-blessing-small.webp",
+    "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/judaica-blessing.webp",
+    "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/kitchen-board-small.webp",
+    "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/kitchen-board.webp",
+    "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/orchid-small.webp",
+    "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/orchid.webp",
+    "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/workshop-small.webp",
+    "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+    "matchesMain": true
+  },
+  {
+    "path": "assets/images/workshop.webp",
+    "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+    "matchesMain": true
+  }
+]

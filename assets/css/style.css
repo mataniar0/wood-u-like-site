@@ -127,7 +127,7 @@ button {
   font-weight: 650;
   white-space: nowrap;
 }
-.header-cta span {
+.header-cta .direction-arrow {
   padding-inline-start: 10px;
 }
 .menu-toggle,
@@ -218,7 +218,7 @@ p {
   border-bottom: 1px solid #9aa18d;
   padding-bottom: 5px;
 }
-.text-link span {
+.text-link .direction-arrow {
   padding-inline-start: 8px;
 }
 .handmade-note {
@@ -276,7 +276,7 @@ p {
   letter-spacing: 0.04em;
   margin: 13px 0 0;
 }
-.hero-caption span {
+.hero-caption span:not([data-i18n]) {
   padding-inline: 7px;
 }
 .benefits-bar {
@@ -1047,10 +1047,10 @@ article {
 }
 /* Without JavaScript the same navigation remains available on small screens. */
 @media (max-width: 760px) {
-  .header-inner:has(.menu-toggle[hidden]) {
+  html:not([data-js]) .header-inner:has(.menu-toggle[hidden]) {
     flex-wrap: wrap;
   }
-  .header-inner:has(.menu-toggle[hidden]) .nav {
+  html:not([data-js]) .header-inner:has(.menu-toggle[hidden]) .nav {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -1065,4 +1065,150 @@ article {
 .note-icon {
   font-family: Georgia, serif;
   font-size: 28px;
+}
+
+/* WUL language controls reserve their space before JavaScript initialization. */
+html[data-language-pending] body {
+  visibility: hidden;
+}
+.language-switch {
+  display: flex;
+  direction: ltr;
+  flex: none;
+  border: 1px solid var(--ink);
+}
+.language-switch button {
+  min-width: 64px;
+  min-height: 44px;
+  border: 0;
+  padding: 8px 10px;
+  font:
+    600 12px/1.4 Arial,
+    sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+.language-switch button + button {
+  border-inline-start: 1px solid var(--ink);
+}
+.language-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.language-switch button:disabled {
+  cursor: default;
+}
+.language-switch button:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+html[lang="en"] {
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Arial, Helvetica, sans-serif;
+}
+html[lang="en"] .hero h1 {
+  font-size: clamp(44px, 4.6vw, 70px);
+  letter-spacing: -0.035em;
+}
+html[lang="en"] .direction-arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+html[lang="en"] .benefits-grid > div + div {
+  border-right: 0;
+  border-inline-start: 1px solid #d8d1c6;
+}
+.product-image > span {
+  right: auto;
+  inset-inline-start: 16px;
+}
+.header-inner {
+  gap: 20px;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    min-height: 138px;
+    padding-block: 14px;
+    gap: 8px 20px;
+  }
+  .header-inner .brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .header-inner .language-switch {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .header-inner .nav {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  .header-cta {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    min-height: 140px;
+    padding-block: 14px;
+    gap: 14px 12px;
+  }
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .menu-toggle {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .language-switch {
+    grid-column: 1/-1;
+    grid-row: 2;
+    justify-self: end;
+  }
+  html:not([data-js]) .header-inner:has(.menu-toggle[hidden]) .nav {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+  html[lang="en"] .hero h1 {
+    font-size: clamp(38px, 9vw, 60px);
+  }
+  html[lang="en"] .benefits-grid > div + div {
+    border: 0;
+  }
+  .category-copy {
+    gap: 5px;
+  }
+  .category-copy [data-i18n] {
+    min-width: 0;
+    flex: 1;
+  }
+  .category-copy b {
+    flex: none;
+  }
+}
+@media (max-width: 350px) {
+  .brand-name {
+    font-size: 22px;
+  }
+  .brand-sub {
+    font-size: 7px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  html[lang="en"] .section h2,
+  html[lang="en"] .editorial h2 {
+    font-size: 32px;
+  }
+}
+/* Keep arrow spacing on the text side when the glyph is mirrored for LTR. */
+.text-link .direction-arrow, .header-cta .direction-arrow {
+  padding-inline-start: 0;
+  margin-inline-start: 8px;
 }

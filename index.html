@@ -3,28 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WOOD U LIKE | עץ טבעי. סיפור אישי.</title>
+    <title data-i18n="meta.title">WOOD U LIKE | עץ טבעי. סיפור אישי.</title>
     <meta
       name="description"
       content="מתנות מעץ טבעי, חריטות בעיצוב אישי ופריטים לבית בעבודת יד. גלו את העבודות ואת הסיפור של WOOD U LIKE."
+      data-i18n-content="meta.description"
     />
     <meta name="theme-color" content="#FFFCF7" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="data:," />
-    <meta property="og:title" content="WOOD U LIKE | עץ טבעי. סיפור אישי." />
+    <meta
+      property="og:title"
+      content="WOOD U LIKE | עץ טבעי. סיפור אישי."
+      data-i18n-content="meta.title"
+    />
     <meta
       property="og:description"
       content="מתנות מעץ טבעי, חריטה אישית ועבודת יד."
+      data-i18n-content="meta.ogDescription"
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="he_IL" />
+    <script src="assets/js/language.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main">דילוג לתוכן</a>
-    <div class="preview-flag">עץ טבעי · חריטה אישית · עבודת יד</div>
+    <a class="skip" href="#main"><span data-i18n="skip">דילוג לתוכן</span></a>
+    <div class="preview-flag">
+      <span data-i18n="values.summary">עץ טבעי · חריטה אישית · עבודת יד</span>
+    </div>
     <header class="site-header">
       <div class="header-inner wrap">
-        <a href="#top" class="brand" aria-label="WOOD U LIKE - לדף הראשי">
+        <a
+          href="#top"
+          class="brand"
+          aria-label="WOOD U LIKE - לדף הראשי"
+          data-i18n-aria-label="nav.home"
+        >
           <span class="brand-name" lang="en" dir="ltr"
             >WOOD U LIKE<span class="brand-dot">.</span></span
           >
@@ -32,14 +46,52 @@
             >NATURAL WOOD · PERSONAL STORIES</span
           >
         </a>
-        <nav class="nav" aria-label="ניווט ראשי">
-          <a href="#collections">קולקציות</a
-          ><a href="#favorites">מוצרים נבחרים</a
-          ><a href="#story">הסיפור שלנו</a>
+        <nav
+          class="nav"
+          aria-label="ניווט ראשי"
+          data-i18n-aria-label="nav.label"
+        >
+          <a href="#collections"
+            ><span data-i18n="nav.collections">קולקציות</span></a
+          ><a href="#favorites"
+            ><span data-i18n="nav.favorites">מוצרים נבחרים</span></a
+          ><a href="#story"><span data-i18n="nav.story">הסיפור שלנו</span></a>
         </nav>
         <a href="#personal" class="header-cta"
-          >על התאמה אישית <span aria-hidden="true">←</span></a
+          ><span data-i18n="nav.personal">על התאמה אישית</span
+          ><span class="direction-arrow" aria-hidden="true">←</span></a
         >
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="בחירת שפה"
+          data-i18n-aria-label="language.label"
+        >
+          <button
+            type="button"
+            data-language="he"
+            lang="he"
+            dir="rtl"
+            aria-label="עברית"
+            data-i18n-aria-label="language.he"
+            aria-pressed="true"
+            disabled
+          >
+            עברית
+          </button>
+          <button
+            type="button"
+            data-language="en"
+            lang="en"
+            dir="ltr"
+            aria-label="אנגלית"
+            data-i18n-aria-label="language.en"
+            aria-pressed="false"
+            disabled
+          >
+            English
+          </button>
+        </div>
         <button
           class="menu-toggle"
           type="button"
@@ -47,37 +99,65 @@
           aria-label="פתיחת תפריט"
           aria-expanded="false"
           aria-controls="mobile-nav"
+          data-i18n-aria-label="menu.open"
         >
           <span></span><span></span><span></span>
         </button>
       </div>
-      <nav class="mobile-nav" id="mobile-nav" hidden aria-label="ניווט במובייל">
-        <a href="#collections">קולקציות</a><a href="#favorites">מוצרים נבחרים</a
-        ><a href="#story">הסיפור שלנו</a><a href="#personal">על התאמה אישית</a>
+      <nav
+        class="mobile-nav"
+        id="mobile-nav"
+        hidden
+        aria-label="ניווט במובייל"
+        data-i18n-aria-label="menu.label"
+      >
+        <a href="#collections"
+          ><span data-i18n="nav.collections">קולקציות</span></a
+        ><a href="#favorites"
+          ><span data-i18n="nav.favorites">מוצרים נבחרים</span></a
+        ><a href="#story"><span data-i18n="nav.story">הסיפור שלנו</span></a
+        ><a href="#personal"
+          ><span data-i18n="nav.personal">על התאמה אישית</span></a
+        >
       </nav>
     </header>
     <main id="main" tabindex="-1">
       <section id="top" class="hero wrap">
         <div class="hero-content">
           <div class="eyebrow">
-            <span class="eyebrow-line"></span> פריטים עם אופי · מתנות עם משמעות
+            <span class="eyebrow-line"></span
+            ><span data-i18n="hero.eyebrow"
+              >פריטים עם אופי · מתנות עם משמעות</span
+            >
           </div>
-          <h1>עץ טבעי.<br /><em>סיפור אישי.</em></h1>
+          <h1>
+            <span data-i18n="hero.title">עץ טבעי.</span><br /><em
+              ><span data-i18n="hero.story">סיפור אישי.</span></em
+            >
+          </h1>
           <p class="hero-lead">
-            מתנות מעץ, חריטות בעיצוב אישי ופריטים שנעשים ביד — כדי להפוך רגעים
-            קטנים לזיכרונות מיוחדים.
+            <span data-i18n="hero.lead"
+              >מתנות מעץ, חריטות בעיצוב אישי ופריטים שנעשים ביד — כדי להפוך
+              רגעים קטנים לזיכרונות מיוחדים.</span
+            >
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#collections"
-              >לגלות את הקולקציות <span aria-hidden="true">←</span></a
+              ><span data-i18n="hero.collections">לגלות את הקולקציות</span
+              ><span class="direction-arrow" aria-hidden="true">←</span></a
             >
             <a class="text-link" href="#story"
-              >לגלות את הסיפור שלנו <span aria-hidden="true">←</span></a
+              ><span data-i18n="hero.ourStory">לגלות את הסיפור שלנו</span
+              ><span class="direction-arrow" aria-hidden="true">←</span></a
             >
           </div>
           <div class="handmade-note">
-            <span class="note-icon">*</span
-            ><span>עבודה בעץ טבעי · עיצוב אישי · עשייה מוקפדת</span>
+            <span class="note-icon" aria-hidden="true">*</span
+            ><span
+              ><span data-i18n="hero.craft"
+                >עבודה בעץ טבעי · עיצוב אישי · עשייה מוקפדת</span
+              ></span
+            >
           </div>
         </div>
         <div class="hero-visual">
@@ -94,11 +174,13 @@
               "
               sizes="(max-width: 760px) 90vw, 50vw"
               decoding="async"
+              data-i18n-alt="image.hero"
             />
           </div>
 
           <p class="hero-caption">
-            מהסדנה שלנו, אל הבית שלכם <span>•</span> WOOD U LIKE
+            <span data-i18n="hero.caption">מהסדנה שלנו, אל הבית שלכם</span
+            ><span>•</span> WOOD U LIKE
           </p>
         </div>
       </section>
@@ -106,25 +188,47 @@
         <div class="wrap benefits-grid">
           <div>
             <span class="mini-icon" aria-hidden="true">◉</span
-            ><span>עץ טבעי בעל אופי משלו</span>
+            ><span
+              ><span data-i18n="values.wood">עץ טבעי בעל אופי משלו</span></span
+            >
           </div>
           <div>
             <span class="mini-icon" aria-hidden="true">/</span
-            ><span>חריטה אישית עם משמעות</span>
+            ><span
+              ><span data-i18n="values.engraving"
+                >חריטה אישית עם משמעות</span
+              ></span
+            >
           </div>
           <div>
             <span class="mini-icon" aria-hidden="true">*</span
-            ><span>כל פריט נוצר בעבודת יד</span>
+            ><span
+              ><span data-i18n="values.handmade"
+                >כל פריט נוצר בעבודת יד</span
+              ></span
+            >
           </div>
         </div>
       </div>
       <section id="collections" class="collections section wrap">
         <div class="section-intro">
-          <p class="section-kicker">COLLECTIONS / הקולקציות שלנו</p>
-          <h2>לכל רגע יש מתנה<br /><em>שמרגישה בדיוק נכון.</em></h2>
+          <p class="section-kicker">
+            <span data-i18n="collections.kicker"
+              >COLLECTIONS / הקולקציות שלנו</span
+            >
+          </p>
+          <h2>
+            <span data-i18n="collections.title">לכל רגע יש מתנה</span><br /><em
+              ><span data-i18n="collections.subtitle"
+                >שמרגישה בדיוק נכון.</span
+              ></em
+            >
+          </h2>
           <p>
-            ליום מיוחד, לבית חדש, לאדם אהוב — או פשוט כי רציתם משהו שהוא רק
-            שלכם.
+            <span data-i18n="collections.lead"
+              >ליום מיוחד, לבית חדש, לאדם אהוב — או פשוט כי רציתם משהו שהוא רק
+              שלכם.</span
+            >
           </p>
         </div>
         <div class="category-grid">
@@ -142,11 +246,14 @@
                 "
                 sizes="(max-width: 760px) 90vw, 50vw"
                 decoding="async"
+                data-i18n-alt="image.welcome"
               />
             </div>
             <div class="category-copy">
-              <span class="category-no">01 /</span><span>מתנות אישיות</span
-              ><b aria-hidden="true">←</b>
+              <span class="category-no">01 /</span
+              ><span
+                ><span data-i18n="category.personal">מתנות אישיות</span></span
+              ><b class="direction-arrow" aria-hidden="true">←</b>
             </div>
           </a>
           <a class="category-card" href="#blessing-work">
@@ -163,11 +270,14 @@
                 "
                 sizes="(max-width: 760px) 90vw, 50vw"
                 decoding="async"
+                data-i18n-alt="image.blessing"
               />
             </div>
             <div class="category-copy">
-              <span class="category-no">02 /</span><span>ברכות ויודאיקה</span
-              ><b aria-hidden="true">←</b>
+              <span class="category-no">02 /</span
+              ><span
+                ><span data-i18n="category.judaica">ברכות ויודאיקה</span></span
+              ><b class="direction-arrow" aria-hidden="true">←</b>
             </div>
           </a>
           <a class="category-card" href="#kitchen-work">
@@ -184,11 +294,13 @@
                 "
                 sizes="(max-width: 760px) 90vw, 50vw"
                 decoding="async"
+                data-i18n-alt="image.kitchen"
               />
             </div>
             <div class="category-copy">
-              <span class="category-no">03 /</span><span>מטבח ואירוח</span
-              ><b aria-hidden="true">←</b>
+              <span class="category-no">03 /</span
+              ><span><span data-i18n="category.kitchen">מטבח ואירוח</span></span
+              ><b class="direction-arrow" aria-hidden="true">←</b>
             </div>
           </a>
           <a class="category-card" href="#welcome-work">
@@ -205,11 +317,13 @@
                 "
                 sizes="(max-width: 760px) 90vw, 50vw"
                 decoding="async"
+                data-i18n-alt="image.workshop"
               />
             </div>
             <div class="category-copy">
-              <span class="category-no">04 /</span><span>בית ומשפחה</span
-              ><b aria-hidden="true">←</b>
+              <span class="category-no">04 /</span
+              ><span><span data-i18n="category.home">בית ומשפחה</span></span
+              ><b class="direction-arrow" aria-hidden="true">←</b>
             </div>
           </a>
         </div>
@@ -218,12 +332,21 @@
         <div class="wrap">
           <div class="split-head">
             <div>
-              <p class="section-kicker">HANDMADE FAVORITES / עבודות נבחרות</p>
-              <h2>פריטים שמספרים <em>סיפור.</em></h2>
+              <p class="section-kicker">
+                <span data-i18n="favorites.kicker"
+                  >HANDMADE FAVORITES / עבודות נבחרות</span
+                >
+              </p>
+              <h2>
+                <span data-i18n="favorites.title">פריטים שמספרים</span
+                > <em><span data-i18n="favorites.story">סיפור.</span></em>
+              </h2>
             </div>
             <p>
-              כל התמונות כאן הן של עבודות מקוריות שיצרנו. את האפשרויות להזמנה
-              ולהקדשה נוסיף בשלב הבא.
+              <span data-i18n="favorites.lead"
+                >כל התמונות כאן הן של עבודות מקוריות שיצרנו. את האפשרויות להזמנה
+                ולהקדשה נוסיף בשלב הבא.</span
+              >
             </p>
           </div>
           <div class="product-grid">
@@ -241,10 +364,21 @@
                   "
                   sizes="(max-width: 760px) 90vw, 50vw"
                   decoding="async"
-                /><span>מסורת ומשמעות</span>
+                  data-i18n-alt="image.blessingStand"
+                /><span
+                  ><span data-i18n="product.blessing.tag"
+                    >מסורת ומשמעות</span
+                  ></span
+                >
               </div>
-              <h3>ברכת הדלקת נרות</h3>
-              <p>לוח עץ עגול עם טקסט חרוט ומעמד</p>
+              <h3>
+                <span data-i18n="product.blessing.title">ברכת הדלקת נרות</span>
+              </h3>
+              <p>
+                <span data-i18n="product.blessing.copy"
+                  >לוח עץ עגול עם טקסט חרוט ומעמד</span
+                >
+              </p>
             </article>
             <article id="welcome-work" class="product-card">
               <div class="product-image">
@@ -260,10 +394,21 @@
                   "
                   sizes="(max-width: 760px) 90vw, 50vw"
                   decoding="async"
-                /><span>לבית ולמשפחה</span>
+                  data-i18n-alt="image.welcomeOval"
+                /><span
+                  ><span data-i18n="product.welcome.tag"
+                    >לבית ולמשפחה</span
+                  ></span
+                >
               </div>
-              <h3>שלט ברוכים הבאים</h3>
-              <p>מילים חמות בכניסה לבית</p>
+              <h3>
+                <span data-i18n="product.welcome.title">שלט ברוכים הבאים</span>
+              </h3>
+              <p>
+                <span data-i18n="product.welcome.copy"
+                  >מילים חמות בכניסה לבית</span
+                >
+              </p>
             </article>
             <article id="kitchen-work" class="product-card">
               <div class="product-image">
@@ -279,14 +424,25 @@
                   "
                   sizes="(max-width: 760px) 90vw, 50vw"
                   decoding="async"
-                /><span>לאירוח</span>
+                  data-i18n-alt="image.kitchenUtensils"
+                /><span
+                  ><span data-i18n="product.kitchen.tag">לאירוח</span></span
+                >
               </div>
-              <h3>קרש מטבח חרוט</h3>
-              <p>עץ טבעי ומסר קטן למטבח</p>
+              <h3>
+                <span data-i18n="product.kitchen.title">קרש מטבח חרוט</span>
+              </h3>
+              <p>
+                <span data-i18n="product.kitchen.copy"
+                  >עץ טבעי ומסר קטן למטבח</span
+                >
+              </p>
             </article>
           </div>
           <p class="catalog-note">
-            דוגמאות להמחשה מתוך העבודות הקיימות · עדיין לא קטלוג מכירה
+            <span data-i18n="favorites.note"
+              >דוגמאות להמחשה מתוך העבודות הקיימות · עדיין לא קטלוג מכירה</span
+            >
           </p>
         </div>
       </section>
@@ -305,32 +461,52 @@
             "
             sizes="(max-width: 760px) 90vw, 50vw"
             decoding="async"
+            data-i18n-alt="image.workshopSigns"
           />
         </div>
         <div class="story-content">
-          <p class="section-kicker">OUR STORY / הסיפור שלנו</p>
-          <h2>לפני החריטה,<br /><em>יש עץ.</em></h2>
+          <p class="section-kicker">
+            <span data-i18n="story.kicker">OUR STORY / הסיפור שלנו</span>
+          </p>
+          <h2>
+            <span data-i18n="story.title">לפני החריטה,</span><br /><em
+              ><span data-i18n="story.wood">יש עץ.</span></em
+            >
+          </h2>
           <p>
-            אנחנו אוהבים את מה שלא חוזר פעמיים: סיבי העץ, גוון טבעי, צורה לא
-            סימטרית. מתוך החומר הזה אנחנו יוצרים פריטים אישיים — כאלה שמרגישים
-            שייכים למי שמקבל אותם.
+            <span data-i18n="story.copy"
+              >אנחנו אוהבים את מה שלא חוזר פעמיים: סיבי העץ, גוון טבעי, צורה לא
+              סימטרית. מתוך החומר הזה אנחנו יוצרים פריטים אישיים — כאלה שמרגישים
+              שייכים למי שמקבל אותם.</span
+            >
           </p>
           <div class="story-rule"></div>
           <p class="story-secondary">
-            מהרעיון הראשוני ועד לגימור, כל פריט מקבל תשומת לב לפרטים הקטנים.
+            <span data-i18n="story.detail"
+              >מהרעיון הראשוני ועד לגימור, כל פריט מקבל תשומת לב לפרטים
+              הקטנים.</span
+            >
           </p>
           <a href="#personal" class="text-link"
-            >לקרוא על התאמה אישית <span aria-hidden="true">←</span></a
+            ><span data-i18n="story.personal">לקרוא על התאמה אישית</span
+            ><span class="direction-arrow" aria-hidden="true">←</span></a
           >
         </div>
       </section>
       <section class="editorial wrap">
         <div class="editorial-copy">
           <p class="section-kicker">A SMALL GESTURE, A PERSONAL TOUCH</p>
-          <h2>יש דברים שכיף<br />לתת. <em>וכיף לשמור.</em></h2>
+          <h2>
+            <span data-i18n="inspiration.title">יש דברים שכיף</span><br /><span
+              data-i18n="inspiration.give"
+              >לתת.</span
+            > <em><span data-i18n="inspiration.keep">וכיף לשמור.</span></em>
+          </h2>
           <p>
-            שם, תאריך, ברכה או משפט אהוב — לפעמים זה כל מה שצריך כדי להפוך עץ
-            למזכרת אישית.
+            <span data-i18n="inspiration.copy"
+              >שם, תאריך, ברכה או משפט אהוב — לפעמים זה כל מה שצריך כדי להפוך עץ
+              למזכרת אישית.</span
+            >
           </p>
         </div>
         <div class="editorial-photo">
@@ -346,20 +522,25 @@
             "
             sizes="(max-width: 760px) 90vw, 50vw"
             decoding="async"
+            data-i18n-alt="image.orchid"
           />
         </div>
       </section>
       <section id="personal" class="custom">
         <div class="wrap custom-inner">
           <p class="section-kicker">MADE JUST FOR YOU</p>
-          <h2>על התאמה אישית</h2>
+          <h2><span data-i18n="nav.personal">על התאמה אישית</span></h2>
           <p>
-            שם, תאריך, הקדשה או משפט אהוב — התאמה אישית מעניקה לפריט מעץ
-            משמעות ייחודית. כאן מוצגות דוגמאות להשראה בלבד.
+            <span data-i18n="personal.copy"
+              >שם, תאריך, הקדשה או משפט אהוב — התאמה אישית מעניקה לפריט מעץ
+              משמעות ייחודית. כאן מוצגות דוגמאות להשראה בלבד.</span
+            >
           </p>
           <p class="custom-placeholder">
-            פרטי יצירת הקשר יתווספו בהמשך. בשלב זה לא ניתן לשלוח פנייה או לבצע
-            הזמנה דרך האתר.
+            <span data-i18n="personal.notice"
+              >פרטי יצירת הקשר יתווספו בהמשך. בשלב זה לא ניתן לשלוח פנייה או
+              לבצע הזמנה דרך האתר.</span
+            >
           </p>
         </div>
       </section>
@@ -368,12 +549,19 @@
       <div class="wrap footer-inner">
         <div>
           <strong lang="en">WOOD U LIKE</strong
-          ><span>מוצרי עץ • חריטה אישית • עבודת יד</span>
+          ><span
+            ><span data-i18n="footer.values"
+              >מוצרי עץ • חריטה אישית • עבודת יד</span
+            ></span
+          >
         </div>
-        <p>עץ טבעי. סיפור אישי.</p>
-        <a href="#top">בחזרה למעלה ↑</a>
+        <p><span data-i18n="footer.tagline">עץ טבעי. סיפור אישי.</span></p>
+        <a href="#top"><span data-i18n="footer.top">בחזרה למעלה ↑</span></a>
       </div>
     </footer>
+    <script>
+      window.WUL_I18N.initialize();
+    </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
