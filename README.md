@@ -38,3 +38,18 @@ python3 -m http.server 8000 --bind 127.0.0.1
 אין כרגע תמונות מוצרים, מחירים, פרטי קשר או לוגו.
 
 הפרויקט נפרד מ־ASSEMBLE LAB; אין צורך לשנות את המאגר שלו.
+
+## WUL-002 — עמוד הבית Natural Boutique
+
+עמוד הבית החדש נמצא בענף `feature/natural-boutique-homepage` ומוגש לבדיקת ראש הצוות בלבד.
+אין למזג או לפרסם לפני אישור. GitHub Pages נשאר מוגדר לענף `main`.
+
+להגשה תחת נתיב הפרויקט, הריצו מתוך `/workspace`:
+
+```sh
+python3 -m http.server 8001 --bind 127.0.0.1 --directory /workspace
+```
+
+בדקו פנימית את `/wood-u-like-site/`. כל התמונות והגופנים מקומיים; אין תלות ברשת בזמן טעינת האתר.
+גופני Noto Hebrew מופצים ברישיון SIL Open Font License; הרישיונות ב־`assets/fonts/`.
+דוח בדיקות, מיפוי תמונות וצילומי מסך זמינים ב־`docs/review/`.
