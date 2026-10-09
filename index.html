@@ -1,25 +1,379 @@
 <!doctype html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WOOD U LIKE — מתנות מעץ טבעי, חריטות בלייזר ומוצרים בעבודת יד. האתר נמצא בהקמה.">
-  <meta name="theme-color" content="#f5f1e9">
-  <link rel="icon" href="data:,">
-  <title>WOOD U LIKE | מוצרי עץ בעיצוב אישי</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">דילוג לתוכן</a>
-  <header class="site-header"><p class="brand" lang="en" dir="ltr">WOOD U LIKE</p></header>
-  <main id="main" tabindex="-1">
-    <section aria-labelledby="page-title" class="intro">
-      <h1 id="page-title">מוצרי עץ בעיצוב אישי</h1>
-      <p class="description">מתנות מעץ טבעי, חריטות בלייזר ומוצרים בעבודת יד</p>
-      <p class="notice">האתר נמצא בהקמה</p>
-    </section>
-  </main>
-  <footer><p>WOOD U LIKE <span aria-hidden="true">·</span> עמוד זמני לבדיקת התשתית</p></footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WOOD U LIKE | עץ טבעי. סיפור אישי.</title>
+    <meta
+      name="description"
+      content="מתנות מעץ טבעי, חריטות בעיצוב אישי ופריטים לבית בעבודת יד. גלו את העבודות ואת הסיפור של WOOD U LIKE."
+    />
+    <meta name="theme-color" content="#FFFCF7" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="data:," />
+    <meta property="og:title" content="WOOD U LIKE | עץ טבעי. סיפור אישי." />
+    <meta
+      property="og:description"
+      content="מתנות מעץ טבעי, חריטה אישית ועבודת יד."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="he_IL" />
+  </head>
+  <body>
+    <a class="skip" href="#main">דילוג לתוכן</a>
+    <div class="preview-flag">עץ טבעי · חריטה אישית · עבודת יד</div>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a href="#top" class="brand" aria-label="WOOD U LIKE - לדף הראשי">
+          <span class="brand-name" lang="en" dir="ltr"
+            >WOOD U LIKE<span class="brand-dot">.</span></span
+          >
+          <span class="brand-sub" lang="en" dir="ltr"
+            >NATURAL WOOD · PERSONAL STORIES</span
+          >
+        </a>
+        <nav class="nav" aria-label="ניווט ראשי">
+          <a href="#collections">קולקציות</a
+          ><a href="#favorites">מוצרים נבחרים</a
+          ><a href="#story">הסיפור שלנו</a>
+        </nav>
+        <a href="#personal" class="header-cta"
+          >על התאמה אישית <span aria-hidden="true">←</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          hidden
+          aria-label="פתיחת תפריט"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" hidden aria-label="ניווט במובייל">
+        <a href="#collections">קולקציות</a><a href="#favorites">מוצרים נבחרים</a
+        ><a href="#story">הסיפור שלנו</a><a href="#personal">על התאמה אישית</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="top" class="hero wrap">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span> פריטים עם אופי · מתנות עם משמעות
+          </div>
+          <h1>עץ טבעי.<br /><em>סיפור אישי.</em></h1>
+          <p class="hero-lead">
+            מתנות מעץ, חריטות בעיצוב אישי ופריטים שנעשים ביד — כדי להפוך רגעים
+            קטנים לזיכרונות מיוחדים.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#collections"
+              >לגלות את הקולקציות <span aria-hidden="true">←</span></a
+            >
+            <a class="text-link" href="#story"
+              >לגלות את הסיפור שלנו <span aria-hidden="true">←</span></a
+            >
+          </div>
+          <div class="handmade-note">
+            <span class="note-icon">*</span
+            ><span>עבודה בעץ טבעי · עיצוב אישי · עשייה מוקפדת</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-shell">
+            <img
+              src="assets/images/hero-welcome.webp"
+              alt="שלט עץ חרוט ברוכים הבאים על משטח עץ טבעי, מתוך עבודות WOOD U LIKE"
+              fetchpriority="high"
+              width="1024"
+              height="771"
+              srcset="
+                assets/images/hero-welcome-small.webp  480w,
+                assets/images/hero-welcome.webp       1024w
+              "
+              sizes="(max-width: 760px) 90vw, 50vw"
+              decoding="async"
+            />
+          </div>
+
+          <p class="hero-caption">
+            מהסדנה שלנו, אל הבית שלכם <span>•</span> WOOD U LIKE
+          </p>
+        </div>
+      </section>
+      <div class="benefits-bar">
+        <div class="wrap benefits-grid">
+          <div>
+            <span class="mini-icon" aria-hidden="true">◉</span
+            ><span>עץ טבעי בעל אופי משלו</span>
+          </div>
+          <div>
+            <span class="mini-icon" aria-hidden="true">/</span
+            ><span>חריטה אישית עם משמעות</span>
+          </div>
+          <div>
+            <span class="mini-icon" aria-hidden="true">*</span
+            ><span>כל פריט נוצר בעבודת יד</span>
+          </div>
+        </div>
+      </div>
+      <section id="collections" class="collections section wrap">
+        <div class="section-intro">
+          <p class="section-kicker">COLLECTIONS / הקולקציות שלנו</p>
+          <h2>לכל רגע יש מתנה<br /><em>שמרגישה בדיוק נכון.</em></h2>
+          <p>
+            ליום מיוחד, לבית חדש, לאדם אהוב — או פשוט כי רציתם משהו שהוא רק
+            שלכם.
+          </p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#personal">
+            <div class="category-img">
+              <img
+                src="assets/images/hero-welcome.webp"
+                alt="שלט ברוכים הבאים חרוט על עץ"
+                loading="lazy"
+                width="1024"
+                height="771"
+                srcset="
+                  assets/images/hero-welcome-small.webp  480w,
+                  assets/images/hero-welcome.webp       1024w
+                "
+                sizes="(max-width: 760px) 90vw, 50vw"
+                decoding="async"
+              />
+            </div>
+            <div class="category-copy">
+              <span class="category-no">01 /</span><span>מתנות אישיות</span
+              ><b aria-hidden="true">←</b>
+            </div>
+          </a>
+          <a class="category-card" href="#blessing-work">
+            <div class="category-img">
+              <img
+                src="assets/images/judaica-blessing.webp"
+                alt="ברכת הדלקת נרות חרוטה על לוח עץ עגול"
+                loading="lazy"
+                width="834"
+                height="1024"
+                srcset="
+                  assets/images/judaica-blessing-small.webp 480w,
+                  assets/images/judaica-blessing.webp       834w
+                "
+                sizes="(max-width: 760px) 90vw, 50vw"
+                decoding="async"
+              />
+            </div>
+            <div class="category-copy">
+              <span class="category-no">02 /</span><span>ברכות ויודאיקה</span
+              ><b aria-hidden="true">←</b>
+            </div>
+          </a>
+          <a class="category-card" href="#kitchen-work">
+            <div class="category-img">
+              <img
+                src="assets/images/kitchen-board.webp"
+                alt="קרש מטבח חרוט עם הכיתוב Cook with Love וכלי עץ"
+                loading="lazy"
+                width="1200"
+                height="900"
+                srcset="
+                  assets/images/kitchen-board-small.webp  480w,
+                  assets/images/kitchen-board.webp       1200w
+                "
+                sizes="(max-width: 760px) 90vw, 50vw"
+                decoding="async"
+              />
+            </div>
+            <div class="category-copy">
+              <span class="category-no">03 /</span><span>מטבח ואירוח</span
+              ><b aria-hidden="true">←</b>
+            </div>
+          </a>
+          <a class="category-card" href="#welcome-work">
+            <div class="category-img">
+              <img
+                src="assets/images/workshop.webp"
+                alt="שלטי עץ לחדרי הבית על שולחן הסדנה"
+                loading="lazy"
+                width="1200"
+                height="594"
+                srcset="
+                  assets/images/workshop-small.webp  480w,
+                  assets/images/workshop.webp       1200w
+                "
+                sizes="(max-width: 760px) 90vw, 50vw"
+                decoding="async"
+              />
+            </div>
+            <div class="category-copy">
+              <span class="category-no">04 /</span><span>בית ומשפחה</span
+              ><b aria-hidden="true">←</b>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="favorites" class="favorites section">
+        <div class="wrap">
+          <div class="split-head">
+            <div>
+              <p class="section-kicker">HANDMADE FAVORITES / עבודות נבחרות</p>
+              <h2>פריטים שמספרים <em>סיפור.</em></h2>
+            </div>
+            <p>
+              כל התמונות כאן הן של עבודות מקוריות שיצרנו. את האפשרויות להזמנה
+              ולהקדשה נוסיף בשלב הבא.
+            </p>
+          </div>
+          <div class="product-grid">
+            <article id="blessing-work" class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/judaica-blessing.webp"
+                  alt="ברכת הדלקת נרות שבת על לוח עגול במעמד"
+                  loading="lazy"
+                  width="834"
+                  height="1024"
+                  srcset="
+                    assets/images/judaica-blessing-small.webp 480w,
+                    assets/images/judaica-blessing.webp       834w
+                  "
+                  sizes="(max-width: 760px) 90vw, 50vw"
+                  decoding="async"
+                /><span>מסורת ומשמעות</span>
+              </div>
+              <h3>ברכת הדלקת נרות</h3>
+              <p>לוח עץ עגול עם טקסט חרוט ומעמד</p>
+            </article>
+            <article id="welcome-work" class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/hero-welcome.webp"
+                  alt="שלט עץ אובלי עם הכיתוב ברוכים הבאים"
+                  loading="lazy"
+                  width="1024"
+                  height="771"
+                  srcset="
+                    assets/images/hero-welcome-small.webp  480w,
+                    assets/images/hero-welcome.webp       1024w
+                  "
+                  sizes="(max-width: 760px) 90vw, 50vw"
+                  decoding="async"
+                /><span>לבית ולמשפחה</span>
+              </div>
+              <h3>שלט ברוכים הבאים</h3>
+              <p>מילים חמות בכניסה לבית</p>
+            </article>
+            <article id="kitchen-work" class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/kitchen-board.webp"
+                  alt="קרש מטבח חרוט לצד כלי עץ"
+                  loading="lazy"
+                  width="1200"
+                  height="900"
+                  srcset="
+                    assets/images/kitchen-board-small.webp  480w,
+                    assets/images/kitchen-board.webp       1200w
+                  "
+                  sizes="(max-width: 760px) 90vw, 50vw"
+                  decoding="async"
+                /><span>לאירוח</span>
+              </div>
+              <h3>קרש מטבח חרוט</h3>
+              <p>עץ טבעי ומסר קטן למטבח</p>
+            </article>
+          </div>
+          <p class="catalog-note">
+            דוגמאות להמחשה מתוך העבודות הקיימות · עדיין לא קטלוג מכירה
+          </p>
+        </div>
+      </section>
+      <section id="story" class="story wrap section">
+        <div class="story-pictures">
+          <img
+            class="story-main-img"
+            src="assets/images/workshop.webp"
+            alt="שלושה שלטי עץ חרוטים על משטח עבודה טבעי"
+            loading="lazy"
+            width="1200"
+            height="594"
+            srcset="
+              assets/images/workshop-small.webp  480w,
+              assets/images/workshop.webp       1200w
+            "
+            sizes="(max-width: 760px) 90vw, 50vw"
+            decoding="async"
+          />
+        </div>
+        <div class="story-content">
+          <p class="section-kicker">OUR STORY / הסיפור שלנו</p>
+          <h2>לפני החריטה,<br /><em>יש עץ.</em></h2>
+          <p>
+            אנחנו אוהבים את מה שלא חוזר פעמיים: סיבי העץ, גוון טבעי, צורה לא
+            סימטרית. מתוך החומר הזה אנחנו יוצרים פריטים אישיים — כאלה שמרגישים
+            שייכים למי שמקבל אותם.
+          </p>
+          <div class="story-rule"></div>
+          <p class="story-secondary">
+            מהרעיון הראשוני ועד לגימור, כל פריט מקבל תשומת לב לפרטים הקטנים.
+          </p>
+          <a href="#personal" class="text-link"
+            >לקרוא על התאמה אישית <span aria-hidden="true">←</span></a
+          >
+        </div>
+      </section>
+      <section class="editorial wrap">
+        <div class="editorial-copy">
+          <p class="section-kicker">A SMALL GESTURE, A PERSONAL TOUCH</p>
+          <h2>יש דברים שכיף<br />לתת. <em>וכיף לשמור.</em></h2>
+          <p>
+            שם, תאריך, ברכה או משפט אהוב — לפעמים זה כל מה שצריך כדי להפוך עץ
+            למזכרת אישית.
+          </p>
+        </div>
+        <div class="editorial-photo">
+          <img
+            src="assets/images/orchid.webp"
+            alt="עציץ סחלב לצד ברכת הדלקת נרות חרוטה על לוח עץ במעמד"
+            loading="lazy"
+            width="773"
+            height="1024"
+            srcset="
+              assets/images/orchid-small.webp 480w,
+              assets/images/orchid.webp       773w
+            "
+            sizes="(max-width: 760px) 90vw, 50vw"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <section id="personal" class="custom">
+        <div class="wrap custom-inner">
+          <p class="section-kicker">MADE JUST FOR YOU</p>
+          <h2>על התאמה אישית</h2>
+          <p>
+            שם, תאריך, הקדשה או משפט אהוב — התאמה אישית מעניקה לפריט מעץ
+            משמעות ייחודית. כאן מוצגות דוגמאות להשראה בלבד.
+          </p>
+          <p class="custom-placeholder">
+            פרטי יצירת הקשר יתווספו בהמשך. בשלב זה לא ניתן לשלוח פנייה או לבצע
+            הזמנה דרך האתר.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <strong lang="en">WOOD U LIKE</strong
+          ><span>מוצרי עץ • חריטה אישית • עבודת יד</span>
+        </div>
+        <p>עץ טבעי. סיפור אישי.</p>
+        <a href="#top">בחזרה למעלה ↑</a>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,47 @@
+[
+  {
+    "width": 390,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "h1": 1
+    },
+    "menu": "PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "width": 768,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "h1": 1
+    },
+    "menu": "desktop navigation PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "width": 1440,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "h1": 1
+    },
+    "menu": "desktop navigation PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "noJavaScriptNavigation": "PASS"
+  }
+]
