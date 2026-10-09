@@ -1,0 +1,16 @@
+:root { color-scheme: light; font-family: Arial, sans-serif; color: #302c25; background: #f5f1e9; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+.site-header, footer { padding: 1.5rem; text-align: center; }
+.brand { margin: 0; font-size: 1.25rem; font-weight: 700; letter-spacing: .12em; }
+main { flex: 1; display: grid; place-items: center; padding: 2rem 1.25rem; }
+.intro { width: 100%; max-width: 48rem; text-align: center; }
+h1 { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.25; margin: 0 0 1.5rem; }
+p { line-height: 1.7; }
+.description { font-size: 1.125rem; margin: 0; }
+.notice { display: inline-block; border: 1px solid #786747; border-radius: .5rem; padding: .5rem 1rem; margin-block-start: 2rem; }
+footer { font-size: .875rem; }
+footer p { margin: 0; }
+.skip-link { position: absolute; inset-block-start: .5rem; inset-inline-start: .5rem; padding: .75rem; background: #302c25; color: #fff; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 3px solid #73522b; outline-offset: 4px; }
