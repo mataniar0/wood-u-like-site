@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname, "..");
-const output = path.join(root, "docs/review/wul-003");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-003");
 const base =
   process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
 const key = "wood-u-like-language";
@@ -230,6 +230,8 @@ async function contents(page, lang) {
         assert.equal(await toggle.getAttribute("aria-expanded"), "false");
         await toggle.click();
         await page.setViewportSize({ width: 761, height: 900 });
+        // The matchMedia change event runs asynchronously after viewport resize.
+        await page.waitForFunction(() => document.querySelector(".menu-toggle").getAttribute("aria-expanded") === "false");
         assert.equal(await toggle.getAttribute("aria-expanded"), "false");
         await page.setViewportSize({ width, height });
       }

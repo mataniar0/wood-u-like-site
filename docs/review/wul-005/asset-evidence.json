@@ -1,0 +1,24 @@
+{
+  "source_sha256": "2bcc3d5827e976e55dcddcdff64760a297e50ea8c995928eac9a44769e55c93b",
+  "derivatives": [
+    {
+      "path": "assets/images/hero-approved-v2.webp",
+      "dimensions": [
+        1330,
+        1183
+      ],
+      "bytes": 135492,
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f"
+    },
+    {
+      "path": "assets/images/hero-approved-v2-small.webp",
+      "dimensions": [
+        640,
+        569
+      ],
+      "bytes": 52670,
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb"
+    }
+  ],
+  "unchanged_original_files": 11
+}
