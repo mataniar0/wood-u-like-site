@@ -1067,6 +1067,17 @@ article {
   font-size: 28px;
 }
 
+/* WUL-005: retain the entire approved artwork at every breakpoint.
+   Side padding keeps the plaque clear of the existing arched frame. */
+.hero-image-shell {
+  aspect-ratio: 1330 / 1183;
+  padding: 0 5%;
+}
+.hero-image-shell img {
+  object-fit: contain;
+  object-position: center;
+}
+
 /* WUL language controls reserve their space before JavaScript initialization. */
 html[data-language-pending] body {
   visibility: hidden;

@@ -87,8 +87,8 @@
       en: "Natural wood · Personal design · Thoughtful craftsmanship",
     },
     "hero.caption": {
-      he: "מהסדנה שלנו, אל הבית שלכם",
-      en: "From our workshop to your home",
+      he: "הדמיה להמחשה",
+      en: "Illustrative mockup",
     },
     "values.wood": {
       he: "עץ טבעי בעל אופי משלו",
@@ -251,8 +251,8 @@
       en: "Back to top ↑",
     },
     "image.hero": {
-      he: "שלט עץ חרוט ברוכים הבאים על משטח עץ טבעי, מתוך עבודות WOOD U LIKE",
-      en: "WOOD U LIKE wooden welcome sign with Hebrew engraving on a natural wood surface",
+      he: "הדמיה של שלט מעץ טבעי עם חריטת עידו ועדי כהן",
+      en: "Illustrative mockup of a natural wood sign engraved with the names Ido and Adi Cohen",
     },
     "image.welcome": {
       he: "שלט ברוכים הבאים חרוט על עץ",

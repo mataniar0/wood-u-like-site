@@ -1,0 +1,162 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 10.900000000023283
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 13.700000000011642
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 14.5
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 9.299999999988358
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 10
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 17.900000000023283
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 19.79999999998836
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 24.399999999965075
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 10.799999999988358
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8001/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 16.70000000001164
+  }
+]

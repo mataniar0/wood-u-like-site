@@ -1,0 +1,230 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0.00025772249100345913,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0.00024700725986267504,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      760,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0.00011147066885964912,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      760,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 141,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      761,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0.00012042535102448045,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      761,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0.00009341852273792028,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      844,
+      390
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0.004524329963632834,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      844,
+      390
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0.00017872569151222706,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 139,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "headerHeight": 97,
+    "headerDelta": 0,
+    "initialCLS": 0.001201816737798997,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "headerHeight": 97,
+    "headerDelta": 0,
+    "initialCLS": 0,
+    "axe": [],
+    "errors": []
+  },
+  {
+    "persistence": "PASS",
+    "tabs": "PASS",
+    "history": "PASS",
+    "actualBFCache": true,
+    "pageshow": "PASS"
+  },
+  {
+    "blockedStorage": "PASS"
+  },
+  {
+    "noJavaScript": "PASS"
+  },
+  {
+    "slowBootstrap": "PASS",
+    "headerShift": 0
+  },
+  {
+    "pausedParserEnglishGuard": "PASS"
+  }
+]
