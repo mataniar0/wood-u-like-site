@@ -250,6 +250,7 @@ async function contents(page, lang) {
       assert.equal(await page.evaluate(() => window.qaEvents), 2);
       for (const a of await page.locator("a:visible:not(.skip)").all()) {
         const href = await a.getAttribute("href");
+        if (!href.startsWith("#")) continue; // Page links are exercised by check-inquiry.cjs.
         assert.ok(await page.locator(href).count());
         await a.click();
         await page.waitForFunction((hash) => location.hash === hash, href);

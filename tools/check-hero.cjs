@@ -5,7 +5,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
-const output = path.join(root, "docs/review/wul-005");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-005");
 const regression = spawnSync(process.execPath, [path.join(__dirname, "check-language.cjs")], {
   env: { ...process.env, WUL_REVIEW_DIR: output }, stdio: "inherit",
 });
