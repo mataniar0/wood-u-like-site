@@ -14,6 +14,10 @@
       name: "Engraved kitchen board",
       dimensions: ["width", "height", "thickness"],
     },
+    "family-sign": {
+      name: "Personalized wooden door sign",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],
