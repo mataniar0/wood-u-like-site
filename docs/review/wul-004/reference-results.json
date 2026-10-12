@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "language": "he",
+      "simulatedResponse": 200,
+      "status": "PASS",
+      "steps": 3
+    },
+    {
+      "language": "he",
+      "simulatedResponse": 422,
+      "status": "PASS",
+      "steps": 3
+    },
+    {
+      "language": "en",
+      "simulatedResponse": 200,
+      "status": "PASS",
+      "steps": 3
+    },
+    {
+      "language": "en",
+      "simulatedResponse": 422,
+      "status": "PASS",
+      "steps": 3
+    }
+  ],
+  "mockedPosts": 4,
+  "realInquiryRequests": 0
+}

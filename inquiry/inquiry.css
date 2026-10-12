@@ -1,0 +1,216 @@
+.inquiry-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(30px, 5vw, 80px);
+  padding-block: 64px 80px;
+  align-items: start;
+}
+.inquiry-intro h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1.25;
+  margin: 14px 0 24px;
+  font-weight: 400;
+}
+.inquiry-lead {
+  font-size: 17px;
+  color: var(--soft-ink);
+}
+.inquiry-steps {
+  list-style: none;
+  counter-reset: steps;
+  padding: 0;
+  margin: 32px 0;
+}
+.inquiry-steps li {
+  counter-increment: steps;
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+.inquiry-steps h2 {
+  font-size: 19px;
+  font-family: var(--serif);
+  margin: 0 0 8px;
+  font-weight: 400;
+}
+.inquiry-steps h2::before {
+  content: "0" counter(steps);
+  display: inline-block;
+  margin-inline-end: 15px;
+  color: #75644f;
+  font:
+    14px Georgia,
+    serif;
+}
+.inquiry-steps p {
+  margin: 0;
+  color: var(--soft-ink);
+}
+.inquiry-nonbinding {
+  padding: 20px;
+  background: var(--sand);
+  border-inline-start: 3px solid var(--olive);
+}
+.inquiry-back,
+.inquiry-alternative,
+.product-inquiry {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.inquiry-panel {
+  padding: clamp(20px, 3vw, 38px);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  min-width: 0;
+}
+.inquiry-panel h2 {
+  font-size: 23px;
+  font-family: var(--serif);
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+.availability,
+.planning-notice {
+  padding: 16px;
+  border: 1px solid #a49c89;
+  background: var(--paper);
+}
+.inquiry-field {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  margin-block: 20px;
+  min-width: 0;
+}
+.inquiry-field label,
+.inquiry-panel legend {
+  font-weight: 700;
+}
+.inquiry-field input,
+.inquiry-field select,
+.inquiry-field textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  border: 1px solid #858678;
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  padding: 11px 12px;
+}
+.inquiry-field textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+.inquiry-field input::placeholder,
+.inquiry-field textarea::placeholder {
+  opacity: 1;
+  color: var(--soft-ink);
+}
+.inquiry-field [aria-invalid="true"] {
+  border: 2px solid #9a3125;
+}
+.inquiry-pair,
+.dimension-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.inquiry-pair .inquiry-field {
+  margin-block: 20px 0;
+}
+.inquiry-panel fieldset {
+  min-width: 0;
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+}
+.field-help {
+  font-size: 13px;
+  color: var(--soft-ink);
+  margin: 0;
+}
+.field-error {
+  font-size: 14px;
+  color: #9a3125;
+  margin: 0;
+}
+.honeypot {
+  display: none;
+}
+.inquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-block: 24px 14px;
+}
+.inquiry-actions .btn {
+  border: 1px solid var(--ink);
+  font: inherit;
+  cursor: pointer;
+  min-height: 48px;
+}
+.inquiry-actions .btn:disabled {
+  background: #ded9cd;
+  border-color: #b7b4a8;
+  color: #55594f;
+  cursor: not-allowed;
+}
+.inquiry-actions .btn:disabled:hover {
+  background: #ded9cd;
+  transform: none;
+}
+.inquiry-alternative[aria-disabled="true"] {
+  color: var(--soft-ink);
+  cursor: wait;
+}
+.inquiry-status {
+  min-height: 32px;
+  margin: 20px 0 0;
+  overflow-wrap: anywhere;
+}
+.inquiry-status[data-state="error"] {
+  color: #9a3125;
+}
+.inquiry-status[data-state="success"] {
+  color: #2c5632;
+}
+.inquiry-page :is(input, select, textarea, button, a):focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+@media (max-width: 900px) {
+  .inquiry-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding-block: 36px 54px;
+  }
+  .inquiry-intro {
+    max-width: 68ch;
+  }
+}
+@media (max-width: 480px) {
+  .inquiry-pair,
+  .dimension-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .inquiry-panel {
+    padding: 20px 16px;
+  }
+  .inquiry-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .inquiry-alternative {
+    justify-content: center;
+    text-align: center;
+  }
+}

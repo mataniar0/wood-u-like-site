@@ -147,8 +147,8 @@
       en: "story.",
     },
     "favorites.lead": {
-      he: "כל התמונות כאן הן של עבודות מקוריות שיצרנו. את האפשרויות להזמנה ולהקדשה נוסיף בשלב הבא.",
-      en: "These photographs show our own work. Ordering and dedication options will be added in a later stage.",
+      he: "כל התמונות כאן הן של עבודות מקוריות שיצרנו. אפשר לבקש בירור על חריטה, הקדשה והתאמה אישית.",
+      en: "All images here show original pieces we have made. You can inquire about engraving, dedications and personalization.",
     },
     "product.blessing.tag": {
       he: "מסורת ומשמעות",
@@ -235,8 +235,8 @@
       en: "A name, a date, a dedication or a favorite phrase gives a wooden piece a meaning of its own. The examples here are for inspiration only.",
     },
     "personal.notice": {
-      he: "פרטי יצירת הקשר יתווספו בהמשך. בשלב זה לא ניתן לשלוח פנייה או לבצע הזמנה דרך האתר.",
-      en: "Contact details will be added later. Enquiries and orders cannot currently be submitted through this website.",
+      he: "אפשר לעיין בטופס בירור והצעת מחיר. שליחת בקשות תתאפשר רק לאחר הפעלת ערוץ פנייה מאושר.",
+      en: "Explore the inquiry and quote form. Requests can be sent only after an approved contact channel is activated.",
     },
     "footer.values": {
       he: "מוצרי עץ • חריטה אישית • עבודת יד",
@@ -302,6 +302,290 @@
       he: "אנגלית",
       en: "English",
     },
+    "nav.inquiry": {
+      he: "בירור והצעת מחיר",
+      en: "Inquire & request a quote",
+    },
+    "product.quote": {
+      he: "בקשת הצעת מחיר",
+      en: "Request a quote",
+    },
+    "inquiry.meta.title": {
+      he: "בקשת הזמנה | WOOD U LIKE",
+      en: "Order inquiry | WOOD U LIKE",
+    },
+    "inquiry.meta.description": {
+      he: "בירור והצעת מחיר למתנות מעץ, חריטות והקדשות אישיות. הבקשה אינה הזמנה מחייבת או תשלום.",
+      en: "Inquire about wooden gifts, personal engravings and dedications. A request is not a binding order or payment.",
+    },
+    "inquiry.back": {
+      he: "בחזרה לאתר",
+      en: "Back to the website",
+    },
+    "inquiry.kicker": {
+      he: "מתנה אישית מתחילה בשיחה",
+      en: "A personal gift starts with a conversation",
+    },
+    "inquiry.title": {
+      he: "בקשת הזמנה",
+      en: "Order inquiry",
+    },
+    "inquiry.intro": {
+      he: "בחרו עבודה שמצאה חן בעיניכם או ספרו לנו על רעיון למתנה מעץ. נבדוק יחד אפשרויות חריטה והתאמה אישית.",
+      en: "Choose a piece you like or tell us about an idea for a wooden gift. We will review engraving and personalization options together.",
+    },
+    "inquiry.step.choose": {
+      he: "בוחרים ומתארים",
+      en: "Choose and describe",
+    },
+    "inquiry.step.chooseCopy": {
+      he: "בחרו מוצר, כמות וטקסט מדויק לחריטה או להקדשה. אפשר להוסיף מידות רצויות.",
+      en: "Choose a product, quantity and exact engraving or dedication text. You can add preferred dimensions.",
+    },
+    "inquiry.step.quote": {
+      he: "מקבלים הצעת מחיר",
+      en: "Receive a quote",
+    },
+    "inquiry.step.quoteCopy": {
+      he: "הפרטים נבדקים ידנית. אפשרויות העיצוב, המחיר והזמינות ייבדקו בשיחה, ללא הבטחת מועד אספקה.",
+      en: "Details are reviewed manually. Design options, price and availability will be discussed, without a promised delivery date.",
+    },
+    "inquiry.step.confirm": {
+      he: "מאשרים ומתאמים",
+      en: "Confirm and arrange",
+    },
+    "inquiry.step.confirmCopy": {
+      he: "לאחר אישור העיצוב, המחיר והזמינות, מתאמים תשלום וייצור. קישור תשלום ב־Grow יישלח ידנית מחוץ לאתר.",
+      en: "After design, price and availability are approved, payment and production are arranged. A Grow payment link will be sent manually outside this website.",
+    },
+    "inquiry.nonbinding": {
+      he: "זו בקשה להצעת מחיר, לא הזמנה מחייבת ולא תשלום. ניצור קשר לאחר בדיקת הפרטים.",
+      en: "This is a quote request, not a binding order or payment. We will contact you after reviewing the details.",
+    },
+    "inquiry.blocked": {
+      he: "שליחת בקשות דרך האתר אינה זמינה כרגע. אפשר לעיין בטופס, אך הפרטים לא יישלחו.",
+      en: "Sending requests through this website is currently unavailable. You can explore the form, but your details will not be sent.",
+    },
+    "inquiry.required": {
+      he: "שדות המסומנים ב־* נדרשים. מספיק אמצעי קשר אחד תקין. יתר הפרטים לבחירתכם.",
+      en: "Fields marked * are required. One valid contact method is enough. Other details are optional.",
+    },
+    "inquiry.product": {
+      he: "מוצר *",
+      en: "Product *",
+    },
+    "inquiry.choose": {
+      he: "בחרו מוצר",
+      en: "Choose a product",
+    },
+    "inquiry.product.blessing": {
+      he: "ברכת הדלקת נרות",
+      en: "Candle-lighting blessing",
+    },
+    "inquiry.product.welcome": {
+      he: "שלט ברוכים הבאים",
+      en: "Welcome sign",
+    },
+    "inquiry.product.kitchen": {
+      he: "קרש מטבח חרוט",
+      en: "Engraved kitchen board",
+    },
+    "inquiry.product.custom": {
+      he: "התאמה אישית / רעיון אחר — לשיחת היתכנות",
+      en: "Personalization / another idea — feasibility discussion",
+    },
+    "inquiry.planning": {
+      he: "בתכנון / לשיחת היתכנות. הבקשה היא לבדיקת אפשרויות בלבד, ללא התחייבות לזמינות או לייצור.",
+      en: "In planning / for a feasibility discussion. This request only explores possibilities, without a commitment to availability or production.",
+    },
+    "inquiry.name": {
+      he: "שם *",
+      en: "Name *",
+    },
+    "inquiry.contact": {
+      he: "אימייל או טלפון *",
+      en: "Email or phone *",
+    },
+    "inquiry.contactHelp": {
+      he: "הזינו כתובת אימייל או מספר טלפון אחד שנוכל לחזור אליו.",
+      en: "Enter one email address or phone number where we can reach you.",
+    },
+    "inquiry.quantity": {
+      he: "כמות *",
+      en: "Quantity *",
+    },
+    "inquiry.engraving": {
+      he: "טקסט מדויק לחריטה / הקדשה — רשות",
+      en: "Exact engraving / dedication text — optional",
+    },
+    "inquiry.engravingHelp": {
+      he: "עד 500 תווים. הקלידו את הטקסט כפי שתרצו שיופיע; ההתאמה תיבדק לפני ייצור.",
+      en: "Up to 500 characters. Enter the text as you would like it to appear; suitability will be reviewed before production.",
+    },
+    "inquiry.engravingPlaceholder": {
+      he: "שם, תאריך, ברכה או משפט אהוב",
+      en: "A name, date, blessing or favorite phrase",
+    },
+    "inquiry.idea": {
+      he: "תיאור הרעיון — רשות",
+      en: "Describe your idea — optional",
+    },
+    "inquiry.ideaPlaceholder": {
+      he: "למי המתנה, ואיזה פריט או מסר אתם מדמיינים?",
+      en: "Who is the gift for, and what piece or message do you have in mind?",
+    },
+    "inquiry.dimensions": {
+      he: "מידות רצויות במ״מ — רשות",
+      en: "Preferred dimensions in mm — optional",
+    },
+    "inquiry.dimensionsHelp": {
+      he: "השאירו ריק אם אינכם בטוחים. מידות אפשריות ייבדקו בשיחה.",
+      en: "Leave blank if unsure. Possible dimensions will be discussed.",
+    },
+    "inquiry.width": {
+      he: "רוחב",
+      en: "Width",
+    },
+    "inquiry.height": {
+      he: "אורך / גובה",
+      en: "Length / height",
+    },
+    "inquiry.thickness": {
+      he: "עובי",
+      en: "Thickness",
+    },
+    "inquiry.diameter": {
+      he: "קוטר",
+      en: "Diameter",
+    },
+    "inquiry.notes": {
+      he: "הערות / בקשות מיוחדות — רשות",
+      en: "Notes / special requests — optional",
+    },
+    "inquiry.notesPlaceholder": {
+      he: "סגנון, אירוע או שאלה על התאמה אישית",
+      en: "Style, occasion or a question about personalization",
+    },
+    "inquiry.delivery": {
+      he: "העדפת קבלה — רשות",
+      en: "Delivery preference — optional",
+    },
+    "inquiry.delivery.none": {
+      he: "ללא העדפה",
+      en: "No preference",
+    },
+    "inquiry.delivery.collection": {
+      he: "איסוף — לתיאום",
+      en: "Collection — to be arranged",
+    },
+    "inquiry.delivery.shipping": {
+      he: "משלוח — לבדיקת אפשרות",
+      en: "Shipping — subject to review",
+    },
+    "inquiry.deliveryHelp": {
+      he: "ההעדפה אינה התחייבות למחיר, למשלוח או למועד אספקה.",
+      en: "Your preference is not a commitment to a price, shipping or delivery date.",
+    },
+    "inquiry.honey": {
+      he: "השאירו שדה זה ריק",
+      en: "Leave this field empty",
+    },
+    "inquiry.send": {
+      he: "שליחת בקשה",
+      en: "Send request",
+    },
+    "inquiry.sendBlocked": {
+      he: "שליחה אינה זמינה",
+      en: "Sending unavailable",
+    },
+    "inquiry.sending": {
+      he: "שולחים את הבקשה…",
+      en: "Sending your request…",
+    },
+    "inquiry.sent": {
+      he: "הבקשה התקבלה בשירות הטפסים. זו אינה הזמנה מאושרת או תשלום; ניצור קשר לאחר בדיקה.",
+      en: "The form service has received your request. This is not a confirmed order or payment; we will contact you after review.",
+    },
+    "inquiry.invalid": {
+      he: "בדקו את השדות המסומנים. הפרטים עדיין לא נשלחו.",
+      en: "Check the highlighted fields. Your details have not been sent.",
+    },
+    "inquiry.error.name": {
+      he: "הזינו שם באורך עד 100 תווים.",
+      en: "Enter a name up to 100 characters.",
+    },
+    "inquiry.error.contact": {
+      he: "הזינו אימייל תקין או טלפון הכולל 7–15 ספרות.",
+      en: "Enter a valid email or a phone number with 7–15 digits.",
+    },
+    "inquiry.error.product": {
+      he: "בחרו מוצר מהרשימה.",
+      en: "Choose a product from the list.",
+    },
+    "inquiry.error.quantity": {
+      he: "הזינו כמות שלמה בין 1 ל־1000.",
+      en: "Enter a whole quantity between 1 and 1,000.",
+    },
+    "inquiry.error.dimension": {
+      he: "הזינו מידה חיובית עד 10,000 מ״מ, או השאירו ריק.",
+      en: "Enter a positive dimension up to 10,000 mm, or leave blank.",
+    },
+    "inquiry.error.long": {
+      he: "הטקסט ארוך מדי. קצרו אותו בהתאם למגבלת השדה.",
+      en: "The text is too long. Shorten it to the field limit.",
+    },
+    "inquiry.error.request": {
+      he: "שירות הטפסים לא אישר את הבקשה. הפרטים נשמרו בעמוד; בדקו אותם לפני ניסיון נוסף.",
+      en: "The form service did not accept the request. Your details remain on this page; check them before trying again.",
+    },
+    "inquiry.error.server": {
+      he: "שירות הטפסים אינו זמין כרגע. לא התקבל אישור שליחה; הפרטים נשמרו בעמוד.",
+      en: "The form service is unavailable. No acknowledgment was received; your details remain on this page.",
+    },
+    "inquiry.error.response": {
+      he: "לא התקבל אישור תקין משירות הטפסים. לפני ניסיון נוסף, בדקו אם הבקשה התקבלה כדי למנוע כפילות.",
+      en: "No valid acknowledgment was received. Before retrying, check whether the request arrived to avoid duplicates.",
+    },
+    "inquiry.error.network": {
+      he: "החיבור לשירות נכשל. לא ידוע אם הבקשה התקבלה; הפרטים נשמרו. בדקו לפני ניסיון נוסף כדי למנוע כפילות.",
+      en: "The connection failed. It is unknown whether the request arrived; your details remain. Check before retrying to avoid duplicates.",
+    },
+    "inquiry.error.timeout": {
+      he: "תם זמן ההמתנה לאישור. לא ידוע אם הבקשה התקבלה; בדקו לפני ניסיון נוסף כדי למנוע כפילות.",
+      en: "The acknowledgment timed out. It is unknown whether the request arrived; check before retrying to avoid duplicates.",
+    },
+    "inquiry.error.spam": {
+      he: "הבקשה לא נשלחה. בדקו את הטופס ונסו שוב.",
+      en: "The request was not sent. Check the form and try again.",
+    },
+    "inquiry.whatsapp": {
+      he: "הכנת הודעה ב־WhatsApp",
+      en: "Prepare a WhatsApp message",
+    },
+    "inquiry.email": {
+      he: "הכנת הודעה באימייל",
+      en: "Prepare an email message",
+    },
+    "inquiry.external": {
+      he: "ההודעה תיפתח באפליקציה חיצונית עם הפרטים שמילאתם. השליחה מתבצעת מחוץ לאתר, ביוזמתכם.",
+      en: "The message will open in an external app with the details you entered. You send it outside this website, at your discretion.",
+    },
+    "inquiry.externalStatus": {
+      he: "הוכנה הודעה לפנייה מחוץ לאתר. יש לשלוח אותה באפליקציה; האתר לא שלח בקשה.",
+      en: "A message was prepared for contact outside this website. Send it in the app; this website has not submitted a request.",
+    },
+    "inquiry.messageIntro": {
+      he: "שלום WOOD U LIKE, אשמח לבירור ולהצעת מחיר.",
+      en: "Hello WOOD U LIKE, I would like to inquire and request a quote.",
+    },
+    "inquiry.messageSubject": {
+      he: "WOOD U LIKE — בקשת הצעת מחיר",
+      en: "WOOD U LIKE — Quote request",
+    },
+    "inquiry.noscript": {
+      he: "לצורך שימוש בטופס נדרש JavaScript. שום בקשה לא תישלח ללא הפעלתו והגדרה מאושרת.",
+      en: "JavaScript is required to use the form. No request will be sent without it and approved configuration.",
+    },
   };
   let language = "he";
   let initialized = false;
@@ -330,7 +614,13 @@
     document.querySelectorAll("[data-i18n]").forEach((node) => {
       node.textContent = t(node.dataset.i18n);
     });
-    for (const attribute of ["alt", "aria-label", "content", "title"]) {
+    for (const attribute of [
+      "alt",
+      "aria-label",
+      "content",
+      "title",
+      "placeholder",
+    ]) {
       document.querySelectorAll(`[data-i18n-${attribute}]`).forEach((node) => {
         node.setAttribute(
           attribute,

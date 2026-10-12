@@ -27,7 +27,8 @@ if (toggle && menu) {
   menu.addEventListener("click", (event) => {
     const link = event.target.closest("a");
     if (!link) return;
-    const target = document.querySelector(link.getAttribute("href"));
+    const href = link.getAttribute("href");
+    const target = href?.startsWith("#") ? document.getElementById(href.slice(1)) : null;
     closeMenu();
     if (target) {
       target.setAttribute("tabindex", "-1");
