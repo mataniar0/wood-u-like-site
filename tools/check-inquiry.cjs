@@ -546,20 +546,23 @@ function pass(test, language, extra = {}) {
         await x.context.close();
       }
     }
-    // Verify WUL-007 labels and service payload using intercepted fixtures only.
-    for (const lang of ["he", "en"]) {
+    // Independent product labels and payloads; intercepted fixtures only.
+    for (const [productId, productName, hebrewLabel] of [
+      ["family-sign", "Personalized wooden door sign", "שלט משפחתי לדלת"],
+      ["hanging-home-sign", "Personalized hanging wooden home sign", "שלט תלוי לבית — שוורץ"],
+    ]) for (const lang of ["he", "en"]) {
       const s = await setup(lang, approved);
       await fill(s.page);
-      await s.page.locator("#product").selectOption("family-sign");
+      await s.page.locator("#product").selectOption(productId);
       await submit(s.page);
       await s.page.waitForFunction(() => document.querySelector("#inquiry-status").dataset.state === "success");
       assert.equal(s.posts, 1);
-      assert.equal(s.payload.product, "family-sign");
-      assert.equal(s.payload.product_name, "Personalized wooden door sign");
-      assert.equal(s.payload.product_label, lang === "he" ? "שלט משפחתי לדלת" : "Personalized wooden door sign");
-      assert.equal(s.payload._subject, "WOOD U LIKE — Personalized wooden door sign");
+      assert.equal(s.payload.product, productId);
+      assert.equal(s.payload.product_name, productName);
+      assert.equal(s.payload.product_label, lang === "he" ? hebrewLabel : productName);
+      assert.equal(s.payload._subject, `WOOD U LIKE — ${productName}`);
       assert.equal(s.payload.language, lang);
-      pass("family-sign:simulated-payload", lang);
+      pass(`${productId}:simulated-payload`, lang);
       await s.context.close();
     }
     const nojs = await browser.newContext({ javaScriptEnabled: false });

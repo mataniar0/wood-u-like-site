@@ -69,3 +69,7 @@ NODE_PATH=/tmp/wul-check/node_modules node tools/check-language.cjs
 ## בדיקות WUL-004
 
 בדיקות הטופס ותגובת השירות מדומות בלבד, ללא פניות אמיתיות. פקודות מלאות ב־[inquiry/README.md](inquiry/README.md); דוח, השוואת מנגנון המקור וצילומי מסך ב־[docs/review/wul-004/REPORT_HE.md](docs/review/wul-004/REPORT_HE.md).
+
+## בדיקות WUL-009
+
+שוורץ הוא מוצר עצמאי ב־Home Signs, עם הדמיה מאושרת וגילוי דו־לשוני. מזוז נשמר ב־Door Signs. בגרסה זו שישה כרטיסי קטגוריות וחמישה מוצרים; השתמשו ב־`tools/check-schwartz-sign.cjs` לבדיקת שני המוצרים והפריסה הנוכחית. הוראות שחזור, ראיות, צילומי מסך ומחזורי תיקון ב־[דוח WUL-009](docs/review/wul-009/REPORT_HE.md). השליחה הציבורית נשארת חסומה.
