@@ -60,13 +60,13 @@ const base =
         );
         assert.equal(
           await page.locator('[data-i18n="category.signs"]').textContent(),
-          lang === "he" ? "שלטים לבית" : "Home Signs",
+          lang === "he" ? "שלטים לדלת" : "Door Signs",
         );
         assert.equal(
           await page
             .locator('#family-sign-work [data-i18n="product.family.title"]')
             .textContent(),
-          lang === "he" ? "שלט משפחתי מעץ" : "Personalized wooden family sign",
+          lang === "he" ? "שלט משפחתי לדלת" : "Personalized wooden door sign",
         );
         for (const image of await page
           .locator(".family-sign-category img,.family-sign-card img")
@@ -146,6 +146,13 @@ const base =
           await page.locator("#inquiry-status").getAttribute("data-state"),
           "",
         );
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+        await page.addScriptTag({ path: require.resolve("axe-core/axe.min.js") });
+        const inquiryViolations = await page.evaluate(async () => (await axe.run(document, {
+          runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] }
+        })).violations.map(v => v.id));
+        assert.deepEqual(inquiryViolations, []);
+        await page.screenshot({ path: path.join(out, `screenshots/${lang}-${width}-inquiry-full.png`), fullPage: true });
         const other = lang === "he" ? "en" : "he";
         await page.locator(`[data-language="${other}"]`).click();
         assert.equal(
@@ -154,7 +161,7 @@ const base =
         );
         assert.equal(
           await page.locator('option[value="family-sign"]').textContent(),
-          other === "he" ? "שלט משפחתי מעץ" : "Personalized wooden family sign",
+          other === "he" ? "שלט משפחתי לדלת" : "Personalized wooden door sign",
         );
         await page.locator(".inquiry-back").click();
         await page.waitForURL(base);

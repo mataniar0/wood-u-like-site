@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
-const output = path.join(root, "docs/review/wul-004");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-004");
 const base =
   process.env.WUL_BASE_URL || "http://127.0.0.1:8002/wood-u-like-site/";
 const endpoint = "https://formspree.io/f/wulqatest"; // Intercepted fixture, never a live destination.
@@ -545,6 +545,22 @@ function pass(test, language, extra = {}) {
         pass("external-channels:" + (enabled ? "approved" : "hidden"), lang);
         await x.context.close();
       }
+    }
+    // Verify WUL-007 labels and service payload using intercepted fixtures only.
+    for (const lang of ["he", "en"]) {
+      const s = await setup(lang, approved);
+      await fill(s.page);
+      await s.page.locator("#product").selectOption("family-sign");
+      await submit(s.page);
+      await s.page.waitForFunction(() => document.querySelector("#inquiry-status").dataset.state === "success");
+      assert.equal(s.posts, 1);
+      assert.equal(s.payload.product, "family-sign");
+      assert.equal(s.payload.product_name, "Personalized wooden door sign");
+      assert.equal(s.payload.product_label, lang === "he" ? "שלט משפחתי לדלת" : "Personalized wooden door sign");
+      assert.equal(s.payload._subject, "WOOD U LIKE — Personalized wooden door sign");
+      assert.equal(s.payload.language, lang);
+      pass("family-sign:simulated-payload", lang);
+      await s.context.close();
     }
     const nojs = await browser.newContext({ javaScriptEnabled: false });
     const p = await nojs.newPage();

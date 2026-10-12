@@ -15,7 +15,7 @@
       dimensions: ["width", "height", "thickness"],
     },
     "family-sign": {
-      name: "Personalized wooden family sign",
+      name: "Personalized wooden door sign",
       dimensions: ["width", "height"],
     },
     custom: {

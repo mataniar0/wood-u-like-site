@@ -60,7 +60,7 @@
     "status": "PASS",
     "headerHeight": 141,
     "headerDelta": 0,
-    "initialCLS": 0.0008982104349415204,
+    "initialCLS": 0.0034653568165204677,
     "axe": [],
     "errors": []
   },
@@ -190,7 +190,7 @@
     "status": "PASS",
     "headerHeight": 97,
     "headerDelta": 0,
-    "initialCLS": 0.0012777389463573816,
+    "initialCLS": 0.00026198162816679527,
     "axe": [],
     "errors": []
   },
