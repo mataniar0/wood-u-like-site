@@ -586,6 +586,24 @@
       he: "לצורך שימוש בטופס נדרש JavaScript. שום בקשה לא תישלח ללא הפעלתו והגדרה מאושרת.",
       en: "JavaScript is required to use the form. No request will be sent without it and approved configuration.",
     },
+    "category.signs": { he: "שלטים לבית", en: "Home Signs" },
+    "product.family.title": {
+      he: "שלט משפחתי מעץ",
+      en: "Personalized wooden family sign",
+    },
+    "product.family.copy": {
+      he: "שלט עץ אליפטי עם שם משפחה, מסגרת חרוטה, עלים וציפורים.",
+      en: "An oval wooden family sign with an engraved border, leaves and birds.",
+    },
+    "product.family.tag": { he: "שלטים לבית", en: "Home Signs" },
+    "image.family": {
+      he: "שלט עץ אליפטי עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ",
+      en: "Oval wooden sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface",
+    },
+    "inquiry.product.family-sign": {
+      he: "שלט משפחתי מעץ",
+      en: "Personalized wooden family sign",
+    },
   };
   let language = "he";
   let initialized = false;

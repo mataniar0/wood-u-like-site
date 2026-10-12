@@ -1,0 +1,126 @@
+{
+  "results": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "futureSixthCard": "PASS",
+      "blockedInquiry": "PASS"
+    }
+  ],
+  "externalRequests": 0,
+  "realInquiryRequests": 0
+}
