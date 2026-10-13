@@ -129,13 +129,9 @@ const base =
             });
         }
         assert.equal(await page.locator('[data-i18n="category.homeSigns"]').first().textContent(), lang === "he" ? "שלטים לבית" : "Home Signs");
-        assert.equal(await page.locator('#hanging-home-sign-work h3').textContent(), lang === "he" ? "שלט תלוי לבית — שוורץ" : "Personalized hanging wooden home sign");
+        assert.equal(await page.locator('#hanging-home-sign-work h3').textContent(), lang === "he" ? "שלט תלוי לבית" : "Personalized hanging wooden home sign");
         for (const container of [".schwartz-sign-category", ".schwartz-sign-card"]) {
-          const disclosure = page.locator(`${container} .mockup-disclosure`);
-          assert.equal(await disclosure.isVisible(), true);
-          assert.ok(await disclosure.evaluate(e => parseFloat(getComputedStyle(e).fontSize) >= 14));
-          assert.equal(await disclosure.evaluate(e => getComputedStyle(e).color), "rgb(40, 55, 45)");
-          assert.equal(await disclosure.textContent(), lang === "he" ? "הדמיה להמחשה" : "Illustrative mockup");
+          assert.equal(await page.locator(`${container} .mockup-disclosure`).count(), 0);
           const image = page.locator(`${container} img`);
           assert.equal(await image.getAttribute("alt"), lang === "he" ? "הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים" : "Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds");
           assert.equal(await image.evaluate(i => getComputedStyle(i).objectFit), "contain");
@@ -196,7 +192,7 @@ const base =
         const activeLang = other;
         assert.equal(await page.locator("html").getAttribute("lang"), activeLang);
         assert.equal(await page.locator("#product").inputValue(), "hanging-home-sign");
-        assert.equal((await page.locator('option[value="hanging-home-sign"]').textContent()).trim(), activeLang === "he" ? "שלט תלוי לבית — שוורץ" : "Personalized hanging wooden home sign");
+        assert.equal((await page.locator('option[value="hanging-home-sign"]').textContent()).trim(), activeLang === "he" ? "שלט תלוי לבית" : "Personalized hanging wooden home sign");
         await page.locator("#customer-name").fill("QA fixture");
         await page.locator("#contact").fill("fixture@example.invalid");
         await page.locator("#quantity").fill("2");
@@ -205,7 +201,7 @@ const base =
         assert.equal(await page.locator("#inquiry-status").getAttribute("data-state"), "");
         await page.locator(`[data-language="${lang}"]`).click();
         assert.equal(await page.locator("#product").inputValue(), "hanging-home-sign");
-        assert.equal((await page.locator('option[value="hanging-home-sign"]').textContent()).trim(), lang === "he" ? "שלט תלוי לבית — שוורץ" : "Personalized hanging wooden home sign");
+        assert.equal((await page.locator('option[value="hanging-home-sign"]').textContent()).trim(), lang === "he" ? "שלט תלוי לבית" : "Personalized hanging wooden home sign");
         await page.screenshot({path:path.join(out, `screenshots/${lang}-${width}-schwartz-inquiry.png`),fullPage:true,mask:[page.locator("input:visible,textarea:visible")]});
         await page.locator(".inquiry-back").click();
         await page.waitForURL(base);
