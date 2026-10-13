@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname, "..");
-const out = path.join(root, "docs/review/wul-008");
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-008");
 const base =
   process.env.WUL_BASE_URL || "http://127.0.0.1:8005/wood-u-like-site/";
 (async () => {
@@ -150,8 +150,8 @@ const base =
           const image = page.locator(`${container} img`);
           assert.ok((await image.getAttribute("alt")).includes("From Oven to Table"));
           assert.equal(await image.evaluate(i => getComputedStyle(i).objectFit), "contain");
-          assert.equal(await image.getAttribute("width"), "1500");
-          assert.equal(await image.getAttribute("height"), "2000");
+          assert.equal(await image.getAttribute("width"), "1086");
+          assert.equal(await image.getAttribute("height"), "1448");
           assert.ok(await image.evaluate(i => i.complete && i.naturalWidth > 0));
           assert.equal(await page.locator(`${container} .mockup-disclosure`).count(), 0);
         }
