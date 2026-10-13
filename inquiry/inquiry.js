@@ -22,6 +22,10 @@
       name: "Personalized hanging wooden home sign",
       dimensions: ["width", "height"],
     },
+    "pizza-peel": {
+      name: "Personalized Pizza Peel",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],
