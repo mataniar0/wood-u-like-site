@@ -1,0 +1,29 @@
+{
+  "baseline": "9277e174af1dc3a0fcb6cafe1bda061c724de895",
+  "onlyPizzaImageTagMetadataChanged": "PASS",
+  "unchanged": {
+    "assets/images/hero-approved-v2.webp": "PASS",
+    "assets/images/hero-welcome.webp": "PASS",
+    "assets/images/judaica-blessing.webp": "PASS",
+    "assets/images/family-sign-small.webp": "PASS",
+    "assets/images/kitchen-board.webp": "PASS",
+    "assets/images/workshop-small.webp": "PASS",
+    "assets/images/schwartz-home-sign.webp": "PASS",
+    "assets/images/orchid.webp": "PASS",
+    "assets/images/orchid-small.webp": "PASS",
+    "assets/images/judaica-blessing-small.webp": "PASS",
+    "assets/images/kitchen-board-small.webp": "PASS",
+    "assets/images/family-sign.webp": "PASS",
+    "assets/images/workshop.webp": "PASS",
+    "assets/images/hero-approved-v2-small.webp": "PASS",
+    "assets/images/README.md": "PASS",
+    "assets/images/hero-welcome-small.webp": "PASS",
+    "assets/images/schwartz-home-sign-small.webp": "PASS",
+    "assets/js/language.js": "PASS",
+    "inquiry/index.html": "PASS",
+    "inquiry/inquiry.js": "PASS",
+    "inquiry/contact-config.js": "PASS",
+    "assets/css/style.css": "PASS",
+    "assets/js/main.js": "PASS"
+  }
+}
