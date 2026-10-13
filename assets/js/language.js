@@ -123,8 +123,8 @@
       en: "Personal gifts",
     },
     "category.judaica": {
-      he: "ברכות ויודאיקה",
-      en: "Blessings & Judaica",
+      he: "יודאיקה",
+      en: "Judaica",
     },
     "category.kitchen": {
       he: "מטבח ואירוח",
