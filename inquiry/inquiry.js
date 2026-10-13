@@ -50,7 +50,7 @@
     );
   const canSend =
     privacyReady &&
-    config.dedicatedFormApproved === true &&
+    config.formDestinationApproved === true &&
     /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/u.test(
       config.formEndpoint || "",
     );
@@ -77,10 +77,10 @@
           : "inquiry.send",
     );
     control("availability").hidden = canSend;
-    control("privacy-notice").hidden = !privacyReady;
-    control("privacy-notice").textContent = privacyReady
-      ? config.privacyText[i18n.language]
-      : "";
+    const privacyCopy = config.privacyText?.[i18n.language];
+    control("privacy-notice").hidden = !(typeof privacyCopy === "string" && privacyCopy.trim());
+    control("privacy-preview").hidden = privacyReady;
+    control("privacy-copy").textContent = typeof privacyCopy === "string" ? privacyCopy : "";
     whatsapp.hidden = !canWhatsApp;
     email.hidden = !canEmail;
     control("external-note").hidden = !(canWhatsApp || canEmail);
@@ -192,7 +192,9 @@
       notes: control("notes").value.trim(),
       delivery: control("delivery").value,
       planning: !!products[product.value].planning,
-      _subject: `WOOD U LIKE — ${products[product.value].name}`,
+      brand: "WOOD U LIKE",
+      source_site: "wood-u-like-site",
+      subject: `WOOD U LIKE — ${products[product.value].name}`,
     };
     if (emailPattern.test(data.contact)) data.email = data.contact;
     if (product.value === "custom") data.idea = control("idea").value.trim();
@@ -323,7 +325,7 @@
         method: "POST",
         mode: "cors",
         credentials: "omit",
-        referrerPolicy: "no-referrer",
+        referrerPolicy: "strict-origin-when-cross-origin",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
