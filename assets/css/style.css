@@ -1251,13 +1251,6 @@ html[lang="en"] .benefits-grid > div + div {
   object-position: center;
 }
 .schwartz-sign-category:hover .category-img img { transform: none; }
-.mockup-disclosure, .product-card > .mockup-disclosure {
-  /* Match the existing accessibility color overrides while keeping disclosure distinct. */
-  color: var(--ink) !important;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 8px 0;
-}
 /* Center a final single category without changing the six-category layout. */
 @media (min-width: 1101px) {
   .category-grid > .category-card:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
