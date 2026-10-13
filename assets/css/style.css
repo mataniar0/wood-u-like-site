@@ -1255,3 +1255,10 @@ html[lang="en"] .benefits-grid > div + div {
 @media (min-width: 1101px) {
   .category-grid > .category-card:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
 }
+
+/* Keep the approved peel photograph and its entire handle visible. */
+.pizza-peel-category img, .pizza-peel-card img {
+  object-fit: contain;
+  object-position: center;
+}
+.pizza-peel-category:hover .category-img img { transform: none; }

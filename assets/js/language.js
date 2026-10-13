@@ -609,6 +609,11 @@
     "product.schwartz.copy": { he: "שלט עץ מלבני לבית, תלוי בשרשרת, עם שם משפחה ושני עיטורי ציפורים.", en: "A rectangular wooden home sign, hung from a chain, with a family name and two bird motifs." },
     "image.schwartz": { he: "הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים", en: "Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds" },
     "inquiry.product.hanging-home-sign": { he: "שלט תלוי לבית", en: "Personalized hanging wooden home sign" },
+    "category.originalGifts": { he: "מתנות מקוריות", en: "Original Gifts" },
+    "product.pizzaPeel.title": { he: "מרדה לפיצה", en: "Personalized Pizza Peel" },
+    "product.pizzaPeel.copy": { he: "מרדה מעץ לפיצה עם חריטה אישית. מתנה מקורית לחובבי אפייה, אירוח ופיצה ביתית, במראה חם וטבעי.", en: "A wooden pizza peel with personalized engraving. An original gift for pizza lovers, home bakers and hosts, with a warm natural look." },
+    "image.pizzaPeel": { he: "מרדה עץ לפיצה עם ידית ארוכה וחריטת From Oven to Table ואיור תנור פיצה, מונחת על משטח עץ", en: "Wooden pizza peel with a long handle, engraved with “From Oven to Table” and a pizza oven illustration, photographed on a wooden surface" },
+    "inquiry.product.pizza-peel": { he: "מרדה לפיצה", en: "Personalized Pizza Peel" },
   };
   let language = "he";
   let initialized = false;
