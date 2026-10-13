@@ -147,8 +147,8 @@
       en: "story.",
     },
     "favorites.lead": {
-      he: "מבחר עבודות והדמיות המסומנות להמחשה. אפשר לבקש בירור על חריטה, הקדשה והתאמה אישית.",
-      en: "A selection of our work and clearly labeled illustrative mockups. You can inquire about engraving, dedications and personalization.",
+      he: "מבחר עבודות ודוגמאות לעיצוב בהתאמה אישית. אפשר לבקש בירור על חריטה, הקדשה והתאמה אישית.",
+      en: "Our work and examples of personalized designs. You can inquire about engraving, dedications and customization.",
     },
     "product.blessing.tag": {
       he: "מסורת ומשמעות",
@@ -187,8 +187,8 @@
       en: "Natural wood with a little message for the kitchen",
     },
     "favorites.note": {
-      he: "עבודות והדמיות להמחשה · עדיין לא קטלוג מכירה",
-      en: "Work and illustrative mockups · Not yet a sales catalog",
+      he: "דוגמאות לעיצוב ולמוצרים בהתאמה אישית · עדיין לא קטלוג מכירה",
+      en: "Personalized product and design examples · Not yet a sales catalog",
     },
     "story.kicker": {
       he: "OUR STORY / הסיפור שלנו",
@@ -605,11 +605,10 @@
       en: "Personalized wooden door sign",
     },
     "category.homeSigns": { he: "שלטים לבית", en: "Home Signs" },
-    "product.schwartz.title": { he: "שלט תלוי לבית — שוורץ", en: "Personalized hanging wooden home sign" },
+    "product.schwartz.title": { he: "שלט תלוי לבית", en: "Personalized hanging wooden home sign" },
     "product.schwartz.copy": { he: "שלט עץ מלבני לבית, תלוי בשרשרת, עם שם משפחה ושני עיטורי ציפורים.", en: "A rectangular wooden home sign, hung from a chain, with a family name and two bird motifs." },
     "image.schwartz": { he: "הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים", en: "Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds" },
-    "image.mockupDisclosure": { he: "הדמיה להמחשה", en: "Illustrative mockup" },
-    "inquiry.product.hanging-home-sign": { he: "שלט תלוי לבית — שוורץ", en: "Personalized hanging wooden home sign" },
+    "inquiry.product.hanging-home-sign": { he: "שלט תלוי לבית", en: "Personalized hanging wooden home sign" },
   };
   let language = "he";
   let initialized = false;
