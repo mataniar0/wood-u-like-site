@@ -549,7 +549,7 @@ function pass(test, language, extra = {}) {
     // Independent product labels and payloads; intercepted fixtures only.
     for (const [productId, productName, hebrewLabel] of [
       ["family-sign", "Personalized wooden door sign", "שלט משפחתי לדלת"],
-      ["hanging-home-sign", "Personalized hanging wooden home sign", "שלט תלוי לבית — שוורץ"],
+      ["hanging-home-sign", "Personalized hanging wooden home sign", "שלט תלוי לבית"],
     ]) for (const lang of ["he", "en"]) {
       const s = await setup(lang, approved);
       await fill(s.page);
