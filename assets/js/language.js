@@ -147,8 +147,8 @@
       en: "story.",
     },
     "favorites.lead": {
-      he: "כל התמונות כאן הן של עבודות מקוריות שיצרנו. אפשר לבקש בירור על חריטה, הקדשה והתאמה אישית.",
-      en: "All images here show original pieces we have made. You can inquire about engraving, dedications and personalization.",
+      he: "מבחר עבודות והדמיות המסומנות להמחשה. אפשר לבקש בירור על חריטה, הקדשה והתאמה אישית.",
+      en: "A selection of our work and clearly labeled illustrative mockups. You can inquire about engraving, dedications and personalization.",
     },
     "product.blessing.tag": {
       he: "מסורת ומשמעות",
@@ -187,8 +187,8 @@
       en: "Natural wood with a little message for the kitchen",
     },
     "favorites.note": {
-      he: "דוגמאות להמחשה מתוך העבודות הקיימות · עדיין לא קטלוג מכירה",
-      en: "Examples from our existing work · Not yet a sales catalog",
+      he: "עבודות והדמיות להמחשה · עדיין לא קטלוג מכירה",
+      en: "Work and illustrative mockups · Not yet a sales catalog",
     },
     "story.kicker": {
       he: "OUR STORY / הסיפור שלנו",
@@ -604,6 +604,12 @@
       he: "שלט משפחתי לדלת",
       en: "Personalized wooden door sign",
     },
+    "category.homeSigns": { he: "שלטים לבית", en: "Home Signs" },
+    "product.schwartz.title": { he: "שלט תלוי לבית — שוורץ", en: "Personalized hanging wooden home sign" },
+    "product.schwartz.copy": { he: "שלט עץ מלבני לבית, תלוי בשרשרת, עם שם משפחה ושני עיטורי ציפורים.", en: "A rectangular wooden home sign, hung from a chain, with a family name and two bird motifs." },
+    "image.schwartz": { he: "הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים", en: "Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds" },
+    "image.mockupDisclosure": { he: "הדמיה להמחשה", en: "Illustrative mockup" },
+    "inquiry.product.hanging-home-sign": { he: "שלט תלוי לבית — שוורץ", en: "Personalized hanging wooden home sign" },
   };
   let language = "he";
   let initialized = false;

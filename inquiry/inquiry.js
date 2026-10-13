@@ -18,6 +18,10 @@
       name: "Personalized wooden door sign",
       dimensions: ["width", "height"],
     },
+    "hanging-home-sign": {
+      name: "Personalized hanging wooden home sign",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],

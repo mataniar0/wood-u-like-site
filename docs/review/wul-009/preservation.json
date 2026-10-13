@@ -1,0 +1,28 @@
+{
+  "baseline": "64a112894045c5c43feb4e3c7935cb7fe60bf22f",
+  "approvedSource": "PASS",
+  "previousImages": {
+    "assets/images/hero-approved-v2.webp": "PASS",
+    "assets/images/hero-welcome.webp": "PASS",
+    "assets/images/judaica-blessing.webp": "PASS",
+    "assets/images/family-sign-small.webp": "PASS",
+    "assets/images/kitchen-board.webp": "PASS",
+    "assets/images/workshop-small.webp": "PASS",
+    "assets/images/orchid.webp": "PASS",
+    "assets/images/orchid-small.webp": "PASS",
+    "assets/images/judaica-blessing-small.webp": "PASS",
+    "assets/images/kitchen-board-small.webp": "PASS",
+    "assets/images/family-sign.webp": "PASS",
+    "assets/images/workshop.webp": "PASS",
+    "assets/images/hero-approved-v2-small.webp": "PASS",
+    "assets/images/README.md": "PASS",
+    "assets/images/hero-welcome-small.webp": "PASS"
+  },
+  "originalProductCards": {
+    "family-sign-work": "PASS",
+    "blessing-work": "PASS",
+    "welcome-work": "PASS",
+    "kitchen-work": "PASS"
+  },
+  "FormspreeConfig": "PASS"
+}

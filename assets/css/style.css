@@ -1224,7 +1224,7 @@ html[lang="en"] .benefits-grid > div + div {
   margin-inline-start: 8px;
 }
 
-/* Home Signs: balanced five-category layout, with room for a sixth category. */
+/* Collections: three columns on desktop, two on tablet, with room for future categories. */
 .category-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .category-grid > .category-card { grid-column: span 2; min-width: 0; }
 .category-grid > .category-card:nth-child(4):nth-last-child(2) { grid-column: 2 / span 2; }
@@ -1243,4 +1243,22 @@ html[lang="en"] .benefits-grid > div + div {
 }
 @media (max-width: 480px) {
  .category-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Preserve the full approved mockup, including its chain and both birds. */
+.schwartz-sign-category img, .schwartz-sign-card img {
+  object-fit: contain;
+  object-position: center;
+}
+.schwartz-sign-category:hover .category-img img { transform: none; }
+.mockup-disclosure, .product-card > .mockup-disclosure {
+  /* Match the existing accessibility color overrides while keeping disclosure distinct. */
+  color: var(--ink) !important;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+/* Center a final single category without changing the six-category layout. */
+@media (min-width: 1101px) {
+  .category-grid > .category-card:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
 }
