@@ -1,0 +1,162 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 25
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 25.700000002980232
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 18
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 15.900000005960464
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 28
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 14.400000005960464
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 12.899999991059303
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 19.400000005960464
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 20.600000008940697
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8007/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 19.5
+  }
+]

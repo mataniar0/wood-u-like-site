@@ -614,6 +614,7 @@
     "product.pizzaPeel.copy": { he: "מרדה מעץ לפיצה עם חריטה אישית. מתנה מקורית לחובבי אפייה, אירוח ופיצה ביתית, במראה חם וטבעי.", en: "A wooden pizza peel with personalized engraving. An original gift for pizza lovers, home bakers and hosts, with a warm natural look." },
     "image.pizzaPeel": { he: "מרדה עץ לפיצה עם ידית ארוכה וחריטת From Oven to Table ואיור תנור פיצה, מונחת על משטח עץ", en: "Wooden pizza peel with a long handle, engraved with “From Oven to Table” and a pizza oven illustration, photographed on a wooden surface" },
     "inquiry.product.pizza-peel": { he: "מרדה לפיצה", en: "Personalized Pizza Peel" },
+    "inquiry.privacyPreview": { he: "תצוגה מקדימה של גילוי הפרטיות — שליחת פניות עדיין חסומה.", en: "Privacy notice preview — public sending is still disabled." },
   };
   let language = "he";
   let initialized = false;

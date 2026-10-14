@@ -10,7 +10,7 @@ const base =
 const endpoint = "https://formspree.io/f/wulqatest"; // Intercepted fixture, never a live destination.
 const approved = {
   formEndpoint: endpoint,
-  dedicatedFormApproved: true,
+  formDestinationApproved: true,
   privacyApproved: true,
   privacyText: { he: "נוסח בדיקה מדומה בלבד", en: "Simulated test copy only" },
   contactDetailsApproved: false,
@@ -61,6 +61,12 @@ function pass(test, language, extra = {}) {
         intercepted++;
         payload = route.request().postDataJSON();
         assert.equal(route.request().headers().accept, "application/json");
+        assert.equal(payload.brand, "WOOD U LIKE");
+        assert.equal(payload.source_site, "wood-u-like-site");
+        assert.ok(payload.subject.startsWith("WOOD U LIKE — "));
+        assert.ok(!JSON.stringify(payload).includes("ASSEMBL LAB"));
+        assert.equal(payload._subject, undefined);
+        assert.equal(route.request().headers().referer, new URL(base).origin + "/");
         if (scenario === "timeout" || scenario === "pending") return;
         if (scenario === "network") return route.abort("failed");
         const status = Number(scenario) || 200;
@@ -100,7 +106,7 @@ function pass(test, language, extra = {}) {
       if (new URL(r.url()).origin === new URL(base).origin && r.status() >= 400)
         errors.push(`local HTTP ${r.status()}`);
     });
-    await page.goto(base + "inquiry/");
+    await page.goto(base + "inquiry/?brand=ASSEMBL%20LAB&source_site=attacker&subject=attacker");
     return {
       context,
       page,
@@ -174,6 +180,12 @@ function pass(test, language, extra = {}) {
         );
         assert.equal(await p.locator("#send-request").isDisabled(), true);
         assert.equal(await p.locator("#availability").isVisible(), true);
+        assert.equal(await p.locator("#privacy-notice").isVisible(), true);
+        assert.equal(await p.locator("#privacy-preview").isVisible(), true);
+        assert.ok((await p.locator("#privacy-copy").textContent()).includes("Formspree"));
+        assert.equal(await p.locator('#privacy-notice a').getAttribute('href'), 'mailto:labassemble@gmail.com');
+        const placement = await p.evaluate(() => ({button:document.querySelector('#send-request').getBoundingClientRect().bottom,notice:document.querySelector('#privacy-notice').getBoundingClientRect().top}));
+        assert.ok(placement.notice >= placement.button && placement.notice - placement.button < 40);
         assert.equal(await p.locator("#email-request").isVisible(), false);
         assert.equal(await p.locator("#whatsapp-request").isVisible(), false);
         await fill(p);
@@ -490,7 +502,13 @@ function pass(test, language, extra = {}) {
         { ...approved, formEndpoint: "https://example.invalid/f/test" },
         { ...approved, privacyApproved: false },
         { ...approved, privacyText: { he: "approved", en: "" } },
-        { ...approved, dedicatedFormApproved: false },
+        { ...approved, formDestinationApproved: false },
+        { ...approved, formDestinationApproved: undefined },
+        { ...approved, formDestinationApproved: "true" },
+        { ...approved, privacyApproved: "true" },
+        { ...approved, privacyText: { he: "", en: "approved" } },
+        { ...approved, privacyText: { he: "approved", en: "   " } },
+        { ...approved, formDestinationApproved: undefined, dedicatedFormApproved: true },
       ]) {
         const x = await setup(lang, config);
         await fill(x.page);
@@ -561,7 +579,7 @@ function pass(test, language, extra = {}) {
       assert.equal(s.payload.product, productId);
       assert.equal(s.payload.product_name, productName);
       assert.equal(s.payload.product_label, lang === "he" ? hebrewLabel : productName);
-      assert.equal(s.payload._subject, `WOOD U LIKE — ${productName}`);
+      assert.equal(s.payload.subject, `WOOD U LIKE — ${productName}`);
       assert.equal(s.payload.language, lang);
       pass(`${productId}:simulated-payload`, lang);
       await s.context.close();
@@ -571,6 +589,7 @@ function pass(test, language, extra = {}) {
     await p.goto(base + "inquiry/");
     assert.equal(await p.locator("#send-request").isDisabled(), true);
     assert.equal(await p.locator("noscript").isVisible(), true);
+    assert.equal(await p.locator("#privacy-notice").isVisible(), true);
     await nojs.close();
     pass("no-JavaScript", "he");
     assert.equal(unexpectedExternal, 0);
