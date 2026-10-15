@@ -26,7 +26,7 @@ The form requires a name, an allowlisted product, one valid email or telephone, 
 
 Only an acknowledged HTTP success (`ok: true`, or Formspree's nonempty `next` response without contradictory failure) displays success. HTTP rejection, invalid JSON/acknowledgment, network failure and the 12-second timeout retain the draft. Network/timeout messages explain that receipt is unknown and ask the visitor to check before retrying. Controls are locked while waiting; an unchanged acknowledged draft cannot be submitted twice. Editing after success enables a new request.
 
-No customer drafts are stored in localStorage/sessionStorage, added to the local page URL, or logged. Only the existing language preference is stored. Opening an approved external channel intentionally encodes the request in that channel's URI; the temporary link is removed after use. No external channel is contacted automatically. The form is disabled without JavaScript as well.
+No customer drafts are stored in localStorage/sessionStorage, added to the local page URL, or logged. The existing language preference stays in localStorage; only sanitized campaign labels may briefly use sessionStorage as described below. Opening an approved external channel intentionally encodes the request in that channel's URI; the temporary link is removed after use. No external channel is contacted automatically. The form is disabled without JavaScript as well.
 
 ## Reproduce QA
 
@@ -45,3 +45,24 @@ WUL_BASE_URL=http://127.0.0.1:8002/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/
 ```
 
 The inquiry runner replaces the configuration only in intercepted local responses. All Formspree traffic is fulfilled/aborted in Playwright; every other external request is blocked. Email/WhatsApp launches are prevented while the URI is inspected in memory, never logged or saved. Screenshots mask inputs and textareas. Existing WUL-003/WUL-005 evidence is retained; current homepage regression evidence goes into WUL-004.
+
+## LEADS-001 / WUL-012 attribution contract
+
+The JSON body preserves all existing customer fields, `product`, canonical `product_name`, `brand`, `source_site` and `subject`, and adds:
+
+| Field | Value |
+|---|---|
+| product_id | Same validated allowlisted ID as product; never arbitrary query input |
+| source_page | location.origin + location.pathname of the submitting inquiry page, without query/hash |
+| submitted_at | Client UTC ISO 8601 timestamp, created only for a valid actual fetch attempt after duplicate suppression |
+| utm_source / utm_campaign | Sanitized campaign labels, or an empty string for each missing/rejected value |
+
+`assets/js/attribution.js` runs on home and inquiry. It uses only the namespaced session key `wood-u-like-campaign`, storing exactly the two UTM fields; never a raw URL, product, customer field or timestamp. Labels must be 1–80 ASCII characters `[A-Za-z0-9._~-]`. Invalid/overlong values are rejected, not stripped or truncated into a different label. Duplicate query values for a key are rejected. Phone-like numeric tokens with at least seven digits are also rejected. This is a campaign-label format, not a guarantee that arbitrary browser input is nonpersonal or authentic; publishers must not use customer identifiers as campaign labels.
+
+The latest explicit supported UTM query replaces the entire prior pair (including empty/invalid fields), avoiding campaign mixing. A page without explicit UTM keeps a pending pair. Stored JSON is size/shape/type/value checked again. On entering inquiry, the pending key is removed and the validated pair is frozen in document memory for retries/language switches. No UTM is written into HTML or added to navigation URLs. Existing product links remain unchanged.
+
+If sessionStorage is blocked, direct-query tags remain available in that page's memory; tags captured on home are lost on cross-page navigation. There is no cookie/localStorage/URL fallback. All get/set/remove failures are caught. If a browser permits reads but denies deletion, immediate physical deletion cannot be guaranteed; the form still works and holds no customer data in that key. Normal supported storage is consumed at inquiry arrival, not after send. Reloading a clean inquiry URL after consumption therefore has empty campaign attribution.
+
+`requestData()` remains deterministic for acknowledged-draft equality. submitted_at is appended only to an actual outgoing attempt, so retries get a new time while language changes, delayed blur and repeated submit cannot bypass duplicate suppression. Client metadata is operational and forgeable, and client time does not replace the service's received time; it is not financial/security authority.
+
+The public endpoint, privacy copy and both approval flags are unchanged. Production still sends nothing. Final privacy/service activation review should account for these operational metadata fields. ASSEMBL LAB needs its own separate schema migration; see the WUL-012 report. No trackers, third-party analytics, paid services, CRM or price/payment code were added.

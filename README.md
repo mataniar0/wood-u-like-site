@@ -85,3 +85,7 @@ NODE_PATH=/tmp/wul-check/node_modules node tools/check-language.cjs
 ## WUL-006 — יעד Formspree משותף, שליחה חסומה
 
 זיהוי מותג ומקור נקבע בקוד, וגילוי פרטיות דו־לשוני מוצג מתחת לכפתור. הפעלה חיה מחייבת בדיקות שירות ואישור נפרד. הוראות ב־[inquiry/README.md](inquiry/README.md), ראיות וגבולות ב־[דוח WUL-006](docs/review/wul-006/REPORT_HE.md).
+
+## WUL-012 / LEADS-001
+
+מטען הפנייה כולל שיוך מוצר, דף מקור נקי, זמן ניסיון שליחה ותגיות קמפיין מסוננות. תגיות בלבד נשמרות זמנית ב־sessionStorage עד ההגעה לטופס; אין tracker או שירות נוסף. השליחה הציבורית נשארת חסומה. [חוזה והתנהגות](inquiry/README.md#leads-001--wul-012-attribution-contract), [בדיקות וגבולות](docs/review/wul-012/REPORT_HE.md).
