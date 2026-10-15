@@ -182,6 +182,7 @@
   function requestData() {
     const data = {
       product: product.value,
+      product_id: product.value,
       product_name: products[product.value].name,
       product_label: t(`inquiry.product.${product.value}`),
       language: i18n.language,
@@ -194,6 +195,9 @@
       planning: !!products[product.value].planning,
       brand: "WOOD U LIKE",
       source_site: "wood-u-like-site",
+      source_page: location.origin + location.pathname,
+      utm_source: window.WUL_ATTRIBUTION?.campaign.utm_source || "",
+      utm_campaign: window.WUL_ATTRIBUTION?.campaign.utm_campaign || "",
       subject: `WOOD U LIKE — ${products[product.value].name}`,
     };
     if (emailPattern.test(data.contact)) data.email = data.contact;
@@ -330,7 +334,8 @@
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        // Timestamp belongs to this actual attempt, never to the draft signature.
+        body: JSON.stringify({ ...data, submitted_at: new Date().toISOString() }),
         signal: controller.signal,
       });
       if (!response.ok)
