@@ -8,6 +8,18 @@ const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul
 const base =
   process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
 const key = "wood-u-like-language";
+let blockedRequests = 0;
+async function safeContext(browser, options = {}) {
+  const context = await browser.newContext({ serviceWorkers: "block", ...options });
+  await context.route("**/*", route => {
+    const request = route.request();
+    if (["GET", "HEAD"].includes(request.method()) && new URL(request.url()).origin === new URL(base).origin)
+      return route.continue();
+    blockedRequests++;
+    return route.abort("blockedbyclient");
+  });
+  return context;
+}
 const sizes = [
   [320, 568],
   [390, 844],
@@ -131,7 +143,7 @@ async function contents(page, lang) {
   let imageBaseline;
   for (const [width, height] of sizes)
     for (const lang of ["he", "en"]) {
-      const context = await browser.newContext({
+      const context = await safeContext(browser, {
         viewport: { width, height },
         locale: "en-US",
       });
@@ -299,7 +311,7 @@ async function contents(page, lang) {
       await context.close();
     }
   // Actual storage events across tabs and reload/new-context persistence.
-  const context = await browser.newContext({
+  const context = await safeContext(browser, {
     viewport: { width: 390, height: 844 },
     locale: "en-US",
   });
@@ -313,7 +325,7 @@ async function contents(page, lang) {
   await a.reload();
   await expectLanguage(a, "en");
   const state = await context.storageState();
-  const restored = await browser.newContext({ storageState: state });
+  const restored = await safeContext(browser, { storageState: state });
   const reopened = await restored.newPage();
   await reopened.goto(base);
   await expectLanguage(reopened, "en");
@@ -355,7 +367,7 @@ async function contents(page, lang) {
     pageshow: "PASS",
   });
   await context.close();
-  const blocked = await browser.newContext({
+  const blocked = await safeContext(browser, {
     viewport: { width: 390, height: 844 },
   });
   await blocked.addInitScript(() => {
@@ -377,7 +389,7 @@ async function contents(page, lang) {
   await language(p, "he");
   await blocked.close();
   results.push({ blockedStorage: "PASS" });
-  const nojs = await browser.newContext({
+  const nojs = await safeContext(browser, {
     javaScriptEnabled: false,
     viewport: { width: 320, height: 568 },
     locale: "en-US",
@@ -391,7 +403,7 @@ async function contents(page, lang) {
   await nojs.close();
   results.push({ noJavaScript: "PASS" });
   // Slow menu bootstrap must not expose untranslated Hebrew when English is saved.
-  const slow = await browser.newContext({
+  const slow = await safeContext(browser, {
     viewport: { width: 390, height: 844 },
   });
   await slow.addInitScript((key) => localStorage.setItem(key, "en"), key);
@@ -419,7 +431,7 @@ async function contents(page, lang) {
     slowBootstrap: "PASS",
     headerShift: after.height - before.height,
   });
-  const guard = await browser.newContext({
+  const guard = await safeContext(browser, {
     viewport: { width: 390, height: 844 },
   });
   await guard.addInitScript((key) => localStorage.setItem(key, "en"), key);
@@ -455,6 +467,7 @@ async function contents(page, lang) {
   );
   await guard.close();
   results.push({ pausedParserEnglishGuard: "PASS" });
+  assert.equal(blockedRequests, 0, "No POST or external request attempted");
   await browser.close();
   fs.writeFileSync(
     path.join(output, "results.json"),

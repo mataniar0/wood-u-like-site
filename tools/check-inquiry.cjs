@@ -49,6 +49,10 @@ function pass(test, language, extra = {}) {
     await context.route("**/*", async (route) => {
       const url = new URL(route.request().url());
       if (url.origin === new URL(base).origin) {
+        if (!["GET", "HEAD"].includes(route.request().method())) {
+          unexpectedExternal++;
+          return route.abort("blockedbyclient");
+        }
         if (url.pathname.endsWith("/contact-config.js") && config !== undefined)
           return route.fulfill({
             contentType: "application/javascript",
@@ -253,6 +257,10 @@ function pass(test, language, extra = {}) {
           ["blessing-work", "blessing"],
           ["welcome-work", "welcome"],
           ["kitchen-work", "kitchen"],
+          ["family-sign-work", "family-sign"],
+          ["hanging-home-sign-work", "hanging-home-sign"],
+          ["pizza-peel-work", "pizza-peel"],
+          ["personalized-clock-work", "personalized-clock"],
         ]) {
           await p.locator(`#${card} .product-inquiry`).click();
           await p.waitForURL(`**/inquiry/?product=${id}`);
@@ -585,7 +593,14 @@ function pass(test, language, extra = {}) {
       pass(`${productId}:simulated-payload`, lang);
       await s.context.close();
     }
-    const nojs = await browser.newContext({ javaScriptEnabled: false });
+    const nojs = await browser.newContext({ javaScriptEnabled: false, serviceWorkers: "block" });
+    await nojs.route("**/*", route => {
+      const request = route.request();
+      if (["GET", "HEAD"].includes(request.method()) && new URL(request.url()).origin === new URL(base).origin)
+        return route.continue();
+      unexpectedExternal++;
+      return route.abort("blockedbyclient");
+    });
     const p = await nojs.newPage();
     await p.goto(base + "inquiry/");
     assert.equal(await p.locator("#send-request").isDisabled(), true);

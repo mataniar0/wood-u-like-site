@@ -1,0 +1,177 @@
+{
+  "task": "WUL-016 / Issue #28",
+  "generatedAt": "2026-10-17T19:29:50.552352+00:00",
+  "status": "PASS",
+  "baseUrl": "http://127.0.0.1:8011/wood-u-like-site/",
+  "browser": "Chromium (/usr/bin/chromium), Playwright",
+  "execution": {
+    "topLevelToolInvocations": 9,
+    "executedToolsIncludingLanguageChild": 10,
+    "scenarioRecords": 291,
+    "approvedClockImageAssetChecks": 8,
+    "blankScreenshotNegativeControls": 1,
+    "regressionScreenshotFiles": 295
+  },
+  "executions": [
+    {
+      "tool": "tools/check-clock.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/clock node tools/check-clock.cjs",
+      "resultFile": "docs/review/wul-016/clock/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/clock.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 15,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0,
+      "approvedImageAssets": 8,
+      "blankScreenshotNegativeControls": 1
+    },
+    {
+      "tool": "tools/check-pizza-peel.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/pizza-peel node tools/check-pizza-peel.cjs",
+      "resultFile": "docs/review/wul-016/pizza-peel/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/pizza-peel.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "tool": "tools/check-lead-attribution.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/attribution node tools/check-lead-attribution.cjs",
+      "resultFile": "docs/review/wul-016/attribution/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/attribution.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 150,
+      "interceptedMockPosts": 142,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "tool": "tools/check-language.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/hero node tools/check-language.cjs",
+      "resultFile": "docs/review/wul-016/hero/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/hero.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 21,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0,
+      "invokedBy": "tools/check-hero.cjs",
+      "countedOnce": true,
+      "commandNote": "Invoked by the hero runner with inherited environment; this was not a second standalone run.",
+      "networkEvidence": "All POSTs/non-GET/HEAD and external requests are intercepted; an exit assertion confirms none were attempted."
+    },
+    {
+      "tool": "tools/check-hero.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/hero node tools/check-hero.cjs",
+      "resultFile": "docs/review/wul-016/hero/hero-results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/hero.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0,
+      "networkEvidence": "All POSTs/non-GET/HEAD and external requests are intercepted; an exit assertion confirms none were attempted."
+    },
+    {
+      "tool": "tools/check-inquiry.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/inquiry node tools/check-inquiry.cjs",
+      "resultFile": "docs/review/wul-016/inquiry/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/inquiry.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 51,
+      "interceptedMockPosts": 34,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "tool": "tools/check-family-sign.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/family-sign node tools/check-family-sign.cjs",
+      "resultFile": "docs/review/wul-016/family-sign/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/family-sign.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "tool": "tools/check-schwartz-sign.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/schwartz-sign node tools/check-schwartz-sign.cjs",
+      "resultFile": "docs/review/wul-016/schwartz-sign/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/schwartz-sign.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "tool": "tools/check-homepage.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/homepage node tools/check-homepage.cjs",
+      "resultFile": "docs/review/wul-016/homepage/browser-results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/homepage.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 4,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0,
+      "networkEvidence": "All POSTs/non-GET/HEAD and external requests are intercepted; an exit assertion confirms none were attempted."
+    },
+    {
+      "tool": "tools/check-shared-privacy.cjs",
+      "command": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8011/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-016/privacy node tools/check-shared-privacy.cjs",
+      "resultFile": "docs/review/wul-016/privacy/results.json",
+      "stdoutLog": "docs/review/wul-016/regression-logs/privacy.log",
+      "exitCode": 0,
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "interceptedMockPosts": 0,
+      "realInquiryRequests": 0,
+      "unexpectedExternalRequests": 0
+    }
+  ],
+  "network": {
+    "interceptedMockPosts": 176,
+    "attributionMockPosts": 142,
+    "inquiryMockPosts": 34,
+    "realInquiryRequests": 0,
+    "unexpectedExternalRequests": 0,
+    "publicSending": "disabled in repository; approved configurations were browser-only intercepted fixtures"
+  },
+  "failures": [],
+  "fixesAfterTestFailure": [],
+  "correctionCycles": {
+    "application": 0,
+    "harness": 0,
+    "total": 0,
+    "scope": "Applicable existing regression suites only; first executed versions all passed."
+  },
+  "testUpdates": [
+    "Four canonical category labels and group hash targets; product titles use h4.",
+    "All seven existing product cards, product-specific photograph/ALT/contain assertions and original inquiry IDs remain verified.",
+    "Legacy future-sixth/seventh/eighth-category cloning replaced by exactly-four-category layout and product-group mapping assertions.",
+    "Inquiry navigation now verifies all seven product CTAs at the existing HE/EN viewport cases.",
+    "Output-directory overrides keep all historical reports untouched; clock manifest/blank control remain referenced from WUL-014.",
+    "Static suites now intercept every POST and external request before forwarding only same-origin GET/HEAD."
+  ],
+  "excludedTool": {
+    "tool": "tools/check-reference-inquiry.cjs",
+    "reason": "Targets a separate historical ASSEMBL LAB scratch/reference preview, not the WOOD U LIKE repository site; no reference or ASSEMBL LAB files were changed."
+  },
+  "limitations": [
+    "Chromium only; Firefox, Safari and manual screen-reader testing were not run by these regression suites.",
+    "No Merge, Deploy or live inquiry service was exercised."
+  ]
+}

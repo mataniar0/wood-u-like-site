@@ -12,7 +12,8 @@ const root = path.resolve(__dirname, "..");
 const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-014");
 const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8009/wood-u-like-site/";
 const origin = new URL(base).origin;
-const manifestPath = path.join(out, "PHOTO_MANIFEST.json");
+const approvedReview = path.join(root, "docs/review/wul-014");
+const manifestPath = path.join(approvedReview, "PHOTO_MANIFEST.json");
 const names = { he: "שעון עץ בחריטה אישית", en: "Personalized Engraved Wooden Clock" };
 const photoNames = ["front", "lifestyle", "handheld-detail", "hanging"];
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
@@ -225,10 +226,10 @@ async function assertFocus(page, button) {
         await decodeImages(page);
         assert.equal(await page.locator("html").getAttribute("lang"), language);
         assert.equal(await page.locator("html").getAttribute("dir"), language === "he" ? "rtl" : "ltr");
-        assert.equal(await page.locator(".category-card").count(), 7, "Do not add a duplicate category");
+        assert.equal(await page.locator(".category-card").count(), 4, "Four canonical categories without duplicates");
         assert.equal(await page.locator(".product-card").count(), 7);
         const card = page.locator("#personalized-clock-work.product-card.clock-card");
-        assert.equal(await card.locator("h3#clock-product-title").textContent(), names[language]);
+        assert.equal(await card.locator("h4#clock-product-title").textContent(), names[language]);
         assert.equal(await card.locator(".clock-gallery").getAttribute("aria-labelledby"), "clock-product-title");
         assert.equal(await card.locator("[data-clock-slide]").count(), 4);
         assert.equal(await page.locator("#clock-gallery-status").getAttribute("aria-live"), "polite");
@@ -428,10 +429,10 @@ async function assertFocus(page, button) {
           assertPhotographPainted(pixels);
           if (width === 390) {
             const fixture = "qa-followup/before-he-390-clock-no-javascript.png";
-            const blankPixels = await photographPixels(decoderPage, fs.readFileSync(path.join(out, fixture)), region);
+            const blankPixels = await photographPixels(decoderPage, fs.readFileSync(path.join(approvedReview, fixture)), region);
             assert.throws(() => assertPhotographPainted(blankPixels), /Saved screenshot must contain/,
               "The new pixel assertion must reject the original blank QA artifact");
-            blankScreenshotControl = { fixture, status: "PASS: original blank screenshot rejected", pixels: blankPixels };
+            blankScreenshotControl = { fixture: path.relative(root, path.join(approvedReview, fixture)), status: "PASS: original blank screenshot rejected", pixels: blankPixels };
           }
           assert.deepEqual(errors, []);
           results.push({ mode: "no-javascript", viewport: [width, height], language: "he", status: "PASS",
