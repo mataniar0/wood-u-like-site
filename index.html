@@ -519,6 +519,44 @@
               <p data-i18n="product.pizzaPeel.copy">מרדה מעץ לפיצה עם חריטה אישית. מתנה מקורית לחובבי אפייה, אירוח ופיצה ביתית, במראה חם וטבעי.</p>
               <a class="product-inquiry" href="inquiry/?product=pizza-peel"><span data-i18n="product.quote">בקשת הצעת מחיר</span></a>
             </article>
+            <article id="personalized-clock-work" class="product-card clock-card">
+              <div class="clock-gallery" role="group" aria-labelledby="clock-product-title">
+                <div class="product-image clock-gallery-viewport" aria-describedby="clock-gallery-caption">
+                    <figure data-clock-slide data-caption-key="clock.gallery.front.caption">
+                      <img src="assets/images/personalized-clock-front.webp" srcset="assets/images/personalized-clock-front-small.webp 600w, assets/images/personalized-clock-front.webp 1200w" sizes="(max-width: 760px) 90vw, 45vw" width="1200" height="1259" loading="lazy" decoding="async" alt="חזית שעון עץ עגול עם פורטרט והקדשה חרוטים, ספרות שעות ומחוגים" data-i18n-alt="clock.gallery.front.alt" />
+                    </figure>
+                    <figure data-clock-slide data-caption-key="clock.gallery.lifestyle.caption" hidden>
+                      <img src="assets/images/personalized-clock-lifestyle.webp" srcset="assets/images/personalized-clock-lifestyle-small.webp 600w, assets/images/personalized-clock-lifestyle.webp 1200w" sizes="(max-width: 760px) 90vw, 45vw" width="1200" height="1594" loading="lazy" decoding="async" alt="ילדה אוחזת בשעון עץ עגול עם פורטרט והקדשה חרוטים" data-i18n-alt="clock.gallery.lifestyle.alt" />
+                    </figure>
+                    <figure data-clock-slide data-caption-key="clock.gallery.detail.caption" hidden>
+                      <img src="assets/images/personalized-clock-handheld-detail.webp" srcset="assets/images/personalized-clock-handheld-detail-small.webp 600w, assets/images/personalized-clock-handheld-detail.webp 640w" sizes="(max-width: 760px) 90vw, 45vw" width="640" height="640" loading="lazy" decoding="async" alt="תקריב של שעון עץ מוחזק בידיים, עם פורטרט והקדשה חרוטים וספרות שעות" data-i18n-alt="clock.gallery.detail.alt" />
+                    </figure>
+                    <figure data-clock-slide data-caption-key="clock.gallery.hanging.caption" hidden>
+                      <img src="assets/images/personalized-clock-hanging.webp" srcset="assets/images/personalized-clock-hanging-small.webp 600w, assets/images/personalized-clock-hanging.webp 1200w" sizes="(max-width: 760px) 90vw, 45vw" width="1200" height="1150" loading="lazy" decoding="async" alt="שעון עץ עם פורטרט חרוט ומחוגים, מוצג על רקע לוח עץ" data-i18n-alt="clock.gallery.hanging.alt" />
+                    </figure>
+                  <span data-i18n="category.originalGifts">מתנות מקוריות</span>
+                </div>
+                <div class="clock-gallery-controls">
+                  <button type="button" data-clock-prev aria-label="התמונה הקודמת של השעון" data-i18n-aria-label="clock.gallery.previous" disabled><span class="clock-nav-glyph" aria-hidden="true">←</span></button>
+                  <span id="clock-gallery-count" dir="ltr" aria-hidden="true">1 / 4</span>
+                  <button type="button" data-clock-next aria-label="התמונה הבאה של השעון" data-i18n-aria-label="clock.gallery.next" disabled><span class="clock-nav-glyph" aria-hidden="true">→</span></button>
+                </div>
+                <p id="clock-gallery-caption" class="clock-gallery-caption" data-i18n="clock.gallery.front.caption">חזית השעון</p>
+                <p id="clock-gallery-status" class="clock-sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+                <noscript><div class="clock-gallery-noscript">
+                    <a href="assets/images/personalized-clock-front.webp">חזית השעון</a>
+                    <a href="assets/images/personalized-clock-lifestyle.webp">צילום אחיזה במוצר</a>
+                    <a href="assets/images/personalized-clock-handheld-detail.webp">תקריב השעון בידיים</a>
+                    <a href="assets/images/personalized-clock-hanging.webp">הצגת השעון על רקע עץ</a>
+                </div></noscript>
+              </div>
+              <div class="clock-details">
+                <h3 id="clock-product-title" data-i18n="product.clock.title">שעון עץ בחריטה אישית</h3>
+                <p data-i18n="product.clock.copy">שעון עץ בעיצוב אישי, עם תמונה והקדשה בחריטת לייזר. מתנה עם משמעות ורגעים שנעים לזכור.</p>
+                <p class="clock-details-note" data-i18n="product.clock.details">מידות ופרטים נוספים בתיאום אישי. אפשר לברר על תמונה והקדשה לאחר יצירת קשר.</p>
+                <a class="product-inquiry" href="inquiry/?product=personalized-clock"><span data-i18n="product.quote">בקשת הצעת מחיר</span></a>
+              </div>
+            </article>
           </div>
           <p class="catalog-note">
             <span data-i18n="favorites.note"
@@ -643,5 +681,6 @@
       window.WUL_I18N.initialize();
     </script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/clock-gallery.js"></script>
   </body>
 </html>

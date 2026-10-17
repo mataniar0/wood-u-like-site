@@ -1262,3 +1262,54 @@ html[lang="en"] .benefits-grid > div + div {
   object-position: center;
 }
 .pizza-peel-category:hover .category-img img { transform: none; }
+
+/* Product-scoped gallery: preserve the six existing cards and their layout. */
+.clock-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  align-items: start;
+}
+.clock-gallery, .clock-details { min-width: 0; }
+.clock-gallery [data-clock-slide] { margin: 0; height: 100%; }
+.clock-gallery [data-clock-slide] img { object-fit: contain; object-position: center; }
+.clock-gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-block: 12px 6px;
+}
+.clock-gallery-controls button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+.clock-gallery-controls button:hover:enabled { background: var(--sand); }
+.clock-gallery-controls button:disabled { cursor: default; }
+.clock-nav-glyph { display: inline-block; }
+[dir="rtl"] .clock-nav-glyph { transform: scaleX(-1); }
+.clock-gallery-caption { margin: 0; text-align: center; font-size: 14px; }
+.clock-details p { font-size: 15px; line-height: 1.9; margin-block: 12px; }
+.clock-details-note { color: var(--soft-ink); }
+.clock-gallery-noscript { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 12px; }
+.clock-gallery-noscript a { text-decoration: underline; }
+.clock-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .clock-card { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}

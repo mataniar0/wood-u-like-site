@@ -26,6 +26,11 @@
       name: "Personalized Pizza Peel",
       dimensions: ["width", "height"],
     },
+    "personalized-clock": {
+      name: "Personalized Engraved Wooden Clock",
+      // Optional requested dimensions, not verified product specifications.
+      dimensions: ["diameter", "thickness"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],

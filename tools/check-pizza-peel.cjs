@@ -55,7 +55,7 @@ const base =
           await document.fonts.ready;
         });
         assert.equal(await page.locator(".category-card").count(), 7);
-        assert.equal(await page.locator(".product-card").count(), 6);
+        assert.equal(await page.locator(".product-card").count(), 7);
         assert.equal(
           await page.locator('[data-i18n="category.home"]').textContent(),
           lang === "he" ? "בית ומשפחה" : "Home & family",

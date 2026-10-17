@@ -1,0 +1,39 @@
+{
+  "baseline": "18f8f5cceb4a6906710f2a28ff53027f8698011c",
+  "unchanged": {
+    "inquiry/contact-config.js": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+    "assets/js/attribution.js": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+    "assets/js/main.js": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
+    "inquiry/inquiry.css": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+    "assets/images/hero-approved-v2.webp": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+    "assets/images/hero-welcome.webp": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+    "assets/images/judaica-blessing.webp": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+    "assets/images/family-sign-small.webp": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+    "assets/images/kitchen-board.webp": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+    "assets/images/pizza-peel-small.webp": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+    "assets/images/workshop-small.webp": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+    "assets/images/schwartz-home-sign.webp": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+    "assets/images/orchid.webp": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+    "assets/images/orchid-small.webp": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+    "assets/images/judaica-blessing-small.webp": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+    "assets/images/kitchen-board-small.webp": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+    "assets/images/family-sign.webp": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+    "assets/images/workshop.webp": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+    "assets/images/hero-approved-v2-small.webp": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+    "assets/images/README.md": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6",
+    "assets/images/hero-welcome-small.webp": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+    "assets/images/pizza-peel.webp": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+    "assets/images/schwartz-home-sign-small.webp": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b"
+  },
+  "existingProductArticles": {
+    "blessing-work": "PASS",
+    "welcome-work": "PASS",
+    "kitchen-work": "PASS",
+    "family-sign-work": "PASS",
+    "hanging-home-sign-work": "PASS",
+    "pizza-peel-work": "PASS"
+  },
+  "categoryGridUnchanged": true,
+  "allSuppliedWebpExact": "PASS",
+  "onlyOptimizedImagesAdded": true
+}

@@ -12,7 +12,7 @@ const origin = new URL(base).origin;
 const inquiry = new URL("inquiry/", base).href;
 const endpoint = "https://formspree.io/f/wulqatest";
 const campaignKey = "wood-u-like-campaign";
-const output = path.join(root, "docs/review/wul-012/attribution");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-012/attribution");
 const approved = {
   formEndpoint: endpoint,
   formDestinationApproved: true,
@@ -28,6 +28,7 @@ const products = [
   ["kitchen", "Engraved kitchen board"],
   ["family-sign", "Personalized wooden door sign"],
   ["hanging-home-sign", "Personalized hanging wooden home sign"],
+  ["personalized-clock", "Personalized Engraved Wooden Clock"],
   ["pizza-peel", "Personalized Pizza Peel"],
   ["custom", "Personalization / another idea"],
 ];
