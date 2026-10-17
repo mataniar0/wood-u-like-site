@@ -602,6 +602,38 @@
     {
       "mode": "no-javascript",
       "viewport": [
+        320,
+        568
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allFourNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 288,
+        "naturalHeight": 302,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 32130,
+        "distinctColors": 10248,
+        "largestColorFraction": 0.006816059757236228,
+        "sample": {
+          "x": 57,
+          "y": 63,
+          "width": 170,
+          "height": 189
+        }
+      },
+      "screenshot": "screenshots/he-320-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
         390,
         844
       ],
@@ -610,10 +642,139 @@
       "allFourNativeImageLinks": "PASS",
       "disabledControls": "PASS",
       "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 351,
+        "naturalHeight": 368,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 49820,
+        "distinctColors": 13533,
+        "largestColorFraction": 0.0071657968687274184,
+        "sample": {
+          "x": 71,
+          "y": 79,
+          "width": 212,
+          "height": 235
+        }
+      },
       "screenshot": "screenshots/he-390-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allFourNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 345,
+        "naturalHeight": 362,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 34776,
+        "distinctColors": 11432,
+        "largestColorFraction": 0.005808603634690592,
+        "sample": {
+          "x": 440,
+          "y": 56,
+          "width": 207,
+          "height": 168
+        }
+      },
+      "screenshot": "screenshots/he-768-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allFourNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 460,
+        "naturalHeight": 483,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 60492,
+        "distinctColors": 16813,
+        "largestColorFraction": 0.005223831250413278,
+        "sample": {
+          "x": 593,
+          "y": 71,
+          "width": 284,
+          "height": 213
+        }
+      },
+      "screenshot": "screenshots/he-1024-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allFourNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 648,
+        "naturalHeight": 679,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 80088,
+        "distinctColors": 18308,
+        "largestColorFraction": 0.10106382978723404,
+        "sample": {
+          "x": 778,
+          "y": 71,
+          "width": 376,
+          "height": 213
+        }
+      },
+      "screenshot": "screenshots/he-1440-clock-no-javascript.png",
       "errors": []
     }
   ],
+  "blankScreenshotControl": {
+    "fixture": "qa-followup/before-he-390-clock-no-javascript.png",
+    "status": "PASS: original blank screenshot rejected",
+    "pixels": {
+      "sampledPixels": 49820,
+      "distinctColors": 1,
+      "largestColorFraction": 1,
+      "sample": {
+        "x": 71,
+        "y": 79,
+        "width": 212,
+        "height": 235
+      }
+    }
+  },
   "externalRequests": 0,
   "interceptedSubmissionRequests": 0,
   "realInquiryRequests": 0,

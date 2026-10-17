@@ -19,11 +19,12 @@ const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]
 const results = [];
 const requestCounts = { externalRequests: 0, interceptedSubmissionRequests: 0, realInquiryRequests: 0 };
 let assetChecks = [];
+let blankScreenshotControl;
 
 function recordResults(extra = {}) {
   fs.mkdirSync(out, { recursive: true });
   fs.writeFileSync(path.join(out, "results.json"), JSON.stringify({
-    task: "WUL-014 / Issue #25", assetChecks, results, ...requestCounts, ...extra,
+    task: "WUL-014 / Issue #25", assetChecks, results, blankScreenshotControl, ...requestCounts, ...extra,
   }, null, 2) + "\n");
 }
 
@@ -68,6 +69,43 @@ async function decodeImages(page) {
     await Promise.all([...document.images].map(image => image.decode()));
     await document.fonts.ready;
   });
+}
+
+// Inspect the exact saved card PNG, excluding the photograph's edges and badge.
+// This also runs with page JavaScript disabled: only the isolated PNG decoder
+// has scripting enabled, and it never loads the site or makes network requests.
+async function photographPixels(decoderPage, png, region) {
+  return decoderPage.evaluate(async ({ base64, region }) => {
+    const bytes = Uint8Array.from(atob(base64), character => character.charCodeAt(0));
+    const bitmap = await createImageBitmap(new Blob([bytes], { type: "image/png" }));
+    const canvas = document.createElement("canvas");
+    canvas.width = bitmap.width; canvas.height = bitmap.height;
+    const context = canvas.getContext("2d", { willReadFrequently: true });
+    context.drawImage(bitmap, 0, 0);
+    const x = Math.round(region.x + region.width * 0.2);
+    const y = Math.round(region.y + region.height * 0.2);
+    const width = Math.floor(region.width * 0.6), height = Math.floor(region.height * 0.6);
+    if (width <= 0 || height <= 0 || x < 0 || y < 0 || x + width > bitmap.width || y + height > bitmap.height) {
+      throw new Error("Photograph sample extends outside the saved screenshot");
+    }
+    const pixels = context.getImageData(x, y, width, height).data;
+    const colors = new Map();
+    let mostCommon = 0;
+    for (let offset = 0; offset < pixels.length; offset += 4) {
+      const color = (pixels[offset] << 16) | (pixels[offset + 1] << 8) | pixels[offset + 2];
+      const count = (colors.get(color) || 0) + 1;
+      colors.set(color, count);
+      mostCommon = Math.max(mostCommon, count);
+    }
+    bitmap.close();
+    return { sampledPixels: width * height, distinctColors: colors.size,
+      largestColorFraction: mostCommon / (width * height), sample: { x, y, width, height } };
+  }, { base64: png.toString("base64"), region });
+}
+
+function assertPhotographPainted(pixels) {
+  assert.ok(pixels.sampledPixels > 1000 && pixels.distinctColors > 100 && pixels.largestColorFraction < 0.95,
+    "Saved screenshot must contain the painted photograph, rather than a uniform placeholder");
 }
 
 async function axeCheck(page) {
@@ -334,33 +372,77 @@ async function assertFocus(page, button) {
       } finally { await context.close(); }
     }
 
-    const noJsContext = await safeContext(browser, { javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
+    const decoderContext = await safeContext(browser);
     try {
-      const page = await noJsContext.newPage();
-      const errors = watchErrors(page);
-      await page.goto(base);
-      const card = page.locator("#personalized-clock-work");
-      assert.equal(await card.locator("[data-clock-slide]").first().isVisible(), true);
-      for (const button of await card.locator("[data-clock-prev],[data-clock-next]").all()) assert.equal(await button.isDisabled(), true);
-      const links = card.locator(".clock-gallery-noscript a");
-      assert.equal(await links.count(), 4, "No-JavaScript fallback exposes every approved photograph");
-      for (let index = 0; index < 4; index++) {
-        const link = links.nth(index);
-        assert.equal(await link.isVisible(), true);
-        const target = new URL(await link.getAttribute("href"), base);
-        assert.equal(target.origin, origin);
-        assert.ok(target.pathname.endsWith(manifest[index].full.file));
-        const response = await noJsContext.request.get(target.href);
-        assert.equal(response.status(), 200);
-        assert.equal(sha256(await response.body()), manifest[index].full.sha256);
+      const decoderPage = await decoderContext.newPage();
+      for (const [width, height] of viewports) {
+        const noJsContext = await safeContext(browser, { javaScriptEnabled: false, viewport: { width, height } });
+        try {
+          const page = await noJsContext.newPage();
+          const errors = watchErrors(page);
+          await page.goto(base);
+          const card = page.locator("#personalized-clock-work");
+          assert.equal(await card.locator("[data-clock-slide]").first().isVisible(), true);
+          const image = card.locator("[data-clock-slide]").first().locator("img");
+          // Trigger native lazy loading without enabling page scripts or changing
+          // loading/src attributes. complete/naturalWidth alone do not ensure paint.
+          await image.scrollIntoViewIfNeeded();
+          let decodeTimer;
+          try {
+            // The deadline runs in Node: timers in a script-disabled page do not run.
+            await Promise.race([
+              image.evaluate(image => image.decode()),
+              new Promise((_, reject) => { decodeTimer = setTimeout(() =>
+                reject(new Error("First photograph decode timed out")), 10000); }),
+            ]);
+          } finally { clearTimeout(decodeTimer); }
+          const loaded = await image.evaluate(image => ({ complete: image.complete,
+            naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+            currentSource: image.currentSrc, objectFit: getComputedStyle(image).objectFit }));
+          assert.equal(loaded.complete, true);
+          assert.ok(loaded.naturalWidth > 0 && loaded.naturalHeight > 0, "First photograph loaded successfully");
+          assert.equal(loaded.objectFit, "contain");
+          assert.ok([manifest[0].full.file, manifest[0].small.file].some(file =>
+            loaded.currentSource === new URL(file, base).href), "No-JS displays the approved first photograph");
+          for (const button of await card.locator("[data-clock-prev],[data-clock-next]").all()) assert.equal(await button.isDisabled(), true);
+          const links = card.locator(".clock-gallery-noscript a");
+          assert.equal(await links.count(), 4, "No-JavaScript fallback exposes every approved photograph");
+          for (let index = 0; index < 4; index++) {
+            const link = links.nth(index);
+            assert.equal(await link.isVisible(), true);
+            const target = new URL(await link.getAttribute("href"), base);
+            assert.equal(target.origin, origin);
+            assert.ok(target.pathname.endsWith(manifest[index].full.file));
+            const response = await noJsContext.request.get(target.href);
+            assert.equal(response.status(), 200);
+            assert.equal(sha256(await response.body()), manifest[index].full.sha256);
+          }
+          await assertNoOverflow(page);
+          const imageBounds = await image.boundingBox(), cardBounds = await card.boundingBox();
+          assert.ok(imageBounds && cardBounds && imageBounds.width > 0 && imageBounds.height > 0);
+          const region = { x: imageBounds.x - cardBounds.x, y: imageBounds.y - cardBounds.y,
+            width: imageBounds.width, height: imageBounds.height };
+          const screenshot = `screenshots/he-${width}-clock-no-javascript.png`;
+          const png = await card.screenshot({ path: path.join(out, screenshot) });
+          const pixels = await photographPixels(decoderPage, png, region);
+          assertPhotographPainted(pixels);
+          if (width === 390) {
+            const fixture = "qa-followup/before-he-390-clock-no-javascript.png";
+            const blankPixels = await photographPixels(decoderPage, fs.readFileSync(path.join(out, fixture)), region);
+            assert.throws(() => assertPhotographPainted(blankPixels), /Saved screenshot must contain/,
+              "The new pixel assertion must reject the original blank QA artifact");
+            blankScreenshotControl = { fixture, status: "PASS: original blank screenshot rejected", pixels: blankPixels };
+          }
+          assert.deepEqual(errors, []);
+          results.push({ mode: "no-javascript", viewport: [width, height], language: "he", status: "PASS",
+            allFourNativeImageLinks: "PASS", disabledControls: "PASS", firstPhotographVisible: "PASS",
+            decodedFirstPhotograph: { ...loaded, currentSource: new URL(loaded.currentSource).pathname },
+            savedScreenshotPhotographPixels: pixels, screenshot, errors });
+          recordResults();
+          console.log(`PASS clock ${width} no-javascript, saved PNG contains photograph`);
+        } finally { await noJsContext.close(); }
       }
-      await assertNoOverflow(page);
-      await card.screenshot({ path: path.join(out, "screenshots/he-390-clock-no-javascript.png") });
-      assert.deepEqual(errors, []);
-      results.push({ mode: "no-javascript", viewport: [390, 844], language: "he", status: "PASS",
-        allFourNativeImageLinks: "PASS", disabledControls: "PASS", firstPhotographVisible: "PASS",
-        screenshot: "screenshots/he-390-clock-no-javascript.png", errors });
-    } finally { await noJsContext.close(); }
+    } finally { await decoderContext.close(); }
     assert.equal(requestCounts.externalRequests, 0, "No external services were requested");
     assert.equal(requestCounts.interceptedSubmissionRequests, 0, "Public form never attempted a POST");
     recordResults({ status: "PASS" });

@@ -127,6 +127,7 @@ docs/review/wul-014/products/screenshots/he-768-favorites-full.png
 docs/review/wul-014/products/screenshots/he-768-inquiry-full.png
 docs/review/wul-014/products/screenshots/he-768-pizza-inquiry.png
 docs/review/wul-014/products/screenshots/he-768-schwartz-inquiry.png
+docs/review/wul-014/qa-followup/before-he-390-clock-no-javascript.png
 docs/review/wul-014/results.json
 docs/review/wul-014/screenshots/en-1024-clock-front.png
 docs/review/wul-014/screenshots/en-1024-clock-inquiry.png
@@ -153,6 +154,7 @@ docs/review/wul-014/screenshots/en-768-clock-inquiry.png
 docs/review/wul-014/screenshots/en-768-homepage.png
 docs/review/wul-014/screenshots/he-1024-clock-front.png
 docs/review/wul-014/screenshots/he-1024-clock-inquiry.png
+docs/review/wul-014/screenshots/he-1024-clock-no-javascript.png
 docs/review/wul-014/screenshots/he-1024-homepage.png
 docs/review/wul-014/screenshots/he-1440-clock-front.png
 docs/review/wul-014/screenshots/he-1440-clock-handheld-detail.png
@@ -160,9 +162,11 @@ docs/review/wul-014/screenshots/he-1440-clock-hanging.png
 docs/review/wul-014/screenshots/he-1440-clock-inquiry.png
 docs/review/wul-014/screenshots/he-1440-clock-keyboard-focus.png
 docs/review/wul-014/screenshots/he-1440-clock-lifestyle.png
+docs/review/wul-014/screenshots/he-1440-clock-no-javascript.png
 docs/review/wul-014/screenshots/he-1440-homepage.png
 docs/review/wul-014/screenshots/he-320-clock-front.png
 docs/review/wul-014/screenshots/he-320-clock-inquiry.png
+docs/review/wul-014/screenshots/he-320-clock-no-javascript.png
 docs/review/wul-014/screenshots/he-320-homepage.png
 docs/review/wul-014/screenshots/he-390-clock-front.png
 docs/review/wul-014/screenshots/he-390-clock-handheld-detail.png
@@ -174,6 +178,7 @@ docs/review/wul-014/screenshots/he-390-clock-no-javascript.png
 docs/review/wul-014/screenshots/he-390-homepage.png
 docs/review/wul-014/screenshots/he-768-clock-front.png
 docs/review/wul-014/screenshots/he-768-clock-inquiry.png
+docs/review/wul-014/screenshots/he-768-clock-no-javascript.png
 docs/review/wul-014/screenshots/he-768-homepage.png
 index.html
 inquiry/index.html
