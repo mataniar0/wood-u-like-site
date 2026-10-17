@@ -1,0 +1,48 @@
+{
+  "task": "WUL-016 / Issue #28",
+  "status": "PASS",
+  "baseline": "c1f6bc28b3eb34a8a371de854321228630a892cc",
+  "branch": "feature/wul-016-four-collections",
+  "dateIsrael": "2026-10-17",
+  "collections": 4,
+  "preservedProducts": 7,
+  "futureWul015ProductAdded": false,
+  "focusedAcceptance": {
+    "javascriptScenarios": 10,
+    "noJavascriptScenarios": 5,
+    "categoryActivations": 128,
+    "defaultMotionNavigationScenarios": 1,
+    "directHashNavigations": 130,
+    "axeScans": 10,
+    "savedScreenshots": 95,
+    "photographPixelChecks": 175,
+    "preservedFiles": 29
+  },
+  "regression": {
+    "topLevelToolInvocations": 9,
+    "executedToolsIncludingLanguageChild": 10,
+    "scenarioRecords": 291,
+    "approvedClockImageAssetChecks": 8,
+    "blankScreenshotNegativeControls": 1,
+    "regressionScreenshotFiles": 295
+  },
+  "network": {
+    "interceptedMockPosts": 176,
+    "attributionMockPosts": 142,
+    "inquiryMockPosts": 34,
+    "realInquiryRequests": 0,
+    "unexpectedExternalRequests": 0,
+    "publicSending": "disabled in repository; approved configurations were browser-only intercepted fixtures"
+  },
+  "independentKeyboardScenarios": 10,
+  "independentEnterActivations": 40,
+  "preservedFilesByteIdentical": 39,
+  "totalSavedPngScreenshots": 390,
+  "qaCorrectionCycles": 4,
+  "applicationCorrectionCyclesAfterInitialImplementation": 0,
+  "intentionallyInterruptedPartialAcceptanceReruns": 1,
+  "historicalReportsRewritten": false,
+  "merged": false,
+  "deployed": false,
+  "teamLeadAcceptance": "Pending independent QA; minimum90/100 and no blockers"
+}

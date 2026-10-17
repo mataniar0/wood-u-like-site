@@ -1,0 +1,41 @@
+{
+  "totalQaCorrectionCycles": 4,
+  "applicationCorrectionCyclesAfterInitialImplementation": 0,
+  "entries": [
+    {
+      "cycle": 1,
+      "area": "acceptance runner",
+      "initialOutcome": "FAIL",
+      "cause": "Focus outline asserted after pointer interaction; browser had not entered keyboard modality.",
+      "correction": "Send actual Tab before focus/Enter.",
+      "applicationChange": false
+    },
+    {
+      "cycle": 2,
+      "area": "acceptance runner",
+      "initialOutcome": "FAIL",
+      "cause": "Refresh viewport expected anchor after automation scrolled to static header language button. Hash and language were already retained.",
+      "correction": "Assert hash/language preservation; reopen retained native deep link before checking refreshed target geometry.",
+      "applicationChange": false
+    },
+    {
+      "cycle": 3,
+      "area": "acceptance runner",
+      "initialOutcome": "FAIL",
+      "cause": "waitForFunction depended on page timers suppressed in JavaScript-disabled context.",
+      "correction": "Bounded Node-side stable geometry polling; reduced-motion screenshots and a separate default-motion navigation scenario.",
+      "applicationChange": false
+    },
+    {
+      "cycle": 4,
+      "area": "baseline preservation comparison",
+      "initialOutcome": "FAIL",
+      "cause": "Raw multiline srcset attribute comparison treated HTML indentation as a product change.",
+      "correction": "Normalize HTML attribute whitespace while still comparing all srcset candidates, source paths, dimensions, ALT and other image attributes. Sizes hints intentionally compared separately as allowed layout changes.",
+      "applicationChange": false
+    }
+  ],
+  "additionalInterruptedRuns": 1,
+  "interruptedRunNote": "One partial acceptance rerun was deliberately stopped to decode all visible body photographs before full-page captures. Its browser-closed exception is not a newly discovered defect.",
+  "finalOutcome": "PASS: complete acceptance rerun and preservation comparison after corrections; regression suite results recorded separately."
+}

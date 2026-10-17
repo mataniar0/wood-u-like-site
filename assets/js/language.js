@@ -118,6 +118,10 @@
       he: "ליום מיוחד, לבית חדש, לאדם אהוב — או פשוט כי רציתם משהו שהוא רק שלכם.",
       en: "For a special day, a new home or someone you love — or simply for something that feels truly yours.",
     },
+    "category.homeDecor": { he: "שלטים ועיצוב לבית", en: "Home Signs & Decor" },
+    "category.kitchenHosting": { he: "מטבח ואירוח", en: "Kitchen & Hosting" },
+    "category.judaicaTradition": { he: "יודאיקה ומסורת", en: "Judaica & Tradition" },
+    "category.giftsMemories": { he: "מתנות וזיכרונות", en: "Gifts & Memories" },
     "category.personal": {
       he: "מתנות אישיות",
       en: "Personal gifts",

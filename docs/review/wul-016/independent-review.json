@@ -1,0 +1,624 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "noJS": false,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 23.765625
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.765625
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.828125
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.765625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 320,
+      "noJS": true,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 23.640625
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.640625
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.703125
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.640625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 136,
+            "scroll": 136,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "noJS": false,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.0625
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 24.40625
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.9375
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.65625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "noJS": true,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.25
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.59375
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 24.125
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.84375
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 171,
+            "scroll": 171,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "noJS": false,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.125
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.6875
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 24.46875
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 24.15625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "noJS": true,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.125
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.6875
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 24.46875
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 24.15625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 349,
+            "scroll": 349,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "noJS": false,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.484375
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 24.03125
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.890625
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.65625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "noJS": true,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.484375
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 24.03125
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.890625
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 23.65625
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 477,
+            "scroll": 477,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "noJS": false,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.0625
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.84375
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.53125
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 24.21875
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "noJS": true,
+      "activated": [
+        {
+          "hash": "#collection-home-decor",
+          "focus": "collection-home-decor",
+          "heading": "שלטים ועיצוב לבית",
+          "top": 24.0625
+        },
+        {
+          "hash": "#collection-kitchen-hosting",
+          "focus": "collection-kitchen-hosting",
+          "heading": "מטבח ואירוח",
+          "top": 23.84375
+        },
+        {
+          "hash": "#collection-judaica-tradition",
+          "focus": "collection-judaica-tradition",
+          "heading": "יודאיקה ומסורת",
+          "top": 23.53125
+        },
+        {
+          "hash": "#collection-gifts-memories",
+          "focus": "collection-gifts-memories",
+          "heading": "מתנות וזיכרונות",
+          "top": 24.21875
+        }
+      ],
+      "geometry": {
+        "overflow": 0,
+        "headers": [
+          "שלטים ועיצוב לבית",
+          "מטבח ואירוח",
+          "יודאיקה ומסורת",
+          "מתנות וזיכרונות"
+        ],
+        "cards": [
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "01 /\nשלטים ועיצוב לבית\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "02 /\nמטבח ואירוח\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "03 /\nיודאיקה ומסורת\n←"
+          },
+          {
+            "width": 306,
+            "scroll": 306,
+            "text": "04 /\nמתנות וזיכרונות\n←"
+          }
+        ]
+      }
+    }
+  ],
+  "blocked": 0,
+  "status": "PASS",
+  "language": "he",
+  "scope": "Independent read-only code review and five widths with JavaScript enabled/disabled; 40 Enter activations. Visual spot checks at 320/1440 without JavaScript.",
+  "limits": [
+    "Local Chromium only",
+    "Not team-lead acceptance or a self-assigned score",
+    "No deployment or human screen-reader review"
+  ],
+  "requestsNote": "All non-local and non-GET/HEAD requests blocked; blocked counter remained zero."
+}
