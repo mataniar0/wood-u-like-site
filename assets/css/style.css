@@ -1349,3 +1349,24 @@ html[lang="en"] .benefits-grid > div + div {
   .collection-group[data-collection="gifts-memories"] .catalog-grid,
   .collection-group[data-collection="judaica-tradition"] .catalog-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* WUL-019: one visible collections link in every shared header, including the
+   byte-preserved inquiry header. The old #favorites URL remains supported. */
+.nav a[href$="#favorites"], .mobile-nav a[href$="#favorites"] { display: none; }
+.category-action {
+  grid-column: 2 / -1;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+#favorites, #original-gifts, .legacy-product { scroll-margin-block-start: 24px; }
+.legacy-product { display: none; }
+.legacy-product:target {
+  display: block;
+  padding: 24px;
+  margin-block: 32px;
+  background: var(--sand);
+  border: 1px solid var(--line);
+}
+.legacy-product p { margin-block: 0 10px; }

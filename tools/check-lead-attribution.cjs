@@ -1,4 +1,6 @@
 "use strict";
+const collectionFor = id => ["welcome","family-sign","hanging-home-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+
 
 // All approved configuration and responses below are browser-only fixtures.
 // No POST can leave this suite: every external request is intercepted.
@@ -208,10 +210,15 @@ function record(test, language, details = {}) {
       await s.page.goto(base + "?" + new URLSearchParams(campaign));
       await assertCampaign(s.page, campaign);
       assert.deepEqual(await s.page.evaluate((key) => JSON.parse(sessionStorage.getItem(key)), campaignKey), campaign);
+      if (id !== "custom") {
+        await s.page.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
+        await s.page.waitForURL(new URL(`collections/${collectionFor(id)}/`, base).href);
+        await assertCampaign(s.page, campaign);
+      }
       const link = id === "custom" ? s.page.locator(".inquiry-entry") :
-        s.page.locator(`.product-inquiry[href="inquiry/?product=${id}"]`);
+        s.page.locator(`.product-inquiry[href="../../inquiry/?product=${id}"]`);
       const href = await link.getAttribute("href");
-      assert.equal(href, id === "custom" ? "inquiry/" : `inquiry/?product=${id}`);
+      assert.equal(href, id === "custom" ? "inquiry/" : `../../inquiry/?product=${id}`);
       await link.click();
       await s.page.waitForURL(id === "custom" ? inquiry : inquiry + `?product=${id}`);
       await assertCampaign(s.page, campaign);
@@ -235,8 +242,11 @@ function record(test, language, details = {}) {
         if (entry === "homepage") {
           await s.page.goto(base + "?" + new URLSearchParams(campaign));
           await assertCampaign(s.page, campaign);
+          await s.page.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
+          await s.page.waitForURL(new URL(`collections/${collectionFor(id)}/`, base).href);
+          await assertCampaign(s.page, campaign);
           const details = s.page.locator(`#${id}-work .product-details-link`);
-          assert.equal(await details.getAttribute("href"), `products/${id}/`);
+          assert.equal(await details.getAttribute("href"), `../../products/${id}/`);
           await details.focus();
           await s.page.keyboard.press("Enter");
           await s.page.waitForURL(productUrl);

@@ -1,6 +1,6 @@
 "use strict";
 
-// WUL-018: serve the repository below its real Pages prefix, then inspect every
+// WUL-019: serve the repository below its real Pages prefix, then inspect every
 // product in both languages. Every outgoing submission is either a browser-only
 // mock below or aborted. Production contact configuration is never edited.
 const assert = require("node:assert/strict");
@@ -11,11 +11,11 @@ const { execFileSync } = require("node:child_process");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
 const sample = process.env.WUL_PRODUCT_SAMPLE === "1";
-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-018/product-pages${sample ? "/stage-a" : ""}`);
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8012/wood-u-like-site/";
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-019/product-pages${sample ? "/stage-a" : ""}`);
+const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8016/wood-u-like-site/";
 const origin = new URL(base).origin;
 const prefix = new URL(base).pathname;
-const baseline = process.env.WUL_BASE_COMMIT || "7557010";
+const baseline = process.env.WUL_BASE_COMMIT || "7644007";
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
 const groups = [
   { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign"] },
@@ -34,9 +34,9 @@ const products = [
 ].map(product => ({ ...product, group: groups.find(group => group.products.includes(product.id)).slug }));
 const clockPhotos = ["front", "handheld-detail", "hanging"];
 const canonicalBase = "https://mataniar0.github.io/wood-u-like-site/";
-const mockEndpoint = "https://formspree.io/f/wul018qatest";
+const mockEndpoint = "https://formspree.io/f/wul019qatest";
 const result = {
-  task: "WUL-018 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
+  task: "WUL-019 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
   mapping: products, preservation: [], scenarios: [], routes: [], metadata: [],
   requests: { mockedPosts: 0, unexpectedSubmissions: 0, unexpectedExternal: 0, realInquiries: 0 },
   limitations: ["Chromium only; Firefox/Safari and manual screen-reader review not run", "Local Pages-prefix server; no deployment or live-site verification", "English metadata changes in the browser; no separate English SEO URL"],
@@ -211,9 +211,9 @@ async function productContract(page, product, language, unique = false) {
   if (unique) { assert.ok(!titles[language].has(title)); titles[language].add(title); assert.ok(!descriptions[language].has(description)); descriptions[language].add(description); result.metadata.push({ product: product.id, language, title, description, canonical, status: "PASS" }); }
   const breadcrumb = page.locator("nav.breadcrumb"); assert.equal(await breadcrumb.count(), 1);
   assert.equal(await breadcrumb.locator('a[href="../../#top"]').count() + await breadcrumb.locator('a[href="../../"]').count(), 1);
-  assert.equal(await breadcrumb.locator(`a[href="../../#collection-${product.group}"]`).count(), 1);
+  assert.equal(await breadcrumb.locator(`a[href="../../collections/${product.group}/"]`).count(), 1);
   assert.equal(await page.locator(".product-quote-link").getAttribute("href"), `../../inquiry/?product=${product.id}`);
-  assert.equal(await page.locator(".product-collection-link").getAttribute("href"), `../../#collection-${product.group}`);
+  assert.equal(await page.locator(".product-collection-link").getAttribute("href"), `../../collections/${product.group}/`);
   const image = page.locator(".product-primary-image"); assert.equal(await image.count(), 1);
   assert.equal(new URL(await image.getAttribute("src"), page.url()).pathname, prefix + `assets/images/${product.file}.webp`);
   if (product.id === "hanging-home-sign") assert.ok(await page.getByText(language === "he" ? "הדמיה להמחשה" : "Illustrative mockup", { exact: true }).isVisible(), "Mockup disclosure beside approved image");
@@ -257,7 +257,7 @@ async function clock(page, language, decoder, width) {
 }
 async function navigation(page, product, language) {
   const direct = page.url(); await page.reload(); await ready(page, language); assert.equal(page.url(), direct);
-  await page.locator(".product-collection-link").click(); await ready(page, language); assert.equal(new URL(page.url()).hash, `#collection-${product.group}`);
+  await page.locator(".product-collection-link").click(); await ready(page, language); assert.equal(new URL(page.url()).pathname, prefix + `collections/${product.group}/`);
   await page.locator(`#${product.id}-work .product-details-link`).click(); await ready(page, language); assert.equal(new URL(page.url()).pathname, prefix + `products/${product.id}/`);
   await page.locator(".product-quote-link").click(); await ready(page, language); assert.equal(await page.locator("#product").inputValue(), product.id);
   assert.equal(await page.locator("#send-request").isDisabled(), true, "Public sending remains blocked");
@@ -269,27 +269,15 @@ async function navigation(page, product, language) {
   return { directSharingReload: "PASS", collectionHomeProductForm: "PASS", originalProductPreselection: "PASS", languagePersistence: "PASS", browserBackForward: "PASS", blockedPublicSend: "PASS" };
 }
 async function homeContract(page, language) {
-  assert.equal(await page.locator("#collections .category-card").count(), 4); assert.equal(await page.locator("#favorites .product-card").count(), 7);
-  assert.equal(await page.locator("#original-gifts").count(), 1);
-  assert.equal(await page.locator("#favorites [data-clock-slide], #favorites .clock-gallery").count(), 0, "Home clock is a compact photo card");
+  assert.equal(await page.locator("#collections .category-card").count(), 4);
+  assert.equal(await page.locator(".product-card, .clock-gallery, [data-clock-slide]").count(), 0, "Home has no product catalog or gallery");
+  assert.equal(await page.locator(".legacy-product:visible").count(), 0);
   for (const group of groups) {
-    const section = page.locator(`#collection-${group.slug}`); assert.equal(await section.count(), 1);
-    assert.equal(await page.locator(`#collections [data-collection="${group.slug}"]`).getAttribute("href"), `#collection-${group.slug}`);
-    assert.deepEqual(await section.locator(".product-card").evaluateAll(nodes => nodes.map(node => node.id.replace(/-work$/u, ""))), group.products);
-    for (const id of group.products) {
-      const card = section.locator(`#${id}-work`); assert.equal(await card.locator("h4").count(), 1);
-      assert.equal(await card.locator(".product-details-link").getAttribute("href"), `products/${id}/`);
-      assert.equal(await card.locator(".product-inquiry").getAttribute("href"), `inquiry/?product=${id}`);
-      assert.equal(await card.locator(".product-image > span").count(), 0, "No redundant category badge inside grouped cards");
-      const bounds = await card.locator(".product-image").boundingBox(); assert.ok(bounds && bounds.height <= 310, "Catalog photographs remain compact");
-    }
+    assert.equal(await page.locator(`#collections [data-collection="${group.slug}"]`).getAttribute("href"), `collections/${group.slug}/`);
+    assert.equal(await page.locator(`#collection-${group.slug}`).count(), 1);
   }
-  const overlaps = await page.locator("#favorites .product-card").evaluateAll(nodes => {
-    const boxes = nodes.map(node => node.getBoundingClientRect()), collisions = [];
-    for (let a = 0; a < boxes.length; a++) for (let b = a + 1; b < boxes.length; b++) if (Math.min(boxes[a].right, boxes[b].right) - Math.max(boxes[a].left, boxes[b].left) > 1 && Math.min(boxes[a].bottom, boxes[b].bottom) - Math.max(boxes[a].top, boxes[b].top) > 1) collisions.push([a, b]);
-    return collisions;
-  });
-  assert.deepEqual(overlaps, [], "Catalog cards do not overlap");
+  for (const id of ["favorites", "original-gifts", "story", "personal", "top"]) assert.equal(await page.locator(`#${id}`).count(), 1);
+  for (const product of products) assert.equal(await page.locator(`#${product.id}-work.legacy-product .product-details-link`).getAttribute("href"), `products/${product.id}/`);
   await translations(page, language);
 }
 
@@ -323,7 +311,7 @@ async function homeContract(page, language) {
         try {
           const page = await context.newPage(), errors = watch(page); await page.goto(base); await ready(page, language);
           await homeContract(page, language); await imageContract(page, approvedAssets); await links(page); await overflow(page);
-          const screenshot = await capture(page, decoder, `${language}-${width}-home`, await page.locator("#favorites .product-image img").all());
+          const screenshot = await capture(page, decoder, `${language}-${width}-home`, await page.locator("#collections img").all());
           const axeViolations = await axe(page); assert.deepEqual(errors, []);
           result.scenarios.push({ kind: "home", language, viewport: [width, height], status: "PASS", ...screenshot, axeViolations, errors });
           console.log(`PASS home ${language} ${width}`); write({ status: "RUNNING" });
@@ -358,11 +346,13 @@ async function homeContract(page, language) {
       try {
         const page = await nativeContext.newPage(); await page.goto(base);
         for (const product of products) {
+          await page.locator(`.category-card[data-collection="${product.group}"]`).click();
+          assert.equal(new URL(page.url()).pathname, prefix + `collections/${product.group}/`);
           await page.locator(`#${product.id}-work .product-details-link`).click(); assert.equal(new URL(page.url()).pathname, prefix + `products/${product.id}/`);
           await page.locator(".product-quote-link").click(); assert.equal(new URL(page.url()).searchParams.get("product"), product.id);
           await page.locator(".inquiry-back").click(); assert.equal(new URL(page.url()).pathname, prefix);
         }
-        result.nativeNavigation = { products: 7, homeProductFormHome: "PASS", status: "PASS" };
+        result.nativeNavigation = { products: 7, homeCollectionProductFormHome: "PASS", status: "PASS" };
       } finally { await nativeContext.close(); }
       // The fixture exists only as a fulfilled browser response. The checked-in
       // flags stay false, and every simulated POST is intercepted before network.
@@ -370,13 +360,13 @@ async function homeContract(page, language) {
         const { context, posts } = await contextFor(browser, { language, mocked: true, viewport: { width: 390, height: 844 } });
         try {
           const page = await context.newPage(), errors = watch(page);
-          const params = new URLSearchParams({ utm_source: "qa_wul018", utm_campaign: "product-pages", email: "untrusted@example.invalid", product_id: "untrusted", source_page: "untrusted" });
+          const params = new URLSearchParams({ utm_source: "qa_wul019", utm_campaign: "product-pages", email: "untrusted@example.invalid", product_id: "untrusted", source_page: "untrusted" });
           await page.goto(new URL(`products/${product.id}/?${params}`, base).href); await ready(page, language);
           await page.locator(".product-quote-link").click(); await ready(page, language); assert.equal(await page.locator("#product").inputValue(), product.id);
-          await page.locator("#customer-name").fill("QA product page fixture"); await page.locator("#contact").fill("wul018-fixture@example.invalid"); await page.locator("#quantity").fill("1");
+          await page.locator("#customer-name").fill("QA product page fixture"); await page.locator("#contact").fill("wul019-fixture@example.invalid"); await page.locator("#quantity").fill("1");
           await page.locator("#inquiry-form").evaluate(form => form.requestSubmit()); await page.waitForFunction(() => document.querySelector("#inquiry-status").dataset.state === "success");
           assert.equal(posts.length, 1); const data = posts[0];
-          for (const [key, expected] of Object.entries({ product: product.id, product_id: product.id, product_name: product.name, language, brand: "WOOD U LIKE", source_site: "wood-u-like-site", source_page: new URL("inquiry/", base).href, utm_source: "qa_wul018", utm_campaign: "product-pages" })) assert.equal(data[key], expected, `Canonical payload ${key}`);
+          for (const [key, expected] of Object.entries({ product: product.id, product_id: product.id, product_name: product.name, language, brand: "WOOD U LIKE", source_site: "wood-u-like-site", source_page: new URL("inquiry/", base).href, utm_source: "qa_wul019", utm_campaign: "product-pages" })) assert.equal(data[key], expected, `Canonical payload ${key}`);
           assert.equal(data.product_label, await page.evaluate(id => WUL_I18N.t(`inquiry.product.${id}`), product.id)); assert.equal(data.source_page.includes("?"), false); assert.match(data.submitted_at, /^\d{4}-\d\d-\d\dT/u);
           const storage = await page.evaluate(() => ({ local: Object.fromEntries(Object.entries(localStorage)), session: Object.fromEntries(Object.entries(sessionStorage)) }));
           assert.deepEqual(storage, { local: { "wood-u-like-language": language }, session: {} }, "No private or unknown query identifiers retained"); assert.deepEqual(errors, []);
@@ -388,6 +378,6 @@ async function homeContract(page, language) {
     assert.equal(result.requests.unexpectedSubmissions, 0); assert.equal(result.requests.unexpectedExternal, 0); assert.equal(result.requests.realInquiries, 0);
     result.routes = [...linkCache.keys()].sort().map(url => ({ path: new URL(url).pathname, status: "PASS" }));
     write({ status: "PASS", completedAt: new Date().toISOString() });
-    console.log(`PASS WUL-018: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
+    console.log(`PASS WUL-019: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
   } finally { if (decoderContext) await decoderContext.close(); await browser.close(); }
 })().catch(error => { write({ status: "FAIL", failure: error.message, completedAt: new Date().toISOString() }); console.error(error); process.exitCode = 1; });

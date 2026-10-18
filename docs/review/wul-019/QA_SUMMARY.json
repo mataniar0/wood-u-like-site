@@ -1,0 +1,308 @@
+{
+  "task": "WUL-019 / Issue #34",
+  "status": "PASS",
+  "generatedAtUtc": "2026-10-18T16:27:25.438014+00:00",
+  "environment": {
+    "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "axeCore": "4.10.3"
+  },
+  "baseline": "76440077dec3cc824271ad43978020592f79c447",
+  "branch": "feature/wul-019-dedicated-collections",
+  "dependencyCheck": {
+    "checkedAtUtc": "2026-10-18T16:25:49.813924+00:00",
+    "initialBaseline": "76440077dec3cc824271ad43978020592f79c447",
+    "mainAtFinalCheck": "76440077dec3cc824271ad43978020592f79c447",
+    "mainUnchangedSinceStart": true,
+    "issue26": {
+      "state": "OPEN",
+      "title": "WUL-015 — Natural-edge personalized door sign: enhanced gallery & HE/EN inquiry",
+      "updatedAt": "2026-10-15T20:16:50Z",
+      "url": "https://github.com/mataniar0/wood-u-like-site/issues/26"
+    },
+    "naturalEdgeDoorSignInMain": false,
+    "productPageCountInMain": 7,
+    "status": "PASS"
+  },
+  "suiteResults": [
+    {
+      "tool": "check-collections",
+      "scenarioRecords": 89,
+      "status": "PASS",
+      "evidence": "collections/results.json"
+    },
+    {
+      "tool": "check-product-pages",
+      "scenarioRecords": 109,
+      "status": "PASS",
+      "evidence": "product-pages/results.json"
+    },
+    {
+      "tool": "check-fragment-navigation",
+      "scenarioRecords": 52,
+      "status": "PASS",
+      "evidence": "legacy/results.json"
+    },
+    {
+      "tool": "check-collection-accessibility",
+      "scenarioRecords": 12,
+      "status": "PASS",
+      "evidence": "accessibility/results.json"
+    },
+    {
+      "tool": "check-language",
+      "scenarioRecords": 21,
+      "status": "PASS",
+      "evidence": "regression/hero/results.json"
+    },
+    {
+      "tool": "check-hero",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/hero/hero-results.json"
+    },
+    {
+      "tool": "check-homepage",
+      "scenarioRecords": 4,
+      "status": "PASS",
+      "evidence": "regression/homepage/browser-results.json"
+    },
+    {
+      "tool": "check-clock",
+      "scenarioRecords": 15,
+      "status": "PASS",
+      "evidence": "regression/clock/results.json"
+    },
+    {
+      "tool": "check-family-sign",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/family-sign/results.json"
+    },
+    {
+      "tool": "check-schwartz-sign",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/schwartz-sign/results.json"
+    },
+    {
+      "tool": "check-pizza-peel",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/pizza-peel/results.json"
+    },
+    {
+      "tool": "check-inquiry",
+      "scenarioRecords": 51,
+      "status": "PASS",
+      "evidence": "regression/inquiry/results.json"
+    },
+    {
+      "tool": "check-lead-attribution",
+      "scenarioRecords": 178,
+      "status": "PASS",
+      "evidence": "regression/attribution/results.json"
+    },
+    {
+      "tool": "check-shared-privacy",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/privacy/results.json"
+    }
+  ],
+  "browserScenarioRecords": 581,
+  "additionalEvidence": {
+    "stageASampleAndBaselineRecords": 8,
+    "beforeCollectionGroupCaptures": 16,
+    "staticPreservationContract": "PASS",
+    "originalTranslationKeysPreserved": 214,
+    "clockAssetChecks": 6,
+    "nativeNoJsProductNavigationFlows": 7,
+    "noJsWithActualStoredEnglishPreferenceDestinations": 18
+  },
+  "layoutMatrix": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "languages": [
+      "he",
+      "en"
+    ],
+    "pages": [
+      "home",
+      "home-decor",
+      "kitchen-hosting",
+      "judaica-tradition",
+      "gifts-memories"
+    ],
+    "jsLayoutScenarios": 50,
+    "noJsLayoutScenarios": 25,
+    "effectiveLanguageWithoutJs": "he"
+  },
+  "products": {
+    "count": 7,
+    "distribution": [
+      3,
+      2,
+      1,
+      1
+    ],
+    "uniqueProductSeoRecords": 14,
+    "uniqueCollectionSeoRecords": 8,
+    "publicHomeProductCards": 0
+  },
+  "legacy": {
+    "specifiedFragments": 13,
+    "scenarioRecords": 52,
+    "modes": [
+      "JS-HE",
+      "JS-EN",
+      "no-JS-static-HE with requested HE",
+      "no-JS-static-HE with requested EN"
+    ],
+    "actualStoredEnglishPreferenceAlsoChecked": true
+  },
+  "requests": {
+    "interceptedMockPosts": 218,
+    "productPageFixturePosts": 14,
+    "inquiryFixturePosts": 34,
+    "attributionFixturePosts": 170,
+    "realInquiries": 0,
+    "unexpectedExternalBrowserRequests": 0,
+    "publicSendingBlocked": true
+  },
+  "preservation": {
+    "protectedByteIdenticalFiles": 33,
+    "onlyAllowedNavigationChangesInProductPages": 7,
+    "heroStoryEditorialPersonalFooterUnchanged": true,
+    "newImageAssets": 0
+  },
+  "homeMetricsAfterCompleteScroll": [
+    {
+      "language": "he",
+      "width": 390,
+      "before": {
+        "height": 7890,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 4335,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 45.1,
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "before": {
+        "height": 8280,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 4651,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 43.8,
+      "status": "PASS"
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "before": {
+        "height": 6210,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 3647,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 41.3,
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "before": {
+        "height": 6353,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 3791,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 40.3,
+      "status": "PASS"
+    }
+  ],
+  "correctionCycles": {
+    "productCorrectionCycles": 0,
+    "qaHarnessCorrectionCycles": 2,
+    "events": [
+      {
+        "cycle": 1,
+        "kind": "qa-harness",
+        "failure": "regression/run-history/homepage-run-1-FAIL.json",
+        "finalStatus": "PASS",
+        "passEvidence": "regression/homepage/browser-results.json",
+        "rerunLog": "regression/run-history/homepage-run-2.log"
+      },
+      {
+        "cycle": 2,
+        "kind": "qa-harness",
+        "detectedBy": "code review",
+        "executionFailure": false,
+        "finding": "Deduplicated browser checks bind ALT to the language dictionary; add an explicit immutable-baseline gate to preserve the original literal ALT and all original translations as independent expected values.",
+        "fix": "Compare every original dictionary key except the authorized nav.favorites change, plus explicit family/Schwartz/pizza ALT assertions. No site code changed.",
+        "beforeEvidence": "regression/run-history/contract-run-1-PASS.json",
+        "passEvidence": "PRESERVATION.json",
+        "rerunLog": "regression/run-history/contract-run-2.log",
+        "finalStatus": "PASS"
+      }
+    ]
+  },
+  "historicalExecutionFailures": [
+    {
+      "tool": "check-homepage",
+      "classification": "qa-harness",
+      "evidence": "regression/run-history/homepage-run-1-FAIL.json",
+      "finalRerunStatus": "PASS"
+    }
+  ],
+  "screenshots": {
+    "count": 397,
+    "manifest": "SCREENSHOT_MANIFEST.json"
+  },
+  "independentReview": {
+    "state": "PENDING",
+    "minimumScore": 90,
+    "blockingDefectsAllowed": 0,
+    "selfScore": null
+  },
+  "publication": {
+    "merged": false,
+    "deployed": false,
+    "workBranchDeleted": false,
+    "livePagesVerificationPerformed": false
+  },
+  "limitations": [
+    "Chromium automation only; Safari and Firefox not run",
+    "No manual screen-reader or physical-device review",
+    "Static Hebrew without JavaScript; English uses the shared language runtime",
+    "English metadata shares the same URL; no separate-language indexing guarantee",
+    "Local server under the real Pages prefix; no production-site verification or deployment"
+  ]
+}

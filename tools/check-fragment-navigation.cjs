@@ -1,73 +1,34 @@
 "use strict";
-// Reproduce keyboard fragment jumps with native Tab/Enter and no animation overrides.
-const { chromium } = require("playwright");
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const path = require("node:path");
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8014/wood-u-like-site/";
-const origin = new URL(base).origin;
-const out = path.resolve(__dirname, "..", process.env.WUL_REVIEW_DIR || "docs/review/wul-018/fragment-navigation");
-const groups = ["home-decor", "kitchen-hosting", "judaica-tradition", "gifts-memories"];
-const results = [];
-let blocked = 0;
-(async () => {
-  fs.mkdirSync(out, { recursive: true });
-  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium", args: ["--no-sandbox"] });
-  try {
-    const cases = [390, 1440].flatMap(width => [
-      { width, language: "he", javaScriptEnabled: true },
-      { width, language: "en", javaScriptEnabled: true },
-      { width, language: "he", javaScriptEnabled: false },
-    ]);
-    for (const test of cases) {
-      const context = await browser.newContext({ viewport: { width: test.width, height: 900 },
-        javaScriptEnabled: test.javaScriptEnabled, reducedMotion: "no-preference", serviceWorkers: "block" });
-      if (test.javaScriptEnabled) await context.addInitScript(lang => localStorage.setItem("wood-u-like-language", lang), test.language);
-      await context.route("**/*", route => {
-        const request = route.request();
-        if (["GET", "HEAD"].includes(request.method()) && new URL(request.url()).origin === origin) return route.continue();
-        blocked++; return route.abort("blockedbyclient");
-      });
-      try {
-        const page = await context.newPage();
-        const errors = [];
-        page.on("pageerror", error => errors.push(error.message));
-        const activations = [];
-        for (const method of ["click", "keyboard"]) for (const slug of groups) {
-          await page.goto(base);
-          await page.evaluate(() => document.fonts.ready);
-          assert.equal(await page.locator("html").getAttribute("lang"), test.language);
-          const link = page.locator(`#collections [data-collection="${slug}"]`);
-          let tabs = 0;
-          if (method === "keyboard") {
-            while (!await link.evaluate(node => document.activeElement === node)) {
-              await page.keyboard.press("Tab");
-              assert.ok(++tabs < 40, "Native Tab order reaches the category link");
-            }
-            assert.equal(await link.evaluate(node => getComputedStyle(node).outlineStyle !== "none"), true);
-            await page.keyboard.press("Enter");
-          } else await link.click();
-          const hash = `#collection-${slug}`;
-          assert.equal(new URL(page.url()).hash, hash);
-          const target = page.locator(hash);
-          assert.equal(await target.evaluate(node => document.activeElement === node), true);
-          // Check after scroll settles; passing while the heading crosses the viewport is insufficient.
-          await new Promise(resolve => setTimeout(resolve, 400));
-          const geometry = await target.locator("h3").evaluate(node => ({ top: node.getBoundingClientRect().top, height: innerHeight }));
-          assert.ok(geometry.top >= 0 && geometry.top < geometry.height, `${hash} title remains visible after ${method}`);
-          if (test.width === 390 && test.language === "he" && test.javaScriptEnabled && method === "keyboard" && slug === "home-decor") {
-            await page.screenshot({ path: path.join(out, "he-390-keyboard-after.png") });
-          }
-          activations.push({ slug, method, tabs, top: geometry.top, status: "PASS" });
-        }
-        assert.deepEqual(errors, []);
-        results.push({ ...test, status: "PASS", activations, errors });
-        console.log(`PASS fragments ${test.width} ${test.language} JS=${test.javaScriptEnabled}`);
-      } finally { await context.close(); }
-    }
-    assert.equal(blocked, 0);
-    fs.writeFileSync(path.join(out, "results.json"), JSON.stringify({ status: "PASS", results,
-      nativeActivations: results.reduce((count, result) => count + result.activations.length, 0),
-      blockedRequests: blocked, realInquiryRequests: 0 }, null, 2) + "\n");
-  } finally { await browser.close(); }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+// Every specified legacy fragment: direct load, refresh, a physical Enter on a
+// native hash link, target focus, visibility, and the correct natural route.
+const q=require('./qa-collections-shared.cjs');
+const {assert,path,root,base,groups,products}=q;
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-019/legacy');
+const targets=[{id:'favorites',kind:'collections',next:'#collections'},
+ {id:'original-gifts',kind:'collection',slug:'gifts-memories'},
+ ...groups.map(g=>({id:'collection-'+g.slug,kind:'collection',slug:g.slug})),
+ ...products.map(p=>({id:p.product_id+'-work',kind:'product',product:p.product_id}))];
+const result={task:'WUL-019',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
+function save(status,more={}){q.write(out,'results.json',{...result,status,...more});}
+async function targetVisible(page,t){const target=page.locator('#'+t.id);assert.equal(await target.isVisible(),true);const rect=await target.boundingBox();assert.ok(rect.y>=-1&&rect.y<page.viewportSize().height-10,`${t.id} starts in view without header covering it: ${rect.y}`);return rect;}
+(async()=>{const b=await q.launch();try{
+ for(const js of[true,false])for(const requestedLanguage of['he','en'])for(const t of targets){const language=js?requestedLanguage:'he',s=await q.session(b,{language:requestedLanguage,javaScriptEnabled:js});try{const p=s.page;
+  assert.equal((await p.goto(base+'#'+t.id)).status(),200);await q.ready(p,requestedLanguage,js);await targetVisible(p,t);await p.reload();await q.ready(p,requestedLanguage,js);await targetVisible(p,t);
+  if(t.kind==='product'){assert.equal(await p.locator('.legacy-product:visible').count(),1);assert.equal(await p.locator('#'+t.id+' img').count(),0);assert.equal(await p.locator('#'+t.id+' .product-details-link').getAttribute('href'),`products/${t.product}/`);}
+  // A fixture anchor exercises the browser's native fragment focus algorithm;
+  // no runtime redirect or JavaScript click handler is used, even with JS off.
+  await p.goto(base+'#story');await p.evaluate(id=>{const a=document.createElement('a');a.id='qa-legacy-link';a.href='#'+id;a.textContent='QA native fragment fixture';document.body.append(a);},t.id);await p.locator('#qa-legacy-link').focus();await p.keyboard.press('Enter');assert.equal(new URL(p.url()).hash,'#'+t.id);await targetVisible(p,t);
+  const focused=await p.locator('#'+t.id).evaluate(e=>e===document.activeElement);assert.equal(focused,true,'Native hash navigation focuses its target');
+  let screenshot;
+  if(t.kind==='product'){
+   if(js||requestedLanguage==='he'){const file=`screenshots/${language}-390-${t.product}${js?'':'-no-js'}.png`;q.fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});await p.screenshot({path:path.join(out,file)});screenshot=file;}
+   await p.keyboard.press('Tab');assert.equal(await p.locator('#'+t.id+' .product-details-link').evaluate(e=>e===document.activeElement),true,'First Tab enters the exact product link');await p.keyboard.press('Enter');await p.waitForURL(new URL(`products/${t.product}/`,base).href);await q.ready(p,requestedLanguage,js);assert.equal(await p.locator('body').getAttribute('data-product-id'),t.product);
+  }else if(t.kind==='collection'){
+   if(t.id==='original-gifts'){await p.keyboard.press('Tab');assert.equal(await p.locator('.category-card[data-collection="gifts-memories"]').evaluate(e=>e===document.activeElement),true);}await p.keyboard.press('Enter');await p.waitForURL(new URL(`collections/${t.slug}/`,base).href);await q.ready(p,requestedLanguage,js);assert.equal(await p.locator('body').getAttribute('data-collection'),t.slug);
+  }else{
+   await p.keyboard.press('Tab');assert.equal(await p.locator('.category-card').first().evaluate(e=>e===document.activeElement),true);
+  }
+  await s.finish();result.scenarios.push({fragment:'#'+t.id,javaScript:js,requestedLanguage,effectiveLanguage:language,viewport:[390,844],status:'PASS',directLoadRefresh:'PASS',nativeHashEnterFocus:'PASS',firstTabAndExactDestination:'PASS',screenshot,errors:s.errors,requests:s.requests});save('RUNNING');console.log(`PASS legacy #${t.id} ${requestedLanguage} ${js?'JS':'no-JS'}`);
+ }catch(e){await s.context.close();throw e;}}
+ save('PASS');console.log(`PASS ${result.scenarios.length} scenarios, ${targets.length} fragments`);
+ }finally{await b.close();}})().catch(e=>{save('FAIL',{failure:e.message,stack:e.stack});console.error(e);process.exitCode=1;});

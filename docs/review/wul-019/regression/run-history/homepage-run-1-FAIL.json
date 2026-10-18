@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "classification": "qa-harness",
+  "cycle": 1,
+  "tool": "check-homepage.cjs",
+  "reason": "Legacy product-details-link is not inside a product-card; obsolete homepage assertion dereferenced null",
+  "log": "homepage-run-1.log",
+  "fix": "Scope catalog assertions to .product-card .product-details-link; validate legacy fallback separately in check-fragment-navigation.cjs",
+  "rerun": "homepage-run-2.log"
+}

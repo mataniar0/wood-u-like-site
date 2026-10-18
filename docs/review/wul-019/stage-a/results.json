@@ -1,0 +1,78 @@
+{
+  "capturedBeforeExpansion": true,
+  "baseline": "7644007",
+  "scenarios": [
+    {
+      "mode": "stage-a",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "height": 2091,
+      "loadedImages": 3,
+      "imageResources": 3
+    },
+    {
+      "mode": "before",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "height": 7890,
+      "loadedImages": 14,
+      "imageResources": 10
+    },
+    {
+      "mode": "stage-a",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "height": 2147,
+      "loadedImages": 3,
+      "imageResources": 3
+    },
+    {
+      "mode": "before",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "height": 8280,
+      "loadedImages": 14,
+      "imageResources": 10
+    },
+    {
+      "mode": "stage-a",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "height": 1198,
+      "loadedImages": 3,
+      "imageResources": 3
+    },
+    {
+      "mode": "before",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "height": 6210,
+      "loadedImages": 14,
+      "imageResources": 10
+    },
+    {
+      "mode": "stage-a",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "height": 1235,
+      "loadedImages": 3,
+      "imageResources": 3
+    },
+    {
+      "mode": "before",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "height": 6353,
+      "loadedImages": 14,
+      "imageResources": 10
+    }
+  ]
+}

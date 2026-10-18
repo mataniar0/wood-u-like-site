@@ -156,3 +156,43 @@ WUL_REVIEW_DIR=docs/review/wul-018/regression/privacy node tools/check-shared-pr
 ```
 
 [דוח QA ומסירה](docs/review/wul-018/REPORT_HE.md) כולל צילומי לפני/אחרי, תצוגות מוצר HE/EN במובייל ובדסקטופ, תוצאות וגבולות בדיקה, ורשימת קבצים ומחזורי תיקון. תצוגות הביקורת הן צילומי ה־QA ב־PR; עמודי המוצר יופיעו באתר החי רק לאחר אישור, מיזוג ופרסום נפרדים. אין לבצע Merge, Deploy או מחיקת הענף במסגרת WUL-018; נדרשת סקירת ראש צוות עצמאית בציון 90/100 לפחות וללא חסמים.
+
+## WUL-019 — עמודי קולקציה עצמאיים
+
+המבנה הנוכחי הוא **בית → קולקציה → מוצר → טופס בירור**. דף הבית מציג Hero, ארבעה כרטיסי קולקציות, סיפור, editorial והתאמה אישית; רשימת שבעת המוצרים הוסרה ממנו. סעיפי WUL-016 ו־WUL-018 לעיל מתארים שלבים קודמים. ארבעת הקישורים הטבעיים בבית מובילים כעת ל־HTML סטטי:
+
+| HE / EN | נתיב | מוצרים |
+|---|---|---|
+| שלטים ועיצוב לבית / Home Signs & Decor | [collections/home-decor/](collections/home-decor/index.html) | welcome, family-sign, hanging-home-sign |
+| מטבח ואירוח / Kitchen & Hosting | [collections/kitchen-hosting/](collections/kitchen-hosting/index.html) | kitchen, pizza-peel |
+| יודאיקה ומסורת / Judaica & Tradition | [collections/judaica-tradition/](collections/judaica-tradition/index.html) | blessing |
+| מתנות וזיכרונות / Gifts & Memories | [collections/gifts-memories/](collections/gifts-memories/index.html) | personalized-clock |
+
+`assets/css/collection.css` מעצב את ארבעת העמודים בלבד. בכל עמוד H1, Breadcrumb, מבוא מתורגם וכרטיסים קומפקטיים עם צילומים מאושרים ללא crop. שבעת עמודי המוצר נשמרו, ורק ניווט הקולקציה שלהם עודכן. השעון מציג front בקולקציה ושלוש תמונות בעמוד המוצר. לא נוספו נכסי מוצר חדשים, ולא שונו קובצי `inquiry/`, `attribution.js` או אישורי השליחה.
+
+קישורי hash ישנים נשמרים לפי [LEGACY_LINKS.md](docs/review/wul-019/LEGACY_LINKS.md). קישור מוצר ישן מציג הודעת מעבר קצרה עם קישור טבעי; ההודעה מופיעה רק ב־`:target`, עם/בלי JS. אין redirect או קטלוג מוסתר עם תמונות. תפריטי האתר מסתירים את קישור `favorites` הכפול ב־CSS המשותף, כולל בטופס שהקבצים שלו מוגנים משינוי. בחירת השפה נשמרת בין כל שלבי הניווט; ללא JS נשאר התוכן העברי הסטטי.
+
+להרצה חוזרת יש להתקין את כלי ה־QA ולהפעיל שרת כפי שמפורט לעיל. הפקודות הבאות שומרות את תוצאות WUL-019 בנפרד מהדוחות ההיסטוריים:
+
+```sh
+export NODE_PATH=/tmp/wul-check/node_modules
+export WUL_BASE_URL=http://127.0.0.1:8001/wood-u-like-site/
+export WUL_BASE_COMMIT=7644007
+node tools/check-collections.cjs
+node tools/check-product-pages.cjs
+node tools/check-fragment-navigation.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/clock node tools/check-clock.cjs
+# check-hero also executes check-language (21 language scenarios).
+WUL_REVIEW_DIR=docs/review/wul-019/regression/hero node tools/check-hero.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/homepage node tools/check-homepage.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/family-sign node tools/check-family-sign.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/schwartz-sign node tools/check-schwartz-sign.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/pizza-peel node tools/check-pizza-peel.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/inquiry node tools/check-inquiry.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/attribution node tools/check-lead-attribution.cjs
+WUL_REVIEW_DIR=docs/review/wul-019/regression/privacy node tools/check-shared-privacy.cjs
+```
+
+שלושת כלי רגרסיית זהות המוצרים משתמשים כעת ב־`check-product-identity.cjs`, כדי לבדוק את אותם צילומים, ALT, מידות, contain, קישורי מוצר/טופס, החלפת שפה, נגישות וחסימת שליחה בתשתית משותפת. `qa-collections-shared.cjs` הוא קוד בדיקה בלבד ואינו נטען באתר.
+
+[דוח המסירה](docs/review/wul-019/REPORT_HE.md), [סיכום מכונה](docs/review/wul-019/QA_SUMMARY.json), [מפת שיוך](docs/review/wul-019/CATEGORY_PRODUCT_MAP.json) ו־[הוראות תחזוקה למוצר שמיני](docs/review/wul-019/README.md) כוללים את הראיות ואת גבולות הבדיקה. WUL-015 / Issue #26 עדיין לא מוזג לבסיס `7644007`, לכן נשמרו שבעה מוצרים. אין Merge, Deploy, מחיקת ענף או הפעלת פניות במשימה זו; נדרשת סקירת ראש צוות עצמאית בציון 90/100 לפחות, ללא חוסמים.

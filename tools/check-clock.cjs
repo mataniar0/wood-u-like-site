@@ -228,18 +228,22 @@ async function assertFocus(page, button) {
         assert.equal(await page.locator("html").getAttribute("lang"), language);
         assert.equal(await page.locator("html").getAttribute("dir"), language === "he" ? "rtl" : "ltr");
         assert.equal(await page.locator(".category-card").count(), 4, "Four canonical categories without duplicates");
-        assert.equal(await page.locator(".product-card").count(), 7);
+        assert.equal(await page.locator(".product-card").count(), 0);
+        await page.locator('.category-card[data-collection="gifts-memories"]').click();
+        await page.waitForURL(new URL("collections/gifts-memories/", base).href);
+        await decodeImages(page);
+        assert.equal(await page.locator(".product-card").count(), 1);
         const compactCard = page.locator("#personalized-clock-work.product-card");
-        assert.equal(await compactCard.locator("h4").textContent(), names[language]);
-        assert.equal(await compactCard.locator(".clock-gallery").count(), 0, "Homepage uses one compact clock photograph");
-        assert.equal(await compactCard.locator(".product-details-link").getAttribute("href"), "products/personalized-clock/");
-        assert.equal(await compactCard.locator(".product-inquiry").getAttribute("href"), "inquiry/?product=personalized-clock");
+        assert.equal(await compactCard.locator("h2").textContent(), names[language]);
+        assert.equal(await compactCard.locator(".clock-gallery").count(), 0, "Collection uses one compact clock photograph");
+        assert.equal(await compactCard.locator(".product-details-link").getAttribute("href"), "../../products/personalized-clock/");
+        assert.equal(await compactCard.locator(".product-inquiry").getAttribute("href"), "../../inquiry/?product=personalized-clock");
         await assertNoOverflow(page);
         await assertCardsDoNotOverlap(page, ".category-card");
         await assertCardsDoNotOverlap(page, ".product-card");
-        const homepageAxe = await axeCheck(page);
-        await page.screenshot({ path: path.join(out, `screenshots/${language}-${width}-homepage.png`), fullPage: true });
-        shots.push(`screenshots/${language}-${width}-homepage.png`);
+        const collectionAxe = await axeCheck(page);
+        await page.screenshot({ path: path.join(out, `screenshots/${language}-${width}-collection.png`), fullPage: true });
+        shots.push(`screenshots/${language}-${width}-collection.png`);
         await compactCard.locator(".product-details-link").focus();
         await page.keyboard.press("Enter");
         await page.waitForURL(productUrl);
@@ -290,6 +294,13 @@ async function assertFocus(page, button) {
         await previous.focus();
         await previous.press("Home");
         await assertSlide(page, 0, language);
+        // Native button activation must work with Space and Enter as well.
+        await next.focus();
+        await next.press("Space"); await assertSlide(page, 1, language); await assertFocus(page, next);
+        await next.press("Enter"); await assertSlide(page, 2, language); await assertFocus(page, next);
+        await previous.focus();
+        await previous.press("Space"); await assertSlide(page, 1, language); await assertFocus(page, previous);
+        await previous.press("Enter"); await assertSlide(page, 0, language);
         await assertFocus(page, previous);
         await previous.press(language === "he" ? "ArrowLeft" : "ArrowRight");
         await assertSlide(page, 1, language);
@@ -370,7 +381,7 @@ async function assertFocus(page, button) {
         assert.deepEqual(errors, [], "No JavaScript, console, or HTTP errors");
         results.push({ viewport: [width, height], language, status: "PASS", slideResults,
           keyboard: "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping", languageSwitchRetainsSlide: "PASS",
-          reducedMotion: "PASS", noOverflowOrCardOverlap: "PASS", homepageAxe, productAxe, inquiryAxe,
+          reducedMotion: "PASS", noOverflowOrCardOverlap: "PASS", collectionAxe, productAxe, inquiryAxe,
           preselectedClockAndLanguagePersistence: "PASS", optionalDimensions: "PASS", unknownProductsRejected: "PASS",
           publicSubmissionBlocked: "PASS", errors, screenshots: shots });
         recordResults();

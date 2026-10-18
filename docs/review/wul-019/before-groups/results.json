@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "baseline": "7644007",
+  "scenarios": [
+    {
+      "collection": "home-decor",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-390-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15368,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19526,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14582,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ]
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-390-kitchen-hosting-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 8318,
+          "maxColorFraction": 0.010421233685204546
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14379,
+          "maxColorFraction": 0.06030150753768844
+        }
+      ]
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-390-judaica-tradition-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 9492,
+          "maxColorFraction": 0.018481670095443662
+        }
+      ]
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-390-gifts-memories-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 10660,
+          "maxColorFraction": 0.004923948602070756
+        }
+      ]
+    },
+    {
+      "collection": "home-decor",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-390-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15394,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19473,
+          "maxColorFraction": 0.0015513810664058547
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14668,
+          "maxColorFraction": 0.003406293211021551
+        }
+      ]
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-390-kitchen-hosting-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 8237,
+          "maxColorFraction": 0.010421233685204546
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14379,
+          "maxColorFraction": 0.06030150753768844
+        }
+      ]
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-390-judaica-tradition-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 9497,
+          "maxColorFraction": 0.018481670095443662
+        }
+      ]
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-390-gifts-memories-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 10642,
+          "maxColorFraction": 0.004923948602070756
+        }
+      ]
+    },
+    {
+      "collection": "home-decor",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-1440-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20650,
+          "maxColorFraction": 0.0015895278167367929
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15292,
+          "maxColorFraction": 0.0038023998753311515
+        }
+      ]
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-1440-kitchen-hosting-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8632,
+          "maxColorFraction": 0.009973507869721053
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15277,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ]
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-1440-judaica-tradition-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ]
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/he-1440-gifts-memories-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11240,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ]
+    },
+    {
+      "collection": "home-decor",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-1440-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20651,
+          "maxColorFraction": 0.0015895278167367929
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15295,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ]
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-1440-kitchen-hosting-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8717,
+          "maxColorFraction": 0.009942340657628175
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15277,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ]
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-1440-judaica-tradition-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ]
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "baseline": "7644007",
+      "screenshot": "screenshots/en-1440-gifts-memories-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11200,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ]
+    }
+  ]
+}

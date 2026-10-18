@@ -1,0 +1,26 @@
+{
+  "productCorrectionCycles": 0,
+  "qaHarnessCorrectionCycles": 2,
+  "events": [
+    {
+      "cycle": 1,
+      "kind": "qa-harness",
+      "failure": "regression/run-history/homepage-run-1-FAIL.json",
+      "finalStatus": "PASS",
+      "passEvidence": "regression/homepage/browser-results.json",
+      "rerunLog": "regression/run-history/homepage-run-2.log"
+    },
+    {
+      "cycle": 2,
+      "kind": "qa-harness",
+      "detectedBy": "code review",
+      "executionFailure": false,
+      "finding": "Deduplicated browser checks bind ALT to the language dictionary; add an explicit immutable-baseline gate to preserve the original literal ALT and all original translations as independent expected values.",
+      "fix": "Compare every original dictionary key except the authorized nav.favorites change, plus explicit family/Schwartz/pizza ALT assertions. No site code changed.",
+      "beforeEvidence": "regression/run-history/contract-run-1-PASS.json",
+      "passEvidence": "PRESERVATION.json",
+      "rerunLog": "regression/run-history/contract-run-2.log",
+      "finalStatus": "PASS"
+    }
+  ]
+}
