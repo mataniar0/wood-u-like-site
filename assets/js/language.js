@@ -627,8 +627,6 @@
     "clock.gallery.position": {"he": "תמונה {current} מתוך {total}", "en": "Photo {current} of {total}"},
     "clock.gallery.front.caption": {"he": "חזית השעון", "en": "Clock front"},
     "clock.gallery.front.alt": {"he": "חזית שעון עץ עגול עם פורטרט והקדשה חרוטים, ספרות שעות ומחוגים", "en": "Front of a round wooden clock with an engraved portrait and dedication, hour numerals and hands"},
-    "clock.gallery.lifestyle.caption": {"he": "צילום אחיזה במוצר", "en": "Holding the clock"},
-    "clock.gallery.lifestyle.alt": {"he": "ילדה אוחזת בשעון עץ עגול עם פורטרט והקדשה חרוטים", "en": "A girl holding a round wooden clock with an engraved portrait and dedication"},
     "clock.gallery.detail.caption": {"he": "תקריב השעון בידיים", "en": "Close-up of the clock in hands"},
     "clock.gallery.detail.alt": {"he": "תקריב של שעון עץ מוחזק בידיים, עם פורטרט והקדשה חרוטים וספרות שעות", "en": "Close-up of a wooden clock held in hands, with an engraved portrait and dedication and hour numerals"},
     "clock.gallery.hanging.caption": {"he": "הצגת השעון על רקע עץ", "en": "Clock displayed against wood"},

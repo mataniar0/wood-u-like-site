@@ -1,5 +1,7 @@
 # WUL-014 — שעון עץ בחריטה אישית
 
+> **הערת ארכיון (WUL-017):** הדוח מתאר ריצת QA היסטורית שבה היו ארבע תמונות. תמונת אחיזה מלאה אחת הוסרה לבקשת בעל האתר מהגלריה ומהעץ הציבורי העדכני. הבדיקות והמספרים להלן הם רישום היסטורי, לא תיאור של גרסת האתר הנוכחית.
+
 Refs #25. בסיס `main`: `18f8f5c` (כולל WUL-012). ענף `feature/wul-014-personalized-clock`. בדיקות רגרסיה 15–16.10.2026; ריצת תיקון ממוקדת ועדכון דוח 17.10.2026. אין Merge, Deploy או שינוי ב־ASSEMBL LAB או ב־Issues האחרים.
 
 ## תיקון בעקבות סקירת PR מ־17.10.2026
@@ -87,7 +89,7 @@ Refs #25. בסיס `main`: `18f8f5c` (כולל WUL-012). ענף `feature/wul-014
 | 1024 | [צילום](screenshots/he-1024-homepage.png) | [צילום](screenshots/en-1024-homepage.png) | [צילום](screenshots/he-1024-clock-front.png) | [צילום](screenshots/en-1024-clock-front.png) | [צילום](screenshots/he-1024-clock-inquiry.png) | [צילום](screenshots/en-1024-clock-inquiry.png) |
 | 1440 | [צילום](screenshots/he-1440-homepage.png) | [צילום](screenshots/en-1440-homepage.png) | [צילום](screenshots/he-1440-clock-front.png) | [צילום](screenshots/en-1440-clock-front.png) | [צילום](screenshots/he-1440-clock-inquiry.png) | [צילום](screenshots/en-1440-clock-inquiry.png) |
 
-דוגמאות: [אחיזה HE 390](screenshots/he-390-clock-lifestyle.png), [תקריב EN 1440](screenshots/en-1440-clock-handheld-detail.png), [על רקע עץ HE 1440](screenshots/he-1440-clock-hanging.png), [מיקוד מקלדת](screenshots/he-390-clock-keyboard-focus.png), [ללא JS](screenshots/he-390-clock-no-javascript.png). ראיות רגרסיה נוספות בתיקיות homepage/products/inquiry.
+דוגמאות: [תקריב EN 1440](screenshots/en-1440-clock-handheld-detail.png), [על רקע עץ HE 1440](screenshots/he-1440-clock-hanging.png), [מיקוד מקלדת](screenshots/he-390-clock-keyboard-focus.png), [ללא JS](screenshots/he-390-clock-no-javascript.png). ראיות רגרסיה נוספות בתיקיות homepage/products/inquiry.
 
 ## מחזורי תיקון וגבולות
 

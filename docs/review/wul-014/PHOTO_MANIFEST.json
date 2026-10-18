@@ -29,30 +29,6 @@
     "description": "Front view of the engraved round clock"
   },
   {
-    "role": "lifestyle",
-    "original": "image(20261015-193042).png",
-    "crop_original_coordinates": null,
-    "full": {
-      "file": "assets/images/personalized-clock-lifestyle.webp",
-      "dimensions": [
-        1200,
-        1594
-      ],
-      "bytes": 168156,
-      "sha256": "e79b4f57d8bad06a609e9d05d54607f44e67b7f27ec3136acfd6b20a54a58838"
-    },
-    "small": {
-      "file": "assets/images/personalized-clock-lifestyle-small.webp",
-      "dimensions": [
-        600,
-        797
-      ],
-      "bytes": 46970,
-      "sha256": "f648ba7698417a128fca98a637687a0697ae56212748475c00485171ebe91b83"
-    },
-    "description": "Full-frame photograph of the clock being held"
-  },
-  {
     "role": "handheld-detail",
     "original": "image(20261015-193042).png",
     "crop_original_coordinates": [
