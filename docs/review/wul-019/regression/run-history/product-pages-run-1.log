@@ -1,0 +1,110 @@
+PASS product welcome he 320
+PASS product welcome en 320
+PASS product welcome he 390
+PASS product welcome en 390
+PASS product welcome he 768
+PASS product welcome en 768
+PASS product welcome he 1024
+PASS product welcome en 1024
+PASS product welcome he 1440
+PASS product welcome en 1440
+PASS product family-sign he 320
+PASS product family-sign en 320
+PASS product family-sign he 390
+PASS product family-sign en 390
+PASS product family-sign he 768
+PASS product family-sign en 768
+PASS product family-sign he 1024
+PASS product family-sign en 1024
+PASS product family-sign he 1440
+PASS product family-sign en 1440
+PASS product hanging-home-sign he 320
+PASS product hanging-home-sign en 320
+PASS product hanging-home-sign he 390
+PASS product hanging-home-sign en 390
+PASS product hanging-home-sign he 768
+PASS product hanging-home-sign en 768
+PASS product hanging-home-sign he 1024
+PASS product hanging-home-sign en 1024
+PASS product hanging-home-sign he 1440
+PASS product hanging-home-sign en 1440
+PASS product kitchen he 320
+PASS product kitchen en 320
+PASS product kitchen he 390
+PASS product kitchen en 390
+PASS product kitchen he 768
+PASS product kitchen en 768
+PASS product kitchen he 1024
+PASS product kitchen en 1024
+PASS product kitchen he 1440
+PASS product kitchen en 1440
+PASS product pizza-peel he 320
+PASS product pizza-peel en 320
+PASS product pizza-peel he 390
+PASS product pizza-peel en 390
+PASS product pizza-peel he 768
+PASS product pizza-peel en 768
+PASS product pizza-peel he 1024
+PASS product pizza-peel en 1024
+PASS product pizza-peel he 1440
+PASS product pizza-peel en 1440
+PASS product blessing he 320
+PASS product blessing en 320
+PASS product blessing he 390
+PASS product blessing en 390
+PASS product blessing he 768
+PASS product blessing en 768
+PASS product blessing he 1024
+PASS product blessing en 1024
+PASS product blessing he 1440
+PASS product blessing en 1440
+PASS product personalized-clock he 320
+PASS product personalized-clock en 320
+PASS product personalized-clock he 390
+PASS product personalized-clock en 390
+PASS product personalized-clock he 768
+PASS product personalized-clock en 768
+PASS product personalized-clock he 1024
+PASS product personalized-clock en 1024
+PASS product personalized-clock he 1440
+PASS product personalized-clock en 1440
+PASS home he 320
+PASS home en 320
+PASS home he 390
+PASS home en 390
+PASS home he 768
+PASS home en 768
+PASS home he 1024
+PASS home en 1024
+PASS home he 1440
+PASS home en 1440
+PASS no-JS welcome 390
+PASS no-JS welcome 1440
+PASS no-JS family-sign 390
+PASS no-JS family-sign 1440
+PASS no-JS hanging-home-sign 390
+PASS no-JS hanging-home-sign 1440
+PASS no-JS kitchen 390
+PASS no-JS kitchen 1440
+PASS no-JS pizza-peel 390
+PASS no-JS pizza-peel 1440
+PASS no-JS blessing 390
+PASS no-JS blessing 1440
+PASS no-JS personalized-clock 320
+PASS no-JS personalized-clock 390
+PASS no-JS personalized-clock 1440
+PASS intercepted metadata welcome he
+PASS intercepted metadata family-sign he
+PASS intercepted metadata hanging-home-sign he
+PASS intercepted metadata kitchen he
+PASS intercepted metadata pizza-peel he
+PASS intercepted metadata blessing he
+PASS intercepted metadata personalized-clock he
+PASS intercepted metadata welcome en
+PASS intercepted metadata family-sign en
+PASS intercepted metadata hanging-home-sign en
+PASS intercepted metadata kitchen en
+PASS intercepted metadata pizza-peel en
+PASS intercepted metadata blessing en
+PASS intercepted metadata personalized-clock en
+PASS WUL-019: 109 scenarios; 14 intercepted POSTs; zero real inquiries

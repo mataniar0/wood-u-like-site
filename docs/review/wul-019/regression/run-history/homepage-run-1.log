@@ -1,0 +1,9 @@
+page.evaluate: TypeError: Cannot read properties of null (reading 'id')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:664)
+    at Array.every (<anonymous>)
+    at eval (eval at evaluate (:311:30), <anonymous>:1:596)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /workspace/wood-u-like-site/tools/check-homepage.cjs:31:27 {
+  log: []
+}
