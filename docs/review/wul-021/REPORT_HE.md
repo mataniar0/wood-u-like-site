@@ -77,8 +77,8 @@ WUL_REVIEW_DIR=docs/review/wul-021/regression/attribution node tools/check-lead-
 
 הותקנו כלי QA, הופעל שרת ונבדקו עמודי האתר בבקשות HTTP ובדפדפן. סקריפט ההתקנה הורץ פעמיים בהצלחה. בטיוטת הגדרות הסביבה נשמרו `install_script` ו־`start_skill` עם תיקיות עבודה, הפעלת שרת מחדש ובדיקות מוכנות. שמירת טיוטה אינה ביצוע, החלה או פרסום. לא אומת שחזור בסביבה חדשה. יש לעיין בהגדרות הסביבה, לשמור ולפרסם את **סביבת הפיתוח** בעת הצורך; אין בכך deploy של האתר.
 
-קריאת Git דרך origin הצליחה. GitHub API החזיר 403 בשכבת CONNECT. כבר קיים GH_TOKEN, ולא נדרש או נשמר סוד חדש. בטיוטה נוספה גישה ל־`api.github.com`, ללא החלפה או מחיקה של presets. פתיחת PR מחייבת החלת גישת הרשת ובדיקה חוזרת.
+קריאת Git דרך origin וה־push לענף הצליחו. בתחילת העבודה נצפה 403 בשכבת CONNECT ל־GitHub API, ובטיוטה נוספה גישה ל־`api.github.com`, ללא החלפה או מחיקה של presets. בניסיון הסופי הגישה ל־API הצליחה ו־PR נוצר בפועל. נעשה שימוש באימות הקיים; לא נדרש או נשמר סוד חדש. הצלחת ה־API אינה ראיה לפרסום סביבת הענן.
 
-מצב PR: ממתין לבדיקת GitHub API בזמן המסירה; `QA_SUMMARY.json` יעודכן בתוצאה. ההפניה המבוקשת היא `Refs #WUL-021-ISSUE`. לא בוצעו merge או deploy.
+מצב PR: [#37 — Natural Wood Door Sign](https://github.com/mataniar0/wood-u-like-site/pull/37) פתוח ל־main, והענף נדחף ל־origin. ה־PR כולל `Refs #WUL-021-ISSUE`. commit המימוש: `c03670b186e1f612d1a23100463188855b5b65a7`. לא בוצעו merge או deploy.
 
 [רשימת כל הקבצים ששונו](CHANGED_FILES.txt), [סיכום QA למכונה](QA_SUMMARY.json), [מפת המוצרים הנוכחית](CATEGORY_PRODUCT_MAP.json).

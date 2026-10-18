@@ -139,13 +139,18 @@
     "start_skill_saved": true,
     "network_domain_added_to_draft": "api.github.com",
     "published": false,
-    "fresh_task_restoration_tested": false
+    "fresh_task_restoration_tested": false,
+    "github_api_final_operation": "PR #37 created successfully; initial API CONNECT 403 did not recur in the final operation. Draft publication remains unverified."
   },
   "delivery": {
     "merge": false,
     "deploy": false,
-    "pr_status": "PENDING_GITHUB_API_ACCESS",
-    "pr_reference": "Refs #WUL-021-ISSUE"
+    "pr_status": "OPEN",
+    "pr_reference": "Refs #WUL-021-ISSUE",
+    "pr_url": "https://github.com/mataniar0/wood-u-like-site/pull/37",
+    "branch_pushed": true,
+    "implementation_commit": "c03670b186e1f612d1a23100463188855b5b65a7",
+    "github_api_verified": true
   },
   "limitations": [
     "Chromium only; Safari/Firefox and manual screen-reader review were not run.",
