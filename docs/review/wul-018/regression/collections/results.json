@@ -1,0 +1,3691 @@
+{
+  "task": "WUL-018 / Issue #32 — collections regression",
+  "baseline": "7557010",
+  "startedAt": "2026-10-18T14:08:24.823Z",
+  "mapping": [
+    {
+      "slug": "home-decor",
+      "he": "שלטים ועיצוב לבית",
+      "en": "Home Signs & Decor",
+      "products": [
+        "welcome",
+        "family-sign",
+        "hanging-home-sign"
+      ]
+    },
+    {
+      "slug": "kitchen-hosting",
+      "he": "מטבח ואירוח",
+      "en": "Kitchen & Hosting",
+      "products": [
+        "kitchen",
+        "pizza-peel"
+      ]
+    },
+    {
+      "slug": "judaica-tradition",
+      "he": "יודאיקה ומסורת",
+      "en": "Judaica & Tradition",
+      "products": [
+        "blessing"
+      ]
+    },
+    {
+      "slug": "gifts-memories",
+      "he": "מתנות וזיכרונות",
+      "en": "Gifts & Memories",
+      "products": [
+        "personalized-clock"
+      ]
+    }
+  ],
+  "preservation": [
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.js",
+      "sha256": "7230b7d1e1a4fa9d9ddc692516167b5c3165b7ffc9d06ace7ad5cfa0a336b013",
+      "status": "PASS"
+    }
+  ],
+  "scenarios": [
+    {
+      "mode": "javascript-enabled",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-320-homepage.png"
+        },
+        {
+          "file": "screenshots/he-320-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 6471,
+              "largestColorFraction": 0.043010752688172046,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 4023,
+              "largestColorFraction": 0.0047789725209080045,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 4119,
+              "largestColorFraction": 0.005973715651135006,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 3786,
+              "largestColorFraction": 0.006371963361210673,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 12210,
+              "largestColorFraction": 0.0037980546549328392,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 15374,
+              "largestColorFraction": 0.001065308012968967,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10927,
+              "largestColorFraction": 0.002825382121352478,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 6525,
+              "largestColorFraction": 0.010236220472440945,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10843,
+              "largestColorFraction": 0.058823529411764705,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 7763,
+              "largestColorFraction": 0.018388142658638258,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 8687,
+              "largestColorFraction": 0.005372857804539138,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 8687,
+              "largestColorFraction": 0.005372857804539138,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1532,
+          "cards": 2
+        },
+        {
+          "top": 1772,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/en-320-homepage.png"
+        },
+        {
+          "file": "screenshots/en-320-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 6424,
+              "largestColorFraction": 0.043010752688172046,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 3982,
+              "largestColorFraction": 0.005575467941059339,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 4094,
+              "largestColorFraction": 0.006106464887826895,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 3792,
+              "largestColorFraction": 0.007035709544670118,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-320-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 12214,
+              "largestColorFraction": 0.0037517369152385363,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 15374,
+              "largestColorFraction": 0.001065308012968967,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10925,
+              "largestColorFraction": 0.002825382121352478,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-320-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 6612,
+              "largestColorFraction": 0.010236220472440945,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10837,
+              "largestColorFraction": 0.058823529411764705,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-320-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 7743,
+              "largestColorFraction": 0.018388142658638258,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-320-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 8687,
+              "largestColorFraction": 0.005372857804539138,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-320-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 8687,
+              "largestColorFraction": 0.005372857804539138,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1568,
+          "cards": 2
+        },
+        {
+          "top": 1808,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-390-homepage.png"
+        },
+        {
+          "file": "screenshots/he-390-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 9298,
+              "largestColorFraction": 0.001027077497665733,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4972,
+              "largestColorFraction": 0.0056022408963585435,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 5122,
+              "largestColorFraction": 0.006442577030812325,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4815,
+              "largestColorFraction": 0.00718954248366013,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 15368,
+              "largestColorFraction": 0.0035411959124481466,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 19526,
+              "largestColorFraction": 0.0015176553910492057,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14582,
+              "largestColorFraction": 0.0034737445617348487,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 8318,
+              "largestColorFraction": 0.010421233685204546,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14379,
+              "largestColorFraction": 0.06030150753768844,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 9492,
+              "largestColorFraction": 0.018481670095443662,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 10660,
+              "largestColorFraction": 0.004923948602070756,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 10660,
+              "largestColorFraction": 0.004923948602070756,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1525,
+          "cards": 2
+        },
+        {
+          "top": 1768,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/en-390-homepage.png"
+        },
+        {
+          "file": "screenshots/en-390-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 9267,
+              "largestColorFraction": 0.0008403361344537816,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4982,
+              "largestColorFraction": 0.005415499533146592,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 5141,
+              "largestColorFraction": 0.0070028011204481795,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4810,
+              "largestColorFraction": 0.007469654528478058,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-390-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 15394,
+              "largestColorFraction": 0.0035411959124481466,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 19473,
+              "largestColorFraction": 0.0015513810664058547,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14668,
+              "largestColorFraction": 0.003406293211021551,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-390-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 8237,
+              "largestColorFraction": 0.010421233685204546,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14379,
+              "largestColorFraction": 0.06030150753768844,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-390-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 9497,
+              "largestColorFraction": 0.018481670095443662,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-390-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 10642,
+              "largestColorFraction": 0.004923948602070756,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-390-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 10642,
+              "largestColorFraction": 0.004923948602070756,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1539,
+          "cards": 2
+        },
+        {
+          "top": 1799,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-768-homepage.png"
+        },
+        {
+          "file": "screenshots/he-768-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 19799,
+              "largestColorFraction": 0.002050580997949419,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 8718,
+              "largestColorFraction": 0.00911369332421964,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 9333,
+              "largestColorFraction": 0.0430622009569378,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 11290,
+              "largestColorFraction": 0.004784688995215311,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16285,
+              "largestColorFraction": 0.0038023998753311515,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20637,
+              "largestColorFraction": 0.0015583606046439145,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15419,
+              "largestColorFraction": 0.0035842293906810036,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8713,
+              "largestColorFraction": 0.009817671809256662,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15110,
+              "largestColorFraction": 0.06280193236714976,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9990,
+              "largestColorFraction": 0.019978182951534987,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11286,
+              "largestColorFraction": 0.005828268661368241,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11239,
+              "largestColorFraction": 0.005828268661368241,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1295,
+          "cards": 2
+        },
+        {
+          "top": 1624,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/en-768-homepage.png"
+        },
+        {
+          "file": "screenshots/en-768-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 19726,
+              "largestColorFraction": 0.0016599941411971487,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 8718,
+              "largestColorFraction": 0.00911369332421964,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 9326,
+              "largestColorFraction": 0.0430622009569378,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 11293,
+              "largestColorFraction": 0.004719591185756599,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-768-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16315,
+              "largestColorFraction": 0.0038023998753311515,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20622,
+              "largestColorFraction": 0.0014648589683652798,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15350,
+              "largestColorFraction": 0.003927068723702665,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-768-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8661,
+              "largestColorFraction": 0.010347514414835593,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15139,
+              "largestColorFraction": 0.06280193236714976,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-768-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9990,
+              "largestColorFraction": 0.019978182951534987,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-768-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11276,
+              "largestColorFraction": 0.005828268661368241,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-768-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11276,
+              "largestColorFraction": 0.005828268661368241,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1370,
+          "cards": 2
+        },
+        {
+          "top": 1699,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-1024-homepage.png"
+        },
+        {
+          "file": "screenshots/he-1024-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 25165,
+              "largestColorFraction": 0.0014560210048931853,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 15258,
+              "largestColorFraction": 0.006707244301229264,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 9311,
+              "largestColorFraction": 0.2982456140350877,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 11880,
+              "largestColorFraction": 0.1824561403508772,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16309,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20707,
+              "largestColorFraction": 0.0016830294530154279,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15276,
+              "largestColorFraction": 0.003771232663238273,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8715,
+              "largestColorFraction": 0.009973507869721053,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15227,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9959,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11243,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11204,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1330,
+          "cards": 2
+        },
+        {
+          "top": 1660,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/en-1024-homepage.png"
+        },
+        {
+          "file": "screenshots/en-1024-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 25225,
+              "largestColorFraction": 0.001479890201694713,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 15249,
+              "largestColorFraction": 0.0067311134980307915,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 9323,
+              "largestColorFraction": 0.2982456140350877,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 11919,
+              "largestColorFraction": 0.1824561403508772,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1024-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16309,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20675,
+              "largestColorFraction": 0.0015583606046439145,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15284,
+              "largestColorFraction": 0.003771232663238273,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1024-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8716,
+              "largestColorFraction": 0.009942340657628175,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15277,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1024-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9968,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1024-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11204,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1024-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11204,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1309,
+          "cards": 2
+        },
+        {
+          "top": 1638,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-1440-homepage.png"
+        },
+        {
+          "file": "screenshots/he-1440-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 21473,
+              "largestColorFraction": 0.0008131667967733541,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9416,
+              "largestColorFraction": 0.008489461358313818,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9999,
+              "largestColorFraction": 0.008847254748894093,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 10122,
+              "largestColorFraction": 0.006049960967993755,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16273,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20650,
+              "largestColorFraction": 0.0015895278167367929,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15292,
+              "largestColorFraction": 0.0038023998753311515,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8632,
+              "largestColorFraction": 0.009973507869721053,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15277,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9986,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11240,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11240,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1359,
+          "cards": 4
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "javascript-enabled",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/en-1440-homepage.png"
+        },
+        {
+          "file": "screenshots/en-1440-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 21473,
+              "largestColorFraction": 0.0008131667967733541,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9458,
+              "largestColorFraction": 0.008782201405152224,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9991,
+              "largestColorFraction": 0.008717148061410357,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 10124,
+              "largestColorFraction": 0.006049960967993755,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1440-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16273,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20651,
+              "largestColorFraction": 0.0015895278167367929,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15295,
+              "largestColorFraction": 0.003771232663238273,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1440-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8717,
+              "largestColorFraction": 0.009942340657628175,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15277,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1440-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9986,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1440-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11200,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/en-1440-clock.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11200,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1359,
+          "cards": 4
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "deepLinks": [
+        "#favorites",
+        "#welcome-work",
+        "#family-sign-work",
+        "#hanging-home-sign-work",
+        "#kitchen-work",
+        "#pizza-peel-work",
+        "#blessing-work",
+        "#personalized-clock-work",
+        "#original-gifts",
+        "#collection-home-decor",
+        "#collection-kitchen-hosting",
+        "#collection-judaica-tradition",
+        "#collection-gifts-memories"
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-320-no-js-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 6471,
+              "largestColorFraction": 0.043010752688172046,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 4016,
+              "largestColorFraction": 0.0047789725209080045,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 4102,
+              "largestColorFraction": 0.005973715651135006,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 7533,
+              "distinctColors": 3771,
+              "largestColorFraction": 0.006371963361210673,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-no-js-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 12210,
+              "largestColorFraction": 0.0037980546549328392,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 15331,
+              "largestColorFraction": 0.0012042612320518759,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10925,
+              "largestColorFraction": 0.002825382121352478,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-no-js-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 6525,
+              "largestColorFraction": 0.010236220472440945,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 10843,
+              "largestColorFraction": 0.058823529411764705,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-no-js-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 7763,
+              "largestColorFraction": 0.018388142658638258,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-320-no-js-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 21590,
+              "distinctColors": 8687,
+              "largestColorFraction": 0.005372857804539138,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1577,
+          "cards": 2
+        },
+        {
+          "top": 1817,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-390-no-js-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 9277,
+              "largestColorFraction": 0.0007469654528478057,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4972,
+              "largestColorFraction": 0.0056022408963585435,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 5120,
+              "largestColorFraction": 0.006442577030812325,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 10710,
+              "distinctColors": 4813,
+              "largestColorFraction": 0.007376283846872082,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-no-js-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 15368,
+              "largestColorFraction": 0.0035411959124481466,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 19488,
+              "largestColorFraction": 0.0015513810664058547,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14582,
+              "largestColorFraction": 0.0034737445617348487,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-no-js-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 8242,
+              "largestColorFraction": 0.010421233685204546,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 14379,
+              "largestColorFraction": 0.06030150753768844,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-no-js-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 9520,
+              "largestColorFraction": 0.018481670095443662,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-390-no-js-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 29651,
+              "distinctColors": 10655,
+              "largestColorFraction": 0.004856497251357459,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1573,
+          "cards": 2
+        },
+        {
+          "top": 1816,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-768-no-js-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 19799,
+              "largestColorFraction": 0.002050580997949419,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 8718,
+              "largestColorFraction": 0.00911369332421964,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 9333,
+              "largestColorFraction": 0.0430622009569378,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30723,
+              "distinctColors": 11290,
+              "largestColorFraction": 0.004784688995215311,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-no-js-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16285,
+              "largestColorFraction": 0.0038023998753311515,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20637,
+              "largestColorFraction": 0.0015583606046439145,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15419,
+              "largestColorFraction": 0.0035842293906810036,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-no-js-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8713,
+              "largestColorFraction": 0.009817671809256662,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15110,
+              "largestColorFraction": 0.06280193236714976,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-no-js-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9990,
+              "largestColorFraction": 0.019978182951534987,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-768-no-js-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11286,
+              "largestColorFraction": 0.005828268661368241,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1295,
+          "cards": 2
+        },
+        {
+          "top": 1624,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-1024-no-js-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 25165,
+              "largestColorFraction": 0.0014560210048931853,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 15258,
+              "largestColorFraction": 0.006707244301229264,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 9311,
+              "largestColorFraction": 0.2982456140350877,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 41895,
+              "distinctColors": 11880,
+              "largestColorFraction": 0.1824561403508772,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-no-js-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16309,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20707,
+              "largestColorFraction": 0.0016830294530154279,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15276,
+              "largestColorFraction": 0.003771232663238273,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-no-js-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8715,
+              "largestColorFraction": 0.009973507869721053,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15227,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-no-js-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9959,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1024-no-js-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11243,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1330,
+          "cards": 2
+        },
+        {
+          "top": 1660,
+          "cards": 2
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshots": [
+        {
+          "file": "screenshots/he-1440-no-js-collections.png",
+          "photographs": [
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 21473,
+              "largestColorFraction": 0.0008131667967733541,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9416,
+              "largestColorFraction": 0.008489461358313818,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 9999,
+              "largestColorFraction": 0.008847254748894093,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 30744,
+              "distinctColors": 10122,
+              "largestColorFraction": 0.006049960967993755,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-no-js-home-decor.png",
+          "photographs": [
+            {
+              "src": "assets/images/hero-welcome.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 16273,
+              "largestColorFraction": 0.0037400654511453952,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/family-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 20650,
+              "largestColorFraction": 0.0015895278167367929,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/schwartz-home-sign.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15292,
+              "largestColorFraction": 0.0038023998753311515,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-no-js-kitchen-hosting.png",
+          "photographs": [
+            {
+              "src": "assets/images/kitchen-board.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 8632,
+              "largestColorFraction": 0.009973507869721053,
+              "status": "PASS"
+            },
+            {
+              "src": "assets/images/pizza-peel.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 15277,
+              "largestColorFraction": 0.057971014492753624,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-no-js-judaica-tradition.png",
+          "photographs": [
+            {
+              "src": "assets/images/judaica-blessing.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 9986,
+              "largestColorFraction": 0.018856163316191367,
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "file": "screenshots/he-1440-no-js-gifts-memories.png",
+          "photographs": [
+            {
+              "src": "assets/images/personalized-clock-front.webp",
+              "sampledPixels": 32085,
+              "distinctColors": 11240,
+              "largestColorFraction": 0.005672432600903849,
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "categoryRows": [
+        {
+          "top": 1359,
+          "cards": 4
+        }
+      ],
+      "clickNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "click",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "click",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "click",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "click",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "keyboardNavigation": [
+        {
+          "slug": "home-decor",
+          "activation": "Enter",
+          "hash": "#collection-home-decor",
+          "products": [
+            "welcome",
+            "family-sign",
+            "hanging-home-sign"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "activation": "Enter",
+          "hash": "#collection-kitchen-hosting",
+          "products": [
+            "kitchen",
+            "pizza-peel"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "activation": "Enter",
+          "hash": "#collection-judaica-tradition",
+          "products": [
+            "blessing"
+          ],
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "activation": "Enter",
+          "hash": "#collection-gifts-memories",
+          "products": [
+            "personalized-clock"
+          ],
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "requests": {
+    "blockedSubmissions": 0,
+    "blockedExternal": 0,
+    "realSubmissions": 0
+  },
+  "limits": [
+    "Chromium only; Safari/Firefox not run",
+    "Automated axe and keyboard checks do not replace a human screen-reader review",
+    "Local server only; no deployment or public Pages verification"
+  ],
+  "blankScreenshotControl": {
+    "status": "PASS",
+    "correctlyRejectedUniformPlaceholder": true,
+    "sampledPixels": 32400,
+    "distinctColors": 1,
+    "largestColorFraction": 1
+  },
+  "defaultMotionNavigation": {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "he",
+    "reducedMotion": "no-preference",
+    "clickNavigation": [
+      {
+        "slug": "home-decor",
+        "activation": "click",
+        "hash": "#collection-home-decor",
+        "products": [
+          "welcome",
+          "family-sign",
+          "hanging-home-sign"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "kitchen-hosting",
+        "activation": "click",
+        "hash": "#collection-kitchen-hosting",
+        "products": [
+          "kitchen",
+          "pizza-peel"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "judaica-tradition",
+        "activation": "click",
+        "hash": "#collection-judaica-tradition",
+        "products": [
+          "blessing"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "gifts-memories",
+        "activation": "click",
+        "hash": "#collection-gifts-memories",
+        "products": [
+          "personalized-clock"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "keyboardNavigation": [
+      {
+        "slug": "home-decor",
+        "activation": "Enter",
+        "hash": "#collection-home-decor",
+        "products": [
+          "welcome",
+          "family-sign",
+          "hanging-home-sign"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "kitchen-hosting",
+        "activation": "Enter",
+        "hash": "#collection-kitchen-hosting",
+        "products": [
+          "kitchen",
+          "pizza-peel"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "judaica-tradition",
+        "activation": "Enter",
+        "hash": "#collection-judaica-tradition",
+        "products": [
+          "blessing"
+        ],
+        "status": "PASS"
+      },
+      {
+        "slug": "gifts-memories",
+        "activation": "Enter",
+        "hash": "#collection-gifts-memories",
+        "products": [
+          "personalized-clock"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "status": "PASS"
+  },
+  "finishedAt": "2026-10-18T14:13:13.459Z",
+  "counts": {
+    "javascriptScenarios": 10,
+    "noJavascriptScenarios": 5,
+    "categoryActivations": 128,
+    "defaultMotionNavigationScenarios": 1,
+    "directHashNavigations": 130,
+    "axeScans": 10,
+    "savedScreenshots": 95,
+    "photographPixelChecks": 175,
+    "preservedFiles": 27
+  },
+  "status": "PASS"
+}

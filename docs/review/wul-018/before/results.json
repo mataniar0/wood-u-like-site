@@ -1,0 +1,42 @@
+{
+  "baseline": "7557010",
+  "note": "Fresh captures of start-of-task main with its approved three-photo clock; no historical QA photographs copied.",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "language": "he",
+      "baseline": "7557010",
+      "favoritesHeight": 4684.484375,
+      "status": "PASS",
+      "blockedRequests": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "language": "en",
+      "baseline": "7557010",
+      "favoritesHeight": 4845.171875,
+      "status": "PASS",
+      "blockedRequests": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "language": "he",
+      "baseline": "7557010",
+      "favoritesHeight": 2816.484375,
+      "status": "PASS",
+      "blockedRequests": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "language": "en",
+      "baseline": "7557010",
+      "favoritesHeight": 2838.578125,
+      "status": "PASS",
+      "blockedRequests": 0
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "baseline": "7557010",
+  "executions": [
+    {
+      "tool": "tools/check-collections.cjs",
+      "status": "PASS",
+      "scenarioRecords": 16,
+      "resultFile": "docs/review/wul-018/regression/collections/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/collections node tools/check-collections.cjs"
+    },
+    {
+      "tool": "tools/check-clock.cjs",
+      "status": "PASS",
+      "scenarioRecords": 15,
+      "resultFile": "docs/review/wul-018/regression/clock/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/clock node tools/check-clock.cjs"
+    },
+    {
+      "tool": "tools/check-language.cjs",
+      "status": "PASS",
+      "scenarioRecords": 21,
+      "resultFile": "docs/review/wul-018/regression/hero/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/hero node tools/check-language.cjs",
+      "invokedBy": "check-hero.cjs",
+      "countedOnce": true
+    },
+    {
+      "tool": "tools/check-hero.cjs",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "resultFile": "docs/review/wul-018/regression/hero/hero-results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/hero node tools/check-hero.cjs"
+    },
+    {
+      "tool": "tools/check-homepage.cjs",
+      "status": "PASS",
+      "scenarioRecords": 4,
+      "resultFile": "docs/review/wul-018/regression/homepage/browser-results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/homepage node tools/check-homepage.cjs"
+    },
+    {
+      "tool": "tools/check-family-sign.cjs",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "resultFile": "docs/review/wul-018/regression/family-sign/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/family-sign node tools/check-family-sign.cjs"
+    },
+    {
+      "tool": "tools/check-schwartz-sign.cjs",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "resultFile": "docs/review/wul-018/regression/schwartz-sign/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/schwartz-sign node tools/check-schwartz-sign.cjs"
+    },
+    {
+      "tool": "tools/check-pizza-peel.cjs",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "resultFile": "docs/review/wul-018/regression/pizza-peel/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/pizza-peel node tools/check-pizza-peel.cjs"
+    },
+    {
+      "tool": "tools/check-inquiry.cjs",
+      "status": "PASS",
+      "scenarioRecords": 51,
+      "resultFile": "docs/review/wul-018/regression/inquiry/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/inquiry node tools/check-inquiry.cjs"
+    },
+    {
+      "tool": "tools/check-lead-attribution.cjs",
+      "status": "PASS",
+      "scenarioRecords": 178,
+      "resultFile": "docs/review/wul-018/regression/lead-attribution/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/lead-attribution node tools/check-lead-attribution.cjs"
+    },
+    {
+      "tool": "tools/check-shared-privacy.cjs",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "resultFile": "docs/review/wul-018/regression/privacy/results.json",
+      "reproduceCommand": "NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8014/wood-u-like-site/ WUL_REVIEW_DIR=docs/review/wul-018/regression/privacy node tools/check-shared-privacy.cjs"
+    }
+  ],
+  "scenarioRecords": 335,
+  "network": {
+    "interceptedMockPosts": 204,
+    "inquiryMockPosts": 34,
+    "attributionMockPosts": 170,
+    "realInquiryRequests": 0,
+    "unexpectedExternalRequests": 0
+  },
+  "approvedClockAssetChecks": 6,
+  "blankScreenshotNegativeControls": 1,
+  "history": "Original failures are retained in regression/run-history. Homepage/language integration failure, hero selector correction, and native keyboard fragment failure were fixed. The full collections and homepage suites were repeated after the final CSS fix. The 109-case acceptance suite used reduced motion (already auto scrolling), so only affected default-motion flows required rerunning.",
+  "limitations": [
+    "Local Chromium only",
+    "No manual screen reader, Safari/Firefox, live service or deployed Pages checks"
+  ],
+  "excludedTool": {
+    "tool": "check-reference-inquiry.cjs",
+    "reason": "Historical ASSEMBL LAB reference preview, outside the WOOD U LIKE application and task scope."
+  }
+}

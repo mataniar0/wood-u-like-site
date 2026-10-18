@@ -1,0 +1,290 @@
+{
+  "baseline": "7557010",
+  "status": "PASS",
+  "byteIdenticalFiles": [
+    {
+      "file": "assets/fonts/OFL-sans.txt",
+      "bytes": 4380,
+      "sha256": "7387750a626d005e86adc8b9321567f001fc2f6ef5c8f275261c454fe86981d4",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/fonts/OFL-serif.txt",
+      "bytes": 4380,
+      "sha256": "38d5fbc95848cf88131f2611c9f3f3a44f0262141601abf3aee6df2f8c4c71f5",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/fonts/noto-sans-hebrew-400.woff2",
+      "bytes": 7068,
+      "sha256": "330b5c315ebac6a102bea95898207a4fdae4a6180d27783dfbb2a700deb61845",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/fonts/noto-serif-hebrew-400.woff2",
+      "bytes": 7808,
+      "sha256": "5fd3fc127fc1b627673a85979750526b70c2ac6feaecfadd3d2321d7dedc8585",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/README.md",
+      "bytes": 823,
+      "sha256": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "bytes": 82950,
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "bytes": 273832,
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "bytes": 52670,
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "bytes": 135492,
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "bytes": 18310,
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "bytes": 57706,
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "bytes": 28840,
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "bytes": 67956,
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "bytes": 28036,
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "bytes": 208950,
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "bytes": 19734,
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "bytes": 45940,
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "bytes": 43268,
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "bytes": 164802,
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "bytes": 37730,
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "bytes": 47040,
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "bytes": 32392,
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "bytes": 110770,
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "bytes": 218282,
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "bytes": 590098,
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "bytes": 107496,
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "bytes": 436780,
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "bytes": 19064,
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "bytes": 161298,
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "bytes": 2004,
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/clock-gallery.js",
+      "bytes": 2002,
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/main.js",
+      "bytes": 1903,
+      "sha256": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/README.md",
+      "bytes": 9014,
+      "sha256": "e5fb7862edcd2e5425fad2f274837018c4b657c2075f6b75840711050659e6e5",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "bytes": 1749,
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/index.html",
+      "bytes": 22216,
+      "sha256": "8d2b0f5829f868b89a3dc303afac98cd980a8d20d1df17643d5676c4381f5fae",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.css",
+      "bytes": 4384,
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.js",
+      "bytes": 13851,
+      "sha256": "7230b7d1e1a4fa9d9ddc692516167b5c3165b7ffc9d06ace7ad5cfa0a336b013",
+      "status": "PASS"
+    }
+  ],
+  "byteIdenticalFileCount": 37,
+  "heroHeaderCollectionsAndTheirPhotosByteIdentical": true,
+  "storyPersonalFooterByteIdentical": true,
+  "obsoleteHomepageClockScriptRemoved": true,
+  "inquiryAndAttributionContractChanged": false,
+  "clockCurrentPhotoRoles": [
+    "front",
+    "handheld-detail",
+    "hanging"
+  ],
+  "historicalReportFilesChanged": [],
+  "homeProductImageIdentity": [
+    {
+      "product_id": "welcome",
+      "primarySource": "assets/images/hero-welcome.webp",
+      "approvedSmallSource": "assets/images/hero-welcome-small.webp",
+      "altKey": "image.welcomeOval",
+      "status": "PASS"
+    },
+    {
+      "product_id": "family-sign",
+      "primarySource": "assets/images/family-sign.webp",
+      "approvedSmallSource": "assets/images/family-sign-small.webp",
+      "altKey": "image.family",
+      "status": "PASS"
+    },
+    {
+      "product_id": "hanging-home-sign",
+      "primarySource": "assets/images/schwartz-home-sign.webp",
+      "approvedSmallSource": "assets/images/schwartz-home-sign-small.webp",
+      "altKey": "image.schwartz",
+      "status": "PASS"
+    },
+    {
+      "product_id": "kitchen",
+      "primarySource": "assets/images/kitchen-board.webp",
+      "approvedSmallSource": "assets/images/kitchen-board-small.webp",
+      "altKey": "image.kitchenUtensils",
+      "status": "PASS"
+    },
+    {
+      "product_id": "pizza-peel",
+      "primarySource": "assets/images/pizza-peel.webp",
+      "approvedSmallSource": "assets/images/pizza-peel-small.webp",
+      "altKey": "image.pizzaPeel",
+      "status": "PASS"
+    },
+    {
+      "product_id": "blessing",
+      "primarySource": "assets/images/judaica-blessing.webp",
+      "approvedSmallSource": "assets/images/judaica-blessing-small.webp",
+      "altKey": "image.blessingStand",
+      "status": "PASS"
+    },
+    {
+      "product_id": "personalized-clock",
+      "primarySource": "assets/images/personalized-clock-front.webp",
+      "approvedSmallSource": "assets/images/personalized-clock-front-small.webp",
+      "altKey": "clock.gallery.front.alt",
+      "status": "PASS"
+    }
+  ]
+}

@@ -62,7 +62,9 @@ function record(test, language, details = {}) {
       serviceWorkers: "block",
     });
     await context.addInitScript(({ lang, denied }) => {
-      localStorage.setItem("wood-u-like-language", lang);
+      // Seed once so subsequent page loads must preserve the real preference.
+      if (!localStorage.getItem("wood-u-like-language"))
+        localStorage.setItem("wood-u-like-language", lang);
       if (denied) Object.defineProperty(window, "sessionStorage", {
         configurable: true,
         get() { throw new DOMException("Storage denied by QA fixture", "SecurityError"); },
@@ -221,6 +223,48 @@ function record(test, language, details = {}) {
       await cleanStorage(s.page);
       record("homepage-navigation/campaign-consumed/no-query-propagation", lang, { productId: id });
       await finish(s);
+    }
+
+    // Catalog -> product -> inquiry and shared direct product URLs retain only
+    // the existing sanitized campaign pair. The product CTA always uses its
+    // canonical ID; spoofed query metadata never changes it or the payload.
+    for (const lang of ["he", "en"]) for (const [id] of products.filter(([id]) => id !== "custom")) {
+      for (const entry of ["homepage", "direct-product-query"]) {
+        const s = await setup(lang);
+        const productUrl = new URL(`products/${id}/`, base).href;
+        if (entry === "homepage") {
+          await s.page.goto(base + "?" + new URLSearchParams(campaign));
+          await assertCampaign(s.page, campaign);
+          const details = s.page.locator(`#${id}-work .product-details-link`);
+          assert.equal(await details.getAttribute("href"), `products/${id}/`);
+          await details.focus();
+          await s.page.keyboard.press("Enter");
+          await s.page.waitForURL(productUrl);
+          assert.equal(new URL(s.page.url()).search, "");
+        } else {
+          const params = new URLSearchParams({ ...campaign, product: "unknown", brand: "untrusted", source_site: "untrusted", source_page: "untrusted" });
+          await s.page.goto(productUrl + "?" + params + "#ignored-fragment");
+        }
+        assert.equal(await s.page.locator("html").getAttribute("lang"), lang);
+        await assertCampaign(s.page, campaign);
+        assert.deepEqual(await s.page.evaluate((key) => JSON.parse(sessionStorage.getItem(key)), campaignKey), campaign);
+        const quote = s.page.locator(".product-inquiry");
+        assert.equal(await quote.getAttribute("href"), `../../inquiry/?product=${id}`);
+        await quote.click();
+        await s.page.waitForURL(inquiry + `?product=${id}`);
+        assert.equal(await s.page.locator("#product").inputValue(), id);
+        assert.equal(await s.page.locator("html").getAttribute("lang"), lang);
+        await assertCampaign(s.page, campaign);
+        assert.equal(await s.page.evaluate((key) => sessionStorage.getItem(key), campaignKey), null);
+        await fill(s.page, id);
+        await submit(s.page);
+        await state(s.page, "success");
+        assert.equal(s.posts.length, 1);
+        await assertPayload(s, lang, id, campaign);
+        await cleanStorage(s.page);
+        record(`product-page:${entry}/canonical-id/campaign-consumed/no-query-propagation`, lang, { productId: id });
+        await finish(s);
+      }
     }
 
     const values = [

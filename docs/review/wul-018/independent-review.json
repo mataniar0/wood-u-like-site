@@ -1,0 +1,376 @@
+{
+  "task": "WUL-018 / independent implementation review",
+  "date": "2026-10-18T08:19:19.360Z",
+  "scope": "Independent read-only source review plus representative Chromium keyboard/navigation/no-JS spot checks; not a head-team-lead score",
+  "sourceReview": {
+    "routesAndCanonicalIds": "PASS",
+    "fourCollectionsAndLegacyIds": "PASS",
+    "threeApprovedClockPhotographs": "PASS",
+    "noWithdrawnAssetInNewPagesOrDocumentation": "PASS",
+    "contactConfigAndInquiryAndAttributionUnchanged": "PASS",
+    "sharedScopedProductStyles": "PASS"
+  },
+  "scenarios": [
+    {
+      "language": "he",
+      "width": 390,
+      "product": "family-sign",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 8,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "family-sign",
+        "language": "he",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 7,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "home-decor",
+        "focusTarget": "collection-home-decor"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "he",
+      "width": 390,
+      "product": "personalized-clock",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 10,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "personalized-clock",
+        "language": "he",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 7,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "gifts-memories",
+        "focusTarget": "collection-gifts-memories"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "product": "family-sign",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 11,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "family-sign",
+        "language": "he",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 10,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "home-decor",
+        "focusTarget": "collection-home-decor"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "product": "personalized-clock",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 13,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "personalized-clock",
+        "language": "he",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 10,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "gifts-memories",
+        "focusTarget": "collection-gifts-memories"
+      },
+      "brandMouseClick": "PASS",
+      "screenshot": "independent-review/he-1440-personalized-clock.png",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "product": "family-sign",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 4,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "family-sign",
+        "language": "en",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 7,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "home-decor",
+        "focusTarget": "collection-home-decor"
+      },
+      "brandMouseClick": "PASS",
+      "screenshot": "independent-review/en-390-family-sign.png",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "product": "personalized-clock",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 6,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "personalized-clock",
+        "language": "en",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 7,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "gifts-memories",
+        "focusTarget": "collection-gifts-memories"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "product": "family-sign",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 3,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "family-sign",
+        "language": "en",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 10,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "home-decor",
+        "focusTarget": "collection-home-decor"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "product": "personalized-clock",
+      "enabledControls": {
+        "status": "PASS",
+        "controls": [
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          },
+          {
+            "disabled": false,
+            "opacity": "1"
+          }
+        ]
+      },
+      "quoteTabCount": 5,
+      "quoteKeyboardEnter": {
+        "status": "PASS",
+        "preselectedProduct": "personalized-clock",
+        "language": "en",
+        "publicSubmissionBlocked": true
+      },
+      "backLanguagePersistence": "PASS",
+      "breadcrumbTabCount": 10,
+      "breadcrumbKeyboardEnter": {
+        "status": "PASS",
+        "group": "gifts-memories",
+        "focusTarget": "collection-gifts-memories"
+      },
+      "brandMouseClick": "PASS",
+      "jsErrors": [],
+      "status": "PASS"
+    },
+    {
+      "mode": "no-javascript",
+      "language": "he",
+      "width": 320,
+      "product": "personalized-clock",
+      "controls": [
+        {
+          "disabled": true,
+          "opacity": "0.55"
+        },
+        {
+          "disabled": true,
+          "opacity": "0.55"
+        },
+        {
+          "disabled": true,
+          "opacity": "0.55"
+        },
+        {
+          "disabled": true,
+          "opacity": "0.55"
+        }
+      ],
+      "paintedSavedScreenshot": {
+        "status": "PASS",
+        "pixel": {
+          "distinctColors": 9863,
+          "largestColorFraction": 0.0072372769332452085
+        }
+      },
+      "threeNativeLinks": "PASS",
+      "screenshot": "independent-review/he-320-personalized-clock-no-javascript.png",
+      "status": "PASS"
+    }
+  ],
+  "requests": {
+    "localGets": 585,
+    "blockedExternal": 0,
+    "blockedNonGet": 0,
+    "realInquiries": 0
+  },
+  "limitations": [
+    "Representative browser checks supplement the full acceptance matrix; Chromium only",
+    "No manual screen-reader, Firefox or Safari review",
+    "No deployment or live-site verification"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-10-18T08:21:37.854Z"
+}

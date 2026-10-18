@@ -1,0 +1,398 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "width": 390,
+      "language": "he",
+      "javaScriptEnabled": true,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.90625,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.359375,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 9,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 10,
+          "top": 23.90625,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 11,
+          "top": 23.875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 24.359375,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "javaScriptEnabled": true,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.78125,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.75,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.734375,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 9,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 10,
+          "top": 23.78125,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 11,
+          "top": 23.75,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 23.734375,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "language": "he",
+      "javaScriptEnabled": false,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.25,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.09375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 23.546875,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 9,
+          "top": 24.25,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 10,
+          "top": 24.09375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 11,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 23.546875,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "language": "he",
+      "javaScriptEnabled": true,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.40625,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 13,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 14,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 15,
+          "top": 24.40625,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "javaScriptEnabled": true,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.40625,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 13,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 14,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 15,
+          "top": 24.40625,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "language": "he",
+      "javaScriptEnabled": false,
+      "status": "PASS",
+      "activations": [
+        {
+          "slug": "home-decor",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "click",
+          "tabs": 0,
+          "top": 24.40625,
+          "status": "PASS"
+        },
+        {
+          "slug": "home-decor",
+          "method": "keyboard",
+          "tabs": 10,
+          "top": 24.0625,
+          "status": "PASS"
+        },
+        {
+          "slug": "kitchen-hosting",
+          "method": "keyboard",
+          "tabs": 11,
+          "top": 24.4375,
+          "status": "PASS"
+        },
+        {
+          "slug": "judaica-tradition",
+          "method": "keyboard",
+          "tabs": 12,
+          "top": 24.421875,
+          "status": "PASS"
+        },
+        {
+          "slug": "gifts-memories",
+          "method": "keyboard",
+          "tabs": 13,
+          "top": 24.40625,
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "nativeActivations": 48,
+  "blockedRequests": 0,
+  "realInquiryRequests": 0
+}

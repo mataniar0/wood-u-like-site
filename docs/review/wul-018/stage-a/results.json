@@ -1,0 +1,38 @@
+{
+  "stage": "A",
+  "sampleProduct": "family-sign",
+  "results": [
+    {
+      "language": "he",
+      "width": 320,
+      "status": "PASS",
+      "screenshot": "he-320-family-sign.png",
+      "errors": [],
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "screenshot": "he-1440-family-sign.png",
+      "errors": [],
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "language": "en",
+      "width": 320,
+      "status": "PASS",
+      "screenshot": "en-320-family-sign.png",
+      "errors": [],
+      "unexpectedExternalRequests": 0
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "screenshot": "en-1440-family-sign.png",
+      "errors": [],
+      "unexpectedExternalRequests": 0
+    }
+  ]
+}

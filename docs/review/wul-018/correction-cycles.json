@@ -1,0 +1,48 @@
+{
+  "productCorrectionCycles": 4,
+  "qaHarnessCorrectionCycles": 1,
+  "totalCorrectionCycles": 5,
+  "productCorrections": [
+    {
+      "cycle": 1,
+      "trigger": "FAIL in initial homepage/language regression during integration",
+      "finding": "Home mockup caption referenced a translation key before dictionary integration completed.",
+      "fix": "Use an available localized caption key and synchronize static Hebrew summaries with the shared dictionary.",
+      "rerun": "Affected homepage/language runners repeated; final results recorded in regression summary."
+    },
+    {
+      "cycle": 2,
+      "trigger": "Manual source/content review",
+      "finding": "Three product meta descriptions concatenated sentences without punctuation.",
+      "fix": "Add sentence boundaries in welcome, kitchen and blessing HE/EN metadata; no product facts changed.",
+      "rerun": "All seven product metadata and static/dynamic language checks in the final acceptance matrix."
+    },
+    {
+      "cycle": 3,
+      "trigger": "Independent visual/accessibility review",
+      "finding": "No-JavaScript controls were disabled semantically but visually resembled enabled controls.",
+      "fix": "Scoped product CSS opacity 0.55 for disabled language/gallery buttons. Enabled controls unchanged.",
+      "rerun": "Independent keyboard/no-JS visual check and final no-JS product matrix after the style change."
+    },
+    {
+      "cycle": 4,
+      "trigger": "Default-motion regression FAIL, reproduced with physical Tab/Enter after fonts/images loaded",
+      "finding": "CSS smooth scrolling let focus scrolling overtake a native fragment jump, leaving the correctly focused collection heading above the viewport.",
+      "fix": "Use native immediate anchor scrolling in shared CSS; preserve HTML links and focus semantics, with no new navigation JavaScript.",
+      "rerun": "Full collection suite, six focused default-motion keyboard/mouse scenarios with/without JavaScript, and homepage navigation regression.",
+      "beforeEvidence": "regression/run-history/collections-keyboard-before.png"
+    }
+  ],
+  "qaHarnessCorrections": [
+    {
+      "cycle": 1,
+      "trigger": "FAIL in hero-specific regression after language child passed",
+      "finding": "Unscoped hero-caption selector also matched the catalog mockup disclosure.",
+      "fix": "Scope the existing exact disclosure/ALT assertion to .hero-visual. Focused hero rerun reuses the independently completed language child results; default hero runner still runs both."
+    }
+  ],
+  "intentionallyInterruptedAcceptanceRuns": 1,
+  "interruptionNote": "An incomplete acceptance run was stopped to refine the full gallery announcement expectation and run repeated navigation/history at one representative width per product/language; all viewport/image/axe checks remain in the final complete run.",
+  "environmentSetupAdjustment": "NPM cache explicitly placed in /tmp/wul-npm-cache because default home cache directory was absent; not an application or QA defect.",
+  "status": "PASS: all final acceptance and regression results validated; no open failure"
+}

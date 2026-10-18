@@ -8,11 +8,15 @@ const root = path.resolve(__dirname, "..");
 const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-005");
 const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
 let blockedRequests = 0;
-const regression = spawnSync(process.execPath, [path.join(__dirname, "check-language.cjs")], {
-  env: { ...process.env, WUL_REVIEW_DIR: output }, stdio: "inherit",
-});
-if (regression.error) throw regression.error;
-if (regression.status !== 0) process.exit(regression.status || 1);
+// A focused rerun may reuse a separately completed language regression; the
+// default still executes it before the Hero-specific matrix.
+if (process.env.WUL_SKIP_LANGUAGE_REGRESSION !== "1") {
+  const regression = spawnSync(process.execPath, [path.join(__dirname, "check-language.cjs")], {
+    env: { ...process.env, WUL_REVIEW_DIR: output }, stdio: "inherit",
+  });
+  if (regression.error) throw regression.error;
+  if (regression.status !== 0) process.exit(regression.status || 1);
+}
 (async () => {
   const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium", args: ["--no-sandbox"] });
   const results = [];
@@ -40,7 +44,7 @@ if (regression.status !== 0) process.exit(regression.status || 1);
         assert.equal(await hero.getAttribute("alt"), lang === "he"
           ? "הדמיה של שלט מעץ טבעי עם חריטת עידו ועדי כהן"
           : "Illustrative mockup of a natural wood sign engraved with the names Ido and Adi Cohen");
-        assert.equal(await page.locator('[data-i18n="hero.caption"]').textContent(), lang === "he" ? "הדמיה להמחשה" : "Illustrative mockup");
+        assert.equal(await page.locator('.hero-visual [data-i18n="hero.caption"]').textContent(), lang === "he" ? "הדמיה להמחשה" : "Illustrative mockup");
         const metrics = await hero.evaluate(e => {
           const rect = e.getBoundingClientRect(), resource = performance.getEntriesByName(e.currentSrc).at(-1);
           return { fit: getComputedStyle(e).objectFit, src: e.currentSrc,

@@ -1,0 +1,39 @@
+{
+  "baseline": "7557010",
+  "measurement": "Complete #favorites section after all image/font decoding; same width/language and all seven products retained.",
+  "results": [
+    {
+      "width": 390,
+      "language": "he",
+      "beforeFavoritesHeight": 4684.484375,
+      "afterFavoritesHeight": 3603.25,
+      "reductionPercent": 23.1,
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "beforeFavoritesHeight": 4845.171875,
+      "afterFavoritesHeight": 3676.75,
+      "reductionPercent": 24.1,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "language": "he",
+      "beforeFavoritesHeight": 2816.484375,
+      "afterFavoritesHeight": 2589.859375,
+      "reductionPercent": 8,
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "beforeFavoritesHeight": 2838.578125,
+      "afterFavoritesHeight": 2589.859375,
+      "reductionPercent": 8.8,
+      "status": "PASS"
+    }
+  ],
+  "unexpectedRequests": 0
+}

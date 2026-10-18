@@ -14,7 +14,7 @@ const root = path.resolve(__dirname, "..");
 const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-016/collections");
 const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8011/wood-u-like-site/";
 const origin = new URL(base).origin;
-const baseline = process.env.WUL_BASE_COMMIT || "c1f6bc2";
+const baseline = process.env.WUL_BASE_COMMIT || "7557010";
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
 const groups = [
   { slug: "home-decor", he: "שלטים ועיצוב לבית", en: "Home Signs & Decor", products: ["welcome", "family-sign", "hanging-home-sign"] },
@@ -23,19 +23,7 @@ const groups = [
   { slug: "gifts-memories", he: "מתנות וזיכרונות", en: "Gifts & Memories", products: ["personalized-clock"] },
 ];
 const productIds = groups.flatMap(group => group.products);
-const result = { task: "WUL-016 / Issue #28", baseline, startedAt: new Date().toISOString(),
-  harnessDevelopment: {
-    failedAttempts: 3,
-    interruptedRuns: 1,
-    interruptionReason: "An incomplete rerun was deliberately stopped while capturing so full-body image decoding and stable anchor polling could be added before the final complete run; the interrupted browser logged context-closed during boundingBox",
-    changes: [
-      { failure: "Focus outline assertion after pointer input", correction: "Send real Tab before focusing and pressing Enter, so :focus-visible uses keyboard modality" },
-      { failure: "Reload expected anchor viewport after Playwright had scrolled to static header language button", correction: "Verify retained hash/language, reopen retained deep link, then verify refresh viewport" },
-      { failure: "waitForFunction timer polling timed out in JavaScript-disabled context", correction: "Use bounded Node-side geometry polling; use reduced motion for capture contexts and separately verify default motion" },
-    ],
-    applicationChangesRequired: 0,
-    finalEvidence: "All final results below are from a complete run after these harness corrections; screenshots decode every visible body image before full-page capture",
-  },
+const result = { task: "WUL-018 / Issue #32 — collections regression", baseline, startedAt: new Date().toISOString(),
   mapping: groups, preservation: [], scenarios: [], requests: { blockedSubmissions: 0, blockedExternal: 0, realSubmissions: 0 },
   limits: ["Chromium only; Safari/Firefox not run", "Automated axe and keyboard checks do not replace a human screen-reader review", "Local server only; no deployment or public Pages verification"] };
 
@@ -151,9 +139,9 @@ async function semantics(page, language) {
       assert.equal(await card.locator("h4").count(), 1, `${product} has a single level-four title`);
       assert.equal(await card.locator("h3").count(), 0);
       assert.equal(await card.locator(".product-inquiry").getAttribute("href"), `inquiry/?product=${product}`, `${product} original inquiry ID is preserved`);
-      const badge = card.locator(".product-image > span");
-      assert.equal(await badge.count(), 1, `${product} retains one category badge`);
-      assert.equal((await badge.textContent()).trim(), group[language], `${product} badge uses its merged category`);
+      assert.equal(await card.locator(".product-image > span").count(), 0, `${product} has no repeated category badge inside its already-labelled group`);
+      assert.equal(await card.locator(".product-details-link").getAttribute("href"), `products/${product}/`, `${product} has a shareable standalone detail route`);
+      assert.equal(await card.locator(".clock-gallery").count(), 0, "The compact catalog does not embed a full gallery");
     }
   }
   const broken = await page.locator('a[href^="#"]').evaluateAll(links => links.filter(link => !document.getElementById(link.hash.slice(1))).map(link => link.hash));
@@ -189,6 +177,15 @@ async function layout(page, width) {
   const clippedText = await page.locator(".category-copy, #favorites h3, .product-card h4").evaluateAll(nodes => nodes.flatMap(node =>
     node.scrollWidth > node.clientWidth + 1 ? [{ text: node.textContent.trim(), scrollWidth: node.scrollWidth, clientWidth: node.clientWidth }] : []));
   assert.deepEqual(clippedText, [], "Category and product titles wrap without text clipping");
+  for (const card of await page.locator(".product-card").all()) {
+    const image = card.locator(".product-image");
+    assert.ok((await image.boundingBox()).height <= 400, "Compact catalog photograph does not become an oversized showcase");
+    assert.ok((await card.boundingBox()).height <= 700, "Compact catalog card remains a short entry into the product detail page");
+  }
+  if (width >= 768) {
+    const columns = await page.locator("#collection-home-decor .product-grid").evaluate(grid => getComputedStyle(grid).gridTemplateColumns.split(/\s+/).length);
+    assert.ok(columns >= 2 && columns <= 3, "Tablet/desktop catalog uses two or three columns");
+  }
   return rows.map(row => ({ top: Math.round(row.top), cards: row.cards.length }));
 }
 async function targetVisible(page, hash, requireFocus = false) {
@@ -383,8 +380,12 @@ async function capture(page, decoderPage, container, filename) {
         scenario.clickNavigation = await categoryNavigation(page, false);
         scenario.keyboardNavigation = await categoryNavigation(page, true);
         assert.equal(await page.locator('[data-language="en"]').isDisabled(), true, "No-JS language selector is visibly disabled");
-        assert.equal(await page.locator("#personalized-clock-work [data-clock-next]").isDisabled(), true);
-        assert.equal(await page.locator(".clock-gallery-noscript a").count(), 3, "Native clock photographs remain linked");
+        // Full no-JS gallery checks live on its standalone product route.
+        await page.locator("#personalized-clock-work .product-details-link").click();
+        await page.waitForURL("**/products/personalized-clock/");
+        assert.equal(await page.locator("[data-clock-next]").isDisabled(), true);
+        assert.equal(await page.locator(".clock-gallery-noscript a").count(), 3, "Native clock photographs remain linked on the standalone page");
+        await page.goto(base);
         scenario.screenshots.push(await capture(page, decoderPage, page.locator("#collections"), `he-${width}-no-js-collections.png`));
         for (const group of groups) scenario.screenshots.push(await capture(page, decoderPage, page.locator(`#collection-${group.slug}`), `he-${width}-no-js-${group.slug}.png`));
         await geometry(page);

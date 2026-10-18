@@ -251,7 +251,7 @@ function pass(test, language, extra = {}) {
             ),
             fullPage: true,
           });
-        // Real navigation from each existing product card, preserving language.
+        // Preserve legacy direct inquiry CTAs as well as the new product-page path.
         await p.goto(base);
         for (const [card, id] of [
           ["blessing-work", "blessing"],
@@ -269,6 +269,22 @@ function pass(test, language, extra = {}) {
           await p.locator(".inquiry-back").click();
           await p.waitForURL(base);
         }
+        for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock"]) {
+          const details = p.locator(`#${id}-work .product-details-link`);
+          assert.equal(await details.getAttribute("href"), `products/${id}/`);
+          await details.click();
+          await p.waitForURL(base + `products/${id}/`);
+          assert.equal(await p.locator("html").getAttribute("lang"), lang);
+          const quote = p.locator(".product-inquiry");
+          assert.equal(await quote.getAttribute("href"), `../../inquiry/?product=${id}`);
+          await quote.click();
+          await p.waitForURL(`**/inquiry/?product=${id}`);
+          assert.equal(await p.locator("#product").inputValue(), id);
+          assert.equal(await p.locator("html").getAttribute("lang"), lang);
+          assert.equal(await p.locator("#send-request").isDisabled(), true);
+          await p.locator(".inquiry-back").click();
+          await p.waitForURL(base);
+        }
         await p.locator(".inquiry-entry").click();
         await p.waitForURL("**/inquiry/");
         assert.equal(await p.locator("#product").inputValue(), "");
@@ -280,6 +296,8 @@ function pass(test, language, extra = {}) {
             "false",
           );
         }
+        assert.equal(s.posts, 0, "Catalog and product navigation must not submit a form");
+        assert.deepEqual(s.errors, [], "All linked product pages and local assets must load cleanly");
         pass("viewport/navigation/blocked/axe", lang, {
           viewport: [width, height],
           violations,

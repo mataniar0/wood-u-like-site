@@ -12,6 +12,7 @@ const root = path.resolve(__dirname, "..");
 const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-014");
 const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8009/wood-u-like-site/";
 const origin = new URL(base).origin;
+const productUrl = new URL("products/personalized-clock/", base).href;
 const approvedReview = path.join(root, "docs/review/wul-014");
 const manifestPath = path.join(approvedReview, "PHOTO_MANIFEST.json");
 const names = { he: "שעון עץ בחריטה אישית", en: "Personalized Engraved Wooden Clock" };
@@ -25,7 +26,7 @@ let blankScreenshotControl;
 function recordResults(extra = {}) {
   fs.mkdirSync(out, { recursive: true });
   fs.writeFileSync(path.join(out, "results.json"), JSON.stringify({
-    task: "WUL-014 / Issue #25", assetChecks, results, blankScreenshotControl, ...requestCounts, ...extra,
+    task: "WUL-018 / Issue #32 — three-photo standalone clock regression", assetChecks, results, blankScreenshotControl, ...requestCounts, ...extra,
   }, null, 2) + "\n");
 }
 
@@ -228,9 +229,25 @@ async function assertFocus(page, button) {
         assert.equal(await page.locator("html").getAttribute("dir"), language === "he" ? "rtl" : "ltr");
         assert.equal(await page.locator(".category-card").count(), 4, "Four canonical categories without duplicates");
         assert.equal(await page.locator(".product-card").count(), 7);
-        const card = page.locator("#personalized-clock-work.product-card.clock-card");
-        assert.equal(await card.locator("h4#clock-product-title").textContent(), names[language]);
-        assert.equal(await card.locator(".clock-gallery").getAttribute("aria-labelledby"), "clock-product-title");
+        const compactCard = page.locator("#personalized-clock-work.product-card");
+        assert.equal(await compactCard.locator("h4").textContent(), names[language]);
+        assert.equal(await compactCard.locator(".clock-gallery").count(), 0, "Homepage uses one compact clock photograph");
+        assert.equal(await compactCard.locator(".product-details-link").getAttribute("href"), "products/personalized-clock/");
+        assert.equal(await compactCard.locator(".product-inquiry").getAttribute("href"), "inquiry/?product=personalized-clock");
+        await assertNoOverflow(page);
+        await assertCardsDoNotOverlap(page, ".category-card");
+        await assertCardsDoNotOverlap(page, ".product-card");
+        const homepageAxe = await axeCheck(page);
+        await page.screenshot({ path: path.join(out, `screenshots/${language}-${width}-homepage.png`), fullPage: true });
+        shots.push(`screenshots/${language}-${width}-homepage.png`);
+        await compactCard.locator(".product-details-link").focus();
+        await page.keyboard.press("Enter");
+        await page.waitForURL(productUrl);
+        await decodeImages(page);
+        const card = page.locator("article.product-detail#personalized-clock-work");
+        assert.equal((await page.locator("h1").textContent()).trim(), names[language]);
+        const headingId = await card.locator(".clock-gallery").getAttribute("aria-labelledby");
+        assert.ok(headingId && await page.locator(`h1#${headingId}`).count() === 1, "Clock gallery is labelled by the product H1");
         assert.equal(await card.locator("[data-clock-slide]").count(), photoNames.length);
         assert.equal(await page.locator("#clock-gallery-status").getAttribute("aria-live"), "polite");
         const next = card.locator("[data-clock-next]"), previous = card.locator("[data-clock-prev]");
@@ -254,17 +271,9 @@ async function assertFocus(page, button) {
           assert.ok(language === "he" ? /[\u0590-\u05ff]/u.test(alt) : /^[^\u0590-\u05ff]+$/u.test(alt));
           assert.ok(!/["“”״]/u.test(alt), "Alt text does not transcribe personal engraving");
         }
-        assert.equal(await card.locator(".product-inquiry").getAttribute("href"), "inquiry/?product=personalized-clock");
+        assert.equal(await card.locator(".product-inquiry").getAttribute("href"), "../../inquiry/?product=personalized-clock");
         await assertNoOverflow(page);
-        await assertCardsDoNotOverlap(page, ".category-card");
-        await assertCardsDoNotOverlap(page, ".product-card");
-        if (width > 760) assert.equal(await card.evaluate(card => {
-          const grid = card.closest(".product-grid");
-          return Math.abs(card.getBoundingClientRect().width - grid.getBoundingClientRect().width) < 2;
-        }), true, "Desktop clock card spans the complete product grid");
-        const homepageAxe = await axeCheck(page);
-        await page.screenshot({ path: path.join(out, `screenshots/${language}-${width}-homepage.png`), fullPage: true });
-        shots.push(`screenshots/${language}-${width}-homepage.png`);
+        const productAxe = await axeCheck(page);
         const slideResults = [];
         for (let index = 0; index < photoNames.length; index++) {
           slideResults.push(await assertSlide(page, index, language));
@@ -361,7 +370,7 @@ async function assertFocus(page, button) {
         assert.deepEqual(errors, [], "No JavaScript, console, or HTTP errors");
         results.push({ viewport: [width, height], language, status: "PASS", slideResults,
           keyboard: "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping", languageSwitchRetainsSlide: "PASS",
-          reducedMotion: "PASS", noOverflowOrCardOverlap: "PASS", homepageAxe, inquiryAxe,
+          reducedMotion: "PASS", noOverflowOrCardOverlap: "PASS", homepageAxe, productAxe, inquiryAxe,
           preselectedClockAndLanguagePersistence: "PASS", optionalDimensions: "PASS", unknownProductsRejected: "PASS",
           publicSubmissionBlocked: "PASS", errors, screenshots: shots });
         recordResults();
@@ -381,8 +390,8 @@ async function assertFocus(page, button) {
         try {
           const page = await noJsContext.newPage();
           const errors = watchErrors(page);
-          await page.goto(base);
-          const card = page.locator("#personalized-clock-work");
+          await page.goto(productUrl);
+          const card = page.locator("article.product-detail#personalized-clock-work");
           assert.equal(await card.locator("[data-clock-slide]").first().isVisible(), true);
           const image = card.locator("[data-clock-slide]").first().locator("img");
           // Trigger native lazy loading without enabling page scripts or changing
@@ -411,7 +420,7 @@ async function assertFocus(page, button) {
           for (let index = 0; index < photoNames.length; index++) {
             const link = links.nth(index);
             assert.equal(await link.isVisible(), true);
-            const target = new URL(await link.getAttribute("href"), base);
+            const target = new URL(await link.getAttribute("href"), productUrl);
             assert.equal(target.origin, origin);
             assert.ok(target.pathname.endsWith(manifest[index].full.file));
             const response = await noJsContext.request.get(target.href);
@@ -428,15 +437,17 @@ async function assertFocus(page, button) {
           const pixels = await photographPixels(decoderPage, png, region);
           assertPhotographPainted(pixels);
           if (width === 390) {
-            const fixture = "qa-followup/before-he-390-clock-no-javascript.png";
-            const blankPixels = await photographPixels(decoderPage, fs.readFileSync(path.join(approvedReview, fixture)), region);
+            // Generate a fresh uniform placeholder; historical screenshots may
+            // contain photographs withdrawn from the approved public set.
+            const blank = await decoderPage.screenshot();
+            const blankPixels = await photographPixels(decoderPage, blank, { x: 0, y: 0, width: 300, height: 300 });
             assert.throws(() => assertPhotographPainted(blankPixels), /Saved screenshot must contain/,
-              "The new pixel assertion must reject the original blank QA artifact");
-            blankScreenshotControl = { fixture: path.relative(root, path.join(approvedReview, fixture)), status: "PASS: original blank screenshot rejected", pixels: blankPixels };
+              "The pixel assertion must reject a uniform placeholder");
+            blankScreenshotControl = { fixture: "fresh isolated uniform PNG, no product photograph", status: "PASS: blank screenshot rejected", pixels: blankPixels };
           }
           assert.deepEqual(errors, []);
           results.push({ mode: "no-javascript", viewport: [width, height], language: "he", status: "PASS",
-            allFourNativeImageLinks: "PASS", disabledControls: "PASS", firstPhotographVisible: "PASS",
+            allThreeNativeImageLinks: "PASS", disabledControls: "PASS", firstPhotographVisible: "PASS",
             decodedFirstPhotograph: { ...loaded, currentSource: new URL(loaded.currentSource).pathname },
             savedScreenshotPhotographPixels: pixels, screenshot, errors });
           recordResults();
