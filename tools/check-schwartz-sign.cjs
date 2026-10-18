@@ -4,16 +4,18 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname, "..");
-const out = path.join(root, "docs/review/wul-009");
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-009");
 const base =
   process.env.WUL_BASE_URL || "http://127.0.0.1:8003/wood-u-like-site/";
 (async () => {
+  fs.mkdirSync(path.join(out, "screenshots"), { recursive: true });
   const browser = await chromium.launch({
     executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium",
     args: ["--no-sandbox"],
   });
   const results = [];
   let externalRequests = 0;
+  let interceptedSubmissionRequests = 0;
   try {
     for (const [width, height] of [
       [320, 568],
@@ -34,6 +36,10 @@ const base =
           lang,
         );
         await context.route("**/*", (route) => {
+          if (!["GET", "HEAD"].includes(route.request().method())) {
+            interceptedSubmissionRequests++;
+            return route.abort("blockedbyclient");
+          }
           if (new URL(route.request().url()).origin === new URL(base).origin)
             return route.continue();
           externalRequests++;
@@ -54,15 +60,15 @@ const base =
           await Promise.all([...document.images].map((i) => i.decode()));
           await document.fonts.ready;
         });
-        assert.equal(await page.locator(".category-card").count(), 6);
-        assert.equal(await page.locator(".product-card").count(), 5);
+        assert.equal(await page.locator(".category-card").count(), 4);
+        assert.equal(await page.locator(".product-card").count(), 7);
         assert.equal(
-          await page.locator('[data-i18n="category.home"]').textContent(),
-          lang === "he" ? "בית ומשפחה" : "Home & family",
+          await page.locator('#collection-home-decor h3[data-i18n="category.homeDecor"]').textContent(),
+          lang === "he" ? "שלטים ועיצוב לבית" : "Home Signs & Decor",
         );
         assert.equal(
-          await page.locator('[data-i18n="category.signs"]').textContent(),
-          lang === "he" ? "שלטים לדלת" : "Door Signs",
+          await page.locator('#family-sign-work [data-i18n="category.homeDecor"]').textContent(),
+          lang === "he" ? "שלטים ועיצוב לבית" : "Home Signs & Decor",
         );
         assert.equal(
           await page
@@ -71,7 +77,7 @@ const base =
           lang === "he" ? "שלט משפחתי לדלת" : "Personalized wooden door sign",
         );
         for (const image of await page
-          .locator(".family-sign-category img,.family-sign-card img")
+          .locator('a[href="#collection-home-decor"] img,.family-sign-card img')
           .all()) {
           assert.equal(
             await image.evaluate((i) => getComputedStyle(i).objectFit),
@@ -128,9 +134,9 @@ const base =
               ),
             });
         }
-        assert.equal(await page.locator('[data-i18n="category.homeSigns"]').first().textContent(), lang === "he" ? "שלטים לבית" : "Home Signs");
-        assert.equal(await page.locator('#hanging-home-sign-work h3').textContent(), lang === "he" ? "שלט תלוי לבית" : "Personalized hanging wooden home sign");
-        for (const container of [".schwartz-sign-category", ".schwartz-sign-card"]) {
+        assert.equal(await page.locator('#hanging-home-sign-work [data-i18n="category.homeDecor"]').first().textContent(), lang === "he" ? "שלטים ועיצוב לבית" : "Home Signs & Decor");
+        assert.equal(await page.locator('#hanging-home-sign-work h4').textContent(), lang === "he" ? "שלט תלוי לבית" : "Personalized hanging wooden home sign");
+        for (const container of [".schwartz-sign-card"]) {
           assert.equal(await page.locator(`${container} .mockup-disclosure`).count(), 0);
           const image = page.locator(`${container} img`);
           assert.equal(await image.getAttribute("alt"), lang === "he" ? "הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים" : "Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds");
@@ -140,14 +146,14 @@ const base =
           assert.ok(await image.evaluate(i => i.complete && i.naturalWidth > 0));
         }
         // Hover must not crop the chain or either bird.
-        await page.locator(".schwartz-sign-category").hover();
-        assert.equal(await page.locator(".schwartz-sign-category img").evaluate(i => getComputedStyle(i).transform), "none");
+        await page.locator(".schwartz-sign-card").hover();
+        assert.equal(await page.locator(".schwartz-sign-card img").evaluate(i => getComputedStyle(i).transform), "none");
         const badLinks = await page.locator('a[href^="#"]').evaluateAll(links => links.filter(a => !document.getElementById(a.hash.slice(1))).map(a => a.hash));
         assert.deepEqual(badLinks, []);
-        const category = page.locator(".family-sign-category");
+        const category = page.locator('a[href="#collection-home-decor"]');
         await category.focus();
         await page.keyboard.press("Enter");
-        await page.waitForFunction(() => location.hash === "#family-sign-work");
+        await page.waitForFunction(() => location.hash === "#collection-home-decor");
         const quote = page.locator("#family-sign-work .product-inquiry");
         await quote.focus();
         await page.keyboard.press("Enter");
@@ -183,9 +189,9 @@ const base =
         );
         await page.locator(".inquiry-back").click();
         await page.waitForURL(base);
-        await page.locator(".schwartz-sign-category").focus();
+        await page.locator('a[href="#collection-home-decor"]').focus();
         await page.keyboard.press("Enter");
-        await page.waitForFunction(() => location.hash === "#hanging-home-sign-work");
+        await page.waitForFunction(() => location.hash === "#collection-home-decor");
         await page.locator(".schwartz-sign-card .product-inquiry").focus();
         await page.keyboard.press("Enter");
         await page.waitForURL("**/inquiry/?product=hanging-home-sign");
@@ -205,12 +211,15 @@ const base =
         await page.screenshot({path:path.join(out, `screenshots/${lang}-${width}-schwartz-inquiry.png`),fullPage:true,mask:[page.locator("input:visible,textarea:visible")]});
         await page.locator(".inquiry-back").click();
         await page.waitForURL(base);
-        // Future-seventh-card layout is verified in the DOM only; no new product is published.
-        await page.evaluate(() => {
-          const grid = document.querySelector(".category-grid");
-          grid.append(grid.lastElementChild.cloneNode(true));
-        });
-        assert.equal(await page.locator(".category-card").count(), 7);
+        // WUL-016 requires exactly four groups; future products join existing groups.
+        assert.equal(await page.locator(".category-card").count(), 4);
+        assert.deepEqual(await page.locator("#favorites .product-card").evaluateAll(cards =>
+          cards.map(card => [card.id, card.closest("[data-collection]").dataset.collection])), [
+          ["welcome-work", "home-decor"], ["family-sign-work", "home-decor"],
+          ["hanging-home-sign-work", "home-decor"], ["kitchen-work", "kitchen-hosting"],
+          ["pizza-peel-work", "kitchen-hosting"], ["blessing-work", "judaica-tradition"],
+          ["personalized-clock-work", "gifts-memories"],
+        ]);
         assert.equal(
           await page.evaluate(
             () => document.documentElement.scrollWidth > innerWidth,
@@ -242,7 +251,7 @@ const base =
           status: "PASS",
           axe: violations,
           errors,
-          futureSeventhCard: "PASS",
+          fourCategoryLayout: "PASS",
           blockedInquiry: "PASS",
           schwartzProduct: "PASS",
           mazuzRegression: "PASS",
@@ -252,10 +261,11 @@ const base =
         await context.close();
       }
     assert.equal(externalRequests, 0);
+    assert.equal(interceptedSubmissionRequests, 0, "Public form must not attempt a POST");
     fs.writeFileSync(
       path.join(out, "results.json"),
       JSON.stringify(
-        { results, externalRequests, realInquiryRequests: 0 },
+        { results, externalRequests, interceptedSubmissionRequests, realInquiryRequests: 0 },
         null,
         2,
       ) + "\n",

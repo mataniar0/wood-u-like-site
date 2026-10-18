@@ -4,7 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const base=process.env.WUL_BASE_URL||'http://127.0.0.1:8007/wood-u-like-site/';
-const out=path.resolve(__dirname,'../docs/review/wul-006/privacy');
+const out=path.resolve(__dirname,'..',process.env.WUL_REVIEW_DIR||'docs/review/wul-006/privacy');
 (async()=>{
  fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});
  const browser=await chromium.launch({executablePath:process.env.WUL_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox']});
@@ -13,7 +13,7 @@ const out=path.resolve(__dirname,'../docs/review/wul-006/privacy');
   for(const width of [320,390,768,1024,1440])for(const lang of ['he','en']){
    const context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'block'});
    await context.addInitScript(l=>localStorage.setItem('wood-u-like-language',l),lang);
-   await context.route('**/*',route=>{if(new URL(route.request().url()).origin===new URL(base).origin)return route.continue();external++;return route.abort();});
+   await context.route('**/*',route=>{if(['GET','HEAD'].includes(route.request().method())&&new URL(route.request().url()).origin===new URL(base).origin)return route.continue();external++;return route.abort();});
    const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
    await page.goto(base+'inquiry/');await page.evaluate(()=>document.fonts.ready);
    assert.equal(await page.locator('#send-request').isDisabled(),true);

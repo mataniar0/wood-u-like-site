@@ -74,6 +74,10 @@ function record(test, language, details = {}) {
       const request = route.request();
       const url = new URL(request.url());
       if (url.origin === origin) {
+        if (!["GET", "HEAD"].includes(request.method())) {
+          unexpectedExternal++;
+          return route.abort("blockedbyclient");
+        }
         if (url.pathname.endsWith("/contact-config.js") && options.approved !== false)
           return route.fulfill({
             contentType: "application/javascript",

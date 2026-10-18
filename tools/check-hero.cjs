@@ -6,6 +6,8 @@ const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
 const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-005");
+const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
+let blockedRequests = 0;
 const regression = spawnSync(process.execPath, [path.join(__dirname, "check-language.cjs")], {
   env: { ...process.env, WUL_REVIEW_DIR: output }, stdio: "inherit",
 });
@@ -17,14 +19,21 @@ if (regression.status !== 0) process.exit(regression.status || 1);
   try {
     for (const [width, height] of [[320,568], [390,844], [768,1024], [1024,768], [1440,900]]) {
       for (const lang of ["he", "en"]) {
-        const context = await browser.newContext({ viewport: { width, height } });
+        const context = await browser.newContext({ viewport: { width, height }, serviceWorkers: "block" });
+        await context.route("**/*", route => {
+          const request = route.request();
+          if (["GET", "HEAD"].includes(request.method()) && new URL(request.url()).origin === new URL(base).origin)
+            return route.continue();
+          blockedRequests++;
+          return route.abort("blockedbyclient");
+        });
         await context.addInitScript(lang => localStorage.setItem("wood-u-like-language", lang), lang);
         const page = await context.newPage();
         const requests = [], errors = [];
         page.on("request", r => requests.push(r.url()));
         page.on("pageerror", e => errors.push(e.message));
         page.on("response", r => { if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
-        await page.goto(process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/");
+        await page.goto(base);
         const hero = page.locator(".hero-image-shell img");
         await hero.evaluate(e => e.decode());
         await page.evaluate(() => document.fonts.ready);
@@ -51,6 +60,7 @@ if (regression.status !== 0) process.exit(regression.status || 1);
         await context.close();
       }
     }
+    assert.equal(blockedRequests, 0, "No POST or external request attempted");
     fs.writeFileSync(path.join(output, "hero-results.json"), JSON.stringify(results, null, 2) + "\n");
     console.log(`Hero-specific checks: ${results.length} PASS`);
   } finally { await browser.close(); }

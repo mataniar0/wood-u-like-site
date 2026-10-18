@@ -1,0 +1,792 @@
+{
+  "suite": "WUL-012 lead attribution",
+  "results": [
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "blessing"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "welcome"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "kitchen"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "family-sign"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "hanging-home-sign"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "personalized-clock"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "pizza-peel"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "he",
+      "status": "PASS",
+      "productId": "custom"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "blessing"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "welcome"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "kitchen"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "family-sign"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "hanging-home-sign"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "personalized-clock"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "pizza-peel"
+    },
+    {
+      "test": "allowlisted-product/direct-campaign/payload-contract",
+      "language": "en",
+      "status": "PASS",
+      "productId": "custom"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "blessing"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "welcome"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "kitchen"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "family-sign"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "hanging-home-sign"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "personalized-clock"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "pizza-peel"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "he",
+      "status": "PASS",
+      "productId": "custom"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "blessing"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "welcome"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "kitchen"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "family-sign"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "hanging-home-sign"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "personalized-clock"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "pizza-peel"
+    },
+    {
+      "test": "homepage-navigation/campaign-consumed/no-query-propagation",
+      "language": "en",
+      "status": "PASS",
+      "productId": "custom"
+    },
+    {
+      "test": "sanitizer:utm_source:absent",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:empty",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:allowed-characters",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:maximum-length",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:over-limit",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:spaces",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:leading-space",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:email",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-digits",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-separators",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-seven-digits",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:six-digit-label",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:xss",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:unicode",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:control-characters",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:encoded-fragment",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:url",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:duplicate",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:absent",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:empty",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:allowed-characters",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:maximum-length",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:over-limit",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:spaces",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:leading-space",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:email",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-digits",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-separators",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-seven-digits",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:six-digit-label",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:xss",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:unicode",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:control-characters",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:encoded-fragment",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:url",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:duplicate",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:absent",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:empty",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:allowed-characters",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:maximum-length",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:over-limit",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:spaces",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:leading-space",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:email",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-digits",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-separators",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:phone-seven-digits",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:six-digit-label",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:xss",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:unicode",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:control-characters",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:encoded-fragment",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:url",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_source:duplicate",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:absent",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:empty",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:allowed-characters",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:maximum-length",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:over-limit",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:spaces",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:leading-space",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:email",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-digits",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-separators",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:phone-seven-digits",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:six-digit-label",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:xss",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:unicode",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:control-characters",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:encoded-fragment",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:url",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "sanitizer:utm_campaign:duplicate",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:valid:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:malformed:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:array:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:null:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:string:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:missing-key:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:extra-key:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:wrong-type:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:revalidate-pii:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:oversized-json:consume-once",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:new-source-replaces-pair",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:new-campaign-replaces-pair",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:invalid-query-replaces-pair",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:unrelated-query-retains-pair",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "storage-denied:direct-query",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "storage-denied:homepage-graceful-fallback",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "real-configuration/public-submission-blocked",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid/honeypot/retry-timestamp/language-values/delayed-duplicate",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "pending-double-submit/no-second-post",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:valid:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:malformed:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:array:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:null:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:string:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:missing-key:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:extra-key:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:wrong-type:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:revalidate-pii:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:oversized-json:consume-once",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:new-source-replaces-pair",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:new-campaign-replaces-pair",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:invalid-query-replaces-pair",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "session-storage:unrelated-query-retains-pair",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "storage-denied:direct-query",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "storage-denied:homepage-graceful-fallback",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid-product-url/no-post",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "real-configuration/public-submission-blocked",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid/honeypot/retry-timestamp/language-values/delayed-duplicate",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "pending-double-submit/no-second-post",
+      "language": "en",
+      "status": "PASS"
+    }
+  ],
+  "checks": 150,
+  "interceptedFormPosts": 142,
+  "realInquiryRequests": 0,
+  "unexpectedExternalRequests": 0,
+  "screenshots": "None: query/PII fixtures are intentionally excluded from screenshots."
+}

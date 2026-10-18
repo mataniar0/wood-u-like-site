@@ -165,6 +165,7 @@ button {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0;
 }
@@ -355,15 +356,6 @@ p {
 .category-card:hover .category-img img {
   transform: scale(1.035);
 }
-.category-card:nth-child(2) .category-img img {
-  object-position: center 24%;
-}
-.category-card:nth-child(3) .category-img img {
-  object-position: center 27%;
-}
-.category-card:nth-child(4) .category-img img {
-  object-position: center 38%;
-}
 .category-copy {
   display: flex;
   align-items: center;
@@ -419,13 +411,13 @@ p {
   height: 100%;
   object-fit: cover;
 }
-.product-card:nth-child(1) .product-image img {
+#blessing-work .product-image img {
   object-position: center 27%;
 }
-.product-card:nth-child(2) .product-image img {
+#welcome-work .product-image img {
   object-position: center 49%;
 }
-.product-card:nth-child(3) .product-image img {
+#kitchen-work .product-image img {
   object-position: center 35%;
 }
 .product-image > span {
@@ -437,7 +429,7 @@ p {
   font-size: 10px;
   color: #687360;
 }
-.product-card h3 {
+.product-card h4 {
   font-family: var(--serif);
   font-size: 23px;
   font-weight: 550;
@@ -796,7 +788,7 @@ p {
   .product-image {
     height: 390px;
   }
-  .product-card h3 {
+  .product-card h4 {
     font-size: 24px;
   }
   .story {
@@ -1224,44 +1216,52 @@ html[lang="en"] .benefits-grid > div + div {
   margin-inline-start: 8px;
 }
 
-/* Collections: three columns on desktop, two on tablet, with room for future categories. */
-.category-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
-.category-grid > .category-card { grid-column: span 2; min-width: 0; }
-.category-grid > .category-card:nth-child(4):nth-last-child(2) { grid-column: 2 / span 2; }
+/* Four native collection links; product groups stay visible without scripts. */
+.category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.category-img img { object-position: center; }
+.category-copy {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 8px;
+  line-height: 1.6;
+}
+.category-label { min-width: 0; overflow-wrap: break-word; }
+.category-copy b { margin-inline-start: 0; }
+.category-card { scroll-margin-block-start: 24px; }
+.collection-group + .collection-group { margin-block-start: 64px; }
+.collection-group > h3 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 24px;
+  padding-block-end: 14px;
+  border-block-end: 1px solid var(--line);
+}
 .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.family-sign-category img, .family-sign-card img { object-fit: contain; object-position: center; }
+.collection-group[data-collection="home-decor"] .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.collection-group[data-collection="judaica-tradition"] .product-grid { grid-template-columns: minmax(0, 440px); }
+.collection-group[data-collection="gifts-memories"] .product-grid { grid-template-columns: minmax(0, 1fr); }
+/* Preserve the complete approved signs and pizza-peel photograph. */
+.family-sign-card img, .schwartz-sign-card img, .pizza-peel-card img {
+  object-fit: contain;
+  object-position: center;
+}
 @media (min-width: 761px) and (max-width: 1100px) {
- .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
- .category-grid > .category-card:nth-child(4):nth-last-child(2) { grid-column: span 2; }
- .category-grid > .category-card:last-child:nth-child(odd) { grid-column: 2 / span 2; }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .collection-group[data-collection="home-decor"] .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 760px) {
- .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
- .category-grid > .category-card, .category-grid > .category-card:nth-child(4):nth-last-child(2) { grid-column: auto; }
- .category-grid > .category-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
- .product-grid { grid-template-columns: minmax(0, 1fr); }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .category-img { height: clamp(155px, 45vw, 230px); }
+  .category-copy { font-size: 14px; gap: 5px; }
+  .category-no { padding-block-start: 4px; }
+  .collection-group + .collection-group { margin-block-start: 48px; }
+  .collection-group .product-grid,
+  .collection-group[data-collection="home-decor"] .product-grid,
+  .collection-group[data-collection="judaica-tradition"] .product-grid { grid-template-columns: minmax(0, 1fr); }
 }
-@media (max-width: 480px) {
- .category-grid { grid-template-columns: minmax(0, 1fr); }
-}
-
-/* Preserve the full approved mockup, including its chain and both birds. */
-.schwartz-sign-category img, .schwartz-sign-card img {
-  object-fit: contain;
-  object-position: center;
-}
-.schwartz-sign-category:hover .category-img img { transform: none; }
-/* Center a final single category without changing the six-category layout. */
-@media (min-width: 1101px) {
-  .category-grid > .category-card:last-child:nth-child(3n + 1) { grid-column: 3 / span 2; }
-}
-
-/* Keep the approved peel photograph and its entire handle visible. */
-.pizza-peel-category img, .pizza-peel-card img {
-  object-fit: contain;
-  object-position: center;
-}
-.pizza-peel-category:hover .category-img img { transform: none; }
 
 /* Product-scoped gallery: preserve the six existing cards and their layout. */
 .clock-card {
