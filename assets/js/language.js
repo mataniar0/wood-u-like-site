@@ -2,6 +2,23 @@
   "use strict";
   const STORAGE_KEY = "wood-u-like-language";
   const catalog = {
+    "collection.view": {"he": "לצפייה בקולקציה", "en": "View collection"},
+    "collection.all": {"he": "לכל הקולקציות", "en": "All collections"},
+    "collection.kicker": {"he": "הקולקציה", "en": "THE COLLECTION"},
+    "legacy.moved": {"he": "המוצר עבר לעמוד משלו.", "en": "This product now has its own page."},
+    "collection.home-decor.intro": {"he": "שלטים מעץ עם מילים ושמות שהופכים כניסה לבית לאישית.", "en": "Wooden signs with words and names that make a home feel personal."},
+    "collection.home-decor.metaTitle": {"he": "שלטים ועיצוב לבית | WOOD U LIKE", "en": "Home Signs & Decor | WOOD U LIKE"},
+    "collection.home-decor.metaDescription": {"he": "שלטים מעץ עם מילים ושמות שהופכים כניסה לבית לאישית. גלו את קולקציית שלטים ועיצוב לבית של WOOD U LIKE.", "en": "Wooden signs with words and names that make a home feel personal. Explore the Home Signs & Decor collection by WOOD U LIKE."},
+    "collection.kitchen-hosting.intro": {"he": "פריטי עץ עם חריטה אישית לרגעי בישול, הגשה ואירוח.", "en": "Personally engraved wooden pieces for cooking, serving and gathering."},
+    "collection.kitchen-hosting.metaTitle": {"he": "מטבח ואירוח | WOOD U LIKE", "en": "Kitchen & Hosting | WOOD U LIKE"},
+    "collection.kitchen-hosting.metaDescription": {"he": "פריטי עץ עם חריטה אישית לרגעי בישול, הגשה ואירוח. גלו את קולקציית מטבח ואירוח של WOOD U LIKE.", "en": "Personally engraved wooden pieces for cooking, serving and gathering. Explore the Kitchen & Hosting collection by WOOD U LIKE."},
+    "collection.judaica-tradition.intro": {"he": "ברכה חרוטה בעץ, לרגעי מסורת ומשמעות בבית.", "en": "A blessing engraved in wood for moments of tradition and meaning at home."},
+    "collection.judaica-tradition.metaTitle": {"he": "יודאיקה ומסורת | WOOD U LIKE", "en": "Judaica & Tradition | WOOD U LIKE"},
+    "collection.judaica-tradition.metaDescription": {"he": "ברכה חרוטה בעץ, לרגעי מסורת ומשמעות בבית. גלו את קולקציית יודאיקה ומסורת של WOOD U LIKE.", "en": "A blessing engraved in wood for moments of tradition and meaning at home. Explore the Judaica & Tradition collection by WOOD U LIKE."},
+    "collection.gifts-memories.intro": {"he": "תמונה והקדשה אישית שהופכות רגע למזכרת מעץ.", "en": "A photograph and a personal dedication that turn a moment into a wooden keepsake."},
+    "collection.gifts-memories.metaTitle": {"he": "מתנות וזיכרונות | WOOD U LIKE", "en": "Gifts & Memories | WOOD U LIKE"},
+    "collection.gifts-memories.metaDescription": {"he": "תמונה והקדשה אישית שהופכות רגע למזכרת מעץ. גלו את קולקציית מתנות וזיכרונות של WOOD U LIKE.", "en": "A photograph and a personal dedication that turn a moment into a wooden keepsake. Explore the Gifts & Memories collection by WOOD U LIKE."},
+
     "meta.title": {
       he: "WOOD U LIKE | עץ טבעי. סיפור אישי.",
       en: "WOOD U LIKE | Natural wood. Personal stories.",
@@ -35,8 +52,8 @@
       en: "Collections",
     },
     "nav.favorites": {
-      he: "מוצרים נבחרים",
-      en: "Featured pieces",
+      he: "בחירת קולקציה",
+      en: "Browse collections",
     },
     "nav.story": {
       he: "הסיפור שלנו",

@@ -1,0 +1,15 @@
+{
+  "checkedAtUtc": "2026-10-18T16:25:49.813924+00:00",
+  "initialBaseline": "76440077dec3cc824271ad43978020592f79c447",
+  "mainAtFinalCheck": "76440077dec3cc824271ad43978020592f79c447",
+  "mainUnchangedSinceStart": true,
+  "issue26": {
+    "state": "OPEN",
+    "title": "WUL-015 — Natural-edge personalized door sign: enhanced gallery & HE/EN inquiry",
+    "updatedAt": "2026-10-15T20:16:50Z",
+    "url": "https://github.com/mataniar0/wood-u-like-site/issues/26"
+  },
+  "naturalEdgeDoorSignInMain": false,
+  "productPageCountInMain": 7,
+  "status": "PASS"
+}

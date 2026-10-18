@@ -1,4 +1,6 @@
 "use strict";
+const collectionFor = id => ["welcome","family-sign","hanging-home-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
@@ -262,6 +264,9 @@ function pass(test, language, extra = {}) {
           ["pizza-peel-work", "pizza-peel"],
           ["personalized-clock-work", "personalized-clock"],
         ]) {
+          await p.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
+          await p.waitForURL(base + `collections/${collectionFor(id)}/`);
+          assert.equal(await p.locator(`#${card} .product-inquiry`).getAttribute("href"), `../../inquiry/?product=${id}`);
           await p.locator(`#${card} .product-inquiry`).click();
           await p.waitForURL(`**/inquiry/?product=${id}`);
           assert.equal(await p.locator("#product").inputValue(), id);
@@ -270,8 +275,10 @@ function pass(test, language, extra = {}) {
           await p.waitForURL(base);
         }
         for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock"]) {
+          await p.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
+          await p.waitForURL(base + `collections/${collectionFor(id)}/`);
           const details = p.locator(`#${id}-work .product-details-link`);
-          assert.equal(await details.getAttribute("href"), `products/${id}/`);
+          assert.equal(await details.getAttribute("href"), `../../products/${id}/`);
           await details.click();
           await p.waitForURL(base + `products/${id}/`);
           assert.equal(await p.locator("html").getAttribute("lang"), lang);

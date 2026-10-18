@@ -1,0 +1,3293 @@
+{
+  "task": "WUL-019",
+  "baseline": "7644007",
+  "startedAt": "2026-10-18T15:50:56.542Z",
+  "scenarios": [
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14924,
+          "maxColorFraction": 0.0015376013419066256
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6471,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4023,
+          "maxColorFraction": 0.0047789725209080045
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4119,
+          "maxColorFraction": 0.005973715651135006
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3786,
+          "maxColorFraction": 0.006371963361210673
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7132,
+          "maxColorFraction": 0.004424333836098542
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11370,
+          "maxColorFraction": 0.025925925925925925
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home-decor.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 12163,
+          "maxColorFraction": 0.0037980546549328392
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 15347,
+          "maxColorFraction": 0.001065308012968967
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10836,
+          "maxColorFraction": 0.002825382121352478
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 6525,
+          "maxColorFraction": 0.010236220472440945
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10870,
+          "maxColorFraction": 0.058823529411764705
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 7763,
+          "maxColorFraction": 0.018388142658638258
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 8695,
+          "maxColorFraction": 0.0053265400648448355
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-home.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14956,
+          "maxColorFraction": 0.0016773832820799553
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6424,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4001,
+          "maxColorFraction": 0.005575467941059339
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4113,
+          "maxColorFraction": 0.006106464887826895
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3797,
+          "maxColorFraction": 0.007035709544670118
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7075,
+          "maxColorFraction": 0.004675716440422323
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11428,
+          "maxColorFraction": 0.027295362589480236
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-home-decor.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 12163,
+          "maxColorFraction": 0.0037980546549328392
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 15347,
+          "maxColorFraction": 0.001065308012968967
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10836,
+          "maxColorFraction": 0.002825382121352478
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 6525,
+          "maxColorFraction": 0.010236220472440945
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10870,
+          "maxColorFraction": 0.058823529411764705
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 7763,
+          "maxColorFraction": 0.018388142658638258
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 8695,
+          "maxColorFraction": 0.0053265400648448355
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20729,
+          "maxColorFraction": 0.0013882735194210604
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 9298,
+          "maxColorFraction": 0.001027077497665733
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4972,
+          "maxColorFraction": 0.0056022408963585435
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 5136,
+          "maxColorFraction": 0.006442577030812325
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4789,
+          "maxColorFraction": 0.007096171802054155
+        },
+        {
+          "samples": 30952,
+          "distinctColors": 9302,
+          "maxColorFraction": 0.00429697596278108
+        },
+        {
+          "samples": 49820,
+          "distinctColors": 15527,
+          "maxColorFraction": 0.028141308711360898
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home-decor.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15368,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19526,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14582,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 8245,
+          "maxColorFraction": 0.010421233685204546
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14401,
+          "maxColorFraction": 0.06030150753768844
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 9517,
+          "maxColorFraction": 0.018481670095443662
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 10660,
+          "maxColorFraction": 0.004923948602070756
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-home.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20649,
+          "maxColorFraction": 0.0013882735194210604
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 9267,
+          "maxColorFraction": 0.0008403361344537816
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4982,
+          "maxColorFraction": 0.005415499533146592
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 5134,
+          "maxColorFraction": 0.006442577030812325
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4782,
+          "maxColorFraction": 0.0070028011204481795
+        },
+        {
+          "samples": 30952,
+          "distinctColors": 9297,
+          "maxColorFraction": 0.004135435513052468
+        },
+        {
+          "samples": 49820,
+          "distinctColors": 15527,
+          "maxColorFraction": 0.028141308711360898
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-home-decor.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15394,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19506,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14575,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 8162,
+          "maxColorFraction": 0.010421233685204546
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14403,
+          "maxColorFraction": 0.06030150753768844
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 9525,
+          "maxColorFraction": 0.018481670095443662
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 10653,
+          "maxColorFraction": 0.004923948602070756
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-home.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20784,
+          "maxColorFraction": 0.001476886722788362
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 19799,
+          "maxColorFraction": 0.002050580997949419
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 8718,
+          "maxColorFraction": 0.00911369332421964
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 9333,
+          "maxColorFraction": 0.0430622009569378
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 11305,
+          "maxColorFraction": 0.004817237899944667
+        },
+        {
+          "samples": 28905,
+          "distinctColors": 8927,
+          "maxColorFraction": 0.0039785504238021106
+        },
+        {
+          "samples": 51360,
+          "distinctColors": 16125,
+          "maxColorFraction": 0.028056853582554518
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-home-decor.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 16357,
+          "maxColorFraction": 0.003688059513302232
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 20455,
+          "maxColorFraction": 0.0016706594376497289
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15252,
+          "maxColorFraction": 0.003089143865842895
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 8616,
+          "maxColorFraction": 0.010339175387719076
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15022,
+          "maxColorFraction": 0.05825242718446602
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 9808,
+          "maxColorFraction": 0.020552263270709872
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 11249,
+          "maxColorFraction": 0.005736981465136805
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-home.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20737,
+          "maxColorFraction": 0.0013882735194210604
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 19726,
+          "maxColorFraction": 0.0016599941411971487
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 8718,
+          "maxColorFraction": 0.00911369332421964
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 9326,
+          "maxColorFraction": 0.0430622009569378
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 11293,
+          "maxColorFraction": 0.004719591185756599
+        },
+        {
+          "samples": 28905,
+          "distinctColors": 8923,
+          "maxColorFraction": 0.0039785504238021106
+        },
+        {
+          "samples": 51360,
+          "distinctColors": 16119,
+          "maxColorFraction": 0.028056853582554518
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-home-decor.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 16357,
+          "maxColorFraction": 0.003688059513302232
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 20455,
+          "maxColorFraction": 0.0016706594376497289
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15137,
+          "maxColorFraction": 0.0031521876182070358
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 8616,
+          "maxColorFraction": 0.010339175387719076
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15011,
+          "maxColorFraction": 0.05825242718446602
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 9808,
+          "maxColorFraction": 0.020552263270709872
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 11249,
+          "maxColorFraction": 0.005736981465136805
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-home.png",
+      "pixels": [
+        {
+          "samples": 71820,
+          "distinctColors": 34436,
+          "maxColorFraction": 0.0018379281537176273
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 25165,
+          "maxColorFraction": 0.0014560210048931853
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 15258,
+          "maxColorFraction": 0.006707244301229264
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 9339,
+          "maxColorFraction": 0.2982456140350877
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 11939,
+          "maxColorFraction": 0.1824561403508772
+        },
+        {
+          "samples": 52440,
+          "distinctColors": 13462,
+          "maxColorFraction": 0.0032418001525553013
+        },
+        {
+          "samples": 84681,
+          "distinctColors": 22220,
+          "maxColorFraction": 0.03286451506241069
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-home-decor.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20654,
+          "maxColorFraction": 0.0015895278167367929
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15286,
+          "maxColorFraction": 0.0038023998753311515
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8631,
+          "maxColorFraction": 0.009973507869721053
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15277,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11243,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-home.png",
+      "pixels": [
+        {
+          "samples": 71820,
+          "distinctColors": 34362,
+          "maxColorFraction": 0.001768309663046505
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 25225,
+          "maxColorFraction": 0.001479890201694713
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 15249,
+          "maxColorFraction": 0.0067311134980307915
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 9323,
+          "maxColorFraction": 0.2982456140350877
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 11915,
+          "maxColorFraction": 0.1824561403508772
+        },
+        {
+          "samples": 52440,
+          "distinctColors": 13477,
+          "maxColorFraction": 0.003260869565217391
+        },
+        {
+          "samples": 84681,
+          "distinctColors": 22220,
+          "maxColorFraction": 0.03286451506241069
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-home-decor.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20655,
+          "maxColorFraction": 0.0015895278167367929
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15291,
+          "maxColorFraction": 0.0038023998753311515
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8716,
+          "maxColorFraction": 0.009942340657628175
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15277,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9995,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11204,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home.png",
+      "pixels": [
+        {
+          "samples": 122496,
+          "distinctColors": 48029,
+          "maxColorFraction": 0.0015918887147335424
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 21473,
+          "maxColorFraction": 0.0008131667967733541
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9416,
+          "maxColorFraction": 0.008489461358313818
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9999,
+          "maxColorFraction": 0.008847254748894093
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 10122,
+          "maxColorFraction": 0.006049960967993755
+        },
+        {
+          "samples": 84942,
+          "distinctColors": 17439,
+          "maxColorFraction": 0.003367003367003367
+        },
+        {
+          "samples": 111744,
+          "distinctColors": 22330,
+          "maxColorFraction": 0.046875
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home-decor.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20665,
+          "maxColorFraction": 0.0016830294530154279
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15284,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8632,
+          "maxColorFraction": 0.009973507869721053
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15276,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11243,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-home.png",
+      "pixels": [
+        {
+          "samples": 122496,
+          "distinctColors": 48029,
+          "maxColorFraction": 0.0015918887147335424
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 21473,
+          "maxColorFraction": 0.0008131667967733541
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9458,
+          "maxColorFraction": 0.008782201405152224
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9991,
+          "maxColorFraction": 0.008717148061410357
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 10124,
+          "maxColorFraction": 0.006049960967993755
+        },
+        {
+          "samples": 84942,
+          "distinctColors": 17428,
+          "maxColorFraction": 0.003225730498457771
+        },
+        {
+          "samples": 111744,
+          "distinctColors": 22330,
+          "maxColorFraction": 0.046875
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "home-decor",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-home-decor.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20686,
+          "maxColorFraction": 0.0016830294530154279
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15287,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "kitchen-hosting",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-kitchen-hosting.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8717,
+          "maxColorFraction": 0.009942340657628175
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15275,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "judaica-tradition",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-judaica-tradition.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "layout",
+      "route": "gifts-memories",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-gifts-memories.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11204,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": [],
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home-no-js.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14924,
+          "maxColorFraction": 0.0015376013419066256
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6471,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4023,
+          "maxColorFraction": 0.0047789725209080045
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4119,
+          "maxColorFraction": 0.005973715651135006
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3786,
+          "maxColorFraction": 0.006371963361210673
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7075,
+          "maxColorFraction": 0.004675716440422323
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11370,
+          "maxColorFraction": 0.025925925925925925
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home-decor-no-js.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 12163,
+          "maxColorFraction": 0.0037980546549328392
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 15347,
+          "maxColorFraction": 0.001065308012968967
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10925,
+          "maxColorFraction": 0.002825382121352478
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-kitchen-hosting-no-js.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 6525,
+          "maxColorFraction": 0.010236220472440945
+        },
+        {
+          "samples": 21590,
+          "distinctColors": 10876,
+          "maxColorFraction": 0.058823529411764705
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-judaica-tradition-no-js.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 7763,
+          "maxColorFraction": 0.018388142658638258
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-gifts-memories-no-js.png",
+      "pixels": [
+        {
+          "samples": 21590,
+          "distinctColors": 8695,
+          "maxColorFraction": 0.0053265400648448355
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home-no-js.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20649,
+          "maxColorFraction": 0.0013882735194210604
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 9277,
+          "maxColorFraction": 0.0007469654528478057
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4972,
+          "maxColorFraction": 0.0056022408963585435
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 5136,
+          "maxColorFraction": 0.006442577030812325
+        },
+        {
+          "samples": 10710,
+          "distinctColors": 4789,
+          "maxColorFraction": 0.007096171802054155
+        },
+        {
+          "samples": 30952,
+          "distinctColors": 9297,
+          "maxColorFraction": 0.004135435513052468
+        },
+        {
+          "samples": 49820,
+          "distinctColors": 15527,
+          "maxColorFraction": 0.028141308711360898
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home-decor-no-js.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15368,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19489,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14582,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-kitchen-hosting-no-js.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 8242,
+          "maxColorFraction": 0.010421233685204546
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14401,
+          "maxColorFraction": 0.06030150753768844
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-judaica-tradition-no-js.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 9523,
+          "maxColorFraction": 0.01844794442008701
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-gifts-memories-no-js.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 10660,
+          "maxColorFraction": 0.004923948602070756
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-home-no-js.png",
+      "pixels": [
+        {
+          "samples": 33855,
+          "distinctColors": 20784,
+          "maxColorFraction": 0.001476886722788362
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 19799,
+          "maxColorFraction": 0.002050580997949419
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 8718,
+          "maxColorFraction": 0.00911369332421964
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 9333,
+          "maxColorFraction": 0.0430622009569378
+        },
+        {
+          "samples": 30723,
+          "distinctColors": 11305,
+          "maxColorFraction": 0.004817237899944667
+        },
+        {
+          "samples": 28905,
+          "distinctColors": 8927,
+          "maxColorFraction": 0.0039785504238021106
+        },
+        {
+          "samples": 51360,
+          "distinctColors": 16125,
+          "maxColorFraction": 0.028056853582554518
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-home-decor-no-js.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 16357,
+          "maxColorFraction": 0.003688059513302232
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 20455,
+          "maxColorFraction": 0.0016706594376497289
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15252,
+          "maxColorFraction": 0.003089143865842895
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-kitchen-hosting-no-js.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 8616,
+          "maxColorFraction": 0.010339175387719076
+        },
+        {
+          "samples": 31724,
+          "distinctColors": 15022,
+          "maxColorFraction": 0.05825242718446602
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-judaica-tradition-no-js.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 9808,
+          "maxColorFraction": 0.020552263270709872
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-gifts-memories-no-js.png",
+      "pixels": [
+        {
+          "samples": 31724,
+          "distinctColors": 11249,
+          "maxColorFraction": 0.005736981465136805
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-home-no-js.png",
+      "pixels": [
+        {
+          "samples": 71820,
+          "distinctColors": 34436,
+          "maxColorFraction": 0.0018379281537176273
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 25165,
+          "maxColorFraction": 0.0014560210048931853
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 15258,
+          "maxColorFraction": 0.006707244301229264
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 9339,
+          "maxColorFraction": 0.2982456140350877
+        },
+        {
+          "samples": 41895,
+          "distinctColors": 11939,
+          "maxColorFraction": 0.1824561403508772
+        },
+        {
+          "samples": 52440,
+          "distinctColors": 13462,
+          "maxColorFraction": 0.0032418001525553013
+        },
+        {
+          "samples": 84681,
+          "distinctColors": 22220,
+          "maxColorFraction": 0.03286451506241069
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-home-decor-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20654,
+          "maxColorFraction": 0.0015895278167367929
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15286,
+          "maxColorFraction": 0.0038023998753311515
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-kitchen-hosting-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8631,
+          "maxColorFraction": 0.009973507869721053
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15277,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-judaica-tradition-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-gifts-memories-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11243,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home-no-js.png",
+      "pixels": [
+        {
+          "samples": 122496,
+          "distinctColors": 48029,
+          "maxColorFraction": 0.0015918887147335424
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 21473,
+          "maxColorFraction": 0.0008131667967733541
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9416,
+          "maxColorFraction": 0.008489461358313818
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 9999,
+          "maxColorFraction": 0.008847254748894093
+        },
+        {
+          "samples": 30744,
+          "distinctColors": 10122,
+          "maxColorFraction": 0.006049960967993755
+        },
+        {
+          "samples": 84942,
+          "distinctColors": 17439,
+          "maxColorFraction": 0.003367003367003367
+        },
+        {
+          "samples": 111744,
+          "distinctColors": 22330,
+          "maxColorFraction": 0.046875
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "home-decor",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home-decor-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20665,
+          "maxColorFraction": 0.0016830294530154279
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15284,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "kitchen-hosting",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-kitchen-hosting-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 8632,
+          "maxColorFraction": 0.009973507869721053
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15276,
+          "maxColorFraction": 0.057971014492753624
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "judaica-tradition",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-judaica-tradition-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 9986,
+          "maxColorFraction": 0.018856163316191367
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "route": "gifts-memories",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-gifts-memories-no-js.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 11243,
+          "maxColorFraction": 0.005672432600903849
+        }
+      ],
+      "axe": "Static semantics checked; axe requires JavaScript",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "welcome",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "family-sign",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "kitchen",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "pizza-peel",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "blessing",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "personalized-clock",
+      "language": "he",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "welcome",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "family-sign",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "kitchen",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "pizza-peel",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "blessing",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "navigation-e2e",
+      "product": "personalized-clock",
+      "language": "en",
+      "status": "PASS",
+      "physicalTabEnter": "PASS",
+      "touchQuote": "PASS",
+      "reloadHistory": "PASS",
+      "languagePreserved": "PASS",
+      "publicSend": "BLOCKED",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    }
+  ],
+  "seo": [
+    {
+      "collection": "home-decor",
+      "language": "he",
+      "title": "שלטים ועיצוב לבית | WOOD U LIKE",
+      "description": "שלטים מעץ עם מילים ושמות שהופכים כניסה לבית לאישית. גלו את קולקציית שלטים ועיצוב לבית של WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/home-decor/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/family-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "he",
+      "title": "מטבח ואירוח | WOOD U LIKE",
+      "description": "פריטי עץ עם חריטה אישית לרגעי בישול, הגשה ואירוח. גלו את קולקציית מטבח ואירוח של WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/kitchen-hosting/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/kitchen-board.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "he",
+      "title": "יודאיקה ומסורת | WOOD U LIKE",
+      "description": "ברכה חרוטה בעץ, לרגעי מסורת ומשמעות בבית. גלו את קולקציית יודאיקה ומסורת של WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/judaica-tradition/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/judaica-blessing.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "he",
+      "title": "מתנות וזיכרונות | WOOD U LIKE",
+      "description": "תמונה והקדשה אישית שהופכות רגע למזכרת מעץ. גלו את קולקציית מתנות וזיכרונות של WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/gifts-memories/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/personalized-clock-front.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "home-decor",
+      "language": "en",
+      "title": "Home Signs & Decor | WOOD U LIKE",
+      "description": "Wooden signs with words and names that make a home feel personal. Explore the Home Signs & Decor collection by WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/home-decor/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/family-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "kitchen-hosting",
+      "language": "en",
+      "title": "Kitchen & Hosting | WOOD U LIKE",
+      "description": "Personally engraved wooden pieces for cooking, serving and gathering. Explore the Kitchen & Hosting collection by WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/kitchen-hosting/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/kitchen-board.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "judaica-tradition",
+      "language": "en",
+      "title": "Judaica & Tradition | WOOD U LIKE",
+      "description": "A blessing engraved in wood for moments of tradition and meaning at home. Explore the Judaica & Tradition collection by WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/judaica-tradition/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/judaica-blessing.webp",
+      "status": "PASS"
+    },
+    {
+      "collection": "gifts-memories",
+      "language": "en",
+      "title": "Gifts & Memories | WOOD U LIKE",
+      "description": "A photograph and a personal dedication that turn a moment into a wooden keepsake. Explore the Gifts & Memories collection by WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/gifts-memories/",
+      "cover": "https://mataniar0.github.io/wood-u-like-site/assets/images/personalized-clock-front.webp",
+      "status": "PASS"
+    }
+  ],
+  "metrics": [
+    {
+      "language": "he",
+      "width": 390,
+      "before": {
+        "height": 7890,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 4335,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 45.1,
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "before": {
+        "height": 8280,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 4651,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 43.8,
+      "status": "PASS"
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "before": {
+        "height": 6210,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 3647,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 41.3,
+      "status": "PASS"
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "before": {
+        "height": 6353,
+        "loadedImages": 14,
+        "imageResources": 10
+      },
+      "after": {
+        "height": 3791,
+        "loadedImages": 7,
+        "imageResources": 7
+      },
+      "heightReductionPercent": 40.3,
+      "status": "PASS"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/wood-u-like-site/assets/css/style.css",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/language.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/attribution.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-approved-v2.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/welcome/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/family-sign/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/hanging-home-sign/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/kitchen/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/pizza-peel/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/blessing/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/personalized-clock/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/home-decor/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/family-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/kitchen-hosting/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/kitchen-board.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/judaica-tradition/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/judaica-blessing.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/gifts-memories/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/personalized-clock-front.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/workshop.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/orchid.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/main.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/family-sign-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/kitchen-board-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/judaica-blessing-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/workshop-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/orchid-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/css/collection.css",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-welcome.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/schwartz-home-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-welcome-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/schwartz-home-sign-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/pizza-peel.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/pizza-peel-small.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    }
+  ],
+  "preservation": [
+    {
+      "file": "assets/css/product.css",
+      "sha256": "a6f65c3770631990aafbdcd1b66176c90da5cca003326a68c01dd336f0962dda",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/README.md",
+      "sha256": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/clock-gallery.js",
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/README.md",
+      "sha256": "e5fb7862edcd2e5425fad2f274837018c4b657c2075f6b75840711050659e6e5",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/index.html",
+      "sha256": "8d2b0f5829f868b89a3dc303afac98cd980a8d20d1df17643d5676c4381f5fae",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.css",
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.js",
+      "sha256": "7230b7d1e1a4fa9d9ddc692516167b5c3165b7ffc9d06ace7ad5cfa0a336b013",
+      "status": "PASS"
+    }
+  ],
+  "blankImageNegativeControl": {
+    "samples": 14400,
+    "distinctColors": 1,
+    "maxColorFraction": 1,
+    "rejected": true,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "completedAt": "2026-10-18T16:09:24.693Z"
+}

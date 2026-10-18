@@ -1,0 +1,2781 @@
+[
+  {
+    "file": "accessibility/screenshots/en-320-home-final.png",
+    "width": 320,
+    "height": 4500,
+    "bytes": 503991,
+    "sha256": "6b88d4798c41023acb0f8504a6717c4c7719c8800ec1af921d8aed7adf5e0742"
+  },
+  {
+    "file": "accessibility/screenshots/he-320-home-final-no-js.png",
+    "width": 320,
+    "height": 4481,
+    "bytes": 486388,
+    "sha256": "db291b27359028a0c4fd379deef3ca7f65755c41a2f0dfd4a46285839d0b9983"
+  },
+  {
+    "file": "accessibility/screenshots/he-320-home-final.png",
+    "width": 320,
+    "height": 4436,
+    "bytes": 484465,
+    "sha256": "d8222a805bba4297f52021e848bb609316147d2db15935a62f3ed9bbaddcf305"
+  },
+  {
+    "file": "before/en-1440.png",
+    "width": 1440,
+    "height": 6353,
+    "bytes": 2543516,
+    "sha256": "3a8ce8be4df36dfb29da1294cb560c8587be2152ce56d4c409cb997e32979a0b"
+  },
+  {
+    "file": "before/en-390.png",
+    "width": 390,
+    "height": 8280,
+    "bytes": 1599832,
+    "sha256": "013d50289f8d71092d627f53e2236ef8421c50abde805958fe67a47494e040b7"
+  },
+  {
+    "file": "before/he-1440.png",
+    "width": 1440,
+    "height": 6210,
+    "bytes": 2476664,
+    "sha256": "7497912a744ed904d456ed87585a8f53b1affd0921946a5237eeb6d74fff3f22"
+  },
+  {
+    "file": "before/he-390.png",
+    "width": 390,
+    "height": 7890,
+    "bytes": 1541132,
+    "sha256": "16ff58c0103f4e4568379c9561be5ce3ca9926ee9154a5761bf82efd0f8498dd"
+  },
+  {
+    "file": "before-groups/screenshots/en-1440-gifts-memories-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 128969,
+    "sha256": "15fd35a72ea594bed529dddb198e941ae6eaae3a1a1d07a1061fa9c7a5739ee8"
+  },
+  {
+    "file": "before-groups/screenshots/en-1440-home-decor-before.png",
+    "width": 1280,
+    "height": 515,
+    "bytes": 495099,
+    "sha256": "61be56a18896736b170b4578748dc6385e54f3a19d773006d46048b21b2baedb"
+  },
+  {
+    "file": "before-groups/screenshots/en-1440-judaica-tradition-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 91397,
+    "sha256": "74e2e48e64fc24e8adec76377edf793290f760ab576aa135ce42a5706f0e455c"
+  },
+  {
+    "file": "before-groups/screenshots/en-1440-kitchen-hosting-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 293807,
+    "sha256": "3b892765eb49f3b91a62c996e4d9d5224b3063d8e411411098d19611ea71ad9c"
+  },
+  {
+    "file": "before-groups/screenshots/en-390-gifts-memories-before.png",
+    "width": 354,
+    "height": 488,
+    "bytes": 110046,
+    "sha256": "98f997a10cadaaa9105d0def7cd96c066de0d580b4857f1534140ed11f713f8c"
+  },
+  {
+    "file": "before-groups/screenshots/en-390-home-decor-before.png",
+    "width": 354,
+    "height": 1340,
+    "bytes": 456385,
+    "sha256": "2ec231b9c649387b5682641cd31feb8f48b2cf48361fb4252c57cd208ef9c529"
+  },
+  {
+    "file": "before-groups/screenshots/en-390-judaica-tradition-before.png",
+    "width": 354,
+    "height": 488,
+    "bytes": 78493,
+    "sha256": "e81bd2471f754704d9f8fe3ae04c374f6dc756b318864a0b8ce9e2529eb50962"
+  },
+  {
+    "file": "before-groups/screenshots/en-390-kitchen-hosting-before.png",
+    "width": 354,
+    "height": 877,
+    "bytes": 261489,
+    "sha256": "5bee0528fc73a658ed687c7a21405bfefc151ad0f00d4f2faa871b53d0d9e26b"
+  },
+  {
+    "file": "before-groups/screenshots/he-1440-gifts-memories-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 122013,
+    "sha256": "f1414192df2c8db8a5c0024c4dd6e10f7febc8ac5605847c29563730f430a5cc"
+  },
+  {
+    "file": "before-groups/screenshots/he-1440-home-decor-before.png",
+    "width": 1280,
+    "height": 515,
+    "bytes": 487676,
+    "sha256": "a59318ada376efb5b765681f0da63b8efa8fdb55bfeac160e4aa0e9ff344e2a8"
+  },
+  {
+    "file": "before-groups/screenshots/he-1440-judaica-tradition-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 86453,
+    "sha256": "2c485aae5a1fc6e1400c758f15ac9c223c817e4668327918b49cf3a246076552"
+  },
+  {
+    "file": "before-groups/screenshots/he-1440-kitchen-hosting-before.png",
+    "width": 1280,
+    "height": 490,
+    "bytes": 287620,
+    "sha256": "89aea7bc63e0cb3d5a3c46973d52fe06c6566285e964718c0b9800fa6fa49d71"
+  },
+  {
+    "file": "before-groups/screenshots/he-390-gifts-memories-before.png",
+    "width": 354,
+    "height": 463,
+    "bytes": 105460,
+    "sha256": "e2fee3bf69f8d3532bce65cb8319f38acc780e377383c7151f37c4711a945704"
+  },
+  {
+    "file": "before-groups/screenshots/he-390-home-decor-before.png",
+    "width": 354,
+    "height": 1315,
+    "bytes": 446146,
+    "sha256": "48ddef2910d41df24dc310072eb57e728ffe824edfaa38ba1bd0f4570ff6d530"
+  },
+  {
+    "file": "before-groups/screenshots/he-390-judaica-tradition-before.png",
+    "width": 354,
+    "height": 464,
+    "bytes": 74204,
+    "sha256": "aa3e3691f490f1a22c0f4ee309518a829639b0ab8d469effe1e1f85e0b14283f"
+  },
+  {
+    "file": "before-groups/screenshots/he-390-kitchen-hosting-before.png",
+    "width": 354,
+    "height": 877,
+    "bytes": 254454,
+    "sha256": "321a1db58f0fc4ce837d9511a2c5e423e92b9ef3ba174b8e06f6f4720b2c2061"
+  },
+  {
+    "file": "collections/screenshots/en-1024-gifts-memories.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 165064,
+    "sha256": "a51db697e59560aa431f6d85bf410453ddfaa243ad259315df2528c5130e396a"
+  },
+  {
+    "file": "collections/screenshots/en-1024-home-decor.png",
+    "width": 1024,
+    "height": 1647,
+    "bytes": 545736,
+    "sha256": "2e4be1dbe2ff6dc4949d3e116321dd6c435ac4b80910f329210507986dddac6b"
+  },
+  {
+    "file": "collections/screenshots/en-1024-home.png",
+    "width": 1024,
+    "height": 3866,
+    "bytes": 1264656,
+    "sha256": "e2d5d38d962060166f96bc0c3528b15fe477df7b1a8d7b959eb79c74f728c37f"
+  },
+  {
+    "file": "collections/screenshots/en-1024-judaica-tradition.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 127309,
+    "sha256": "b52b21ea62efca9004a150975d19353ba5bf097955dbed09a946c7720fb7bb32"
+  },
+  {
+    "file": "collections/screenshots/en-1024-kitchen-hosting.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 324632,
+    "sha256": "721fe41434be036f2095f912efea29c73ffeb42a886f839047564b201ee46569"
+  },
+  {
+    "file": "collections/screenshots/en-1440-gifts-memories.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 174474,
+    "sha256": "e7c251e2361fd0e9af794e4235781e225683695d57583e04c6a9087518f2cd24"
+  },
+  {
+    "file": "collections/screenshots/en-1440-home-decor.png",
+    "width": 1440,
+    "height": 1235,
+    "bytes": 547589,
+    "sha256": "abfed5b12424f762d368c218fe0f190e331c975a2c5438102c6294b9aba3875f"
+  },
+  {
+    "file": "collections/screenshots/en-1440-home.png",
+    "width": 1440,
+    "height": 3791,
+    "bytes": 1497754,
+    "sha256": "8bc83b253d2cfefef17a878d2137ded18e1358ce6105813303a41f33907840c8"
+  },
+  {
+    "file": "collections/screenshots/en-1440-judaica-tradition.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 135652,
+    "sha256": "c95fe4c5a5f00e39a71492fc132f44c9b82f5f68301d75bbf60151e47297f432"
+  },
+  {
+    "file": "collections/screenshots/en-1440-kitchen-hosting.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 338987,
+    "sha256": "aa0ff3eea1924c1e7d8efe0abf2d933367f51462723449b312e36f81760ec354"
+  },
+  {
+    "file": "collections/screenshots/en-320-gifts-memories.png",
+    "width": 320,
+    "height": 1260,
+    "bytes": 122648,
+    "sha256": "e35bfa5d2cc641887a414e2b60fcb20851e8a7d9aa9e3dd00990a96a3bc40287"
+  },
+  {
+    "file": "collections/screenshots/en-320-home-decor.png",
+    "width": 320,
+    "height": 2138,
+    "bytes": 372494,
+    "sha256": "7096f61f5237081f2aad9b73db3116ff57f512fc880e5c26e227c32c312e95a6"
+  },
+  {
+    "file": "collections/screenshots/en-320-home.png",
+    "width": 320,
+    "height": 4500,
+    "bytes": 503991,
+    "sha256": "6b88d4798c41023acb0f8504a6717c4c7719c8800ec1af921d8aed7adf5e0742"
+  },
+  {
+    "file": "collections/screenshots/en-320-judaica-tradition.png",
+    "width": 320,
+    "height": 1201,
+    "bytes": 97082,
+    "sha256": "16f2066dac78a4bc597866ef152f80e8f5c279f50ddcb1f19500a1bb94b895db"
+  },
+  {
+    "file": "collections/screenshots/en-320-kitchen-hosting.png",
+    "width": 320,
+    "height": 1614,
+    "bytes": 232425,
+    "sha256": "085212d7fcbaed9867265963e75069a1ccbedb8bbb277278bbeb233d4c701465"
+  },
+  {
+    "file": "collections/screenshots/en-390-gifts-memories.png",
+    "width": 390,
+    "height": 1269,
+    "bytes": 147029,
+    "sha256": "8445411f2612dd86ecfad5bac38126ecbd591cf3cae49be1f58cb9d79a643277"
+  },
+  {
+    "file": "collections/screenshots/en-390-home-decor.png",
+    "width": 390,
+    "height": 2147,
+    "bytes": 495883,
+    "sha256": "a6b7eb5eb093af35fdd308644c4beef396cbb8c9d821d2b0b3746e0b3b9045f4"
+  },
+  {
+    "file": "collections/screenshots/en-390-home.png",
+    "width": 390,
+    "height": 4651,
+    "bytes": 670838,
+    "sha256": "5fa985b13b82ce067015cc6e0c371c2ac267b248912b43d401147eaa624c8927"
+  },
+  {
+    "file": "collections/screenshots/en-390-judaica-tradition.png",
+    "width": 390,
+    "height": 1238,
+    "bytes": 112429,
+    "sha256": "e6f1cea5f1843b23eccbacc55069a24fb65413609524847b09e9637da295d8ac"
+  },
+  {
+    "file": "collections/screenshots/en-390-kitchen-hosting.png",
+    "width": 390,
+    "height": 1639,
+    "bytes": 300284,
+    "sha256": "fced9707f10abccf4b0dc7ca1890329ed3c1fecdd0e2ce9cd94072e63764a0a8"
+  },
+  {
+    "file": "collections/screenshots/en-768-gifts-memories.png",
+    "width": 768,
+    "height": 1231,
+    "bytes": 160561,
+    "sha256": "f719e1ae4db6095b651f22e27a57810e5d399d755378e5749cd04756f372f638"
+  },
+  {
+    "file": "collections/screenshots/en-768-home-decor.png",
+    "width": 768,
+    "height": 1715,
+    "bytes": 528606,
+    "sha256": "5f167f615c6dfb65837783e234e382aeda2f76fc2646106428188e2c5868a6a6"
+  },
+  {
+    "file": "collections/screenshots/en-768-home.png",
+    "width": 768,
+    "height": 3954,
+    "bytes": 970868,
+    "sha256": "e8d06f6675ceae4d81f5881d0d628ab7d88782d4d500afd74bbccc9cf17a3b6c"
+  },
+  {
+    "file": "collections/screenshots/en-768-judaica-tradition.png",
+    "width": 768,
+    "height": 1199,
+    "bytes": 122094,
+    "sha256": "261f8cd9c17a9fe5650a84762c71028f5d1f5d8638b250f5d27ed5ffd6c1014d"
+  },
+  {
+    "file": "collections/screenshots/en-768-kitchen-hosting.png",
+    "width": 768,
+    "height": 1199,
+    "bytes": 314746,
+    "sha256": "e436fb0526d6cdc194069dbdea507f3674d22a9ba9b44c8caa7b51c14e474f8a"
+  },
+  {
+    "file": "collections/screenshots/he-1024-gifts-memories-no-js.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 154044,
+    "sha256": "a7b33c88eab73355de9aab2ae711650d0f71fb403d07f489ee583060b6502736"
+  },
+  {
+    "file": "collections/screenshots/he-1024-gifts-memories.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 154044,
+    "sha256": "a7b33c88eab73355de9aab2ae711650d0f71fb403d07f489ee583060b6502736"
+  },
+  {
+    "file": "collections/screenshots/he-1024-home-decor-no-js.png",
+    "width": 1024,
+    "height": 1647,
+    "bytes": 531276,
+    "sha256": "e3b173b12d2e02b0c44eabe3eddfaf0c125859e5993d01351cd2080a620e96bf"
+  },
+  {
+    "file": "collections/screenshots/he-1024-home-decor.png",
+    "width": 1024,
+    "height": 1647,
+    "bytes": 531276,
+    "sha256": "e3b173b12d2e02b0c44eabe3eddfaf0c125859e5993d01351cd2080a620e96bf"
+  },
+  {
+    "file": "collections/screenshots/he-1024-home-no-js.png",
+    "width": 1024,
+    "height": 3861,
+    "bytes": 1237382,
+    "sha256": "e840861b748418fc3a2e315b218c8cfe55cde44074ddab8ee090232f0d01de6f"
+  },
+  {
+    "file": "collections/screenshots/he-1024-home.png",
+    "width": 1024,
+    "height": 3861,
+    "bytes": 1237382,
+    "sha256": "e840861b748418fc3a2e315b218c8cfe55cde44074ddab8ee090232f0d01de6f"
+  },
+  {
+    "file": "collections/screenshots/he-1024-judaica-tradition-no-js.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 116761,
+    "sha256": "99f6f410435f93cbb4bbde45f916184299344419514a0483bd5279fd8c8a3cf8"
+  },
+  {
+    "file": "collections/screenshots/he-1024-judaica-tradition.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 116761,
+    "sha256": "99f6f410435f93cbb4bbde45f916184299344419514a0483bd5279fd8c8a3cf8"
+  },
+  {
+    "file": "collections/screenshots/he-1024-kitchen-hosting-no-js.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 313700,
+    "sha256": "e4d3df7860ac1c3834c66fc694287e471262f6e9cc2c71a6250b4e6328c4ca8d"
+  },
+  {
+    "file": "collections/screenshots/he-1024-kitchen-hosting.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 313700,
+    "sha256": "e4d3df7860ac1c3834c66fc694287e471262f6e9cc2c71a6250b4e6328c4ca8d"
+  },
+  {
+    "file": "collections/screenshots/he-1440-gifts-memories-no-js.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 161176,
+    "sha256": "ccd0ed18b50d3191536110fc100f924595f4bb8998e182926121bbd99ef2167e"
+  },
+  {
+    "file": "collections/screenshots/he-1440-gifts-memories.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 161176,
+    "sha256": "ccd0ed18b50d3191536110fc100f924595f4bb8998e182926121bbd99ef2167e"
+  },
+  {
+    "file": "collections/screenshots/he-1440-home-decor-no-js.png",
+    "width": 1440,
+    "height": 1198,
+    "bytes": 527788,
+    "sha256": "265bfe01ea44a3d3848119c735c129f9ce9ad8e3800231c6f6b75ecb74b9b5ea"
+  },
+  {
+    "file": "collections/screenshots/he-1440-home-decor.png",
+    "width": 1440,
+    "height": 1198,
+    "bytes": 527788,
+    "sha256": "265bfe01ea44a3d3848119c735c129f9ce9ad8e3800231c6f6b75ecb74b9b5ea"
+  },
+  {
+    "file": "collections/screenshots/he-1440-home-no-js.png",
+    "width": 1440,
+    "height": 3647,
+    "bytes": 1448480,
+    "sha256": "16e1249ac15ea0608484f2b9cbf4f7c222d14fd0e65bce3e00116848d1b5113b"
+  },
+  {
+    "file": "collections/screenshots/he-1440-home.png",
+    "width": 1440,
+    "height": 3647,
+    "bytes": 1448480,
+    "sha256": "16e1249ac15ea0608484f2b9cbf4f7c222d14fd0e65bce3e00116848d1b5113b"
+  },
+  {
+    "file": "collections/screenshots/he-1440-judaica-tradition-no-js.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 124291,
+    "sha256": "ac4a343895674a0294b049831b84707ca34708abd6249d8cb450b6d4c1e1ab4a"
+  },
+  {
+    "file": "collections/screenshots/he-1440-judaica-tradition.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 124291,
+    "sha256": "ac4a343895674a0294b049831b84707ca34708abd6249d8cb450b6d4c1e1ab4a"
+  },
+  {
+    "file": "collections/screenshots/he-1440-kitchen-hosting-no-js.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 324893,
+    "sha256": "7f0ff13683918e7e917a332b836a122486679a77009da9b56d06719fd6821d7b"
+  },
+  {
+    "file": "collections/screenshots/he-1440-kitchen-hosting.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 324893,
+    "sha256": "7f0ff13683918e7e917a332b836a122486679a77009da9b56d06719fd6821d7b"
+  },
+  {
+    "file": "collections/screenshots/he-320-gifts-memories-no-js.png",
+    "width": 320,
+    "height": 1221,
+    "bytes": 112707,
+    "sha256": "dd1cdf219761f82f18872a7c58edeabbaa4f28c17452994e01736fb4435f39a6"
+  },
+  {
+    "file": "collections/screenshots/he-320-gifts-memories.png",
+    "width": 320,
+    "height": 1176,
+    "bytes": 110688,
+    "sha256": "3c51ca052678396d93fe3ef0fb6f174f9eb448106a054160b223684bbfba0e0c"
+  },
+  {
+    "file": "collections/screenshots/he-320-home-decor-no-js.png",
+    "width": 320,
+    "height": 2049,
+    "bytes": 359452,
+    "sha256": "26f17cc6557cef1f08183a49f0f8083213b5d13fc69e584fe435383288e8599a"
+  },
+  {
+    "file": "collections/screenshots/he-320-home-decor.png",
+    "width": 320,
+    "height": 2004,
+    "bytes": 357413,
+    "sha256": "6c1f9297f4d9ff7889ca182aae0c50599318651dc0ac749fb7a0c36e44f84189"
+  },
+  {
+    "file": "collections/screenshots/he-320-home-no-js.png",
+    "width": 320,
+    "height": 4481,
+    "bytes": 486388,
+    "sha256": "db291b27359028a0c4fd379deef3ca7f65755c41a2f0dfd4a46285839d0b9983"
+  },
+  {
+    "file": "collections/screenshots/he-320-home.png",
+    "width": 320,
+    "height": 4436,
+    "bytes": 484465,
+    "sha256": "d8222a805bba4297f52021e848bb609316147d2db15935a62f3ed9bbaddcf305"
+  },
+  {
+    "file": "collections/screenshots/he-320-judaica-tradition-no-js.png",
+    "width": 320,
+    "height": 1221,
+    "bytes": 88471,
+    "sha256": "91d14b6b502ab47ce7d54fcd93fbc3148666a1cd3cf90c20484053e7c81e9ee7"
+  },
+  {
+    "file": "collections/screenshots/he-320-judaica-tradition.png",
+    "width": 320,
+    "height": 1176,
+    "bytes": 86194,
+    "sha256": "597d4cd54753b7ec2ba9947f72086973423b849672b6b9ad38c09a080b86fa72"
+  },
+  {
+    "file": "collections/screenshots/he-320-kitchen-hosting-no-js.png",
+    "width": 320,
+    "height": 1610,
+    "bytes": 219502,
+    "sha256": "0fb60c91199fc080bc5b5ebbe8e2d7bf58fddcf702e8373ecc23c4d594dd990c"
+  },
+  {
+    "file": "collections/screenshots/he-320-kitchen-hosting.png",
+    "width": 320,
+    "height": 1565,
+    "bytes": 217582,
+    "sha256": "2eb7752f6c4e4d632909c6077dc2c8d197dcd0e8cad99b92ed445ec2cb74e8a6"
+  },
+  {
+    "file": "collections/screenshots/he-390-gifts-memories-no-js.png",
+    "width": 390,
+    "height": 1234,
+    "bytes": 135179,
+    "sha256": "64953246ec58b5cd311822d5b6ea3bae944af431be4867c3b49c3ab950fc9eaa"
+  },
+  {
+    "file": "collections/screenshots/he-390-gifts-memories.png",
+    "width": 390,
+    "height": 1185,
+    "bytes": 132759,
+    "sha256": "a875dc54e2a26d9020daab1000f30d48c523b55936d79bee2e8b61eb8e7463f0"
+  },
+  {
+    "file": "collections/screenshots/he-390-home-decor-no-js.png",
+    "width": 390,
+    "height": 2139,
+    "bytes": 482243,
+    "sha256": "f466e3cd587243f53e03b4d21639a5029e3a22090bf0632ca51c7de23e6744d8"
+  },
+  {
+    "file": "collections/screenshots/he-390-home-decor.png",
+    "width": 390,
+    "height": 2091,
+    "bytes": 479933,
+    "sha256": "64f3a93d5d4d5cd8aa04734db94792f77a2dfad1b9826fae52476a747ade7ea7"
+  },
+  {
+    "file": "collections/screenshots/he-390-home-no-js.png",
+    "width": 390,
+    "height": 4384,
+    "bytes": 637027,
+    "sha256": "d7eba90ef1d4fc27264fd9d7a1567bfcc3bc70ead963dfece1825f99ab24282e"
+  },
+  {
+    "file": "collections/screenshots/he-390-home.png",
+    "width": 390,
+    "height": 4335,
+    "bytes": 633615,
+    "sha256": "9ad0b5a54d3dc093e93b108aee904ff46b5dfaeca5d3a81fced0df0ddfa88e98"
+  },
+  {
+    "file": "collections/screenshots/he-390-judaica-tradition-no-js.png",
+    "width": 390,
+    "height": 1234,
+    "bytes": 103990,
+    "sha256": "f7c03d7cb995ca9367d9f1317ec3e469b496ba445b6bc7152e98c2ffaec37947"
+  },
+  {
+    "file": "collections/screenshots/he-390-judaica-tradition.png",
+    "width": 390,
+    "height": 1185,
+    "bytes": 101713,
+    "sha256": "511bf4bfa35127e5dfa8f7ed6fdaeb4a3ab9c8d7cc240668c2c845dc3348c708"
+  },
+  {
+    "file": "collections/screenshots/he-390-kitchen-hosting-no-js.png",
+    "width": 390,
+    "height": 1660,
+    "bytes": 287758,
+    "sha256": "495b48e0ddd536dea666e2d02934c4914a298a7bfef6f6f31ecfce623974db52"
+  },
+  {
+    "file": "collections/screenshots/he-390-kitchen-hosting.png",
+    "width": 390,
+    "height": 1611,
+    "bytes": 285271,
+    "sha256": "6061a9d644085b7fcd54a2cba0c31ce8cd92626f36b98745baa60f155e6c515c"
+  },
+  {
+    "file": "collections/screenshots/he-768-gifts-memories-no-js.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 147878,
+    "sha256": "f80c1f05fee8a1f260da950dbab0524fb662fca3f8a9bc0fc633bf110359ff95"
+  },
+  {
+    "file": "collections/screenshots/he-768-gifts-memories.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 147878,
+    "sha256": "f80c1f05fee8a1f260da950dbab0524fb662fca3f8a9bc0fc633bf110359ff95"
+  },
+  {
+    "file": "collections/screenshots/he-768-home-decor-no-js.png",
+    "width": 768,
+    "height": 1634,
+    "bytes": 512759,
+    "sha256": "2d17128e5cd2e880764ff7f8fa04fcbd90a5f5e1e19135710e6665f1adebcbe3"
+  },
+  {
+    "file": "collections/screenshots/he-768-home-decor.png",
+    "width": 768,
+    "height": 1634,
+    "bytes": 512759,
+    "sha256": "2d17128e5cd2e880764ff7f8fa04fcbd90a5f5e1e19135710e6665f1adebcbe3"
+  },
+  {
+    "file": "collections/screenshots/he-768-home-no-js.png",
+    "width": 768,
+    "height": 3781,
+    "bytes": 931647,
+    "sha256": "3164fde04ff3dbf4ff7a559b9ada4f15db7f7fd91d425e1d3427f634104cf87b"
+  },
+  {
+    "file": "collections/screenshots/he-768-home.png",
+    "width": 768,
+    "height": 3781,
+    "bytes": 931647,
+    "sha256": "3164fde04ff3dbf4ff7a559b9ada4f15db7f7fd91d425e1d3427f634104cf87b"
+  },
+  {
+    "file": "collections/screenshots/he-768-judaica-tradition-no-js.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 111697,
+    "sha256": "ed664aa628a2970d8de7f59f215854eec613e1c15311ee3bd597fd1ff882dd9e"
+  },
+  {
+    "file": "collections/screenshots/he-768-judaica-tradition.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 111697,
+    "sha256": "ed664aa628a2970d8de7f59f215854eec613e1c15311ee3bd597fd1ff882dd9e"
+  },
+  {
+    "file": "collections/screenshots/he-768-kitchen-hosting-no-js.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 303040,
+    "sha256": "09c0332b41ac6a7d76217dd9ad3084895bec9001d037e3b5c6bb8f488deea20c"
+  },
+  {
+    "file": "collections/screenshots/he-768-kitchen-hosting.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 303040,
+    "sha256": "09c0332b41ac6a7d76217dd9ad3084895bec9001d037e3b5c6bb8f488deea20c"
+  },
+  {
+    "file": "legacy/screenshots/en-390-blessing.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 152239,
+    "sha256": "627a272cc825b817871e5086ee0f03b0c7d7430af3739d5ceb68a7667f9f6961"
+  },
+  {
+    "file": "legacy/screenshots/en-390-family-sign.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 152849,
+    "sha256": "ceb9ef53eb0de669f44828caead7d236a738565d24b54c7051bdafb4a40bbece"
+  },
+  {
+    "file": "legacy/screenshots/en-390-hanging-home-sign.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 149025,
+    "sha256": "f7c8da12ef4713bc48ece40fd64e1ffbbf7ec83bd4da7e9ad3a5d4f98deb9695"
+  },
+  {
+    "file": "legacy/screenshots/en-390-kitchen.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 152363,
+    "sha256": "2dc0409225a818d3e5e7d6cbe60e9b8a77a4e02dd0d248b3ad728a2e27e4d2c3"
+  },
+  {
+    "file": "legacy/screenshots/en-390-personalized-clock.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 153537,
+    "sha256": "e1efd489510cf9d13e696d1d439f8447f9bfb149b298a8625ab6d690ae2750eb"
+  },
+  {
+    "file": "legacy/screenshots/en-390-pizza-peel.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 152051,
+    "sha256": "8b107860724967560e87b89d6d67b1ea9f24d3c765ca83134233012f8ae7e144"
+  },
+  {
+    "file": "legacy/screenshots/en-390-welcome.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 151623,
+    "sha256": "2191abfe8696625359a6c82be658b91f4eddabb250a260da8f73239c4ebd8e33"
+  },
+  {
+    "file": "legacy/screenshots/he-390-blessing-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156216,
+    "sha256": "fff9fa3f57d1fab5be07da03c86d47ef620ba32e9435b17cc254662837965043"
+  },
+  {
+    "file": "legacy/screenshots/he-390-blessing.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156449,
+    "sha256": "8e6b8db878c1fdd85ae064cf6b4dfbcad9e65febf17b3b234f6bb52aa77d14a0"
+  },
+  {
+    "file": "legacy/screenshots/he-390-family-sign-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156531,
+    "sha256": "3b1e15f5379d1857e74f162e11ebf4a1face5447ff06d3dfed5413f324914529"
+  },
+  {
+    "file": "legacy/screenshots/he-390-family-sign.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156755,
+    "sha256": "2bd2fec928b8102f38e8330145c6fb8d43f70d42344e017b53f531870def50e6"
+  },
+  {
+    "file": "legacy/screenshots/he-390-hanging-home-sign-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 155972,
+    "sha256": "decf9d9ce0debf963a40134c7a19eb920be77125c974ac2aafe4de3edf3aeb74"
+  },
+  {
+    "file": "legacy/screenshots/he-390-hanging-home-sign.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156218,
+    "sha256": "f00dcdf629df7651104af55e48968873acf96e03aa8d17602ff4aec0381de6d8"
+  },
+  {
+    "file": "legacy/screenshots/he-390-kitchen-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156264,
+    "sha256": "52da363c6d1f0e986786ed741a60d932ca0ed1a67e38a1f69e41d0532a225ced"
+  },
+  {
+    "file": "legacy/screenshots/he-390-kitchen.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156490,
+    "sha256": "10679b0c3f47f06bd6e868bf0b69b6fd332bfb48967d08a16f6cc8a5a100c535"
+  },
+  {
+    "file": "legacy/screenshots/he-390-personalized-clock-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 157233,
+    "sha256": "7992d17e05928b1b2a84da1ab5b0a3d38620b359bddd8b8d093eb86c4aa37f3b"
+  },
+  {
+    "file": "legacy/screenshots/he-390-personalized-clock.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 157449,
+    "sha256": "89e6a788ca629f92dda669c811d59b87159cb45a1be4c5f636cde2ee8f286592"
+  },
+  {
+    "file": "legacy/screenshots/he-390-pizza-peel-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156038,
+    "sha256": "341d089161633b4f67b69186ec194861e510a4d40dd0e06bb1e7495944d5f4e2"
+  },
+  {
+    "file": "legacy/screenshots/he-390-pizza-peel.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156287,
+    "sha256": "5a411855c6edc5890eb0f4605a8dfd7bc07ac659c496bab7351ee3c993d3145c"
+  },
+  {
+    "file": "legacy/screenshots/he-390-welcome-no-js.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156619,
+    "sha256": "a73a3d6dc87bef88df8f7390b44db2ea96e66219678d4ffa404970b4400b1c17"
+  },
+  {
+    "file": "legacy/screenshots/he-390-welcome.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 156831,
+    "sha256": "b200c243472f74e8bb86b5191fa40bb14df6c04a1d05658650f0b3ad91a92e54"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-blessing.png",
+    "width": 1024,
+    "height": 1053,
+    "bytes": 310553,
+    "sha256": "89793944df4edf7623532506a9fffae4098034764c39f4cae9ed35daa0778338"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-family-sign.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 358032,
+    "sha256": "fefe94c1792e74555585513d0cf1685a4ddd5ebfa51bd0d1346584edba24fbc2"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-hanging-home-sign.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 431056,
+    "sha256": "3dd42aae3dba2bb5341a3bc63be692aa9be09e3e2d87c15dabf586d5ae10d5e3"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-home.png",
+    "width": 1024,
+    "height": 3866,
+    "bytes": 1264656,
+    "sha256": "e2d5d38d962060166f96bc0c3528b15fe477df7b1a8d7b959eb79c74f728c37f"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-kitchen.png",
+    "width": 1024,
+    "height": 1053,
+    "bytes": 389867,
+    "sha256": "55b0e4e2b3a5b270e90d09ecf63823bfd9e4651c7abe26f30488f18daf1df8d7"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-personalized-clock.png",
+    "width": 1024,
+    "height": 1164,
+    "bytes": 429559,
+    "sha256": "93ea0605744f1c70c9994bb7d8156b983f13e18daa1957f40174dbc929d449e4"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-pizza-peel.png",
+    "width": 1024,
+    "height": 1117,
+    "bytes": 518112,
+    "sha256": "300ea24a93bf5a1624f1972e063dbcc8f2f1997d3f31e700ef5f3f6afdc29e2a"
+  },
+  {
+    "file": "product-pages/screenshots/en-1024-welcome.png",
+    "width": 1024,
+    "height": 1053,
+    "bytes": 306637,
+    "sha256": "312296d92240b9c9224c271558b5b797e60bfad78585fd7064f1fc9730d11502"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-blessing.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 446800,
+    "sha256": "098cca30be1217db8268fc3b75307c1a375b89aeea365a33c08ad357435cf48b"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-family-sign.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 540186,
+    "sha256": "f1961bdf68367cd9b6a9d94bde649f2e21dedb73ee415f608c06c70016674116"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-hanging-home-sign.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 670382,
+    "sha256": "2dc37b17260209b23e8fdf30ba4b9dda221c09242bcbb9a5fb915896ce309e5a"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-home.png",
+    "width": 1440,
+    "height": 3791,
+    "bytes": 1497754,
+    "sha256": "8bc83b253d2cfefef17a878d2137ded18e1358ce6105813303a41f33907840c8"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-kitchen.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 659622,
+    "sha256": "eef64e4423d4885c63c1ad6b6ac8b5a952c7f9174e552d199877d7b6a36e1942"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-personalized-clock-handheld-detail.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 562838,
+    "sha256": "c6455455f131a5712aa1dece66723b40869ea74c72168383596280dadb648ab4"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-personalized-clock-hanging.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 585023,
+    "sha256": "10b6675ee84066f0b98509c3a7f22068c21645dc4fbb0877150d74471828f377"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-personalized-clock.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 756934,
+    "sha256": "d5a2c4cd522197206260c8da798cae31aa7b1817562d02823442c051360f3c22"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-pizza-peel.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 779353,
+    "sha256": "650352afd6a5dcccdca050ab29df0fd2211caef4d2bf6b7961007b6b78e9556e"
+  },
+  {
+    "file": "product-pages/screenshots/en-1440-welcome.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 462932,
+    "sha256": "da635fc812aac7de1e800d14da2740d81fae0b5f5f9144d2ee5aca11a4ed27cd"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-blessing.png",
+    "width": 320,
+    "height": 1514,
+    "bytes": 144070,
+    "sha256": "f9d7d3ad78dca5955abf465bab85192e9ca31b2af9107f1452b96d9c9c7583d1"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-family-sign.png",
+    "width": 320,
+    "height": 1543,
+    "bytes": 160733,
+    "sha256": "e8f3e62712b3b4c4c9769f9e3019f984081e56a872882e285127cc250715bd0f"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-hanging-home-sign.png",
+    "width": 320,
+    "height": 1621,
+    "bytes": 184624,
+    "sha256": "556b989b53e530e1b24e60ec62045090ab7d8c156dee0362258bc2e7db02b5e7"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-home.png",
+    "width": 320,
+    "height": 4500,
+    "bytes": 503991,
+    "sha256": "6b88d4798c41023acb0f8504a6717c4c7719c8800ec1af921d8aed7adf5e0742"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-kitchen.png",
+    "width": 320,
+    "height": 1514,
+    "bytes": 162492,
+    "sha256": "96044137a585d8bd274beef8b288396e8478b9342896876d5f5372fade44d185"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-personalized-clock.png",
+    "width": 320,
+    "height": 1728,
+    "bytes": 195355,
+    "sha256": "91c0459ea890a52872d63568e0ffae2a437011e9e2a914b877d8ed36a9bee263"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-pizza-peel.png",
+    "width": 320,
+    "height": 1598,
+    "bytes": 204683,
+    "sha256": "5d598bf14c5e6f3df81b55260d19d8f85ed51579e015cc6eaabe728abddbaccc"
+  },
+  {
+    "file": "product-pages/screenshots/en-320-welcome.png",
+    "width": 320,
+    "height": 1421,
+    "bytes": 143021,
+    "sha256": "919785112c81a3377bb7060d8bc7b7d3989d12dd6febb8a893f423d221059b95"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-blessing.png",
+    "width": 390,
+    "height": 1470,
+    "bytes": 177956,
+    "sha256": "e10c25afb54923ffae8a2a571a4d0dfadeac4d7a81d6ed03710e7068d534cf99"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-family-sign.png",
+    "width": 390,
+    "height": 1514,
+    "bytes": 218979,
+    "sha256": "140aa915dd0b6426a4396ffda1c2f86e1c44d68520dbf392c69fceaea456fc84"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-hanging-home-sign.png",
+    "width": 390,
+    "height": 1595,
+    "bytes": 255895,
+    "sha256": "48ac82013e859329f46ac2c55c4f48e02200ff4c191240c0d5cc05316f45b7b8"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-home.png",
+    "width": 390,
+    "height": 4651,
+    "bytes": 670838,
+    "sha256": "5fa985b13b82ce067015cc6e0c371c2ac267b248912b43d401147eaa624c8927"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-kitchen.png",
+    "width": 390,
+    "height": 1441,
+    "bytes": 207522,
+    "sha256": "1a35fe299de430c2fe60a5fb0edb341190e00504b76704192a33e284c2455fb0"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-personalized-clock-handheld-detail.png",
+    "width": 390,
+    "height": 1675,
+    "bytes": 248745,
+    "sha256": "0a667e171400268f36172e2a206d848cae3729ddc667dbba17a3d2e78f078a32"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-personalized-clock-hanging.png",
+    "width": 390,
+    "height": 1675,
+    "bytes": 224177,
+    "sha256": "57d1281cadb29a8cbf2c5e2be4b2b5c428573b568d75c364d77b7a96a5aace18"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-personalized-clock.png",
+    "width": 390,
+    "height": 1675,
+    "bytes": 265578,
+    "sha256": "a214cb7153c6ed3ac7f582d85608fa01413701f4290d50ac5cd3ab3fb1138ef8"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-pizza-peel.png",
+    "width": 390,
+    "height": 1525,
+    "bytes": 271372,
+    "sha256": "0d74f93f8d061e5fd18fd1b42f0762299a0c2b996557b8c02e4fd9035f238364"
+  },
+  {
+    "file": "product-pages/screenshots/en-390-welcome.png",
+    "width": 390,
+    "height": 1441,
+    "bytes": 181607,
+    "sha256": "b4aa4b69a09c32f7cb7e634966846903acf1b14c7a0d5a5a62e112b6a1ef12ed"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-blessing.png",
+    "width": 768,
+    "height": 1133,
+    "bytes": 197469,
+    "sha256": "6a2320b0cc152bb984534dea040e461ff99bed2ec3db38ca9e9a5c93096038c3"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-family-sign.png",
+    "width": 768,
+    "height": 1180,
+    "bytes": 240924,
+    "sha256": "6d10f0b6ff7d35a46580c44a19155b8b1a24f84eca22349907d2f2ef58b3a6ce"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-hanging-home-sign.png",
+    "width": 768,
+    "height": 1207,
+    "bytes": 284192,
+    "sha256": "6fb173b754e1525f5b44961935a57033367c471b78f6993b18016f92bd61a5f9"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-home.png",
+    "width": 768,
+    "height": 3954,
+    "bytes": 970868,
+    "sha256": "e8d06f6675ceae4d81f5881d0d628ab7d88782d4d500afd74bbccc9cf17a3b6c"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-kitchen.png",
+    "width": 768,
+    "height": 1107,
+    "bytes": 229785,
+    "sha256": "598b0fc3f367219ab17eab64bf37de64b9457e887e2d44151ff2c21ecebfc9d9"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-personalized-clock.png",
+    "width": 768,
+    "height": 1239,
+    "bytes": 296367,
+    "sha256": "adbc3e5b881381bf83449c80c43555446d5ace69406bfadae8a9398de97cd831"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-pizza-peel.png",
+    "width": 768,
+    "height": 1198,
+    "bytes": 304164,
+    "sha256": "11495dabf4c98a784473db73c30f332661c76e05684cd8ee40e9ca06de42be57"
+  },
+  {
+    "file": "product-pages/screenshots/en-768-welcome.png",
+    "width": 768,
+    "height": 1074,
+    "bytes": 201226,
+    "sha256": "11ff83af5a8fe1a957993c97b7a6ea874e121f2dbb9494090a5cb1b34c818b97"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-blessing.png",
+    "width": 1024,
+    "height": 1026,
+    "bytes": 295678,
+    "sha256": "62ee66414ec4103691cbb328ddc174fee3f7f6d86c50b239fdf8e163ae32cdd0"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-family-sign.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 348636,
+    "sha256": "1e273fcfce6683b1d9fc5f4dc19b89fe5991757e40fdf31ccdab57231d007999"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-hanging-home-sign.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 408812,
+    "sha256": "0316d238039a089b7658a955f4b37712b11d0613edcad22d1490bb39df7ac97b"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-home.png",
+    "width": 1024,
+    "height": 3861,
+    "bytes": 1237382,
+    "sha256": "e840861b748418fc3a2e315b218c8cfe55cde44074ddab8ee090232f0d01de6f"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-kitchen.png",
+    "width": 1024,
+    "height": 1026,
+    "bytes": 377737,
+    "sha256": "cf1c73c838db24c04a2a557a34530a5b1cc56dca8a6d42d01194acf620190390"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-personalized-clock.png",
+    "width": 1024,
+    "height": 1090,
+    "bytes": 409119,
+    "sha256": "f5c93aac78ea56470120184e923fd15efcafccaf9703847c0e161186983324e9"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-pizza-peel.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 500335,
+    "sha256": "79e1bce9a68860dc3af38c0c7c87243dba333066bf5abbb54db79794d414b708"
+  },
+  {
+    "file": "product-pages/screenshots/he-1024-welcome.png",
+    "width": 1024,
+    "height": 1026,
+    "bytes": 297668,
+    "sha256": "c712d4b191ced0523f2fd2844fb376f8e33f64ce7db3764ddf8cbf8b4a9d09f7"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-blessing-no-javascript.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 428590,
+    "sha256": "bb50a4eb7dd28ac3fbadfbbe7ca3a78896d9fdfa24e5012e0e1cf435de68d68f"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-blessing.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 428594,
+    "sha256": "66f3927b7142f469b4a530a4178f6c8adb83e812f802014c643ad99aaceb7639"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-family-sign-no-javascript.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 527122,
+    "sha256": "32fb2a76042362ac4af5c8f352cf506a99bd06200e73becd3f9afd1ae6b6c198"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-family-sign.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 527141,
+    "sha256": "b22efa38161d987436c5d9b0c3e2d9fd965773c48041dbf22a4faee2b3403e5d"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-hanging-home-sign-no-javascript.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 641920,
+    "sha256": "0244474296aedc638828008195a36c750a7bcefa76e98e631e996aafcf11aa0f"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-hanging-home-sign.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 641926,
+    "sha256": "c331a90c93c971370aef4feb04f7f5ea46e24f0ffb38639b22eee9d19d8dcd18"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-home.png",
+    "width": 1440,
+    "height": 3647,
+    "bytes": 1448480,
+    "sha256": "16e1249ac15ea0608484f2b9cbf4f7c222d14fd0e65bce3e00116848d1b5113b"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-kitchen-no-javascript.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 647771,
+    "sha256": "be29035b34f5a6fcd2eb8488368fd31a2c0a7fce1cea45df8aa974c03c72156a"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-kitchen.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 647789,
+    "sha256": "cfaea853fc25e8a9b30f4a712768f573084c04eccdd9f7d986ed99cca8543d60"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-personalized-clock-handheld-detail.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 539391,
+    "sha256": "f64d50df3b462076024158d63f857c1bc0770397b3c21c666d6e826d727d2df1"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-personalized-clock-hanging.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 563679,
+    "sha256": "d96bcb9242dfbf45fbee35b8e9f4ad4bfc6699a1561683566d5c5909c4bf5462"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-personalized-clock-no-javascript.png",
+    "width": 1440,
+    "height": 1278,
+    "bytes": 741742,
+    "sha256": "d06a83c01adcd4cbf253f65584deed9bd47993c88f2f81085e6958451bf966d3"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-personalized-clock.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 737134,
+    "sha256": "2ab83c956c0af5c8bf1dbedab549186bb3c287ce8e5c2cf20836a17a4587070e"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-pizza-peel-no-javascript.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 760854,
+    "sha256": "e36102f35fc3831b5c70858572d2785bd527efdc192e94729a855c3a05401b34"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-pizza-peel.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 760854,
+    "sha256": "020f4f045b9b8f6ef02eb38f4fa03bab427c050024fb5386068cdebee26fbb7f"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-welcome-no-javascript.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 451807,
+    "sha256": "3e7f80bc8b1ce04f6c5d99db48756c4aa1d8ea8ae200c31c451b060b8c758e89"
+  },
+  {
+    "file": "product-pages/screenshots/he-1440-welcome.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 451799,
+    "sha256": "0f8cc3c5ea061b51fdf0b0f099909cb5b42969696f8c36251ccb874765b8fe99"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-blessing.png",
+    "width": 320,
+    "height": 1368,
+    "bytes": 130892,
+    "sha256": "304b2991998cf3b5dd4991e0bf77b86e289ed053fe5ab38234f4bdd9f1a0259c"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-family-sign.png",
+    "width": 320,
+    "height": 1396,
+    "bytes": 149695,
+    "sha256": "0e2448496dae0bfa5f8d4f35210c79693d9e826458d8622e00e1ceedd0e4f0bb"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-hanging-home-sign.png",
+    "width": 320,
+    "height": 1430,
+    "bytes": 165939,
+    "sha256": "df0200356fd4fa2195da3c46a42059f510872d1178676e68ffafbfd427ee592f"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-home.png",
+    "width": 320,
+    "height": 4436,
+    "bytes": 484465,
+    "sha256": "d8222a805bba4297f52021e848bb609316147d2db15935a62f3ed9bbaddcf305"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-kitchen.png",
+    "width": 320,
+    "height": 1368,
+    "bytes": 151015,
+    "sha256": "e1abe8149e5aff0e2e1a232eb2b762bbcf343af1a402d8440cfe4c346ee3a9f7"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-personalized-clock-no-javascript.png",
+    "width": 320,
+    "height": 1724,
+    "bytes": 186546,
+    "sha256": "3584d5892a64876593fa0fb1c73f46bced0a7049c61ab7cb1c6b2a9a90d9437d"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-personalized-clock.png",
+    "width": 320,
+    "height": 1555,
+    "bytes": 180182,
+    "sha256": "9d055ae2b9fb966d3312c972e265b449c46eeb74a8cf16a6f8098f1763b94129"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-pizza-peel.png",
+    "width": 320,
+    "height": 1425,
+    "bytes": 190241,
+    "sha256": "2fd2b555dc67758531c89e6ef3c224375c25747d2f669da73ff967e0cc966eaf"
+  },
+  {
+    "file": "product-pages/screenshots/he-320-welcome.png",
+    "width": 320,
+    "height": 1368,
+    "bytes": 137074,
+    "sha256": "56c8f8ded7d2c94e9f8d1787ac293c44825697733056f3a67592a9f75b81ec9a"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-blessing-no-javascript.png",
+    "width": 390,
+    "height": 1436,
+    "bytes": 167119,
+    "sha256": "3500664e825ec8822f62f4db3348d65804d9cf23682b3912512aec1b68e884e0"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-blessing.png",
+    "width": 390,
+    "height": 1388,
+    "bytes": 165069,
+    "sha256": "cf8157ffcc7103c0caaefb42552aa5fb9c7c66e6e4c6a9bd713493eab29803e7"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-family-sign-no-javascript.png",
+    "width": 390,
+    "height": 1465,
+    "bytes": 210761,
+    "sha256": "03c9e268b7ddec7210838b4f89ff9ff1ba406fe43011068c2e6e5075c84b25e2"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-family-sign.png",
+    "width": 390,
+    "height": 1417,
+    "bytes": 208242,
+    "sha256": "b95ddb8c9101cdddd9acdde8f7a2aab1eb3d367c2ac6bb1fe29535c1ed1f640a"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-hanging-home-sign-no-javascript.png",
+    "width": 390,
+    "height": 1526,
+    "bytes": 238793,
+    "sha256": "6e7b6b3f5e2b839e9b48b38a408543e3c4894e4973f6388f8a0251b3dd783354"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-hanging-home-sign.png",
+    "width": 390,
+    "height": 1477,
+    "bytes": 236810,
+    "sha256": "b19ede414d16363cd087addba05bfffaa8bc4f20ef3b740ce91486456b8a4166"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-home.png",
+    "width": 390,
+    "height": 4335,
+    "bytes": 633615,
+    "sha256": "9ad0b5a54d3dc093e93b108aee904ff46b5dfaeca5d3a81fced0df0ddfa88e98"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-kitchen-no-javascript.png",
+    "width": 390,
+    "height": 1436,
+    "bytes": 198765,
+    "sha256": "d0e8057339ed56fb645f927636765cf2492e9474ad6eabfbcd20530afae353fc"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-kitchen.png",
+    "width": 390,
+    "height": 1388,
+    "bytes": 196690,
+    "sha256": "1df9e96f9c82677f3dd62083df1c413a6d040209cbecb0b87434123830724fc0"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-personalized-clock-handheld-detail.png",
+    "width": 390,
+    "height": 1502,
+    "bytes": 230537,
+    "sha256": "e0d05dbb0e179425f00bb36c650dc5fb58c6133edf28c23b09c6eaff54108cd5"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-personalized-clock-hanging.png",
+    "width": 390,
+    "height": 1502,
+    "bytes": 205274,
+    "sha256": "6751041c686e9324d3b5bf1c1c68049b18777e32ab0da68348e04ea2c29ec3fb"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-personalized-clock-no-javascript.png",
+    "width": 390,
+    "height": 1675,
+    "bytes": 255006,
+    "sha256": "c9219e811c28c067c74f7b3de05a4fe2414b594c2a1841288be4f657808a959f"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-personalized-clock.png",
+    "width": 390,
+    "height": 1502,
+    "bytes": 248773,
+    "sha256": "53d40dcfd66e7a55294c44223de4dc39cda34928cfcc56b8639780474181728e"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-pizza-peel-no-javascript.png",
+    "width": 390,
+    "height": 1491,
+    "bytes": 259570,
+    "sha256": "2996f72fc3d85874c08c97cee2830b5a33e639ab67a0362cc3a5a78621054556"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-pizza-peel.png",
+    "width": 390,
+    "height": 1443,
+    "bytes": 257291,
+    "sha256": "c2bb9e154fcc188c00eb331d327682cbffefe0f0a516b6d14a14015762633c18"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-welcome-no-javascript.png",
+    "width": 390,
+    "height": 1436,
+    "bytes": 176865,
+    "sha256": "187ed9fd4512ae995db421d526de4df60b6e3f9639dda3c90b7ba08576c65268"
+  },
+  {
+    "file": "product-pages/screenshots/he-390-welcome.png",
+    "width": 390,
+    "height": 1388,
+    "bytes": 174330,
+    "sha256": "8a48a93ad6c66f8ed055646824a879b3612042594fdac16826a916569a45dad9"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-blessing.png",
+    "width": 768,
+    "height": 1074,
+    "bytes": 181393,
+    "sha256": "2d8955e20fae6023c57920eb746f4add9405a20910ae015496c26a56121a1530"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-family-sign.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 227786,
+    "sha256": "e6d57c37710f0d99878f91e3d9ec76436471d2747e8cc2df3ed0c0652ec9d5f0"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-hanging-home-sign.png",
+    "width": 768,
+    "height": 1107,
+    "bytes": 262110,
+    "sha256": "a5859cc2e4e2d38af6863c9d8b6a5d50728aaf292eba4069ee6b8b9ecf688a40"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-home.png",
+    "width": 768,
+    "height": 3781,
+    "bytes": 931647,
+    "sha256": "3164fde04ff3dbf4ff7a559b9ada4f15db7f7fd91d425e1d3427f634104cf87b"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-kitchen.png",
+    "width": 768,
+    "height": 1074,
+    "bytes": 216099,
+    "sha256": "9539ca3d021f9179153b789c1f64d38d329f99f5f310a6ed3963e0adee951f1e"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-personalized-clock.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 275379,
+    "sha256": "67b6b18ee351e0bb098c27e8e3b9a6995e821f2eeb07d00c2e07e3f25bac7b8a"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-pizza-peel.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 285270,
+    "sha256": "de5b4f0415b004238430f4722f8520ba83c1a8e6296e1a057e2309e7c785026a"
+  },
+  {
+    "file": "product-pages/screenshots/he-768-welcome.png",
+    "width": 768,
+    "height": 1048,
+    "bytes": 191386,
+    "sha256": "f7f20eedab4289b873204f1bff0729ec0edd85311c9f14ef78dbddfa39bb864c"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1024-clock-front.png",
+    "width": 972,
+    "height": 677,
+    "bytes": 398372,
+    "sha256": "4f93fb7adf30b270453e1ef60e215dabfafb18ad8efa94478774c8976f9975c5"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1024-clock-inquiry.png",
+    "width": 1024,
+    "height": 2287,
+    "bytes": 239112,
+    "sha256": "09c4c5109d550217d2c83de6eb8cd4a1ea3992d3857ac9ca6fb8cfa76c434dfa"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1024-collection.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 165064,
+    "sha256": "a51db697e59560aa431f6d85bf410453ddfaa243ad259315df2528c5130e396a"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-clock-front.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 714825,
+    "sha256": "bc23bbd59efbdb772a897402c6d69b03f134f067baa96bcf97adbf67d78fc83a"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-clock-handheld-detail.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 524019,
+    "sha256": "790d40adf5ecaec48b941f74c15732880571e9d3d943f37556e16908ac2f2a63"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-clock-hanging.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 548089,
+    "sha256": "f4f1024c9a41af59da98edf319571a2ec95fdad2c8f293b03367b2bbf749205d"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-clock-inquiry.png",
+    "width": 1440,
+    "height": 2209,
+    "bytes": 240111,
+    "sha256": "0b5d0110c3b5037485e3a0a9bce29324d0fd2c9e4c89d5f28d46a3e2797f59e8"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-clock-keyboard-focus.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 548134,
+    "sha256": "d4b57e288294d2f94e0df8d7191c292488dc5865a453d8bb047b80988fb7eb0e"
+  },
+  {
+    "file": "regression/clock/screenshots/en-1440-collection.png",
+    "width": 1440,
+    "height": 1210,
+    "bytes": 174474,
+    "sha256": "e7c251e2361fd0e9af794e4235781e225683695d57583e04c6a9087518f2cd24"
+  },
+  {
+    "file": "regression/clock/screenshots/en-320-clock-front.png",
+    "width": 284,
+    "height": 1206,
+    "bytes": 168915,
+    "sha256": "be65ff29734f187865221b5ba6036e4cc3a88fc831dcdd71d20dc1b1276149bf"
+  },
+  {
+    "file": "regression/clock/screenshots/en-320-clock-inquiry.png",
+    "width": 320,
+    "height": 4017,
+    "bytes": 218388,
+    "sha256": "25c5495b3b3e31b70ba7672776397460bfd2764f8bd275afb42fe5ae7b2e6bec"
+  },
+  {
+    "file": "regression/clock/screenshots/en-320-collection.png",
+    "width": 320,
+    "height": 1260,
+    "bytes": 122648,
+    "sha256": "e35bfa5d2cc641887a414e2b60fcb20851e8a7d9aa9e3dd00990a96a3bc40287"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-clock-front.png",
+    "width": 354,
+    "height": 1154,
+    "bytes": 236654,
+    "sha256": "13479db97c4594d3890b995825648ae3b4b79f774cb0b26450803fe759ecf7ab"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-clock-handheld-detail.png",
+    "width": 354,
+    "height": 1154,
+    "bytes": 220213,
+    "sha256": "72837ff865dd39828b9b83c25f90a4aeb4ecb5f19d121a1be519f34c7887a587"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-clock-hanging.png",
+    "width": 354,
+    "height": 1154,
+    "bytes": 196906,
+    "sha256": "d9795f63de0cadfa4f7f278942b888fca70f8f2f20ae9a147d0fc20a16b60ae3"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-clock-inquiry.png",
+    "width": 390,
+    "height": 3691,
+    "bytes": 211572,
+    "sha256": "50f175895ba61d94d538697006be3f8513d3513faf28bfa50278761c8c23db56"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-clock-keyboard-focus.png",
+    "width": 354,
+    "height": 1154,
+    "bytes": 196911,
+    "sha256": "9637b5f0fbc140a26a15e86e72c7b5f0d0fe1eb098dc8c214676ce493a08bc44"
+  },
+  {
+    "file": "regression/clock/screenshots/en-390-collection.png",
+    "width": 390,
+    "height": 1269,
+    "bytes": 147029,
+    "sha256": "8445411f2612dd86ecfad5bac38126ecbd591cf3cae49be1f58cb9d79a643277"
+  },
+  {
+    "file": "regression/clock/screenshots/en-768-clock-front.png",
+    "width": 716,
+    "height": 753,
+    "bytes": 269121,
+    "sha256": "262d41c1a2dbd5749cfcc02399365caa035ef08ea8a803cf23968ed880d1d5d4"
+  },
+  {
+    "file": "regression/clock/screenshots/en-768-clock-inquiry.png",
+    "width": 768,
+    "height": 2904,
+    "bytes": 223099,
+    "sha256": "f29b1c20735b5ee8208438c8e60ee6f138183acc057fe644b058730b98e49456"
+  },
+  {
+    "file": "regression/clock/screenshots/en-768-collection.png",
+    "width": 768,
+    "height": 1231,
+    "bytes": 160561,
+    "sha256": "f719e1ae4db6095b651f22e27a57810e5d399d755378e5749cd04756f372f638"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1024-clock-front.png",
+    "width": 972,
+    "height": 604,
+    "bytes": 380047,
+    "sha256": "dadb82b3d4b9de78a37e4f7719ed9a21b741f5285697cd96c8ab0d6de9a857b6"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1024-clock-inquiry.png",
+    "width": 1024,
+    "height": 2189,
+    "bytes": 180296,
+    "sha256": "7d594d64a8ab69df093f5b7958cbd53b75c7c474aac8d07bc85d77519817143e"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1024-clock-no-javascript.png",
+    "width": 972,
+    "height": 672,
+    "bytes": 384472,
+    "sha256": "8f7d8029f0ff1177c16f45ab2139fb9de5bbcc313bc6dfdcb2f1a69abffe6e1a"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1024-collection.png",
+    "width": 1024,
+    "height": 1186,
+    "bytes": 154044,
+    "sha256": "a7b33c88eab73355de9aab2ae711650d0f71fb403d07f489ee583060b6502736"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-front.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 697093,
+    "sha256": "541e548ec36435910148caf1b3037181f3a379224bcd430b9b40ed537e4d6ae7"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-handheld-detail.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 504967,
+    "sha256": "ed83cf33c30a5c9855e8f288ed42de66b47e6f9ebd4bb06b9e57b857a5ec45dc"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-hanging.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 529509,
+    "sha256": "36febfdda628ccf93ac8f6a11936b26ed98a4f7d586aedd8fff4b20cd30e5d06"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-inquiry.png",
+    "width": 1440,
+    "height": 2085,
+    "bytes": 182758,
+    "sha256": "a59978e09f01c2f0df19c4b7b668394d9f5d47d525a8c3ab2c43576197671b53"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-keyboard-focus.png",
+    "width": 1280,
+    "height": 765,
+    "bytes": 529545,
+    "sha256": "2e0222fd174b925cafaf02058f236d6de4a0ddb93852737584859a265d99fbe5"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-clock-no-javascript.png",
+    "width": 1280,
+    "height": 833,
+    "bytes": 701562,
+    "sha256": "b75c3fe7bc8db1215b52fb18399aea3458b2733cf9c5803dbe89952b161920bb"
+  },
+  {
+    "file": "regression/clock/screenshots/he-1440-collection.png",
+    "width": 1440,
+    "height": 1173,
+    "bytes": 161176,
+    "sha256": "ccd0ed18b50d3191536110fc100f924595f4bb8998e182926121bbd99ef2167e"
+  },
+  {
+    "file": "regression/clock/screenshots/he-320-clock-front.png",
+    "width": 284,
+    "height": 1054,
+    "bytes": 157889,
+    "sha256": "9371dd1b4ff13e61bd1c73f595ab5ade583e53b7e961554a009932096bc0f1f3"
+  },
+  {
+    "file": "regression/clock/screenshots/he-320-clock-inquiry.png",
+    "width": 320,
+    "height": 3611,
+    "bytes": 164765,
+    "sha256": "a95fcf97db6f89c0c799b644f8cbb1a702ac9c798243a951c3445bbc31219c09"
+  },
+  {
+    "file": "regression/clock/screenshots/he-320-clock-no-javascript.png",
+    "width": 284,
+    "height": 1177,
+    "bytes": 162000,
+    "sha256": "7cae7b6fb6a3f1ba1da952363ac96a6a63d0c4f66e3f21575d25b43d63056ae5"
+  },
+  {
+    "file": "regression/clock/screenshots/he-320-collection.png",
+    "width": 320,
+    "height": 1176,
+    "bytes": 110688,
+    "sha256": "3c51ca052678396d93fe3ef0fb6f174f9eb448106a054160b223684bbfba0e0c"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-front.png",
+    "width": 354,
+    "height": 1001,
+    "bytes": 225587,
+    "sha256": "d7a89bca1a1de60f50e3c9afb53d9e2d135f70a333010d71d4a039e97eb2a804"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-handheld-detail.png",
+    "width": 354,
+    "height": 1001,
+    "bytes": 207667,
+    "sha256": "d48ad2db5fa7b67aab0bfc2101054f748c144673cb263cfcd5caa164d851810b"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-hanging.png",
+    "width": 354,
+    "height": 1001,
+    "bytes": 183987,
+    "sha256": "aa012d3c84315fb4b16f73b14a4fb8114521589167302a03e86265ab246653af"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-inquiry.png",
+    "width": 390,
+    "height": 3411,
+    "bytes": 165063,
+    "sha256": "6c48ec29ca9cd83372140fa9ad7717de22c05aef791c8a81ab5c94c3568167d8"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-keyboard-focus.png",
+    "width": 354,
+    "height": 1001,
+    "bytes": 184033,
+    "sha256": "b98836e624fa65429a7ccbcf94776d20e90bf792a77be8b598b26f7b1e9d415e"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-clock-no-javascript.png",
+    "width": 354,
+    "height": 1125,
+    "bytes": 229648,
+    "sha256": "9f2de20b6b83108c1fa74e7a44666e17ae8a40a3c46069f68fcf25633d4b84ff"
+  },
+  {
+    "file": "regression/clock/screenshots/he-390-collection.png",
+    "width": 390,
+    "height": 1185,
+    "bytes": 132759,
+    "sha256": "a875dc54e2a26d9020daab1000f30d48c523b55936d79bee2e8b61eb8e7463f0"
+  },
+  {
+    "file": "regression/clock/screenshots/he-768-clock-front.png",
+    "width": 716,
+    "height": 652,
+    "bytes": 250644,
+    "sha256": "4978a2badcce4bbc6f6d334d5675a244e3927ee594a1e96104aafe221612ad08"
+  },
+  {
+    "file": "regression/clock/screenshots/he-768-clock-inquiry.png",
+    "width": 768,
+    "height": 2806,
+    "bytes": 171934,
+    "sha256": "c45495e68325f081106e3d96beb865abb93df001f03640586d212593ea12c8fc"
+  },
+  {
+    "file": "regression/clock/screenshots/he-768-clock-no-javascript.png",
+    "width": 716,
+    "height": 652,
+    "bytes": 254815,
+    "sha256": "fd6aa240989037099fcd46676e6194b5b8460e40460556fb2ca858a4258da247"
+  },
+  {
+    "file": "regression/clock/screenshots/he-768-collection.png",
+    "width": 768,
+    "height": 1175,
+    "bytes": 147878,
+    "sha256": "f80c1f05fee8a1f260da950dbab0524fb662fca3f8a9bc0fc633bf110359ff95"
+  },
+  {
+    "file": "regression/family-sign/screenshots/en-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 358032,
+    "sha256": "fefe94c1792e74555585513d0cf1685a4ddd5ebfa51bd0d1346584edba24fbc2"
+  },
+  {
+    "file": "regression/family-sign/screenshots/en-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 540186,
+    "sha256": "f1961bdf68367cd9b6a9d94bde649f2e21dedb73ee415f608c06c70016674116"
+  },
+  {
+    "file": "regression/family-sign/screenshots/en-320-family-sign-product.png",
+    "width": 320,
+    "height": 1543,
+    "bytes": 160733,
+    "sha256": "e8f3e62712b3b4c4c9769f9e3019f984081e56a872882e285127cc250715bd0f"
+  },
+  {
+    "file": "regression/family-sign/screenshots/en-390-family-sign-product.png",
+    "width": 390,
+    "height": 1514,
+    "bytes": 218979,
+    "sha256": "140aa915dd0b6426a4396ffda1c2f86e1c44d68520dbf392c69fceaea456fc84"
+  },
+  {
+    "file": "regression/family-sign/screenshots/en-768-family-sign-product.png",
+    "width": 768,
+    "height": 1180,
+    "bytes": 240924,
+    "sha256": "6d10f0b6ff7d35a46580c44a19155b8b1a24f84eca22349907d2f2ef58b3a6ce"
+  },
+  {
+    "file": "regression/family-sign/screenshots/he-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 348636,
+    "sha256": "1e273fcfce6683b1d9fc5f4dc19b89fe5991757e40fdf31ccdab57231d007999"
+  },
+  {
+    "file": "regression/family-sign/screenshots/he-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 527141,
+    "sha256": "b22efa38161d987436c5d9b0c3e2d9fd965773c48041dbf22a4faee2b3403e5d"
+  },
+  {
+    "file": "regression/family-sign/screenshots/he-320-family-sign-product.png",
+    "width": 320,
+    "height": 1396,
+    "bytes": 149695,
+    "sha256": "0e2448496dae0bfa5f8d4f35210c79693d9e826458d8622e00e1ceedd0e4f0bb"
+  },
+  {
+    "file": "regression/family-sign/screenshots/he-390-family-sign-product.png",
+    "width": 390,
+    "height": 1417,
+    "bytes": 208242,
+    "sha256": "b95ddb8c9101cdddd9acdde8f7a2aab1eb3d367c2ac6bb1fe29535c1ed1f640a"
+  },
+  {
+    "file": "regression/family-sign/screenshots/he-768-family-sign-product.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 227786,
+    "sha256": "e6d57c37710f0d99878f91e3d9ec76436471d2747e8cc2df3ed0c0652ec9d5f0"
+  },
+  {
+    "file": "regression/hero/screenshots/en-1024-hero.png",
+    "width": 501,
+    "height": 485,
+    "bytes": 240361,
+    "sha256": "dcdfb52b4fa982e596caaf0cb1a3a766b96671288dc4f035be95d26f6a9bf080"
+  },
+  {
+    "file": "regression/hero/screenshots/en-1440-first.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 450345,
+    "sha256": "0e052996c205db578ca00cba19a3356cc6f79ce5398f627e0c270ab57352a79c"
+  },
+  {
+    "file": "regression/hero/screenshots/en-1440-full.png",
+    "width": 1440,
+    "height": 3791,
+    "bytes": 1497754,
+    "sha256": "8bc83b253d2cfefef17a878d2137ded18e1358ce6105813303a41f33907840c8"
+  },
+  {
+    "file": "regression/hero/screenshots/en-1440-hero.png",
+    "width": 653,
+    "height": 621,
+    "bytes": 367916,
+    "sha256": "bca871779be227a2387d9331b106dfd9ff235f9d7994c099cb1461ae26532eda"
+  },
+  {
+    "file": "regression/hero/screenshots/en-320-first.png",
+    "width": 320,
+    "height": 568,
+    "bytes": 31028,
+    "sha256": "de082309e78af063108371b67d9f61d9bb1ba1854b9d93dc795867fd41914441"
+  },
+  {
+    "file": "regression/hero/screenshots/en-320-full.png",
+    "width": 320,
+    "height": 4500,
+    "bytes": 503991,
+    "sha256": "6b88d4798c41023acb0f8504a6717c4c7719c8800ec1af921d8aed7adf5e0742"
+  },
+  {
+    "file": "regression/hero/screenshots/en-320-hero.png",
+    "width": 284,
+    "height": 284,
+    "bytes": 87376,
+    "sha256": "3f80e504cbd52659fe564f91f37bc540d01d1adfe6de2273a796f45874d87679"
+  },
+  {
+    "file": "regression/hero/screenshots/en-390-first.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 100506,
+    "sha256": "c5ef0d0526d1666a86371d925cd3f25315c9eab4659589faf2179c158e471343"
+  },
+  {
+    "file": "regression/hero/screenshots/en-390-full.png",
+    "width": 390,
+    "height": 4651,
+    "bytes": 670838,
+    "sha256": "5fa985b13b82ce067015cc6e0c371c2ac267b248912b43d401147eaa624c8927"
+  },
+  {
+    "file": "regression/hero/screenshots/en-390-hero.png",
+    "width": 354,
+    "height": 347,
+    "bytes": 123721,
+    "sha256": "32ce96a9e21a5fdf26ce9eb83e052a619b5e688106670b9614cef03094a4601f"
+  },
+  {
+    "file": "regression/hero/screenshots/en-768-first.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 187704,
+    "sha256": "1eeb068e78903143835c388da5b73afd7b830b9085d6d303dac77ee1a974e0f1"
+  },
+  {
+    "file": "regression/hero/screenshots/en-768-full.png",
+    "width": 768,
+    "height": 3954,
+    "bytes": 970868,
+    "sha256": "e8d06f6675ceae4d81f5881d0d628ab7d88782d4d500afd74bbccc9cf17a3b6c"
+  },
+  {
+    "file": "regression/hero/screenshots/en-768-hero.png",
+    "width": 344,
+    "height": 346,
+    "bytes": 122897,
+    "sha256": "eb795bf706b99b20b584f5b5478a89432cbf0802639bdf8680ee2482276ce97f"
+  },
+  {
+    "file": "regression/hero/screenshots/he-1024-hero.png",
+    "width": 501,
+    "height": 485,
+    "bytes": 239798,
+    "sha256": "1fe28b5484721b84c0cce043f27d51fcd04c99b4b42eb7c39eefca113368269c"
+  },
+  {
+    "file": "regression/hero/screenshots/he-1440-first.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 446924,
+    "sha256": "3e4937af9ddafdc6b9accc11262918b53423886019d20efb1e41fec696542a8a"
+  },
+  {
+    "file": "regression/hero/screenshots/he-1440-full.png",
+    "width": 1440,
+    "height": 3647,
+    "bytes": 1448480,
+    "sha256": "16e1249ac15ea0608484f2b9cbf4f7c222d14fd0e65bce3e00116848d1b5113b"
+  },
+  {
+    "file": "regression/hero/screenshots/he-1440-hero.png",
+    "width": 653,
+    "height": 621,
+    "bytes": 367119,
+    "sha256": "be97dbd703c989c4a5a2a295a422773aa82e465f3c7c5b80b12c1686c56f9075"
+  },
+  {
+    "file": "regression/hero/screenshots/he-320-first.png",
+    "width": 320,
+    "height": 568,
+    "bytes": 28977,
+    "sha256": "274366c518e79dac20eb1dfd2988f20ade87c589e2d83ee39f1311a3dbc67155"
+  },
+  {
+    "file": "regression/hero/screenshots/he-320-full.png",
+    "width": 320,
+    "height": 4436,
+    "bytes": 484462,
+    "sha256": "78519423f56e0cfdf734b612efcf4d2390a32804bb4ce56140913225484c31ff"
+  },
+  {
+    "file": "regression/hero/screenshots/he-320-hero.png",
+    "width": 284,
+    "height": 285,
+    "bytes": 86689,
+    "sha256": "dbf71c4c0f7042809ebdb39f46b6ae2d0b9bf120813e7d8bf85c16868f644f5c"
+  },
+  {
+    "file": "regression/hero/screenshots/he-390-first.png",
+    "width": 390,
+    "height": 844,
+    "bytes": 103114,
+    "sha256": "9756f5d7085e2ef5b0a5890c6e8709ede7bfaf79e4e86a9fd74497f6e9d9d96d"
+  },
+  {
+    "file": "regression/hero/screenshots/he-390-full.png",
+    "width": 390,
+    "height": 4335,
+    "bytes": 633615,
+    "sha256": "9ad0b5a54d3dc093e93b108aee904ff46b5dfaeca5d3a81fced0df0ddfa88e98"
+  },
+  {
+    "file": "regression/hero/screenshots/he-390-hero.png",
+    "width": 354,
+    "height": 347,
+    "bytes": 122837,
+    "sha256": "f07e201b620962084abe42180cc5f7dc82ac9c20fefd50efea7a934aee6aa8a5"
+  },
+  {
+    "file": "regression/hero/screenshots/he-768-first.png",
+    "width": 768,
+    "height": 1024,
+    "bytes": 179493,
+    "sha256": "df1942e7489e2b5f58e05c071e8a498c56ed1d579ad5e100b97f7411935ef027"
+  },
+  {
+    "file": "regression/hero/screenshots/he-768-full.png",
+    "width": 768,
+    "height": 3781,
+    "bytes": 931647,
+    "sha256": "3164fde04ff3dbf4ff7a559b9ada4f15db7f7fd91d425e1d3427f634104cf87b"
+  },
+  {
+    "file": "regression/hero/screenshots/he-768-hero.png",
+    "width": 344,
+    "height": 346,
+    "bytes": 122566,
+    "sha256": "d8fdf285b6a5de262e29053ff470d8f61e0229ffac64e8fb95b4f176ed8a58ca"
+  },
+  {
+    "file": "regression/homepage/screenshots/1440-first.png",
+    "width": 1440,
+    "height": 900,
+    "bytes": 446924,
+    "sha256": "3e4937af9ddafdc6b9accc11262918b53423886019d20efb1e41fec696542a8a"
+  },
+  {
+    "file": "regression/homepage/screenshots/1440-full.png",
+    "width": 1440,
+    "height": 3647,
+    "bytes": 1448480,
+    "sha256": "16e1249ac15ea0608484f2b9cbf4f7c222d14fd0e65bce3e00116848d1b5113b"
+  },
+  {
+    "file": "regression/homepage/screenshots/390-first.png",
+    "width": 390,
+    "height": 900,
+    "bytes": 130439,
+    "sha256": "e9f01a68b2a990141823847f963750025addf4ecfe82c315bb1357663151eca3"
+  },
+  {
+    "file": "regression/homepage/screenshots/390-full.png",
+    "width": 390,
+    "height": 4335,
+    "bytes": 633615,
+    "sha256": "9ad0b5a54d3dc093e93b108aee904ff46b5dfaeca5d3a81fced0df0ddfa88e98"
+  },
+  {
+    "file": "regression/homepage/screenshots/768-first.png",
+    "width": 768,
+    "height": 900,
+    "bytes": 173190,
+    "sha256": "add4baaba337cd6ed154cdbe06f23f168513d21a483008acc207b034280fe6c0"
+  },
+  {
+    "file": "regression/homepage/screenshots/768-full.png",
+    "width": 768,
+    "height": 3781,
+    "bytes": 931647,
+    "sha256": "3164fde04ff3dbf4ff7a559b9ada4f15db7f7fd91d425e1d3427f634104cf87b"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-1440-blocked-full.png",
+    "width": 1440,
+    "height": 1977,
+    "bytes": 227172,
+    "sha256": "9897d7cf3d981f0949a2c9371e6b811193922f9ee863e5ff29e39d9d19113db8"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-390-blocked-full.png",
+    "width": 390,
+    "height": 3287,
+    "bytes": 198609,
+    "sha256": "2f0df7875a6ee8764386d45db0295247fc3a427767220018725018852871990e"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-external-channels.png",
+    "width": 390,
+    "height": 3577,
+    "bytes": 181952,
+    "sha256": "7ab4f2be4ac444d300114fc9c5a656a8296b164bfc2679e9b852c91806ab67dc"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-failure.png",
+    "width": 390,
+    "height": 3249,
+    "bytes": 158769,
+    "sha256": "c8e4c5eb1bce1546ffde6d2a1cb26155d6946fb459bc121bd1d232bd496031eb"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-pending.png",
+    "width": 390,
+    "height": 3204,
+    "bytes": 154208,
+    "sha256": "ebf41a446b7bf535647c775e9473eac1e0f31b862165c5921b4bbc626824e8b9"
+  },
+  {
+    "file": "regression/inquiry/screenshots/en-success.png",
+    "width": 390,
+    "height": 3249,
+    "bytes": 159094,
+    "sha256": "5d7fd0168d866cc02b200ba07235ac33f5deaf154dfb7a4ba35fe2f1a8e5366c"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-1440-blocked-full.png",
+    "width": 1440,
+    "height": 1853,
+    "bytes": 172547,
+    "sha256": "d340ade853dcdc11e983c8d7d4f5fc81f1af46a5d3342b3412dc190d1b13a665"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-390-blocked-full.png",
+    "width": 390,
+    "height": 3033,
+    "bytes": 154914,
+    "sha256": "bcee581eba89cf4d467ac72fcaef0ede57a78a7b4043e3188585e5779c206a16"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-external-channels.png",
+    "width": 390,
+    "height": 3325,
+    "bytes": 144343,
+    "sha256": "ca3b436989f1dc003751c9ca4cd0ab1fbf1eb00f37a4aeca3c329057693118a1"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-failure.png",
+    "width": 390,
+    "height": 3045,
+    "bytes": 128437,
+    "sha256": "7364c2eef2e28ad45f687bb3015c4e9e49972c3b1a037ca59d1a63bb9842f629"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-pending.png",
+    "width": 390,
+    "height": 3026,
+    "bytes": 124937,
+    "sha256": "4d1fcec7c5564ea2599c7a2a3be47af882024ec4da3ad1fcd43f037b608260b1"
+  },
+  {
+    "file": "regression/inquiry/screenshots/he-success.png",
+    "width": 390,
+    "height": 3045,
+    "bytes": 128906,
+    "sha256": "94017f27cf87dec01ff76a6d1b19dc8f3442b414f01701cc9c486ed74f81415c"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 358032,
+    "sha256": "fefe94c1792e74555585513d0cf1685a4ddd5ebfa51bd0d1346584edba24fbc2"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1024-hanging-home-sign-product.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 431056,
+    "sha256": "3dd42aae3dba2bb5341a3bc63be692aa9be09e3e2d87c15dabf586d5ae10d5e3"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1024-pizza-peel-product.png",
+    "width": 1024,
+    "height": 1117,
+    "bytes": 518112,
+    "sha256": "300ea24a93bf5a1624f1972e063dbcc8f2f1997d3f31e700ef5f3f6afdc29e2a"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 540186,
+    "sha256": "f1961bdf68367cd9b6a9d94bde649f2e21dedb73ee415f608c06c70016674116"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1440-hanging-home-sign-product.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 670382,
+    "sha256": "2dc37b17260209b23e8fdf30ba4b9dda221c09242bcbb9a5fb915896ce309e5a"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-1440-pizza-peel-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 779353,
+    "sha256": "650352afd6a5dcccdca050ab29df0fd2211caef4d2bf6b7961007b6b78e9556e"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-320-family-sign-product.png",
+    "width": 320,
+    "height": 1543,
+    "bytes": 160733,
+    "sha256": "e8f3e62712b3b4c4c9769f9e3019f984081e56a872882e285127cc250715bd0f"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-320-hanging-home-sign-product.png",
+    "width": 320,
+    "height": 1621,
+    "bytes": 184624,
+    "sha256": "556b989b53e530e1b24e60ec62045090ab7d8c156dee0362258bc2e7db02b5e7"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-320-pizza-peel-product.png",
+    "width": 320,
+    "height": 1598,
+    "bytes": 204683,
+    "sha256": "5d598bf14c5e6f3df81b55260d19d8f85ed51579e015cc6eaabe728abddbaccc"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-390-family-sign-product.png",
+    "width": 390,
+    "height": 1514,
+    "bytes": 218979,
+    "sha256": "140aa915dd0b6426a4396ffda1c2f86e1c44d68520dbf392c69fceaea456fc84"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-390-hanging-home-sign-product.png",
+    "width": 390,
+    "height": 1595,
+    "bytes": 255895,
+    "sha256": "48ac82013e859329f46ac2c55c4f48e02200ff4c191240c0d5cc05316f45b7b8"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-390-pizza-peel-product.png",
+    "width": 390,
+    "height": 1525,
+    "bytes": 271372,
+    "sha256": "0d74f93f8d061e5fd18fd1b42f0762299a0c2b996557b8c02e4fd9035f238364"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-768-family-sign-product.png",
+    "width": 768,
+    "height": 1180,
+    "bytes": 240924,
+    "sha256": "6d10f0b6ff7d35a46580c44a19155b8b1a24f84eca22349907d2f2ef58b3a6ce"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-768-hanging-home-sign-product.png",
+    "width": 768,
+    "height": 1207,
+    "bytes": 284192,
+    "sha256": "6fb173b754e1525f5b44961935a57033367c471b78f6993b18016f92bd61a5f9"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/en-768-pizza-peel-product.png",
+    "width": 768,
+    "height": 1198,
+    "bytes": 304164,
+    "sha256": "11495dabf4c98a784473db73c30f332661c76e05684cd8ee40e9ca06de42be57"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 348636,
+    "sha256": "1e273fcfce6683b1d9fc5f4dc19b89fe5991757e40fdf31ccdab57231d007999"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1024-hanging-home-sign-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 408812,
+    "sha256": "0316d238039a089b7658a955f4b37712b11d0613edcad22d1490bb39df7ac97b"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1024-pizza-peel-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 500335,
+    "sha256": "79e1bce9a68860dc3af38c0c7c87243dba333066bf5abbb54db79794d414b708"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 527141,
+    "sha256": "b22efa38161d987436c5d9b0c3e2d9fd965773c48041dbf22a4faee2b3403e5d"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1440-hanging-home-sign-product.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 641926,
+    "sha256": "c331a90c93c971370aef4feb04f7f5ea46e24f0ffb38639b22eee9d19d8dcd18"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-1440-pizza-peel-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 760854,
+    "sha256": "020f4f045b9b8f6ef02eb38f4fa03bab427c050024fb5386068cdebee26fbb7f"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-320-family-sign-product.png",
+    "width": 320,
+    "height": 1396,
+    "bytes": 149695,
+    "sha256": "0e2448496dae0bfa5f8d4f35210c79693d9e826458d8622e00e1ceedd0e4f0bb"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-320-hanging-home-sign-product.png",
+    "width": 320,
+    "height": 1430,
+    "bytes": 165939,
+    "sha256": "df0200356fd4fa2195da3c46a42059f510872d1178676e68ffafbfd427ee592f"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-320-pizza-peel-product.png",
+    "width": 320,
+    "height": 1425,
+    "bytes": 190241,
+    "sha256": "2fd2b555dc67758531c89e6ef3c224375c25747d2f669da73ff967e0cc966eaf"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-390-family-sign-product.png",
+    "width": 390,
+    "height": 1417,
+    "bytes": 208242,
+    "sha256": "b95ddb8c9101cdddd9acdde8f7a2aab1eb3d367c2ac6bb1fe29535c1ed1f640a"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-390-hanging-home-sign-product.png",
+    "width": 390,
+    "height": 1477,
+    "bytes": 236810,
+    "sha256": "b19ede414d16363cd087addba05bfffaa8bc4f20ef3b740ce91486456b8a4166"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-390-pizza-peel-product.png",
+    "width": 390,
+    "height": 1443,
+    "bytes": 257291,
+    "sha256": "c2bb9e154fcc188c00eb331d327682cbffefe0f0a516b6d14a14015762633c18"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-768-family-sign-product.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 227786,
+    "sha256": "e6d57c37710f0d99878f91e3d9ec76436471d2747e8cc2df3ed0c0652ec9d5f0"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-768-hanging-home-sign-product.png",
+    "width": 768,
+    "height": 1107,
+    "bytes": 262110,
+    "sha256": "a5859cc2e4e2d38af6863c9d8b6a5d50728aaf292eba4069ee6b8b9ecf688a40"
+  },
+  {
+    "file": "regression/pizza-peel/screenshots/he-768-pizza-peel-product.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 285270,
+    "sha256": "de5b4f0415b004238430f4722f8520ba83c1a8e6296e1a057e2309e7c785026a"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-1024-full.png",
+    "width": 1024,
+    "height": 2054,
+    "bytes": 225795,
+    "sha256": "a137af474bc65b6bda353c6910f2e8712fdbb645d2066fa99673db9e84fbce1f"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-1024-privacy.png",
+    "width": 467,
+    "height": 294,
+    "bytes": 49931,
+    "sha256": "ee77f4f9c2c510c0ddb6b5aadd8ecfacb65d17130d2b980ef036ca0e2f01bad8"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-1440-full.png",
+    "width": 1440,
+    "height": 1977,
+    "bytes": 227172,
+    "sha256": "9897d7cf3d981f0949a2c9371e6b811193922f9ee863e5ff29e39d9d19113db8"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-1440-privacy.png",
+    "width": 617,
+    "height": 244,
+    "bytes": 47441,
+    "sha256": "930f8c2f92c42b3f1bef00f5bf79ceff4ab449943e8b84a5a229a2c0d2f2dc23"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-320-full.png",
+    "width": 320,
+    "height": 3614,
+    "bytes": 206691,
+    "sha256": "77480c3be369a2f46b62d7f2b81e8e01b2041a6afbbeb8f44ed8e543a29a4521"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-320-privacy.png",
+    "width": 250,
+    "height": 546,
+    "bytes": 48082,
+    "sha256": "d1626d6a091dcf4e982ff513534260863d7c6cc8bf3c368b06666f0822e9a729"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-390-full.png",
+    "width": 390,
+    "height": 3287,
+    "bytes": 198609,
+    "sha256": "2f0df7875a6ee8764386d45db0295247fc3a427767220018725018852871990e"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-390-privacy.png",
+    "width": 320,
+    "height": 420,
+    "bytes": 43270,
+    "sha256": "e0ab45da618588628067cb5d14ce14e6b6be8d6f1c6556479c4ac97443402d2c"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-768-full.png",
+    "width": 768,
+    "height": 2672,
+    "bytes": 210413,
+    "sha256": "379ce670167137131815c43e047527941fc657f0a188df31f39d041f654f9fce"
+  },
+  {
+    "file": "regression/privacy/screenshots/en-768-privacy.png",
+    "width": 668,
+    "height": 219,
+    "bytes": 44849,
+    "sha256": "7f656d0897791e6bf3c47aa3d0dd320dcc71320ec3dec87eebc72251deba87a8"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-1024-full.png",
+    "width": 1024,
+    "height": 1957,
+    "bytes": 169945,
+    "sha256": "323dc4ceb49422474e10f5a250836724598209ef948c80466fac9d2fca3b1bc4"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-1024-privacy.png",
+    "width": 467,
+    "height": 218,
+    "bytes": 34248,
+    "sha256": "343450348346aa602348305d5f3f14aa3d0f942c9ec02e942c06677f713c953a"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-1440-full.png",
+    "width": 1440,
+    "height": 1853,
+    "bytes": 172547,
+    "sha256": "d340ade853dcdc11e983c8d7d4f5fc81f1af46a5d3342b3412dc190d1b13a665"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-1440-privacy.png",
+    "width": 617,
+    "height": 194,
+    "bytes": 33496,
+    "sha256": "e61d369f82448edf6208efc5e68ab8b1db945c0ac6c3a2f2ba4087b4b5801e16"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-320-full.png",
+    "width": 320,
+    "height": 3233,
+    "bytes": 154654,
+    "sha256": "80983a14f8702d2df68330b34e8b87bd366b51054c452332c683a3ce465ad91a"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-320-privacy.png",
+    "width": 250,
+    "height": 395,
+    "bytes": 33948,
+    "sha256": "6e1a6c92bc0010e1a8228614cc40d45cfe384f2a8a68b1b3b5f3f7bac34d5c5a"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-390-full.png",
+    "width": 390,
+    "height": 3033,
+    "bytes": 154914,
+    "sha256": "bcee581eba89cf4d467ac72fcaef0ede57a78a7b4043e3188585e5779c206a16"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-390-privacy.png",
+    "width": 320,
+    "height": 345,
+    "bytes": 32004,
+    "sha256": "316bc2af3adf00958e0f8d55a75a59e9446035c4a3b592310b10427be14953a8"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-768-full.png",
+    "width": 768,
+    "height": 2574,
+    "bytes": 162185,
+    "sha256": "099778c251ca5382a5b7f4e346eaa5e46d22cded5aefba6a907e7227aa82dcfb"
+  },
+  {
+    "file": "regression/privacy/screenshots/he-768-privacy.png",
+    "width": 668,
+    "height": 193,
+    "bytes": 32919,
+    "sha256": "e6b1d064297d783443cdece2c510031024226838c1630dc88050f93b753e0d58"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 358032,
+    "sha256": "fefe94c1792e74555585513d0cf1685a4ddd5ebfa51bd0d1346584edba24fbc2"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-1024-hanging-home-sign-product.png",
+    "width": 1024,
+    "height": 1132,
+    "bytes": 431056,
+    "sha256": "3dd42aae3dba2bb5341a3bc63be692aa9be09e3e2d87c15dabf586d5ae10d5e3"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 540186,
+    "sha256": "f1961bdf68367cd9b6a9d94bde649f2e21dedb73ee415f608c06c70016674116"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-1440-hanging-home-sign-product.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 670382,
+    "sha256": "2dc37b17260209b23e8fdf30ba4b9dda221c09242bcbb9a5fb915896ce309e5a"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-320-family-sign-product.png",
+    "width": 320,
+    "height": 1543,
+    "bytes": 160733,
+    "sha256": "e8f3e62712b3b4c4c9769f9e3019f984081e56a872882e285127cc250715bd0f"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-320-hanging-home-sign-product.png",
+    "width": 320,
+    "height": 1621,
+    "bytes": 184624,
+    "sha256": "556b989b53e530e1b24e60ec62045090ab7d8c156dee0362258bc2e7db02b5e7"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-390-family-sign-product.png",
+    "width": 390,
+    "height": 1514,
+    "bytes": 218979,
+    "sha256": "140aa915dd0b6426a4396ffda1c2f86e1c44d68520dbf392c69fceaea456fc84"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-390-hanging-home-sign-product.png",
+    "width": 390,
+    "height": 1595,
+    "bytes": 255895,
+    "sha256": "48ac82013e859329f46ac2c55c4f48e02200ff4c191240c0d5cc05316f45b7b8"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-768-family-sign-product.png",
+    "width": 768,
+    "height": 1180,
+    "bytes": 240924,
+    "sha256": "6d10f0b6ff7d35a46580c44a19155b8b1a24f84eca22349907d2f2ef58b3a6ce"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/en-768-hanging-home-sign-product.png",
+    "width": 768,
+    "height": 1207,
+    "bytes": 284192,
+    "sha256": "6fb173b754e1525f5b44961935a57033367c471b78f6993b18016f92bd61a5f9"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-1024-family-sign-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 348636,
+    "sha256": "1e273fcfce6683b1d9fc5f4dc19b89fe5991757e40fdf31ccdab57231d007999"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-1024-hanging-home-sign-product.png",
+    "width": 1024,
+    "height": 1058,
+    "bytes": 408812,
+    "sha256": "0316d238039a089b7658a955f4b37712b11d0613edcad22d1490bb39df7ac97b"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-1440-family-sign-product.png",
+    "width": 1440,
+    "height": 1124,
+    "bytes": 527141,
+    "sha256": "b22efa38161d987436c5d9b0c3e2d9fd965773c48041dbf22a4faee2b3403e5d"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-1440-hanging-home-sign-product.png",
+    "width": 1440,
+    "height": 1158,
+    "bytes": 641926,
+    "sha256": "c331a90c93c971370aef4feb04f7f5ea46e24f0ffb38639b22eee9d19d8dcd18"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-320-family-sign-product.png",
+    "width": 320,
+    "height": 1396,
+    "bytes": 149695,
+    "sha256": "0e2448496dae0bfa5f8d4f35210c79693d9e826458d8622e00e1ceedd0e4f0bb"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-320-hanging-home-sign-product.png",
+    "width": 320,
+    "height": 1430,
+    "bytes": 165939,
+    "sha256": "df0200356fd4fa2195da3c46a42059f510872d1178676e68ffafbfd427ee592f"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-390-family-sign-product.png",
+    "width": 390,
+    "height": 1417,
+    "bytes": 208242,
+    "sha256": "b95ddb8c9101cdddd9acdde8f7a2aab1eb3d367c2ac6bb1fe29535c1ed1f640a"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-390-hanging-home-sign-product.png",
+    "width": 390,
+    "height": 1477,
+    "bytes": 236810,
+    "sha256": "b19ede414d16363cd087addba05bfffaa8bc4f20ef3b740ce91486456b8a4166"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-768-family-sign-product.png",
+    "width": 768,
+    "height": 1139,
+    "bytes": 227786,
+    "sha256": "e6d57c37710f0d99878f91e3d9ec76436471d2747e8cc2df3ed0c0652ec9d5f0"
+  },
+  {
+    "file": "regression/schwartz-sign/screenshots/he-768-hanging-home-sign-product.png",
+    "width": 768,
+    "height": 1107,
+    "bytes": 262110,
+    "sha256": "a5859cc2e4e2d38af6863c9d8b6a5d50728aaf292eba4069ee6b8b9ecf688a40"
+  },
+  {
+    "file": "stage-a/en-1440.png",
+    "width": 1440,
+    "height": 1235,
+    "bytes": 549152,
+    "sha256": "797e8d9ee2482cb8c93bab00eda56d00e25edb317d170dc546845546449b9adb"
+  },
+  {
+    "file": "stage-a/en-390.png",
+    "width": 390,
+    "height": 2147,
+    "bytes": 495883,
+    "sha256": "a6b7eb5eb093af35fdd308644c4beef396cbb8c9d821d2b0b3746e0b3b9045f4"
+  },
+  {
+    "file": "stage-a/he-1440.png",
+    "width": 1440,
+    "height": 1198,
+    "bytes": 528900,
+    "sha256": "5a8815d02a79b3e6818d364aa17ab1e7f1ec2627307ad311acfadd29d5b27328"
+  },
+  {
+    "file": "stage-a/he-390.png",
+    "width": 390,
+    "height": 2091,
+    "bytes": 479933,
+    "sha256": "64f3a93d5d4d5cd8aa04734db94792f77a2dfad1b9826fae52476a747ade7ea7"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "tool": "check-shared-privacy",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 57.82,
+    "log": "run-history/privacy-run-1.log"
+  },
+  {
+    "tool": "check-homepage",
+    "status": "FAIL",
+    "exitCode": 1,
+    "seconds": 6.47,
+    "log": "run-history/homepage-run-1.log"
+  },
+  {
+    "tool": "check-clock",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 455.29,
+    "log": "run-history/clock-run-1.log"
+  },
+  {
+    "tool": "check-family-sign",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 214.71,
+    "log": "run-history/family-sign-run-1.log"
+  },
+  {
+    "tool": "check-schwartz-sign",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 343.48,
+    "log": "run-history/schwartz-sign-run-1.log"
+  },
+  {
+    "tool": "check-pizza-peel",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 285.56,
+    "log": "run-history/pizza-peel-run-1.log"
+  },
+  {
+    "tool": "check-inquiry",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 345.69,
+    "log": "run-history/inquiry-run-1.log"
+  },
+  {
+    "tool": "check-lead-attribution",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 340.15,
+    "log": "run-history/attribution-run-1.log"
+  }
+]
