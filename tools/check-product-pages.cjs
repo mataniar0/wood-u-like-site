@@ -1,6 +1,6 @@
 "use strict";
 
-// WUL-019: serve the repository below its real Pages prefix, then inspect every
+// WUL-020: serve the repository below its real Pages prefix, then inspect every
 // product in both languages. Every outgoing submission is either a browser-only
 // mock below or aborted. Production contact configuration is never edited.
 const assert = require("node:assert/strict");
@@ -11,32 +11,25 @@ const { execFileSync } = require("node:child_process");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
 const sample = process.env.WUL_PRODUCT_SAMPLE === "1";
-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-019/product-pages${sample ? "/stage-a" : ""}`);
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-020/product-pages${sample ? "/stage-a" : ""}`);
 const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8016/wood-u-like-site/";
 const origin = new URL(base).origin;
 const prefix = new URL(base).pathname;
-const baseline = process.env.WUL_BASE_COMMIT || "7644007";
+const baseline = process.env.WUL_BASE_COMMIT || "c1242a1";
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
 const groups = [
-  { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign"] },
+  { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign", "oval-room-signs"] },
   { slug: "kitchen-hosting", products: ["kitchen", "pizza-peel"] },
   { slug: "judaica-tradition", products: ["blessing"] },
   { slug: "gifts-memories", products: ["personalized-clock"] },
 ];
-const products = [
-  { id: "welcome", key: "welcome", file: "hero-welcome", name: "Welcome sign", he: "שלט ברוכים הבאים" },
-  { id: "family-sign", key: "family", file: "family-sign", name: "Personalized wooden door sign", he: "שלט משפחתי לדלת" },
-  { id: "hanging-home-sign", key: "schwartz", file: "schwartz-home-sign", name: "Personalized hanging wooden home sign", he: "שלט תלוי לבית" },
-  { id: "kitchen", key: "kitchen", file: "kitchen-board", name: "Engraved kitchen board", he: "קרש מטבח חרוט" },
-  { id: "pizza-peel", key: "pizzaPeel", file: "pizza-peel", name: "Personalized Pizza Peel", he: "מרדה לפיצה" },
-  { id: "blessing", key: "blessing", file: "judaica-blessing", name: "Candle-lighting blessing", he: "ברכת הדלקת נרות" },
-  { id: "personalized-clock", key: "clock", file: "personalized-clock-front", name: "Personalized Engraved Wooden Clock", he: "שעון עץ בחריטה אישית" },
-].map(product => ({ ...product, group: groups.find(group => group.products.includes(product.id)).slug }));
+const products = require('./qa-collections-shared.cjs').products.map(p=>({id:p.product_id,key:p.title_key.split('.')[1],file:path.basename(p.images[0].src,'.webp'),name:p.name.en,he:p.name.he,group:p.collection}));
+
 const clockPhotos = ["front", "handheld-detail", "hanging"];
 const canonicalBase = "https://mataniar0.github.io/wood-u-like-site/";
-const mockEndpoint = "https://formspree.io/f/wul019qatest";
+const mockEndpoint = "https://formspree.io/f/wul020qatest";
 const result = {
-  task: "WUL-019 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
+  task: "WUL-020", regressionContract: "WUL-018 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
   mapping: products, preservation: [], scenarios: [], routes: [], metadata: [],
   requests: { mockedPosts: 0, unexpectedSubmissions: 0, unexpectedExternal: 0, realInquiries: 0 },
   limitations: ["Chromium only; Firefox/Safari and manual screen-reader review not run", "Local Pages-prefix server; no deployment or live-site verification", "English metadata changes in the browser; no separate English SEO URL"],
@@ -50,19 +43,10 @@ function write(extra = {}) {
   fs.writeFileSync(path.join(out, "results.json"), JSON.stringify({ ...result, ...extra }, null, 2) + "\n");
 }
 function preserve() {
-  const original = execFileSync("git", ["ls-tree", "-r", "--name-only", baseline, "assets/images"], { cwd: root, encoding: "utf8" }).trim().split("\n").filter(file => file.endsWith(".webp"));
-  const current = fs.readdirSync(path.join(root, "assets/images")).filter(file => file.endsWith(".webp")).map(file => `assets/images/${file}`);
-  assert.deepEqual(current.sort(), original.sort(), "All and only approved baseline WebPs remain");
-  for (const file of [...original, "inquiry/contact-config.js", "inquiry/inquiry.js", "assets/js/attribution.js"]) {
-    const before = execFileSync("git", ["show", `${baseline}:${file}`], { cwd: root });
-    const bytes = fs.readFileSync(path.join(root, file));
-    assert.equal(sha(bytes), sha(before), `${file}: approved bytes preserved`);
-    result.preservation.push({ file, sha256: sha(bytes), status: "PASS" });
-  }
-  const config = fs.readFileSync(path.join(root, "inquiry/contact-config.js"), "utf8");
-  for (const flag of ["formDestinationApproved", "privacyApproved", "contactDetailsApproved"]) assert.match(config, new RegExp(`${flag}: false`));
-  return new Set(original);
+ result.preservation=require('./qa-collections-shared.cjs').preservation();
+ return new Set(fs.readdirSync(path.join(root,'assets/images')).filter(f=>f.endsWith('.webp')).map(f=>'assets/images/'+f));
 }
+
 async function contextFor(browser, options = {}) {
   const { language, mocked = false, ...browserOptions } = options;
   const context = await browser.newContext({ serviceWorkers: "block", reducedMotion: "reduce", ...browserOptions });
@@ -277,7 +261,7 @@ async function homeContract(page, language) {
     assert.equal(await page.locator(`#collection-${group.slug}`).count(), 1);
   }
   for (const id of ["favorites", "original-gifts", "story", "personal", "top"]) assert.equal(await page.locator(`#${id}`).count(), 1);
-  for (const product of products) assert.equal(await page.locator(`#${product.id}-work.legacy-product .product-details-link`).getAttribute("href"), `products/${product.id}/`);
+  for (const product of products.filter(p=>p.id!=='oval-room-signs')) assert.equal(await page.locator(`#${product.id}-work.legacy-product .product-details-link`).getAttribute("href"), `products/${product.id}/`);
   await translations(page, language);
 }
 
@@ -352,7 +336,7 @@ async function homeContract(page, language) {
           await page.locator(".product-quote-link").click(); assert.equal(new URL(page.url()).searchParams.get("product"), product.id);
           await page.locator(".inquiry-back").click(); assert.equal(new URL(page.url()).pathname, prefix);
         }
-        result.nativeNavigation = { products: 7, homeCollectionProductFormHome: "PASS", status: "PASS" };
+        result.nativeNavigation = { products: products.length, homeCollectionProductFormHome: "PASS", status: "PASS" };
       } finally { await nativeContext.close(); }
       // The fixture exists only as a fulfilled browser response. The checked-in
       // flags stay false, and every simulated POST is intercepted before network.
@@ -360,13 +344,13 @@ async function homeContract(page, language) {
         const { context, posts } = await contextFor(browser, { language, mocked: true, viewport: { width: 390, height: 844 } });
         try {
           const page = await context.newPage(), errors = watch(page);
-          const params = new URLSearchParams({ utm_source: "qa_wul019", utm_campaign: "product-pages", email: "untrusted@example.invalid", product_id: "untrusted", source_page: "untrusted" });
+          const params = new URLSearchParams({ utm_source: "qa_wul020", utm_campaign: "product-pages", email: "untrusted@example.invalid", product_id: "untrusted", source_page: "untrusted" });
           await page.goto(new URL(`products/${product.id}/?${params}`, base).href); await ready(page, language);
           await page.locator(".product-quote-link").click(); await ready(page, language); assert.equal(await page.locator("#product").inputValue(), product.id);
           await page.locator("#customer-name").fill("QA product page fixture"); await page.locator("#contact").fill("wul019-fixture@example.invalid"); await page.locator("#quantity").fill("1");
           await page.locator("#inquiry-form").evaluate(form => form.requestSubmit()); await page.waitForFunction(() => document.querySelector("#inquiry-status").dataset.state === "success");
           assert.equal(posts.length, 1); const data = posts[0];
-          for (const [key, expected] of Object.entries({ product: product.id, product_id: product.id, product_name: product.name, language, brand: "WOOD U LIKE", source_site: "wood-u-like-site", source_page: new URL("inquiry/", base).href, utm_source: "qa_wul019", utm_campaign: "product-pages" })) assert.equal(data[key], expected, `Canonical payload ${key}`);
+          for (const [key, expected] of Object.entries({ product: product.id, product_id: product.id, product_name: product.name, language, brand: "WOOD U LIKE", source_site: "wood-u-like-site", source_page: new URL("inquiry/", base).href, utm_source: "qa_wul020", utm_campaign: "product-pages" })) assert.equal(data[key], expected, `Canonical payload ${key}`);
           assert.equal(data.product_label, await page.evaluate(id => WUL_I18N.t(`inquiry.product.${id}`), product.id)); assert.equal(data.source_page.includes("?"), false); assert.match(data.submitted_at, /^\d{4}-\d\d-\d\dT/u);
           const storage = await page.evaluate(() => ({ local: Object.fromEntries(Object.entries(localStorage)), session: Object.fromEntries(Object.entries(sessionStorage)) }));
           assert.deepEqual(storage, { local: { "wood-u-like-language": language }, session: {} }, "No private or unknown query identifiers retained"); assert.deepEqual(errors, []);
@@ -378,6 +362,6 @@ async function homeContract(page, language) {
     assert.equal(result.requests.unexpectedSubmissions, 0); assert.equal(result.requests.unexpectedExternal, 0); assert.equal(result.requests.realInquiries, 0);
     result.routes = [...linkCache.keys()].sort().map(url => ({ path: new URL(url).pathname, status: "PASS" }));
     write({ status: "PASS", completedAt: new Date().toISOString() });
-    console.log(`PASS WUL-019: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
+    console.log(`PASS WUL-020: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
   } finally { if (decoderContext) await decoderContext.close(); await browser.close(); }
 })().catch(error => { write({ status: "FAIL", failure: error.message, completedAt: new Date().toISOString() }); console.error(error); process.exitCode = 1; });

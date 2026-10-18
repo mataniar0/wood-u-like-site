@@ -196,3 +196,28 @@ WUL_REVIEW_DIR=docs/review/wul-019/regression/privacy node tools/check-shared-pr
 שלושת כלי רגרסיית זהות המוצרים משתמשים כעת ב־`check-product-identity.cjs`, כדי לבדוק את אותם צילומים, ALT, מידות, contain, קישורי מוצר/טופס, החלפת שפה, נגישות וחסימת שליחה בתשתית משותפת. `qa-collections-shared.cjs` הוא קוד בדיקה בלבד ואינו נטען באתר.
 
 [דוח המסירה](docs/review/wul-019/REPORT_HE.md), [סיכום מכונה](docs/review/wul-019/QA_SUMMARY.json), [מפת שיוך](docs/review/wul-019/CATEGORY_PRODUCT_MAP.json) ו־[הוראות תחזוקה למוצר שמיני](docs/review/wul-019/README.md) כוללים את הראיות ואת גבולות הבדיקה. WUL-015 / Issue #26 עדיין לא מוזג לבסיס `7644007`, לכן נשמרו שבעה מוצרים. אין Merge, Deploy, מחיקת ענף או הפעלת פניות במשימה זו; נדרשת סקירת ראש צוות עצמאית בציון 90/100 לפחות, ללא חוסמים.
+
+
+## WUL-020 — שלטי חדר אליפטיים
+
+מוצר שמיני אחד, `oval-room-signs`, נוסף ל־Home Signs & Decor. שלוש דוגמאות הכיתוב שייכות לאותו מוצר; בטופס יש אפשרות אחת עם מזהה קבוע. המבנה הנוכחי כולל ארבע קולקציות עם 4 / 2 / 1 / 1 מוצרים. עמוד [products/oval-room-signs/](products/oval-room-signs/index.html) מכיל צילום מלא, קישור טבעי לפתיחתו, דוגמאות כיתוב, התאמה אישית וקישור ל־`inquiry/?product=oval-room-signs`.
+
+הצילום הוא עותק זהה של התצלום המאושר הקיים `workshop.webp` (R1-09), עם גרסאות large/small ייעודיות למוצר. לא בוצע עיבוד חזותי חדש. חבילת המקור שנזכרה בבקשה לא הייתה זמינה; [מניפסט המקור](docs/review/wul-020/PHOTO_MANIFEST.json) מתעד זאת במפורש. [חבילת המסירה](docs/review/wul-020/wul-020-assets.zip) נוצרה עבור המשימה ואינה מוצגת כקובץ מקור שהתקבל.
+
+שבעת עמודי המוצר, שלוש הקולקציות האחרות, דף הבית וה־Hero נשמרו ללא שינוי. השינוי בטופס מוגבל לאפשרות ולרשומת המוצר; `contact-config.js` והשיוך נשארו ללא שינוי, עם שליחה ציבורית חסומה. ללא JavaScript זמינים התוכן העברי, התמונה והקישורים הטבעיים; האנגלית פועלת במנגנון הקיים.
+
+כלי בדיקת הקולקציות/המוצרים משתמשים כעת במפת WUL-020 ובבסיס `c1242a1`; סעיפי המשימות הקודמות מתעדים את המבנה ההיסטורי. להרצה עדכנית ולשמירת הדוחות הקודמים:
+
+```sh
+export NODE_PATH=/tmp/wul-check/node_modules
+export WUL_BASE_URL=http://127.0.0.1:8001/wood-u-like-site/
+export WUL_BASE_COMMIT=c1242a1
+node tools/check-collection-contract.cjs
+python3 tools/verify-oval-room-assets.py
+node tools/check-collections.cjs
+node tools/check-product-pages.cjs
+node tools/check-oval-room-signs.cjs
+# Set WUL_REVIEW_DIR=docs/review/wul-020/regression/<suite> for each regression tool.
+```
+
+[דוח QA ומסירה](docs/review/wul-020/REPORT_HE.md), [סיכום בדיקות](docs/review/wul-020/QA_SUMMARY.json), [מפת המוצרים](docs/review/wul-020/CATEGORY_PRODUCT_MAP.json) ו־[רשימת שינויים](docs/review/wul-020/CHANGED_FILES.txt) כוללים תוצאות, צילומים, פקודות וגבולות בדיקה. אין Merge או Deploy במסגרת המשימה.

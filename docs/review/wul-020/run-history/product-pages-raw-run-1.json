@@ -1,0 +1,3674 @@
+{
+  "task": "WUL-020 / Issue #32",
+  "baseline": "c1242a1",
+  "mode": "full",
+  "startedAt": "2026-10-18T19:21:29.501Z",
+  "mapping": [
+    {
+      "id": "welcome",
+      "key": "welcome",
+      "file": "hero-welcome",
+      "name": "Welcome sign",
+      "he": "שלט ברוכים הבאים",
+      "group": "home-decor"
+    },
+    {
+      "id": "family-sign",
+      "key": "family",
+      "file": "family-sign",
+      "name": "Personalized wooden door sign",
+      "he": "שלט משפחתי לדלת",
+      "group": "home-decor"
+    },
+    {
+      "id": "hanging-home-sign",
+      "key": "schwartz",
+      "file": "schwartz-home-sign",
+      "name": "Personalized hanging wooden home sign",
+      "he": "שלט תלוי לבית",
+      "group": "home-decor"
+    },
+    {
+      "id": "oval-room-signs",
+      "key": "ovalRoomSigns",
+      "file": "oval-room-signs",
+      "name": "Personalized Oval Room Signs",
+      "he": "שלטי חדר אליפטיים",
+      "group": "home-decor"
+    },
+    {
+      "id": "kitchen",
+      "key": "kitchen",
+      "file": "kitchen-board",
+      "name": "Engraved kitchen board",
+      "he": "קרש מטבח חרוט",
+      "group": "kitchen-hosting"
+    },
+    {
+      "id": "pizza-peel",
+      "key": "pizzaPeel",
+      "file": "pizza-peel",
+      "name": "Personalized Pizza Peel",
+      "he": "מרדה לפיצה",
+      "group": "kitchen-hosting"
+    },
+    {
+      "id": "blessing",
+      "key": "blessing",
+      "file": "judaica-blessing",
+      "name": "Candle-lighting blessing",
+      "he": "ברכת הדלקת נרות",
+      "group": "judaica-tradition"
+    },
+    {
+      "id": "personalized-clock",
+      "key": "clock",
+      "file": "personalized-clock-front",
+      "name": "Personalized Engraved Wooden Clock",
+      "he": "שעון עץ בחריטה אישית",
+      "group": "gifts-memories"
+    }
+  ],
+  "preservation": [
+    {
+      "file": "assets/css/collection.css",
+      "sha256": "6fe2fe4a5bd6d4495487cbe32983b1e00e91ee1fe1f4656e80814b1aa61a9ee2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/css/style.css",
+      "sha256": "098b0fc57ebb66e203616e7a9710cbf2b1338555e53fcd4095400e022d89d3de",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/README.md",
+      "sha256": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/clock-gallery.js",
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/main.js",
+      "sha256": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/gifts-memories/index.html",
+      "sha256": "ae1888c0cd8fbfa62297508ef97dcbf76aeab765b49b94d9ddc9e2e48372abd7",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/judaica-tradition/index.html",
+      "sha256": "1e1e53f2ab1262e57eacca5e0b7844bac070cc2b57970572e27899c753f91232",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/kitchen-hosting/index.html",
+      "sha256": "faabaa1dbb4b74798e2ec68dccd4eed2ae3680f2df8118750c1a4888a202a17c",
+      "status": "PASS"
+    },
+    {
+      "file": "index.html",
+      "sha256": "7a67fe05698579acc588ca3033a7948589f2372ed9eb125ebee31b46cd714954",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/README.md",
+      "sha256": "e5fb7862edcd2e5425fad2f274837018c4b657c2075f6b75840711050659e6e5",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.css",
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+      "status": "PASS"
+    },
+    {
+      "file": "products/blessing/index.html",
+      "sha256": "563d8889d56a6e890e7e0e9593e64de5b8822e91f699ab6639b50c425e8707e9",
+      "status": "PASS"
+    },
+    {
+      "file": "products/family-sign/index.html",
+      "sha256": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c",
+      "status": "PASS"
+    },
+    {
+      "file": "products/hanging-home-sign/index.html",
+      "sha256": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c",
+      "status": "PASS"
+    },
+    {
+      "file": "products/kitchen/index.html",
+      "sha256": "1c2f92921e6b344ab1540c974951505f013b0c9bbe1ad78958cf10f9eab2076e",
+      "status": "PASS"
+    },
+    {
+      "file": "products/personalized-clock/index.html",
+      "sha256": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13",
+      "status": "PASS"
+    },
+    {
+      "file": "products/pizza-peel/index.html",
+      "sha256": "3c9e33bc33ef52bac157a7cef1926fd2e47ddc8f86c24617f74ec8ec070803a9",
+      "status": "PASS"
+    },
+    {
+      "file": "products/welcome/index.html",
+      "sha256": "5d5971b5a637f69b111f6b2b5f46fbc359b3139429ad44aa880aba61b3b555be",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/oval-room-signs.webp",
+      "source": "assets/images/workshop.webp",
+      "status": "PASS",
+      "byteIdenticalApprovedSource": true
+    },
+    {
+      "file": "assets/images/oval-room-signs-small.webp",
+      "source": "assets/images/workshop-small.webp",
+      "status": "PASS",
+      "byteIdenticalApprovedSource": true
+    }
+  ],
+  "scenarios": [
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 16710,
+          "largestColorFraction": 0.007699933906146729
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 16710,
+          "largestColorFraction": 0.007699933906146729
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 23120,
+          "largestColorFraction": 0.007424485997123276
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 23120,
+          "largestColorFraction": 0.007424485997123276
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 23936,
+          "largestColorFraction": 0.007640067911714771
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 23943,
+          "largestColorFraction": 0.007640067911714771
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 36439,
+          "largestColorFraction": 0.0069655549480590485
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 36440,
+          "largestColorFraction": 0.0069655549480590485
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 47712,
+          "largestColorFraction": 0.007821775263635729
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "welcome",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-welcome.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 47717,
+          "largestColorFraction": 0.007821775263635729
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 21894,
+          "largestColorFraction": 0.0008592200925313946
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 21971,
+          "largestColorFraction": 0.0007931262392597488
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 30921,
+          "largestColorFraction": 0.0012479905237329724
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 30921,
+          "largestColorFraction": 0.0012479905237329724
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 31933,
+          "largestColorFraction": 0.001152073732718894
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 31933,
+          "largestColorFraction": 0.001152073732718894
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 49518,
+          "largestColorFraction": 0.001202843083652269
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 49518,
+          "largestColorFraction": 0.001202843083652269
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 68801,
+          "largestColorFraction": 0.0008380473496752566
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "family-sign",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-family-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 68801,
+          "largestColorFraction": 0.0008380473496752566
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 14931,
+          "largestColorFraction": 0.0023463317911434235
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 14931,
+          "largestColorFraction": 0.0023463317911434235
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 21309,
+          "largestColorFraction": 0.0028344191555969202
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 21236,
+          "largestColorFraction": 0.002749809628564176
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 21907,
+          "largestColorFraction": 0.0025871129436494463
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 21907,
+          "largestColorFraction": 0.0025871129436494463
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 31645,
+          "largestColorFraction": 0.002711864406779661
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 31645,
+          "largestColorFraction": 0.002711864406779661
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 41004,
+          "largestColorFraction": 0.0025649327974909372
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-hanging-home-sign.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 41004,
+          "largestColorFraction": 0.0025649327974909372
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 14280,
+          "distinctColors": 5510,
+          "largestColorFraction": 0.003711484593837535
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 14280,
+          "distinctColors": 5559,
+          "largestColorFraction": 0.004201680672268907
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 22260,
+          "distinctColors": 7300,
+          "largestColorFraction": 0.0035489667565139263
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 22260,
+          "distinctColors": 7300,
+          "largestColorFraction": 0.0035489667565139263
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 23219,
+          "distinctColors": 7445,
+          "largestColorFraction": 0.0037899995693182306
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 23219,
+          "distinctColors": 7443,
+          "largestColorFraction": 0.0037899995693182306
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 43070,
+          "distinctColors": 11433,
+          "largestColorFraction": 0.002925470164847922
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 43070,
+          "distinctColors": 11433,
+          "largestColorFraction": 0.002925470164847922
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 73917,
+          "distinctColors": 15540,
+          "largestColorFraction": 0.003179241581774152
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "oval-room-signs",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-oval-room-signs.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 73917,
+          "distinctColors": 15540,
+          "largestColorFraction": 0.003179241581774152
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 10003,
+          "largestColorFraction": 0.007303370786516854
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 10003,
+          "largestColorFraction": 0.007303370786516854
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13468,
+          "largestColorFraction": 0.007234114561299602
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13468,
+          "largestColorFraction": 0.007234114561299602
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 13965,
+          "largestColorFraction": 0.007821974290565123
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 13969,
+          "largestColorFraction": 0.007821974290565123
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 22880,
+          "largestColorFraction": 0.004330235101148169
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 22880,
+          "largestColorFraction": 0.004330235101148169
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 32212,
+          "largestColorFraction": 0.004615609266772057
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "kitchen",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-kitchen.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 32212,
+          "largestColorFraction": 0.004615609266772057
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 13694,
+          "largestColorFraction": 0.002445472571050892
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 13681,
+          "largestColorFraction": 0.002478519497686715
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 18285,
+          "largestColorFraction": 0.0025805905744986884
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 18285,
+          "largestColorFraction": 0.0025805905744986884
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 18799,
+          "largestColorFraction": 0.002526477484032662
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 18799,
+          "largestColorFraction": 0.002526477484032662
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 29229,
+          "largestColorFraction": 0.003367960634226353
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 29248,
+          "largestColorFraction": 0.003367960634226353
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 36486,
+          "largestColorFraction": 0.0023427232729558312
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-pizza-peel.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 36490,
+          "largestColorFraction": 0.0023427232729558312
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 9160,
+          "largestColorFraction": 0.006873760740251157
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 9038,
+          "largestColorFraction": 0.0073694646397885
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 12022,
+          "largestColorFraction": 0.006472628818004907
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 12022,
+          "largestColorFraction": 0.006472628818004907
+        }
+      ],
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 12272,
+          "largestColorFraction": 0.006710324197590751
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 12281,
+          "largestColorFraction": 0.006710324197590751
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 18830,
+          "largestColorFraction": 0.0057189721159103335
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 18830,
+          "largestColorFraction": 0.0057189721159103335
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 25222,
+          "largestColorFraction": 0.005733005733005733
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "blessing",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-blessing.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 25213,
+          "largestColorFraction": 0.005739354576563879
+        }
+      ],
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 9811,
+          "largestColorFraction": 0.007699933906146729
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 9874,
+          "largestColorFraction": 0.0072372769332452085
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13091,
+          "largestColorFraction": 0.0073821812336069045
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": [
+          {
+            "screenshot": "screenshots/he-390-personalized-clock-handheld-detail.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 47276,
+                "distinctColors": 16009,
+                "largestColorFraction": 0.01821220069379812
+              }
+            ]
+          },
+          {
+            "screenshot": "screenshots/he-390-personalized-clock-hanging.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 47276,
+                "distinctColors": 12763,
+                "largestColorFraction": 0.014743210085455623
+              }
+            ]
+          }
+        ]
+      },
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13092,
+          "largestColorFraction": 0.007361028851848718
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": [
+          {
+            "screenshot": "screenshots/en-390-personalized-clock-handheld-detail.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 47276,
+                "distinctColors": 16025,
+                "largestColorFraction": 0.01852948642017091
+              }
+            ]
+          },
+          {
+            "screenshot": "screenshots/en-390-personalized-clock-hanging.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 47276,
+                "distinctColors": 12763,
+                "largestColorFraction": 0.014743210085455623
+              }
+            ]
+          }
+        ]
+      },
+      "navigation": {
+        "directSharingReload": "PASS",
+        "collectionHomeProductForm": "PASS",
+        "originalProductPreselection": "PASS",
+        "languagePersistence": "PASS",
+        "browserBackForward": "PASS",
+        "blockedPublicSend": "PASS"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 13485,
+          "largestColorFraction": 0.007559220632225726
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 49476,
+          "distinctColors": 13486,
+          "largestColorFraction": 0.007559220632225726
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 19847,
+          "largestColorFraction": 0.007337342810278841
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 91450,
+          "distinctColors": 19847,
+          "largestColorFraction": 0.007337342810278841
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": []
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 24282,
+          "largestColorFraction": 0.0050092375673771025
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": [
+          {
+            "screenshot": "screenshots/he-1440-personalized-clock-handheld-detail.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 157509,
+                "distinctColors": 38552,
+                "largestColorFraction": 0.015141991886177932
+              }
+            ]
+          },
+          {
+            "screenshot": "screenshots/he-1440-personalized-clock-hanging.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 157509,
+                "distinctColors": 26317,
+                "largestColorFraction": 0.012132640039616784
+              }
+            ]
+          }
+        ]
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "product",
+      "product": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-personalized-clock.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 24282,
+          "largestColorFraction": 0.0050092375673771025
+        }
+      ],
+      "gallery": {
+        "slides": 3,
+        "mouse": "PASS",
+        "keyboardRtlLtrWrappingHomeEnd": "PASS",
+        "focus": "PASS",
+        "languageRetainsSlide": "PASS",
+        "reducedMotion": "PASS",
+        "evidence": [
+          {
+            "screenshot": "screenshots/en-1440-personalized-clock-handheld-detail.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 157509,
+                "distinctColors": 38552,
+                "largestColorFraction": 0.015141991886177932
+              }
+            ]
+          },
+          {
+            "screenshot": "screenshots/en-1440-personalized-clock-hanging.png",
+            "photographPixels": [
+              {
+                "sampledPixels": 157509,
+                "distinctColors": 26317,
+                "largestColorFraction": 0.012132640039616784
+              }
+            ]
+          }
+        ]
+      },
+      "navigation": {
+        "coveredAtWidth": 390,
+        "note": "Each product and language is exercised through the complete navigation and history sequence at 390px; layout and links are checked at every width"
+      },
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 6471,
+          "largestColorFraction": 0.043010752688172046
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 4023,
+          "largestColorFraction": 0.0047789725209080045
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 4119,
+          "largestColorFraction": 0.005973715651135006
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 3786,
+          "largestColorFraction": 0.006371963361210673
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 6424,
+          "largestColorFraction": 0.043010752688172046
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 4001,
+          "largestColorFraction": 0.005575467941059339
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 4113,
+          "largestColorFraction": 0.006106464887826895
+        },
+        {
+          "sampledPixels": 7533,
+          "distinctColors": 3797,
+          "largestColorFraction": 0.007035709544670118
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 9298,
+          "largestColorFraction": 0.001027077497665733
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 4972,
+          "largestColorFraction": 0.0056022408963585435
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 5136,
+          "largestColorFraction": 0.006442577030812325
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 4789,
+          "largestColorFraction": 0.007096171802054155
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 9267,
+          "largestColorFraction": 0.0008403361344537816
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 4982,
+          "largestColorFraction": 0.005415499533146592
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 5134,
+          "largestColorFraction": 0.006442577030812325
+        },
+        {
+          "sampledPixels": 10710,
+          "distinctColors": 4782,
+          "largestColorFraction": 0.0070028011204481795
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 19799,
+          "largestColorFraction": 0.002050580997949419
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 8718,
+          "largestColorFraction": 0.00911369332421964
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 9333,
+          "largestColorFraction": 0.0430622009569378
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 11305,
+          "largestColorFraction": 0.004817237899944667
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 19726,
+          "largestColorFraction": 0.0016599941411971487
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 8718,
+          "largestColorFraction": 0.00911369332421964
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 9326,
+          "largestColorFraction": 0.0430622009569378
+        },
+        {
+          "sampledPixels": 30723,
+          "distinctColors": 11293,
+          "largestColorFraction": 0.004719591185756599
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 25165,
+          "largestColorFraction": 0.0014560210048931853
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 15258,
+          "largestColorFraction": 0.006707244301229264
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 9339,
+          "largestColorFraction": 0.2982456140350877
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 11939,
+          "largestColorFraction": 0.1824561403508772
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 25225,
+          "largestColorFraction": 0.001479890201694713
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 15249,
+          "largestColorFraction": 0.0067311134980307915
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 9323,
+          "largestColorFraction": 0.2982456140350877
+        },
+        {
+          "sampledPixels": 41895,
+          "distinctColors": 11915,
+          "largestColorFraction": 0.1824561403508772
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 21473,
+          "largestColorFraction": 0.0008131667967733541
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 9416,
+          "largestColorFraction": 0.008489461358313818
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 9999,
+          "largestColorFraction": 0.008847254748894093
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 10122,
+          "largestColorFraction": 0.006049960967993755
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "home",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-home.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 21473,
+          "largestColorFraction": 0.0008131667967733541
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 9458,
+          "largestColorFraction": 0.008782201405152224
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 9991,
+          "largestColorFraction": 0.008717148061410357
+        },
+        {
+          "sampledPixels": 30744,
+          "distinctColors": 10124,
+          "largestColorFraction": 0.006049960967993755
+        }
+      ],
+      "axeViolations": [],
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-welcome-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 23083,
+          "largestColorFraction": 0.00761485743294695
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "welcome",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-welcome-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 47712,
+          "largestColorFraction": 0.007821775263635729
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-family-sign-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 30920,
+          "largestColorFraction": 0.0012479905237329724
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "family-sign",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-family-sign-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 68801,
+          "largestColorFraction": 0.0008380473496752566
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-hanging-home-sign-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 21236,
+          "largestColorFraction": 0.002749809628564176
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-hanging-home-sign-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 41004,
+          "largestColorFraction": 0.0025649327974909372
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-oval-room-signs-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 22260,
+          "distinctColors": 7291,
+          "largestColorFraction": 0.0036388140161725067
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "oval-room-signs",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-oval-room-signs-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 73917,
+          "distinctColors": 15540,
+          "largestColorFraction": 0.003179241581774152
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-kitchen-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13533,
+          "largestColorFraction": 0.0071918097977832305
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "kitchen",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-kitchen-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 32212,
+          "largestColorFraction": 0.004615609266772057
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-pizza-peel-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 18169,
+          "largestColorFraction": 0.002961333446146036
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "pizza-peel",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-pizza-peel-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 36486,
+          "largestColorFraction": 0.0023427232729558312
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-blessing-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 11940,
+          "largestColorFraction": 0.006874524071410441
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "blessing",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-blessing-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 25222,
+          "largestColorFraction": 0.005733005733005733
+        }
+      ],
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-personalized-clock-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 30260,
+          "distinctColors": 9863,
+          "largestColorFraction": 0.0072372769332452085
+        }
+      ],
+      "gallery": {
+        "nativeLinks": 3,
+        "assetBytes": "PASS",
+        "disabledControls": "PASS"
+      },
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-personalized-clock-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 47276,
+          "distinctColors": 13092,
+          "largestColorFraction": 0.007361028851848718
+        }
+      ],
+      "gallery": {
+        "nativeLinks": 3,
+        "assetBytes": "PASS",
+        "disabledControls": "PASS"
+      },
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "product": "personalized-clock",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-personalized-clock-no-javascript.png",
+      "photographPixels": [
+        {
+          "sampledPixels": 157509,
+          "distinctColors": 24282,
+          "largestColorFraction": 0.0050092375673771025
+        }
+      ],
+      "gallery": {
+        "nativeLinks": 3,
+        "assetBytes": "PASS",
+        "disabledControls": "PASS"
+      },
+      "disabledLanguageControls": "PASS",
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "welcome",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "family-sign",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "hanging-home-sign",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "oval-room-signs",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "kitchen",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "pizza-peel",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "blessing",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "personalized-clock",
+      "language": "he",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "welcome",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "family-sign",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "hanging-home-sign",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "oval-room-signs",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "kitchen",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "pizza-peel",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "blessing",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    },
+    {
+      "kind": "mocked-metadata",
+      "product": "personalized-clock",
+      "language": "en",
+      "status": "PASS",
+      "canonicalProductAndBrand": "PASS",
+      "sourcePageQueryFree": "PASS",
+      "safeCampaignPersistence": "PASS",
+      "privateStorage": "PASS",
+      "interceptedPosts": 1,
+      "errors": []
+    }
+  ],
+  "routes": [
+    {
+      "path": "/wood-u-like-site/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/css/product.css",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/css/style.css",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/family-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-approved-v2.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/hero-welcome.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/judaica-blessing.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/kitchen-board.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/orchid.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/oval-room-signs.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/personalized-clock-front.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/personalized-clock-handheld-detail.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/personalized-clock-hanging.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/pizza-peel.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/schwartz-home-sign.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/images/workshop.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/attribution.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/clock-gallery.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/language.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/assets/js/main.js",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/gifts-memories/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/home-decor/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/judaica-tradition/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/collections/kitchen-hosting/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/inquiry/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/blessing/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/family-sign/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/hanging-home-sign/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/kitchen/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/oval-room-signs/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/personalized-clock/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/pizza-peel/",
+      "status": "PASS"
+    },
+    {
+      "path": "/wood-u-like-site/products/welcome/",
+      "status": "PASS"
+    }
+  ],
+  "metadata": [
+    {
+      "product": "welcome",
+      "language": "he",
+      "title": "שלט ברוכים הבאים | WOOD U LIKE",
+      "description": "מילים חמות בכניסה לבית. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/welcome/",
+      "status": "PASS"
+    },
+    {
+      "product": "welcome",
+      "language": "en",
+      "title": "Welcome sign | WOOD U LIKE",
+      "description": "A warm welcome at your door. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/welcome/",
+      "status": "PASS"
+    },
+    {
+      "product": "family-sign",
+      "language": "he",
+      "title": "שלט משפחתי לדלת | WOOD U LIKE",
+      "description": "שלט משפחתי לדלת מעץ בצורת אליפסה, עם שם משפחה, מסגרת חרוטה, עלים וציפורים. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/family-sign/",
+      "status": "PASS"
+    },
+    {
+      "product": "family-sign",
+      "language": "en",
+      "title": "Personalized wooden door sign | WOOD U LIKE",
+      "description": "An oval wooden family door sign with a family name, an engraved border, leaves and birds. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/family-sign/",
+      "status": "PASS"
+    },
+    {
+      "product": "hanging-home-sign",
+      "language": "he",
+      "title": "שלט תלוי לבית | WOOD U LIKE",
+      "description": "שלט עץ מלבני לבית, תלוי בשרשרת, עם שם משפחה ושני עיטורי ציפורים. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/hanging-home-sign/",
+      "status": "PASS"
+    },
+    {
+      "product": "hanging-home-sign",
+      "language": "en",
+      "title": "Personalized hanging wooden home sign | WOOD U LIKE",
+      "description": "A rectangular wooden home sign, hung from a chain, with a family name and two bird motifs. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/hanging-home-sign/",
+      "status": "PASS"
+    },
+    {
+      "product": "oval-room-signs",
+      "language": "he",
+      "title": "שלטי חדר אליפטיים | WOOD U LIKE",
+      "description": "שלטי חדר אליפטיים מעץ עם כיתוב בהתאמה אישית לחדרים בבית. גלו דוגמאות לכיתובים ואפשרויות התאמה אישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/oval-room-signs/",
+      "status": "PASS"
+    },
+    {
+      "product": "oval-room-signs",
+      "language": "en",
+      "title": "Personalized Oval Room Signs | WOOD U LIKE",
+      "description": "Personalized oval wooden room signs for rooms around the home. Explore wording examples and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/oval-room-signs/",
+      "status": "PASS"
+    },
+    {
+      "product": "kitchen",
+      "language": "he",
+      "title": "קרש מטבח חרוט | WOOD U LIKE",
+      "description": "עץ טבעי ומסר קטן למטבח. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/kitchen/",
+      "status": "PASS"
+    },
+    {
+      "product": "kitchen",
+      "language": "en",
+      "title": "Engraved kitchen board | WOOD U LIKE",
+      "description": "Natural wood with a little message for the kitchen. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/kitchen/",
+      "status": "PASS"
+    },
+    {
+      "product": "pizza-peel",
+      "language": "he",
+      "title": "מרדה לפיצה | WOOD U LIKE",
+      "description": "מרדה מעץ לפיצה עם חריטה אישית. מתנה מקורית לחובבי אפייה, אירוח ופיצה ביתית, במראה חם וטבעי. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/pizza-peel/",
+      "status": "PASS"
+    },
+    {
+      "product": "pizza-peel",
+      "language": "en",
+      "title": "Personalized Pizza Peel | WOOD U LIKE",
+      "description": "A wooden pizza peel with personalized engraving. An original gift for pizza lovers, home bakers and hosts, with a warm natural look. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/pizza-peel/",
+      "status": "PASS"
+    },
+    {
+      "product": "blessing",
+      "language": "he",
+      "title": "ברכת הדלקת נרות | WOOD U LIKE",
+      "description": "לוח עץ עגול עם טקסט חרוט ומעמד. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/blessing/",
+      "status": "PASS"
+    },
+    {
+      "product": "blessing",
+      "language": "en",
+      "title": "Candle-lighting blessing | WOOD U LIKE",
+      "description": "A round wooden plaque with engraved text and a stand. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/blessing/",
+      "status": "PASS"
+    },
+    {
+      "product": "personalized-clock",
+      "language": "he",
+      "title": "שעון עץ בחריטה אישית | WOOD U LIKE",
+      "description": "שעון עץ בעיצוב אישי, עם תמונה והקדשה בחריטת לייזר. מתנה עם משמעות ורגעים שנעים לזכור. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/personalized-clock/",
+      "status": "PASS"
+    },
+    {
+      "product": "personalized-clock",
+      "language": "en",
+      "title": "Personalized Engraved Wooden Clock | WOOD U LIKE",
+      "description": "A personalized wooden clock with a laser-engraved photo and dedication. A meaningful gift made to preserve special moments. Explore the piece and personalization options at WOOD U LIKE.",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/personalized-clock/",
+      "status": "PASS"
+    }
+  ],
+  "requests": {
+    "mockedPosts": 16,
+    "unexpectedSubmissions": 0,
+    "unexpectedExternal": 0,
+    "realInquiries": 0
+  },
+  "limitations": [
+    "Chromium only; Firefox/Safari and manual screen-reader review not run",
+    "Local Pages-prefix server; no deployment or live-site verification",
+    "English metadata changes in the browser; no separate English SEO URL"
+  ],
+  "blankPlaceholderNegativeControl": {
+    "sampledPixels": 32400,
+    "distinctColors": 1,
+    "largestColorFraction": 1,
+    "rejected": true,
+    "status": "PASS"
+  },
+  "nativeNavigation": {
+    "products": 8,
+    "homeCollectionProductFormHome": "PASS",
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "completedAt": "2026-10-18T19:40:20.675Z"
+}

@@ -1,0 +1,860 @@
+{
+  "task": "WUL-020",
+  "scenarios": [
+    {
+      "kind": "collection-accessibility",
+      "collection": "home-decor",
+      "language": "he",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "בית",
+          "width": 19.921875,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לכל הקולקציות←",
+          "width": 95.890625,
+          "height": 44
+        },
+        {
+          "text": "על התאמה אישית",
+          "width": 89.796875,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "kitchen-hosting",
+      "language": "he",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "בית",
+          "width": 19.921875,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לכל הקולקציות←",
+          "width": 95.890625,
+          "height": 44
+        },
+        {
+          "text": "על התאמה אישית",
+          "width": 89.796875,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "judaica-tradition",
+      "language": "he",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "בית",
+          "width": 19.921875,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לכל הקולקציות←",
+          "width": 95.890625,
+          "height": 44
+        },
+        {
+          "text": "על התאמה אישית",
+          "width": 89.796875,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "gifts-memories",
+      "language": "he",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "בית",
+          "width": 19.921875,
+          "height": 44
+        },
+        {
+          "text": "לפרטי המוצר←",
+          "width": 107.140625,
+          "height": 44
+        },
+        {
+          "text": "בקשת הצעת מחיר",
+          "width": 100.5625,
+          "height": 44
+        },
+        {
+          "text": "לכל הקולקציות←",
+          "width": 95.890625,
+          "height": 44
+        },
+        {
+          "text": "על התאמה אישית",
+          "width": 89.796875,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "home-decor",
+      "language": "en",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Home",
+          "width": 34.6875,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "All collections←",
+          "width": 101.359375,
+          "height": 44
+        },
+        {
+          "text": "About personalization",
+          "width": 126,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "kitchen-hosting",
+      "language": "en",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Home",
+          "width": 34.6875,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "All collections←",
+          "width": 101.359375,
+          "height": 44
+        },
+        {
+          "text": "About personalization",
+          "width": 126,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "judaica-tradition",
+      "language": "en",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Home",
+          "width": 34.6875,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "All collections←",
+          "width": 101.359375,
+          "height": 44
+        },
+        {
+          "text": "About personalization",
+          "width": 126,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "collection-accessibility",
+      "collection": "gifts-memories",
+      "language": "en",
+      "status": "PASS",
+      "skipPhysicalTabEnter": "PASS",
+      "mobileMenuSpaceTabEscape": "PASS",
+      "focus": {
+        "y": 0.390625,
+        "outline": "none"
+      },
+      "targets": [
+        {
+          "text": "עברית",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 64.34375,
+          "height": 44
+        },
+        {
+          "text": "",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "Home",
+          "width": 34.6875,
+          "height": 44
+        },
+        {
+          "text": "View product←",
+          "width": 118.90625,
+          "height": 44
+        },
+        {
+          "text": "Request a quote",
+          "width": 95.40625,
+          "height": 44
+        },
+        {
+          "text": "All collections←",
+          "width": 101.359375,
+          "height": 44
+        },
+        {
+          "text": "About personalization",
+          "width": 126,
+          "height": 44
+        }
+      ],
+      "reducedMotion": "PASS",
+      "languageSwitchSeo": "PASS",
+      "axe": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "final-home-320",
+      "language": "he",
+      "javaScript": true,
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home-final.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14924,
+          "maxColorFraction": 0.0015376013419066256
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6471,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4023,
+          "maxColorFraction": 0.0047789725209080045
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4119,
+          "maxColorFraction": 0.005973715651135006
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3786,
+          "maxColorFraction": 0.006371963361210673
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7132,
+          "maxColorFraction": 0.004424333836098542
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11370,
+          "maxColorFraction": 0.025925925925925925
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "final-home-320",
+      "language": "en",
+      "javaScript": true,
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-home-final.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14956,
+          "maxColorFraction": 0.0016773832820799553
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6424,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4001,
+          "maxColorFraction": 0.005575467941059339
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4113,
+          "maxColorFraction": 0.006106464887826895
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3797,
+          "maxColorFraction": 0.007035709544670118
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7075,
+          "maxColorFraction": 0.004675716440422323
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11428,
+          "maxColorFraction": 0.027295362589480236
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "final-home-320",
+      "language": "he",
+      "javaScript": false,
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-home-final-no-js.png",
+      "pixels": [
+        {
+          "samples": 21462,
+          "distinctColors": 14924,
+          "maxColorFraction": 0.0015376013419066256
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 6471,
+          "maxColorFraction": 0.043010752688172046
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4023,
+          "maxColorFraction": 0.0047789725209080045
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 4119,
+          "maxColorFraction": 0.005973715651135006
+        },
+        {
+          "samples": 7533,
+          "distinctColors": 3786,
+          "maxColorFraction": 0.006371963361210673
+        },
+        {
+          "samples": 19890,
+          "distinctColors": 7075,
+          "maxColorFraction": 0.004675716440422323
+        },
+        {
+          "samples": 32130,
+          "distinctColors": 11370,
+          "maxColorFraction": 0.025925925925925925
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "no-js-stored-english-preference",
+      "status": "PASS",
+      "checks": [
+        {
+          "route": "home",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "route": "collections/home-decor/",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "route": "collections/kitchen-hosting/",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "route": "collections/judaica-tradition/",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "route": "collections/gifts-memories/",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#favorites",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#original-gifts",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#collection-home-decor",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#collection-kitchen-hosting",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#collection-judaica-tradition",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#collection-gifts-memories",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#welcome-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#family-sign-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#hanging-home-sign-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#kitchen-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#pizza-peel-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#blessing-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        },
+        {
+          "fragment": "#personalized-clock-work",
+          "staticLanguage": "he",
+          "storedPreference": "en",
+          "status": "PASS"
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    }
+  ],
+  "status": "PASS"
+}

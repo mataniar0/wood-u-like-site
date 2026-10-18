@@ -1,0 +1,79 @@
+[
+  {
+    "tool": "check-hero",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 309.25,
+    "log": "run-history/hero-run-1.log"
+  },
+  {
+    "tool": "check-clock",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 380.78,
+    "log": "run-history/clock-run-1.log"
+  },
+  {
+    "tool": "check-family-sign",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 241.43,
+    "log": "run-history/family-sign-run-1.log"
+  },
+  {
+    "tool": "check-lead-attribution",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 936.25,
+    "log": "run-history/attribution-run-1.log"
+  },
+  {
+    "tool": "check-inquiry",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 1046.45,
+    "log": "run-history/inquiry-run-1.log"
+  },
+  {
+    "tool": "check-shared-privacy",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 25.89,
+    "log": "run-history/privacy-run-1.log"
+  },
+  {
+    "tool": "check-homepage",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 22.22,
+    "log": "run-history/homepage-run-1.log"
+  },
+  {
+    "tool": "check-schwartz-sign",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 247.52,
+    "log": "run-history/schwartz-sign-run-1.log"
+  },
+  {
+    "tool": "check-collection-accessibility",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 68.24,
+    "log": "run-history/accessibility-run-1.log"
+  },
+  {
+    "tool": "check-fragment-navigation",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 171.09,
+    "log": "run-history/legacy-run-1.log"
+  },
+  {
+    "tool": "check-pizza-peel",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 336.03,
+    "log": "run-history/pizza-peel-run-1.log"
+  }
+]

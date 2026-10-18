@@ -1,0 +1,28 @@
+PASS oval room signs he 320
+PASS oval room signs en 320
+PASS oval room signs he 390
+PASS oval room signs en 390
+PASS oval room signs he 768
+PASS oval room signs en 768
+PASS oval room signs he 1024
+PASS oval room signs en 1024
+PASS oval room signs he 1440
+PASS oval room signs en 1440
+PASS no-JS oval room signs 320
+PASS no-JS oval room signs 390
+PASS no-JS oval room signs 768
+PASS no-JS oval room signs 1440
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ ''
+- 'oval-room-signs'
+
+    at /workspace/wood-u-like-site/tools/check-oval-room-signs.cjs:18:195 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '',
+  expected: 'oval-room-signs',
+  operator: 'strictEqual',
+  diff: 'simple'
+}

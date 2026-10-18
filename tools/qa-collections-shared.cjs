@@ -9,11 +9,12 @@ const {chromium} = require('playwright');
 const root = path.resolve(__dirname, '..');
 const base = process.env.WUL_BASE_URL || 'http://127.0.0.1:8016/wood-u-like-site/';
 const prefix = new URL(base).pathname, origin = new URL(base).origin;
-const baseline = process.env.WUL_BASE_COMMIT || '7644007';
+const baseline = process.env.WUL_BASE_COMMIT || 'c1242a1';
 const canonicalBase = 'https://mataniar0.github.io/wood-u-like-site/';
-const products = require('../docs/review/wul-019/CATEGORY_PRODUCT_MAP.json').products;
+const products = require('../docs/review/wul-020/CATEGORY_PRODUCT_MAP.json').products;
+const legacyProducts=products.filter(p=>p.product_id!=='oval-room-signs');
 const groups = [
-  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign']},
+  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign','oval-room-signs']},
   {slug:'kitchen-hosting',key:'kitchenHosting',he:'מטבח ואירוח',en:'Kitchen & Hosting',ids:['kitchen','pizza-peel']},
   {slug:'judaica-tradition',key:'judaicaTradition',he:'יודאיקה ומסורת',en:'Judaica & Tradition',ids:['blessing']},
   {slug:'gifts-memories',key:'giftsMemories',he:'מתנות וזיכרונות',en:'Gifts & Memories',ids:['personalized-clock']},
@@ -109,11 +110,20 @@ async function capture(page,decoder,out,name,selector='img') {
  const pixels=[];for(const region of regions){const stats=await pixelStats(decoder,png,region);painted(stats);pixels.push(stats);}return {screenshot:file,pixels};
 }
 function preservation() {
- const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/css/product.css'],{cwd:root,encoding:'utf8'}).trim().split('\n');
+ const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/js/main.js','assets/css/style.css','assets/css/collection.css','index.html','products','collections/kitchen-hosting','collections/judaica-tradition','collections/gifts-memories'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!['inquiry/index.html','inquiry/inquiry.js'].includes(f));
  const records=[];for(const file of protectedFiles){const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root});const bytes=fs.readFileSync(path.join(root,file));assert.equal(sha(bytes),sha(before),file);records.push({file,sha256:sha(bytes),status:'PASS'});}
- for(const p of products){const file=p.route+'index.html';const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root,encoding:'utf8'});const expected=before.replaceAll('../../#collection-'+p.collection,'../../collections/'+p.collection+'/').replaceAll('data-i18n="nav.favorites">מוצרים נבחרים','data-i18n="nav.favorites">בחירת קולקציה');assert.equal(fs.readFileSync(path.join(root,file),'utf8'),expected,`Only navigation changes: ${file}`);}
+ const originalImages=execFileSync('git',['ls-tree','-r','--name-only',baseline,'assets/images'],{cwd:root,encoding:'utf8'}).trim().split('\n').map(f=>path.basename(f));
+ const approvedCopies=[['oval-room-signs.webp','workshop.webp'],['oval-room-signs-small.webp','workshop-small.webp']];
+ assert.deepEqual(fs.readdirSync(path.join(root,'assets/images')).sort(),[...originalImages,...approvedCopies.map(p=>p[0])].sort(),'Only approved room-sign copies added');
+ for(const [dest,source]of approvedCopies){assert.equal(sha(fs.readFileSync(path.join(root,'assets/images',dest))),sha(execFileSync('git',['show',`${baseline}:assets/images/${source}`],{cwd:root})));records.push({file:'assets/images/'+dest,source:'assets/images/'+source,status:'PASS',byteIdenticalApprovedSource:true});}
+ const originalJs=execFileSync('git',['show',`${baseline}:inquiry/inquiry.js`],{cwd:root,encoding:'utf8'});
+ const addedProduct='    "oval-room-signs": {\n      name: "Personalized Oval Room Signs",\n      dimensions: ["width", "height"],\n    },\n';
+ assert.equal(fs.readFileSync(path.join(root,'inquiry/inquiry.js'),'utf8'),originalJs.replace('    custom: {',addedProduct+'    custom: {'),'Inquiry code changes only the canonical product registry');
+ const originalHtml=execFileSync('git',['show',`${baseline}:inquiry/index.html`],{cwd:root,encoding:'utf8'});
+ const option='              <option value="oval-room-signs" data-i18n="inquiry.product.oval-room-signs">שלטי חדר אליפטיים</option>\n';
+ assert.equal(fs.readFileSync(path.join(root,'inquiry/index.html'),'utf8'),originalHtml.replace('              <option value="custom"',option+'              <option value="custom"'),'Inquiry HTML changes only one option');
  const config=fs.readFileSync(path.join(root,'inquiry/contact-config.js'),'utf8');for(const f of ['formDestinationApproved','privacyApproved','contactDetailsApproved'])assert.match(config,new RegExp(f+': false'));
- const currentImages=execFileSync('git',['ls-files','--others','--exclude-standard','assets/images'],{cwd:root,encoding:'utf8'}).trim();assert.equal(currentImages,'','No unapproved image added');
  return records;
 }
-module.exports={assert,fs,path,root,base,prefix,origin,baseline,canonicalBase,products,groups,viewports,sha,write,launch,session,decoded,ready,layout,translations,axe,links,imageContract,pixelStats,painted,capture,preservation};
+
+module.exports={assert,fs,path,root,base,prefix,origin,baseline,canonicalBase,products,legacyProducts,groups,viewports,sha,write,launch,session,decoded,ready,layout,translations,axe,links,imageContract,pixelStats,painted,capture,preservation};

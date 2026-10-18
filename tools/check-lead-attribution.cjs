@@ -1,5 +1,5 @@
 "use strict";
-const collectionFor = id => ["welcome","family-sign","hanging-home-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
 
 
 // All approved configuration and responses below are browser-only fixtures.
@@ -32,6 +32,7 @@ const products = [
   ["hanging-home-sign", "Personalized hanging wooden home sign"],
   ["personalized-clock", "Personalized Engraved Wooden Clock"],
   ["pizza-peel", "Personalized Pizza Peel"],
+  ["oval-room-signs", "Personalized Oval Room Signs"],
   ["custom", "Personalization / another idea"],
 ];
 const empty = { utm_source: "", utm_campaign: "" };

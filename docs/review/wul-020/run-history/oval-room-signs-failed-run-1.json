@@ -1,0 +1,364 @@
+{
+  "task": "WUL-020",
+  "scenarios": [
+    {
+      "kind": "product",
+      "language": "he",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 14280,
+          "distinctColors": 5510,
+          "maxColorFraction": 0.003711484593837535
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-320-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 14280,
+          "distinctColors": 5559,
+          "maxColorFraction": 0.004201680672268907
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 22260,
+          "distinctColors": 7300,
+          "maxColorFraction": 0.0035489667565139263
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 22260,
+          "distinctColors": 7300,
+          "maxColorFraction": 0.0035489667565139263
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "he",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 23219,
+          "distinctColors": 7445,
+          "maxColorFraction": 0.0037899995693182306
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "en",
+      "viewport": [
+        768,
+        1024
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-768-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 23219,
+          "distinctColors": 7443,
+          "maxColorFraction": 0.0037899995693182306
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "he",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1024-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 43070,
+          "distinctColors": 11433,
+          "maxColorFraction": 0.002925470164847922
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "en",
+      "viewport": [
+        1024,
+        768
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1024-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 43070,
+          "distinctColors": 11433,
+          "maxColorFraction": 0.002925470164847922
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "he",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 73917,
+          "distinctColors": 15540,
+          "maxColorFraction": 0.003179241581774152
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "product",
+      "language": "en",
+      "viewport": [
+        1440,
+        900
+      ],
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-oval-room-signs.png",
+      "pixels": [
+        {
+          "samples": 73917,
+          "distinctColors": 15540,
+          "maxColorFraction": 0.003179241581774152
+        }
+      ],
+      "axe": [],
+      "oneProductThreeWordingExamples": true,
+      "nativeFullPhoto": "PASS",
+      "blockedInquiry": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "kind": "no-javascript",
+      "language": "he",
+      "width": 320,
+      "status": "PASS",
+      "screenshot": "screenshots/he-320-oval-room-signs-no-js.png",
+      "pixels": [
+        {
+          "samples": 14280,
+          "distinctColors": 5528,
+          "maxColorFraction": 0.003711484593837535
+        }
+      ],
+      "nativeImageAndInquiryLinks": "PASS",
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-oval-room-signs-no-js.png",
+      "pixels": [
+        {
+          "samples": 22260,
+          "distinctColors": 7291,
+          "maxColorFraction": 0.0036388140161725067
+        }
+      ],
+      "nativeImageAndInquiryLinks": "PASS",
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "language": "he",
+      "width": 768,
+      "status": "PASS",
+      "screenshot": "screenshots/he-768-oval-room-signs-no-js.png",
+      "pixels": [
+        {
+          "samples": 23219,
+          "distinctColors": 7445,
+          "maxColorFraction": 0.0037899995693182306
+        }
+      ],
+      "nativeImageAndInquiryLinks": "PASS",
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "kind": "no-javascript",
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-oval-room-signs-no-js.png",
+      "pixels": [
+        {
+          "samples": 73917,
+          "distinctColors": 15540,
+          "maxColorFraction": 0.003179241581774152
+        }
+      ],
+      "nativeImageAndInquiryLinks": "PASS",
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    }
+  ],
+  "mockedPosts": 0,
+  "realInquiries": 0,
+  "status": "FAIL",
+  "failure": "Expected values to be strictly equal:\n+ actual - expected\n\n+ ''\n- 'oval-room-signs'\n",
+  "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ ''\n- 'oval-room-signs'\n\n    at /workspace/wood-u-like-site/tools/check-oval-room-signs.cjs:18:195"
+}

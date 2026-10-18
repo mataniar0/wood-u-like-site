@@ -31,6 +31,10 @@
       // Optional requested dimensions, not verified product specifications.
       dimensions: ["diameter", "thickness"],
     },
+    "oval-room-signs": {
+      name: "Personalized Oval Room Signs",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],
