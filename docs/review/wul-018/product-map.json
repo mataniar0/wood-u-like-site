@@ -1,0 +1,214 @@
+{
+  "base": "7557010",
+  "products": [
+    {
+      "product_id": "welcome",
+      "collection": "home-decor",
+      "route": "products/welcome/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/welcome/",
+      "inquiry": "../../inquiry/?product=welcome",
+      "name": {
+        "he": "שלט ברוכים הבאים",
+        "en": "Welcome sign"
+      },
+      "title_key": "product.welcome.title",
+      "description_key": "product.welcome.copy",
+      "summary_key": "catalog.welcome.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/hero-welcome.webp",
+          "width": 1024,
+          "height": 771,
+          "small_src": "assets/images/hero-welcome-small.webp",
+          "small_width": 480,
+          "alt_key": "image.welcomeOval",
+          "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+          "small_sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e"
+        }
+      ]
+    },
+    {
+      "product_id": "family-sign",
+      "collection": "home-decor",
+      "route": "products/family-sign/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/family-sign/",
+      "inquiry": "../../inquiry/?product=family-sign",
+      "name": {
+        "he": "שלט משפחתי לדלת",
+        "en": "Personalized wooden door sign"
+      },
+      "title_key": "product.family.title",
+      "description_key": "product.family.copy",
+      "summary_key": "catalog.family-sign.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/family-sign.webp",
+          "width": 1410,
+          "height": 920,
+          "small_src": "assets/images/family-sign-small.webp",
+          "small_width": 640,
+          "alt_key": "image.family",
+          "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+          "small_sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d"
+        }
+      ]
+    },
+    {
+      "product_id": "hanging-home-sign",
+      "collection": "home-decor",
+      "route": "products/hanging-home-sign/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/hanging-home-sign/",
+      "inquiry": "../../inquiry/?product=hanging-home-sign",
+      "name": {
+        "he": "שלט תלוי לבית",
+        "en": "Personalized hanging wooden home sign"
+      },
+      "title_key": "product.schwartz.title",
+      "description_key": "product.schwartz.copy",
+      "summary_key": "catalog.hanging-home-sign.summary",
+      "mockup": true,
+      "images": [
+        {
+          "src": "assets/images/schwartz-home-sign.webp",
+          "width": 1448,
+          "height": 1086,
+          "small_src": "assets/images/schwartz-home-sign-small.webp",
+          "small_width": 640,
+          "alt_key": "image.schwartz",
+          "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+          "small_sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b"
+        }
+      ]
+    },
+    {
+      "product_id": "kitchen",
+      "collection": "kitchen-hosting",
+      "route": "products/kitchen/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/kitchen/",
+      "inquiry": "../../inquiry/?product=kitchen",
+      "name": {
+        "he": "קרש מטבח חרוט",
+        "en": "Engraved kitchen board"
+      },
+      "title_key": "product.kitchen.title",
+      "description_key": "product.kitchen.copy",
+      "summary_key": "catalog.kitchen.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/kitchen-board.webp",
+          "width": 1200,
+          "height": 900,
+          "small_src": "assets/images/kitchen-board-small.webp",
+          "small_width": 480,
+          "alt_key": "image.kitchenUtensils",
+          "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+          "small_sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0"
+        }
+      ]
+    },
+    {
+      "product_id": "pizza-peel",
+      "collection": "kitchen-hosting",
+      "route": "products/pizza-peel/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/pizza-peel/",
+      "inquiry": "../../inquiry/?product=pizza-peel",
+      "name": {
+        "he": "מרדה לפיצה",
+        "en": "Personalized Pizza Peel"
+      },
+      "title_key": "product.pizzaPeel.title",
+      "description_key": "product.pizzaPeel.copy",
+      "summary_key": "catalog.pizza-peel.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/pizza-peel.webp",
+          "width": 1086,
+          "height": 1448,
+          "small_src": "assets/images/pizza-peel-small.webp",
+          "small_width": 640,
+          "alt_key": "image.pizzaPeel",
+          "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+          "small_sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601"
+        }
+      ]
+    },
+    {
+      "product_id": "blessing",
+      "collection": "judaica-tradition",
+      "route": "products/blessing/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/blessing/",
+      "inquiry": "../../inquiry/?product=blessing",
+      "name": {
+        "he": "ברכת הדלקת נרות",
+        "en": "Candle-lighting blessing"
+      },
+      "title_key": "product.blessing.title",
+      "description_key": "product.blessing.copy",
+      "summary_key": "catalog.blessing.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/judaica-blessing.webp",
+          "width": 834,
+          "height": 1024,
+          "small_src": "assets/images/judaica-blessing-small.webp",
+          "small_width": 480,
+          "alt_key": "image.blessingStand",
+          "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+          "small_sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2"
+        }
+      ]
+    },
+    {
+      "product_id": "personalized-clock",
+      "collection": "gifts-memories",
+      "route": "products/personalized-clock/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/personalized-clock/",
+      "inquiry": "../../inquiry/?product=personalized-clock",
+      "name": {
+        "he": "שעון עץ בחריטה אישית",
+        "en": "Personalized Engraved Wooden Clock"
+      },
+      "title_key": "product.clock.title",
+      "description_key": "product.clock.copy",
+      "summary_key": "catalog.personalized-clock.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/personalized-clock-front.webp",
+          "width": 1200,
+          "height": 1259,
+          "small_src": "assets/images/personalized-clock-front-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.front.alt",
+          "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+          "small_sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac"
+        },
+        {
+          "src": "assets/images/personalized-clock-handheld-detail.webp",
+          "width": 640,
+          "height": 640,
+          "small_src": "assets/images/personalized-clock-handheld-detail-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.detail.alt",
+          "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+          "small_sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18"
+        },
+        {
+          "src": "assets/images/personalized-clock-hanging.webp",
+          "width": 1200,
+          "height": 1150,
+          "small_src": "assets/images/personalized-clock-hanging-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.hanging.alt",
+          "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+          "small_sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462"
+        }
+      ]
+    }
+  ]
+}

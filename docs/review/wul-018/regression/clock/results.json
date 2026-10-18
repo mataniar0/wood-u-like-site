@@ -1,0 +1,708 @@
+{
+  "task": "WUL-018 / Issue #32 — three-photo standalone clock regression",
+  "assetChecks": [
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "bytes": 164802,
+      "dimensions": [
+        1200,
+        1259
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "bytes": 43268,
+      "dimensions": [
+        600,
+        630
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "bytes": 47040,
+      "dimensions": [
+        640,
+        640
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "bytes": 37730,
+      "dimensions": [
+        600,
+        600
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "bytes": 110770,
+      "dimensions": [
+        1200,
+        1150
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "bytes": 32392,
+      "dimensions": [
+        600,
+        575
+      ],
+      "status": "PASS"
+    }
+  ],
+  "results": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "he",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "חזית השעון",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "תקריב השעון בידיים",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "הצגת השעון על רקע עץ",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/he-320-homepage.png",
+        "screenshots/he-320-clock-front.png",
+        "screenshots/he-320-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "en",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "Clock front",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "Close-up of the clock in hands",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "Clock displayed against wood",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/en-320-homepage.png",
+        "screenshots/en-320-clock-front.png",
+        "screenshots/en-320-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "he",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "חזית השעון",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "תקריב השעון בידיים",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "הצגת השעון על רקע עץ",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/he-390-homepage.png",
+        "screenshots/he-390-clock-front.png",
+        "screenshots/he-390-clock-handheld-detail.png",
+        "screenshots/he-390-clock-hanging.png",
+        "screenshots/he-390-clock-keyboard-focus.png",
+        "screenshots/he-390-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "en",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "Clock front",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "Close-up of the clock in hands",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "Clock displayed against wood",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/en-390-homepage.png",
+        "screenshots/en-390-clock-front.png",
+        "screenshots/en-390-clock-handheld-detail.png",
+        "screenshots/en-390-clock-hanging.png",
+        "screenshots/en-390-clock-keyboard-focus.png",
+        "screenshots/en-390-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "he",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "חזית השעון",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "תקריב השעון בידיים",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "הצגת השעון על רקע עץ",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/he-768-homepage.png",
+        "screenshots/he-768-clock-front.png",
+        "screenshots/he-768-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "en",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "Clock front",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "Close-up of the clock in hands",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "Clock displayed against wood",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/en-768-homepage.png",
+        "screenshots/en-768-clock-front.png",
+        "screenshots/en-768-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "he",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "חזית השעון",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "תקריב השעון בידיים",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "הצגת השעון על רקע עץ",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/he-1024-homepage.png",
+        "screenshots/he-1024-clock-front.png",
+        "screenshots/he-1024-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "en",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "Clock front",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "Close-up of the clock in hands",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "Clock displayed against wood",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/en-1024-homepage.png",
+        "screenshots/en-1024-clock-front.png",
+        "screenshots/en-1024-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "he",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "חזית השעון",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "תקריב השעון בידיים",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "הצגת השעון על רקע עץ",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/he-1440-homepage.png",
+        "screenshots/he-1440-clock-front.png",
+        "screenshots/he-1440-clock-handheld-detail.png",
+        "screenshots/he-1440-clock-hanging.png",
+        "screenshots/he-1440-clock-keyboard-focus.png",
+        "screenshots/he-1440-clock-inquiry.png"
+      ]
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "status": "PASS",
+      "slideResults": [
+        {
+          "index": 0,
+          "caption": "Clock front",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 1,
+          "caption": "Close-up of the clock in hands",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        },
+        {
+          "index": 2,
+          "caption": "Clock displayed against wood",
+          "objectFit": "contain",
+          "entirePhotoContained": true
+        }
+      ],
+      "keyboard": "PASS: RTL/LTR arrows, Home/End, focus retained, wrapping",
+      "languageSwitchRetainsSlide": "PASS",
+      "reducedMotion": "PASS",
+      "noOverflowOrCardOverlap": "PASS",
+      "homepageAxe": [],
+      "productAxe": [],
+      "inquiryAxe": [],
+      "preselectedClockAndLanguagePersistence": "PASS",
+      "optionalDimensions": "PASS",
+      "unknownProductsRejected": "PASS",
+      "publicSubmissionBlocked": "PASS",
+      "errors": [],
+      "screenshots": [
+        "screenshots/en-1440-homepage.png",
+        "screenshots/en-1440-clock-front.png",
+        "screenshots/en-1440-clock-handheld-detail.png",
+        "screenshots/en-1440-clock-hanging.png",
+        "screenshots/en-1440-clock-keyboard-focus.png",
+        "screenshots/en-1440-clock-inquiry.png"
+      ]
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allThreeNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 283,
+        "naturalHeight": 298,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 30260,
+        "distinctColors": 9863,
+        "largestColorFraction": 0.0072372769332452085,
+        "sample": {
+          "x": 57,
+          "y": 60,
+          "width": 170,
+          "height": 178
+        }
+      },
+      "screenshot": "screenshots/he-320-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allThreeNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 353,
+        "naturalHeight": 371,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 47276,
+        "distinctColors": 13103,
+        "largestColorFraction": 0.007361028851848718,
+        "sample": {
+          "x": 71,
+          "y": 74,
+          "width": 212,
+          "height": 223
+        }
+      },
+      "screenshot": "screenshots/he-390-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allThreeNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 368,
+        "naturalHeight": 387,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 49476,
+        "distinctColors": 13488,
+        "largestColorFraction": 0.007559220632225726,
+        "sample": {
+          "x": 426,
+          "y": 76,
+          "width": 217,
+          "height": 228
+        }
+      },
+      "screenshot": "screenshots/he-768-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allThreeNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 491,
+        "naturalHeight": 516,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front-small.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 91450,
+        "distinctColors": 19856,
+        "largestColorFraction": 0.007337342810278841,
+        "sample": {
+          "x": 578,
+          "y": 103,
+          "width": 295,
+          "height": 310
+        }
+      },
+      "screenshot": "screenshots/he-1024-clock-no-javascript.png",
+      "errors": []
+    },
+    {
+      "mode": "no-javascript",
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "he",
+      "status": "PASS",
+      "allThreeNativeImageLinks": "PASS",
+      "disabledControls": "PASS",
+      "firstPhotographVisible": "PASS",
+      "decodedFirstPhotograph": {
+        "complete": true,
+        "naturalWidth": 650,
+        "naturalHeight": 681,
+        "currentSource": "/wood-u-like-site/assets/images/personalized-clock-front.webp",
+        "objectFit": "contain"
+      },
+      "savedScreenshotPhotographPixels": {
+        "sampledPixels": 157509,
+        "distinctColors": 24282,
+        "largestColorFraction": 0.0050092375673771025,
+        "sample": {
+          "x": 763,
+          "y": 136,
+          "width": 387,
+          "height": 407
+        }
+      },
+      "screenshot": "screenshots/he-1440-clock-no-javascript.png",
+      "errors": []
+    }
+  ],
+  "blankScreenshotControl": {
+    "fixture": "fresh isolated uniform PNG, no product photograph",
+    "status": "PASS: blank screenshot rejected",
+    "pixels": {
+      "sampledPixels": 32400,
+      "distinctColors": 1,
+      "largestColorFraction": 1,
+      "sample": {
+        "x": 60,
+        "y": 60,
+        "width": 180,
+        "height": 180
+      }
+    }
+  },
+  "externalRequests": 0,
+  "interceptedSubmissionRequests": 0,
+  "realInquiryRequests": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 225.79999999701977
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 246.625,
+    "renderedHeight": 243.703125,
+    "intrinsicWidth": 288,
+    "intrinsicHeight": 256,
+    "resourceBytes": 52670,
+    "durationMs": 191.10000000149012
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 305.1000000014901
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 351,
+    "intrinsicHeight": 312,
+    "resourceBytes": 52670,
+    "durationMs": 211.39999999850988
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 597.5999999977648
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 309.625,
+    "renderedHeight": 305.96875,
+    "intrinsicWidth": 345,
+    "intrinsicHeight": 307,
+    "resourceBytes": 52670,
+    "durationMs": 221.60000000149012
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 190.19999999925494
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 450.234375,
+    "renderedHeight": 444.9375,
+    "intrinsicWidth": 460,
+    "intrinsicHeight": 409,
+    "resourceBytes": 52670,
+    "durationMs": 285.79999999701977
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "he",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 410.8999999985099
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "language": "en",
+    "status": "PASS",
+    "fit": "contain",
+    "src": "http://127.0.0.1:8012/wood-u-like-site/assets/images/hero-approved-v2-small.webp",
+    "renderedWidth": 587.453125,
+    "renderedHeight": 580.546875,
+    "intrinsicWidth": 570,
+    "intrinsicHeight": 506,
+    "resourceBytes": 52670,
+    "durationMs": 104
+  }
+]

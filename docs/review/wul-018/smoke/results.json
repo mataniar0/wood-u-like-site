@@ -1,0 +1,40 @@
+{
+  "scope": "Seven expanded routes at390px HE-to-EN switching, route/H1/meta/CTA/primary decode/no overflow; clock3slides nextEndHome",
+  "results": [
+    {
+      "id": "welcome",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "family-sign",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "hanging-home-sign",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "kitchen",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "pizza-peel",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "blessing",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "id": "personalized-clock",
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "results": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "he",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "status": "PASS",
+      "axe": [],
+      "errors": [],
+      "fourCategoryLayout": "PASS",
+      "blockedInquiry": "PASS",
+      "standaloneProducts": [
+        {
+          "productId": "family-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        },
+        {
+          "productId": "hanging-home-sign",
+          "imageIdentity": "PASS",
+          "uncroppedImage": "PASS",
+          "keyboardDetailsAndQuote": "PASS",
+          "axe": []
+        }
+      ],
+      "schwartzProduct": "PASS",
+      "mazuzRegression": "PASS",
+      "inquiryAxe": []
+    }
+  ],
+  "externalRequests": 0,
+  "interceptedSubmissionRequests": 0,
+  "realInquiryRequests": 0
+}

@@ -27,8 +27,10 @@
 * {
   box-sizing: border-box;
 }
+/* Native keyboard focus and fragment navigation must land on the same target.
+   Animated focus scrolling can otherwise overtake the following anchor jump. */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 body {
   margin: 0;
@@ -1312,4 +1314,38 @@ html[lang="en"] .benefits-grid > div + div {
 }
 @media (max-width: 760px) {
   .clock-card { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}
+
+/* Compact catalog; the complete product and gallery live at a shareable route. */
+.catalog-card { min-width: 0; display: flex; flex-direction: column; align-items: stretch; }
+.catalog-photo { margin: 0; }
+.catalog-card .product-image {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  max-height: 260px;
+}
+.catalog-card .product-image img { object-fit: contain; object-position: center; }
+.catalog-card h4 { font-size: clamp(20px, 1.8vw, 23px); line-height: 1.5; }
+.catalog-card > p { font-size: 14px; line-height: 1.75; margin-block: 4px 12px; }
+.catalog-mockup { font-size: 12px; color: var(--soft-ink); padding-block-start: 5px; }
+.catalog-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 18px; margin-block-start: auto; }
+.product-details-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-weight: 600;
+  border-block-end: 1px solid var(--wood);
+}
+.catalog-actions .product-inquiry { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; }
+.collection-group[data-collection="gifts-memories"] .catalog-grid { grid-template-columns: minmax(0, 400px); }
+.collection-group[data-collection="judaica-tradition"] .catalog-grid { grid-template-columns: minmax(0, 400px); }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .collection-group[data-collection="gifts-memories"] .catalog-grid,
+  .collection-group[data-collection="judaica-tradition"] .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .catalog-card .product-image { max-height: 250px; }
+  .collection-group[data-collection="gifts-memories"] .catalog-grid,
+  .collection-group[data-collection="judaica-tradition"] .catalog-grid { grid-template-columns: minmax(0, 1fr); }
 }

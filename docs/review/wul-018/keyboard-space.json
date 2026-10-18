@@ -1,0 +1,177 @@
+{
+  "task": "WUL-018 / native Space and Enter clock controls",
+  "startedAt": "2026-10-18T08:28:46.513Z",
+  "scenarios": [
+    {
+      "language": "he",
+      "width": 390,
+      "status": "PASS",
+      "steps": [
+        {
+          "control": "next",
+          "key": "Space",
+          "position": "2 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 2 מתוך 3: תקריב השעון בידיים",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 1 מתוך 3: חזית השעון",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Space",
+          "position": "3 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 3 מתוך 3: הצגת השעון על רקע עץ",
+          "status": "PASS"
+        },
+        {
+          "control": "next",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 1 מתוך 3: חזית השעון",
+          "status": "PASS"
+        }
+      ],
+      "jsErrors": []
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "status": "PASS",
+      "steps": [
+        {
+          "control": "next",
+          "key": "Space",
+          "position": "2 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 2 מתוך 3: תקריב השעון בידיים",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 1 מתוך 3: חזית השעון",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Space",
+          "position": "3 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 3 מתוך 3: הצגת השעון על רקע עץ",
+          "status": "PASS"
+        },
+        {
+          "control": "next",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "תמונה 1 מתוך 3: חזית השעון",
+          "status": "PASS"
+        }
+      ],
+      "jsErrors": []
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "status": "PASS",
+      "steps": [
+        {
+          "control": "next",
+          "key": "Space",
+          "position": "2 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 2 of 3: Close-up of the clock in hands",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 1 of 3: Clock front",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Space",
+          "position": "3 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 3 of 3: Clock displayed against wood",
+          "status": "PASS"
+        },
+        {
+          "control": "next",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 1 of 3: Clock front",
+          "status": "PASS"
+        }
+      ],
+      "jsErrors": []
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "status": "PASS",
+      "steps": [
+        {
+          "control": "next",
+          "key": "Space",
+          "position": "2 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 2 of 3: Close-up of the clock in hands",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 1 of 3: Clock front",
+          "status": "PASS"
+        },
+        {
+          "control": "previous",
+          "key": "Space",
+          "position": "3 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 3 of 3: Clock displayed against wood",
+          "status": "PASS"
+        },
+        {
+          "control": "next",
+          "key": "Enter",
+          "position": "1 / 3",
+          "focusRetained": true,
+          "announcement": "Photo 1 of 3: Clock front",
+          "status": "PASS"
+        }
+      ],
+      "jsErrors": []
+    }
+  ],
+  "requests": {
+    "localGet": 48,
+    "blockedNonGet": 0,
+    "blockedExternal": 0,
+    "realInquiries": 0
+  },
+  "limitations": [
+    "Chromium only; supplements full acceptance and independent keyboard review"
+  ],
+  "status": "PASS",
+  "finishedAt": "2026-10-18T08:29:07.430Z"
+}

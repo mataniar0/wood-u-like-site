@@ -23,6 +23,7 @@ const out=path.resolve(__dirname,'..',process.env.WUL_REVIEW_DIR||'docs/review/w
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
    assert.equal(await page.evaluate(()=>window.WUL_CONTACT.formDestinationApproved),false);
    assert.equal(await page.evaluate(()=>window.WUL_CONTACT.privacyApproved),false);
+   assert.equal(await page.evaluate(()=>window.WUL_CONTACT.contactDetailsApproved),false);
    await page.locator('#privacy-notice').screenshot({path:path.join(out,'screenshots',`${lang}-${width}-privacy.png`)});
    await page.screenshot({path:path.join(out,'screenshots',`${lang}-${width}-full.png`),fullPage:true});
    assert.deepEqual(errors,[]);results.push({width,lang,status:'PASS',errors});await context.close();

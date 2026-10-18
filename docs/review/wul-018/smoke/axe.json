@@ -1,0 +1,101 @@
+{
+  "engine": "axe-core 4.10.3",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21aa"
+  ],
+  "results": [
+    {
+      "id": "welcome",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "family-sign",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "hanging-home-sign",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "pizza-peel",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "blessing",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "id": "personalized-clock",
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "violations": 0,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ]
+}

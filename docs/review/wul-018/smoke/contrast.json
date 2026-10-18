@@ -1,0 +1,158 @@
+{
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "target": [
+            ".btn > .direction-arrow[aria-hidden=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "any": [
+            {
+              "message": "Element content contains only non-text characters",
+              "data": {
+                "messageKey": "nonBmp"
+              }
+            }
+          ]
+        },
+        {
+          "target": [
+            ".text-link > .direction-arrow[aria-hidden=\"true\"]"
+          ],
+          "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+          "any": [
+            {
+              "message": "Element content contains only non-text characters",
+              "data": {
+                "messageKey": "nonBmp"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "selector": "preview-flag",
+      "text": "Natural wood · Personal engraving · Handmade",
+      "color": "rgb(83, 90, 76)",
+      "background": "rgb(240, 234, 224)"
+    },
+    {
+      "selector": "breadcrumb",
+      "text": "Home\n          Home Signs & Decor\n          Personalized wooden door sign",
+      "color": "rgb(83, 90, 76)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "section-kicker",
+      "text": "Home Signs & Decor",
+      "color": "rgb(89, 100, 79)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "H1",
+      "text": "Personalized wooden door sign",
+      "color": "rgb(40, 55, 45)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "product-description",
+      "text": "An oval wooden family door sign with a family name, an engraved border, leaves a",
+      "color": "rgb(83, 90, 76)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "btn btn-primary product-inquiry product-quote-link",
+      "text": "Request a quote←",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(40, 55, 45)"
+    },
+    {
+      "selector": "H2",
+      "text": "Personalization",
+      "color": "rgb(40, 55, 45)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "P",
+      "text": "You can request a family name or wording for the sign and enter preferred dimens",
+      "color": "rgb(83, 90, 76)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "product-note",
+      "text": "The pieces shown are examples of personalized designs. For the piece and availab",
+      "color": "rgb(83, 90, 76)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "text-link product-collection-link",
+      "text": "Back to collection←",
+      "color": "rgb(40, 55, 45)",
+      "background": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "selector": "wrap footer-inner",
+      "text": "WOOD U LIKEWooden pieces • Personal engraving • Handmade\n        \n        Natura",
+      "color": "rgb(40, 55, 45)",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "scope": "Computed style audit of EN390 family-sign representative shared product layout; all seven routes use the same scoped styles.",
+  "incompleteAssessment": "The two axe color-contrast incomplete nodes contain only decorative arrow glyphs with aria-hidden=true. The textual CTA and back-link labels use the verified foreground/background palette below.",
+  "paletteChecks": [
+    {
+      "foreground": "#535a4c",
+      "background": "#f0eae0",
+      "usage": "preview flag",
+      "ratio": 5.981,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#535a4c",
+      "background": "#fffcf7",
+      "usage": "breadcrumb, descriptions and product notes",
+      "ratio": 6.992,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#59644f",
+      "background": "#fffcf7",
+      "usage": "collection kicker",
+      "ratio": 6.106,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#28372d",
+      "background": "#fffcf7",
+      "usage": "headings and text links",
+      "ratio": 12.253,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#28372d",
+      "usage": "quote button text and decorative arrow",
+      "ratio": 12.54,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "#5d6256",
+      "background": "#f8f5ee",
+      "usage": "footer text",
+      "ratio": 5.763,
+      "requiredRatio": 4.5,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

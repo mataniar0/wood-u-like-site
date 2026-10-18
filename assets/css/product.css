@@ -1,0 +1,166 @@
+/* Product pages share the Natural Boutique shell and one responsive layout. */
+.product-page .product-main {
+  padding-block: 26px 80px;
+}
+.product-page .breadcrumb {
+  margin-block-end: 28px;
+  color: var(--soft-ink);
+  font-size: 13px;
+}
+.product-page .breadcrumb ol {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product-page .breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+.product-page .breadcrumb li + li::before {
+  content: "/";
+  padding-inline-end: 12px;
+  color: var(--soft-ink);
+}
+.product-page .breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.product-page .product-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(30px, 5vw, 76px);
+  align-items: start;
+}
+.product-page .product-media {
+  min-width: 0;
+  margin: 0;
+}
+.product-page .product-photo {
+  background: var(--sand);
+  aspect-ratio: 1 / 1.05;
+  overflow: hidden;
+}
+.product-page .product-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.product-page .product-information {
+  min-width: 0;
+  padding-block: 16px;
+}
+.product-page .product-information h1 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 3.5vw, 53px);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-block: 16px 24px;
+  overflow-wrap: anywhere;
+}
+.product-page .product-description {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--soft-ink);
+  margin-block-end: 26px;
+}
+.product-page .product-inquiry {
+  margin: 0;
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.product-page .product-customization {
+  border-block-start: 1px solid var(--line);
+  margin-block-start: 30px;
+  padding-block-start: 24px;
+}
+.product-page .product-customization h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-block-end: 12px;
+}
+.product-page .product-customization p,
+.product-page .product-note {
+  color: var(--soft-ink);
+  font-size: 14px;
+  line-height: 1.9;
+}
+.product-page .product-note {
+  margin-block: 18px;
+}
+.product-page .product-collection-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-block-start: 4px;
+}
+.product-page .product-mockup {
+  color: var(--soft-ink);
+  font-size: 13px;
+  text-align: center;
+  margin-block-start: 12px;
+}
+.product-page .clock-gallery-viewport {
+  position: relative;
+}
+.product-page .clock-gallery [data-clock-slide] {
+  width: 100%;
+  height: 100%;
+}
+.product-page .clock-gallery-noscript a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+@media (max-width: 760px) {
+  .product-page .product-main {
+    padding-block: 16px 48px;
+  }
+  .product-page .breadcrumb {
+    margin-block-end: 20px;
+    font-size: 12px;
+  }
+  .product-page .breadcrumb ol {
+    column-gap: 8px;
+  }
+  .product-page .breadcrumb li + li::before {
+    padding-inline-end: 8px;
+  }
+  .product-page .product-detail {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .product-page .product-information {
+    padding-block: 0;
+  }
+  .product-page .product-information h1 {
+    font-size: 34px;
+    margin-block: 12px 18px;
+  }
+  .product-page .product-description {
+    font-size: 15px;
+    margin-block-end: 22px;
+  }
+  .product-page .product-inquiry {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Native fallback controls remain readable and visibly inactive without JS. */
+.product-page .language-switch button:disabled,
+.product-page .clock-gallery-controls button:disabled {
+  opacity: 0.55;
+}
