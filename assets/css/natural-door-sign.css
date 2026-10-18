@@ -1,0 +1,20 @@
+/* Two native figures keep both views available without JavaScript. */
+.product-page[data-product-id="natural-edge-door-sign"] .product-photo {
+  aspect-ratio: auto;
+}
+.product-page[data-product-id="natural-edge-door-sign"] .product-photo img {
+  display: block;
+  height: auto;
+}
+.product-page .natural-sign-context {
+  grid-column: 1 / -1;
+  width: min(100%, 650px);
+  margin-inline: auto;
+}
+.natural-sign-context h2 {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-block: 0 18px;
+}

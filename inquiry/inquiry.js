@@ -31,6 +31,10 @@
       // Optional requested dimensions, not verified product specifications.
       dimensions: ["diameter", "thickness"],
     },
+    "natural-edge-door-sign": {
+      name: "Natural Wood Door Sign",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],

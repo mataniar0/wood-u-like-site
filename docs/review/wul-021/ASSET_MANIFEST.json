@@ -1,0 +1,92 @@
+{
+  "task": "WUL-021",
+  "source_archive": "WUL-021_image_assets.zip",
+  "source_archive_sha256": "120680210d6cbe2f43c2f31005f5330c14fc8ab62449765dacd39a93ff7a218b",
+  "input_assets": [
+    {
+      "zip_path": "originals/door_original.png",
+      "sha256": "d8704bd54b30d892bd31b7bb47eef686a5c5a673db003b786d313188ecb884f9",
+      "size_px": [
+        1152,
+        2048
+      ],
+      "kind": "source"
+    },
+    {
+      "zip_path": "originals/product_original.png",
+      "sha256": "8044ea27fd14f5688824d412a239fb5a3d9ecdc7b793c5f7f6f560ab3b8ba037",
+      "size_px": [
+        1152,
+        2048
+      ],
+      "kind": "source"
+    },
+    {
+      "zip_path": "enhanced_concepts/door_lifestyle_concept.png",
+      "sha256": "b43bdda51b8f04565d78db4866a4f2b7ff62025361218309ce039225593c5581",
+      "size_px": [
+        941,
+        1672
+      ],
+      "kind": "AI-enhanced concept"
+    },
+    {
+      "zip_path": "enhanced_concepts/product_clean_concept.png",
+      "sha256": "5bfb619d7b6566a6862abaa05cb104db77e3b026ba87580986c8652cf08a151a",
+      "size_px": [
+        941,
+        1672
+      ],
+      "kind": "AI-enhanced concept"
+    }
+  ],
+  "outputs": [
+    {
+      "view": "product",
+      "kind": "AI-edited illustrative mockup",
+      "generated_sha256": "2487da4c0692224b3311d65120de286d0d1109e47d9d6ec7330a789fcba1b492",
+      "files": [
+        {
+          "path": "assets/images/natural-edge-door-sign-product.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 130922,
+          "sha256": "0a122ed8c950c2e2851872ab93c36c973292acaec5ec3f2b39704384d08f317f"
+        },
+        {
+          "path": "assets/images/natural-edge-door-sign-product-small.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 39600,
+          "sha256": "c317f987ac8261bc78432bd39cfd7308bb61414cb2387cdd42fed550140abe9b"
+        }
+      ]
+    },
+    {
+      "view": "door",
+      "kind": "AI-edited illustrative mockup",
+      "generated_sha256": "e7b7f66dba0ed1dd64b1f430d74df135e0c3b0d2088af14c0cde770002d03302",
+      "files": [
+        {
+          "path": "assets/images/natural-edge-door-sign-door.webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 171656,
+          "sha256": "c789df9bd622e073adfe0c28e78fab5d9239341348b1a20b1f190cb79d354b1c"
+        },
+        {
+          "path": "assets/images/natural-edge-door-sign-door-small.webp",
+          "width": 600,
+          "height": 750,
+          "bytes": 65594,
+          "sha256": "bcaed44b5fa99e6727ff261be833c13027e09623441fec69b79765ceaf263555"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Both views are AI-edited illustrative mockups, not documentary photographs.",
+    "Original PNGs and unused concepts are retained outside the public repository.",
+    "WebP encoding and responsive resizing only after the image editing tool; no content retouching in Python."
+  ]
+}

@@ -3,12 +3,12 @@
 // native hash link, target focus, visibility, and the correct natural route.
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups,products}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-019/legacy');
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/legacy');
 const targets=[{id:'favorites',kind:'collections',next:'#collections'},
  {id:'original-gifts',kind:'collection',slug:'gifts-memories'},
  ...groups.map(g=>({id:'collection-'+g.slug,kind:'collection',slug:g.slug})),
- ...products.map(p=>({id:p.product_id+'-work',kind:'product',product:p.product_id}))];
-const result={task:'WUL-019',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
+ ...products.filter(p=>p.product_id!=="natural-edge-door-sign").map(p=>({id:p.product_id+'-work',kind:'product',product:p.product_id}))];
+const result={task:'WUL-021',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
 function save(status,more={}){q.write(out,'results.json',{...result,status,...more});}
 async function targetVisible(page,t){const target=page.locator('#'+t.id);assert.equal(await target.isVisible(),true);const rect=await target.boundingBox();assert.ok(rect.y>=-1&&rect.y<page.viewportSize().height-10,`${t.id} starts in view without header covering it: ${rect.y}`);return rect;}
 (async()=>{const b=await q.launch();try{
@@ -17,7 +17,7 @@ async function targetVisible(page,t){const target=page.locator('#'+t.id);assert.
   if(t.kind==='product'){assert.equal(await p.locator('.legacy-product:visible').count(),1);assert.equal(await p.locator('#'+t.id+' img').count(),0);assert.equal(await p.locator('#'+t.id+' .product-details-link').getAttribute('href'),`products/${t.product}/`);}
   // A fixture anchor exercises the browser's native fragment focus algorithm;
   // no runtime redirect or JavaScript click handler is used, even with JS off.
-  await p.goto(base+'#story');await p.evaluate(id=>{const a=document.createElement('a');a.id='qa-legacy-link';a.href='#'+id;a.textContent='QA native fragment fixture';document.body.append(a);},t.id);await p.locator('#qa-legacy-link').focus();await p.keyboard.press('Enter');assert.equal(new URL(p.url()).hash,'#'+t.id);await targetVisible(p,t);
+  await p.goto(base+'#story');await p.evaluate(id=>{const a=document.createElement('a');a.id='qa-legacy-link';a.href='#'+id;a.textContent='QA native fragment fixture';document.body.append(a);},t.id);await p.locator('#qa-legacy-link').focus();await p.keyboard.press('Enter');await p.waitForURL(base+'#'+t.id);assert.equal(new URL(p.url()).hash,'#'+t.id);await targetVisible(p,t);
   const focused=await p.locator('#'+t.id).evaluate(e=>e===document.activeElement);assert.equal(focused,true,'Native hash navigation focuses its target');
   let screenshot;
   if(t.kind==='product'){

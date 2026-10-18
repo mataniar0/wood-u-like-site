@@ -1,0 +1,356 @@
+{
+  "results": [
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "he",
+      "status": "PASS",
+      "viewport": [
+        320,
+        568
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "en",
+      "status": "PASS",
+      "viewport": [
+        320,
+        568
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "he",
+      "status": "PASS",
+      "viewport": [
+        390,
+        844
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "en",
+      "status": "PASS",
+      "viewport": [
+        390,
+        844
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "he",
+      "status": "PASS",
+      "viewport": [
+        768,
+        1024
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "en",
+      "status": "PASS",
+      "viewport": [
+        768,
+        1024
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "he",
+      "status": "PASS",
+      "viewport": [
+        1024,
+        768
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "en",
+      "status": "PASS",
+      "viewport": [
+        1024,
+        768
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "he",
+      "status": "PASS",
+      "viewport": [
+        1440,
+        900
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "viewport/navigation/blocked/axe",
+      "language": "en",
+      "status": "PASS",
+      "viewport": [
+        1440,
+        900
+      ],
+      "violations": [],
+      "errors": []
+    },
+    {
+      "test": "validation/allowlist/planning/phone/honeypot/language/privacy",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "simulated:ok",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:next",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:400",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:422",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:500",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:malformed",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:unacknowledged",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:false",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:errors",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:network",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:timeout",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:pending",
+      "language": "he",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "missing/invalid/unapproved-endpoint/privacy",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "external-channels:hidden",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "external-channels:approved",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "validation/allowlist/planning/phone/honeypot/language/privacy",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "simulated:ok",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:next",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:400",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:422",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:500",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:malformed",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:unacknowledged",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:false",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:errors",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:network",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:timeout",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "simulated:pending",
+      "language": "en",
+      "status": "PASS",
+      "mockedPosts": 1
+    },
+    {
+      "test": "missing/invalid/unapproved-endpoint/privacy",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "external-channels:hidden",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "external-channels:approved",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "personalized-clock:simulated-payload",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "personalized-clock:simulated-payload",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "pizza-peel:simulated-payload",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "pizza-peel:simulated-payload",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "family-sign:simulated-payload",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "family-sign:simulated-payload",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "hanging-home-sign:simulated-payload",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "hanging-home-sign:simulated-payload",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "natural-edge-door-sign:simulated-payload",
+      "language": "he",
+      "status": "PASS"
+    },
+    {
+      "test": "natural-edge-door-sign:simulated-payload",
+      "language": "en",
+      "status": "PASS"
+    },
+    {
+      "test": "no-JavaScript",
+      "language": "he",
+      "status": "PASS"
+    }
+  ],
+  "interceptedFormPosts": 36,
+  "realInquiryRequests": 0,
+  "unexpectedExternalRequests": 0
+}

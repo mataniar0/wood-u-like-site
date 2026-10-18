@@ -196,3 +196,15 @@ WUL_REVIEW_DIR=docs/review/wul-019/regression/privacy node tools/check-shared-pr
 שלושת כלי רגרסיית זהות המוצרים משתמשים כעת ב־`check-product-identity.cjs`, כדי לבדוק את אותם צילומים, ALT, מידות, contain, קישורי מוצר/טופס, החלפת שפה, נגישות וחסימת שליחה בתשתית משותפת. `qa-collections-shared.cjs` הוא קוד בדיקה בלבד ואינו נטען באתר.
 
 [דוח המסירה](docs/review/wul-019/REPORT_HE.md), [סיכום מכונה](docs/review/wul-019/QA_SUMMARY.json), [מפת שיוך](docs/review/wul-019/CATEGORY_PRODUCT_MAP.json) ו־[הוראות תחזוקה למוצר שמיני](docs/review/wul-019/README.md) כוללים את הראיות ואת גבולות הבדיקה. WUL-015 / Issue #26 עדיין לא מוזג לבסיס `7644007`, לכן נשמרו שבעה מוצרים. אין Merge, Deploy, מחיקת ענף או הפעלת פניות במשימה זו; נדרשת סקירת ראש צוות עצמאית בציון 90/100 לפחות, ללא חוסמים.
+
+## WUL-021 — שלט עץ טבעי לדלת
+
+המוצר השמיני הוא `natural-edge-door-sign`, בשם **שלט עץ טבעי לדלת / Natural Wood Door Sign**, תחת [שלטים ועיצוב לבית](collections/home-decor/). [עמוד המוצר](products/natural-edge-door-sign/) מציג תמונת מוצר נקייה ותצוגה על דלת, שתיהן עריכות AI המבוססות על הצילומים שסופקו ומסומנות כהדמיות ב־HE/EN. שתי התמונות והקישור לטופס זמינים גם ללא JavaScript. אין מפרט התקנה, מידות קבועות או מחיר שלא אומתו.
+
+ה־CTA מפנה ל־`inquiry/?product=natural-edge-door-sign`; שם המוצר הקנוני בטופס הוא `Natural Wood Door Sign`, עם רוחב וגובה מבוקשים אופציונליים. `contact-config.js` וכל דגלי השליחה נשמרו חסומים. המיפוי הנוכחי וכלי הבדיקה משתמשים ב־[חבילת WUL-021](docs/review/wul-021/REPORT_HE.md); הדוחות והמפות ההיסטוריים נשמרו.
+
+```sh
+NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8001/wood-u-like-site/ node tools/check-natural-door-sign.cjs
+```
+
+הבדיקה מכסה HE/EN ו־no-JS ברוחבי 320/390/768/1024/1440, שתי תמונות וחתימות נכסים, גילוי הדמיה, קישורים, נגישות ו־payload מדומה בלבד. תוצאותיה נכתבות ב־`docs/review/wul-021/product/`. פקודות כל הרגרסיות והמגבלות מופיעות בדוח. אין לבצע merge או deploy במסגרת המשימה.
