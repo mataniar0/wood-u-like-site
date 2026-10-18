@@ -15,7 +15,7 @@ const origin = new URL(base).origin;
 const approvedReview = path.join(root, "docs/review/wul-014");
 const manifestPath = path.join(approvedReview, "PHOTO_MANIFEST.json");
 const names = { he: "שעון עץ בחריטה אישית", en: "Personalized Engraved Wooden Clock" };
-const photoNames = ["front", "lifestyle", "handheld-detail", "hanging"];
+const photoNames = ["front", "handheld-detail", "hanging"];
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
 const results = [];
 const requestCounts = { externalRequests: 0, interceptedSubmissionRequests: 0, realInquiryRequests: 0 };
@@ -167,9 +167,9 @@ async function assertSlide(page, index, language) {
   assert.ok(language === "he" ? /[\u0590-\u05ff]/u.test(caption) : /^[^\u0590-\u05ff]+$/u.test(caption),
     "Selected caption is localized");
   const status = (await page.locator("#clock-gallery-status").textContent()).trim();
-  assert.ok(status.includes(String(index + 1)) && status.includes("4"), "Live gallery status includes current/total");
+  assert.ok(status.includes(String(index + 1)) && status.includes(String(photoNames.length)), "Live gallery status includes current/total");
   const count = page.locator("#clock-gallery-count");
-  assert.equal((await count.textContent()).trim(), `${index + 1} / 4`);
+  assert.equal((await count.textContent()).trim(), `${index + 1} / ${photoNames.length}`);
   assert.equal(await count.evaluate(node => getComputedStyle(node).direction), "ltr",
     "Numeric current/total order stays unambiguous in both Hebrew and English");
   return { index, caption, objectFit: geometry.objectFit, entirePhotoContained: geometry.contained };
@@ -187,7 +187,7 @@ async function assertFocus(page, button) {
 (async () => {
   fs.mkdirSync(path.join(out, "screenshots"), { recursive: true });
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  assert.equal(manifest.length, 4, "Four approved photographs are documented");
+  assert.equal(manifest.length, photoNames.length, "Approved photographs match the public gallery");
   assetChecks = manifest.flatMap((photo, index) => ["full", "small"].map(size => {
     const asset = photo[size];
     const expectedFile = `assets/images/personalized-clock-${photoNames[index]}${size === "small" ? "-small" : ""}.webp`;
@@ -231,7 +231,7 @@ async function assertFocus(page, button) {
         const card = page.locator("#personalized-clock-work.product-card.clock-card");
         assert.equal(await card.locator("h4#clock-product-title").textContent(), names[language]);
         assert.equal(await card.locator(".clock-gallery").getAttribute("aria-labelledby"), "clock-product-title");
-        assert.equal(await card.locator("[data-clock-slide]").count(), 4);
+        assert.equal(await card.locator("[data-clock-slide]").count(), photoNames.length);
         assert.equal(await page.locator("#clock-gallery-status").getAttribute("aria-live"), "polite");
         const next = card.locator("[data-clock-next]"), previous = card.locator("[data-clock-prev]");
         assert.equal(await next.isEnabled(), true);
@@ -239,7 +239,7 @@ async function assertFocus(page, button) {
         const badAnchors = await page.locator('a[href^="#"]').evaluateAll(links => links
           .filter(link => link.hash.length > 1 && !document.getElementById(link.hash.slice(1))).map(link => link.hash));
         assert.deepEqual(badAnchors, [], "All same-page anchor targets exist");
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < photoNames.length; index++) {
           const image = card.locator("[data-clock-slide]").nth(index).locator("img");
           assert.equal(await image.getAttribute("width"), String(manifest[index].full.dimensions[0]));
           assert.equal(await image.getAttribute("height"), String(manifest[index].full.dimensions[1]));
@@ -266,7 +266,7 @@ async function assertFocus(page, button) {
         await page.screenshot({ path: path.join(out, `screenshots/${language}-${width}-homepage.png`), fullPage: true });
         shots.push(`screenshots/${language}-${width}-homepage.png`);
         const slideResults = [];
-        for (let index = 0; index < 4; index++) {
+        for (let index = 0; index < photoNames.length; index++) {
           slideResults.push(await assertSlide(page, index, language));
           if (width === 390 || width === 1440 || index === 0) {
             const screenshot = `screenshots/${language}-${width}-clock-${photoNames[index]}.png`;
@@ -277,7 +277,7 @@ async function assertFocus(page, button) {
         }
         await assertSlide(page, 0, language); // Next wraps from the last photograph.
         await previous.click();
-        await assertSlide(page, 3, language); // Previous wraps from the first photograph.
+        await assertSlide(page, photoNames.length - 1, language); // Previous wraps from the first photograph.
         await previous.focus();
         await previous.press("Home");
         await assertSlide(page, 0, language);
@@ -288,7 +288,7 @@ async function assertFocus(page, button) {
         await previous.press(language === "he" ? "ArrowRight" : "ArrowLeft");
         await assertSlide(page, 0, language);
         await previous.press("End");
-        await assertSlide(page, 3, language);
+        await assertSlide(page, photoNames.length - 1, language);
         await assertFocus(page, previous);
         if (width === 390 || width === 1440) {
           const screenshot = `screenshots/${language}-${width}-clock-keyboard-focus.png`;
@@ -297,7 +297,7 @@ async function assertFocus(page, button) {
         }
         const otherLanguage = language === "he" ? "en" : "he";
         await page.locator(`[data-language="${otherLanguage}"]`).click();
-        await assertSlide(page, 3, otherLanguage);
+        await assertSlide(page, photoNames.length - 1, otherLanguage);
         await previous.focus();
         await previous.press("Home");
         await previous.press(otherLanguage === "he" ? "ArrowLeft" : "ArrowRight");
@@ -308,7 +308,7 @@ async function assertFocus(page, button) {
         await page.emulateMedia({ reducedMotion: "reduce" });
         await previous.focus();
         await previous.press("End");
-        await assertSlide(page, 3, language);
+        await assertSlide(page, photoNames.length - 1, language);
         assert.equal(await card.evaluate(card => [...card.querySelectorAll("*")].every(node => {
           const style = getComputedStyle(node);
           return style.animationName === "none";
@@ -407,8 +407,8 @@ async function assertFocus(page, button) {
             loaded.currentSource === new URL(file, base).href), "No-JS displays the approved first photograph");
           for (const button of await card.locator("[data-clock-prev],[data-clock-next]").all()) assert.equal(await button.isDisabled(), true);
           const links = card.locator(".clock-gallery-noscript a");
-          assert.equal(await links.count(), 4, "No-JavaScript fallback exposes every approved photograph");
-          for (let index = 0; index < 4; index++) {
+          assert.equal(await links.count(), photoNames.length, "No-JavaScript fallback exposes every approved photograph");
+          for (let index = 0; index < photoNames.length; index++) {
             const link = links.nth(index);
             assert.equal(await link.isVisible(), true);
             const target = new URL(await link.getAttribute("href"), base);

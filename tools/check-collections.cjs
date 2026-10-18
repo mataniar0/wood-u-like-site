@@ -384,7 +384,7 @@ async function capture(page, decoderPage, container, filename) {
         scenario.keyboardNavigation = await categoryNavigation(page, true);
         assert.equal(await page.locator('[data-language="en"]').isDisabled(), true, "No-JS language selector is visibly disabled");
         assert.equal(await page.locator("#personalized-clock-work [data-clock-next]").isDisabled(), true);
-        assert.equal(await page.locator(".clock-gallery-noscript a").count(), 4, "Native clock photographs remain linked");
+        assert.equal(await page.locator(".clock-gallery-noscript a").count(), 3, "Native clock photographs remain linked");
         scenario.screenshots.push(await capture(page, decoderPage, page.locator("#collections"), `he-${width}-no-js-collections.png`));
         for (const group of groups) scenario.screenshots.push(await capture(page, decoderPage, page.locator(`#collection-${group.slug}`), `he-${width}-no-js-${group.slug}.png`));
         await geometry(page);
