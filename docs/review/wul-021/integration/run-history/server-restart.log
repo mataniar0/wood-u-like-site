@@ -1,0 +1,3 @@
+Pre-QA readiness check: curl (52) Empty reply from server; HTTP 000.
+Restarted owned Python server PID 859 using the documented port and Pages prefix.
+Post-restart curl: HTTP 200. Subsequent browser QA uses port 8001.

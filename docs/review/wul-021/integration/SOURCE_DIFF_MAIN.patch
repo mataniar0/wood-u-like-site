@@ -1,0 +1,916 @@
+diff --git a/README.md b/README.md
+index 2c1d99f..64e898d 100644
+--- a/README.md
++++ b/README.md
+@@ -2,0 +3,2 @@
++הגרסה המשולבת של WUL-020 ו־WUL-021 כוללת **9 מוצרים, בחלוקה 5/2/1/1**. למפה, בדיקות חדשות ופקודות הרצה ראו [Integration V2](docs/review/wul-021/integration/REPORT_HE.md). הסעיפים ההיסטוריים בהמשך מתעדים את גרסאות המשימות המקוריות.
++
+@@ -223,0 +226,16 @@ node tools/check-oval-room-signs.cjs
++
++## WUL-021 — שלט עץ טבעי לדלת
++
++המוצר השמיני הוא `natural-edge-door-sign`, בשם **שלט עץ טבעי לדלת / Natural Wood Door Sign**, תחת [שלטים ועיצוב לבית](collections/home-decor/). [עמוד המוצר](products/natural-edge-door-sign/) מציג תמונת מוצר נקייה ותצוגה על דלת, שתיהן עריכות AI המבוססות על הצילומים שסופקו ומסומנות כהדמיות ב־HE/EN. שתי התמונות והקישור לטופס זמינים גם ללא JavaScript. אין מפרט התקנה, מידות קבועות או מחיר שלא אומתו.
++
++ה־CTA מפנה ל־`inquiry/?product=natural-edge-door-sign`; שם המוצר הקנוני בטופס הוא `Natural Wood Door Sign`, עם רוחב וגובה מבוקשים אופציונליים. `contact-config.js` וכל דגלי השליחה נשמרו חסומים. המיפוי הנוכחי וכלי הבדיקה משתמשים ב־[חבילת WUL-021](docs/review/wul-021/REPORT_HE.md); הדוחות והמפות ההיסטוריים נשמרו.
++
++```sh
++NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8001/wood-u-like-site/ node tools/check-natural-door-sign.cjs
++```
++
++הבדיקה מכסה HE/EN ו־no-JS ברוחבי 320/390/768/1024/1440, שתי תמונות וחתימות נכסים, גילוי הדמיה, קישורים, נגישות ו־payload מדומה בלבד. תוצאותיה נכתבות ב־`docs/review/wul-021/product/`. פקודות כל הרגרסיות והמגבלות מופיעות בדוח. אין לבצע merge או deploy במסגרת המשימה.
++
++## WUL-021 Integration V2
++
++המבנה המשולב כולל תשעה מוצרים: 5 / 2 / 1 / 1, עם `oval-room-signs` ו־`natural-edge-door-sign` יחד ב־home-decor. הסעיפים לעיל וחבילות WUL-020/WUL-021 מתעדים כל ענף בנפרד לפני האינטגרציה. [דוח האינטגרציה והבדיקות החדשות](docs/review/wul-021/integration/REPORT_HE.md) הוא הראיה למבנה המשולב. אין מיזוג ל־main, Deploy או הפעלת פניות במסגרת משימה זו.
+diff --git a/assets/css/natural-door-sign.css b/assets/css/natural-door-sign.css
+new file mode 100644
+index 0000000..b55ae40
+--- /dev/null
++++ b/assets/css/natural-door-sign.css
+@@ -0,0 +1,20 @@
++/* Two native figures keep both views available without JavaScript. */
++.product-page[data-product-id="natural-edge-door-sign"] .product-photo {
++  aspect-ratio: auto;
++}
++.product-page[data-product-id="natural-edge-door-sign"] .product-photo img {
++  display: block;
++  height: auto;
++}
++.product-page .natural-sign-context {
++  grid-column: 1 / -1;
++  width: min(100%, 650px);
++  margin-inline: auto;
++}
++.natural-sign-context h2 {
++  font-family: var(--serif);
++  font-size: 26px;
++  font-weight: 400;
++  line-height: 1.4;
++  margin-block: 0 18px;
++}
+diff --git a/assets/images/natural-edge-door-sign-door-small.webp b/assets/images/natural-edge-door-sign-door-small.webp
+new file mode 100644
+index 0000000..51db546
+Binary files /dev/null and b/assets/images/natural-edge-door-sign-door-small.webp differ
+diff --git a/assets/images/natural-edge-door-sign-door.webp b/assets/images/natural-edge-door-sign-door.webp
+new file mode 100644
+index 0000000..d7ade86
+Binary files /dev/null and b/assets/images/natural-edge-door-sign-door.webp differ
+diff --git a/assets/images/natural-edge-door-sign-product-small.webp b/assets/images/natural-edge-door-sign-product-small.webp
+new file mode 100644
+index 0000000..6c64e8c
+Binary files /dev/null and b/assets/images/natural-edge-door-sign-product-small.webp differ
+diff --git a/assets/images/natural-edge-door-sign-product.webp b/assets/images/natural-edge-door-sign-product.webp
+new file mode 100644
+index 0000000..cb07fe1
+Binary files /dev/null and b/assets/images/natural-edge-door-sign-product.webp differ
+diff --git a/assets/js/language.js b/assets/js/language.js
+index 6aad569..57b2f0a 100644
+--- a/assets/js/language.js
++++ b/assets/js/language.js
+@@ -701,0 +702,12 @@
++    "product.naturalDoor.title": {"he": "שלט עץ טבעי לדלת", "en": "Natural Wood Door Sign"},
++    "product.naturalDoor.copy": {"he": "שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם.", "en": "A natural wooden door sign, personalized with your chosen name or inscription. A warm, rustic accent that gives your entrance its own character."},
++    "catalog.natural-edge-door-sign.summary": {"he": "שם אישי, חריטה כהה ועץ עם אופי טבעי.", "en": "A personal name, dark engraving and wood with natural character."},
++    "page.natural-edge-door-sign.metaTitle": {"he": "שלט עץ טבעי לדלת | WOOD U LIKE", "en": "Natural Wood Door Sign | WOOD U LIKE"},
++    "page.natural-edge-door-sign.metaDescription": {"he": "שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.", "en": "A natural wooden door sign with a personalized name or inscription. Explore the piece and personalization options at WOOD U LIKE."},
++    "page.natural-edge-door-sign.details": {"he": "אפשר לברר על שם משפחה או כיתוב אישי ולציין רוחב וגובה מבוקשים בטופס. מידות, עיצוב ואופן התקנה יתואמו אישית; התמונות אינן מפרט טכני.", "en": "Ask about a family name or personal wording and enter your preferred width and height in the form. Dimensions, design and installation are arranged individually; the images are not technical specifications."},
++    "naturalDoor.product.alt": {"he": "הדמיה של שלט עץ מלבני עם קצוות טבעיים וחריטת שמיר לצד האות s וגרש, על רקע בהיר ונקי", "en": "Illustrative mockup of a rectangular natural-edge wooden sign engraved with Shamir in Hebrew beside a Latin s and apostrophe, on a clean light background"},
++    "naturalDoor.door.alt": {"he": "הדמיה של שלט עץ עם חריטת שמיר לצד האות s וגרש, ממורכז מעל קשת הזכוכית בדלת כהה", "en": "Illustrative mockup of a wooden sign engraved with Shamir in Hebrew beside a Latin s and apostrophe, centered above the glass arch of a dark door"},
++    "naturalDoor.product.caption": {"he": "מבט מקרוב · הדמיה להמחשה", "en": "A closer look · Illustrative mockup"},
++    "naturalDoor.door.caption": {"he": "בכניסה לבית · הדמיה להמחשה", "en": "At the entrance · Illustrative mockup"},
++    "naturalDoor.door.title": {"he": "אופי טבעי בכניסה לבית", "en": "A natural welcome home"},
++    "inquiry.product.natural-edge-door-sign": {"he": "שלט עץ טבעי לדלת", "en": "Natural Wood Door Sign"},
+diff --git a/collections/home-decor/index.html b/collections/home-decor/index.html
+index 24dbfae..1e2ec1a 100644
+--- a/collections/home-decor/index.html
++++ b/collections/home-decor/index.html
+@@ -175,0 +176,12 @@
++        <article id="natural-edge-door-sign-work" tabindex="-1" class="product-card catalog-card" data-product-id="natural-edge-door-sign">
++          <figure class="catalog-photo">
++            <div class="product-image"><img src="../../assets/images/natural-edge-door-sign-product.webp" srcset="../../assets/images/natural-edge-door-sign-product-small.webp 600w, ../../assets/images/natural-edge-door-sign-product.webp 1200w" sizes="(max-width: 760px) 90vw, (max-width: 1100px) 45vw, 400px" width="1200" height="1200" loading="lazy" decoding="async" alt="הדמיה של שלט עץ מלבני עם קצוות טבעיים וחריטת שמיר לצד האות s וגרש, על רקע בהיר ונקי" data-i18n-alt="naturalDoor.product.alt" /></div>
++            <figcaption class="catalog-mockup" data-i18n="product.mockup">הדמיה להמחשה</figcaption>
++          </figure>
++          <h2 data-i18n="product.naturalDoor.title">שלט עץ טבעי לדלת</h2>
++          <p data-i18n="catalog.natural-edge-door-sign.summary">שם אישי, חריטה כהה ועץ עם אופי טבעי.</p>
++          <div class="catalog-actions">
++            <a class="product-details-link" href="../../products/natural-edge-door-sign/"><span data-i18n="product.view">לפרטי המוצר</span><span class="direction-arrow" aria-hidden="true">←</span></a>
++            <a class="product-inquiry" href="../../inquiry/?product=natural-edge-door-sign"><span data-i18n="product.quote">בקשת הצעת מחיר</span></a>
++          </div>
++        </article>
+diff --git a/inquiry/index.html b/inquiry/index.html
+index 6726047..f083efe 100644
+--- a/inquiry/index.html
++++ b/inquiry/index.html
+@@ -238,0 +239 @@
++              <option value="natural-edge-door-sign" data-i18n="inquiry.product.natural-edge-door-sign">שלט עץ טבעי לדלת</option>
+diff --git a/inquiry/inquiry.js b/inquiry/inquiry.js
+index f0972f8..0d701a0 100644
+--- a/inquiry/inquiry.js
++++ b/inquiry/inquiry.js
+@@ -37,0 +38,4 @@
++    "natural-edge-door-sign": {
++      name: "Natural Wood Door Sign",
++      dimensions: ["width", "height"],
++    },
+diff --git a/products/natural-edge-door-sign/index.html b/products/natural-edge-door-sign/index.html
+new file mode 100644
+index 0000000..6ce2ea4
+--- /dev/null
++++ b/products/natural-edge-door-sign/index.html
+@@ -0,0 +1,168 @@
++<!doctype html>
++<html lang="he" dir="rtl">
++  <head>
++    <meta charset="utf-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <title data-i18n="page.natural-edge-door-sign.metaTitle">שלט עץ טבעי לדלת | WOOD U LIKE</title>
++    <meta name="description" content="שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE." data-i18n-content="page.natural-edge-door-sign.metaDescription" />
++    <meta name="theme-color" content="#FFFCF7" />
++    <link rel="stylesheet" href="../../assets/css/style.css" />
++    <link rel="stylesheet" href="../../assets/css/product.css" />
++    <link rel="stylesheet" href="../../assets/css/natural-door-sign.css" />
++    <link rel="icon" href="data:," />
++    <link rel="canonical" href="https://mataniar0.github.io/wood-u-like-site/products/natural-edge-door-sign/" />
++    <meta property="og:title" content="שלט עץ טבעי לדלת | WOOD U LIKE" data-i18n-content="page.natural-edge-door-sign.metaTitle" />
++    <meta property="og:description" content="שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE." data-i18n-content="page.natural-edge-door-sign.metaDescription" />
++    <meta property="og:type" content="website" />
++    <meta property="og:locale" content="he_IL" />
++    <meta property="og:url" content="https://mataniar0.github.io/wood-u-like-site/products/natural-edge-door-sign/" />
++    <meta property="og:image" content="https://mataniar0.github.io/wood-u-like-site/assets/images/natural-edge-door-sign-product.webp" />
++    <meta property="og:image:alt" content="הדמיה של שלט עץ מלבני עם קצוות טבעיים וחריטת שמיר לצד האות s וגרש, על רקע בהיר ונקי" data-i18n-content="naturalDoor.product.alt" />
++    <script src="../../assets/js/language.js"></script>
++    <script src="../../assets/js/attribution.js"></script>
++  </head>
++  <body class="product-page" data-product-id="natural-edge-door-sign">
++    <a class="skip" href="#main"><span data-i18n="skip">דילוג לתוכן</span></a>
++    <div class="preview-flag">
++      <span data-i18n="values.summary">עץ טבעי · חריטה אישית · עבודת יד</span>
++    </div>
++    <header class="site-header">
++      <div class="header-inner wrap">
++        <a
++          href="../../#top"
++          class="brand"
++          aria-label="WOOD U LIKE - לדף הראשי"
++          data-i18n-aria-label="nav.home"
++        >
++          <span class="brand-name" lang="en" dir="ltr"
++            >WOOD U LIKE<span class="brand-dot">.</span></span
++          >
++          <span class="brand-sub" lang="en" dir="ltr"
++            >NATURAL WOOD · PERSONAL STORIES</span
++          >
++        </a>
++        <nav
++          class="nav"
++          aria-label="ניווט ראשי"
++          data-i18n-aria-label="nav.label"
++        >
++          <a href="../../#collections"
++            ><span data-i18n="nav.collections">קולקציות</span></a
++          ><a href="../../#favorites"
++            ><span data-i18n="nav.favorites">בחירת קולקציה</span></a
++          ><a href="../../#story"><span data-i18n="nav.story">הסיפור שלנו</span></a>
++        </nav>
++        <a href="../../#personal" class="header-cta"
++          ><span data-i18n="nav.personal">על התאמה אישית</span
++          ><span class="direction-arrow" aria-hidden="true">←</span></a
++        >
++        <div
++          class="language-switch"
++          role="group"
++          aria-label="בחירת שפה"
++          data-i18n-aria-label="language.label"
++        >
++          <button
++            type="button"
++            data-language="he"
++            lang="he"
++            dir="rtl"
++            aria-label="עברית"
++            data-i18n-aria-label="language.he"
++            aria-pressed="true"
++            disabled
++          >
++            עברית
++          </button>
++          <button
++            type="button"
++            data-language="en"
++            lang="en"
++            dir="ltr"
++            aria-label="אנגלית"
++            data-i18n-aria-label="language.en"
++            aria-pressed="false"
++            disabled
++          >
++            English
++          </button>
++        </div>
++        <button
++          class="menu-toggle"
++          type="button"
++          hidden
++          aria-label="פתיחת תפריט"
++          aria-expanded="false"
++          aria-controls="mobile-nav"
++          data-i18n-aria-label="menu.open"
++        >
++          <span></span><span></span><span></span>
++        </button>
++      </div>
++      <nav
++        class="mobile-nav"
++        id="mobile-nav"
++        hidden
++        aria-label="ניווט במובייל"
++        data-i18n-aria-label="menu.label"
++      >
++        <a href="../../#collections"
++          ><span data-i18n="nav.collections">קולקציות</span></a
++        ><a href="../../#favorites"
++          ><span data-i18n="nav.favorites">בחירת קולקציה</span></a
++        ><a href="../../#story"><span data-i18n="nav.story">הסיפור שלנו</span></a
++        ><a href="../../#personal"
++          ><span data-i18n="nav.personal">על התאמה אישית</span></a
++        >
++      </nav>
++    </header>
++    <main id="main" class="wrap product-main" tabindex="-1">
++      <nav class="breadcrumb" aria-label="נתיב ניווט" data-i18n-aria-label="product.breadcrumb.label">
++        <ol>
++          <li><a href="../../"><span data-i18n="product.home">בית</span></a></li>
++          <li><a href="../../collections/home-decor/"><span data-i18n="category.homeDecor">שלטים ועיצוב לבית</span></a></li>
++          <li aria-current="page"><span data-i18n="product.naturalDoor.title">שלט עץ טבעי לדלת</span></li>
++        </ol>
++      </nav>
++      <article id="natural-edge-door-sign-work" class="product-detail" data-collection="home-decor">
++        <figure class="product-media natural-sign-primary">
++          <div class="product-photo"><img class="product-primary-image" src="../../assets/images/natural-edge-door-sign-product.webp" srcset="../../assets/images/natural-edge-door-sign-product-small.webp 600w, ../../assets/images/natural-edge-door-sign-product.webp 1200w" sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1100px) 48vw, 650px" width="1200" height="1200" loading="eager" decoding="async" alt="הדמיה של שלט עץ מלבני עם קצוות טבעיים וחריטת שמיר לצד האות s וגרש, על רקע בהיר ונקי" data-i18n-alt="naturalDoor.product.alt" /></div>
++          <figcaption class="product-mockup" data-i18n="naturalDoor.product.caption">מבט מקרוב · הדמיה להמחשה</figcaption>
++        </figure>
++        <div class="product-information">
++          <p class="section-kicker" data-i18n="category.homeDecor">שלטים ועיצוב לבית</p>
++          <h1 id="product-title" data-i18n="product.naturalDoor.title">שלט עץ טבעי לדלת</h1>
++          <p class="product-description" data-i18n="product.naturalDoor.copy">שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם.</p>
++          <a class="btn btn-primary product-inquiry product-quote-link" href="../../inquiry/?product=natural-edge-door-sign"><span data-i18n="product.quote">בקשת הצעת מחיר</span><span class="direction-arrow" aria-hidden="true">←</span></a>
++          <section class="product-customization" aria-labelledby="customization-title">
++            <h2 id="customization-title" data-i18n="product.customization">אפשרויות התאמה אישית</h2>
++            <p data-i18n="page.natural-edge-door-sign.details">אפשר לברר על שם משפחה או כיתוב אישי ולציין רוחב וגובה מבוקשים בטופס. מידות, עיצוב ואופן התקנה יתואמו אישית; התמונות אינן מפרט טכני.</p>
++          </section>
++          <p class="product-note" data-i18n="product.arrangement">הפריטים המוצגים הם דוגמאות לעיצוב אישי. לבירור על הפריט והאפשרויות, אפשר לעיין בטופס בקשת הצעת מחיר.</p>
++          <a class="text-link product-collection-link" href="../../collections/home-decor/"><span data-i18n="product.backCollection">בחזרה לקולקציה</span><span class="direction-arrow" aria-hidden="true">←</span></a>
++        </div>
++        <figure class="product-media natural-sign-context">
++          <h2 data-i18n="naturalDoor.door.title">אופי טבעי בכניסה לבית</h2>
++          <div class="product-photo"><img class="product-secondary-image" src="../../assets/images/natural-edge-door-sign-door.webp" srcset="../../assets/images/natural-edge-door-sign-door-small.webp 600w, ../../assets/images/natural-edge-door-sign-door.webp 1122w" sizes="(max-width: 760px) calc(100vw - 36px), 650px" width="1122" height="1402" loading="lazy" decoding="async" alt="הדמיה של שלט עץ עם חריטת שמיר לצד האות s וגרש, ממורכז מעל קשת הזכוכית בדלת כהה" data-i18n-alt="naturalDoor.door.alt" /></div>
++          <figcaption class="product-mockup" data-i18n="naturalDoor.door.caption">בכניסה לבית · הדמיה להמחשה</figcaption>
++        </figure>
++      </article>
++    </main>
++    <footer class="footer">
++      <div class="wrap footer-inner">
++        <div>
++          <strong lang="en">WOOD U LIKE</strong
++          ><span
++            ><span data-i18n="footer.values"
++              >מוצרי עץ • חריטה אישית • עבודת יד</span
++            ></span
++          >
++        </div>
++        <p><span data-i18n="footer.tagline">עץ טבעי. סיפור אישי.</span></p>
++        <a href="#main"><span data-i18n="footer.top">בחזרה למעלה ↑</span></a>
++      </div>
++    </footer>
++    <script>window.WUL_I18N.initialize();</script>
++    <script src="../../assets/js/main.js"></script>
++  </body>
++</html>
+diff --git a/tools/check-collection-accessibility.cjs b/tools/check-collection-accessibility.cjs
+index 7452b58..91f18bb 100644
+--- a/tools/check-collection-accessibility.cjs
++++ b/tools/check-collection-accessibility.cjs
+@@ -4,2 +4,2 @@ const {assert,path,root,base,groups}=q;
+-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/accessibility');
+-const result={task:'WUL-020',scenarios:[]};
++const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/accessibility');
++const result={task:'WUL-021 Integration V2',scenarios:[]};
+diff --git a/tools/check-collection-contract.cjs b/tools/check-collection-contract.cjs
+index 69086ad..c06767e 100644
+--- a/tools/check-collection-contract.cjs
++++ b/tools/check-collection-contract.cjs
+@@ -5,0 +6 @@ const before=file=>execFileSync('git',['show',`${baseline}:${file}`],{cwd:root,e
++const prior=file=>execFileSync('git',['show',`c487016:${file}`],{cwd:root,encoding:'utf8'});
+@@ -8,3 +9,4 @@ function catalog(source){const start=source.indexOf('const catalog = ')+16,end=s
+-const original=catalog(before('assets/js/language.js')),translated=catalog(current('assets/js/language.js'));
+-for(const key of Object.keys(original))assert.equal(JSON.stringify(translated[key]),JSON.stringify(original[key]),'Existing translation '+key);
+-const result={task:'WUL-020',status:'PASS',baseline:execFileSync('git',['rev-parse',baseline],{cwd:root,encoding:'utf8'}).trim(),protectedFiles:q.preservation(),originalTranslationKeysPreserved:Object.keys(original).length,collections:[],products:[]};
++const original=catalog(before('assets/js/language.js')),previous=catalog(prior('assets/js/language.js')),translated=catalog(current('assets/js/language.js'));
++for(const [source,keys]of [['updated-main',original],['original-WUL-021',previous]])for(const key of Object.keys(keys))assert.equal(JSON.stringify(translated[key]),JSON.stringify(keys[key]),source+' translation '+key);
++const keys=[...current('assets/js/language.js').matchAll(/^    "([^"]+)":/gm)].map(m=>m[1]);assert.equal(keys.length,new Set(keys).size,'No duplicate translation keys');
++const result={task:'WUL-021 Integration V2',status:'PASS',baseline,protectedFiles:q.preservation(),originalTranslationKeysPreserved:Object.keys(original).length,priorWul021KeysPreserved:Object.keys(previous).length,collections:[],products:[]};
+@@ -11,0 +14,2 @@ assert.equal(current('index.html'),before('index.html'),'Homepage unchanged');
++assert.equal((current('index.html').match(/class="category-card"/g)||[]).length,4);
++assert.equal((current('index.html').match(/class="[^"\n]*\bproduct-card\b/g)||[]).length,0);
+@@ -13,7 +17,7 @@ const found=[];for(const group of groups){const html=current(`collections/${grou
+-assert.equal(found.length,8);assert.equal(new Set(found).size,8);assert.equal(found.filter(id=>id.startsWith('oval-room-signs')).length,1);
+-const home=current('collections/home-decor/index.html');const withoutNew=home.replace(/        <article id="oval-room-signs-work"[\s\S]*?<\/article>\n/,'');assert.equal(withoutNew,before('collections/home-decor/index.html'),'Only append one new room-sign card');
+-for(const p of q.legacyProducts){const file=p.route+'index.html';assert.equal(current(file),before(file));result.products.push({id:p.product_id,status:'PASS',byteIdenticalToBaseline:true});}
+-const product=products.find(p=>p.product_id==='oval-room-signs');assert.equal(product.name.en,'Personalized Oval Room Signs');assert.equal(product.name.he,'שלטי חדר אליפטיים');assert.ok(current(product.route+'index.html').includes('data-product-id="oval-room-signs"'));
+-assert.equal((current('inquiry/index.html').match(/value="oval-room-signs"/g)||[]).length,1);assert.equal((current('inquiry/inquiry.js').match(/"oval-room-signs":/g)||[]).length,1);
+-const cssBefore=before('assets/css/product.css'),css=current('assets/css/product.css');assert.ok(css.startsWith(cssBefore));const extra=css.slice(cssBefore.length).split('\n').filter(l=>l.trim()&&!l.startsWith('/*'));assert.equal(extra.length,5);assert.ok(extra.every(l=>l.startsWith('.product-page[data-product-id="oval-room-signs"] ')),'All added CSS scoped to the new product');result.productCss={status:'PASS',baselinePrefixUnchanged:true,newRulesOnlyTargetOvalRoomSigns:true};
+-q.write(path.join(root,'docs/review/wul-020'),'PRESERVATION.json',result);console.log(`PASS: ${result.protectedFiles.length} protected/approved-source records; ${result.originalTranslationKeysPreserved} original translations; 7 unchanged products; one new product`);
++assert.equal(found.length,9);assert.equal(new Set(found).size,9);assert.deepEqual(groups.map(g=>g.ids.length),[5,2,1,1]);
++const home=current('collections/home-decor/index.html');assert.equal(home.replace(/        <article id="natural-edge-door-sign-work"[\s\S]*?<\/article>\n/,''),before('collections/home-decor/index.html'),'Exact main collection plus one natural-sign card');
++for(const p of products){const file=p.route+'index.html';assert.equal(current(file),p.product_id==='natural-edge-door-sign'?prior(file):before(file));result.products.push({id:p.product_id,status:'PASS',source:p.product_id==='natural-edge-door-sign'?'original-WUL-021':'updated-main',byteIdenticalToSource:true});assert.equal(p.collection,groups.find(g=>g.ids.includes(p.product_id)).slug);assert.ok(current(file).includes('inquiry/?product='+p.product_id));assert.ok(current(file).includes(p.canonical));assert.equal((current('inquiry/index.html').match(new RegExp('value="'+p.product_id+'"','g'))||[]).length,1);}
++assert.equal(current('docs/review/wul-021/ASSET_MANIFEST.json'),prior('docs/review/wul-021/ASSET_MANIFEST.json'),'WUL-021 asset manifest unchanged');
++assert.equal(current('docs/review/wul-021/CATEGORY_PRODUCT_MAP.json'),current('docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json'));
++q.write(path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration'),'PRESERVATION.json',result);
++console.log(`PASS contract: ${result.protectedFiles.length} protected files; ${result.originalTranslationKeysPreserved} main translations; 9 products; collection counts 5/2/1/1`);
+diff --git a/tools/check-collections.cjs b/tools/check-collections.cjs
+index 5ef6000..6c92ccc 100644
+--- a/tools/check-collections.cjs
++++ b/tools/check-collections.cjs
+@@ -2 +2 @@
+-// WUL-020: static three-level navigation, all five widths, both languages,
++// WUL-019: static three-level navigation, all five widths, both languages,
+@@ -6,2 +6,2 @@ const {assert,fs,path,root,base,prefix,groups,products,viewports}=q;
+-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/collections');
+-const result={task:'WUL-020',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
++const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/collections');
++const result={task:'WUL-021 Integration V2',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
+@@ -43,0 +44 @@ async function physicalTab(page,selector){const target=page.locator(selector);fo
++   if(!route&&js&&[390,1440].includes(width)){const current=await p.evaluate(()=>({height:document.documentElement.scrollHeight,loadedImages:[...document.images].filter(i=>i.complete&&i.naturalWidth).length,imageResources:performance.getEntriesByType('resource').filter(r=>/\.webp$/.test(r.name)).length}));const before=require('../docs/review/wul-019/stage-a/results.json').scenarios.find(s=>s.mode==='before'&&s.language===language&&s.width===width);assert.ok(current.height<before.height);assert.ok(current.loadedImages<before.loadedImages);assert.ok(current.imageResources<before.imageResources);result.metrics.push({language,width,before:{height:before.height,loadedImages:before.loadedImages,imageResources:before.imageResources},after:current,heightReductionPercent:Math.round((1-current.height/before.height)*1000)/10,status:'PASS'});}
+diff --git a/tools/check-fragment-navigation.cjs b/tools/check-fragment-navigation.cjs
+index 8422bd7..140fe80 100644
+--- a/tools/check-fragment-navigation.cjs
++++ b/tools/check-fragment-navigation.cjs
+@@ -6 +6 @@ const {assert,path,root,base,groups,products}=q;
+-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/legacy');
++const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/legacy');
+@@ -11 +11 @@ const targets=[{id:'favorites',kind:'collections',next:'#collections'},
+-const result={task:'WUL-020',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
++const result={task:'WUL-021 Integration V2',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
+@@ -20 +20 @@ async function targetVisible(page,t){const target=page.locator('#'+t.id);assert.
+-  await p.goto(base+'#story');await p.evaluate(id=>{const a=document.createElement('a');a.id='qa-legacy-link';a.href='#'+id;a.textContent='QA native fragment fixture';document.body.append(a);},t.id);await p.locator('#qa-legacy-link').focus();await p.keyboard.press('Enter');assert.equal(new URL(p.url()).hash,'#'+t.id);await targetVisible(p,t);
++  await p.goto(base+'#story');await p.evaluate(id=>{const a=document.createElement('a');a.id='qa-legacy-link';a.href='#'+id;a.textContent='QA native fragment fixture';document.body.append(a);},t.id);await p.locator('#qa-legacy-link').focus();await p.keyboard.press('Enter');await p.waitForURL(base+'#'+t.id);assert.equal(new URL(p.url()).hash,'#'+t.id);await targetVisible(p,t);
+diff --git a/tools/check-inquiry.cjs b/tools/check-inquiry.cjs
+index 5b7b6e4..4b9c08a 100644
+--- a/tools/check-inquiry.cjs
++++ b/tools/check-inquiry.cjs
+@@ -2 +2 @@
+-const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
++const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+@@ -266,0 +267 @@ function pass(test, language, extra = {}) {
++          ["natural-edge-door-sign-work", "natural-edge-door-sign"],
+@@ -278 +279 @@ function pass(test, language, extra = {}) {
+-        for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock", "oval-room-signs"]) {
++        for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock", "oval-room-signs", "natural-edge-door-sign"]) {
+@@ -607,0 +609 @@ function pass(test, language, extra = {}) {
++      ["natural-edge-door-sign", "Natural Wood Door Sign", "שלט עץ טבעי לדלת"],
+diff --git a/tools/check-lead-attribution.cjs b/tools/check-lead-attribution.cjs
+index abae2dc..c0d5019 100644
+--- a/tools/check-lead-attribution.cjs
++++ b/tools/check-lead-attribution.cjs
+@@ -2 +2 @@
+-const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
++const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+@@ -35,0 +36 @@ const products = [
++  ["natural-edge-door-sign", "Natural Wood Door Sign"],
+diff --git a/tools/check-natural-door-sign.cjs b/tools/check-natural-door-sign.cjs
+new file mode 100644
+index 0000000..af98cbe
+--- /dev/null
++++ b/tools/check-natural-door-sign.cjs
+@@ -0,0 +1,131 @@
++"use strict";
++const q = require("./qa-collections-shared.cjs");
++const { assert, fs, path, root, base, origin } = q;
++const id = "natural-edge-door-sign";
++const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-021/integration/natural-door-sign");
++const product = q.products.find(p => p.product_id === id);
++const endpoint = "https://formspree.io/f/wul021qatest";
++const result = { task: "WUL-021", startedAt: new Date().toISOString(), scenarios: [], mockedPosts: 0, realInquiries: 0, limitations: ["Chromium only; no Safari/Firefox or manual screen-reader review", "Local validation only; no merge or deployment", "English is translated in the same URL with JavaScript; no separate English indexing guarantee"] };
++const save = (status, more = {}) => q.write(out, "results.json", { ...result, status, ...more });
++async function keyboardTo(page, selector) {
++  for (let i = 0; i < 50; i++) {
++    if (await page.locator(selector).evaluate(e => e === document.activeElement)) return;
++    await page.keyboard.press("Tab");
++  }
++  assert.fail("Tab order did not reach " + selector);
++}
++async function inquiryReady(page, language) {
++  await page.waitForURL(new URL("inquiry/?product=" + id, base).href);
++  await page.waitForLoadState("load");
++  await q.ready(page, language);
++  await page.waitForFunction(id => document.querySelector("#product")?.value === id, id);
++}
++(async () => {
++  const browser = await q.launch();
++  let decoderContext;
++  try {
++    result.preservation = q.preservation();
++    decoderContext = await browser.newContext();
++    const decoder = await decoderContext.newPage();
++    for (const [width, height] of q.viewports) for (const mode of ["he", "en", "no-js"]) {
++      const js = mode !== "no-js", language = mode === "en" ? "en" : "he";
++      const s = await q.session(browser, { width, height, language, javaScriptEnabled: js });
++      try {
++        const p = s.page;
++        assert.equal((await p.goto(new URL(product.route, base).href)).status(), 200);
++        await q.ready(p, language, js); await q.layout(p); await q.links(p);
++        assert.equal((await p.locator("h1").textContent()).trim(), product.name[language]);
++        assert.equal(await p.locator("main img").count(), 2);
++        assert.equal(await p.locator("[data-clock-slide], [data-clock-next]").count(), 0);
++        for (let i = 0; i < 2; i++) {
++          const image = p.locator("main img").nth(i), photo = product.images[i];
++          await q.imageContract(image, { ...product, images: [photo] }, language);
++          assert.equal(await image.getAttribute("loading"), i ? "lazy" : "eager");
++          const figure = image.locator("xpath=ancestor::figure[1]");
++          assert.equal(await figure.locator("figcaption").isVisible(), true);
++          assert.ok((await figure.locator("figcaption").textContent()).includes(language === "he" ? "הדמיה להמחשה" : "Illustrative mockup"));
++          assert.equal(await image.isVisible(), true, "Both views are available with and without JS");
++        }
++        assert.equal(await p.locator('link[rel="canonical"]').getAttribute("href"), product.canonical);
++        assert.equal(await p.locator('meta[property="og:image"]').getAttribute("content"), q.canonicalBase + product.images[0].src);
++        assert.equal(await p.locator('meta[property="og:title"]').getAttribute("content"), await p.title());
++        assert.equal(await p.locator('meta[property="og:description"]').getAttribute("content"), await p.locator('meta[name="description"]').getAttribute("content"));
++        assert.equal(await p.locator("link[hreflang]").count(), 0);
++        assert.equal(await p.locator(".breadcrumb a").nth(1).getAttribute("href"), "../../collections/home-decor/");
++        assert.equal(await p.locator(".product-quote-link").getAttribute("href"), "../../inquiry/?product=" + id);
++        if (js) {
++          await q.translations(p, language);
++          const other = language === "he" ? "en" : "he";
++          await p.locator(`[data-language="${other}"]`).click(); await q.ready(p, other); await q.translations(p, other);
++          await p.locator(`[data-language="${language}"]`).click(); await q.ready(p, language);
++        } else for (const button of await p.locator("[data-language]").all()) assert.equal(await button.isDisabled(), true);
++        await p.evaluate(() => scrollTo(0, 0));
++        const evidence = await q.capture(p, decoder, out, `${language}-${width}-natural-door-sign${js ? "" : "-no-js"}`);
++        const axe = js ? await q.axe(p) : { unrun: "axe injection requires JavaScript" };
++        await p.locator(".product-quote-link").focus(); await p.keyboard.press("Enter");
++        await p.waitForURL(new URL("inquiry/?product=" + id, base).href);
++        assert.equal(new URL(p.url()).searchParams.get("product"), id);
++        if (js) {
++          assert.equal(await p.locator("#product").inputValue(), id);
++          assert.equal((await p.locator(`option[value="${id}"]`).textContent()).trim(), product.name[language]);
++          for (const dimension of ["width", "height"]) assert.equal(await p.locator("#" + dimension).isDisabled(), false);
++          for (const dimension of ["diameter", "thickness"]) assert.equal(await p.locator("#" + dimension).isDisabled(), true);
++          await p.locator("#inquiry-form").evaluate(f => f.requestSubmit());
++          assert.equal(await p.locator("#inquiry-status").getAttribute("data-state"), "");
++        }
++        assert.equal(await p.locator("#send-request").isDisabled(), true);
++        assert.equal(await p.locator("#availability").isVisible(), true);
++        await s.finish();
++        result.scenarios.push({ kind: "product-layout-and-blocked-cta", width, height, language, javaScript: js, status: "PASS", images: 2, mockupLabels: 2, ...evidence, axe, requests: s.requests }); save("RUNNING");
++        console.log(`PASS natural door sign ${mode} ${width}`);
++      } catch (e) { await s.context.close(); throw e; }
++    }
++    for (const language of ["he", "en"]) {
++      const s = await q.session(browser, { language });
++      try {
++        const p = s.page;
++        await p.goto(base); await q.ready(p, language);
++        await keyboardTo(p, '.category-card[data-collection="home-decor"]'); await p.keyboard.press("Enter");
++        await p.waitForURL(new URL("collections/home-decor/", base).href);
++        await q.ready(p, language);
++        assert.deepEqual(await p.locator(".product-card").evaluateAll(ns => ns.map(n => n.dataset.productId)), q.groups[0].ids);
++        const card = p.locator(`#${id}-work`);
++        assert.equal(await card.count(), 1);
++        await q.imageContract(card.locator("img"), product, language);
++        assert.equal((await card.locator(".catalog-mockup").textContent()).trim(), language === "he" ? "הדמיה להמחשה" : "Illustrative mockup");
++        await q.capture(p, decoder, out, `${language}-390-home-decor`, "main img");
++        await keyboardTo(p, `#${id}-work .product-details-link`); await p.keyboard.press("Enter");
++        await p.waitForURL(new URL(product.route, base).href);
++        await q.ready(p, language); assert.equal(new URL(p.url()).pathname, new URL(product.route, base).pathname);
++        await p.reload(); await q.ready(p, language);
++        await p.locator(".product-quote-link").click(); await inquiryReady(p, language); assert.equal(await p.locator("#product").inputValue(), id);
++        await p.goBack(); await q.ready(p, language); await p.goForward(); await inquiryReady(p, language); assert.equal(await p.locator("#product").inputValue(), id);
++        await s.finish(); result.scenarios.push({ kind: "keyboard-navigation-reload-history", language, status: "PASS", requests: s.requests }); save("RUNNING");
++      } catch (e) { await s.context.close(); throw e; }
++      const mocked = await q.session(browser, { language });
++      try {
++        const p = mocked.page, posts = [];
++        await mocked.context.route("**/contact-config.js", route => route.fulfill({ contentType: "application/javascript", body: `window.WUL_CONTACT=${JSON.stringify({ formEndpoint: endpoint, formDestinationApproved: true, privacyApproved: true, privacyText: { he: "טקסט בדיקה מדומה", en: "Mock privacy copy" }, contactDetailsApproved: false })};` }));
++        await mocked.context.route(endpoint, route => {
++          assert.equal(route.request().method(), "POST"); posts.push(route.request().postDataJSON()); result.mockedPosts++;
++          return route.fulfill({ status: 200, contentType: "application/json", headers: { "access-control-allow-origin": "*" }, body: '{"ok":true}' });
++        });
++        await p.goto(new URL(product.route + "?utm_source=wul021_qa&utm_campaign=door-sign", base).href);
++        await p.locator(".product-quote-link").click();
++        await inquiryReady(p, language);
++        await p.locator("#customer-name").fill("QA fixture"); await p.locator("#contact").fill("wul021@example.invalid"); await p.locator("#quantity").fill("1");
++        await p.locator("#width").fill("30"); await p.locator("#height").fill("15");
++        await p.locator("#inquiry-form").evaluate(f => f.requestSubmit());
++        await p.waitForFunction(() => document.querySelector("#inquiry-status").dataset.state === "success");
++        assert.equal(posts.length, 1);
++        for (const [key, value] of Object.entries({ product: id, product_id: id, product_name: product.name.en, product_label: product.name[language], language, brand: "WOOD U LIKE", source_site: "wood-u-like-site", source_page: new URL("inquiry/", base).href, utm_source: "wul021_qa", utm_campaign: "door-sign" })) assert.equal(posts[0][key], value, key);
++        assert.equal(new URL(p.url()).origin, origin);
++        await mocked.finish(); result.scenarios.push({ kind: "intercepted-canonical-payload", language, status: "PASS", mockedPosts: 1 }); save("RUNNING");
++      } catch (e) { await mocked.context.close(); throw e; }
++    }
++    assert.equal(result.mockedPosts, 2);
++    save("PASS", { completedAt: new Date().toISOString() });
++    console.log(`PASS WUL-021: ${result.scenarios.length} scenarios; 2 intercepted POSTs; zero real inquiries`);
++  } catch (e) { save("FAIL", { failure: e.message, stack: e.stack }); throw e; }
++  finally { if (decoderContext) await decoderContext.close(); await browser.close(); }
++})().catch(e => { console.error(e); process.exitCode = 1; });
+diff --git a/tools/check-oval-room-signs.cjs b/tools/check-oval-room-signs.cjs
+index 7fe67c2..927b4a8 100644
+--- a/tools/check-oval-room-signs.cjs
++++ b/tools/check-oval-room-signs.cjs
+@@ -14 +14 @@ function save(status,extra={}){q.write(out,'results.json',{...result,status,...e
+- for(const width of[320,390,768,1440]){const s=await q.session(browser,{width,height:900,javaScriptEnabled:false});try{const p=s.page;await p.goto(new URL(product.route,base).href);await q.ready(p,'he',false);assert.equal(await p.locator('.product-variations li').count(),3);assert.equal(await p.locator('main img').count(),1);await q.imageContract(p.locator('.product-primary-image'),product,'he');await q.layout(p);await q.links(p);const evidence=await q.capture(p,decoder,out,`he-${width}-oval-room-signs-no-js`);await p.locator('.product-media figcaption a').click();await p.waitForURL(new URL(product.images[0].src,base).href);await p.goBack();await p.locator('.product-inquiry').click();await p.waitForURL(new URL('inquiry/?product=oval-room-signs',base).href);assert.equal(await p.locator('#send-request').isDisabled(),true);await s.finish();result.scenarios.push({kind:'no-javascript',language:'he',width,status:'PASS',...evidence,nativeImageAndInquiryLinks:'PASS',requests:s.requests,errors:s.errors});save('RUNNING');console.log(`PASS no-JS oval room signs ${width}`);}catch(e){await s.context.close();throw e;}}
++ for(const width of[320,390,768,1024,1440]){const s=await q.session(browser,{width,height:900,javaScriptEnabled:false});try{const p=s.page;await p.goto(new URL(product.route,base).href);await q.ready(p,'he',false);assert.equal(await p.locator('.product-variations li').count(),3);assert.equal(await p.locator('main img').count(),1);await q.imageContract(p.locator('.product-primary-image'),product,'he');await q.layout(p);await q.links(p);const evidence=await q.capture(p,decoder,out,`he-${width}-oval-room-signs-no-js`);await p.locator('.product-media figcaption a').click();await p.waitForURL(new URL(product.images[0].src,base).href);await p.goBack();await p.locator('.product-inquiry').click();await p.waitForURL(new URL('inquiry/?product=oval-room-signs',base).href);assert.equal(await p.locator('#send-request').isDisabled(),true);await s.finish();result.scenarios.push({kind:'no-javascript',language:'he',width,status:'PASS',...evidence,nativeImageAndInquiryLinks:'PASS',requests:s.requests,errors:s.errors});save('RUNNING');console.log(`PASS no-JS oval room signs ${width}`);}catch(e){await s.context.close();throw e;}}
+diff --git a/tools/check-product-pages.cjs b/tools/check-product-pages.cjs
+index cd8d28e..f68b817 100644
+--- a/tools/check-product-pages.cjs
++++ b/tools/check-product-pages.cjs
+@@ -3 +3 @@
+-// WUL-020: serve the repository below its real Pages prefix, then inspect every
++// WUL-021 Integration V2: serve the repository below its real Pages prefix, then inspect every
+@@ -14 +14 @@ const sample = process.env.WUL_PRODUCT_SAMPLE === "1";
+-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-020/product-pages${sample ? "/stage-a" : ""}`);
++const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-021/integration/product-pages${sample ? "/stage-a" : ""}`);
+@@ -18 +18 @@ const prefix = new URL(base).pathname;
+-const baseline = process.env.WUL_BASE_COMMIT || "c1242a1";
++const baseline = process.env.WUL_BASE_COMMIT || "4a2c0722e2a947edaf8be8c86df1a65bcd36da35";
+@@ -21 +21 @@ const groups = [
+-  { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign", "oval-room-signs"] },
++  { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign", "oval-room-signs", "natural-edge-door-sign"] },
+@@ -32 +32 @@ const result = {
+-  task: "WUL-020", regressionContract: "WUL-018 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
++  task: "WUL-021 Integration V2", regressionContract: "WUL-018 / Issue #32", baseline, mode: sample ? "stage-a" : "full", startedAt: new Date().toISOString(),
+@@ -264 +264 @@ async function homeContract(page, language) {
+-  for (const product of products.filter(p=>p.id!=='oval-room-signs')) assert.equal(await page.locator(`#${product.id}-work.legacy-product .product-details-link`).getAttribute("href"), `products/${product.id}/`);
++  for (const product of products.filter(p=>require('./qa-collections-shared.cjs').legacyProducts.some(old=>old.product_id===p.id))) assert.equal(await page.locator(`#${product.id}-work.legacy-product .product-details-link`).getAttribute("href"), `products/${product.id}/`);
+@@ -304 +304 @@ async function homeContract(page, language) {
+-      for (const product of products) for (const [width, height] of (product.id === "personalized-clock" ? [viewports[0], viewports[1], viewports[4]] : [viewports[1], viewports[4]])) {
++      for (const product of products) for (const [width, height] of (product.group === "home-decor" ? viewports : product.id === "personalized-clock" ? [viewports[0], viewports[1], viewports[4]] : [viewports[1], viewports[4]])) {
+@@ -365 +365 @@ async function homeContract(page, language) {
+-    console.log(`PASS WUL-020: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
++    console.log(`PASS WUL-021 Integration V2: ${result.scenarios.length} scenarios; ${result.requests.mockedPosts} intercepted POSTs; zero real inquiries`);
+diff --git a/tools/qa-collections-shared.cjs b/tools/qa-collections-shared.cjs
+index 56288c5..eae483a 100644
+--- a/tools/qa-collections-shared.cjs
++++ b/tools/qa-collections-shared.cjs
+@@ -12 +12 @@ const prefix = new URL(base).pathname, origin = new URL(base).origin;
+-const baseline = process.env.WUL_BASE_COMMIT || 'c1242a1';
++const baseline = process.env.WUL_BASE_COMMIT || '4a2c0722e2a947edaf8be8c86df1a65bcd36da35';
+@@ -14,2 +14,2 @@ const canonicalBase = 'https://mataniar0.github.io/wood-u-like-site/';
+-const products = require('../docs/review/wul-020/CATEGORY_PRODUCT_MAP.json').products;
+-const legacyProducts=products.filter(p=>p.product_id!=='oval-room-signs');
++const products = require('../docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json').products;
++const legacyProducts=products.filter(p=>!['oval-room-signs','natural-edge-door-sign'].includes(p.product_id));
+@@ -17 +17 @@ const groups = [
+-  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign','oval-room-signs']},
++  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign','oval-room-signs','natural-edge-door-sign']},
+@@ -113,13 +113,7 @@ function preservation() {
+- const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/js/main.js','assets/css/style.css','assets/css/collection.css','index.html','products','collections/kitchen-hosting','collections/judaica-tradition','collections/gifts-memories'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!['inquiry/index.html','inquiry/inquiry.js'].includes(f));
+- const records=[];for(const file of protectedFiles){const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root});const bytes=fs.readFileSync(path.join(root,file));assert.equal(sha(bytes),sha(before),file);records.push({file,sha256:sha(bytes),status:'PASS'});}
+- const originalImages=execFileSync('git',['ls-tree','-r','--name-only',baseline,'assets/images'],{cwd:root,encoding:'utf8'}).trim().split('\n').map(f=>path.basename(f));
+- const approvedCopies=[['oval-room-signs.webp','workshop.webp'],['oval-room-signs-small.webp','workshop-small.webp']];
+- assert.deepEqual(fs.readdirSync(path.join(root,'assets/images')).sort(),[...originalImages,...approvedCopies.map(p=>p[0])].sort(),'Only approved room-sign copies added');
+- for(const [dest,source]of approvedCopies){assert.equal(sha(fs.readFileSync(path.join(root,'assets/images',dest))),sha(execFileSync('git',['show',`${baseline}:assets/images/${source}`],{cwd:root})));records.push({file:'assets/images/'+dest,source:'assets/images/'+source,status:'PASS',byteIdenticalApprovedSource:true});}
+- const originalJs=execFileSync('git',['show',`${baseline}:inquiry/inquiry.js`],{cwd:root,encoding:'utf8'});
+- const addedProduct='    "oval-room-signs": {\n      name: "Personalized Oval Room Signs",\n      dimensions: ["width", "height"],\n    },\n';
+- assert.equal(fs.readFileSync(path.join(root,'inquiry/inquiry.js'),'utf8'),originalJs.replace('    custom: {',addedProduct+'    custom: {'),'Inquiry code changes only the canonical product registry');
+- const originalHtml=execFileSync('git',['show',`${baseline}:inquiry/index.html`],{cwd:root,encoding:'utf8'});
+- const option='              <option value="oval-room-signs" data-i18n="inquiry.product.oval-room-signs">שלטי חדר אליפטיים</option>\n';
+- assert.equal(fs.readFileSync(path.join(root,'inquiry/index.html'),'utf8'),originalHtml.replace('              <option value="custom"',option+'              <option value="custom"'),'Inquiry HTML changes only one option');
+- const config=fs.readFileSync(path.join(root,'inquiry/contact-config.js'),'utf8');for(const f of ['formDestinationApproved','privacyApproved','contactDetailsApproved'])assert.match(config,new RegExp(f+': false'));
++ const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/js/main.js','assets/css/style.css','assets/css/collection.css','assets/css/product.css','index.html','products','collections/kitchen-hosting','collections/judaica-tradition','collections/gifts-memories'],{cwd:root,encoding:'utf8'}).trim().split('\n');
++ const records=[];
++ for(const file of protectedFiles){const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root});const bytes=fs.readFileSync(path.join(root,file));const registration=['inquiry/index.html','inquiry/inquiry.js'].includes(file);const expected=registration?require('./qa-wul021-catalog.cjs').registered(file,before.toString()):before;assert.equal(sha(bytes),sha(expected),file);records.push({file,sha256:sha(bytes),status:'PASS',rule:registration?'Only natural-sign registration added to main':'Byte-identical to updated main'});}
++ require('./qa-wul021-catalog.cjs').assets(protectedFiles.filter(f=>f.endsWith('.webp')));
++ for(const [dest,source] of [['oval-room-signs.webp','workshop.webp'],['oval-room-signs-small.webp','workshop-small.webp']])assert.equal(sha(fs.readFileSync(path.join(root,'assets/images',dest))),sha(fs.readFileSync(path.join(root,'assets/images',source))),'Approved WUL-020 photo copy');
++ for(const file of ['products/natural-edge-door-sign/index.html','assets/css/natural-door-sign.css']){assert.equal(sha(fs.readFileSync(path.join(root,file))),sha(execFileSync('git',['show','c487016:'+file],{cwd:root})),file+': WUL-021 content preserved');records.push({file,status:'PASS',rule:'Byte-identical to original WUL-021 HEAD'});}
++ const config=fs.readFileSync(path.join(root,'inquiry/contact-config.js'),'utf8');for(const flag of ['formDestinationApproved','privacyApproved','contactDetailsApproved'])assert.match(config,new RegExp(flag+': false'));
+diff --git a/tools/qa-wul021-catalog.cjs b/tools/qa-wul021-catalog.cjs
+new file mode 100644
+index 0000000..9072588
+--- /dev/null
++++ b/tools/qa-wul021-catalog.cjs
+@@ -0,0 +1,23 @@
++"use strict";
++// Explicit additions to the approved main, shared by the regression suites.
++const fs = require("node:fs");
++const path = require("node:path");
++const assert = require("node:assert/strict");
++const crypto = require("node:crypto");
++const root = path.resolve(__dirname, "..");
++const id = "natural-edge-door-sign";
++const manifest = require("../docs/review/wul-021/ASSET_MANIFEST.json");
++const sha = bytes => crypto.createHash("sha256").update(bytes).digest("hex");
++function registered(file, original) {
++  if (file === "inquiry/inquiry.js") return original.replace("    custom: {", '    "natural-edge-door-sign": {\n      name: "Natural Wood Door Sign",\n      dimensions: ["width", "height"],\n    },\n    custom: {');
++  if (file === "inquiry/index.html") return original.replace('              <option value="custom"', '              <option value="natural-edge-door-sign" data-i18n="inquiry.product.natural-edge-door-sign">שלט עץ טבעי לדלת</option>\n              <option value="custom"');
++  return original;
++}
++function assets(baselineFiles) {
++  const added = manifest.outputs.flatMap(output => output.files);
++  const actual = fs.readdirSync(path.join(root, "assets/images")).filter(f => f.endsWith(".webp")).map(f => "assets/images/" + f).sort();
++  assert.deepEqual(actual, [...baselineFiles, ...added.map(f => f.path)].sort(), "Only the four manifested responsive WebPs are added");
++  for (const file of added) assert.equal(sha(fs.readFileSync(path.join(root, file.path))), file.sha256, file.path);
++  return new Set(actual);
++}
++module.exports = { id, registered, assets };
+diff --git a/tools/run-integration-qa.py b/tools/run-integration-qa.py
+new file mode 100644
+index 0000000..2b03bd1
+--- /dev/null
++++ b/tools/run-integration-qa.py
+@@ -0,0 +1,86 @@
++"""Run fresh WUL-021 Integration V2 QA with isolated artifacts and real exit codes."""
++import argparse
++import concurrent.futures
++import datetime
++import hashlib
++import json
++import os
++from pathlib import Path
++import subprocess
++import threading
++
++ROOT = Path(__file__).resolve().parents[1]
++OUT = ROOT / "docs/review/wul-021/integration"
++JOBS = {
++    "contract": ["node", "tools/check-collection-contract.cjs"],
++    "collections": ["node", "tools/check-collections.cjs"],
++    "product-pages": ["node", "tools/check-product-pages.cjs"],
++    "inquiry": ["node", "tools/check-inquiry.cjs"],
++    "attribution": ["node", "tools/check-lead-attribution.cjs"],
++    "oval-room-signs": ["node", "tools/check-oval-room-signs.cjs"],
++    "natural-door-sign": ["node", "tools/check-natural-door-sign.cjs"],
++    "legacy": ["node", "tools/check-fragment-navigation.cjs"],
++    "accessibility": ["node", "tools/check-collection-accessibility.cjs"],
++    "language": ["node", "tools/check-language.cjs"],
++    "clock": ["node", "tools/check-clock.cjs"],
++    "hero": ["node", "tools/check-hero.cjs"],
++    "homepage": ["node", "tools/check-homepage.cjs"],
++    "privacy": ["node", "tools/check-shared-privacy.cjs"],
++    "family-sign": ["node", "tools/check-family-sign.cjs"],
++    "schwartz-sign": ["node", "tools/check-schwartz-sign.cjs"],
++    "pizza-peel": ["node", "tools/check-pizza-peel.cjs"],
++    "assets": ["python3", "tools/verify-oval-room-assets.py"],
++}
++
++def now():
++    return datetime.datetime.now(datetime.timezone.utc).isoformat()
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--only", nargs="+", choices=list(JOBS))
++    parser.add_argument("--workers", type=int, default=4)
++    args = parser.parse_args()
++    OUT.mkdir(parents=True, exist_ok=True)
++    history = OUT / "run-history"
++    history.mkdir(exist_ok=True)
++    state_file = OUT / "RUNS.json"
++    state = json.loads(state_file.read_text()) if state_file.exists() else {"task": "WUL-021 Integration V2 / #39", "runs": []}
++    lock = threading.Lock()
++    head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
++    paths = subprocess.check_output(["git", "ls-files", "assets", "collections", "inquiry", "products", "index.html", "tools"], cwd=ROOT, text=True).splitlines()
++    digest = hashlib.sha256()
++    for name in sorted(paths):
++        digest.update(name.encode())
++        digest.update((ROOT / name).read_bytes())
++    fingerprint = digest.hexdigest()
++    env = os.environ.copy()
++    env.update({"NODE_PATH": "/tmp/wul-check/node_modules", "WUL_BASE_URL": "http://127.0.0.1:8001/wood-u-like-site/", "WUL_CHROMIUM": "/usr/bin/chromium", "WUL_BASE_COMMIT": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35"})
++
++    def save():
++        temporary = state_file.with_suffix(".tmp")
++        temporary.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
++        temporary.replace(state_file)
++
++    def run(name):
++        with lock:
++            attempt = 1 + sum(r["suite"] == name for r in state["runs"])
++            log = history / f"{name}-run-{attempt}.log"
++            entry = {"suite": name, "attempt": attempt, "command": JOBS[name], "head": head, "source_fingerprint": fingerprint, "started_at": now(), "status": "RUNNING", "log": str(log.relative_to(OUT)), "artifact_dir": name}
++            state["runs"].append(entry)
++            save()
++            print(f"START {name} attempt {attempt}", flush=True)
++        suite_env = {**env, "WUL_REVIEW_DIR": str(OUT / name)}
++        with log.open("w") as stream:
++            completed = subprocess.run(JOBS[name], cwd=ROOT, env=suite_env, stdout=stream, stderr=subprocess.STDOUT)
++        with lock:
++            entry.update({"status": "PASS" if completed.returncode == 0 else "FAIL", "exit_code": completed.returncode, "completed_at": now()})
++            save()
++            print(f"{entry['status']} {name} attempt {attempt} exit {completed.returncode}", flush=True)
++        return completed.returncode
++
++    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
++        results = list(pool.map(run, args.only or list(JOBS)))
++    return 1 if any(results) else 0
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/tools/summarize-integration-qa.py b/tools/summarize-integration-qa.py
+new file mode 100644
+index 0000000..b595a64
+--- /dev/null
++++ b/tools/summarize-integration-qa.py
+@@ -0,0 +1,178 @@
++"""Build integration evidence only from completed, fresh acceptance runs."""
++from pathlib import Path
++import datetime
++import hashlib
++import json
++import re
++import struct
++import subprocess
++
++ROOT = Path(__file__).resolve().parents[1]
++OUT = ROOT / "docs/review/wul-021/integration"
++MAIN = "4a2c0722e2a947edaf8be8c86df1a65bcd36da35"
++PRIOR = "c487016de8b9cf43c297287449909ccf7748b7a7"
++
++def git(*args):
++    return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
++
++def write(name, data):
++    (OUT / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
++
++def sha(data):
++    return hashlib.sha256(data).hexdigest()
++
++def main():
++    runs = json.loads((OUT / "RUNS.json").read_text())["runs"]
++    latest = {run["suite"]: run for run in runs}
++    expected = {"contract", "assets", "collections", "product-pages", "inquiry", "attribution", "oval-room-signs", "natural-door-sign", "legacy", "accessibility", "language", "clock", "hero", "homepage", "privacy", "family-sign", "schwartz-sign", "pizza-peel"}
++    assert set(latest) == expected
++    assert all(run["status"] == "PASS" and run["exit_code"] == 0 for run in latest.values())
++    snapshot = json.loads((OUT / "SOURCE_SNAPSHOT.json").read_text())
++    assert all(run["head"] == snapshot["head"] for run in latest.values()), "All primary runs must use the integrated code commit"
++    assert len({run["source_fingerprint"] for run in latest.values()}) == 1, "Primary runs must share the same immutable application/test sources"
++    assert git("show", "-s", "--format=%P", snapshot["head"]).split() == [PRIOR, MAIN], "Keep both published histories as merge parents"
++    for file in snapshot["files"]:
++        assert sha((ROOT / file["path"]).read_bytes()) == file["sha256"], file["path"]
++    assert not git("ls-files", "-u")
++    assert not git("diff", MAIN, "--name-only", "--", "docs/review/wul-020")
++    allowed = {"docs/review/wul-021/REPORT_HE.md", "docs/review/wul-021/CATEGORY_PRODUCT_MAP.json"}
++    history_changes = git("diff", PRIOR, "--name-only", "--", "docs/review/wul-021").splitlines()
++    assert all(p.startswith("docs/review/wul-021/integration/") or p in allowed for p in history_changes)
++    suites = []
++    posts = 0
++    for name, run in latest.items():
++        filename = {"contract": "PRESERVATION.json", "assets": "ASSET_VERIFICATION.json", "hero": "hero-results.json", "homepage": "browser-results.json"}.get(name, "results.json")
++        path = OUT / name / filename
++        assert path.stat().st_mtime >= datetime.datetime.fromisoformat(run["started_at"]).timestamp(), name
++        data = json.loads(path.read_text())
++        if isinstance(data, list):
++            records = data
++            mocked = 0
++        else:
++            assert data.get("status", "PASS") == "PASS", name
++            records = data.get("scenarios", data.get("results", data.get("assets", [])))
++            if name == "contract":
++                records = data["protectedFiles"] + data["products"] + data["collections"]
++            mocked = data.get("mockedPosts", data.get("interceptedFormPosts", data.get("requests", {}).get("mockedPosts", 0)))
++            assert data.get("realInquiries", data.get("realInquiryRequests", data.get("requests", {}).get("realInquiries", 0))) == 0
++            for key in ["unexpectedExternalRequests", "externalRequests"]:
++                assert data.get(key, 0) == 0
++            assert data.get("requests", {}).get("unexpectedExternal", 0) == 0
++            assert data.get("requests", {}).get("unexpectedSubmissions", 0) == 0
++        assert records, name
++        assert all(not isinstance(row.get("status"), str) or row["status"].startswith("PASS") for row in records)
++        posts += mocked
++        suites.append({"suite": name, "status": "PASS", "records": len(records), "mocked_posts": mocked, "artifact": str(path.relative_to(OUT)), "log": run["log"], "attempt": run["attempt"], "head": run["head"]})
++    source = snapshot["head"]
++    baseline_images = git("ls-tree", "-r", "--name-only", MAIN, "assets/images").splitlines()
++    manifest = json.loads((ROOT / "docs/review/wul-021/ASSET_MANIFEST.json").read_text())
++    expected_names = sorted([Path(f).name for f in baseline_images] + [Path(f["path"]).name for output in manifest["outputs"] for f in output["files"]])
++    actual_names = sorted(f.name for f in (ROOT / "assets/images").iterdir())
++    assert actual_names == expected_names, "Full asset directory must contain main plus exactly the four WUL-021 WebPs; no extra PNGs or private files"
++    integrity = []
++    for file in sorted((ROOT / "assets/images").glob("*.webp")):
++        rel = str(file.relative_to(ROOT))
++        ref = PRIOR if file.name.startswith("natural-edge-door-sign-") else MAIN
++        reference = subprocess.check_output(["git", "show", f"{ref}:{rel}"], cwd=ROOT)
++        assert file.read_bytes() == reference, rel
++        integrity.append({"path": rel, "source_ref": ref, "sha256": sha(reference), "status": "PASS"})
++    contact = (ROOT / "inquiry/contact-config.js").read_bytes()
++    assert contact == subprocess.check_output(["git", "show", f"{MAIN}:inquiry/contact-config.js"], cwd=ROOT)
++    for flag in ["formDestinationApproved", "privacyApproved", "contactDetailsApproved"]:
++        assert re.search(flag + r": false", contact.decode())
++    write("ASSET_VERIFICATION.json", {"status": "PASS", "assets": integrity, "exact_directory_file_set": "PASS", "expected_files": expected_names, "actual_files": actual_names, "contact_config_sha256": sha(contact), "contact_config_identical_to_main": True, "all_send_flags_false": True})
++    before = {item["path"]: item for item in json.loads((OUT / "before/SOURCES.json").read_text())}
++    screenshots = []
++    for p in sorted(OUT.rglob("*.png")):
++        rel = str(p.relative_to(OUT))
++        png = p.read_bytes()
++        assert png.startswith(b"\x89PNG\r\n\x1a\n"), rel
++        size = list(struct.unpack(">II", png[16:24]))
++        screenshots.append({"path": rel, "sha256": sha(p.read_bytes()), "bytes": p.stat().st_size, "image_size": size, "phase": "historical-before" if rel in before else "fresh-integration", **({"source_commit": before[rel]["source_commit"]} if rel in before else {})})
++    write("SCREENSHOT_MANIFEST.json", {"status": "PASS", "screenshots": screenshots, "note": "Historical before comparisons are not counted as integration tests. Collection captures decode and sample pixels from all five product photographs."})
++    corrections = json.loads((OUT / "CORRECTION_CYCLES.json").read_text())
++    failures = [r for r in runs if r["status"] == "FAIL"]
++    total = sum(s["records"] for s in suites)
++    assert all(event["status"] == "PASS" for event in corrections["events"])
++    summary = {"task": "WUL-021 Integration V2 / Issue #39", "status": "PASS", "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "main": MAIN, "prior_wul021": PRIOR, "integrated_source_commit": source, "merge_parents": git("show", "-s", "--format=%P", source).split(), "branch": "feature/wul-021-natural-wood-door-sign", "pr": "https://github.com/mataniar0/wood-u-like-site/pull/37", "product_count": 9, "collection_counts": [5, 2, 1, 1], "suite_count": len(suites), "suites": suites, "pass_records": total, "unresolved_failures": 0, "failed_attempts": len(failures), "failed_attempt_details": failures, "mocked_posts": posts, "real_inquiries": 0, "unexpected_external_requests": 0, "correction_cycles": corrections, "screenshot_count": len(screenshots), "assets_byte_identical_to_approved_branches": True, "contact_config_unchanged": True, "counting_policy": "Primary scenario/file-contract records only. The Hero runner also reruns the language suite; that nested language run is verified by its exit status but excluded from totals to avoid double counting. Before images and earlier WUL-020/021 results are excluded.", "limitations": ["Chromium only; no Firefox/Safari or manual screen-reader verification", "Local Pages-prefix HTTP validation; no site deployment or live-site claim", "English is client-side translation at the same URL; no separate English indexing claim", "A single initial CLS outlier occurred under concurrent browser suites; full unchanged Hero/language suite was rerun alone. Concurrency is not a proven root cause; failed evidence is retained."], "merge_to_main": False, "deploy": False, "mergeability": "Pending final push verification"}
++    write("QA_SUMMARY.json", summary)
++    mapping = json.loads((OUT / "CATEGORY_PRODUCT_MAP.json").read_text())
++    write("PRODUCT_FORM_TABLE.json", {"status": "PASS", "products": [{"product_id": p["product_id"], "name": p["name"], "collection": p["collection"], "product_route": p["route"], "form_route": "inquiry/?product=" + p["product_id"], "collection_cta": "../../inquiry/?product=" + p["product_id"], "product_cta": "../../inquiry/?product=" + p["product_id"], "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json", "real_inquiries": 0} for p in mapping["products"]]})
++    order = {p: i for i, p in enumerate(id for group in mapping["collections"] for id in group["products"])}
++    table = "\n".join(f"| `{p['product_id']}` | {p['name']['he']} / {p['name']['en']} | `{p['collection']}` | [{p['route']}](../../../../{p['route']}index.html) | `inquiry/?product={p['product_id']}` |" for p in sorted(mapping["products"], key=lambda p: order[p["product_id"]]))
++    rows = "\n".join(f"| {s['suite']} | PASS | {s['records']} | [{s['artifact']}]({s['artifact']}) | [{s['log']}]({s['log']}) |" for s in suites)
++    report = f'''# WUL-021 — Integration V2 / Issue #39
++
++בוצע מיזוג לא הרסני של `main` ב־`{MAIN}` אל הענף הקיים `feature/wul-021-natural-wood-door-sign`. commit המיזוג והקוד שנבדק: `{source}`. שני ההורים הם HEAD המקורי `{PRIOR}` ו־main המעודכן. אין rebase, reset, force-push, PR חדש, מיזוג ל־main או Deploy.
++
++## תוצאה
++
++באתר בדיוק **9 מוצרים וארבע קולקציות, בחלוקה 5 / 2 / 1 / 1**. `oval-room-signs` ו־`natural-edge-door-sign` נשמרים כמוצרים נפרדים, עם כרטיס אחד ועמוד אחד לכל מזהה, אפשרויות טופס נפרדות ו־product_name קנוני נפרד. דף הבית נשאר עם ארבע קולקציות ואפס כרטיסי מוצר. כל תשעת עמודי המוצר, קישורי הנכסים והטופס נבדקו תחת בסיס GitHub Pages.
++
++כל שמונת עמודי המוצר של main, כל תמונותיו, CSS המוצר המשותף, הבית, Hero, attribution/privacy ו־`contact-config.js` נשמרו בבתים. עמוד WUL-021, ה־CSS שלו וארבעת נכסי ה־WebP שלו זהים לענף המקורי. תמונות WUL-020 הן אותם עותקים מאושרים של workshop; לא נערכו או נמחקו. תוויות ההדמיה של WUL-021 נשמרו בשתי השפות. גלריית השעון נבדקה מחדש עם שלוש תמונות בלבד; לא נוספה התמונה שהוסרה ב־WUL-017 או תמונת מקור פרטית.
++
++## תשעת המוצרים
++
++| מזהה | HE / EN | קולקציה | עמוד מקור | קישור הטופס שנבדק |
++|---|---|---|---|---|
++{table}
++
++קישורי הטופס בטבלה הם נתיבי האתר היחסיים שנבדקו בשרת המקומי, אינם אתר Preview או אישור שהמוצר החדש פורסם. HE סטטי זמין ללא JS, כולל התמונות והקישורים; EN משתמש במנגנון התרגום הקיים. הטופס עצמו עדיין דורש JavaScript ושליחה נשארת חסומה.
++
++## התנגשויות וחוזי שימור
++
++נפתרו **12 קבצים עם התנגשויות**, המתועדים ב־[CONFLICTS.json](CONFLICTS.json). כרטיס המוצר של main נשמר ונוסף אחריו הכרטיס המקורי של WUL-021. שתי הרשומות והאפשרויות בטופס נשמרו. קובצי התרגום התמזגו אוטומטית ונבדקו מול כל מפתח של main ומול מפתחות WUL-021, כולל איסור כפילות מפתחות.
++
++כלי הבדיקות משתמשים במפה מפורשת של תשעה מוצרים ובבסיס main החדש. החוזה בודק זהות של שמונת מוצרי main, ושל WUL-021 לענף המקורי; שינויי הטופס מוגבלים בדיוק לרישום WUL-021 נוסף על main. שלושת דגלי השליחה נשארו `false`. רישום שינויי ספירה אינו מחליף בדיקות שימור או פוטר מוצר מבדיקה. בדיקות הקישורים ההיסטוריים שומרות על שבעת המוצרים שהיו להם עוגנים היסטוריים; שני המוצרים החדשים נבדקים במסלולי קולקציה → מוצר → טופס.
++
++[מפת המוצרים המשולבת](CATEGORY_PRODUCT_MAP.json), [בדיקות שימור](contract/PRESERVATION.json), [חתימות מקור הבדיקות](SOURCE_SNAPSHOT.json), [אימות נכסים](ASSET_VERIFICATION.json), [diff מקור מול main](SOURCE_DIFF_MAIN.patch), [רשימת קבצים ב־PR](CHANGED_FILES.txt).
++
++[טבלת נתיבי המוצר והטופס במבנה JSON](PRODUCT_FORM_TABLE.json). [מניפסט נכסי WUL-021](../ASSET_MANIFEST.json) ו־[ZIP הנכסים המאושר](../wul-021-assets.zip) נשמרו מהענף המקורי.
++
++## QA חדש על הגרסה המשולבת
++
++**{len(suites)} סוויטות הסתיימו בקוד יציאה 0; {total} רשומות PASS; אפס כישלונות לא פתורים. {posts} POSTs מדומים יורטו, אפס פניות אמיתיות ואפס בקשות חיצוניות לא צפויות.**
++
++| סוויטה | תוצאה | רשומות PASS | תוצאה מפורטת | לוג |
++|---|---|---:|---|---|
++{rows}
++
++HE/EN נבדקו ב־320/390/768/1024/1440. חמשת מוצרי שלטי הבית נבדקו ללא JS בכל חמשת הרוחבים במטריצת המוצרים. הקולקציות והבית נבדקו גם ללא JS. נבדקו תמונות מצוירות ולא רק נראות, contain ומידות, תרגומים ו־ALT, SEO/canonical/OG, נגישות axe, Tab/Enter/מיקוד, תפריט, ניווט ישיר, Back/Forward, reload, כל תשעת המזהים בטופס ו־payload מדומה קנוני. בדיקות הסוויטות הוותיקות כוללות גם את השפות, השעון, Hero, הבית והפרטיות.
++
++הספירה כוללת רשומות בדיקה ויחידות חוזה קבצים, ולא מספר assertions פנימיים. ריצת השפה הפנימית הנוספת של Hero אינה נספרת שוב; היא עצמה הסתיימה כחלק מקוד היציאה של Hero. אף תוצאה מה־580/627 הקודמות או מצילומי ה־before אינה נספרת כאינטגרציה. [RUNS.json](RUNS.json) כולל זמני התחלה/סיום, HEAD, חתימת מקור, פקודה וקוד יציאה לכל ניסיון.
++
++## צילומים והשוואה
++
++[מניפסט {len(screenshots)} הצילומים](SCREENSHOT_MANIFEST.json) כולל מידות, SHA-256 ושלב. בתיקיית [collections/screenshots](collections/screenshots/) יש צילומי home-decor עם **חמשת** המוצרים ב־HE/EN ובמצב no-JS, במובייל ובדסקטופ ובכל רוחבי המטריצה. כל אחת מחמש התמונות פוענחה ונבדקה במדגם פיקסלים בקובץ PNG. ראיות לשני עמודי המוצר נמצאות ב־[oval-room-signs](oval-room-signs/) וב־[natural-door-sign](natural-door-sign/).
++
++צילומי [before](before/) הועתקו מחבילות הביקורת ההיסטוריות של שני הענפים, ששניהם הכילו ארבעה מוצרי בית. מקור ו־SHA ה־commit מתועדים ב־[before/SOURCES.json](before/SOURCES.json). צילומי ה־after נוצרו מחדש בגרסה המשולבת. הצילומים אינם Deploy.
++
++## מחזורי תיקון חדשים
++
++[CORRECTION_CYCLES.json](CORRECTION_CYCLES.json): **{corrections['total_new_cycles']} מחזורים חדשים**, בנפרד מהמשימות המקוריות. מוצר: {corrections['product_cycles']}; כלי QA: {corrections['harness_cycles']}; סביבה: {corrections['environment_cycles']}. פירוט כל כישלון ותיקון נשמר בקובץ, וב־RUNS/לוגים נשמרים גם הניסיונות שלא עברו. פתרון 12 ההתנגשויות הוא עבודת אינטגרציה, אינו מוצג כ־12 כישלונות QA.
++
++המחזור הראשון תיקן שרת בדיקות ישן שהחזיר תשובה ריקה, לפני הרצת QA. במחזור השני נשמר [כישלון Hero הראשון](run-history/hero-run-1.log): בריצת השפות הפנימית נמדד CLS של 0.052636 במסך HE 768, מול הסף המקורי 0.01. הרצת השפות הנפרדת עברה באותו מסך עם 0.000145. Hero הורץ מחדש לבדו לאחר יתר הסוויטות, כולל רגרסיית השפות המלאה, ללא skip וללא שינוי בסף או בקוד האתר. הריצה החוזרת עברה; עומס מקבילי הוא שיקול תזמון, וסיבת החריגה הבודדת לא הוכחה. סך הניסיונות שנכשלו: **{len(failures)}**; הם אינם נספרים כ־PASS.
++
++## שחזור וגבולות
++
++שרת: `python3 -m http.server 8001 --bind 127.0.0.1 --directory /workspace`, ותלויות הבדיקה מותקנות ב־`/tmp/wul-check/node_modules`. [גרסאות סביבת הבדיקה](ENVIRONMENT.json). הרצת כל הסוויטות ללא תחרות בין דפדפנים: `python3 tools/run-integration-qa.py --workers 1`. ההרצה הראשונה השתמשה בארבעה workers; ההרצה החוזרת של Hero השתמשה באחד. להרצה לאחר תיקון ממוקד: `--only <suite>`. סיכום הראיות המקוריות: `python3 tools/summarize-integration-qa.py`, המאמת את ה־HEAD וחתימות הקוד שנבדקו; הרצה עתידית על HEAD אחר מחייבת עדכון מפורש של נתוני המקור. Runner אינו מפעיל פניות אמיתיות; כל סוויטת טופס מיירטת POST ובקשות חיצוניות בדפדפן. האתר סטטי ואינו דורש build או מפתחות API.
++
++הבדיקות הורצו ב־Chromium בלבד; Safari/Firefox וקורא מסך ידני לא נבדקו. אנגלית מתחלפת בצד הלקוח באותו URL, ללא הבטחת אינדוקס נפרד. אין טענת בדיקה של אתר חי. ההדמיות של WUL-021 אינן תיעוד של התקנה אמיתית או העתק פיקסלים של העץ/החריטה.
++
++## מסירה וסקירת ראש צוות
++
++מעדכנים רק את [PR #37](https://github.com/mataniar0/wood-u-like-site/pull/37), עם `Refs #39`. גוף ה־PR וההודעה בו יתעדו את commit המסירה ואת מצב mergeability שאומת לאחר push. ה־PR מוגש לסקירת ראש צוות עצמאית חוזרת בציון 90/100 לפחות וללא חוסמים; אין כאן אישור עצמי למיזוג. לא בוצעו Merge ל־main, Deploy, מחיקת ענף, סגירת Issue או הפעלת שליחה אמיתית.
++'''
++    (OUT / "REPORT_HE.md").write_text(report)
++    patch = subprocess.check_output(["git", "diff", "--no-color", "--unified=0", MAIN, "--", "README.md", "assets", "collections", "inquiry", "products", "tools"], cwd=ROOT)
++    (OUT / "SOURCE_DIFF_MAIN.patch").write_bytes(patch)
++    (OUT / "GIT_DIFF_MAIN.txt").write_text(git("diff", "--stat", MAIN) + "\n")
++    files = set(git("diff", "--name-only", MAIN).splitlines())
++    files.update(git("ls-files", "--others", "--exclude-standard").splitlines())
++    files.update(str(p.relative_to(ROOT)) for p in OUT.rglob("*") if p.is_file())
++    files.add("docs/review/wul-021/integration/CHANGED_FILES.txt")
++    (OUT / "CHANGED_FILES.txt").write_text("\n".join(sorted(files)) + "\n")
++    print(json.dumps({"status": "PASS", "suites": len(suites), "pass_records": total, "mocked_posts": posts, "screenshots": len(screenshots)}, indent=2))
++
++if __name__ == "__main__":
++    main()
+diff --git a/tools/verify-oval-room-assets.py b/tools/verify-oval-room-assets.py
+index 41d96c1..fdb4f0b 100644
+--- a/tools/verify-oval-room-assets.py
++++ b/tools/verify-oval-room-assets.py
+@@ -0,0 +1 @@
++import os
+@@ -5 +6,3 @@ ROOT=Path(__file__).resolve().parents[1]
+-OUT=ROOT/'docs/review/wul-020'
++SOURCE=ROOT/'docs/review/wul-020'
++OUT=Path(os.environ.get('WUL_REVIEW_DIR',str(ROOT/'docs/review/wul-021/integration/assets')))
++OUT.mkdir(parents=True,exist_ok=True)
+@@ -7,2 +10,2 @@ def sha(data):return hashlib.sha256(data).hexdigest()
+-manifest=json.loads((OUT/'PHOTO_MANIFEST.json').read_text());records=[]
+-with zipfile.ZipFile(OUT/'wul-020-assets.zip')as archive:
++manifest=json.loads((SOURCE/'PHOTO_MANIFEST.json').read_text());records=[]
++with zipfile.ZipFile(SOURCE/'wul-020-assets.zip')as archive:
+@@ -15,3 +18,3 @@ with zipfile.ZipFile(OUT/'wul-020-assets.zip')as archive:
+- assert archive.read('PHOTO_MANIFEST.json')==(OUT/'PHOTO_MANIFEST.json').read_bytes()
+- assert archive.read('README_ASSETS_HE.md')==(OUT/'README_ASSETS_HE.md').read_bytes()
+-result={'task':'WUL-020','status':'PASS','assets':records,'zipSha256':sha((OUT/'wul-020-assets.zip').read_bytes()),'zipEntryCount':4,'sourcePolicy':'Reuses approved R1-09 photograph, as explicitly documented; no supplied ZIP was available.'}
++ assert archive.read('PHOTO_MANIFEST.json')==(SOURCE/'PHOTO_MANIFEST.json').read_bytes()
++ assert archive.read('README_ASSETS_HE.md')==(SOURCE/'README_ASSETS_HE.md').read_bytes()
++result={'task':'WUL-020','status':'PASS','assets':records,'zipSha256':sha((SOURCE/'wul-020-assets.zip').read_bytes()),'zipEntryCount':4,'sourcePolicy':'Reuses approved R1-09 photograph, as explicitly documented; no supplied ZIP was available.'}

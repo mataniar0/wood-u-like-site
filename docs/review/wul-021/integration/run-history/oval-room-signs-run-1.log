@@ -1,0 +1,22 @@
+PASS oval room signs he 320
+PASS oval room signs en 320
+PASS oval room signs he 390
+PASS oval room signs en 390
+PASS oval room signs he 768
+PASS oval room signs en 768
+PASS oval room signs he 1024
+PASS oval room signs en 1024
+PASS oval room signs he 1440
+PASS oval room signs en 1440
+PASS no-JS oval room signs 320
+PASS no-JS oval room signs 390
+PASS no-JS oval room signs 768
+PASS no-JS oval room signs 1024
+PASS no-JS oval room signs 1440
+PASS simulated wording Bathroom and shower he
+PASS simulated wording Guest room he
+PASS simulated wording Guest bathroom he
+PASS simulated wording Bathroom and shower en
+PASS simulated wording Guest room en
+PASS simulated wording Guest bathroom en
+PASS 21 oval-room-signs cases; 6 simulated POSTs

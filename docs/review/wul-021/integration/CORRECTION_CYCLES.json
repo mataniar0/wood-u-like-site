@@ -1,0 +1,38 @@
+{
+  "task": "WUL-021 Integration V2",
+  "product_cycles": 0,
+  "harness_cycles": 0,
+  "environment_cycles": 2,
+  "total_new_cycles": 2,
+  "events": [
+    {
+      "cycle": 1,
+      "kind": "environment",
+      "observation": "Existing local Python HTTP server returned curl (52) Empty reply from server before integration QA.",
+      "correction": "Restarted only the server started in the earlier task, with output redirected to a local log.",
+      "verification": "HTTP 200 for the Pages-prefix homepage after restart; subsequent browser runs use the same server.",
+      "status": "PASS",
+      "note": "Underlying reason for the old empty reply was not established; no application source changed."
+    },
+    {
+      "cycle": 2,
+      "kind": "environment",
+      "observation": "Hero attempt 1 failed in its nested language regression at 768x1024 HE: initial CLS 0.05263610327771554 exceeds unchanged <0.01 assertion. Four suite workers were running concurrently.",
+      "comparison": "The independent complete language attempt 1 passed all 21 records including 768x1024 HE CLS 0.0001453150762245059. Homepage HTML, shared CSS and main.js are byte-identical to main.",
+      "correction": "Schedule the complete Hero suite, including its default full language regression, alone after other suites finish. No skip flag, application change, timeout change or acceptance-threshold change.",
+      "verification": "Hero attempt 2 exit 0; all 21 nested language records and all 10 Hero-specific records passed. No WUL_SKIP_LANGUAGE_REGRESSION was set.",
+      "status": "PASS",
+      "note": "Concurrency is a scheduling mitigation, not a proven root cause of the single CLS outlier. Original failure log and eight partial records are preserved.",
+      "failure_log": "run-history/hero-run-1.log",
+      "partial_results": "run-history/hero-run-1-partial-results.json",
+      "retry_log": "run-history/hero-run-2.log",
+      "retry_command": "python3 tools/run-integration-qa.py --only hero --workers 1",
+      "retry_head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "retry_language_records": 21,
+      "retry_hero_records": 10,
+      "retry_max_initial_cls": 0.00282306151782161,
+      "retry_768_he_initial_cls": 0.0001453150762245059
+    }
+  ],
+  "prior_task_cycles_excluded": true
+}

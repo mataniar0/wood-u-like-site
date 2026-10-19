@@ -1,0 +1,279 @@
+{
+  "task": "WUL-021 Integration V2 / Issue #39",
+  "status": "PASS",
+  "generated_at": "2026-10-19T07:14:03.514583+00:00",
+  "main": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+  "prior_wul021": "c487016de8b9cf43c297287449909ccf7748b7a7",
+  "integrated_source_commit": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+  "merge_parents": [
+    "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "4a2c0722e2a947edaf8be8c86df1a65bcd36da35"
+  ],
+  "branch": "feature/wul-021-natural-wood-door-sign",
+  "pr": "https://github.com/mataniar0/wood-u-like-site/pull/37",
+  "product_count": 9,
+  "collection_counts": [
+    5,
+    2,
+    1,
+    1
+  ],
+  "suite_count": 18,
+  "suites": [
+    {
+      "suite": "contract",
+      "status": "PASS",
+      "records": 65,
+      "mocked_posts": 0,
+      "artifact": "contract/PRESERVATION.json",
+      "log": "run-history/contract-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "product-pages",
+      "status": "PASS",
+      "records": 152,
+      "mocked_posts": 18,
+      "artifact": "product-pages/results.json",
+      "log": "run-history/product-pages-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "collections",
+      "status": "PASS",
+      "records": 93,
+      "mocked_posts": 0,
+      "artifact": "collections/results.json",
+      "log": "run-history/collections-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "inquiry",
+      "status": "PASS",
+      "records": 55,
+      "mocked_posts": 38,
+      "artifact": "inquiry/results.json",
+      "log": "run-history/inquiry-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "attribution",
+      "status": "PASS",
+      "records": 194,
+      "mocked_posts": 186,
+      "artifact": "attribution/results.json",
+      "log": "run-history/attribution-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "oval-room-signs",
+      "status": "PASS",
+      "records": 21,
+      "mocked_posts": 6,
+      "artifact": "oval-room-signs/results.json",
+      "log": "run-history/oval-room-signs-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "natural-door-sign",
+      "status": "PASS",
+      "records": 19,
+      "mocked_posts": 2,
+      "artifact": "natural-door-sign/results.json",
+      "log": "run-history/natural-door-sign-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "legacy",
+      "status": "PASS",
+      "records": 52,
+      "mocked_posts": 0,
+      "artifact": "legacy/results.json",
+      "log": "run-history/legacy-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "accessibility",
+      "status": "PASS",
+      "records": 12,
+      "mocked_posts": 0,
+      "artifact": "accessibility/results.json",
+      "log": "run-history/accessibility-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "language",
+      "status": "PASS",
+      "records": 21,
+      "mocked_posts": 0,
+      "artifact": "language/results.json",
+      "log": "run-history/language-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "clock",
+      "status": "PASS",
+      "records": 15,
+      "mocked_posts": 0,
+      "artifact": "clock/results.json",
+      "log": "run-history/clock-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "hero",
+      "status": "PASS",
+      "records": 10,
+      "mocked_posts": 0,
+      "artifact": "hero/hero-results.json",
+      "log": "run-history/hero-run-2.log",
+      "attempt": 2,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "homepage",
+      "status": "PASS",
+      "records": 4,
+      "mocked_posts": 0,
+      "artifact": "homepage/browser-results.json",
+      "log": "run-history/homepage-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "privacy",
+      "status": "PASS",
+      "records": 10,
+      "mocked_posts": 0,
+      "artifact": "privacy/results.json",
+      "log": "run-history/privacy-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "family-sign",
+      "status": "PASS",
+      "records": 10,
+      "mocked_posts": 0,
+      "artifact": "family-sign/results.json",
+      "log": "run-history/family-sign-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "schwartz-sign",
+      "status": "PASS",
+      "records": 10,
+      "mocked_posts": 0,
+      "artifact": "schwartz-sign/results.json",
+      "log": "run-history/schwartz-sign-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "pizza-peel",
+      "status": "PASS",
+      "records": 10,
+      "mocked_posts": 0,
+      "artifact": "pizza-peel/results.json",
+      "log": "run-history/pizza-peel-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    },
+    {
+      "suite": "assets",
+      "status": "PASS",
+      "records": 2,
+      "mocked_posts": 0,
+      "artifact": "assets/ASSET_VERIFICATION.json",
+      "log": "run-history/assets-run-1.log",
+      "attempt": 1,
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d"
+    }
+  ],
+  "pass_records": 755,
+  "unresolved_failures": 0,
+  "failed_attempts": 1,
+  "failed_attempt_details": [
+    {
+      "suite": "hero",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-hero.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:03:04.771495+00:00",
+      "status": "FAIL",
+      "log": "run-history/hero-run-1.log",
+      "artifact_dir": "hero",
+      "exit_code": 1,
+      "completed_at": "2026-10-19T07:05:21.845026+00:00"
+    }
+  ],
+  "mocked_posts": 250,
+  "real_inquiries": 0,
+  "unexpected_external_requests": 0,
+  "correction_cycles": {
+    "task": "WUL-021 Integration V2",
+    "product_cycles": 0,
+    "harness_cycles": 0,
+    "environment_cycles": 2,
+    "total_new_cycles": 2,
+    "events": [
+      {
+        "cycle": 1,
+        "kind": "environment",
+        "observation": "Existing local Python HTTP server returned curl (52) Empty reply from server before integration QA.",
+        "correction": "Restarted only the server started in the earlier task, with output redirected to a local log.",
+        "verification": "HTTP 200 for the Pages-prefix homepage after restart; subsequent browser runs use the same server.",
+        "status": "PASS",
+        "note": "Underlying reason for the old empty reply was not established; no application source changed."
+      },
+      {
+        "cycle": 2,
+        "kind": "environment",
+        "observation": "Hero attempt 1 failed in its nested language regression at 768x1024 HE: initial CLS 0.05263610327771554 exceeds unchanged <0.01 assertion. Four suite workers were running concurrently.",
+        "comparison": "The independent complete language attempt 1 passed all 21 records including 768x1024 HE CLS 0.0001453150762245059. Homepage HTML, shared CSS and main.js are byte-identical to main.",
+        "correction": "Schedule the complete Hero suite, including its default full language regression, alone after other suites finish. No skip flag, application change, timeout change or acceptance-threshold change.",
+        "verification": "Hero attempt 2 exit 0; all 21 nested language records and all 10 Hero-specific records passed. No WUL_SKIP_LANGUAGE_REGRESSION was set.",
+        "status": "PASS",
+        "note": "Concurrency is a scheduling mitigation, not a proven root cause of the single CLS outlier. Original failure log and eight partial records are preserved.",
+        "failure_log": "run-history/hero-run-1.log",
+        "partial_results": "run-history/hero-run-1-partial-results.json",
+        "retry_log": "run-history/hero-run-2.log",
+        "retry_command": "python3 tools/run-integration-qa.py --only hero --workers 1",
+        "retry_head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+        "retry_language_records": 21,
+        "retry_hero_records": 10,
+        "retry_max_initial_cls": 0.00282306151782161,
+        "retry_768_he_initial_cls": 0.0001453150762245059
+      }
+    ],
+    "prior_task_cycles_excluded": true
+  },
+  "screenshot_count": 472,
+  "assets_byte_identical_to_approved_branches": true,
+  "contact_config_unchanged": true,
+  "counting_policy": "Primary scenario/file-contract records only. The Hero runner also reruns the language suite; that nested language run is verified by its exit status but excluded from totals to avoid double counting. Before images and earlier WUL-020/021 results are excluded.",
+  "limitations": [
+    "Chromium only; no Firefox/Safari or manual screen-reader verification",
+    "Local Pages-prefix HTTP validation; no site deployment or live-site claim",
+    "English is client-side translation at the same URL; no separate English indexing claim",
+    "A single initial CLS outlier occurred under concurrent browser suites; full unchanged Hero/language suite was rerun alone. Concurrency is not a proven root cause; failed evidence is retained."
+  ],
+  "merge_to_main": false,
+  "deploy": false,
+  "mergeability": "Pending final push verification"
+}

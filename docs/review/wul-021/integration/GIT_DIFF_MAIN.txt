@@ -1,0 +1,814 @@
+README.md                                          |   18 +
+ assets/css/natural-door-sign.css                   |   20 +
+ .../images/natural-edge-door-sign-door-small.webp  |  Bin 0 -> 65594 bytes
+ assets/images/natural-edge-door-sign-door.webp     |  Bin 0 -> 171656 bytes
+ .../natural-edge-door-sign-product-small.webp      |  Bin 0 -> 39600 bytes
+ assets/images/natural-edge-door-sign-product.webp  |  Bin 0 -> 130922 bytes
+ assets/js/language.js                              |   12 +
+ collections/home-decor/index.html                  |   12 +
+ docs/review/wul-021/ASSETS_HE.md                   |   12 +
+ docs/review/wul-021/ASSET_MANIFEST.json            |   92 +
+ docs/review/wul-021/CATEGORY_PRODUCT_MAP.json      |  347 ++
+ docs/review/wul-021/CHANGED_FILES.txt              |  280 ++
+ docs/review/wul-021/PRESERVATION.json              |  513 +++
+ docs/review/wul-021/PR_BODY.md                     |    9 +
+ docs/review/wul-021/QA_SUMMARY.json                |  163 +
+ docs/review/wul-021/REPORT_HE.md                   |   86 +
+ docs/review/wul-021/accessibility/results.json     |  860 ++++
+ .../screenshots/en-320-home-final.png              |  Bin 0 -> 503991 bytes
+ .../screenshots/he-320-home-final-no-js.png        |  Bin 0 -> 486388 bytes
+ .../screenshots/he-320-home-final.png              |  Bin 0 -> 484465 bytes
+ docs/review/wul-021/collections/results.json       | 3418 ++++++++++++++
+ .../screenshots/en-1024-gifts-memories.png         |  Bin 0 -> 165064 bytes
+ .../collections/screenshots/en-1024-home-decor.png |  Bin 0 -> 633939 bytes
+ .../collections/screenshots/en-1024-home.png       |  Bin 0 -> 1264656 bytes
+ .../screenshots/en-1024-judaica-tradition.png      |  Bin 0 -> 127309 bytes
+ .../screenshots/en-1024-kitchen-hosting.png        |  Bin 0 -> 324632 bytes
+ .../screenshots/en-1440-gifts-memories.png         |  Bin 0 -> 174474 bytes
+ .../collections/screenshots/en-1440-home-decor.png |  Bin 0 -> 655859 bytes
+ .../collections/screenshots/en-1440-home.png       |  Bin 0 -> 1497754 bytes
+ .../screenshots/en-1440-judaica-tradition.png      |  Bin 0 -> 135652 bytes
+ .../screenshots/en-1440-kitchen-hosting.png        |  Bin 0 -> 338987 bytes
+ .../screenshots/en-320-gifts-memories.png          |  Bin 0 -> 122648 bytes
+ .../collections/screenshots/en-320-home-decor.png  |  Bin 0 -> 449460 bytes
+ .../collections/screenshots/en-320-home.png        |  Bin 0 -> 503991 bytes
+ .../screenshots/en-320-judaica-tradition.png       |  Bin 0 -> 97082 bytes
+ .../screenshots/en-320-kitchen-hosting.png         |  Bin 0 -> 232425 bytes
+ .../screenshots/en-390-gifts-memories.png          |  Bin 0 -> 147029 bytes
+ .../collections/screenshots/en-390-home-decor.png  |  Bin 0 -> 587888 bytes
+ .../collections/screenshots/en-390-home.png        |  Bin 0 -> 670838 bytes
+ .../screenshots/en-390-judaica-tradition.png       |  Bin 0 -> 112429 bytes
+ .../screenshots/en-390-kitchen-hosting.png         |  Bin 0 -> 300284 bytes
+ .../screenshots/en-768-gifts-memories.png          |  Bin 0 -> 160561 bytes
+ .../collections/screenshots/en-768-home-decor.png  |  Bin 0 -> 618931 bytes
+ .../collections/screenshots/en-768-home.png        |  Bin 0 -> 970868 bytes
+ .../screenshots/en-768-judaica-tradition.png       |  Bin 0 -> 122094 bytes
+ .../screenshots/en-768-kitchen-hosting.png         |  Bin 0 -> 314746 bytes
+ .../screenshots/he-1024-gifts-memories-no-js.png   |  Bin 0 -> 154044 bytes
+ .../screenshots/he-1024-gifts-memories.png         |  Bin 0 -> 154044 bytes
+ .../screenshots/he-1024-home-decor-no-js.png       |  Bin 0 -> 617376 bytes
+ .../collections/screenshots/he-1024-home-decor.png |  Bin 0 -> 617376 bytes
+ .../collections/screenshots/he-1024-home-no-js.png |  Bin 0 -> 1237382 bytes
+ .../collections/screenshots/he-1024-home.png       |  Bin 0 -> 1237382 bytes
+ .../he-1024-judaica-tradition-no-js.png            |  Bin 0 -> 116761 bytes
+ .../screenshots/he-1024-judaica-tradition.png      |  Bin 0 -> 116761 bytes
+ .../screenshots/he-1024-kitchen-hosting-no-js.png  |  Bin 0 -> 313700 bytes
+ .../screenshots/he-1024-kitchen-hosting.png        |  Bin 0 -> 313700 bytes
+ .../screenshots/he-1440-gifts-memories-no-js.png   |  Bin 0 -> 161176 bytes
+ .../screenshots/he-1440-gifts-memories.png         |  Bin 0 -> 161176 bytes
+ .../screenshots/he-1440-home-decor-no-js.png       |  Bin 0 -> 632446 bytes
+ .../collections/screenshots/he-1440-home-decor.png |  Bin 0 -> 632446 bytes
+ .../collections/screenshots/he-1440-home-no-js.png |  Bin 0 -> 1448480 bytes
+ .../collections/screenshots/he-1440-home.png       |  Bin 0 -> 1448480 bytes
+ .../he-1440-judaica-tradition-no-js.png            |  Bin 0 -> 124291 bytes
+ .../screenshots/he-1440-judaica-tradition.png      |  Bin 0 -> 124291 bytes
+ .../screenshots/he-1440-kitchen-hosting-no-js.png  |  Bin 0 -> 324893 bytes
+ .../screenshots/he-1440-kitchen-hosting.png        |  Bin 0 -> 324893 bytes
+ .../screenshots/he-320-gifts-memories-no-js.png    |  Bin 0 -> 112707 bytes
+ .../screenshots/he-320-gifts-memories.png          |  Bin 0 -> 110688 bytes
+ .../screenshots/he-320-home-decor-no-js.png        |  Bin 0 -> 430301 bytes
+ .../collections/screenshots/he-320-home-decor.png  |  Bin 0 -> 427892 bytes
+ .../collections/screenshots/he-320-home-no-js.png  |  Bin 0 -> 486388 bytes
+ .../collections/screenshots/he-320-home.png        |  Bin 0 -> 484465 bytes
+ .../screenshots/he-320-judaica-tradition-no-js.png |  Bin 0 -> 88471 bytes
+ .../screenshots/he-320-judaica-tradition.png       |  Bin 0 -> 86194 bytes
+ .../screenshots/he-320-kitchen-hosting-no-js.png   |  Bin 0 -> 219502 bytes
+ .../screenshots/he-320-kitchen-hosting.png         |  Bin 0 -> 217582 bytes
+ .../screenshots/he-390-gifts-memories-no-js.png    |  Bin 0 -> 135179 bytes
+ .../screenshots/he-390-gifts-memories.png          |  Bin 0 -> 132759 bytes
+ .../screenshots/he-390-home-decor-no-js.png        |  Bin 0 -> 569839 bytes
+ .../collections/screenshots/he-390-home-decor.png  |  Bin 0 -> 567916 bytes
+ .../collections/screenshots/he-390-home-no-js.png  |  Bin 0 -> 637027 bytes
+ .../collections/screenshots/he-390-home.png        |  Bin 0 -> 633615 bytes
+ .../screenshots/he-390-judaica-tradition-no-js.png |  Bin 0 -> 103990 bytes
+ .../screenshots/he-390-judaica-tradition.png       |  Bin 0 -> 101713 bytes
+ .../screenshots/he-390-kitchen-hosting-no-js.png   |  Bin 0 -> 287758 bytes
+ .../screenshots/he-390-kitchen-hosting.png         |  Bin 0 -> 285271 bytes
+ .../screenshots/he-768-gifts-memories-no-js.png    |  Bin 0 -> 147878 bytes
+ .../screenshots/he-768-gifts-memories.png          |  Bin 0 -> 147878 bytes
+ .../screenshots/he-768-home-decor-no-js.png        |  Bin 0 -> 600227 bytes
+ .../collections/screenshots/he-768-home-decor.png  |  Bin 0 -> 600227 bytes
+ .../collections/screenshots/he-768-home-no-js.png  |  Bin 0 -> 931647 bytes
+ .../collections/screenshots/he-768-home.png        |  Bin 0 -> 931647 bytes
+ .../screenshots/he-768-judaica-tradition-no-js.png |  Bin 0 -> 111697 bytes
+ .../screenshots/he-768-judaica-tradition.png       |  Bin 0 -> 111697 bytes
+ .../screenshots/he-768-kitchen-hosting-no-js.png   |  Bin 0 -> 303040 bytes
+ .../screenshots/he-768-kitchen-hosting.png         |  Bin 0 -> 303040 bytes
+ docs/review/wul-021/integration/.gitignore         |    1 +
+ .../wul-021/integration/ASSET_VERIFICATION.json    |  255 ++
+ .../wul-021/integration/CATEGORY_PRODUCT_MAP.json  |  347 ++
+ docs/review/wul-021/integration/CHANGED_FILES.txt  |  813 ++++
+ docs/review/wul-021/integration/CONFLICTS.json     |   37 +
+ .../wul-021/integration/CORRECTION_CYCLES.json     |   38 +
+ docs/review/wul-021/integration/ENVIRONMENT.json   |   16 +
+ docs/review/wul-021/integration/GIT_DIFF_MAIN.txt  |  302 ++
+ docs/review/wul-021/integration/PRESERVATION.json  |  410 ++
+ .../wul-021/integration/PRODUCT_FORM_TABLE.json    |  131 +
+ docs/review/wul-021/integration/QA_SUMMARY.json    |  279 ++
+ docs/review/wul-021/integration/REPORT_HE.md       |   86 +
+ docs/review/wul-021/integration/RUNS.json          |  309 ++
+ .../wul-021/integration/SCREENSHOT_MANIFEST.json   | 4738 ++++++++++++++++++++
+ .../wul-021/integration/SOURCE_DIFF_MAIN.patch     |  916 ++++
+ .../wul-021/integration/SOURCE_SNAPSHOT.json       |  374 ++
+ .../wul-021/integration/accessibility/results.json |  880 ++++
+ .../screenshots/en-320-home-final.png              |  Bin 0 -> 503991 bytes
+ .../screenshots/he-320-home-final-no-js.png        |  Bin 0 -> 486388 bytes
+ .../screenshots/he-320-home-final.png              |  Bin 0 -> 484465 bytes
+ .../integration/assets/ASSET_VERIFICATION.json     |   25 +
+ .../wul-021/integration/attribution/results.json   | 1056 +++++
+ .../review/wul-021/integration/before/SOURCES.json |   86 +
+ .../integration/before/main-en-1440-home-decor.png |  Bin 0 -> 667699 bytes
+ .../integration/before/main-en-390-home-decor.png  |  Bin 0 -> 599034 bytes
+ .../before/main-he-1440-home-decor-no-js.png       |  Bin 0 -> 644901 bytes
+ .../integration/before/main-he-1440-home-decor.png |  Bin 0 -> 644901 bytes
+ .../before/main-he-390-home-decor-no-js.png        |  Bin 0 -> 580362 bytes
+ .../integration/before/main-he-390-home-decor.png  |  Bin 0 -> 577708 bytes
+ .../before/wul021-en-1440-home-decor.png           |  Bin 0 -> 655859 bytes
+ .../before/wul021-en-390-home-decor.png            |  Bin 0 -> 587888 bytes
+ .../before/wul021-he-1440-home-decor-no-js.png     |  Bin 0 -> 632446 bytes
+ .../before/wul021-he-1440-home-decor.png           |  Bin 0 -> 632446 bytes
+ .../before/wul021-he-390-home-decor-no-js.png      |  Bin 0 -> 569839 bytes
+ .../before/wul021-he-390-home-decor.png            |  Bin 0 -> 567916 bytes
+ docs/review/wul-021/integration/clock/results.json |  708 +++
+ .../clock/screenshots/en-1024-clock-front.png      |  Bin 0 -> 398372 bytes
+ .../clock/screenshots/en-1024-clock-inquiry.png    |  Bin 0 -> 239112 bytes
+ .../clock/screenshots/en-1024-collection.png       |  Bin 0 -> 165064 bytes
+ .../clock/screenshots/en-1440-clock-front.png      |  Bin 0 -> 714825 bytes
+ .../screenshots/en-1440-clock-handheld-detail.png  |  Bin 0 -> 524019 bytes
+ .../clock/screenshots/en-1440-clock-hanging.png    |  Bin 0 -> 548089 bytes
+ .../clock/screenshots/en-1440-clock-inquiry.png    |  Bin 0 -> 240111 bytes
+ .../screenshots/en-1440-clock-keyboard-focus.png   |  Bin 0 -> 548134 bytes
+ .../clock/screenshots/en-1440-collection.png       |  Bin 0 -> 174474 bytes
+ .../clock/screenshots/en-320-clock-front.png       |  Bin 0 -> 168915 bytes
+ .../clock/screenshots/en-320-clock-inquiry.png     |  Bin 0 -> 218388 bytes
+ .../clock/screenshots/en-320-collection.png        |  Bin 0 -> 122648 bytes
+ .../clock/screenshots/en-390-clock-front.png       |  Bin 0 -> 236654 bytes
+ .../screenshots/en-390-clock-handheld-detail.png   |  Bin 0 -> 220213 bytes
+ .../clock/screenshots/en-390-clock-hanging.png     |  Bin 0 -> 196906 bytes
+ .../clock/screenshots/en-390-clock-inquiry.png     |  Bin 0 -> 211572 bytes
+ .../screenshots/en-390-clock-keyboard-focus.png    |  Bin 0 -> 196911 bytes
+ .../clock/screenshots/en-390-collection.png        |  Bin 0 -> 147029 bytes
+ .../clock/screenshots/en-768-clock-front.png       |  Bin 0 -> 269121 bytes
+ .../clock/screenshots/en-768-clock-inquiry.png     |  Bin 0 -> 223099 bytes
+ .../clock/screenshots/en-768-collection.png        |  Bin 0 -> 160561 bytes
+ .../clock/screenshots/he-1024-clock-front.png      |  Bin 0 -> 380047 bytes
+ .../clock/screenshots/he-1024-clock-inquiry.png    |  Bin 0 -> 180296 bytes
+ .../screenshots/he-1024-clock-no-javascript.png    |  Bin 0 -> 384472 bytes
+ .../clock/screenshots/he-1024-collection.png       |  Bin 0 -> 154044 bytes
+ .../clock/screenshots/he-1440-clock-front.png      |  Bin 0 -> 697093 bytes
+ .../screenshots/he-1440-clock-handheld-detail.png  |  Bin 0 -> 504967 bytes
+ .../clock/screenshots/he-1440-clock-hanging.png    |  Bin 0 -> 529509 bytes
+ .../clock/screenshots/he-1440-clock-inquiry.png    |  Bin 0 -> 182758 bytes
+ .../screenshots/he-1440-clock-keyboard-focus.png   |  Bin 0 -> 529545 bytes
+ .../screenshots/he-1440-clock-no-javascript.png    |  Bin 0 -> 701562 bytes
+ .../clock/screenshots/he-1440-collection.png       |  Bin 0 -> 161176 bytes
+ .../clock/screenshots/he-320-clock-front.png       |  Bin 0 -> 157889 bytes
+ .../clock/screenshots/he-320-clock-inquiry.png     |  Bin 0 -> 164765 bytes
+ .../screenshots/he-320-clock-no-javascript.png     |  Bin 0 -> 162000 bytes
+ .../clock/screenshots/he-320-collection.png        |  Bin 0 -> 110688 bytes
+ .../clock/screenshots/he-390-clock-front.png       |  Bin 0 -> 225587 bytes
+ .../screenshots/he-390-clock-handheld-detail.png   |  Bin 0 -> 207667 bytes
+ .../clock/screenshots/he-390-clock-hanging.png     |  Bin 0 -> 183987 bytes
+ .../clock/screenshots/he-390-clock-inquiry.png     |  Bin 0 -> 165063 bytes
+ .../screenshots/he-390-clock-keyboard-focus.png    |  Bin 0 -> 184033 bytes
+ .../screenshots/he-390-clock-no-javascript.png     |  Bin 0 -> 229648 bytes
+ .../clock/screenshots/he-390-collection.png        |  Bin 0 -> 132759 bytes
+ .../clock/screenshots/he-768-clock-front.png       |  Bin 0 -> 250644 bytes
+ .../clock/screenshots/he-768-clock-inquiry.png     |  Bin 0 -> 171934 bytes
+ .../screenshots/he-768-clock-no-javascript.png     |  Bin 0 -> 254815 bytes
+ .../clock/screenshots/he-768-collection.png        |  Bin 0 -> 147878 bytes
+ .../wul-021/integration/collections/results.json   | 3688 +++++++++++++++
+ .../screenshots/en-1024-gifts-memories.png         |  Bin 0 -> 165064 bytes
+ .../collections/screenshots/en-1024-home-decor.png |  Bin 0 -> 753326 bytes
+ .../collections/screenshots/en-1024-home.png       |  Bin 0 -> 1264656 bytes
+ .../screenshots/en-1024-judaica-tradition.png      |  Bin 0 -> 127309 bytes
+ .../screenshots/en-1024-kitchen-hosting.png        |  Bin 0 -> 324632 bytes
+ .../screenshots/en-1440-gifts-memories.png         |  Bin 0 -> 174474 bytes
+ .../collections/screenshots/en-1440-home-decor.png |  Bin 0 -> 766166 bytes
+ .../collections/screenshots/en-1440-home.png       |  Bin 0 -> 1497754 bytes
+ .../screenshots/en-1440-judaica-tradition.png      |  Bin 0 -> 135652 bytes
+ .../screenshots/en-1440-kitchen-hosting.png        |  Bin 0 -> 338987 bytes
+ .../screenshots/en-320-gifts-memories.png          |  Bin 0 -> 122648 bytes
+ .../collections/screenshots/en-320-home-decor.png  |  Bin 0 -> 529338 bytes
+ .../collections/screenshots/en-320-home.png        |  Bin 0 -> 503991 bytes
+ .../screenshots/en-320-judaica-tradition.png       |  Bin 0 -> 97082 bytes
+ .../screenshots/en-320-kitchen-hosting.png         |  Bin 0 -> 232425 bytes
+ .../screenshots/en-390-gifts-memories.png          |  Bin 0 -> 147029 bytes
+ .../collections/screenshots/en-390-home-decor.png  |  Bin 0 -> 690598 bytes
+ .../collections/screenshots/en-390-home.png        |  Bin 0 -> 670838 bytes
+ .../screenshots/en-390-judaica-tradition.png       |  Bin 0 -> 112429 bytes
+ .../screenshots/en-390-kitchen-hosting.png         |  Bin 0 -> 300284 bytes
+ .../screenshots/en-768-gifts-memories.png          |  Bin 0 -> 160561 bytes
+ .../collections/screenshots/en-768-home-decor.png  |  Bin 0 -> 731683 bytes
+ .../collections/screenshots/en-768-home.png        |  Bin 0 -> 970868 bytes
+ .../screenshots/en-768-judaica-tradition.png       |  Bin 0 -> 122094 bytes
+ .../screenshots/en-768-kitchen-hosting.png         |  Bin 0 -> 314746 bytes
+ .../screenshots/he-1024-gifts-memories-no-js.png   |  Bin 0 -> 154044 bytes
+ .../screenshots/he-1024-gifts-memories.png         |  Bin 0 -> 154044 bytes
+ .../screenshots/he-1024-home-decor-no-js.png       |  Bin 0 -> 730989 bytes
+ .../collections/screenshots/he-1024-home-decor.png |  Bin 0 -> 730989 bytes
+ .../collections/screenshots/he-1024-home-no-js.png |  Bin 0 -> 1237382 bytes
+ .../collections/screenshots/he-1024-home.png       |  Bin 0 -> 1237382 bytes
+ .../he-1024-judaica-tradition-no-js.png            |  Bin 0 -> 116761 bytes
+ .../screenshots/he-1024-judaica-tradition.png      |  Bin 0 -> 116761 bytes
+ .../screenshots/he-1024-kitchen-hosting-no-js.png  |  Bin 0 -> 313700 bytes
+ .../screenshots/he-1024-kitchen-hosting.png        |  Bin 0 -> 313700 bytes
+ .../screenshots/he-1440-gifts-memories-no-js.png   |  Bin 0 -> 161176 bytes
+ .../screenshots/he-1440-gifts-memories.png         |  Bin 0 -> 161176 bytes
+ .../screenshots/he-1440-home-decor-no-js.png       |  Bin 0 -> 736460 bytes
+ .../collections/screenshots/he-1440-home-decor.png |  Bin 0 -> 736460 bytes
+ .../collections/screenshots/he-1440-home-no-js.png |  Bin 0 -> 1448480 bytes
+ .../collections/screenshots/he-1440-home.png       |  Bin 0 -> 1448480 bytes
+ .../he-1440-judaica-tradition-no-js.png            |  Bin 0 -> 124291 bytes
+ .../screenshots/he-1440-judaica-tradition.png      |  Bin 0 -> 124291 bytes
+ .../screenshots/he-1440-kitchen-hosting-no-js.png  |  Bin 0 -> 324893 bytes
+ .../screenshots/he-1440-kitchen-hosting.png        |  Bin 0 -> 324893 bytes
+ .../screenshots/he-320-gifts-memories-no-js.png    |  Bin 0 -> 112707 bytes
+ .../screenshots/he-320-gifts-memories.png          |  Bin 0 -> 110688 bytes
+ .../screenshots/he-320-home-decor-no-js.png        |  Bin 0 -> 507996 bytes
+ .../collections/screenshots/he-320-home-decor.png  |  Bin 0 -> 505876 bytes
+ .../collections/screenshots/he-320-home-no-js.png  |  Bin 0 -> 486388 bytes
+ .../collections/screenshots/he-320-home.png        |  Bin 0 -> 484465 bytes
+ .../screenshots/he-320-judaica-tradition-no-js.png |  Bin 0 -> 88471 bytes
+ .../screenshots/he-320-judaica-tradition.png       |  Bin 0 -> 86194 bytes
+ .../screenshots/he-320-kitchen-hosting-no-js.png   |  Bin 0 -> 219502 bytes
+ .../screenshots/he-320-kitchen-hosting.png         |  Bin 0 -> 217582 bytes
+ .../screenshots/he-390-gifts-memories-no-js.png    |  Bin 0 -> 135179 bytes
+ .../screenshots/he-390-gifts-memories.png          |  Bin 0 -> 132759 bytes
+ .../screenshots/he-390-home-decor-no-js.png        |  Bin 0 -> 668032 bytes
+ .../collections/screenshots/he-390-home-decor.png  |  Bin 0 -> 665989 bytes
+ .../collections/screenshots/he-390-home-no-js.png  |  Bin 0 -> 637027 bytes
+ .../collections/screenshots/he-390-home.png        |  Bin 0 -> 633615 bytes
+ .../screenshots/he-390-judaica-tradition-no-js.png |  Bin 0 -> 103990 bytes
+ .../screenshots/he-390-judaica-tradition.png       |  Bin 0 -> 101713 bytes
+ .../screenshots/he-390-kitchen-hosting-no-js.png   |  Bin 0 -> 287758 bytes
+ .../screenshots/he-390-kitchen-hosting.png         |  Bin 0 -> 285271 bytes
+ .../screenshots/he-768-gifts-memories-no-js.png    |  Bin 0 -> 147878 bytes
+ .../screenshots/he-768-gifts-memories.png          |  Bin 0 -> 147878 bytes
+ .../screenshots/he-768-home-decor-no-js.png        |  Bin 0 -> 707045 bytes
+ .../collections/screenshots/he-768-home-decor.png  |  Bin 0 -> 707045 bytes
+ .../collections/screenshots/he-768-home-no-js.png  |  Bin 0 -> 931647 bytes
+ .../collections/screenshots/he-768-home.png        |  Bin 0 -> 931647 bytes
+ .../screenshots/he-768-judaica-tradition-no-js.png |  Bin 0 -> 111697 bytes
+ .../screenshots/he-768-judaica-tradition.png       |  Bin 0 -> 111697 bytes
+ .../screenshots/he-768-kitchen-hosting-no-js.png   |  Bin 0 -> 303040 bytes
+ .../screenshots/he-768-kitchen-hosting.png         |  Bin 0 -> 303040 bytes
+ .../wul-021/integration/contract/PRESERVATION.json |  410 ++
+ .../wul-021/integration/family-sign/results.json   |  374 ++
+ .../screenshots/en-1024-family-sign-product.png    |  Bin 0 -> 358032 bytes
+ .../screenshots/en-1440-family-sign-product.png    |  Bin 0 -> 540186 bytes
+ .../screenshots/en-320-family-sign-product.png     |  Bin 0 -> 160733 bytes
+ .../screenshots/en-390-family-sign-product.png     |  Bin 0 -> 218979 bytes
+ .../screenshots/en-768-family-sign-product.png     |  Bin 0 -> 240924 bytes
+ .../screenshots/he-1024-family-sign-product.png    |  Bin 0 -> 348636 bytes
+ .../screenshots/he-1440-family-sign-product.png    |  Bin 0 -> 527141 bytes
+ .../screenshots/he-320-family-sign-product.png     |  Bin 0 -> 149695 bytes
+ .../screenshots/he-390-family-sign-product.png     |  Bin 0 -> 208242 bytes
+ .../screenshots/he-768-family-sign-product.png     |  Bin 0 -> 227786 bytes
+ .../wul-021/integration/hero/hero-results.json     |  162 +
+ docs/review/wul-021/integration/hero/results.json  |  230 +
+ .../integration/hero/screenshots/en-1024-hero.png  |  Bin 0 -> 240361 bytes
+ .../integration/hero/screenshots/en-1440-first.png |  Bin 0 -> 450345 bytes
+ .../integration/hero/screenshots/en-1440-full.png  |  Bin 0 -> 1497754 bytes
+ .../integration/hero/screenshots/en-1440-hero.png  |  Bin 0 -> 367916 bytes
+ .../integration/hero/screenshots/en-320-first.png  |  Bin 0 -> 31028 bytes
+ .../integration/hero/screenshots/en-320-full.png   |  Bin 0 -> 503991 bytes
+ .../integration/hero/screenshots/en-320-hero.png   |  Bin 0 -> 87376 bytes
+ .../integration/hero/screenshots/en-390-first.png  |  Bin 0 -> 100506 bytes
+ .../integration/hero/screenshots/en-390-full.png   |  Bin 0 -> 670838 bytes
+ .../integration/hero/screenshots/en-390-hero.png   |  Bin 0 -> 123714 bytes
+ .../integration/hero/screenshots/en-768-first.png  |  Bin 0 -> 187704 bytes
+ .../integration/hero/screenshots/en-768-full.png   |  Bin 0 -> 970868 bytes
+ .../integration/hero/screenshots/en-768-hero.png   |  Bin 0 -> 122897 bytes
+ .../integration/hero/screenshots/he-1024-hero.png  |  Bin 0 -> 239798 bytes
+ .../integration/hero/screenshots/he-1440-first.png |  Bin 0 -> 446924 bytes
+ .../integration/hero/screenshots/he-1440-full.png  |  Bin 0 -> 1448480 bytes
+ .../integration/hero/screenshots/he-1440-hero.png  |  Bin 0 -> 367119 bytes
+ .../integration/hero/screenshots/he-320-first.png  |  Bin 0 -> 28977 bytes
+ .../integration/hero/screenshots/he-320-full.png   |  Bin 0 -> 484462 bytes
+ .../integration/hero/screenshots/he-320-hero.png   |  Bin 0 -> 86689 bytes
+ .../integration/hero/screenshots/he-390-first.png  |  Bin 0 -> 103114 bytes
+ .../integration/hero/screenshots/he-390-full.png   |  Bin 0 -> 633615 bytes
+ .../integration/hero/screenshots/he-390-hero.png   |  Bin 0 -> 122837 bytes
+ .../integration/hero/screenshots/he-768-first.png  |  Bin 0 -> 179493 bytes
+ .../integration/hero/screenshots/he-768-full.png   |  Bin 0 -> 931647 bytes
+ .../integration/hero/screenshots/he-768-hero.png   |  Bin 0 -> 122566 bytes
+ .../integration/homepage/browser-results.json      |   68 +
+ .../homepage/screenshots/1440-first.png            |  Bin 0 -> 446924 bytes
+ .../integration/homepage/screenshots/1440-full.png |  Bin 0 -> 1448480 bytes
+ .../integration/homepage/screenshots/390-first.png |  Bin 0 -> 130439 bytes
+ .../integration/homepage/screenshots/390-full.png  |  Bin 0 -> 633615 bytes
+ .../integration/homepage/screenshots/768-first.png |  Bin 0 -> 173190 bytes
+ .../integration/homepage/screenshots/768-full.png  |  Bin 0 -> 931647 bytes
+ .../wul-021/integration/inquiry/results.json       |  366 ++
+ .../inquiry/screenshots/en-1440-blocked-full.png   |  Bin 0 -> 227172 bytes
+ .../inquiry/screenshots/en-390-blocked-full.png    |  Bin 0 -> 198609 bytes
+ .../inquiry/screenshots/en-external-channels.png   |  Bin 0 -> 181952 bytes
+ .../integration/inquiry/screenshots/en-failure.png |  Bin 0 -> 158769 bytes
+ .../integration/inquiry/screenshots/en-pending.png |  Bin 0 -> 154208 bytes
+ .../integration/inquiry/screenshots/en-success.png |  Bin 0 -> 159094 bytes
+ .../inquiry/screenshots/he-1440-blocked-full.png   |  Bin 0 -> 172547 bytes
+ .../inquiry/screenshots/he-390-blocked-full.png    |  Bin 0 -> 154914 bytes
+ .../inquiry/screenshots/he-external-channels.png   |  Bin 0 -> 144343 bytes
+ .../integration/inquiry/screenshots/he-failure.png |  Bin 0 -> 128437 bytes
+ .../integration/inquiry/screenshots/he-pending.png |  Bin 0 -> 124937 bytes
+ .../integration/inquiry/screenshots/he-success.png |  Bin 0 -> 128906 bytes
+ .../wul-021/integration/language/results.json      |  230 +
+ .../language/screenshots/en-1440-first.png         |  Bin 0 -> 450345 bytes
+ .../language/screenshots/en-1440-full.png          |  Bin 0 -> 1497754 bytes
+ .../language/screenshots/en-320-first.png          |  Bin 0 -> 31028 bytes
+ .../language/screenshots/en-320-full.png           |  Bin 0 -> 503991 bytes
+ .../language/screenshots/en-390-first.png          |  Bin 0 -> 100506 bytes
+ .../language/screenshots/en-390-full.png           |  Bin 0 -> 670838 bytes
+ .../language/screenshots/en-768-first.png          |  Bin 0 -> 187704 bytes
+ .../language/screenshots/en-768-full.png           |  Bin 0 -> 970868 bytes
+ .../language/screenshots/he-1440-first.png         |  Bin 0 -> 446924 bytes
+ .../language/screenshots/he-1440-full.png          |  Bin 0 -> 1448480 bytes
+ .../language/screenshots/he-320-first.png          |  Bin 0 -> 28977 bytes
+ .../language/screenshots/he-320-full.png           |  Bin 0 -> 484462 bytes
+ .../language/screenshots/he-390-first.png          |  Bin 0 -> 103114 bytes
+ .../language/screenshots/he-390-full.png           |  Bin 0 -> 633615 bytes
+ .../language/screenshots/he-768-first.png          |  Bin 0 -> 179493 bytes
+ .../language/screenshots/he-768-full.png           |  Bin 0 -> 931647 bytes
+ .../review/wul-021/integration/legacy/results.json | 1069 +++++
+ .../legacy/screenshots/en-390-blessing.png         |  Bin 0 -> 152239 bytes
+ .../legacy/screenshots/en-390-family-sign.png      |  Bin 0 -> 152849 bytes
+ .../screenshots/en-390-hanging-home-sign.png       |  Bin 0 -> 149025 bytes
+ .../legacy/screenshots/en-390-kitchen.png          |  Bin 0 -> 152363 bytes
+ .../screenshots/en-390-personalized-clock.png      |  Bin 0 -> 153537 bytes
+ .../legacy/screenshots/en-390-pizza-peel.png       |  Bin 0 -> 152051 bytes
+ .../legacy/screenshots/en-390-welcome.png          |  Bin 0 -> 151623 bytes
+ .../legacy/screenshots/he-390-blessing-no-js.png   |  Bin 0 -> 156216 bytes
+ .../legacy/screenshots/he-390-blessing.png         |  Bin 0 -> 156449 bytes
+ .../screenshots/he-390-family-sign-no-js.png       |  Bin 0 -> 156531 bytes
+ .../legacy/screenshots/he-390-family-sign.png      |  Bin 0 -> 156755 bytes
+ .../screenshots/he-390-hanging-home-sign-no-js.png |  Bin 0 -> 155972 bytes
+ .../screenshots/he-390-hanging-home-sign.png       |  Bin 0 -> 156218 bytes
+ .../legacy/screenshots/he-390-kitchen-no-js.png    |  Bin 0 -> 156264 bytes
+ .../legacy/screenshots/he-390-kitchen.png          |  Bin 0 -> 156490 bytes
+ .../he-390-personalized-clock-no-js.png            |  Bin 0 -> 157233 bytes
+ .../screenshots/he-390-personalized-clock.png      |  Bin 0 -> 157449 bytes
+ .../legacy/screenshots/he-390-pizza-peel-no-js.png |  Bin 0 -> 156038 bytes
+ .../legacy/screenshots/he-390-pizza-peel.png       |  Bin 0 -> 156287 bytes
+ .../legacy/screenshots/he-390-welcome-no-js.png    |  Bin 0 -> 156619 bytes
+ .../legacy/screenshots/he-390-welcome.png          |  Bin 0 -> 156831 bytes
+ .../integration/natural-door-sign/results.json     |  804 ++++
+ .../screenshots/en-1024-natural-door-sign.png      |  Bin 0 -> 910718 bytes
+ .../screenshots/en-1440-natural-door-sign.png      |  Bin 0 -> 1137799 bytes
+ .../screenshots/en-320-natural-door-sign.png       |  Bin 0 -> 295423 bytes
+ .../screenshots/en-390-home-decor.png              |  Bin 0 -> 690598 bytes
+ .../screenshots/en-390-natural-door-sign.png       |  Bin 0 -> 407384 bytes
+ .../screenshots/en-768-natural-door-sign.png       |  Bin 0 -> 805668 bytes
+ .../he-1024-natural-door-sign-no-js.png            |  Bin 0 -> 893169 bytes
+ .../screenshots/he-1024-natural-door-sign.png      |  Bin 0 -> 893115 bytes
+ .../he-1440-natural-door-sign-no-js.png            |  Bin 0 -> 1114645 bytes
+ .../screenshots/he-1440-natural-door-sign.png      |  Bin 0 -> 1114639 bytes
+ .../screenshots/he-320-natural-door-sign-no-js.png |  Bin 0 -> 283421 bytes
+ .../screenshots/he-320-natural-door-sign.png       |  Bin 0 -> 281016 bytes
+ .../screenshots/he-390-home-decor.png              |  Bin 0 -> 665989 bytes
+ .../screenshots/he-390-natural-door-sign-no-js.png |  Bin 0 -> 395053 bytes
+ .../screenshots/he-390-natural-door-sign.png       |  Bin 0 -> 391926 bytes
+ .../screenshots/he-768-natural-door-sign-no-js.png |  Bin 0 -> 787203 bytes
+ .../screenshots/he-768-natural-door-sign.png       |  Bin 0 -> 787240 bytes
+ .../integration/oval-room-signs/results.json       |  467 ++
+ .../screenshots/en-1024-oval-room-signs.png        |  Bin 0 -> 311951 bytes
+ .../screenshots/en-1440-oval-room-signs.png        |  Bin 0 -> 491595 bytes
+ .../screenshots/en-320-oval-room-signs.png         |  Bin 0 -> 153025 bytes
+ .../screenshots/en-390-oval-room-signs.png         |  Bin 0 -> 185911 bytes
+ .../screenshots/en-768-oval-room-signs.png         |  Bin 0 -> 214019 bytes
+ .../screenshots/he-1024-oval-room-signs-no-js.png  |  Bin 0 -> 291163 bytes
+ .../screenshots/he-1024-oval-room-signs.png        |  Bin 0 -> 291142 bytes
+ .../screenshots/he-1440-oval-room-signs-no-js.png  |  Bin 0 -> 467235 bytes
+ .../screenshots/he-1440-oval-room-signs.png        |  Bin 0 -> 467232 bytes
+ .../screenshots/he-320-oval-room-signs-no-js.png   |  Bin 0 -> 138503 bytes
+ .../screenshots/he-320-oval-room-signs.png         |  Bin 0 -> 136339 bytes
+ .../screenshots/he-390-oval-room-signs-no-js.png   |  Bin 0 -> 168286 bytes
+ .../screenshots/he-390-oval-room-signs.png         |  Bin 0 -> 166369 bytes
+ .../screenshots/he-768-oval-room-signs-no-js.png   |  Bin 0 -> 187737 bytes
+ .../screenshots/he-768-oval-room-signs.png         |  Bin 0 -> 187785 bytes
+ .../wul-021/integration/pizza-peel/results.json    |  816 ++++
+ .../screenshots/en-1024-family-sign-product.png    |  Bin 0 -> 358032 bytes
+ .../en-1024-hanging-home-sign-product.png          |  Bin 0 -> 431056 bytes
+ .../screenshots/en-1024-pizza-peel-product.png     |  Bin 0 -> 518112 bytes
+ .../screenshots/en-1440-family-sign-product.png    |  Bin 0 -> 540186 bytes
+ .../en-1440-hanging-home-sign-product.png          |  Bin 0 -> 670382 bytes
+ .../screenshots/en-1440-pizza-peel-product.png     |  Bin 0 -> 779353 bytes
+ .../screenshots/en-320-family-sign-product.png     |  Bin 0 -> 160733 bytes
+ .../en-320-hanging-home-sign-product.png           |  Bin 0 -> 184624 bytes
+ .../screenshots/en-320-pizza-peel-product.png      |  Bin 0 -> 204683 bytes
+ .../screenshots/en-390-family-sign-product.png     |  Bin 0 -> 218979 bytes
+ .../en-390-hanging-home-sign-product.png           |  Bin 0 -> 255895 bytes
+ .../screenshots/en-390-pizza-peel-product.png      |  Bin 0 -> 271372 bytes
+ .../screenshots/en-768-family-sign-product.png     |  Bin 0 -> 240924 bytes
+ .../en-768-hanging-home-sign-product.png           |  Bin 0 -> 284192 bytes
+ .../screenshots/en-768-pizza-peel-product.png      |  Bin 0 -> 304164 bytes
+ .../screenshots/he-1024-family-sign-product.png    |  Bin 0 -> 348636 bytes
+ .../he-1024-hanging-home-sign-product.png          |  Bin 0 -> 408812 bytes
+ .../screenshots/he-1024-pizza-peel-product.png     |  Bin 0 -> 500335 bytes
+ .../screenshots/he-1440-family-sign-product.png    |  Bin 0 -> 527141 bytes
+ .../he-1440-hanging-home-sign-product.png          |  Bin 0 -> 641926 bytes
+ .../screenshots/he-1440-pizza-peel-product.png     |  Bin 0 -> 760854 bytes
+ .../screenshots/he-320-family-sign-product.png     |  Bin 0 -> 149695 bytes
+ .../he-320-hanging-home-sign-product.png           |  Bin 0 -> 165939 bytes
+ .../screenshots/he-320-pizza-peel-product.png      |  Bin 0 -> 190241 bytes
+ .../screenshots/he-390-family-sign-product.png     |  Bin 0 -> 208242 bytes
+ .../he-390-hanging-home-sign-product.png           |  Bin 0 -> 236810 bytes
+ .../screenshots/he-390-pizza-peel-product.png      |  Bin 0 -> 257291 bytes
+ .../screenshots/he-768-family-sign-product.png     |  Bin 0 -> 227786 bytes
+ .../he-768-hanging-home-sign-product.png           |  Bin 0 -> 262110 bytes
+ .../screenshots/he-768-pizza-peel-product.png      |  Bin 0 -> 285270 bytes
+ .../wul-021/integration/privacy/results.json       |   66 +
+ .../privacy/screenshots/en-1024-full.png           |  Bin 0 -> 225795 bytes
+ .../privacy/screenshots/en-1024-privacy.png        |  Bin 0 -> 49931 bytes
+ .../privacy/screenshots/en-1440-full.png           |  Bin 0 -> 227172 bytes
+ .../privacy/screenshots/en-1440-privacy.png        |  Bin 0 -> 47441 bytes
+ .../privacy/screenshots/en-320-full.png            |  Bin 0 -> 206691 bytes
+ .../privacy/screenshots/en-320-privacy.png         |  Bin 0 -> 48082 bytes
+ .../privacy/screenshots/en-390-full.png            |  Bin 0 -> 198609 bytes
+ .../privacy/screenshots/en-390-privacy.png         |  Bin 0 -> 43270 bytes
+ .../privacy/screenshots/en-768-full.png            |  Bin 0 -> 210413 bytes
+ .../privacy/screenshots/en-768-privacy.png         |  Bin 0 -> 44849 bytes
+ .../privacy/screenshots/he-1024-full.png           |  Bin 0 -> 169945 bytes
+ .../privacy/screenshots/he-1024-privacy.png        |  Bin 0 -> 34248 bytes
+ .../privacy/screenshots/he-1440-full.png           |  Bin 0 -> 172547 bytes
+ .../privacy/screenshots/he-1440-privacy.png        |  Bin 0 -> 33496 bytes
+ .../privacy/screenshots/he-320-full.png            |  Bin 0 -> 154654 bytes
+ .../privacy/screenshots/he-320-privacy.png         |  Bin 0 -> 33948 bytes
+ .../privacy/screenshots/he-390-full.png            |  Bin 0 -> 154914 bytes
+ .../privacy/screenshots/he-390-privacy.png         |  Bin 0 -> 32004 bytes
+ .../privacy/screenshots/he-768-full.png            |  Bin 0 -> 162185 bytes
+ .../privacy/screenshots/he-768-privacy.png         |  Bin 0 -> 32919 bytes
+ .../wul-021/integration/product-pages/results.json | 4409 ++++++++++++++++++
+ .../product-pages/screenshots/en-1024-blessing.png |  Bin 0 -> 310553 bytes
+ .../screenshots/en-1024-family-sign.png            |  Bin 0 -> 358032 bytes
+ .../screenshots/en-1024-hanging-home-sign.png      |  Bin 0 -> 431056 bytes
+ .../product-pages/screenshots/en-1024-home.png     |  Bin 0 -> 1264656 bytes
+ .../product-pages/screenshots/en-1024-kitchen.png  |  Bin 0 -> 389867 bytes
+ .../screenshots/en-1024-natural-edge-door-sign.png |  Bin 0 -> 910718 bytes
+ .../screenshots/en-1024-oval-room-signs.png        |  Bin 0 -> 311951 bytes
+ .../screenshots/en-1024-personalized-clock.png     |  Bin 0 -> 429559 bytes
+ .../screenshots/en-1024-pizza-peel.png             |  Bin 0 -> 518112 bytes
+ .../product-pages/screenshots/en-1024-welcome.png  |  Bin 0 -> 306637 bytes
+ .../product-pages/screenshots/en-1440-blessing.png |  Bin 0 -> 446800 bytes
+ .../screenshots/en-1440-family-sign.png            |  Bin 0 -> 540186 bytes
+ .../screenshots/en-1440-hanging-home-sign.png      |  Bin 0 -> 670382 bytes
+ .../product-pages/screenshots/en-1440-home.png     |  Bin 0 -> 1497754 bytes
+ .../product-pages/screenshots/en-1440-kitchen.png  |  Bin 0 -> 659622 bytes
+ .../screenshots/en-1440-natural-edge-door-sign.png |  Bin 0 -> 1137799 bytes
+ .../screenshots/en-1440-oval-room-signs.png        |  Bin 0 -> 491595 bytes
+ .../en-1440-personalized-clock-handheld-detail.png |  Bin 0 -> 562838 bytes
+ .../en-1440-personalized-clock-hanging.png         |  Bin 0 -> 585023 bytes
+ .../screenshots/en-1440-personalized-clock.png     |  Bin 0 -> 756934 bytes
+ .../screenshots/en-1440-pizza-peel.png             |  Bin 0 -> 779353 bytes
+ .../product-pages/screenshots/en-1440-welcome.png  |  Bin 0 -> 462932 bytes
+ .../product-pages/screenshots/en-320-blessing.png  |  Bin 0 -> 144070 bytes
+ .../screenshots/en-320-family-sign.png             |  Bin 0 -> 160733 bytes
+ .../screenshots/en-320-hanging-home-sign.png       |  Bin 0 -> 184624 bytes
+ .../product-pages/screenshots/en-320-home.png      |  Bin 0 -> 503991 bytes
+ .../product-pages/screenshots/en-320-kitchen.png   |  Bin 0 -> 162492 bytes
+ .../screenshots/en-320-natural-edge-door-sign.png  |  Bin 0 -> 295423 bytes
+ .../screenshots/en-320-oval-room-signs.png         |  Bin 0 -> 153025 bytes
+ .../screenshots/en-320-personalized-clock.png      |  Bin 0 -> 195355 bytes
+ .../screenshots/en-320-pizza-peel.png              |  Bin 0 -> 204683 bytes
+ .../product-pages/screenshots/en-320-welcome.png   |  Bin 0 -> 143021 bytes
+ .../product-pages/screenshots/en-390-blessing.png  |  Bin 0 -> 177956 bytes
+ .../screenshots/en-390-family-sign.png             |  Bin 0 -> 218979 bytes
+ .../screenshots/en-390-hanging-home-sign.png       |  Bin 0 -> 255895 bytes
+ .../product-pages/screenshots/en-390-home.png      |  Bin 0 -> 670838 bytes
+ .../product-pages/screenshots/en-390-kitchen.png   |  Bin 0 -> 207522 bytes
+ .../screenshots/en-390-natural-edge-door-sign.png  |  Bin 0 -> 407384 bytes
+ .../screenshots/en-390-oval-room-signs.png         |  Bin 0 -> 185911 bytes
+ .../en-390-personalized-clock-handheld-detail.png  |  Bin 0 -> 248745 bytes
+ .../en-390-personalized-clock-hanging.png          |  Bin 0 -> 224177 bytes
+ .../screenshots/en-390-personalized-clock.png      |  Bin 0 -> 265578 bytes
+ .../screenshots/en-390-pizza-peel.png              |  Bin 0 -> 271372 bytes
+ .../product-pages/screenshots/en-390-welcome.png   |  Bin 0 -> 181607 bytes
+ .../product-pages/screenshots/en-768-blessing.png  |  Bin 0 -> 197469 bytes
+ .../screenshots/en-768-family-sign.png             |  Bin 0 -> 240924 bytes
+ .../screenshots/en-768-hanging-home-sign.png       |  Bin 0 -> 284192 bytes
+ .../product-pages/screenshots/en-768-home.png      |  Bin 0 -> 970868 bytes
+ .../product-pages/screenshots/en-768-kitchen.png   |  Bin 0 -> 229785 bytes
+ .../screenshots/en-768-natural-edge-door-sign.png  |  Bin 0 -> 805668 bytes
+ .../screenshots/en-768-oval-room-signs.png         |  Bin 0 -> 214019 bytes
+ .../screenshots/en-768-personalized-clock.png      |  Bin 0 -> 296367 bytes
+ .../screenshots/en-768-pizza-peel.png              |  Bin 0 -> 304164 bytes
+ .../product-pages/screenshots/en-768-welcome.png   |  Bin 0 -> 201226 bytes
+ .../product-pages/screenshots/he-1024-blessing.png |  Bin 0 -> 295678 bytes
+ .../he-1024-family-sign-no-javascript.png          |  Bin 0 -> 348663 bytes
+ .../screenshots/he-1024-family-sign.png            |  Bin 0 -> 348636 bytes
+ .../he-1024-hanging-home-sign-no-javascript.png    |  Bin 0 -> 408873 bytes
+ .../screenshots/he-1024-hanging-home-sign.png      |  Bin 0 -> 408812 bytes
+ .../product-pages/screenshots/he-1024-home.png     |  Bin 0 -> 1237382 bytes
+ .../product-pages/screenshots/he-1024-kitchen.png  |  Bin 0 -> 377737 bytes
+ ...e-1024-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 893169 bytes
+ .../screenshots/he-1024-natural-edge-door-sign.png |  Bin 0 -> 893115 bytes
+ .../he-1024-oval-room-signs-no-javascript.png      |  Bin 0 -> 291163 bytes
+ .../screenshots/he-1024-oval-room-signs.png        |  Bin 0 -> 291142 bytes
+ .../screenshots/he-1024-personalized-clock.png     |  Bin 0 -> 409119 bytes
+ .../screenshots/he-1024-pizza-peel.png             |  Bin 0 -> 500335 bytes
+ .../screenshots/he-1024-welcome-no-javascript.png  |  Bin 0 -> 297724 bytes
+ .../product-pages/screenshots/he-1024-welcome.png  |  Bin 0 -> 297668 bytes
+ .../screenshots/he-1440-blessing-no-javascript.png |  Bin 0 -> 428590 bytes
+ .../product-pages/screenshots/he-1440-blessing.png |  Bin 0 -> 428594 bytes
+ .../he-1440-family-sign-no-javascript.png          |  Bin 0 -> 527122 bytes
+ .../screenshots/he-1440-family-sign.png            |  Bin 0 -> 527141 bytes
+ .../he-1440-hanging-home-sign-no-javascript.png    |  Bin 0 -> 641920 bytes
+ .../screenshots/he-1440-hanging-home-sign.png      |  Bin 0 -> 641926 bytes
+ .../product-pages/screenshots/he-1440-home.png     |  Bin 0 -> 1448480 bytes
+ .../screenshots/he-1440-kitchen-no-javascript.png  |  Bin 0 -> 647771 bytes
+ .../product-pages/screenshots/he-1440-kitchen.png  |  Bin 0 -> 647789 bytes
+ ...e-1440-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 1114645 bytes
+ .../screenshots/he-1440-natural-edge-door-sign.png |  Bin 0 -> 1114639 bytes
+ .../he-1440-oval-room-signs-no-javascript.png      |  Bin 0 -> 467235 bytes
+ .../screenshots/he-1440-oval-room-signs.png        |  Bin 0 -> 467232 bytes
+ .../he-1440-personalized-clock-handheld-detail.png |  Bin 0 -> 539391 bytes
+ .../he-1440-personalized-clock-hanging.png         |  Bin 0 -> 563679 bytes
+ .../he-1440-personalized-clock-no-javascript.png   |  Bin 0 -> 741742 bytes
+ .../screenshots/he-1440-personalized-clock.png     |  Bin 0 -> 737134 bytes
+ .../he-1440-pizza-peel-no-javascript.png           |  Bin 0 -> 760854 bytes
+ .../screenshots/he-1440-pizza-peel.png             |  Bin 0 -> 760854 bytes
+ .../screenshots/he-1440-welcome-no-javascript.png  |  Bin 0 -> 451807 bytes
+ .../product-pages/screenshots/he-1440-welcome.png  |  Bin 0 -> 451799 bytes
+ .../product-pages/screenshots/he-320-blessing.png  |  Bin 0 -> 130892 bytes
+ .../he-320-family-sign-no-javascript.png           |  Bin 0 -> 152178 bytes
+ .../screenshots/he-320-family-sign.png             |  Bin 0 -> 149695 bytes
+ .../he-320-hanging-home-sign-no-javascript.png     |  Bin 0 -> 168214 bytes
+ .../screenshots/he-320-hanging-home-sign.png       |  Bin 0 -> 165939 bytes
+ .../product-pages/screenshots/he-320-home.png      |  Bin 0 -> 484465 bytes
+ .../product-pages/screenshots/he-320-kitchen.png   |  Bin 0 -> 151015 bytes
+ ...he-320-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 283421 bytes
+ .../screenshots/he-320-natural-edge-door-sign.png  |  Bin 0 -> 281016 bytes
+ .../he-320-oval-room-signs-no-javascript.png       |  Bin 0 -> 138503 bytes
+ .../screenshots/he-320-oval-room-signs.png         |  Bin 0 -> 136339 bytes
+ .../he-320-personalized-clock-no-javascript.png    |  Bin 0 -> 186546 bytes
+ .../screenshots/he-320-personalized-clock.png      |  Bin 0 -> 180182 bytes
+ .../screenshots/he-320-pizza-peel.png              |  Bin 0 -> 190241 bytes
+ .../screenshots/he-320-welcome-no-javascript.png   |  Bin 0 -> 139127 bytes
+ .../product-pages/screenshots/he-320-welcome.png   |  Bin 0 -> 137074 bytes
+ .../screenshots/he-390-blessing-no-javascript.png  |  Bin 0 -> 167119 bytes
+ .../product-pages/screenshots/he-390-blessing.png  |  Bin 0 -> 165069 bytes
+ .../he-390-family-sign-no-javascript.png           |  Bin 0 -> 210761 bytes
+ .../screenshots/he-390-family-sign.png             |  Bin 0 -> 208242 bytes
+ .../he-390-hanging-home-sign-no-javascript.png     |  Bin 0 -> 238793 bytes
+ .../screenshots/he-390-hanging-home-sign.png       |  Bin 0 -> 236810 bytes
+ .../product-pages/screenshots/he-390-home.png      |  Bin 0 -> 633615 bytes
+ .../screenshots/he-390-kitchen-no-javascript.png   |  Bin 0 -> 198765 bytes
+ .../product-pages/screenshots/he-390-kitchen.png   |  Bin 0 -> 196690 bytes
+ ...he-390-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 395053 bytes
+ .../screenshots/he-390-natural-edge-door-sign.png  |  Bin 0 -> 391926 bytes
+ .../he-390-oval-room-signs-no-javascript.png       |  Bin 0 -> 168286 bytes
+ .../screenshots/he-390-oval-room-signs.png         |  Bin 0 -> 166369 bytes
+ .../he-390-personalized-clock-handheld-detail.png  |  Bin 0 -> 230537 bytes
+ .../he-390-personalized-clock-hanging.png          |  Bin 0 -> 205274 bytes
+ .../he-390-personalized-clock-no-javascript.png    |  Bin 0 -> 255006 bytes
+ .../screenshots/he-390-personalized-clock.png      |  Bin 0 -> 248773 bytes
+ .../he-390-pizza-peel-no-javascript.png            |  Bin 0 -> 259570 bytes
+ .../screenshots/he-390-pizza-peel.png              |  Bin 0 -> 257291 bytes
+ .../screenshots/he-390-welcome-no-javascript.png   |  Bin 0 -> 176865 bytes
+ .../product-pages/screenshots/he-390-welcome.png   |  Bin 0 -> 174330 bytes
+ .../product-pages/screenshots/he-768-blessing.png  |  Bin 0 -> 181393 bytes
+ .../he-768-family-sign-no-javascript.png           |  Bin 0 -> 227735 bytes
+ .../screenshots/he-768-family-sign.png             |  Bin 0 -> 227786 bytes
+ .../he-768-hanging-home-sign-no-javascript.png     |  Bin 0 -> 262073 bytes
+ .../screenshots/he-768-hanging-home-sign.png       |  Bin 0 -> 262110 bytes
+ .../product-pages/screenshots/he-768-home.png      |  Bin 0 -> 931647 bytes
+ .../product-pages/screenshots/he-768-kitchen.png   |  Bin 0 -> 216099 bytes
+ ...he-768-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 787203 bytes
+ .../screenshots/he-768-natural-edge-door-sign.png  |  Bin 0 -> 787240 bytes
+ .../he-768-oval-room-signs-no-javascript.png       |  Bin 0 -> 187737 bytes
+ .../screenshots/he-768-oval-room-signs.png         |  Bin 0 -> 187785 bytes
+ .../screenshots/he-768-personalized-clock.png      |  Bin 0 -> 275379 bytes
+ .../screenshots/he-768-pizza-peel.png              |  Bin 0 -> 285270 bytes
+ .../screenshots/he-768-welcome-no-javascript.png   |  Bin 0 -> 191369 bytes
+ .../product-pages/screenshots/he-768-welcome.png   |  Bin 0 -> 191386 bytes
+ .../run-history/accessibility-run-1.log            |    9 +
+ .../integration/run-history/assets-run-1.log       |    1 +
+ .../integration/run-history/attribution-run-1.log  |  195 +
+ .../integration/run-history/clock-run-1.log        |   16 +
+ .../integration/run-history/collections-run-1.log  |   94 +
+ .../integration/run-history/contract-run-1.log     |    1 +
+ .../integration/run-history/family-sign-run-1.log  |   10 +
+ .../run-history/hero-run-1-partial-results.json    |  106 +
+ .../wul-021/integration/run-history/hero-run-1.log |   17 +
+ .../wul-021/integration/run-history/hero-run-2.log |   17 +
+ .../integration/run-history/homepage-run-1.log     |    3 +
+ .../integration/run-history/inquiry-run-1.log      |   80 +
+ .../integration/run-history/language-run-1.log     |   16 +
+ .../integration/run-history/legacy-run-1.log       |   53 +
+ .../run-history/natural-door-sign-run-1.log        |   16 +
+ .../run-history/oval-room-signs-run-1.log          |   22 +
+ .../integration/run-history/pizza-peel-run-1.log   |   10 +
+ .../integration/run-history/privacy-run-1.log      |    1 +
+ .../run-history/product-pages-run-1.log            |  153 +
+ .../run-history/schwartz-sign-run-1.log            |   10 +
+ .../integration/run-history/server-restart.log     |    3 +
+ .../wul-021/integration/schwartz-sign/results.json |  595 +++
+ .../screenshots/en-1024-family-sign-product.png    |  Bin 0 -> 358032 bytes
+ .../en-1024-hanging-home-sign-product.png          |  Bin 0 -> 431056 bytes
+ .../screenshots/en-1440-family-sign-product.png    |  Bin 0 -> 540186 bytes
+ .../en-1440-hanging-home-sign-product.png          |  Bin 0 -> 670382 bytes
+ .../screenshots/en-320-family-sign-product.png     |  Bin 0 -> 160733 bytes
+ .../en-320-hanging-home-sign-product.png           |  Bin 0 -> 184624 bytes
+ .../screenshots/en-390-family-sign-product.png     |  Bin 0 -> 218979 bytes
+ .../en-390-hanging-home-sign-product.png           |  Bin 0 -> 255895 bytes
+ .../screenshots/en-768-family-sign-product.png     |  Bin 0 -> 240924 bytes
+ .../en-768-hanging-home-sign-product.png           |  Bin 0 -> 284192 bytes
+ .../screenshots/he-1024-family-sign-product.png    |  Bin 0 -> 348636 bytes
+ .../he-1024-hanging-home-sign-product.png          |  Bin 0 -> 408812 bytes
+ .../screenshots/he-1440-family-sign-product.png    |  Bin 0 -> 527141 bytes
+ .../he-1440-hanging-home-sign-product.png          |  Bin 0 -> 641926 bytes
+ .../screenshots/he-320-family-sign-product.png     |  Bin 0 -> 149695 bytes
+ .../he-320-hanging-home-sign-product.png           |  Bin 0 -> 165939 bytes
+ .../screenshots/he-390-family-sign-product.png     |  Bin 0 -> 208242 bytes
+ .../he-390-hanging-home-sign-product.png           |  Bin 0 -> 236810 bytes
+ .../screenshots/he-768-family-sign-product.png     |  Bin 0 -> 227786 bytes
+ .../he-768-hanging-home-sign-product.png           |  Bin 0 -> 262110 bytes
+ docs/review/wul-021/legacy/results.json            | 1069 +++++
+ .../wul-021/legacy/screenshots/en-390-blessing.png |  Bin 0 -> 152239 bytes
+ .../legacy/screenshots/en-390-family-sign.png      |  Bin 0 -> 152849 bytes
+ .../screenshots/en-390-hanging-home-sign.png       |  Bin 0 -> 149025 bytes
+ .../wul-021/legacy/screenshots/en-390-kitchen.png  |  Bin 0 -> 152363 bytes
+ .../screenshots/en-390-personalized-clock.png      |  Bin 0 -> 153537 bytes
+ .../legacy/screenshots/en-390-pizza-peel.png       |  Bin 0 -> 152051 bytes
+ .../wul-021/legacy/screenshots/en-390-welcome.png  |  Bin 0 -> 151623 bytes
+ .../legacy/screenshots/he-390-blessing-no-js.png   |  Bin 0 -> 156216 bytes
+ .../wul-021/legacy/screenshots/he-390-blessing.png |  Bin 0 -> 156449 bytes
+ .../screenshots/he-390-family-sign-no-js.png       |  Bin 0 -> 156531 bytes
+ .../legacy/screenshots/he-390-family-sign.png      |  Bin 0 -> 156755 bytes
+ .../screenshots/he-390-hanging-home-sign-no-js.png |  Bin 0 -> 155972 bytes
+ .../screenshots/he-390-hanging-home-sign.png       |  Bin 0 -> 156218 bytes
+ .../legacy/screenshots/he-390-kitchen-no-js.png    |  Bin 0 -> 156264 bytes
+ .../wul-021/legacy/screenshots/he-390-kitchen.png  |  Bin 0 -> 156490 bytes
+ .../he-390-personalized-clock-no-js.png            |  Bin 0 -> 157233 bytes
+ .../screenshots/he-390-personalized-clock.png      |  Bin 0 -> 157449 bytes
+ .../legacy/screenshots/he-390-pizza-peel-no-js.png |  Bin 0 -> 156038 bytes
+ .../legacy/screenshots/he-390-pizza-peel.png       |  Bin 0 -> 156287 bytes
+ .../legacy/screenshots/he-390-welcome-no-js.png    |  Bin 0 -> 156619 bytes
+ .../wul-021/legacy/screenshots/he-390-welcome.png  |  Bin 0 -> 156831 bytes
+ docs/review/wul-021/product-pages/results.json     | 3615 +++++++++++++++
+ .../product-pages/screenshots/en-1024-blessing.png |  Bin 0 -> 310553 bytes
+ .../screenshots/en-1024-family-sign.png            |  Bin 0 -> 358032 bytes
+ .../screenshots/en-1024-hanging-home-sign.png      |  Bin 0 -> 431056 bytes
+ .../product-pages/screenshots/en-1024-home.png     |  Bin 0 -> 1264656 bytes
+ .../product-pages/screenshots/en-1024-kitchen.png  |  Bin 0 -> 389867 bytes
+ .../screenshots/en-1024-natural-edge-door-sign.png |  Bin 0 -> 910718 bytes
+ .../screenshots/en-1024-personalized-clock.png     |  Bin 0 -> 429559 bytes
+ .../screenshots/en-1024-pizza-peel.png             |  Bin 0 -> 518112 bytes
+ .../product-pages/screenshots/en-1024-welcome.png  |  Bin 0 -> 306637 bytes
+ .../product-pages/screenshots/en-1440-blessing.png |  Bin 0 -> 446800 bytes
+ .../screenshots/en-1440-family-sign.png            |  Bin 0 -> 540186 bytes
+ .../screenshots/en-1440-hanging-home-sign.png      |  Bin 0 -> 670382 bytes
+ .../product-pages/screenshots/en-1440-home.png     |  Bin 0 -> 1497754 bytes
+ .../product-pages/screenshots/en-1440-kitchen.png  |  Bin 0 -> 659622 bytes
+ .../screenshots/en-1440-natural-edge-door-sign.png |  Bin 0 -> 1137799 bytes
+ .../en-1440-personalized-clock-handheld-detail.png |  Bin 0 -> 562838 bytes
+ .../en-1440-personalized-clock-hanging.png         |  Bin 0 -> 585023 bytes
+ .../screenshots/en-1440-personalized-clock.png     |  Bin 0 -> 756934 bytes
+ .../screenshots/en-1440-pizza-peel.png             |  Bin 0 -> 779353 bytes
+ .../product-pages/screenshots/en-1440-welcome.png  |  Bin 0 -> 462932 bytes
+ .../product-pages/screenshots/en-320-blessing.png  |  Bin 0 -> 144070 bytes
+ .../screenshots/en-320-family-sign.png             |  Bin 0 -> 160733 bytes
+ .../screenshots/en-320-hanging-home-sign.png       |  Bin 0 -> 184624 bytes
+ .../product-pages/screenshots/en-320-home.png      |  Bin 0 -> 503991 bytes
+ .../product-pages/screenshots/en-320-kitchen.png   |  Bin 0 -> 162492 bytes
+ .../screenshots/en-320-natural-edge-door-sign.png  |  Bin 0 -> 295423 bytes
+ .../screenshots/en-320-personalized-clock.png      |  Bin 0 -> 195355 bytes
+ .../screenshots/en-320-pizza-peel.png              |  Bin 0 -> 204683 bytes
+ .../product-pages/screenshots/en-320-welcome.png   |  Bin 0 -> 143021 bytes
+ .../product-pages/screenshots/en-390-blessing.png  |  Bin 0 -> 177956 bytes
+ .../screenshots/en-390-family-sign.png             |  Bin 0 -> 218979 bytes
+ .../screenshots/en-390-hanging-home-sign.png       |  Bin 0 -> 255895 bytes
+ .../product-pages/screenshots/en-390-home.png      |  Bin 0 -> 670838 bytes
+ .../product-pages/screenshots/en-390-kitchen.png   |  Bin 0 -> 207522 bytes
+ .../screenshots/en-390-natural-edge-door-sign.png  |  Bin 0 -> 407384 bytes
+ .../en-390-personalized-clock-handheld-detail.png  |  Bin 0 -> 248745 bytes
+ .../en-390-personalized-clock-hanging.png          |  Bin 0 -> 224177 bytes
+ .../screenshots/en-390-personalized-clock.png      |  Bin 0 -> 265578 bytes
+ .../screenshots/en-390-pizza-peel.png              |  Bin 0 -> 271372 bytes
+ .../product-pages/screenshots/en-390-welcome.png   |  Bin 0 -> 181607 bytes
+ .../product-pages/screenshots/en-768-blessing.png  |  Bin 0 -> 197469 bytes
+ .../screenshots/en-768-family-sign.png             |  Bin 0 -> 240924 bytes
+ .../screenshots/en-768-hanging-home-sign.png       |  Bin 0 -> 284192 bytes
+ .../product-pages/screenshots/en-768-home.png      |  Bin 0 -> 970868 bytes
+ .../product-pages/screenshots/en-768-kitchen.png   |  Bin 0 -> 229785 bytes
+ .../screenshots/en-768-natural-edge-door-sign.png  |  Bin 0 -> 805668 bytes
+ .../screenshots/en-768-personalized-clock.png      |  Bin 0 -> 296367 bytes
+ .../screenshots/en-768-pizza-peel.png              |  Bin 0 -> 304164 bytes
+ .../product-pages/screenshots/en-768-welcome.png   |  Bin 0 -> 201226 bytes
+ .../product-pages/screenshots/he-1024-blessing.png |  Bin 0 -> 295678 bytes
+ .../screenshots/he-1024-family-sign.png            |  Bin 0 -> 348636 bytes
+ .../screenshots/he-1024-hanging-home-sign.png      |  Bin 0 -> 408812 bytes
+ .../product-pages/screenshots/he-1024-home.png     |  Bin 0 -> 1237382 bytes
+ .../product-pages/screenshots/he-1024-kitchen.png  |  Bin 0 -> 377737 bytes
+ .../screenshots/he-1024-natural-edge-door-sign.png |  Bin 0 -> 893115 bytes
+ .../screenshots/he-1024-personalized-clock.png     |  Bin 0 -> 409119 bytes
+ .../screenshots/he-1024-pizza-peel.png             |  Bin 0 -> 500335 bytes
+ .../product-pages/screenshots/he-1024-welcome.png  |  Bin 0 -> 297668 bytes
+ .../screenshots/he-1440-blessing-no-javascript.png |  Bin 0 -> 428590 bytes
+ .../product-pages/screenshots/he-1440-blessing.png |  Bin 0 -> 428594 bytes
+ .../he-1440-family-sign-no-javascript.png          |  Bin 0 -> 527122 bytes
+ .../screenshots/he-1440-family-sign.png            |  Bin 0 -> 527141 bytes
+ .../he-1440-hanging-home-sign-no-javascript.png    |  Bin 0 -> 641920 bytes
+ .../screenshots/he-1440-hanging-home-sign.png      |  Bin 0 -> 641926 bytes
+ .../product-pages/screenshots/he-1440-home.png     |  Bin 0 -> 1448480 bytes
+ .../screenshots/he-1440-kitchen-no-javascript.png  |  Bin 0 -> 647771 bytes
+ .../product-pages/screenshots/he-1440-kitchen.png  |  Bin 0 -> 647789 bytes
+ ...e-1440-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 1114645 bytes
+ .../screenshots/he-1440-natural-edge-door-sign.png |  Bin 0 -> 1114639 bytes
+ .../he-1440-personalized-clock-handheld-detail.png |  Bin 0 -> 539391 bytes
+ .../he-1440-personalized-clock-hanging.png         |  Bin 0 -> 563679 bytes
+ .../he-1440-personalized-clock-no-javascript.png   |  Bin 0 -> 741742 bytes
+ .../screenshots/he-1440-personalized-clock.png     |  Bin 0 -> 737134 bytes
+ .../he-1440-pizza-peel-no-javascript.png           |  Bin 0 -> 760854 bytes
+ .../screenshots/he-1440-pizza-peel.png             |  Bin 0 -> 760854 bytes
+ .../screenshots/he-1440-welcome-no-javascript.png  |  Bin 0 -> 451807 bytes
+ .../product-pages/screenshots/he-1440-welcome.png  |  Bin 0 -> 451799 bytes
+ .../product-pages/screenshots/he-320-blessing.png  |  Bin 0 -> 130892 bytes
+ .../screenshots/he-320-family-sign.png             |  Bin 0 -> 149695 bytes
+ .../screenshots/he-320-hanging-home-sign.png       |  Bin 0 -> 165939 bytes
+ .../product-pages/screenshots/he-320-home.png      |  Bin 0 -> 484465 bytes
+ .../product-pages/screenshots/he-320-kitchen.png   |  Bin 0 -> 151015 bytes
+ .../screenshots/he-320-natural-edge-door-sign.png  |  Bin 0 -> 281016 bytes
+ .../he-320-personalized-clock-no-javascript.png    |  Bin 0 -> 186546 bytes
+ .../screenshots/he-320-personalized-clock.png      |  Bin 0 -> 180182 bytes
+ .../screenshots/he-320-pizza-peel.png              |  Bin 0 -> 190241 bytes
+ .../product-pages/screenshots/he-320-welcome.png   |  Bin 0 -> 137074 bytes
+ .../screenshots/he-390-blessing-no-javascript.png  |  Bin 0 -> 167119 bytes
+ .../product-pages/screenshots/he-390-blessing.png  |  Bin 0 -> 165069 bytes
+ .../he-390-family-sign-no-javascript.png           |  Bin 0 -> 210761 bytes
+ .../screenshots/he-390-family-sign.png             |  Bin 0 -> 208242 bytes
+ .../he-390-hanging-home-sign-no-javascript.png     |  Bin 0 -> 238793 bytes
+ .../screenshots/he-390-hanging-home-sign.png       |  Bin 0 -> 236810 bytes
+ .../product-pages/screenshots/he-390-home.png      |  Bin 0 -> 633615 bytes
+ .../screenshots/he-390-kitchen-no-javascript.png   |  Bin 0 -> 198765 bytes
+ .../product-pages/screenshots/he-390-kitchen.png   |  Bin 0 -> 196690 bytes
+ ...he-390-natural-edge-door-sign-no-javascript.png |  Bin 0 -> 395053 bytes
+ .../screenshots/he-390-natural-edge-door-sign.png  |  Bin 0 -> 391926 bytes
+ .../he-390-personalized-clock-handheld-detail.png  |  Bin 0 -> 230537 bytes
+ .../he-390-personalized-clock-hanging.png          |  Bin 0 -> 205274 bytes
+ .../he-390-personalized-clock-no-javascript.png    |  Bin 0 -> 255006 bytes
+ .../screenshots/he-390-personalized-clock.png      |  Bin 0 -> 248773 bytes
+ .../he-390-pizza-peel-no-javascript.png            |  Bin 0 -> 259570 bytes
+ .../screenshots/he-390-pizza-peel.png              |  Bin 0 -> 257291 bytes
+ .../screenshots/he-390-welcome-no-javascript.png   |  Bin 0 -> 176865 bytes
+ .../product-pages/screenshots/he-390-welcome.png   |  Bin 0 -> 174330 bytes
+ .../product-pages/screenshots/he-768-blessing.png  |  Bin 0 -> 181393 bytes
+ .../screenshots/he-768-family-sign.png             |  Bin 0 -> 227786 bytes
+ .../screenshots/he-768-hanging-home-sign.png       |  Bin 0 -> 262110 bytes
+ .../product-pages/screenshots/he-768-home.png      |  Bin 0 -> 931647 bytes
+ .../product-pages/screenshots/he-768-kitchen.png   |  Bin 0 -> 216099 bytes
+ .../screenshots/he-768-natural-edge-door-sign.png  |  Bin 0 -> 787240 bytes
+ .../screenshots/he-768-personalized-clock.png      |  Bin 0 -> 275379 bytes
+ .../screenshots/he-768-pizza-peel.png              |  Bin 0 -> 285270 bytes
+ .../product-pages/screenshots/he-768-welcome.png   |  Bin 0 -> 191386 bytes
+ docs/review/wul-021/product/results.json           |  659 +++
+ .../screenshots/en-1024-natural-door-sign.png      |  Bin 0 -> 910718 bytes
+ .../screenshots/en-1440-natural-door-sign.png      |  Bin 0 -> 1137799 bytes
+ .../screenshots/en-320-natural-door-sign.png       |  Bin 0 -> 295423 bytes
+ .../product/screenshots/en-390-home-decor.png      |  Bin 0 -> 587888 bytes
+ .../screenshots/en-390-natural-door-sign.png       |  Bin 0 -> 407384 bytes
+ .../screenshots/en-768-natural-door-sign.png       |  Bin 0 -> 805668 bytes
+ .../he-1024-natural-door-sign-no-js.png            |  Bin 0 -> 893169 bytes
+ .../screenshots/he-1024-natural-door-sign.png      |  Bin 0 -> 893115 bytes
+ .../he-1440-natural-door-sign-no-js.png            |  Bin 0 -> 1114645 bytes
+ .../screenshots/he-1440-natural-door-sign.png      |  Bin 0 -> 1114639 bytes
+ .../screenshots/he-320-natural-door-sign-no-js.png |  Bin 0 -> 283421 bytes
+ .../screenshots/he-320-natural-door-sign.png       |  Bin 0 -> 281016 bytes
+ .../product/screenshots/he-390-home-decor.png      |  Bin 0 -> 567916 bytes
+ .../screenshots/he-390-natural-door-sign-no-js.png |  Bin 0 -> 395053 bytes
+ .../screenshots/he-390-natural-door-sign.png       |  Bin 0 -> 391926 bytes
+ .../screenshots/he-768-natural-door-sign-no-js.png |  Bin 0 -> 787203 bytes
+ .../screenshots/he-768-natural-door-sign.png       |  Bin 0 -> 787240 bytes
+ .../wul-021/regression/attribution/results.json    | 1008 +++++
+ .../review/wul-021/regression/inquiry/results.json |  356 ++
+ .../inquiry/screenshots/en-1440-blocked-full.png   |  Bin 0 -> 227172 bytes
+ .../inquiry/screenshots/en-390-blocked-full.png    |  Bin 0 -> 198609 bytes
+ .../inquiry/screenshots/en-external-channels.png   |  Bin 0 -> 181952 bytes
+ .../regression/inquiry/screenshots/en-failure.png  |  Bin 0 -> 158769 bytes
+ .../regression/inquiry/screenshots/en-pending.png  |  Bin 0 -> 154208 bytes
+ .../regression/inquiry/screenshots/en-success.png  |  Bin 0 -> 159094 bytes
+ .../inquiry/screenshots/he-1440-blocked-full.png   |  Bin 0 -> 172547 bytes
+ .../inquiry/screenshots/he-390-blocked-full.png    |  Bin 0 -> 154914 bytes
+ .../inquiry/screenshots/he-external-channels.png   |  Bin 0 -> 144343 bytes
+ .../regression/inquiry/screenshots/he-failure.png  |  Bin 0 -> 128437 bytes
+ .../regression/inquiry/screenshots/he-pending.png  |  Bin 0 -> 124937 bytes
+ .../regression/inquiry/screenshots/he-success.png  |  Bin 0 -> 128906 bytes
+ docs/review/wul-021/wul-021-assets.zip             |  Bin 0 -> 410891 bytes
+ inquiry/index.html                                 |    1 +
+ inquiry/inquiry.js                                 |    4 +
+ products/natural-edge-door-sign/index.html         |  168 +
+ tools/check-collection-accessibility.cjs           |    4 +-
+ tools/check-collection-contract.cjs                |   24 +-
+ tools/check-collections.cjs                        |    7 +-
+ tools/check-fragment-navigation.cjs                |    6 +-
+ tools/check-inquiry.cjs                            |    6 +-
+ tools/check-lead-attribution.cjs                   |    3 +-
+ tools/check-natural-door-sign.cjs                  |  131 +
+ tools/check-oval-room-signs.cjs                    |    2 +-
+ tools/check-product-pages.cjs                      |   16 +-
+ tools/qa-collections-shared.cjs                    |   28 +-
+ tools/qa-wul021-catalog.cjs                        |   23 +
+ tools/run-integration-qa.py                        |   86 +
+ tools/summarize-integration-qa.py                  |  178 +
+ tools/verify-oval-room-assets.py                   |   15 +-
+ 813 files changed, 39592 insertions(+), 53 deletions(-)

@@ -1,0 +1,374 @@
+{
+  "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+  "main": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+  "files": [
+    {
+      "path": "assets/css/collection.css",
+      "sha256": "6fe2fe4a5bd6d4495487cbe32983b1e00e91ee1fe1f4656e80814b1aa61a9ee2"
+    },
+    {
+      "path": "assets/css/natural-door-sign.css",
+      "sha256": "19377db4fcc85c54e937bd21627307c274cdb9e99315f5260b03efecdd65dce8"
+    },
+    {
+      "path": "assets/css/product.css",
+      "sha256": "6f758aa89ad69f5e87de895515c0291d7d825e7c58fdcd68cec4196273b83075"
+    },
+    {
+      "path": "assets/css/style.css",
+      "sha256": "098b0fc57ebb66e203616e7a9710cbf2b1338555e53fcd4095400e022d89d3de"
+    },
+    {
+      "path": "assets/fonts/OFL-sans.txt",
+      "sha256": "7387750a626d005e86adc8b9321567f001fc2f6ef5c8f275261c454fe86981d4"
+    },
+    {
+      "path": "assets/fonts/OFL-serif.txt",
+      "sha256": "38d5fbc95848cf88131f2611c9f3f3a44f0262141601abf3aee6df2f8c4c71f5"
+    },
+    {
+      "path": "assets/fonts/noto-sans-hebrew-400.woff2",
+      "sha256": "330b5c315ebac6a102bea95898207a4fdae4a6180d27783dfbb2a700deb61845"
+    },
+    {
+      "path": "assets/fonts/noto-serif-hebrew-400.woff2",
+      "sha256": "5fd3fc127fc1b627673a85979750526b70c2ac6feaecfadd3d2321d7dedc8585"
+    },
+    {
+      "path": "assets/images/README.md",
+      "sha256": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6"
+    },
+    {
+      "path": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d"
+    },
+    {
+      "path": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826"
+    },
+    {
+      "path": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb"
+    },
+    {
+      "path": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f"
+    },
+    {
+      "path": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e"
+    },
+    {
+      "path": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345"
+    },
+    {
+      "path": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2"
+    },
+    {
+      "path": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b"
+    },
+    {
+      "path": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0"
+    },
+    {
+      "path": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7"
+    },
+    {
+      "path": "assets/images/natural-edge-door-sign-door-small.webp",
+      "sha256": "bcaed44b5fa99e6727ff261be833c13027e09623441fec69b79765ceaf263555"
+    },
+    {
+      "path": "assets/images/natural-edge-door-sign-door.webp",
+      "sha256": "c789df9bd622e073adfe0c28e78fab5d9239341348b1a20b1f190cb79d354b1c"
+    },
+    {
+      "path": "assets/images/natural-edge-door-sign-product-small.webp",
+      "sha256": "c317f987ac8261bc78432bd39cfd7308bb61414cb2387cdd42fed550140abe9b"
+    },
+    {
+      "path": "assets/images/natural-edge-door-sign-product.webp",
+      "sha256": "0a122ed8c950c2e2851872ab93c36c973292acaec5ec3f2b39704384d08f317f"
+    },
+    {
+      "path": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c"
+    },
+    {
+      "path": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da"
+    },
+    {
+      "path": "assets/images/oval-room-signs-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f"
+    },
+    {
+      "path": "assets/images/oval-room-signs.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725"
+    },
+    {
+      "path": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac"
+    },
+    {
+      "path": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1"
+    },
+    {
+      "path": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18"
+    },
+    {
+      "path": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13"
+    },
+    {
+      "path": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462"
+    },
+    {
+      "path": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a"
+    },
+    {
+      "path": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601"
+    },
+    {
+      "path": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede"
+    },
+    {
+      "path": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b"
+    },
+    {
+      "path": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb"
+    },
+    {
+      "path": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f"
+    },
+    {
+      "path": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725"
+    },
+    {
+      "path": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b"
+    },
+    {
+      "path": "assets/js/clock-gallery.js",
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc"
+    },
+    {
+      "path": "assets/js/language.js",
+      "sha256": "6453eed7a143acb487b2b384517e2a83acabdd88452eadb75fe935d35e46bcef"
+    },
+    {
+      "path": "assets/js/main.js",
+      "sha256": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc"
+    },
+    {
+      "path": "collections/gifts-memories/index.html",
+      "sha256": "ae1888c0cd8fbfa62297508ef97dcbf76aeab765b49b94d9ddc9e2e48372abd7"
+    },
+    {
+      "path": "collections/home-decor/index.html",
+      "sha256": "6e3f375e12c34b9e6ca597d091275b9859f25ee560684a3d3f560dd76102a975"
+    },
+    {
+      "path": "collections/judaica-tradition/index.html",
+      "sha256": "1e1e53f2ab1262e57eacca5e0b7844bac070cc2b57970572e27899c753f91232"
+    },
+    {
+      "path": "collections/kitchen-hosting/index.html",
+      "sha256": "faabaa1dbb4b74798e2ec68dccd4eed2ae3680f2df8118750c1a4888a202a17c"
+    },
+    {
+      "path": "docs/review/wul-021/CATEGORY_PRODUCT_MAP.json",
+      "sha256": "159356e9fd49403810799e243411f203e3d210af5ed602d23015cf0be7a57b42"
+    },
+    {
+      "path": "docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json",
+      "sha256": "159356e9fd49403810799e243411f203e3d210af5ed602d23015cf0be7a57b42"
+    },
+    {
+      "path": "index.html",
+      "sha256": "7a67fe05698579acc588ca3033a7948589f2372ed9eb125ebee31b46cd714954"
+    },
+    {
+      "path": "inquiry/README.md",
+      "sha256": "e5fb7862edcd2e5425fad2f274837018c4b657c2075f6b75840711050659e6e5"
+    },
+    {
+      "path": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e"
+    },
+    {
+      "path": "inquiry/index.html",
+      "sha256": "7fc5157b4fc9bad8d175b46697ba008f54801b81b71a5dbfcfdddff36b121fe0"
+    },
+    {
+      "path": "inquiry/inquiry.css",
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914"
+    },
+    {
+      "path": "inquiry/inquiry.js",
+      "sha256": "69eaf291ca56578a46dd1a16fb6c7658513931c569746df78683d025fc94e695"
+    },
+    {
+      "path": "products/blessing/index.html",
+      "sha256": "563d8889d56a6e890e7e0e9593e64de5b8822e91f699ab6639b50c425e8707e9"
+    },
+    {
+      "path": "products/family-sign/index.html",
+      "sha256": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c"
+    },
+    {
+      "path": "products/hanging-home-sign/index.html",
+      "sha256": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c"
+    },
+    {
+      "path": "products/kitchen/index.html",
+      "sha256": "1c2f92921e6b344ab1540c974951505f013b0c9bbe1ad78958cf10f9eab2076e"
+    },
+    {
+      "path": "products/natural-edge-door-sign/index.html",
+      "sha256": "300f7d52066d6367c849aa51263caf9d16e0fe60d4137add510cd5dca33c0f52"
+    },
+    {
+      "path": "products/oval-room-signs/index.html",
+      "sha256": "0ba38126958987492ab19914bc603c212be38244982863c65c376e846a85d067"
+    },
+    {
+      "path": "products/personalized-clock/index.html",
+      "sha256": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13"
+    },
+    {
+      "path": "products/pizza-peel/index.html",
+      "sha256": "3c9e33bc33ef52bac157a7cef1926fd2e47ddc8f86c24617f74ec8ec070803a9"
+    },
+    {
+      "path": "products/welcome/index.html",
+      "sha256": "5d5971b5a637f69b111f6b2b5f46fbc359b3139429ad44aa880aba61b3b555be"
+    },
+    {
+      "path": "tools/capture-collection-baseline.cjs",
+      "sha256": "83740be6a7bf7c68fe59c1d4bfc9ef2d9bb1c645df01855d63f4209ed3056a44"
+    },
+    {
+      "path": "tools/capture-oval-room-baseline.cjs",
+      "sha256": "51b7495f3d84bbcba239e786640242d4d31093b2e099c8b35505e47ea3b24aff"
+    },
+    {
+      "path": "tools/check-clock.cjs",
+      "sha256": "6fc6ffecc7fcbbe62bccac3a2cdeefad0d35ce0393910ac528ff346b94fb0f67"
+    },
+    {
+      "path": "tools/check-collection-accessibility.cjs",
+      "sha256": "fc67852eb6c1bb7886964f202844e0f445b21d18b7e939e3348b751cbd81fcd0"
+    },
+    {
+      "path": "tools/check-collection-contract.cjs",
+      "sha256": "7da360fc17df743b16aa119fcbbc4186ffabbd26fbf5355f7325c288a5cac13b"
+    },
+    {
+      "path": "tools/check-collections.cjs",
+      "sha256": "1e44f59dc38863c0c5d250cb653a10c45886d77e86a99147e49920d303dc8551"
+    },
+    {
+      "path": "tools/check-family-sign.cjs",
+      "sha256": "db34bdd35b27f2e502c18cfa53e351f06cf2576aed0d3ca5d116857abb9443ee"
+    },
+    {
+      "path": "tools/check-fragment-navigation.cjs",
+      "sha256": "9f00fc6b9a88790db8cced87fba524bd12d938c7838ba5026bc5133c7ece0e69"
+    },
+    {
+      "path": "tools/check-hero.cjs",
+      "sha256": "ade3ce3524aaf9b8a65c58e1375e5ac7537c781f738dfb14af5538e25eafe131"
+    },
+    {
+      "path": "tools/check-homepage.cjs",
+      "sha256": "2535e286c51a3a3de7a791e274d0291b725f1b69c199c0bfb95245ac6db3a186"
+    },
+    {
+      "path": "tools/check-inquiry.cjs",
+      "sha256": "3727ececd4d8aa0b237467033f81868eb5e3100551a724fa41465a3a4f662bbd"
+    },
+    {
+      "path": "tools/check-language.cjs",
+      "sha256": "e4f948754d4a994862e9acd3c9b77e9fc1ce8ca4e697d67069ae4a55750851ce"
+    },
+    {
+      "path": "tools/check-lead-attribution.cjs",
+      "sha256": "18346c6f7d5e32646890fb9e1ccd4321fe7faf89f65d243b011f10537b221a67"
+    },
+    {
+      "path": "tools/check-natural-door-sign.cjs",
+      "sha256": "b331e11d2759ad1773e5ae7de1803784262eb68f921b2ba90d86f1dca92a149c"
+    },
+    {
+      "path": "tools/check-oval-room-signs.cjs",
+      "sha256": "d96d15287d57423ae5efc7c4d39674f76f5913cfba3686a9e169050f867f8c52"
+    },
+    {
+      "path": "tools/check-pizza-peel.cjs",
+      "sha256": "9f2535397b7049862c12a184ba1687e2c9955f1707a756748048beac6c6512bc"
+    },
+    {
+      "path": "tools/check-product-identity.cjs",
+      "sha256": "b609ce0dec643a17d9616afced2220848eeb9749ca0cef17ced9c6fbc4e462a4"
+    },
+    {
+      "path": "tools/check-product-pages.cjs",
+      "sha256": "62a0aecb1ac4e0011c305f8a4988297ee7e1eaf10f514bfaf80be003b2c42f10"
+    },
+    {
+      "path": "tools/check-reference-inquiry.cjs",
+      "sha256": "46eddd4e90e429d78e0761642b31cc689e5641f0d27d79335e81da7ad81cf748"
+    },
+    {
+      "path": "tools/check-schwartz-sign.cjs",
+      "sha256": "459c6768b6582314d49ab57bd2673459351a7a0005ea07c93b8102d722c1e166"
+    },
+    {
+      "path": "tools/check-shared-privacy.cjs",
+      "sha256": "b7456cc4b6ff41a20edfb86ce9d6af49e98de8b62287564cefa11d77a14d7a30"
+    },
+    {
+      "path": "tools/prepare-reference-inquiry.py",
+      "sha256": "35ccbe566850c564fd975301ee7249e8902af839c602c084b211252ca2dc8f49"
+    },
+    {
+      "path": "tools/qa-collections-shared.cjs",
+      "sha256": "91e3bb59b3ce43fce5798e83f905d4f7b56c49c24fce0a2f703ee7c69370dd6b"
+    },
+    {
+      "path": "tools/qa-wul021-catalog.cjs",
+      "sha256": "31ed0780875129c4b749a8e56fecb5ab488c686a184859114f82eda3cf050761"
+    },
+    {
+      "path": "tools/run-oval-room-regressions.py",
+      "sha256": "56d7652f8689b6dfd33a78b5410c70f38e007ff79e18ca67b41c0a266141e19c"
+    },
+    {
+      "path": "tools/summarize-collections-qa.py",
+      "sha256": "6e8d991489b8199e99f46129dc80799dbb8fd0c1e2b74f74099f0bb2c8dcda92"
+    },
+    {
+      "path": "tools/summarize-oval-room-qa.py",
+      "sha256": "795d5e17fc30cd296ee9664d962b019ed68cf265f0355f2b0037a001b2aa4ddb"
+    },
+    {
+      "path": "tools/verify-oval-room-assets.py",
+      "sha256": "fc1ecf1465f843a5d01b8e224a6d53616067a74bc048a69ccd0c248e9fabfb91"
+    }
+  ]
+}
