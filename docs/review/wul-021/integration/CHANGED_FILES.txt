@@ -100,6 +100,7 @@ docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json
 docs/review/wul-021/integration/CHANGED_FILES.txt
 docs/review/wul-021/integration/CONFLICTS.json
 docs/review/wul-021/integration/CORRECTION_CYCLES.json
+docs/review/wul-021/integration/DELIVERY.json
 docs/review/wul-021/integration/ENVIRONMENT.json
 docs/review/wul-021/integration/GIT_DIFF_MAIN.txt
 docs/review/wul-021/integration/PRESERVATION.json

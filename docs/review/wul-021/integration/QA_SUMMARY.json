@@ -1,7 +1,7 @@
 {
   "task": "WUL-021 Integration V2 / Issue #39",
   "status": "PASS",
-  "generated_at": "2026-10-19T07:14:03.514583+00:00",
+  "generated_at": "2026-10-19T07:15:34.889629+00:00",
   "main": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
   "prior_wul021": "c487016de8b9cf43c297287449909ccf7748b7a7",
   "integrated_source_commit": "0f9b834c631a7a964d111f018b2fc13af77b297d",
@@ -275,5 +275,37 @@
   ],
   "merge_to_main": false,
   "deploy": false,
-  "mergeability": "Pending final push verification"
+  "mergeability": true,
+  "delivery": {
+    "status": "PASS",
+    "checked_at": "2026-10-19T07:15:33.340407+00:00",
+    "pr": {
+      "number": 37,
+      "state": "open",
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "merged": false,
+      "draft": false,
+      "html_url": "https://github.com/mataniar0/wood-u-like-site/pull/37"
+    },
+    "head": "340b47591d55b0363edf8185a6355dd73b040428",
+    "main": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "integrated_tested_source": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+    "protected_source_snapshot_matches": true,
+    "push_type": "normal fast-forward; no force",
+    "issue_reference": "Refs #39",
+    "qa": {
+      "suites": 18,
+      "pass_records": 755,
+      "unresolved_failures": 0,
+      "mocked_posts": 250,
+      "real_inquiries": 0
+    },
+    "delivery_followup": "The following commit records this verification and evidence-generation metadata only. Final HEAD and a fresh GitHub mergeability check are posted in PR #37 after that push.",
+    "preflight_note": "The narrow clone has no origin/feature tracking ref; a local alias lookup failed. Remote feature and main heads were checked directly with git ls-remote and PR API; the normal push retained both histories. This was a delivery metadata check, not an acceptance-suite failure.",
+    "merge_to_main": false,
+    "deploy": false,
+    "issue_closed": false,
+    "branch_deleted": false
+  }
 }

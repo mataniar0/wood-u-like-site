@@ -95,6 +95,17 @@ def main():
     total = sum(s["records"] for s in suites)
     assert all(event["status"] == "PASS" for event in corrections["events"])
     summary = {"task": "WUL-021 Integration V2 / Issue #39", "status": "PASS", "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), "main": MAIN, "prior_wul021": PRIOR, "integrated_source_commit": source, "merge_parents": git("show", "-s", "--format=%P", source).split(), "branch": "feature/wul-021-natural-wood-door-sign", "pr": "https://github.com/mataniar0/wood-u-like-site/pull/37", "product_count": 9, "collection_counts": [5, 2, 1, 1], "suite_count": len(suites), "suites": suites, "pass_records": total, "unresolved_failures": 0, "failed_attempts": len(failures), "failed_attempt_details": failures, "mocked_posts": posts, "real_inquiries": 0, "unexpected_external_requests": 0, "correction_cycles": corrections, "screenshot_count": len(screenshots), "assets_byte_identical_to_approved_branches": True, "contact_config_unchanged": True, "counting_policy": "Primary scenario/file-contract records only. The Hero runner also reruns the language suite; that nested language run is verified by its exit status but excluded from totals to avoid double counting. Before images and earlier WUL-020/021 results are excluded.", "limitations": ["Chromium only; no Firefox/Safari or manual screen-reader verification", "Local Pages-prefix HTTP validation; no site deployment or live-site claim", "English is client-side translation at the same URL; no separate English indexing claim", "A single initial CLS outlier occurred under concurrent browser suites; full unchanged Hero/language suite was rerun alone. Concurrency is not a proven root cause; failed evidence is retained."], "merge_to_main": False, "deploy": False, "mergeability": "Pending final push verification"}
+    delivery_path = OUT / "DELIVERY.json"
+    delivery_note = "מצב GitHub לאחר push ייבדק לפני המסירה הסופית."
+    if delivery_path.exists():
+        delivery = json.loads(delivery_path.read_text())
+        assert delivery["status"] == "PASS" and delivery["pr"]["mergeable"] is True
+        assert delivery["pr"]["merged"] is False and delivery["pr"]["state"] == "open"
+        assert delivery["main"] == MAIN
+        subprocess.run(["git", "merge-base", "--is-ancestor", source, delivery["head"]], cwd=ROOT, check=True)
+        summary["delivery"] = delivery
+        summary["mergeability"] = True
+        delivery_note = f"לאחר push אומת ב־{delivery['checked_at']}: PR #37 פתוח, `merged=false`, `mergeable=true`, מצב `{delivery['pr']['mergeable_state']}`, על HEAD `{delivery['head']}`. main עדיין `{MAIN}`. ראו [DELIVERY.json](DELIVERY.json). commit תיעוד המסירה שבא אחריו אינו משנה קוד אתר או סקריפטי קבלה; ה־SHA הסופי ובדיקת mergeability חוזרת יופיעו בהודעת המסירה ב־PR."
     write("QA_SUMMARY.json", summary)
     mapping = json.loads((OUT / "CATEGORY_PRODUCT_MAP.json").read_text())
     write("PRODUCT_FORM_TABLE.json", {"status": "PASS", "products": [{"product_id": p["product_id"], "name": p["name"], "collection": p["collection"], "product_route": p["route"], "form_route": "inquiry/?product=" + p["product_id"], "collection_cta": "../../inquiry/?product=" + p["product_id"], "product_cta": "../../inquiry/?product=" + p["product_id"], "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json", "real_inquiries": 0} for p in mapping["products"]]})
@@ -162,6 +173,8 @@ HE/EN נבדקו ב־320/390/768/1024/1440. חמשת מוצרי שלטי הבי�
 ## מסירה וסקירת ראש צוות
 
 מעדכנים רק את [PR #37](https://github.com/mataniar0/wood-u-like-site/pull/37), עם `Refs #39`. גוף ה־PR וההודעה בו יתעדו את commit המסירה ואת מצב mergeability שאומת לאחר push. ה־PR מוגש לסקירת ראש צוות עצמאית חוזרת בציון 90/100 לפחות וללא חוסמים; אין כאן אישור עצמי למיזוג. לא בוצעו Merge ל־main, Deploy, מחיקת ענף, סגירת Issue או הפעלת שליחה אמיתית.
+
+{delivery_note}
 '''
     (OUT / "REPORT_HE.md").write_text(report)
     patch = subprocess.check_output(["git", "diff", "--no-color", "--unified=0", MAIN, "--", "README.md", "assets", "collections", "inquiry", "products", "tools"], cwd=ROOT)

@@ -100,15 +100,16 @@ README.md                                          |   18 +
  docs/review/wul-021/integration/CHANGED_FILES.txt  |  813 ++++
  docs/review/wul-021/integration/CONFLICTS.json     |   37 +
  .../wul-021/integration/CORRECTION_CYCLES.json     |   38 +
+ docs/review/wul-021/integration/DELIVERY.json      |   32 +
  docs/review/wul-021/integration/ENVIRONMENT.json   |   16 +
- docs/review/wul-021/integration/GIT_DIFF_MAIN.txt  |  302 ++
+ docs/review/wul-021/integration/GIT_DIFF_MAIN.txt  |  814 ++++
  docs/review/wul-021/integration/PRESERVATION.json  |  410 ++
  .../wul-021/integration/PRODUCT_FORM_TABLE.json    |  131 +
- docs/review/wul-021/integration/QA_SUMMARY.json    |  279 ++
- docs/review/wul-021/integration/REPORT_HE.md       |   86 +
+ docs/review/wul-021/integration/QA_SUMMARY.json    |  311 ++
+ docs/review/wul-021/integration/REPORT_HE.md       |   88 +
  docs/review/wul-021/integration/RUNS.json          |  309 ++
  .../wul-021/integration/SCREENSHOT_MANIFEST.json   | 4738 ++++++++++++++++++++
- .../wul-021/integration/SOURCE_DIFF_MAIN.patch     |  916 ++++
+ .../wul-021/integration/SOURCE_DIFF_MAIN.patch     |  929 ++++
  .../wul-021/integration/SOURCE_SNAPSHOT.json       |  374 ++
  .../wul-021/integration/accessibility/results.json |  880 ++++
  .../screenshots/en-320-home-final.png              |  Bin 0 -> 503991 bytes
@@ -809,6 +810,6 @@ README.md                                          |   18 +
  tools/qa-collections-shared.cjs                    |   28 +-
  tools/qa-wul021-catalog.cjs                        |   23 +
  tools/run-integration-qa.py                        |   86 +
- tools/summarize-integration-qa.py                  |  178 +
+ tools/summarize-integration-qa.py                  |  191 +
  tools/verify-oval-room-assets.py                   |   15 +-
- 813 files changed, 39592 insertions(+), 53 deletions(-)
+ 814 files changed, 40196 insertions(+), 53 deletions(-)
