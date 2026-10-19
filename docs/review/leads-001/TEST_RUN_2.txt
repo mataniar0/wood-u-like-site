@@ -1,0 +1,38 @@
+test_approved_without_quote_excluded_from_intersection (__main__.LedgerTests.test_approved_without_quote_excluded_from_intersection) ... ok
+test_bom_and_reordered_columns (__main__.LedgerTests.test_bom_and_reordered_columns) ... ok
+test_cli_has_no_network_attempts (__main__.LedgerTests.test_cli_has_no_network_attempts) ... ok
+test_cli_refuses_repository_input_output_and_symlink_targets (__main__.LedgerTests.test_cli_refuses_repository_input_output_and_symlink_targets) ... ok
+test_cli_success_owner_only_permissions_and_no_overwrite (__main__.LedgerTests.test_cli_success_owner_only_permissions_and_no_overwrite) ... ok
+test_completed_and_lost_keep_approval_once (__main__.LedgerTests.test_completed_and_lost_keep_approval_once) ... ok
+test_completed_missing_approval_is_flagged_not_counted (__main__.LedgerTests.test_completed_missing_approval_is_flagged_not_counted) ... ok
+test_current_status_requires_its_event (__main__.LedgerTests.test_current_status_requires_its_event) ... ok
+test_duplicate_ids_rejected_even_identical_or_across_brands (__main__.LedgerTests.test_duplicate_ids_rejected_even_identical_or_across_brands) ... ok
+test_empty_cohort_and_header_only_template (__main__.LedgerTests.test_empty_cohort_and_header_only_template) ... ok
+test_empty_git_placeholder_is_not_a_repository (__main__.LedgerTests.test_empty_git_placeholder_is_not_a_repository) ... ok
+test_events_after_cohort_end_are_cumulative (__main__.LedgerTests.test_events_after_cohort_end_are_cumulative) ... ok
+test_exact_cents_no_float_rounding (__main__.LedgerTests.test_exact_cents_no_float_rounding) ... ok
+test_git_directory_and_bare_repository_are_rejected (__main__.LedgerTests.test_git_directory_and_bare_repository_are_rejected) ... ok
+test_half_open_cohort_and_offset_boundaries (__main__.LedgerTests.test_half_open_cohort_and_offset_boundaries) ... ok
+test_hand_calculated_totals (__main__.LedgerTests.test_hand_calculated_totals) ... ok
+test_headers_duplicate_columns_extra_pii_columns_and_short_row (__main__.LedgerTests.test_headers_duplicate_columns_extra_pii_columns_and_short_row) ... ok
+test_inconsistent_chronology_and_unbacked_prices (__main__.LedgerTests.test_inconsistent_chronology_and_unbacked_prices) ... ok
+test_invalid_campaign_and_quantity (__main__.LedgerTests.test_invalid_campaign_and_quantity) ... ok
+test_invalid_money_is_rejected (__main__.LedgerTests.test_invalid_money_is_rejected) ... ok
+test_invalid_or_empty_cohort_window (__main__.LedgerTests.test_invalid_or_empty_cohort_window) ... ok
+test_invalid_status_and_missing_identifier (__main__.LedgerTests.test_invalid_status_and_missing_identifier) ... ok
+test_invalid_timestamps_and_future_events (__main__.LedgerTests.test_invalid_timestamps_and_future_events) ... ok
+test_lost_without_quote_does_not_fabricate_history (__main__.LedgerTests.test_lost_without_quote_does_not_fabricate_history) ... ok
+test_missing_approved_value_is_not_zero_or_complete_total (__main__.LedgerTests.test_missing_approved_value_is_not_zero_or_complete_total) ... ok
+test_missing_source_is_separate_not_inferred (__main__.LedgerTests.test_missing_source_is_separate_not_inferred) ... ok
+test_private_fields_never_appear_in_report_or_errors (__main__.LedgerTests.test_private_fields_never_appear_in_report_or_errors) ... ok
+test_product_and_campaign_group_sums (__main__.LedgerTests.test_product_and_campaign_group_sums) ... ok
+test_reopened_status_keeps_old_events (__main__.LedgerTests.test_reopened_status_keeps_old_events) ... ok
+test_two_brands_and_all_six_states (__main__.LedgerTests.test_two_brands_and_all_six_states) ... ok
+test_unknown_labels_and_safe_source_page (__main__.LedgerTests.test_unknown_labels_and_safe_source_page) ... ok
+test_unknown_received_at_excluded_explicitly (__main__.LedgerTests.test_unknown_received_at_excluded_explicitly) ... ok
+test_zero_price_is_distinct_from_unknown (__main__.LedgerTests.test_zero_price_is_distinct_from_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.958s
+
+OK

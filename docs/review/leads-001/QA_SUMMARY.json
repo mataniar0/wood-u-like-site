@@ -1,0 +1,137 @@
+{
+  "task": "LEADS-001B / WUL-013",
+  "issue": 23,
+  "baseline_main": "9281defa4f8ca62ac7bc76bd94df7200ec28549e",
+  "branch": "feature/leads-001-private-ledger",
+  "status": "PASS",
+  "generated_at": "2026-10-19T12:06:05.383711+00:00",
+  "test_methods_pass": 33,
+  "test_methods_fail": 0,
+  "unresolved_failures": 0,
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests": 30,
+      "passed": 29,
+      "failed": 1,
+      "log": "TEST_RUN_1.txt"
+    },
+    {
+      "attempt": 2,
+      "tests": 33,
+      "passed": 33,
+      "failed": 0,
+      "log": "TEST_RUN_2.txt",
+      "subsequent_privacy_gate": "FAIL; synthetic test fixture only"
+    },
+    {
+      "attempt": 3,
+      "tests": 33,
+      "passed": 33,
+      "failed": 0,
+      "log": "TEST_RUN_3.txt",
+      "subsequent_privacy_gate": "PASS"
+    },
+    {
+      "attempt": 4,
+      "tests": 33,
+      "passed": 33,
+      "failed": 0,
+      "log": "TEST_RUN_4.txt",
+      "reason": "latest-main refresh, not a defect correction"
+    }
+  ],
+  "correction_cycles": 2,
+  "checks": [
+    {
+      "check": "functional_regression",
+      "status": "PASS",
+      "passed": 33,
+      "failed": 0,
+      "synthetic_only": true
+    },
+    {
+      "check": "public_template_headers_only",
+      "status": "PASS",
+      "path": "docs/leads/templates/lead_ledger.csv",
+      "columns": 17,
+      "data_rows": 0
+    },
+    {
+      "check": "public_template_headers_only",
+      "status": "PASS",
+      "path": "docs/leads/templates/aggregate_report.csv",
+      "columns": 17,
+      "data_rows": 0
+    },
+    {
+      "check": "public_template_headers_only",
+      "status": "PASS",
+      "path": "docs/leads/templates/lead_events.csv",
+      "columns": 8,
+      "data_rows": 0
+    },
+    {
+      "check": "python_syntax",
+      "status": "PASS"
+    },
+    {
+      "check": "all_public_site_files_byte_identical_to_main",
+      "status": "PASS",
+      "files": 63
+    },
+    {
+      "check": "contact_config_unchanged_all_approval_flags_false",
+      "status": "PASS",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e"
+    },
+    {
+      "check": "added_content_privacy_and_secret_scan",
+      "status": "PASS",
+      "real_lead_rows": 0,
+      "contact_values": 0,
+      "live_form_endpoints": 0
+    },
+    {
+      "check": "offline_runtime_imports_and_audited_cli",
+      "status": "PASS",
+      "external_requests": 0,
+      "live_submissions": 0
+    }
+  ],
+  "checked_sources": [
+    {
+      "path": "tools/leads_report.py",
+      "sha256": "1e854d971c30eed14b95a5d88d9fc6eeba70130514b223eb9329c14f702a7bdd"
+    },
+    {
+      "path": "tools/test_leads_report.py",
+      "sha256": "5aac89172ce4c3bf9eca43e859d5abd2f6323f65937c7f81c06f0777b6498ac0"
+    }
+  ],
+  "private_fixture_policy": "Declared synthetic rows only in test code, memory and auto-cleaned external temporary files; no public CSV data rows or real business report outputs.",
+  "runtime_web_files_unchanged": 63,
+  "real_inquiries": 0,
+  "external_runtime_requests": 0,
+  "formspree_api_calls": 0,
+  "ux_changes": 0,
+  "assembl_lab_changes": 0,
+  "formspree_public_documentation": "LIMITED: 403; current deal status, price management, submission IDs and account features not verified",
+  "limitations": [
+    "No authenticated Formspree/account capability or real inbox test",
+    "Manual reconciliation, event history and consent require owner verification",
+    "Different IDs for one real inquiry cannot be automatically deduplicated",
+    "No traffic/payment conversion or cash receipt inference",
+    "No new browser regression claimed: all existing public site bytes are unchanged"
+  ],
+  "merge": false,
+  "deploy": false,
+  "branch_created_from": "9ddba7d17af1b595c2e7b1aef581e30f205aedef",
+  "main_sync": {
+    "count": 1,
+    "strategy": "fast-forward before feature commit; all staged additions preserved",
+    "reason": "main advanced with WUL-006 activation readiness documentation during delivery; no overlap with LEADS-001",
+    "is_correction_cycle": false,
+    "functional_recheck": "TEST_RUN_4.txt"
+  }
+}

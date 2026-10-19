@@ -1,0 +1,1 @@
+FAIL: public added-content scan matched an email-shaped SYNTHETIC URL literal in tools/test_leads_report.py. No real PII, credential or actual lead was present. Final fixture avoids contact-shaped text and URL validation rejects empty userinfo. Follow-up: TEST_RUN_3.txt and final privacy gate PASS.
