@@ -1,5 +1,7 @@
 name: QA artifact diagnostics (read only)
 on:
+  push:
+    branches: [feature/wul-023-automated-qa]
   workflow_dispatch:
     inputs:
       run_id:
@@ -14,6 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   inspect:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
