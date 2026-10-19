@@ -3,12 +3,12 @@
 // native hash link, target focus, visibility, and the correct natural route.
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups,products}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/legacy');
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/legacy');
 const targets=[{id:'favorites',kind:'collections',next:'#collections'},
  {id:'original-gifts',kind:'collection',slug:'gifts-memories'},
  ...groups.map(g=>({id:'collection-'+g.slug,kind:'collection',slug:g.slug})),
- ...products.filter(p=>p.product_id!=="natural-edge-door-sign").map(p=>({id:p.product_id+'-work',kind:'product',product:p.product_id}))];
-const result={task:'WUL-021',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
+ ...q.legacyProducts.map(p=>({id:p.product_id+'-work',kind:'product',product:p.product_id}))];
+const result={task:'WUL-021 Integration V2',exactSpecifiedLegacyFragments:targets.length,scenarios:[],noJavaScriptLanguagePolicy:'Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.'};
 function save(status,more={}){q.write(out,'results.json',{...result,status,...more});}
 async function targetVisible(page,t){const target=page.locator('#'+t.id);assert.equal(await target.isVisible(),true);const rect=await target.boundingBox();assert.ok(rect.y>=-1&&rect.y<page.viewportSize().height-10,`${t.id} starts in view without header covering it: ${rect.y}`);return rect;}
 (async()=>{const b=await q.launch();try{

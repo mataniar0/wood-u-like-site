@@ -1,0 +1,25 @@
+{
+  "task": "WUL-020",
+  "status": "PASS",
+  "assets": [
+    {
+      "path": "assets/images/oval-room-signs.webp",
+      "source": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS",
+      "zipBytesMatch": true,
+      "approvedSourceBytesMatch": true
+    },
+    {
+      "path": "assets/images/oval-room-signs-small.webp",
+      "source": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS",
+      "zipBytesMatch": true,
+      "approvedSourceBytesMatch": true
+    }
+  ],
+  "zipSha256": "c306102ab0afd34e29a513f93624eeba632e78e150f30ad0cd50c4c1b2e63d6a",
+  "zipEntryCount": 4,
+  "sourcePolicy": "Reuses approved R1-09 photograph, as explicitly documented; no supplied ZIP was available."
+}

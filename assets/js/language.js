@@ -2,6 +2,21 @@
   "use strict";
   const STORAGE_KEY = "wood-u-like-language";
   const catalog = {
+    "product.ovalRoomSigns.title": {"he": "שלטי חדר אליפטיים", "en": "Personalized Oval Room Signs"},
+    "product.ovalRoomSigns.copy": {"he": "שלטי חדר אליפטיים מעץ עם כיתוב בהתאמה אישית. שלוש הדוגמאות בתמונה מציגות אפשרויות כיתוב למוצר אחד.", "en": "Oval wooden room signs with personalized wording. The three examples in the photograph show wording variations of one product."},
+    "catalog.oval-room-signs.summary": {"he": "כיתוב אישי שמכוון לכל חדר בבית.", "en": "Personal wording to guide the way to each room."},
+    "page.oval-room-signs.details": {"he": "אפשר לבקש כיתוב לפי החדר, ולציין מידות מבוקשות בטופס. הדוגמאות המצולמות הן וריאציות של אותו מוצר, ולא ערכה קבועה של שלושה שלטים. מידות, כמות ופרטי התקנה בתיאום אישי.", "en": "Request wording for your room and enter preferred dimensions in the form. The photographed examples are variations of the same product, rather than a fixed set of three signs. Dimensions, quantity and installation details are arranged personally."},
+    "page.oval-room-signs.metaTitle": {"he": "שלטי חדר אליפטיים | WOOD U LIKE", "en": "Personalized Oval Room Signs | WOOD U LIKE"},
+    "page.oval-room-signs.metaDescription": {"he": "שלטי חדר אליפטיים מעץ עם כיתוב בהתאמה אישית לחדרים בבית. גלו דוגמאות לכיתובים ואפשרויות התאמה אישית ב־WOOD U LIKE.", "en": "Personalized oval wooden room signs for rooms around the home. Explore wording examples and personalization options at WOOD U LIKE."},
+    "image.ovalRoomSigns": {"he": "שלושה שלטי חדר אליפטיים מעץ עם חריטות לשירותים ומקלחת, לחדר אורחים ולשירותי אורחים, מונחים על פרוסת עץ", "en": "Three oval wooden room signs engraved in Hebrew for a bathroom and shower, a guest room and a guest bathroom, resting on a wood slice"},
+    "inquiry.product.oval-room-signs": {"he": "שלטי חדר אליפטיים", "en": "Personalized Oval Room Signs"},
+    "product.ovalRoomSigns.variations": {"he": "דוגמאות לכיתוב בתמונה", "en": "Wording examples in the photograph"},
+    "product.ovalRoomSigns.bathroomShower": {"he": "שירותים ומקלחת", "en": "Bathroom and shower"},
+    "product.ovalRoomSigns.guestRoom": {"he": "חדר אורחים", "en": "Guest room"},
+    "product.ovalRoomSigns.guestBathroom": {"he": "שירותי אורחים", "en": "Guest bathroom"},
+    "product.ovalRoomSigns.fullPhoto": {"he": "לצפייה בתמונה המלאה", "en": "View full photograph"},
+    "product.ovalRoomSigns.fullPhotoLabel": {"he": "פתיחת התמונה המלאה של שלושת שלטי החדר האליפטיים", "en": "Open the full photograph of the three oval room signs"},
+
     "collection.view": {"he": "לצפייה בקולקציה", "en": "View collection"},
     "collection.all": {"he": "לכל הקולקציות", "en": "All collections"},
     "collection.kicker": {"he": "הקולקציה", "en": "THE COLLECTION"},

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "before/main-he-390-home-decor.png",
+    "source": "docs/review/wul-020/collections/screenshots/he-390-home-decor.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/main-en-390-home-decor.png",
+    "source": "docs/review/wul-020/collections/screenshots/en-390-home-decor.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/main-he-390-home-decor-no-js.png",
+    "source": "docs/review/wul-020/collections/screenshots/he-390-home-decor-no-js.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/main-he-1440-home-decor.png",
+    "source": "docs/review/wul-020/collections/screenshots/he-1440-home-decor.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/main-en-1440-home-decor.png",
+    "source": "docs/review/wul-020/collections/screenshots/en-1440-home-decor.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/main-he-1440-home-decor-no-js.png",
+    "source": "docs/review/wul-020/collections/screenshots/he-1440-home-decor-no-js.png",
+    "source_commit": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-he-390-home-decor.png",
+    "source": "docs/review/wul-021/collections/screenshots/he-390-home-decor.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-en-390-home-decor.png",
+    "source": "docs/review/wul-021/collections/screenshots/en-390-home-decor.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-he-390-home-decor-no-js.png",
+    "source": "docs/review/wul-021/collections/screenshots/he-390-home-decor-no-js.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-he-1440-home-decor.png",
+    "source": "docs/review/wul-021/collections/screenshots/he-1440-home-decor.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-en-1440-home-decor.png",
+    "source": "docs/review/wul-021/collections/screenshots/en-1440-home-decor.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  },
+  {
+    "path": "before/wul021-he-1440-home-decor-no-js.png",
+    "source": "docs/review/wul-021/collections/screenshots/he-1440-home-decor-no-js.png",
+    "source_commit": "c487016de8b9cf43c297287449909ccf7748b7a7",
+    "kind": "historical before comparison; not counted as new QA",
+    "products": 4
+  }
+]

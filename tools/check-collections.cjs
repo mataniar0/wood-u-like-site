@@ -3,8 +3,8 @@
 // no-JS, saved-image pixels, SEO and measured comparison to the starting main.
 const q=require('./qa-collections-shared.cjs');
 const {assert,fs,path,root,base,prefix,groups,products,viewports}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/collections');
-const result={task:'WUL-021',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/collections');
+const result={task:'WUL-021 Integration V2',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
 const cache=new Map(),unique={he:{titles:new Set(),descriptions:new Set()},en:{titles:new Set(),descriptions:new Set()}};
 function save(status,extra={}){q.write(out,'results.json',{...result,status,...extra});}
 async function home(page,language,js){

@@ -4,8 +4,8 @@
 // navigation paths, blocked requestSubmit, language changes and axe assertions.
 const q=require('./qa-collections-shared.cjs');
 module.exports=async function run(ids,folder){
- const {assert,path,root,base,products,viewports}=q,out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-019/regression/'+folder);
- const result={task:'WUL-019',products:ids,scenarios:[],requests:{unexpectedSubmissions:0,unexpectedExternal:0,realInquiries:0}};const b=await q.launch();let decoderContext;
+ const {assert,path,root,base,products,viewports}=q,out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/regression/'+folder);
+ const result={task:'WUL-020',products:ids,scenarios:[],requests:{unexpectedSubmissions:0,unexpectedExternal:0,realInquiries:0}};const b=await q.launch();let decoderContext;
  try{decoderContext=await b.newContext();const decoder=await decoderContext.newPage();
   for(const [width,height]of viewports)for(const language of['he','en']){const s=await q.session(b,{width,height,language});try{
    const checks=[];for(const id of ids){const product=products.find(p=>p.product_id===id),p=s.page;await p.goto(base);await q.ready(p,language);assert.equal(await p.locator('.category-card').count(),4);assert.equal(await p.locator('.product-card').count(),0);await q.layout(p);

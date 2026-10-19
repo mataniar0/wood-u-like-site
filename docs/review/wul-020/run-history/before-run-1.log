@@ -1,0 +1,6 @@
+page.waitForFunction: Timeout 30000ms exceeded.
+    at Object.ready (/workspace/wood-u-like-site/tools/qa-collections-shared.cjs:47:20)
+    at /workspace/wood-u-like-site/tools/capture-oval-room-baseline.cjs:17:17 {
+  log: [],
+  name: 'TimeoutError'
+}

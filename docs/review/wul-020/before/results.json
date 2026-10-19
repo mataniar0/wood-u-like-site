@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "baseline": "c1242a1",
+  "scenarios": [
+    {
+      "language": "he",
+      "width": 390,
+      "baseline": "c1242a1",
+      "status": "PASS",
+      "screenshot": "screenshots/he-390-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15368,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19526,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14582,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "baseline": "c1242a1",
+      "status": "PASS",
+      "screenshot": "screenshots/en-390-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 29651,
+          "distinctColors": 15394,
+          "maxColorFraction": 0.0035411959124481466
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 19506,
+          "maxColorFraction": 0.0015176553910492057
+        },
+        {
+          "samples": 29651,
+          "distinctColors": 14575,
+          "maxColorFraction": 0.0034737445617348487
+        }
+      ]
+    },
+    {
+      "language": "he",
+      "width": 1440,
+      "baseline": "c1242a1",
+      "status": "PASS",
+      "screenshot": "screenshots/he-1440-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20665,
+          "maxColorFraction": 0.0016830294530154279
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15284,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "baseline": "c1242a1",
+      "status": "PASS",
+      "screenshot": "screenshots/en-1440-home-decor-before.png",
+      "pixels": [
+        {
+          "samples": 32085,
+          "distinctColors": 16273,
+          "maxColorFraction": 0.0037400654511453952
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 20686,
+          "maxColorFraction": 0.0016830294530154279
+        },
+        {
+          "samples": 32085,
+          "distinctColors": 15287,
+          "maxColorFraction": 0.003771232663238273
+        }
+      ]
+    }
+  ]
+}

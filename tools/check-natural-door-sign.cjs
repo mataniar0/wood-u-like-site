@@ -2,7 +2,7 @@
 const q = require("./qa-collections-shared.cjs");
 const { assert, fs, path, root, base, origin } = q;
 const id = "natural-edge-door-sign";
-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-021/product");
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-021/integration/natural-door-sign");
 const product = q.products.find(p => p.product_id === id);
 const endpoint = "https://formspree.io/f/wul021qatest";
 const result = { task: "WUL-021", startedAt: new Date().toISOString(), scenarios: [], mockedPosts: 0, realInquiries: 0, limitations: ["Chromium only; no Safari/Firefox or manual screen-reader review", "Local validation only; no merge or deployment", "English is translated in the same URL with JavaScript; no separate English indexing guarantee"] };

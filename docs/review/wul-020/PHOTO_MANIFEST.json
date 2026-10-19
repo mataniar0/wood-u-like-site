@@ -1,0 +1,30 @@
+{
+  "task": "WUL-020",
+  "baseline": "c1242a1f8ad992dbe7a1069bc9781972eda36961",
+  "sourceSelection": "The requested ZIP was not present in the repository or execution workspace. The existing approved photograph assets/images/workshop.webp uniquely matches the three oval room signs described in the request. Its source is R1-09 in docs/review/photo-sources.csv.",
+  "originalSourceId": "R1-09",
+  "originalFilename": "WhatsApp Image 2026-06-17 at 07.43.56 (4).jpeg",
+  "originalSourceSha256": "a922da101cee3c617e583896008e0cefebe960fe5e75821d711d3a92a6181bb0",
+  "approvedPreviousProcessing": "Crop (0,510,2000,1500) to exclude packaging/telephone; resize 1200x594",
+  "newProcessing": "Copy approved large/small WebP bytes into product-specific asset names; no new crop, cleanup, generated content or recompression",
+  "assets": [
+    {
+      "path": "assets/images/oval-room-signs.webp",
+      "width": 1200,
+      "height": 594,
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "bytes": 161298,
+      "source": "assets/images/workshop.webp",
+      "processing": "Byte-identical copy of the already optimized approved WebP; no visual changes or recompression"
+    },
+    {
+      "path": "assets/images/oval-room-signs-small.webp",
+      "width": 480,
+      "height": 238,
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "bytes": 19064,
+      "source": "assets/images/workshop-small.webp",
+      "processing": "Byte-identical copy of the already optimized approved WebP; no visual changes or recompression"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 "use strict";
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/accessibility');
-const result={task:'WUL-021',scenarios:[]};
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/accessibility');
+const result={task:'WUL-021 Integration V2',scenarios:[]};
 (async()=>{const b=await q.launch();let decoderContext;try{
  decoderContext=await b.newContext();const decoder=await decoderContext.newPage();
  for(const language of['he','en'])for(const group of groups){const s=await q.session(b,{language});try{const p=s.page;await p.goto(new URL('collections/'+group.slug+'/',base).href);await q.ready(p,language);
@@ -21,7 +21,7 @@ const result={task:'WUL-021',scenarios:[]};
  // all native routes/fallbacks must still work without an initialization script.
  const s=await q.session(b,{javaScriptEnabled:false,language:'en',storageState:{cookies:[],origins:[{origin:q.origin,localStorage:[{name:'wood-u-like-language',value:'en'}]}]}});try{
   const p=s.page,checks=[];for(const route of['',...groups.map(g=>'collections/'+g.slug+'/')]){await p.goto(new URL(route,base).href);await q.ready(p,'en',false);assert.equal(await p.evaluate(()=>localStorage.getItem('wood-u-like-language')),'en');assert.equal(await p.locator('[data-language="en"]').isDisabled(),true);await q.layout(p);await q.links(p);checks.push({route:route||'home',staticLanguage:'he',storedPreference:'en',status:'PASS'});}
-  for(const id of['favorites','original-gifts',...groups.map(g=>'collection-'+g.slug),...q.products.filter(p=>p.product_id!=="natural-edge-door-sign").map(p=>p.product_id+'-work')]){await p.goto(base+'#'+id);assert.equal(await p.locator('#'+id).isVisible(),true);assert.equal(await p.locator('html').getAttribute('lang'),'he');checks.push({fragment:'#'+id,staticLanguage:'he',storedPreference:'en',status:'PASS'});}
+  for(const id of['favorites','original-gifts',...groups.map(g=>'collection-'+g.slug),...q.legacyProducts.map(p=>p.product_id+'-work')]){await p.goto(base+'#'+id);assert.equal(await p.locator('#'+id).isVisible(),true);assert.equal(await p.locator('html').getAttribute('lang'),'he');checks.push({fragment:'#'+id,staticLanguage:'he',storedPreference:'en',status:'PASS'});}
   await s.finish();result.scenarios.push({kind:'no-js-stored-english-preference',status:'PASS',checks,requests:s.requests,errors:s.errors});console.log('PASS static Hebrew with actual stored English preference: '+checks.length+' destinations');
  }catch(e){await s.context.close();throw e;}
  q.write(out,'results.json',{...result,status:'PASS'});

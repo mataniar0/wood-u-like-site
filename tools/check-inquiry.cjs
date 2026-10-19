@@ -1,5 +1,5 @@
 "use strict";
-const collectionFor = id => ["welcome","family-sign","hanging-home-sign","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
+const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
 
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
@@ -263,6 +263,7 @@ function pass(test, language, extra = {}) {
           ["hanging-home-sign-work", "hanging-home-sign"],
           ["pizza-peel-work", "pizza-peel"],
           ["personalized-clock-work", "personalized-clock"],
+          ["oval-room-signs-work", "oval-room-signs"],
           ["natural-edge-door-sign-work", "natural-edge-door-sign"],
         ]) {
           await p.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
@@ -275,7 +276,7 @@ function pass(test, language, extra = {}) {
           await p.locator(".inquiry-back").click();
           await p.waitForURL(base);
         }
-        for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock", "natural-edge-door-sign"]) {
+        for (const id of ["blessing", "welcome", "kitchen", "family-sign", "hanging-home-sign", "pizza-peel", "personalized-clock", "oval-room-signs", "natural-edge-door-sign"]) {
           await p.locator(`.category-card[data-collection="${collectionFor(id)}"]`).click();
           await p.waitForURL(base + `collections/${collectionFor(id)}/`);
           const details = p.locator(`#${id}-work .product-details-link`);
@@ -604,6 +605,7 @@ function pass(test, language, extra = {}) {
       ["pizza-peel", "Personalized Pizza Peel", "מרדה לפיצה"],
       ["family-sign", "Personalized wooden door sign", "שלט משפחתי לדלת"],
       ["hanging-home-sign", "Personalized hanging wooden home sign", "שלט תלוי לבית"],
+      ["oval-room-signs", "Personalized Oval Room Signs", "שלטי חדר אליפטיים"],
       ["natural-edge-door-sign", "Natural Wood Door Sign", "שלט עץ טבעי לדלת"],
     ]) for (const lang of ["he", "en"]) {
       const s = await setup(lang, approved);

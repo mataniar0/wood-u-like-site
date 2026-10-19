@@ -1,6 +1,10 @@
 {
-  "task": "WUL-021",
-  "baseline": "c1242a1f8ad992dbe7a1069bc9781972eda36961",
+  "task": "WUL-021 Integration V2 / Issue #39",
+  "baseline": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+  "issue_26": {
+    "state": "OPEN",
+    "natural_edge_door_sign_in_main": false
+  },
   "collections": [
     {
       "slug": "home-decor",
@@ -14,6 +18,7 @@
         "welcome",
         "family-sign",
         "hanging-home-sign",
+        "oval-room-signs",
         "natural-edge-door-sign"
       ]
     },
@@ -139,6 +144,34 @@
         }
       ],
       "collection_route": "collections/home-decor/"
+    },
+    {
+      "product_id": "oval-room-signs",
+      "collection": "home-decor",
+      "route": "products/oval-room-signs/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/oval-room-signs/",
+      "inquiry": "../../inquiry/?product=oval-room-signs",
+      "name": {
+        "he": "שלטי חדר אליפטיים",
+        "en": "Personalized Oval Room Signs"
+      },
+      "title_key": "product.ovalRoomSigns.title",
+      "description_key": "product.ovalRoomSigns.copy",
+      "summary_key": "catalog.oval-room-signs.summary",
+      "mockup": false,
+      "collection_route": "collections/home-decor/",
+      "images": [
+        {
+          "src": "assets/images/oval-room-signs.webp",
+          "width": 1200,
+          "height": 594,
+          "small_src": "assets/images/oval-room-signs-small.webp",
+          "small_width": 480,
+          "alt_key": "image.ovalRoomSigns",
+          "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+          "small_sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f"
+        }
+      ]
     },
     {
       "product_id": "kitchen",

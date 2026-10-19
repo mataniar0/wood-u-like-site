@@ -1,0 +1,248 @@
+{
+  "task": "WUL-020",
+  "status": "PASS",
+  "generatedAtUtc": "2026-10-18T19:44:24.637861+00:00",
+  "branch": "feature/wul-020-oval-room-signs",
+  "baseline": "c1242a1f8ad992dbe7a1069bc9781972eda36961",
+  "issueReference": {
+    "requested": "Refs #WUL-020-ISSUE",
+    "numericIssueProvided": false,
+    "note": "No matching numeric GitHub Issue found; literal user reference retained without inventing an Issue number."
+  },
+  "environment": {
+    "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "axeCore": "4.10.3",
+    "localBase": "http://127.0.0.1:8016/wood-u-like-site/"
+  },
+  "suiteResults": [
+    {
+      "suite": "collections",
+      "scenarioRecords": 91,
+      "status": "PASS",
+      "evidence": "collections/results.json"
+    },
+    {
+      "suite": "product-pages",
+      "scenarioRecords": 123,
+      "status": "PASS",
+      "evidence": "product-pages/results.json"
+    },
+    {
+      "suite": "oval-room-signs",
+      "scenarioRecords": 20,
+      "status": "PASS",
+      "evidence": "oval-room-signs/results.json"
+    },
+    {
+      "suite": "legacy-fragments",
+      "scenarioRecords": 52,
+      "status": "PASS",
+      "evidence": "regression/legacy/results.json"
+    },
+    {
+      "suite": "collection-accessibility",
+      "scenarioRecords": 12,
+      "status": "PASS",
+      "evidence": "regression/accessibility/results.json"
+    },
+    {
+      "suite": "language",
+      "scenarioRecords": 21,
+      "status": "PASS",
+      "evidence": "regression/hero/results.json"
+    },
+    {
+      "suite": "hero",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/hero/hero-results.json"
+    },
+    {
+      "suite": "homepage",
+      "scenarioRecords": 4,
+      "status": "PASS",
+      "evidence": "regression/homepage/browser-results.json"
+    },
+    {
+      "suite": "clock",
+      "scenarioRecords": 15,
+      "status": "PASS",
+      "evidence": "regression/clock/results.json"
+    },
+    {
+      "suite": "family-sign",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/family-sign/results.json"
+    },
+    {
+      "suite": "schwartz-sign",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/schwartz-sign/results.json"
+    },
+    {
+      "suite": "pizza-peel",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/pizza-peel/results.json"
+    },
+    {
+      "suite": "inquiry",
+      "scenarioRecords": 53,
+      "status": "PASS",
+      "evidence": "regression/inquiry/results.json"
+    },
+    {
+      "suite": "attribution",
+      "scenarioRecords": 186,
+      "status": "PASS",
+      "evidence": "regression/attribution/results.json"
+    },
+    {
+      "suite": "shared-privacy",
+      "scenarioRecords": 10,
+      "status": "PASS",
+      "evidence": "regression/privacy/results.json"
+    }
+  ],
+  "browserScenarioRecords": 627,
+  "additionalEvidence": {
+    "baselineCollectionCaptures": 4,
+    "assetAndZipVerification": "PASS",
+    "staticPreservationContract": "PASS",
+    "originalTranslationKeysPreserved": 231,
+    "nativeNoJsNavigationProducts": 8
+  },
+  "layoutMatrix": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "languages": [
+      "he",
+      "en"
+    ],
+    "newProductJsLayouts": 10,
+    "homeAndCollectionsJsLayouts": 50,
+    "homeAndCollectionsNoJsLayouts": 25,
+    "effectiveLanguageWithoutJs": "he"
+  },
+  "products": {
+    "total": 8,
+    "distribution": [
+      4,
+      2,
+      1,
+      1
+    ],
+    "newId": "oval-room-signs",
+    "wordingExamples": 3,
+    "newProducts": 1,
+    "publicHomeProductCards": 0,
+    "uniqueProductSeoRecords": 16,
+    "uniqueCollectionSeoRecords": 8
+  },
+  "sourceSelection": "The requested ZIP was not present in the repository or execution workspace. The existing approved photograph assets/images/workshop.webp uniquely matches the three oval room signs described in the request. Its source is R1-09 in docs/review/photo-sources.csv.",
+  "assets": {
+    "task": "WUL-020",
+    "status": "PASS",
+    "assets": [
+      {
+        "path": "assets/images/oval-room-signs.webp",
+        "source": "assets/images/workshop.webp",
+        "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+        "status": "PASS",
+        "zipBytesMatch": true,
+        "approvedSourceBytesMatch": true
+      },
+      {
+        "path": "assets/images/oval-room-signs-small.webp",
+        "source": "assets/images/workshop-small.webp",
+        "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+        "status": "PASS",
+        "zipBytesMatch": true,
+        "approvedSourceBytesMatch": true
+      }
+    ],
+    "zipSha256": "c306102ab0afd34e29a513f93624eeba632e78e150f30ad0cd50c4c1b2e63d6a",
+    "zipEntryCount": 4,
+    "sourcePolicy": "Reuses approved R1-09 photograph, as explicitly documented; no supplied ZIP was available."
+  },
+  "preservation": {
+    "byteIdenticalProtectedFiles": 44,
+    "approvedByteIdenticalImageCopies": 2,
+    "unchangedProductPages": 7,
+    "unchangedOtherCollections": 3,
+    "homepageHeroAndAttributionUnchanged": true,
+    "inquiryChangesOnlyRegistryEntryAndOption": true,
+    "newCssRulesScopedToNewProduct": true
+  },
+  "requests": {
+    "interceptedMockPosts": 236,
+    "productPageFixturePosts": 16,
+    "inquiryFixturePosts": 36,
+    "attributionFixturePosts": 178,
+    "wordingFixturePosts": 6,
+    "realInquiries": 0,
+    "unexpectedExternalBrowserRequests": 0,
+    "publicSendingBlocked": true
+  },
+  "correctionCycles": {
+    "task": "WUL-020",
+    "productCorrectionCycles": 0,
+    "harnessCorrectionCycles": 2,
+    "events": [
+      {
+        "cycle": 1,
+        "kind": "test-harness",
+        "failure": "Focused mock-variation test read product selection before inquiry navigation/initialization completed.",
+        "evidence": "run-history/oval-room-signs-failed-run-1.json",
+        "log": "run-history/oval-room-signs-run-1.log",
+        "fix": "Wait for inquiry URL and selected product before reading/filling.",
+        "rerun": "run-history/oval-room-signs-run-2.log",
+        "status": "PASS"
+      },
+      {
+        "cycle": 2,
+        "kind": "qa-environment",
+        "failure": "Before-capture archive requested absent .nojekyll; server had no baseline HTML, so first capture timed out on a 404.",
+        "log": "run-history/before-run-1.log",
+        "fix": "Archive only tracked application paths and check baseline HTML exists before capture.",
+        "rerun": "run-history/before-run-2.log",
+        "status": "PASS"
+      }
+    ],
+    "totalCorrectionCycles": 2
+  },
+  "screenshots": {
+    "count": 403,
+    "manifest": "SCREENSHOT_MANIFEST.json"
+  },
+  "independentReview": {
+    "state": "PENDING",
+    "minimumScore": 90,
+    "blockingDefectsAllowed": 0,
+    "selfScore": null
+  },
+  "publication": {
+    "merged": false,
+    "deployed": false,
+    "workBranchDeleted": false,
+    "livePagesVerificationPerformed": false
+  },
+  "limitations": [
+    "Chromium automation only; Firefox/Safari not run",
+    "No manual screen-reader or physical-device review",
+    "Static Hebrew without JavaScript; English uses the existing shared language runtime",
+    "English metadata shares the existing URL; no separate-language indexing guarantee",
+    "Requested input ZIP was absent; reused exact matching approved R1-09 photo and created a new delivery ZIP",
+    "No numeric WUL-020 Issue was supplied or found; requested literal PR reference retained",
+    "Local QA under the actual Pages prefix; no production verification or deployment"
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "width": 390,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "productLinks": true,
+      "productDetailsLinks": true,
+      "detailLinks": 0,
+      "nestedAnchors": 0,
+      "embeddedGallery": 0,
+      "h1": 1,
+      "categories": 4,
+      "products": 0
+    },
+    "menu": "PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "width": 768,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "productLinks": true,
+      "productDetailsLinks": true,
+      "detailLinks": 0,
+      "nestedAnchors": 0,
+      "embeddedGallery": 0,
+      "h1": 1,
+      "categories": 4,
+      "products": 0
+    },
+    "menu": "desktop navigation PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "width": 1440,
+    "layout": {
+      "overflow": false,
+      "rtl": "rtl",
+      "images": true,
+      "links": true,
+      "productLinks": true,
+      "productDetailsLinks": true,
+      "detailLinks": 0,
+      "nestedAnchors": 0,
+      "embeddedGallery": 0,
+      "h1": 1,
+      "categories": 4,
+      "products": 0
+    },
+    "menu": "desktop navigation PASS",
+    "console": [],
+    "http": [],
+    "accessibility": []
+  },
+  {
+    "noJavaScriptNavigation": "PASS"
+  }
+]

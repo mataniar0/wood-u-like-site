@@ -3,36 +3,21 @@ const q=require('./qa-collections-shared.cjs');
 const {execFileSync}=require('node:child_process');
 const {assert,fs,path,root,baseline,products,groups}=q;
 const before=file=>execFileSync('git',['show',`${baseline}:${file}`],{cwd:root,encoding:'utf8'});
+const prior=file=>execFileSync('git',['show',`c487016:${file}`],{cwd:root,encoding:'utf8'});
 const current=file=>fs.readFileSync(path.join(root,file),'utf8');
-const result={task:'WUL-021',baseline:execFileSync('git',['rev-parse',baseline],{cwd:root,encoding:'utf8'}).trim(),status:'PASS',protectedFiles:q.preservation(),products:[],collections:[]};
-// The deduplicated browser suites compare actual ALT/text to the shared
-// dictionary. Bind that dictionary to the approved baseline as a separate
-// gate, so changing both the DOM and a translation cannot weaken identity.
-function catalog(source) {
-  const start=source.indexOf('const catalog = ')+16;
-  const end=source.indexOf('\n  };',start)+4;
-  return require('node:vm').runInNewContext('('+source.slice(start,end)+')',Object.create(null),{timeout:1000});
-}
-const originalCatalog=catalog(before('assets/js/language.js'));
-const currentCatalog=catalog(current('assets/js/language.js'));
-const preservedKeys=[];
-for(const key of Object.keys(originalCatalog)) {
-  if(key==='nav.favorites')continue;
-  assert.equal(JSON.stringify(currentCatalog[key]),JSON.stringify(originalCatalog[key]),`Original translation preserved: ${key}`);
-  preservedKeys.push(key);
-}
-assert.ok(currentCatalog['image.family'].he.includes('משפחת מזוז'));
-assert.ok(currentCatalog['image.family'].en.includes('Mazuz'));
-assert.deepEqual(JSON.parse(JSON.stringify(currentCatalog['image.schwartz'])),{he:'הדמיה של שלט עץ תלוי בשרשרת ועליו השם שוורץ, עם שתי ציפורים',en:'Illustrative mockup of a chain-hung wooden sign engraved with the Hebrew name Schwartz, with two birds'});
-for(const language of ['he','en'])assert.ok(currentCatalog['image.pizzaPeel'][language].includes('From Oven to Table'));
-result.translationPreservation={status:'PASS',keys:preservedKeys,onlyExistingKeyAllowedToChange:'nav.favorites',approvedFamilySchwartzPizzaAltChecks:'PASS'};
-const home=current('index.html'),original=before('index.html');
-assert.equal(home.slice(home.indexOf('      <section id="top"'),home.indexOf('      <div class="benefits-bar"')),original.slice(original.indexOf('      <section id="top"'),original.indexOf('      <div class="benefits-bar"')),'Hero HTML unchanged');
-assert.equal(home.slice(home.indexOf('      <section id="story"')),original.slice(original.indexOf('      <section id="story"')),'Story, editorial, personal, footer and scripts unchanged');
-assert.equal((home.match(/class="[^"]*\bproduct-card\b/g)||[]).length,0);assert.equal((home.match(/class="category-card"/g)||[]).length,4);
-const all=[];for(const group of groups){const html=current(`collections/${group.slug}/index.html`);const ids=[...html.matchAll(/class="product-card[^>]+data-product-id="([^"]+)"/g)].map(m=>m[1]);assert.deepEqual(ids,group.ids);all.push(...ids);result.collections.push({slug:group.slug,products:ids,status:'PASS'});}
-assert.equal(all.length,8);assert.equal(new Set(all).size,8);
-for(const p of products.filter(p=>p.product_id!=='natural-edge-door-sign')){const file=p.route+'index.html',original=before(file),bytes=current(file);const expected=original.replaceAll('../../#collection-'+p.collection,'../../collections/'+p.collection+'/').replaceAll('data-i18n="nav.favorites">מוצרים נבחרים','data-i18n="nav.favorites">בחירת קולקציה');assert.equal(bytes,expected);result.products.push({id:p.product_id,file,status:'PASS',onlyBreadcrumbBackLinkAndNavigationCopyChanged:true,beforeSha256:q.sha(original),afterSha256:q.sha(bytes)});}
-const imageFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'assets/images'],{cwd:root,encoding:'utf8'}).trim().split('\n').map(f=>path.basename(f)).sort();assert.deepEqual(fs.readdirSync(path.join(root,'assets/images')).sort(),[...imageFiles,...require('../docs/review/wul-021/ASSET_MANIFEST.json').outputs.flatMap(o=>o.files.map(f=>path.basename(f.path)))].sort());
-result.home={heroBytes:'PASS',storyEditorialPersonalFooterBytes:'PASS',collectionCards:4,productCards:0};result.imageDirectory={status:'PASS',baselineFilesPreserved:true,addedWebPs:4,files:imageFiles.length+4};
-q.write(path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021'),'PRESERVATION.json',result);console.log(`PASS contract: ${result.protectedFiles.length} protected files, seven unchanged product contents, one new product, four collections`);
+function catalog(source){const start=source.indexOf('const catalog = ')+16,end=source.indexOf('\n  };',start)+4;return require('node:vm').runInNewContext('('+source.slice(start,end)+')',Object.create(null),{timeout:1000});}
+const original=catalog(before('assets/js/language.js')),previous=catalog(prior('assets/js/language.js')),translated=catalog(current('assets/js/language.js'));
+for(const [source,keys]of [['updated-main',original],['original-WUL-021',previous]])for(const key of Object.keys(keys))assert.equal(JSON.stringify(translated[key]),JSON.stringify(keys[key]),source+' translation '+key);
+const keys=[...current('assets/js/language.js').matchAll(/^    "([^"]+)":/gm)].map(m=>m[1]);assert.equal(keys.length,new Set(keys).size,'No duplicate translation keys');
+const result={task:'WUL-021 Integration V2',status:'PASS',baseline,protectedFiles:q.preservation(),originalTranslationKeysPreserved:Object.keys(original).length,priorWul021KeysPreserved:Object.keys(previous).length,collections:[],products:[]};
+assert.equal(current('index.html'),before('index.html'),'Homepage unchanged');
+assert.equal((current('index.html').match(/class="category-card"/g)||[]).length,4);
+assert.equal((current('index.html').match(/class="[^"\n]*\bproduct-card\b/g)||[]).length,0);
+const found=[];for(const group of groups){const html=current(`collections/${group.slug}/index.html`);const ids=[...html.matchAll(/class="product-card[^>]+data-product-id="([^"]+)"/g)].map(m=>m[1]);assert.deepEqual(ids,group.ids);found.push(...ids);result.collections.push({slug:group.slug,products:ids,status:'PASS'});}
+assert.equal(found.length,9);assert.equal(new Set(found).size,9);assert.deepEqual(groups.map(g=>g.ids.length),[5,2,1,1]);
+const home=current('collections/home-decor/index.html');assert.equal(home.replace(/        <article id="natural-edge-door-sign-work"[\s\S]*?<\/article>\n/,''),before('collections/home-decor/index.html'),'Exact main collection plus one natural-sign card');
+for(const p of products){const file=p.route+'index.html';assert.equal(current(file),p.product_id==='natural-edge-door-sign'?prior(file):before(file));result.products.push({id:p.product_id,status:'PASS',source:p.product_id==='natural-edge-door-sign'?'original-WUL-021':'updated-main',byteIdenticalToSource:true});assert.equal(p.collection,groups.find(g=>g.ids.includes(p.product_id)).slug);assert.ok(current(file).includes('inquiry/?product='+p.product_id));assert.ok(current(file).includes(p.canonical));assert.equal((current('inquiry/index.html').match(new RegExp('value="'+p.product_id+'"','g'))||[]).length,1);}
+assert.equal(current('docs/review/wul-021/ASSET_MANIFEST.json'),prior('docs/review/wul-021/ASSET_MANIFEST.json'),'WUL-021 asset manifest unchanged');
+assert.equal(current('docs/review/wul-021/CATEGORY_PRODUCT_MAP.json'),current('docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json'));
+q.write(path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration'),'PRESERVATION.json',result);
+console.log(`PASS contract: ${result.protectedFiles.length} protected files; ${result.originalTranslationKeysPreserved} main translations; 9 products; collection counts 5/2/1/1`);
