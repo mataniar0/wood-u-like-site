@@ -274,15 +274,17 @@ def summary(selection, receipts, elapsed):
     observed = {r["suite"]: r for r in receipts}
     missing = sorted(selected - set(observed))
     bad = [r["suite"] for r in receipts if r["status"] != "PASS" or r["exit_code"] != 0
-           or r["tested_sha"] != selection["tested_sha"] or r["source_fingerprint"] != selection["source_fingerprint"]]
+           or r["tested_sha"] != selection["tested_sha"] or r["source_fingerprint"] != selection["source_fingerprint"]
+           or (r["suite"] in BROWSER and (not r.get("network") or r["network"]["denied"] or r["network"]["realPosts"]))]
     duplicates = len(receipts) != len(observed)
     unexpected = sorted(set(observed) - selected)
-    return {**selection, "status": "FAIL" if missing or bad or duplicates or unexpected else "PASS", "suites": receipts,
+    negative = selection.get("profile") == "negative-control"
+    return {**selection, "status": "FAIL" if missing or bad or duplicates or unexpected or negative else "PASS", "suites": receipts,
             "missing": missing, "failed": bad, "duplicate_receipts": duplicates,
             "unexpected_receipts": unexpected,
             "suite_pass_count": sum(r["status"] == "PASS" for r in receipts),
             "wall_seconds": round(elapsed, 3), "summed_suite_seconds": round(sum(r["seconds"] for r in receipts), 3),
-            "retry_count": sum(r["retry_count"] for r in receipts), "real_posts": 0,
+            "retry_count": sum(r["retry_count"] for r in receipts), "real_posts": sum((r.get("network") or {}).get("realPosts", 0) for r in receipts),
             "summed_cpu_seconds": round(sum(r.get("cpu_seconds", 0) for r in receipts), 3),
             "unexpected_external": sum((r.get("network") or {}).get("unexpectedExternal", 0) for r in receipts),
             "browser_limitations": "Chromium only; no live Pages, Safari/Firefox or manual screen reader",
