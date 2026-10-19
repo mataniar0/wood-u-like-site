@@ -1,0 +1,176 @@
+{
+  "task": "WUL-006 / Issue #9 — activation handoff",
+  "generatedAtUtc": "2026-10-19T11:52:56.147335+00:00",
+  "scope": "Preparation for owner/team-lead review; live test and public activation not authorized",
+  "technicalQaStatus": "PASS",
+  "liveReadiness": "BLOCKED_PENDING_OWNER_AND_SERVICE_VERIFICATION",
+  "issueCompletion": "OPEN — live activation conditions remain outstanding",
+  "baseline": "9ddba7d17af1b595c2e7b1aef581e30f205aedef",
+  "branch": "feature/wul-006-activation-readiness",
+  "environment": {
+    "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "node": "v24.19.0",
+    "playwright": "1.62.1",
+    "axeCore": "4.10.3"
+  },
+  "suiteResults": [
+    {
+      "suite": "inquiry",
+      "status": "PASS",
+      "scenarioRecords": 55,
+      "evidence": "inquiry/results.json"
+    },
+    {
+      "suite": "attribution",
+      "status": "PASS",
+      "scenarioRecords": 194,
+      "evidence": "attribution/results.json"
+    },
+    {
+      "suite": "language",
+      "status": "PASS",
+      "scenarioRecords": 21,
+      "evidence": "homepage/results.json"
+    },
+    {
+      "suite": "hero",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "evidence": "homepage/hero-results.json"
+    },
+    {
+      "suite": "privacy-preview",
+      "status": "PASS",
+      "scenarioRecords": 10,
+      "evidence": "privacy/results.json"
+    }
+  ],
+  "browserScenarioRecords": 290,
+  "requests": {
+    "scope": "Final successful suite runs only; failed partial runs retained in run-history",
+    "interceptedMockPosts": 224,
+    "inquiryFixturePosts": 38,
+    "attributionFixturePosts": 186,
+    "realInquiries": 0,
+    "unexpectedExternalBrowserRequests": 0
+  },
+  "matrix": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "languages": [
+      "he",
+      "en"
+    ],
+    "noJavascript": "Static Hebrew privacy and blocked submit verified; English uses existing runtime"
+  },
+  "preservation": {
+    "productionFilesByteIdentical": 58,
+    "productCount": 9,
+    "publicSendingBlocked": true,
+    "assemblLabModified": false
+  },
+  "sourceEndpointVerification": "PASS — configuration equality only, not delivery",
+  "externalServiceVerification": {
+    "accountAccessed": false,
+    "accountSettingsVerified": false,
+    "inboxDeliveryVerified": false,
+    "notificationSubjectVerified": false,
+    "officialDocumentationRead": "BLOCKED — HTTP/tunnel 403, including additional permitted read attempt"
+  },
+  "approvalFlags": {
+    "formDestinationApproved": false,
+    "privacyApproved": false,
+    "contactDetailsApproved": false
+  },
+  "correctionCycles": {
+    "task": "WUL-006 / Issue #9 — activation handoff",
+    "implementationCorrectionCycles": 0,
+    "qaHarnessCorrectionCycles": 3,
+    "events": [
+      {
+        "cycle": 1,
+        "classification": "qa-environment",
+        "failure": "Both long-running inquiry and attribution suites timed out during page.goto against the reused localhost:8016 server within three seconds of each other. No failed payload/content assertion or real inquiry was observed.",
+        "rootCause": "Exact resource/transport cause not established; post-failure HTTP probe returned 200 in 12 ms.",
+        "evidence": "run-history/failed-run-1-processes.json",
+        "logs": [
+          "run-history/inquiry-run-1.log",
+          "run-history/attribution-run-1.log"
+        ],
+        "fix": "Use a fresh dedicated static server with logging redirected to a file; retain partial scenario checkpoints and rerun both failed suites. Production files stay unchanged.",
+        "rerunLogs": [
+          "run-history/inquiry-run-2.log",
+          "run-history/attribution-run-2.log"
+        ],
+        "finalStatus": "PASS",
+        "rerunResults": {
+          "inquiry": {
+            "status": "PASS",
+            "scenarioRecords": 55,
+            "mockedPosts": 38
+          },
+          "attribution": {
+            "status": "PASS",
+            "scenarioRecords": 194,
+            "mockedPosts": 186
+          }
+        }
+      },
+      {
+        "cycle": 2,
+        "classification": "qa-summary",
+        "failure": "Summary expected status in every record; five successful language regression records use named PASS fields instead. Browser suites had already exited successfully.",
+        "evidence": "run-history/summary-run-1.log",
+        "fix": "Validate named PASS fields and the known informational metadata for the five language records. Preserve every browser result; no browser rerun.",
+        "rerunLog": "run-history/summary-run-2.log",
+        "finalStatus": "PASS"
+      },
+      {
+        "cycle": 3,
+        "classification": "delivery-validator",
+        "failure": "Ad hoc delivery validation treated a valid directory link in the pre-existing README as an individual tracked file. Git tracks files rather than directory entries.",
+        "evidence": "run-history/delivery-check-run-1.log",
+        "fix": "For directory links verify the directory exists and contains tracked descendants; retain exact tracked-file checks for document/image targets. No site or browser test result changed.",
+        "rerunLog": "run-history/delivery-check-run-2.log",
+        "finalStatus": "PASS"
+      }
+    ],
+    "externalVerificationLimitations": [
+      {
+        "kind": "Official documentation access",
+        "status": "UNVERIFIED",
+        "reason": "HTTP/tunnel 403, including additional permitted read attempt; not a passing service verification",
+        "evidence": "SERVICE_REFERENCE.json"
+      }
+    ]
+  },
+  "screenshots": {
+    "count": 58,
+    "manifest": "SCREENSHOT_MANIFEST.json"
+  },
+  "ownerReview": {
+    "runbook": "../../../../inquiry/ACTIVATION_HE.md",
+    "privacy": "PRIVACY_REVIEW_HE_EN.md",
+    "matrix": "READINESS_MATRIX.json",
+    "controlledTestPlan": "CONTROLLED_TEST_PLAN.json"
+  },
+  "publication": {
+    "merged": false,
+    "deployed": false,
+    "branchDeleted": false,
+    "controlledLiveTestPerformed": false,
+    "publicActivationPerformed": false
+  },
+  "limitations": [
+    "Chromium automation only; Safari/Firefox and manual screen-reader review not run",
+    "Mocked requests cannot establish inbox delivery, email subject or real-account behavior",
+    "Exact privacy text/email and operating practices remain pending owner approval",
+    "Domain restrictions, shared quotas/roles/workflows/spam/notifications require authorized account review",
+    "No live-test or public-activation authorization; both remain blocked"
+  ]
+}

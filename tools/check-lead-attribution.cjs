@@ -48,8 +48,18 @@ const results = [];
 let mockedPosts = 0;
 let unexpectedExternal = 0;
 
+function checkpoint(status) {
+  fs.mkdirSync(output, { recursive: true });
+  fs.writeFileSync(path.join(output, "results.json"), JSON.stringify({
+    status, suite: "WUL-012 lead attribution", results, checks: results.length,
+    interceptedFormPosts: mockedPosts, realInquiryRequests: 0,
+    unexpectedExternalRequests: unexpectedExternal,
+    screenshots: "None: query/PII fixtures are intentionally excluded from screenshots.",
+  }, null, 2) + "\n");
+}
 function record(test, language, details = {}) {
   results.push({ test, language, status: "PASS", ...details });
+  checkpoint("RUNNING");
   // Labels only: never log queries, request bodies or customer values.
   console.log(`PASS ${test} ${language}`);
 }
@@ -472,21 +482,13 @@ function record(test, language, details = {}) {
       await finish(pending);
     }
     assert.equal(unexpectedExternal, 0);
-    fs.mkdirSync(output, { recursive: true });
-    fs.writeFileSync(path.join(output, "results.json"), JSON.stringify({
-      suite: "WUL-012 lead attribution",
-      results,
-      checks: results.length,
-      interceptedFormPosts: mockedPosts,
-      realInquiryRequests: 0,
-      unexpectedExternalRequests: unexpectedExternal,
-      screenshots: "None: query/PII fixtures are intentionally excluded from screenshots.",
-    }, null, 2) + "\n");
+    checkpoint("PASS");
     console.log(`PASS ${results.length} attribution checks; ${mockedPosts} mocked POSTs; 0 real inquiries`);
   } finally {
     await browser.close();
   }
 })().catch((error) => {
+  checkpoint("FAIL");
   // Suppress assertion values and URLs, which may contain adversarial fixtures.
   console.error("FAIL lead-attribution acceptance check; inspect the failing test label locally");
   console.error(String(error.stack || "").split("\n").filter((line) => /^\s+at /u.test(line)).join("\n"));

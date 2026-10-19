@@ -1,0 +1,46 @@
+{
+  "task": "WUL-006 / Issue #9 — activation handoff",
+  "generatedAtUtc": "2026-10-19T11:49:42.289308+00:00",
+  "baseline": "9ddba7d17af1b595c2e7b1aef581e30f205aedef",
+  "technicalStaticStatus": "PASS",
+  "liveReadiness": "BLOCKED_PENDING_OWNER_AND_SERVICE_VERIFICATION",
+  "publicActivationAuthorized": false,
+  "controlledLiveTestAuthorized": false,
+  "ownerDirection": "Not yet approved; prepare activation handoff for review",
+  "endpoint": "https://formspree.io/f/xwlvlbno",
+  "endpointMatchesReadOnlyReference": true,
+  "approvalFlags": {
+    "formDestinationApproved": false,
+    "privacyApproved": false,
+    "contactDetailsApproved": false
+  },
+  "privacyDraft": {
+    "he": {
+      "text": "הפרטים שתמסרו ישמשו את WOOD U LIKE, בבעלות מתניה רוזנצויג, למענה לפנייתכם ולהכנת הצעת מחיר. מסירת הפרטים מרצונכם, אך ללא שם ופרטי קשר לא נוכל להשיב. המידע מועבר ונשמר באמצעות Formspree, בטופס המשמש גם את ASSEMBL LAB ונגיש למורשים לטפל בפניות. לא נשתמש בפרטים למשלוח פרסומות ללא הסכמה נפרדת. לבקשות עיון, תיקון או מחיקה של מידע בהתאם לדין: labassemble@gmail.com. שליחת בקשה אינה הזמנה מחייבת או תשלום.",
+      "sha256": "9fd28dff5cbfa4b1dbeddc91242858397d78d26f33c39311b0ecfd4133c0e3d8",
+      "finalApproval": "PENDING"
+    },
+    "en": {
+      "text": "The information you submit is used by WOOD U LIKE, owned by מתניה רוזנצויג, to respond to your inquiry and prepare a quote. Providing your details is voluntary, but without a name and contact details we cannot respond. Your information is transmitted and stored through Formspree in an inbox also used by ASSEMBL LAB, accessible to authorized inquiry handlers. We will not use your details for marketing messages without separate consent. For requests to access, correct or delete personal information, subject to applicable law: labassemble@gmail.com. Submitting a request does not create a binding order or payment.",
+      "sha256": "ee89b9d9ead2ebec0dce4bbad1ba28491cedad94ea7f72c08555c14bbe8ad720",
+      "finalApproval": "PENDING"
+    }
+  },
+  "productIds": [
+    "blessing",
+    "family-sign",
+    "hanging-home-sign",
+    "kitchen",
+    "natural-edge-door-sign",
+    "oval-room-signs",
+    "personalized-clock",
+    "pizza-peel",
+    "welcome"
+  ],
+  "productCount": 9,
+  "productionFilesUnchanged": 58,
+  "realInquiries": 0,
+  "liveDeliveryVerified": false,
+  "subjectEmailDeliveryVerified": false,
+  "accountSettingsVerified": false
+}

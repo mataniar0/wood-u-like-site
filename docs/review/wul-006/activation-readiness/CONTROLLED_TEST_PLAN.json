@@ -1,0 +1,58 @@
+{
+  "task": "WUL-006 / Issue #9",
+  "status": "PREPARED_FOR_REVIEW_NOT_AUTHORIZED",
+  "liveExecutionAllowed": false,
+  "maximumAuthorizedPostsNow": 0,
+  "proposedPostLimitAfterExplicitAuthorization": 1,
+  "endpoint": "https://formspree.io/f/xwlvlbno",
+  "publicConfigMustRemainBlockedDuringControlledTest": true,
+  "proposedOrigin": "https://mataniar0.github.io",
+  "proposedInquiryUrl": "https://mataniar0.github.io/wood-u-like-site/inquiry/?product=welcome&utm_source=qa_wul006&utm_campaign=activation-review",
+  "fixtureOnly": true,
+  "formFields": {
+    "product": "welcome",
+    "customer-name": "QA WUL-006 — NOT A CUSTOMER",
+    "contact": "qa-wul006@example.invalid",
+    "quantity": 1,
+    "engraving": "QA ONLY — DO NOT PRODUCE",
+    "notes": "Controlled WUL-006 verification only. No customer or manufacturing request.",
+    "delivery": "none"
+  },
+  "expectedFixedPayload": {
+    "product": "welcome",
+    "product_id": "welcome",
+    "product_name": "Welcome sign",
+    "language": "he",
+    "brand": "WOOD U LIKE",
+    "source_site": "wood-u-like-site",
+    "source_page": "https://mataniar0.github.io/wood-u-like-site/inquiry/",
+    "subject": "WOOD U LIKE — Welcome sign",
+    "utm_source": "qa_wul006",
+    "utm_campaign": "activation-review"
+  },
+  "additionalPayloadChecks": {
+    "submitted_at": "Created by the application at the actual fetch attempt, UTC ISO 8601",
+    "product_label": "שלט ברוכים הבאים",
+    "name": "Fixture only",
+    "contact": "qa-wul006@example.invalid",
+    "email": "qa-wul006@example.invalid"
+  },
+  "requiredBeforeExecution": [
+    "Owner approval of exact HE/EN privacy text and privacy contact",
+    "Verified account access, domain restrictions, spam routing, quotas, recipients and shared workflows",
+    "Separate explicit authorization for one controlled live POST",
+    "Reviewed isolated-browser execution plan with a one-POST limit and no automatic retry"
+  ],
+  "requiredEvidenceAfterExecution": [
+    "Single request in correct shared inbox outside Spam",
+    "Correct email notification subject and expected payload fields",
+    "Existing ASSEMBL LAB routing verified through authorized evidence",
+    "No unapproved automation or recipients"
+  ],
+  "onUncertainResult": "Stop and inspect the inbox; do not auto-retry or enable public sending",
+  "recordNow": {
+    "realInquiries": 0,
+    "accountSettingsChanged": false,
+    "publicSendingEnabled": false
+  }
+}

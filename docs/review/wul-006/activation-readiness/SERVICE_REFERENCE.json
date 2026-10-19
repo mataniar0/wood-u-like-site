@@ -1,0 +1,71 @@
+{
+  "task": "WUL-006 / Issue #9",
+  "purpose": "Activation review only; no real submissions or account changes authorized",
+  "observedOn": "2026-10-19",
+  "userFacingTimezone": "Asia/Jerusalem",
+  "baseline": "9ddba7d17af1b595c2e7b1aef581e30f205aedef",
+  "endpointComparison": {
+    "status": "PASS",
+    "woodULike": "https://formspree.io/f/xwlvlbno",
+    "assemblLab": "https://formspree.io/f/xwlvlbno",
+    "scope": "Code configuration equality, not live delivery verification"
+  },
+  "readOnlyReferences": {
+    "inquiry/contact-config.js": {
+      "repository": "mataniar0/assembl-lab-site",
+      "commit": "ebeefe308efaf80329e16e42a84d51557878fd58",
+      "url": "https://github.com/mataniar0/assembl-lab-site/blob/ebeefe308efaf80329e16e42a84d51557878fd58/inquiry/contact-config.js",
+      "gitBlobSha": "2902c1387952737568a2c39482f4caa6bcd0a9c3",
+      "sha256": "638e7ddbd0bd6d8e280082a341148c7e832844e8b34ceefa68802039d247bc4b",
+      "readOnly": true
+    },
+    "inquiry/inquiry.js": {
+      "repository": "mataniar0/assembl-lab-site",
+      "commit": "ebeefe308efaf80329e16e42a84d51557878fd58",
+      "url": "https://github.com/mataniar0/assembl-lab-site/blob/ebeefe308efaf80329e16e42a84d51557878fd58/inquiry/inquiry.js",
+      "gitBlobSha": "afd072dcb5fe6e99cc77d8ae28e07ca85e7ba3a2",
+      "sha256": "f181d043c0a4fce79ac66e6c50eb33b0ab20e71578138eccb15be42eab2e9001",
+      "readOnly": true
+    }
+  },
+  "referenceRoutingLines": [
+    "data.set(\"_subject\", `ASSEMBLE LAB — ${product.selectedOptions[0].textContent}`);"
+  ],
+  "officialDocumentationAttempts": [
+    {
+      "name": "special-fields",
+      "url": "https://help.formspree.io/articles/building-your-form/special-fields",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verifiedContent": false
+    },
+    {
+      "name": "restrict-to-domain",
+      "url": "https://help.formspree.io/articles/form-and-project-settings/restrict-to-domain",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verifiedContent": false
+    },
+    {
+      "name": "html-form",
+      "url": "https://help.formspree.io/articles/building-your-form/building-an-html-form/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verifiedContent": false
+    },
+    {
+      "name": "formspree-docs",
+      "url": "https://formspree.io/docs/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "verifiedContent": false
+    }
+  ],
+  "additionalDocumentationRetry": {
+    "url": "https://help.formspree.io/articles/building-your-form/special-fields",
+    "execution": "Additional permitted read attempt",
+    "httpStatus": 403,
+    "contentVerified": false
+  },
+  "accountAccessed": false,
+  "accountSettingsChanged": false,
+  "assemblLabModified": false,
+  "liveDeliveryVerified": false,
+  "realInquiries": 0
+}

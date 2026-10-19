@@ -1,0 +1,30 @@
+[
+  {
+    "tool": "check-hero",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 356.65,
+    "log": "run-history/homepage-run-1.log"
+  },
+  {
+    "tool": "check-shared-privacy",
+    "status": "PASS",
+    "exitCode": 0,
+    "seconds": 74.6,
+    "log": "run-history/privacy-run-1.log"
+  },
+  {
+    "tool": "check-lead-attribution",
+    "status": "FAIL",
+    "exitCode": 1,
+    "seconds": 1080.55,
+    "log": "run-history/attribution-run-1.log"
+  },
+  {
+    "tool": "check-inquiry",
+    "status": "FAIL",
+    "exitCode": 1,
+    "seconds": 1083.75,
+    "log": "run-history/inquiry-run-1.log"
+  }
+]
