@@ -1,0 +1,374 @@
+{
+  "task": "WUL-020",
+  "products": [
+    "family-sign"
+  ],
+  "scenarios": [
+    {
+      "width": 320,
+      "height": 568,
+      "language": "he",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "שלט משפחתי לדלת מעץ בצורת אליפסה עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/he-320-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 30260,
+              "distinctColors": 21894,
+              "maxColorFraction": 0.0008592200925313946
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "language": "en",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "Oval wooden family door sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/en-320-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 30260,
+              "distinctColors": 21971,
+              "maxColorFraction": 0.0007931262392597488
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "language": "he",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "שלט משפחתי לדלת מעץ בצורת אליפסה עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/he-390-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 47276,
+              "distinctColors": 30921,
+              "maxColorFraction": 0.0012479905237329724
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "language": "en",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "Oval wooden family door sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/en-390-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 47276,
+              "distinctColors": 30921,
+              "maxColorFraction": 0.0012479905237329724
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "he",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "שלט משפחתי לדלת מעץ בצורת אליפסה עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/he-768-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 49476,
+              "distinctColors": 31933,
+              "maxColorFraction": 0.001152073732718894
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "language": "en",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "Oval wooden family door sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/en-768-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 49476,
+              "distinctColors": 31933,
+              "maxColorFraction": 0.001152073732718894
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "language": "he",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "שלט משפחתי לדלת מעץ בצורת אליפסה עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/he-1024-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 91450,
+              "distinctColors": 49518,
+              "maxColorFraction": 0.001202843083652269
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "language": "en",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "Oval wooden family door sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/en-1024-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 91450,
+              "distinctColors": 49518,
+              "maxColorFraction": 0.001202843083652269
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "language": "he",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "שלט משפחתי לדלת מעץ בצורת אליפסה עם חריטת משפחת מזוז, מסגרת, עלים וציפורים, לצד סחלב על משטח עץ"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/he-1440-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 157509,
+              "distinctColors": 68801,
+              "maxColorFraction": 0.0008380473496752566
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "language": "en",
+      "status": "PASS",
+      "checks": [
+        {
+          "product": "family-sign",
+          "image": {
+            "approvedBytes": "PASS",
+            "contain": "PASS",
+            "responsiveSources": "PASS",
+            "alt": "Oval wooden family door sign engraved with the Hebrew words “Mishpachat Mazuz” (Mazuz family), a border, leaves and birds, beside an orchid on a wooden surface"
+          },
+          "collectionAxe": [],
+          "productAxe": [],
+          "inquiryAxe": [],
+          "blockedRequestSubmit": "PASS",
+          "keyboardAndBothQuotePaths": "PASS",
+          "screenshot": "screenshots/en-1440-family-sign-product.png",
+          "pixels": [
+            {
+              "samples": 157509,
+              "distinctColors": 68801,
+              "maxColorFraction": 0.0008380473496752566
+            }
+          ]
+        }
+      ],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      },
+      "errors": []
+    }
+  ],
+  "requests": {
+    "unexpectedSubmissions": 0,
+    "unexpectedExternal": 0,
+    "realInquiries": 0
+  },
+  "status": "PASS"
+}

@@ -164,3 +164,10 @@
 .product-page .clock-gallery-controls button:disabled {
   opacity: 0.55;
 }
+
+/* Keep all three room-sign variations visible in their approved wide photo. */
+.product-page[data-product-id="oval-room-signs"] .product-photo { aspect-ratio: 1200 / 594; }
+.product-page[data-product-id="oval-room-signs"] .product-media figcaption a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-block-start: 10px; }
+.product-page[data-product-id="oval-room-signs"] .product-variations { margin-block: 28px; }
+.product-page[data-product-id="oval-room-signs"] .product-variations h2 { font-size: 21px; line-height: 1.5; }
+.product-page[data-product-id="oval-room-signs"] .product-variations ul { padding-inline-start: 22px; line-height: 1.85; color: var(--soft-ink); }

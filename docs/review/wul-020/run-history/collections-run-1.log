@@ -1,0 +1,92 @@
+PASS JS home he 320
+PASS JS home-decor he 320
+PASS JS kitchen-hosting he 320
+PASS JS judaica-tradition he 320
+PASS JS gifts-memories he 320
+PASS JS home en 320
+PASS JS home-decor en 320
+PASS JS kitchen-hosting en 320
+PASS JS judaica-tradition en 320
+PASS JS gifts-memories en 320
+PASS JS home he 390
+PASS JS home-decor he 390
+PASS JS kitchen-hosting he 390
+PASS JS judaica-tradition he 390
+PASS JS gifts-memories he 390
+PASS JS home en 390
+PASS JS home-decor en 390
+PASS JS kitchen-hosting en 390
+PASS JS judaica-tradition en 390
+PASS JS gifts-memories en 390
+PASS JS home he 768
+PASS JS home-decor he 768
+PASS JS kitchen-hosting he 768
+PASS JS judaica-tradition he 768
+PASS JS gifts-memories he 768
+PASS JS home en 768
+PASS JS home-decor en 768
+PASS JS kitchen-hosting en 768
+PASS JS judaica-tradition en 768
+PASS JS gifts-memories en 768
+PASS JS home he 1024
+PASS JS home-decor he 1024
+PASS JS kitchen-hosting he 1024
+PASS JS judaica-tradition he 1024
+PASS JS gifts-memories he 1024
+PASS JS home en 1024
+PASS JS home-decor en 1024
+PASS JS kitchen-hosting en 1024
+PASS JS judaica-tradition en 1024
+PASS JS gifts-memories en 1024
+PASS JS home he 1440
+PASS JS home-decor he 1440
+PASS JS kitchen-hosting he 1440
+PASS JS judaica-tradition he 1440
+PASS JS gifts-memories he 1440
+PASS JS home en 1440
+PASS JS home-decor en 1440
+PASS JS kitchen-hosting en 1440
+PASS JS judaica-tradition en 1440
+PASS JS gifts-memories en 1440
+PASS no-JS home he 320
+PASS no-JS home-decor he 320
+PASS no-JS kitchen-hosting he 320
+PASS no-JS judaica-tradition he 320
+PASS no-JS gifts-memories he 320
+PASS no-JS home he 390
+PASS no-JS home-decor he 390
+PASS no-JS kitchen-hosting he 390
+PASS no-JS judaica-tradition he 390
+PASS no-JS gifts-memories he 390
+PASS no-JS home he 768
+PASS no-JS home-decor he 768
+PASS no-JS kitchen-hosting he 768
+PASS no-JS judaica-tradition he 768
+PASS no-JS gifts-memories he 768
+PASS no-JS home he 1024
+PASS no-JS home-decor he 1024
+PASS no-JS kitchen-hosting he 1024
+PASS no-JS judaica-tradition he 1024
+PASS no-JS gifts-memories he 1024
+PASS no-JS home he 1440
+PASS no-JS home-decor he 1440
+PASS no-JS kitchen-hosting he 1440
+PASS no-JS judaica-tradition he 1440
+PASS no-JS gifts-memories he 1440
+PASS navigation welcome he
+PASS navigation family-sign he
+PASS navigation hanging-home-sign he
+PASS navigation oval-room-signs he
+PASS navigation kitchen he
+PASS navigation pizza-peel he
+PASS navigation blessing he
+PASS navigation personalized-clock he
+PASS navigation welcome en
+PASS navigation family-sign en
+PASS navigation hanging-home-sign en
+PASS navigation oval-room-signs en
+PASS navigation kitchen en
+PASS navigation pizza-peel en
+PASS navigation blessing en
+PASS navigation personalized-clock en
+PASS 91 scenarios, 0 measured comparisons

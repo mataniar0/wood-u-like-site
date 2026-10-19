@@ -1,0 +1,27 @@
+{
+  "task": "WUL-020",
+  "productCorrectionCycles": 0,
+  "harnessCorrectionCycles": 2,
+  "events": [
+    {
+      "cycle": 1,
+      "kind": "test-harness",
+      "failure": "Focused mock-variation test read product selection before inquiry navigation/initialization completed.",
+      "evidence": "run-history/oval-room-signs-failed-run-1.json",
+      "log": "run-history/oval-room-signs-run-1.log",
+      "fix": "Wait for inquiry URL and selected product before reading/filling.",
+      "rerun": "run-history/oval-room-signs-run-2.log",
+      "status": "PASS"
+    },
+    {
+      "cycle": 2,
+      "kind": "qa-environment",
+      "failure": "Before-capture archive requested absent .nojekyll; server had no baseline HTML, so first capture timed out on a 404.",
+      "log": "run-history/before-run-1.log",
+      "fix": "Archive only tracked application paths and check baseline HTML exists before capture.",
+      "rerun": "run-history/before-run-2.log",
+      "status": "PASS"
+    }
+  ],
+  "totalCorrectionCycles": 2
+}
