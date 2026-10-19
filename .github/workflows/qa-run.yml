@@ -39,16 +39,16 @@ jobs:
           value=os.environ['QA_REF']
           assert re.fullmatch(r'[A-Za-z0-9._/-]{1,160}',value) and '..' not in value and not value.startswith('-')
           PYREF
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: ${{ inputs.target_ref }}
           fetch-depth: 0
           persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
           node-version: '24.19.0'
           cache: npm
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
       - name: Locked install, measured separately
@@ -72,7 +72,7 @@ jobs:
           else
             bash tools/qa-isolate.sh python3 -B tools/qa.py --mode "$QA_MODE" --stage plan --base "${QA_BASE:-origin/main}" --out artifacts/preflight
           fi
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
           name: qa-plan-${{ github.run_id }}-${{ github.run_attempt }}
@@ -92,25 +92,25 @@ jobs:
     env:
       PLAYWRIGHT_BROWSERS_PATH: .cache/ms-playwright
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: ${{ needs.plan.outputs.sha }}
           fetch-depth: 0
           persist-credentials: false
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
           node-version: '24.19.0'
           cache: npm
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
         with:
           path: .cache/ms-playwright
           key: qa-browser-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('package-lock.json') }}
       - name: Locked install and pinned browser provisioning
         run: python3 tools/qa-provision.py --browser --out artifacts/worker/provision.json
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
         with:
           name: qa-plan-${{ github.run_id }}-${{ github.run_attempt }}
           path: artifacts/plan-input
@@ -118,7 +118,7 @@ jobs:
         env:
           QA_SHARD: ${{ matrix.shard }}
         run: bash tools/qa-isolate.sh python3 -B tools/qa.py --stage worker --plan artifacts/plan-input/PLAN.json --shard "$QA_SHARD" --out artifacts/worker
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
           name: qa-browser-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -132,19 +132,19 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: ${{ needs.plan.outputs.sha || inputs.target_ref }}
           fetch-depth: 1
           persist-credentials: false
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: '3.12'
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
         with:
           pattern: qa-*-${{ github.run_id }}-${{ github.run_attempt }}
           path: artifacts/all
-      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
         if: inputs.mode == 'full' && github.event_name != 'pull_request'
         with:
           path: .cache/qa-history
@@ -162,7 +162,7 @@ jobs:
         run: |
           mkdir -p .cache/qa-history
           cp artifacts/all/QA_SUMMARY.json .cache/qa-history/QA_SUMMARY.json
-      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+      - uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
         if: success() && inputs.mode == 'full' && github.event_name != 'pull_request'
         with:
           path: .cache/qa-history
@@ -175,7 +175,7 @@ jobs:
           p=pathlib.Path('artifacts/all/QA_SUMMARY.json');p.parent.mkdir(parents=True,exist_ok=True)
           if not p.exists(): p.write_text(json.dumps({'status':'FAIL','failure_kind':'missing setup/plan/artifact','tested_sha':None,'no_pass_claim':True},indent=2))
           PYFAIL
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
           name: qa-summary-${{ github.run_id }}-${{ github.run_attempt }}

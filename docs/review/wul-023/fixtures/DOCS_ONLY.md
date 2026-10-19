@@ -1,5 +1,3 @@
 # WUL-023 acceptance fixture
 
-Synthetic documentation-only change. No customer data or live form interaction.
-
-Second measured documentation-only revision.
+Third measured docs-only revision. Synthetic text; no visitor data.

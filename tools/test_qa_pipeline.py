@@ -48,7 +48,7 @@ class SelectionTests(unittest.TestCase):
                 self.assertTrue(set(("inquiry", "attribution", "privacy")).issubset(s["selected"]))
 
     def test_unknown_deleted_renamed_and_new_tests_fail_closed(self):
-        for name, status in (("surprise.bin", "A"), ("tools/new-test.cjs", "A"), ("tools/check-language.cjs", "D"), ("docs/new.py", "A"), ("docs/note.md", "R100"), ("docs/../bypass.md", "M")):
+        for name, status in (("surprise.bin", "A"), ("tools/test_leads_report.py", "A"), ("tools/new-test.cjs", "A"), ("tools/check-language.cjs", "D"), ("docs/new.py", "A"), ("docs/note.md", "R100"), ("docs/../bypass.md", "M")):
             with self.subTest(name=name, status=status):
                 s = self.selection(name, status)
                 self.assertEqual(s["profile"], "full")
@@ -126,6 +126,18 @@ class GateTests(unittest.TestCase):
                 self.assertEqual(r["status"], "FAIL"); self.assertEqual(r["retry_count"], 0)
                 self.assertEqual(r["exit_code"], 7 if name == "unit-fail" else 124)
                 self.assertTrue((Path(tmp) / name / "suite.log").is_file())
+
+    def test_history_is_explicit_and_never_replaces_gate(self):
+        from qa_history import compare
+        current = {**q.summary(self.plan, [self.receipt], 2), "profile": "full", "event": "workflow_dispatch", "run_id": "new", "product_count": 9}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "prior.json"
+            self.assertEqual(compare(current, path)["status"], "NO_PREVIOUS_SUCCESS")
+            path.write_text(json.dumps({**current, "run_id": "old"}))
+            self.assertTrue(compare(current, path)["same_sha"])
+            self.assertEqual(compare(current, path)["previous_run_id"], "old")
+            path.write_text(json.dumps({**current, "status": "FAIL"}))
+            self.assertEqual(compare(current, path)["status"], "INVALID_OR_DIFFERENT_EVENT_HISTORY")
 
 
 if __name__ == "__main__":

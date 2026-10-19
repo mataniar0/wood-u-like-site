@@ -29,6 +29,12 @@ def report(out, result):
              "A green workflow does not replace independent review >=90/100 with no blockers."]
     if result.get("missing"): rows += ["", "Missing receipts: " + ", ".join(result["missing"])]
     (out / "REPORT.md").write_text("\n".join(rows) + "\n")
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        # A compact, non-sensitive index is also readable via Checks API when
+        # an author's cloud network cannot download Azure-backed artifacts.
+        payload = json.dumps(result, ensure_ascii=False, separators=(",", ":"))
+        payload = payload.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print("::notice title=WUL023_SUMMARY::" + payload, flush=True)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a") as stream:
             stream.write((out / "REPORT.md").read_text())
