@@ -1,0 +1,62 @@
+{
+  "task": "WUL-006 / Issue #9 — activation handoff",
+  "implementationCorrectionCycles": 0,
+  "qaHarnessCorrectionCycles": 3,
+  "events": [
+    {
+      "cycle": 1,
+      "classification": "qa-environment",
+      "failure": "Both long-running inquiry and attribution suites timed out during page.goto against the reused localhost:8016 server within three seconds of each other. No failed payload/content assertion or real inquiry was observed.",
+      "rootCause": "Exact resource/transport cause not established; post-failure HTTP probe returned 200 in 12 ms.",
+      "evidence": "run-history/failed-run-1-processes.json",
+      "logs": [
+        "run-history/inquiry-run-1.log",
+        "run-history/attribution-run-1.log"
+      ],
+      "fix": "Use a fresh dedicated static server with logging redirected to a file; retain partial scenario checkpoints and rerun both failed suites. Production files stay unchanged.",
+      "rerunLogs": [
+        "run-history/inquiry-run-2.log",
+        "run-history/attribution-run-2.log"
+      ],
+      "finalStatus": "PASS",
+      "rerunResults": {
+        "inquiry": {
+          "status": "PASS",
+          "scenarioRecords": 55,
+          "mockedPosts": 38
+        },
+        "attribution": {
+          "status": "PASS",
+          "scenarioRecords": 194,
+          "mockedPosts": 186
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "classification": "qa-summary",
+      "failure": "Summary expected status in every record; five successful language regression records use named PASS fields instead. Browser suites had already exited successfully.",
+      "evidence": "run-history/summary-run-1.log",
+      "fix": "Validate named PASS fields and the known informational metadata for the five language records. Preserve every browser result; no browser rerun.",
+      "rerunLog": "run-history/summary-run-2.log",
+      "finalStatus": "PASS"
+    },
+    {
+      "cycle": 3,
+      "classification": "delivery-validator",
+      "failure": "Ad hoc delivery validation treated a valid directory link in the pre-existing README as an individual tracked file. Git tracks files rather than directory entries.",
+      "evidence": "run-history/delivery-check-run-1.log",
+      "fix": "For directory links verify the directory exists and contains tracked descendants; retain exact tracked-file checks for document/image targets. No site or browser test result changed.",
+      "rerunLog": "run-history/delivery-check-run-2.log",
+      "finalStatus": "PASS"
+    }
+  ],
+  "externalVerificationLimitations": [
+    {
+      "kind": "Official documentation access",
+      "status": "UNVERIFIED",
+      "reason": "HTTP/tunnel 403, including additional permitted read attempt; not a passing service verification",
+      "evidence": "SERVICE_REFERENCE.json"
+    }
+  ]
+}

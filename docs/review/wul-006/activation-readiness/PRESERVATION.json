@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "baseline": "9ddba7d17af1b595c2e7b1aef581e30f205aedef",
+  "scope": "All tracked production HTML/CSS/JS/images/fonts under home/assets/inquiry/collections/products",
+  "productionFiles": [
+    {
+      "file": "assets/css/collection.css",
+      "sha256": "6fe2fe4a5bd6d4495487cbe32983b1e00e91ee1fe1f4656e80814b1aa61a9ee2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/css/natural-door-sign.css",
+      "sha256": "19377db4fcc85c54e937bd21627307c274cdb9e99315f5260b03efecdd65dce8",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/css/product.css",
+      "sha256": "6f758aa89ad69f5e87de895515c0291d7d825e7c58fdcd68cec4196273b83075",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/css/style.css",
+      "sha256": "098b0fc57ebb66e203616e7a9710cbf2b1338555e53fcd4095400e022d89d3de",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/fonts/noto-sans-hebrew-400.woff2",
+      "sha256": "330b5c315ebac6a102bea95898207a4fdae4a6180d27783dfbb2a700deb61845",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/fonts/noto-serif-hebrew-400.woff2",
+      "sha256": "5fd3fc127fc1b627673a85979750526b70c2ac6feaecfadd3d2321d7dedc8585",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/natural-edge-door-sign-door-small.webp",
+      "sha256": "bcaed44b5fa99e6727ff261be833c13027e09623441fec69b79765ceaf263555",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/natural-edge-door-sign-door.webp",
+      "sha256": "c789df9bd622e073adfe0c28e78fab5d9239341348b1a20b1f190cb79d354b1c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/natural-edge-door-sign-product-small.webp",
+      "sha256": "c317f987ac8261bc78432bd39cfd7308bb61414cb2387cdd42fed550140abe9b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/natural-edge-door-sign-product.webp",
+      "sha256": "0a122ed8c950c2e2851872ab93c36c973292acaec5ec3f2b39704384d08f317f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/oval-room-signs-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/oval-room-signs.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/clock-gallery.js",
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/language.js",
+      "sha256": "6453eed7a143acb487b2b384517e2a83acabdd88452eadb75fe935d35e46bcef",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/main.js",
+      "sha256": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/gifts-memories/index.html",
+      "sha256": "ae1888c0cd8fbfa62297508ef97dcbf76aeab765b49b94d9ddc9e2e48372abd7",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/home-decor/index.html",
+      "sha256": "6e3f375e12c34b9e6ca597d091275b9859f25ee560684a3d3f560dd76102a975",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/judaica-tradition/index.html",
+      "sha256": "1e1e53f2ab1262e57eacca5e0b7844bac070cc2b57970572e27899c753f91232",
+      "status": "PASS"
+    },
+    {
+      "file": "collections/kitchen-hosting/index.html",
+      "sha256": "faabaa1dbb4b74798e2ec68dccd4eed2ae3680f2df8118750c1a4888a202a17c",
+      "status": "PASS"
+    },
+    {
+      "file": "index.html",
+      "sha256": "7a67fe05698579acc588ca3033a7948589f2372ed9eb125ebee31b46cd714954",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/index.html",
+      "sha256": "7fc5157b4fc9bad8d175b46697ba008f54801b81b71a5dbfcfdddff36b121fe0",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.css",
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.js",
+      "sha256": "69eaf291ca56578a46dd1a16fb6c7658513931c569746df78683d025fc94e695",
+      "status": "PASS"
+    },
+    {
+      "file": "products/blessing/index.html",
+      "sha256": "563d8889d56a6e890e7e0e9593e64de5b8822e91f699ab6639b50c425e8707e9",
+      "status": "PASS"
+    },
+    {
+      "file": "products/family-sign/index.html",
+      "sha256": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c",
+      "status": "PASS"
+    },
+    {
+      "file": "products/hanging-home-sign/index.html",
+      "sha256": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c",
+      "status": "PASS"
+    },
+    {
+      "file": "products/kitchen/index.html",
+      "sha256": "1c2f92921e6b344ab1540c974951505f013b0c9bbe1ad78958cf10f9eab2076e",
+      "status": "PASS"
+    },
+    {
+      "file": "products/natural-edge-door-sign/index.html",
+      "sha256": "300f7d52066d6367c849aa51263caf9d16e0fe60d4137add510cd5dca33c0f52",
+      "status": "PASS"
+    },
+    {
+      "file": "products/oval-room-signs/index.html",
+      "sha256": "0ba38126958987492ab19914bc603c212be38244982863c65c376e846a85d067",
+      "status": "PASS"
+    },
+    {
+      "file": "products/personalized-clock/index.html",
+      "sha256": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13",
+      "status": "PASS"
+    },
+    {
+      "file": "products/pizza-peel/index.html",
+      "sha256": "3c9e33bc33ef52bac157a7cef1926fd2e47ddc8f86c24617f74ec8ec070803a9",
+      "status": "PASS"
+    },
+    {
+      "file": "products/welcome/index.html",
+      "sha256": "5d5971b5a637f69b111f6b2b5f46fbc359b3139429ad44aa880aba61b3b555be",
+      "status": "PASS"
+    }
+  ],
+  "count": 58,
+  "productIds": [
+    "blessing",
+    "family-sign",
+    "hanging-home-sign",
+    "kitchen",
+    "natural-edge-door-sign",
+    "oval-room-signs",
+    "personalized-clock",
+    "pizza-peel",
+    "welcome"
+  ],
+  "productCount": 9
+}

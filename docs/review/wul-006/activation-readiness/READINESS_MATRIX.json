@@ -1,0 +1,99 @@
+{
+  "task": "WUL-006 / Issue #9",
+  "observedOn": "2026-10-19",
+  "timezone": "Asia/Jerusalem",
+  "liveStatus": "BLOCKED",
+  "items": [
+    {
+      "id": "code-shared-endpoint",
+      "label": "יעד משותף בקוד",
+      "status": "PASS",
+      "evidence": "SERVICE_REFERENCE.json",
+      "scope": "Code-only equality, no delivery claim"
+    },
+    {
+      "id": "code-blocked-flags",
+      "label": "דגלי שליחה ציבורית חסומים",
+      "status": "PASS",
+      "evidence": "STATIC_AUDIT.json",
+      "scope": "All three flags false"
+    },
+    {
+      "id": "identity",
+      "label": "שם בעל העסק",
+      "status": "APPROVED_IN_ISSUE",
+      "evidence": "https://github.com/mataniar0/wood-u-like-site/issues/9",
+      "scope": "Identity only; no new English transliteration"
+    },
+    {
+      "id": "privacy-he-en",
+      "label": "נוסח HE/EN סופי",
+      "status": "PENDING_OWNER",
+      "evidence": "PRIVACY_REVIEW_HE_EN.md",
+      "scope": "User stated conditions not yet approved"
+    },
+    {
+      "id": "privacy-email",
+      "label": "כתובת הפרטיות ויכולת מענה",
+      "status": "PENDING_OWNER",
+      "evidence": null,
+      "scope": "labassemble@gmail.com"
+    },
+    {
+      "id": "privacy-operations",
+      "label": "גישה, שמירה/מחיקה, העברות ואי־דיוור",
+      "status": "PENDING_OWNER",
+      "evidence": null,
+      "scope": "Review actual shared-inbox handling"
+    },
+    {
+      "id": "service-domain",
+      "label": "Restrict to Domain ומקור האתר",
+      "status": "PENDING_ACCOUNT_REVIEW",
+      "evidence": null,
+      "scope": "Expected cross-origin Referer: https://mataniar0.github.io/"
+    },
+    {
+      "id": "service-routing",
+      "label": "Spam, subject email, brand storage and notifications",
+      "status": "PENDING_ACCOUNT_REVIEW",
+      "evidence": null,
+      "scope": "Mocked JSON does not establish inbox/email behavior"
+    },
+    {
+      "id": "service-plan",
+      "label": "מכסות, מורשים ו־Workflow/Integrations משותפים",
+      "status": "PENDING_ACCOUNT_REVIEW",
+      "evidence": null,
+      "scope": "No account or shared automation changes performed"
+    },
+    {
+      "id": "assembl-routing",
+      "label": "המשך ניתוב ASSEMBL LAB",
+      "status": "PENDING_ACCOUNT_REVIEW",
+      "evidence": "SERVICE_REFERENCE.json",
+      "scope": "Reference code read only; no live submission"
+    },
+    {
+      "id": "one-live-test-permission",
+      "label": "הרשאה לבדיקה חיה אחת",
+      "status": "NOT_AUTHORIZED",
+      "evidence": "CONTROLLED_TEST_PLAN.json",
+      "scope": "No real submission allowed now"
+    },
+    {
+      "id": "live-e2e",
+      "label": "קבלת דמה בתיבה, לא Spam, והתראת מייל",
+      "status": "NOT_RUN",
+      "evidence": null,
+      "scope": "Requires prerequisite approvals and one-test authorization"
+    },
+    {
+      "id": "public-activation",
+      "label": "הרשאה להפעלה ציבורית",
+      "status": "NOT_AUTHORIZED",
+      "evidence": null,
+      "scope": "Separate reviewed change and team-lead publication required"
+    }
+  ]
+}

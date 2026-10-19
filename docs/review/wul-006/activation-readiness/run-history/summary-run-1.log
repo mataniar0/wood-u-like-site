@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/wood-u-like-site/tools/summarize-activation-readiness.py", line 37, in <module>
+    assert all(r["status"] == "PASS" for r in records), name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wood-u-like-site/tools/summarize-activation-readiness.py", line 37, in <genexpr>
+    assert all(r["status"] == "PASS" for r in records), name
+               ~^^^^^^^^^^
+KeyError: 'status'

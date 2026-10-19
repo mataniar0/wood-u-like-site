@@ -23,8 +23,15 @@ const results = [];
 let intercepted = 0,
   unexpectedExternal = 0;
 fs.mkdirSync(path.join(output, "screenshots"), { recursive: true });
+function checkpoint(status) {
+  fs.writeFileSync(path.join(output, "results.json"), JSON.stringify({
+    status, results, interceptedFormPosts: intercepted,
+    realInquiryRequests: 0, unexpectedExternalRequests: unexpectedExternal,
+  }, null, 2) + "\n");
+}
 function pass(test, language, extra = {}) {
   results.push({ test, language, status: "PASS", ...extra });
+  checkpoint("RUNNING");
   console.log(`PASS ${test} ${language}`);
 }
 (async () => {
@@ -638,19 +645,7 @@ function pass(test, language, extra = {}) {
     await nojs.close();
     pass("no-JavaScript", "he");
     assert.equal(unexpectedExternal, 0);
-    fs.writeFileSync(
-      path.join(output, "results.json"),
-      JSON.stringify(
-        {
-          results,
-          interceptedFormPosts: intercepted,
-          realInquiryRequests: 0,
-          unexpectedExternalRequests: unexpectedExternal,
-        },
-        null,
-        2,
-      ) + "\n",
-    );
+    checkpoint("PASS");
     console.log(
       `PASS ${results.length} checks; ${intercepted} simulated POSTs; 0 real inquiries`,
     );
@@ -658,6 +653,7 @@ function pass(test, language, extra = {}) {
     await browser.close();
   }
 })().catch((error) => {
+  checkpoint("FAIL");
   console.error(error);
   process.exitCode = 1;
 });

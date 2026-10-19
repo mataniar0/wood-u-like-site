@@ -1,0 +1,20 @@
+PASS viewport/navigation/blocked/axe he
+PASS viewport/navigation/blocked/axe en
+PASS viewport/navigation/blocked/axe he
+PASS viewport/navigation/blocked/axe en
+PASS viewport/navigation/blocked/axe he
+PASS viewport/navigation/blocked/axe en
+PASS viewport/navigation/blocked/axe he
+PASS viewport/navigation/blocked/axe en
+PASS viewport/navigation/blocked/axe he
+PASS viewport/navigation/blocked/axe en
+page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "http://127.0.0.1:8016/wood-u-like-site/inquiry/?product=constructor", waiting until "load"[22m
+
+    at /workspace/wood-u-like-site/tools/check-inquiry.cjs:322:17 {
+  log: [
+    '  - navigating to "http://127.0.0.1:8016/wood-u-like-site/inquiry/?product=constructor", waiting until "load"'
+  ],
+  name: 'TimeoutError'
+}
