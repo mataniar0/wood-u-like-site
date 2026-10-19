@@ -1,0 +1,10 @@
+{
+  "path": "docs/review/wul-020/wul-020-assets.zip",
+  "sha256": "c306102ab0afd34e29a513f93624eeba632e78e150f30ad0cd50c4c1b2e63d6a",
+  "entries": {
+    "assets/images/oval-room-signs.webp": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+    "assets/images/oval-room-signs-small.webp": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+    "PHOTO_MANIFEST.json": "998f58cc8b5beefc029c0b83ab23ff69baaca1f8f18cb843a442fbcef6f98715",
+    "README_ASSETS_HE.md": "bd68bcdab3276dbc2563c904c1be7c80e2517bb53ce296ca68f8a568f4316b7d"
+  }
+}

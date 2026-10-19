@@ -1,0 +1,31 @@
+name: QA PR
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: Branch or commit to test (empty uses the dispatch ref)
+        type: string
+        default: ''
+      fault:
+        description: Deliberately red acceptance control; never a merge PASS
+        type: choice
+        options: [none, assertion, timeout, '404', cls, endpoint, flag-destination, flag-privacy, external-block]
+        default: none
+  push:
+    branches: [feature/wul-023-automated-qa]
+permissions:
+  contents: read
+concurrency:
+  group: qa-pr-${{ github.event.pull_request.number || github.ref }}-${{ inputs.fault || 'none' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  qa:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[qa-pr]')
+    uses: ./.github/workflows/qa-run.yml
+    with:
+      mode: pr
+      target_ref: ${{ github.event.pull_request.head.sha || inputs.target_ref || github.ref_name }}
+      base_sha: ${{ github.event.pull_request.base.sha || '' }}
+      fault: ${{ inputs.fault || 'none' }}

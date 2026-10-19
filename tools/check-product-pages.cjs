@@ -1,4 +1,5 @@
 "use strict";
+require("./qa-config.cjs");
 
 // WUL-021 Integration V2: serve the repository below its real Pages prefix, then inspect every
 // product in both languages. Every outgoing submission is either a browser-only
@@ -11,18 +12,13 @@ const { execFileSync } = require("node:child_process");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
 const sample = process.env.WUL_PRODUCT_SAMPLE === "1";
-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || `docs/review/wul-021/integration/product-pages${sample ? "/stage-a" : ""}`);
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8016/wood-u-like-site/";
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR);
+const base = process.env.WUL_BASE_URL;
 const origin = new URL(base).origin;
 const prefix = new URL(base).pathname;
-const baseline = process.env.WUL_BASE_COMMIT || "4a2c0722e2a947edaf8be8c86df1a65bcd36da35";
+const baseline = process.env.WUL_BASE_COMMIT;
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
-const groups = [
-  { slug: "home-decor", products: ["welcome", "family-sign", "hanging-home-sign", "oval-room-signs", "natural-edge-door-sign"] },
-  { slug: "kitchen-hosting", products: ["kitchen", "pizza-peel"] },
-  { slug: "judaica-tradition", products: ["blessing"] },
-  { slug: "gifts-memories", products: ["personalized-clock"] },
-];
+const groups = require("./qa-config.cjs").groups.map(g=>({slug:g.slug,products:g.ids}));
 const products = require('./qa-collections-shared.cjs').products.map(p=>({id:p.product_id,key:p.title_key.split('.')[1],file:path.basename(p.images[0].src,'.webp'),name:p.name.en,he:p.name.he,group:p.collection}));
 
 const clockPhotos = ["front", "handheld-detail", "hanging"];
@@ -268,7 +264,7 @@ async function homeContract(page, language) {
 (async () => {
   fs.mkdirSync(path.join(out, "screenshots"), { recursive: true });
   const approvedAssets = preserve();
-  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium", args: ["--no-sandbox"] });
+  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM, args: ["--no-sandbox"] });
   let decoderContext;
   try {
     ({ context: decoderContext } = await contextFor(browser)); const decoder = await decoderContext.newPage();

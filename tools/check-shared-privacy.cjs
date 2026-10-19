@@ -1,13 +1,14 @@
 "use strict";
+require("./qa-config.cjs");
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const base=process.env.WUL_BASE_URL||'http://127.0.0.1:8007/wood-u-like-site/';
-const out=path.resolve(__dirname,'..',process.env.WUL_REVIEW_DIR||'docs/review/wul-006/privacy');
+const base=process.env.WUL_BASE_URL;
+const out=path.resolve(__dirname,'..',process.env.WUL_REVIEW_DIR);
 (async()=>{
  fs.mkdirSync(path.join(out,'screenshots'),{recursive:true});
- const browser=await chromium.launch({executablePath:process.env.WUL_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox']});
+ const browser=await chromium.launch({executablePath:process.env.WUL_CHROMIUM,args:['--no-sandbox']});
  const results=[];let external=0;
  try {
   for(const width of [320,390,768,1024,1440])for(const lang of ['he','en']){

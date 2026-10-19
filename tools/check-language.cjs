@@ -1,12 +1,13 @@
 "use strict";
+require("./qa-config.cjs");
 const { chromium } = require("playwright");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const root = path.resolve(__dirname, "..");
-const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-003");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR);
 const base =
-  process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
+  process.env.WUL_BASE_URL;
 const key = "wood-u-like-language";
 let blockedRequests = 0;
 async function safeContext(browser, options = {}) {
@@ -136,7 +137,7 @@ async function contents(page, lang) {
 }
 (async () => {
   const browser = await chromium.launch({
-    executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium",
+    executablePath: process.env.WUL_CHROMIUM,
     args: ["--no-sandbox"],
     ignoreDefaultArgs: ["--disable-back-forward-cache"],
   });

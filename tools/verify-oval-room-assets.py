@@ -1,21 +1,31 @@
+"""Verify current assets and delivery archive without historical Git objects."""
+import hashlib
+import json
 import os
-"""Verify the WUL-020 delivery ZIP and approved-source image copies."""
-import hashlib,json,subprocess,zipfile,struct
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
-SOURCE=ROOT/'docs/review/wul-020'
-OUT=Path(os.environ.get('WUL_REVIEW_DIR',str(ROOT/'docs/review/wul-021/integration/assets')))
-OUT.mkdir(parents=True,exist_ok=True)
-def sha(data):return hashlib.sha256(data).hexdigest()
-manifest=json.loads((SOURCE/'PHOTO_MANIFEST.json').read_text());records=[]
-with zipfile.ZipFile(SOURCE/'wul-020-assets.zip')as archive:
- assert archive.testzip() is None
- assert sorted(archive.namelist())==sorted([a['path'] for a in manifest['assets']]+['PHOTO_MANIFEST.json','README_ASSETS_HE.md'])
- for asset in manifest['assets']:
-  actual=(ROOT/asset['path']).read_bytes();source=subprocess.check_output(['git','show',manifest['baseline']+':'+asset['source']],cwd=ROOT)
-  assert sha(actual)==sha(source)==asset['sha256'];assert archive.read(asset['path'])==actual
-  records.append({'path':asset['path'],'source':asset['source'],'sha256':sha(actual),'status':'PASS','zipBytesMatch':True,'approvedSourceBytesMatch':True})
- assert archive.read('PHOTO_MANIFEST.json')==(SOURCE/'PHOTO_MANIFEST.json').read_bytes()
- assert archive.read('README_ASSETS_HE.md')==(SOURCE/'README_ASSETS_HE.md').read_bytes()
-result={'task':'WUL-020','status':'PASS','assets':records,'zipSha256':sha((SOURCE/'wul-020-assets.zip').read_bytes()),'zipEntryCount':4,'sourcePolicy':'Reuses approved R1-09 photograph, as explicitly documented; no supplied ZIP was available.'}
-(OUT/'ASSET_VERIFICATION.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print('PASS: 2 approved-source image copies; 4 ZIP entries verified')
+import zipfile
+ROOT = Path(__file__).resolve().parents[1]
+OUT = Path(os.environ.get("WUL_REVIEW_DIR", ROOT / "artifacts/local/assets"))
+sha = lambda data: hashlib.sha256(data).hexdigest()
+approved = {}
+for file in (ROOT / "qa/assets").glob("*.json"):
+    approved.update(json.loads(file.read_text()))
+assert sorted(approved) == sorted(str(p.relative_to(ROOT)) for p in (ROOT / "assets/images").iterdir())
+records = []
+for file, expected in approved.items():
+    assert sha((ROOT / file).read_bytes()) == expected, file
+    records.append({"path": file, "sha256": expected, "status": "PASS"})
+for suffix in (".webp", "-small.webp"):
+    assert (ROOT / ("assets/images/oval-room-signs" + suffix)).read_bytes() == (ROOT / ("assets/images/workshop" + suffix)).read_bytes()
+package = json.loads((ROOT / "qa/asset-package.json").read_text())
+assert sha((ROOT / package["path"]).read_bytes()) == package["sha256"]
+with zipfile.ZipFile(ROOT / package["path"]) as archive:
+    assert archive.testzip() is None
+    assert sorted(archive.namelist()) == sorted(package["entries"])
+    for file, expected in package["entries"].items():
+        assert sha(archive.read(file)) == expected
+        if file.startswith("assets/"):
+            assert archive.read(file) == (ROOT / file).read_bytes()
+OUT.mkdir(parents=True, exist_ok=True)
+(OUT / "ASSET_VERIFICATION.json").write_text(json.dumps({"status": "PASS", "assets": records, "delivery_package": package["sha256"]}, indent=2) + "\n")
+print(f"PASS: {len(records)} approved assets; exact directory; source copies; archive")

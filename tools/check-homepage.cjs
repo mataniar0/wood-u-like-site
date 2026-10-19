@@ -1,11 +1,12 @@
+require('./qa-config.cjs');
 const {chromium}=require('playwright');
 const fs=require('fs');
 const path=require('path');
 const root=path.resolve(__dirname,'..');
-const output=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review');
+const output=path.resolve(root,process.env.WUL_REVIEW_DIR);
 const screenshots=path.join(output,'screenshots');
 fs.mkdirSync(screenshots,{recursive:true});
-const base=process.env.WUL_BASE_URL || 'http://127.0.0.1:8001/wood-u-like-site/';
+const base=process.env.WUL_BASE_URL;
 const assert=require('assert/strict');
 let blockedRequests=0;
 async function safePage(browser,options){
@@ -18,7 +19,7 @@ async function safePage(browser,options){
  return context.newPage();
 }
 (async()=>{
- const browser=await chromium.launch({executablePath:process.env.WUL_CHROMIUM || '/usr/bin/chromium',args:['--no-sandbox']});
+ const browser=await chromium.launch({executablePath:process.env.WUL_CHROMIUM,args:['--no-sandbox']});
  const results=[];
  for(const width of [390,768,1440]){
   const page=await safePage(browser,{viewport:{width,height:900},deviceScaleFactor:1});

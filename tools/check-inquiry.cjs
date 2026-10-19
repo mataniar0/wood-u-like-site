@@ -1,4 +1,5 @@
 "use strict";
+require("./qa-config.cjs");
 const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
 
 const assert = require("node:assert/strict");
@@ -6,9 +7,9 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
-const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-004");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR);
 const base =
-  process.env.WUL_BASE_URL || "http://127.0.0.1:8002/wood-u-like-site/";
+  process.env.WUL_BASE_URL;
 const endpoint = "https://formspree.io/f/wulqatest"; // Intercepted fixture, never a live destination.
 const approved = {
   formEndpoint: endpoint,
@@ -36,7 +37,7 @@ function pass(test, language, extra = {}) {
 }
 (async () => {
   const browser = await chromium.launch({
-    executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium",
+    executablePath: process.env.WUL_CHROMIUM,
     args: ["--no-sandbox"],
   });
   async function setup(

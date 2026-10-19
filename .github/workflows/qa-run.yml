@@ -1,0 +1,186 @@
+name: QA reusable execution
+on:
+  workflow_call:
+    inputs:
+      mode:
+        type: string
+        required: true
+      target_ref:
+        type: string
+        required: true
+      base_sha:
+        type: string
+        default: ''
+      fault:
+        type: string
+        default: none
+permissions:
+  contents: read
+concurrency:
+  group: qa-execution-${{ github.workflow }}-${{ github.event.pull_request.number || inputs.target_ref }}-${{ inputs.fault }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: .cache/ms-playwright
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      browser: ${{ steps.plan.outputs.browser }}
+      sha: ${{ steps.plan.outputs.sha }}
+    steps:
+      - name: Validate target ref without shell interpolation
+        env:
+          QA_REF: ${{ inputs.target_ref }}
+        run: |
+          python3 - <<'PYREF'
+          import os,re
+          value=os.environ['QA_REF']
+          assert re.fullmatch(r'[A-Za-z0-9._/-]{1,160}',value) and '..' not in value and not value.startswith('-')
+          PYREF
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ inputs.target_ref }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Locked install, measured separately
+        env:
+          QA_FAULT: ${{ inputs.fault }}
+        run: |
+          if [[ "$QA_FAULT" != none && "$QA_FAULT" != endpoint && "$QA_FAULT" != flag-destination && "$QA_FAULT" != flag-privacy ]]; then
+            python3 tools/qa-provision.py --browser --out artifacts/preflight/provision.json
+          else
+            python3 tools/qa-provision.py --out artifacts/preflight/provision.json
+          fi
+      - name: Mandatory checks and risk plan in loopback-only namespace
+        id: plan
+        env:
+          QA_MODE: ${{ inputs.mode }}
+          QA_BASE: ${{ inputs.base_sha }}
+          QA_FAULT: ${{ inputs.fault }}
+        run: |
+          if [[ "$QA_FAULT" != none ]]; then
+            bash tools/qa-isolate.sh python3 -B tools/qa.py --stage fault --fault "$QA_FAULT" --base "${QA_BASE:-origin/main}" --out artifacts/preflight
+          else
+            bash tools/qa-isolate.sh python3 -B tools/qa.py --mode "$QA_MODE" --stage plan --base "${QA_BASE:-origin/main}" --out artifacts/preflight
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: qa-plan-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/preflight/
+          retention-days: 14
+          if-no-files-found: error
+  browser:
+    needs: plan
+    if: needs.plan.outputs.browser == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: .cache/ms-playwright
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ needs.plan.outputs.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .cache/ms-playwright
+          key: qa-browser-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('package-lock.json') }}
+      - name: Locked install and pinned browser provisioning
+        run: python3 tools/qa-provision.py --browser --out artifacts/worker/provision.json
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: qa-plan-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/plan-input
+      - name: Run exact selected shard; no external interfaces or privilege gain
+        env:
+          QA_SHARD: ${{ matrix.shard }}
+        run: bash tools/qa-isolate.sh python3 -B tools/qa.py --stage worker --plan artifacts/plan-input/PLAN.json --shard "$QA_SHARD" --out artifacts/worker
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: qa-browser-${{ matrix.shard }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/worker/
+          retention-days: 14
+          if-no-files-found: error
+  gate:
+    name: Required QA gate
+    needs: [plan, browser]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ needs.plan.outputs.sha || inputs.target_ref }}
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          pattern: qa-*-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/all
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: inputs.mode == 'full' && github.event_name != 'pull_request'
+        with:
+          path: .cache/qa-history
+          key: qa-history-${{ github.event_name }}-${{ inputs.target_ref }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            qa-history-${{ github.event_name }}-${{ inputs.target_ref }}-
+      - name: Require every selected receipt at exact tested SHA
+        id: gate
+        run: |
+          QA_PLAN=$(find artifacts/all -name PLAN.json -print -quit)
+          test -n "$QA_PLAN"
+          python3 -B tools/qa.py --stage summary --plan "$QA_PLAN" --out artifacts/all
+      - name: Prepare last successful full summary for the next run
+        if: success() && inputs.mode == 'full' && github.event_name != 'pull_request'
+        run: |
+          mkdir -p .cache/qa-history
+          cp artifacts/all/QA_SUMMARY.json .cache/qa-history/QA_SUMMARY.json
+      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: success() && inputs.mode == 'full' && github.event_name != 'pull_request'
+        with:
+          path: .cache/qa-history
+          key: qa-history-${{ github.event_name }}-${{ inputs.target_ref }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Explicit failure report if setup/plan/artifact is missing
+        if: failure()
+        run: |
+          python3 - <<'PYFAIL'
+          import pathlib,json
+          p=pathlib.Path('artifacts/all/QA_SUMMARY.json');p.parent.mkdir(parents=True,exist_ok=True)
+          if not p.exists(): p.write_text(json.dumps({'status':'FAIL','failure_kind':'missing setup/plan/artifact','tested_sha':None,'no_pass_claim':True},indent=2))
+          PYFAIL
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: qa-summary-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/all/QA_SUMMARY.json
+            artifacts/all/REPORT.md
+          retention-days: 14
+          if-no-files-found: error
