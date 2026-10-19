@@ -35,6 +35,10 @@
       name: "Personalized Oval Room Signs",
       dimensions: ["width", "height"],
     },
+    "natural-edge-door-sign": {
+      name: "Natural Wood Door Sign",
+      dimensions: ["width", "height"],
+    },
     custom: {
       name: "Personalization / another idea",
       dimensions: ["width", "height", "thickness"],

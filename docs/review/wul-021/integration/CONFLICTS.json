@@ -1,0 +1,37 @@
+{
+  "task": "WUL-021 Integration V2",
+  "pre_integration_head": "c487016de8b9cf43c297287449909ccf7748b7a7",
+  "main": "4a2c0722e2a947edaf8be8c86df1a65bcd36da35",
+  "merge_strategy": "Non-destructive git merge origin/main; no rebase/reset/force push",
+  "conflicted_files": [
+    "README.md",
+    "collections/home-decor/index.html",
+    "inquiry/index.html",
+    "inquiry/inquiry.js",
+    "tools/check-collection-accessibility.cjs",
+    "tools/check-collection-contract.cjs",
+    "tools/check-collections.cjs",
+    "tools/check-fragment-navigation.cjs",
+    "tools/check-inquiry.cjs",
+    "tools/check-lead-attribution.cjs",
+    "tools/check-product-pages.cjs",
+    "tools/qa-collections-shared.cjs"
+  ],
+  "conflict_count": 12,
+  "resolutions": {
+    "README.md": "Keep documentation for both features and explain final nine-product state.",
+    "collections/home-decor/index.html": "Keep exact WUL-020 card and append exact WUL-021 card; ordered five IDs.",
+    "inquiry/index.html": "Keep both independent options, oval then natural.",
+    "inquiry/inquiry.js": "Keep both canonical registry entries with width/height.",
+    "QA files": "Combine both IDs through a nine-product map; retain legacy seven fragments, immutable main assets/pages, WUL-021 assets and navigation waits.",
+    "assets/js/language.js": "Automatic merge; validate every main translation and every WUL-021 key independently.",
+    "tools/qa-collections-shared.cjs": "Use updated main as strict byte baseline; nine current products, seven historical fragment targets; verify WUL-020 source copies and all four WUL-021 assets.",
+    "tools/check-collection-contract.cjs": "Require 9 unique IDs and 5/2/1/1, all translations from both branches, exact source pages and one added card/registration on main.",
+    "tools/check-product-pages.cjs": "Use shared nine-product metadata, both new IDs, all five no-JS widths for home-decor and the seven actual historical fragments.",
+    "tools/check-collections.cjs": "Retain complete matrix and all-product navigation; fresh integration output directory.",
+    "tools/check-inquiry.cjs": "Retain both canonical IDs in collection mapping, navigation lists and mocked payload cases.",
+    "tools/check-lead-attribution.cjs": "Retain both new products in direct, homepage and product-page attribution cases.",
+    "tools/check-fragment-navigation.cjs": "Keep seven real historic product anchors and the explicit native hash-navigation wait.",
+    "tools/check-collection-accessibility.cjs": "Check five home-decor headings/cards and preserve seven historic fragment checks."
+  }
+}

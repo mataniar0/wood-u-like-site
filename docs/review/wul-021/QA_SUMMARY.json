@@ -1,0 +1,163 @@
+{
+  "task": "WUL-021",
+  "implementation_status": "COMPLETE",
+  "qa_status": "PASS",
+  "branch": "feature/wul-021-natural-wood-door-sign",
+  "base_main": "c1242a1f8ad992dbe7a1069bc9781972eda36961",
+  "product": {
+    "id": "natural-edge-door-sign",
+    "existed_in_main": false,
+    "action": "created_once",
+    "collection": "home-decor",
+    "route": "products/natural-edge-door-sign/",
+    "inquiry": "inquiry/?product=natural-edge-door-sign",
+    "canonical_name": "Natural Wood Door Sign",
+    "total_products": 8,
+    "collection_counts": [
+      4,
+      2,
+      1,
+      1
+    ]
+  },
+  "suites": [
+    {
+      "suite": "preservation",
+      "status": "PASS",
+      "completed_scenarios": 44,
+      "mocked_posts": 0,
+      "command": "tools/check-collection-contract.cjs",
+      "artifact": "PRESERVATION.json"
+    },
+    {
+      "suite": "new-product",
+      "status": "PASS",
+      "completed_scenarios": 19,
+      "mocked_posts": 2,
+      "command": "tools/check-natural-door-sign.cjs",
+      "artifact": "product/results.json"
+    },
+    {
+      "suite": "all-product-pages",
+      "status": "PASS",
+      "completed_scenarios": 123,
+      "mocked_posts": 16,
+      "command": "tools/check-product-pages.cjs",
+      "artifact": "product-pages/results.json"
+    },
+    {
+      "suite": "collections",
+      "status": "PASS",
+      "completed_scenarios": 91,
+      "mocked_posts": 0,
+      "command": "tools/check-collections.cjs",
+      "artifact": "collections/results.json"
+    },
+    {
+      "suite": "inquiry",
+      "status": "PASS",
+      "completed_scenarios": 53,
+      "mocked_posts": 36,
+      "command": "tools/check-inquiry.cjs",
+      "artifact": "regression/inquiry/results.json"
+    },
+    {
+      "suite": "attribution",
+      "status": "PASS",
+      "completed_scenarios": 186,
+      "mocked_posts": 178,
+      "command": "tools/check-lead-attribution.cjs",
+      "artifact": "regression/attribution/results.json"
+    },
+    {
+      "suite": "legacy-links",
+      "status": "PASS",
+      "completed_scenarios": 52,
+      "mocked_posts": 0,
+      "command": "tools/check-fragment-navigation.cjs",
+      "artifact": "legacy/results.json"
+    },
+    {
+      "suite": "accessibility",
+      "status": "PASS",
+      "completed_scenarios": 12,
+      "mocked_posts": 0,
+      "command": "tools/check-collection-accessibility.cjs",
+      "artifact": "accessibility/results.json"
+    }
+  ],
+  "completed_scenarios": 580,
+  "intercepted_mock_posts": 232,
+  "real_inquiries": 0,
+  "new_product_matrix": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "modes": [
+      "he",
+      "en",
+      "no-js-static-he"
+    ],
+    "scenarios": 19,
+    "visible_images": 2,
+    "mockup_labels_per_product_page": 2,
+    "no_js_form": "Native CTA retains product query; form requires JavaScript and stays disabled."
+  },
+  "assets": {
+    "views": 2,
+    "responsive_webps": 4,
+    "total_webp_bytes": 407772,
+    "input_signatures_verified": 4,
+    "source_pngs_committed": false,
+    "kind": "AI-edited illustrative mockups",
+    "manifest": "ASSET_MANIFEST.json",
+    "archive": "wul-021-assets.zip",
+    "archive_bytes": 410891,
+    "archive_sha256": "b7a0ab67896ec6a3e94e0d8b32103f40f43a057c8d3ff8fd600c129605012044",
+    "archive_integrity": "PASS"
+  },
+  "contact_config": {
+    "unchanged_from_main": true,
+    "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+    "formDestinationApproved": false,
+    "privacyApproved": false,
+    "contactDetailsApproved": false
+  },
+  "correction_cycles": {
+    "image_editing": 1,
+    "product_layout_refinement": 2,
+    "qa_navigation_wait_fix": 3,
+    "details": "Image edits generated once; centered secondary desktop figure and resolved CSS margin specificity; fixed two test timing points: native keyboard navigation and inquiry initialization; also fixed the inherited legacy hash-navigation wait. Final runs use the final files."
+  },
+  "onboarding": {
+    "runtime_workflow_verified": true,
+    "install_script_saved": true,
+    "start_skill_saved": true,
+    "network_domain_added_to_draft": "api.github.com",
+    "published": false,
+    "fresh_task_restoration_tested": false,
+    "github_api_final_operation": "PR #37 created successfully; initial API CONNECT 403 did not recur in the final operation. Draft publication remains unverified."
+  },
+  "delivery": {
+    "merge": false,
+    "deploy": false,
+    "pr_status": "OPEN",
+    "pr_reference": "Refs #WUL-021-ISSUE",
+    "pr_url": "https://github.com/mataniar0/wood-u-like-site/pull/37",
+    "branch_pushed": true,
+    "implementation_commit": "c03670b186e1f612d1a23100463188855b5b65a7",
+    "github_api_verified": true
+  },
+  "limitations": [
+    "Chromium only; Safari/Firefox and manual screen-reader review were not run.",
+    "Local Pages-prefix validation only; no deployment/live-site verification.",
+    "English uses the existing client-side translation at the same URL; no separate English indexing guarantee.",
+    "AI edits preserve recognizable lettering and product character but are not pixel-identical photographs or installation specifications.",
+    "Initial pre-change baseline browser runs were intentionally interrupted when source media arrived; they are not counted as completed QA.",
+    "Cloud environment draft is saved, not applied or published by the draft tool."
+  ]
+}

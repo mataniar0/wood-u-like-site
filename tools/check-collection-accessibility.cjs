@@ -1,8 +1,8 @@
 "use strict";
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/accessibility');
-const result={task:'WUL-020',scenarios:[]};
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/accessibility');
+const result={task:'WUL-021 Integration V2',scenarios:[]};
 (async()=>{const b=await q.launch();let decoderContext;try{
  decoderContext=await b.newContext();const decoder=await decoderContext.newPage();
  for(const language of['he','en'])for(const group of groups){const s=await q.session(b,{language});try{const p=s.page;await p.goto(new URL('collections/'+group.slug+'/',base).href);await q.ready(p,language);

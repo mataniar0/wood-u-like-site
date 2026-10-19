@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "products": [
+    {
+      "product_id": "welcome",
+      "name": {
+        "he": "שלט ברוכים הבאים",
+        "en": "Welcome sign"
+      },
+      "collection": "home-decor",
+      "product_route": "products/welcome/",
+      "form_route": "inquiry/?product=welcome",
+      "collection_cta": "../../inquiry/?product=welcome",
+      "product_cta": "../../inquiry/?product=welcome",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "family-sign",
+      "name": {
+        "he": "שלט משפחתי לדלת",
+        "en": "Personalized wooden door sign"
+      },
+      "collection": "home-decor",
+      "product_route": "products/family-sign/",
+      "form_route": "inquiry/?product=family-sign",
+      "collection_cta": "../../inquiry/?product=family-sign",
+      "product_cta": "../../inquiry/?product=family-sign",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "hanging-home-sign",
+      "name": {
+        "he": "שלט תלוי לבית",
+        "en": "Personalized hanging wooden home sign"
+      },
+      "collection": "home-decor",
+      "product_route": "products/hanging-home-sign/",
+      "form_route": "inquiry/?product=hanging-home-sign",
+      "collection_cta": "../../inquiry/?product=hanging-home-sign",
+      "product_cta": "../../inquiry/?product=hanging-home-sign",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "oval-room-signs",
+      "name": {
+        "he": "שלטי חדר אליפטיים",
+        "en": "Personalized Oval Room Signs"
+      },
+      "collection": "home-decor",
+      "product_route": "products/oval-room-signs/",
+      "form_route": "inquiry/?product=oval-room-signs",
+      "collection_cta": "../../inquiry/?product=oval-room-signs",
+      "product_cta": "../../inquiry/?product=oval-room-signs",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "kitchen",
+      "name": {
+        "he": "קרש מטבח חרוט",
+        "en": "Engraved kitchen board"
+      },
+      "collection": "kitchen-hosting",
+      "product_route": "products/kitchen/",
+      "form_route": "inquiry/?product=kitchen",
+      "collection_cta": "../../inquiry/?product=kitchen",
+      "product_cta": "../../inquiry/?product=kitchen",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "pizza-peel",
+      "name": {
+        "he": "מרדה לפיצה",
+        "en": "Personalized Pizza Peel"
+      },
+      "collection": "kitchen-hosting",
+      "product_route": "products/pizza-peel/",
+      "form_route": "inquiry/?product=pizza-peel",
+      "collection_cta": "../../inquiry/?product=pizza-peel",
+      "product_cta": "../../inquiry/?product=pizza-peel",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "blessing",
+      "name": {
+        "he": "ברכת הדלקת נרות",
+        "en": "Candle-lighting blessing"
+      },
+      "collection": "judaica-tradition",
+      "product_route": "products/blessing/",
+      "form_route": "inquiry/?product=blessing",
+      "collection_cta": "../../inquiry/?product=blessing",
+      "product_cta": "../../inquiry/?product=blessing",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "personalized-clock",
+      "name": {
+        "he": "שעון עץ בחריטה אישית",
+        "en": "Personalized Engraved Wooden Clock"
+      },
+      "collection": "gifts-memories",
+      "product_route": "products/personalized-clock/",
+      "form_route": "inquiry/?product=personalized-clock",
+      "collection_cta": "../../inquiry/?product=personalized-clock",
+      "product_cta": "../../inquiry/?product=personalized-clock",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    },
+    {
+      "product_id": "natural-edge-door-sign",
+      "name": {
+        "he": "שלט עץ טבעי לדלת",
+        "en": "Natural Wood Door Sign"
+      },
+      "collection": "home-decor",
+      "product_route": "products/natural-edge-door-sign/",
+      "form_route": "inquiry/?product=natural-edge-door-sign",
+      "collection_cta": "../../inquiry/?product=natural-edge-door-sign",
+      "product_cta": "../../inquiry/?product=natural-edge-door-sign",
+      "verification": "product-pages/results.json; inquiry/results.json; attribution/results.json",
+      "real_inquiries": 0
+    }
+  ]
+}

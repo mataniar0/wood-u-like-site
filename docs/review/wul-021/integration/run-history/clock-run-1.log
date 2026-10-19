@@ -1,0 +1,16 @@
+PASS clock 320 he
+PASS clock 320 en
+PASS clock 390 he
+PASS clock 390 en
+PASS clock 768 he
+PASS clock 768 en
+PASS clock 1024 he
+PASS clock 1024 en
+PASS clock 1440 he
+PASS clock 1440 en
+PASS clock 320 no-javascript, saved PNG contains photograph
+PASS clock 390 no-javascript, saved PNG contains photograph
+PASS clock 768 no-javascript, saved PNG contains photograph
+PASS clock 1024 no-javascript, saved PNG contains photograph
+PASS clock 1440 no-javascript, saved PNG contains photograph
+PASS 15 clock scenarios, 6 verified image assets; zero external requests and POSTs

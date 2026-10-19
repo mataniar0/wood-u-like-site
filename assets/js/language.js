@@ -699,6 +699,18 @@
     "page.personalized-clock.details": {"he": "אפשר לברר על תמונה והקדשה לאחר יצירת קשר ולציין קוטר ועובי מבוקשים בטופס. מידות ופרטים נוספים בתיאום אישי.", "en": "You can discuss a photo and dedication after making contact and enter a preferred diameter and thickness in the form. Dimensions and further details are arranged personally."},
     "page.personalized-clock.metaTitle": {"he": "שעון עץ בחריטה אישית | WOOD U LIKE", "en": "Personalized Engraved Wooden Clock | WOOD U LIKE"},
     "page.personalized-clock.metaDescription": {"he": "שעון עץ בעיצוב אישי, עם תמונה והקדשה בחריטת לייזר. מתנה עם משמעות ורגעים שנעים לזכור. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.", "en": "A personalized wooden clock with a laser-engraved photo and dedication. A meaningful gift made to preserve special moments. Explore the piece and personalization options at WOOD U LIKE."},
+    "product.naturalDoor.title": {"he": "שלט עץ טבעי לדלת", "en": "Natural Wood Door Sign"},
+    "product.naturalDoor.copy": {"he": "שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם.", "en": "A natural wooden door sign, personalized with your chosen name or inscription. A warm, rustic accent that gives your entrance its own character."},
+    "catalog.natural-edge-door-sign.summary": {"he": "שם אישי, חריטה כהה ועץ עם אופי טבעי.", "en": "A personal name, dark engraving and wood with natural character."},
+    "page.natural-edge-door-sign.metaTitle": {"he": "שלט עץ טבעי לדלת | WOOD U LIKE", "en": "Natural Wood Door Sign | WOOD U LIKE"},
+    "page.natural-edge-door-sign.metaDescription": {"he": "שלט עץ טבעי לדלת עם חריטה אישית של שם או כיתוב לבחירתכם. מראה חם וכפרי שמעניק לכניסה לבית אופי משלכם. גלו את הפריט ואפשרויות ההתאמה האישית ב־WOOD U LIKE.", "en": "A natural wooden door sign with a personalized name or inscription. Explore the piece and personalization options at WOOD U LIKE."},
+    "page.natural-edge-door-sign.details": {"he": "אפשר לברר על שם משפחה או כיתוב אישי ולציין רוחב וגובה מבוקשים בטופס. מידות, עיצוב ואופן התקנה יתואמו אישית; התמונות אינן מפרט טכני.", "en": "Ask about a family name or personal wording and enter your preferred width and height in the form. Dimensions, design and installation are arranged individually; the images are not technical specifications."},
+    "naturalDoor.product.alt": {"he": "הדמיה של שלט עץ מלבני עם קצוות טבעיים וחריטת שמיר לצד האות s וגרש, על רקע בהיר ונקי", "en": "Illustrative mockup of a rectangular natural-edge wooden sign engraved with Shamir in Hebrew beside a Latin s and apostrophe, on a clean light background"},
+    "naturalDoor.door.alt": {"he": "הדמיה של שלט עץ עם חריטת שמיר לצד האות s וגרש, ממורכז מעל קשת הזכוכית בדלת כהה", "en": "Illustrative mockup of a wooden sign engraved with Shamir in Hebrew beside a Latin s and apostrophe, centered above the glass arch of a dark door"},
+    "naturalDoor.product.caption": {"he": "מבט מקרוב · הדמיה להמחשה", "en": "A closer look · Illustrative mockup"},
+    "naturalDoor.door.caption": {"he": "בכניסה לבית · הדמיה להמחשה", "en": "At the entrance · Illustrative mockup"},
+    "naturalDoor.door.title": {"he": "אופי טבעי בכניסה לבית", "en": "A natural welcome home"},
+    "inquiry.product.natural-edge-door-sign": {"he": "שלט עץ טבעי לדלת", "en": "Natural Wood Door Sign"},
   };
   let language = "he";
   let initialized = false;

@@ -9,12 +9,12 @@ const {chromium} = require('playwright');
 const root = path.resolve(__dirname, '..');
 const base = process.env.WUL_BASE_URL || 'http://127.0.0.1:8016/wood-u-like-site/';
 const prefix = new URL(base).pathname, origin = new URL(base).origin;
-const baseline = process.env.WUL_BASE_COMMIT || 'c1242a1';
+const baseline = process.env.WUL_BASE_COMMIT || '4a2c0722e2a947edaf8be8c86df1a65bcd36da35';
 const canonicalBase = 'https://mataniar0.github.io/wood-u-like-site/';
-const products = require('../docs/review/wul-020/CATEGORY_PRODUCT_MAP.json').products;
-const legacyProducts=products.filter(p=>p.product_id!=='oval-room-signs');
+const products = require('../docs/review/wul-021/integration/CATEGORY_PRODUCT_MAP.json').products;
+const legacyProducts=products.filter(p=>!['oval-room-signs','natural-edge-door-sign'].includes(p.product_id));
 const groups = [
-  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign','oval-room-signs']},
+  {slug:'home-decor',key:'homeDecor',he:'שלטים ועיצוב לבית',en:'Home Signs & Decor',ids:['welcome','family-sign','hanging-home-sign','oval-room-signs','natural-edge-door-sign']},
   {slug:'kitchen-hosting',key:'kitchenHosting',he:'מטבח ואירוח',en:'Kitchen & Hosting',ids:['kitchen','pizza-peel']},
   {slug:'judaica-tradition',key:'judaicaTradition',he:'יודאיקה ומסורת',en:'Judaica & Tradition',ids:['blessing']},
   {slug:'gifts-memories',key:'giftsMemories',he:'מתנות וזיכרונות',en:'Gifts & Memories',ids:['personalized-clock']},
@@ -110,19 +110,13 @@ async function capture(page,decoder,out,name,selector='img') {
  const pixels=[];for(const region of regions){const stats=await pixelStats(decoder,png,region);painted(stats);pixels.push(stats);}return {screenshot:file,pixels};
 }
 function preservation() {
- const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/js/main.js','assets/css/style.css','assets/css/collection.css','index.html','products','collections/kitchen-hosting','collections/judaica-tradition','collections/gifts-memories'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>!['inquiry/index.html','inquiry/inquiry.js'].includes(f));
- const records=[];for(const file of protectedFiles){const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root});const bytes=fs.readFileSync(path.join(root,file));assert.equal(sha(bytes),sha(before),file);records.push({file,sha256:sha(bytes),status:'PASS'});}
- const originalImages=execFileSync('git',['ls-tree','-r','--name-only',baseline,'assets/images'],{cwd:root,encoding:'utf8'}).trim().split('\n').map(f=>path.basename(f));
- const approvedCopies=[['oval-room-signs.webp','workshop.webp'],['oval-room-signs-small.webp','workshop-small.webp']];
- assert.deepEqual(fs.readdirSync(path.join(root,'assets/images')).sort(),[...originalImages,...approvedCopies.map(p=>p[0])].sort(),'Only approved room-sign copies added');
- for(const [dest,source]of approvedCopies){assert.equal(sha(fs.readFileSync(path.join(root,'assets/images',dest))),sha(execFileSync('git',['show',`${baseline}:assets/images/${source}`],{cwd:root})));records.push({file:'assets/images/'+dest,source:'assets/images/'+source,status:'PASS',byteIdenticalApprovedSource:true});}
- const originalJs=execFileSync('git',['show',`${baseline}:inquiry/inquiry.js`],{cwd:root,encoding:'utf8'});
- const addedProduct='    "oval-room-signs": {\n      name: "Personalized Oval Room Signs",\n      dimensions: ["width", "height"],\n    },\n';
- assert.equal(fs.readFileSync(path.join(root,'inquiry/inquiry.js'),'utf8'),originalJs.replace('    custom: {',addedProduct+'    custom: {'),'Inquiry code changes only the canonical product registry');
- const originalHtml=execFileSync('git',['show',`${baseline}:inquiry/index.html`],{cwd:root,encoding:'utf8'});
- const option='              <option value="oval-room-signs" data-i18n="inquiry.product.oval-room-signs">שלטי חדר אליפטיים</option>\n';
- assert.equal(fs.readFileSync(path.join(root,'inquiry/index.html'),'utf8'),originalHtml.replace('              <option value="custom"',option+'              <option value="custom"'),'Inquiry HTML changes only one option');
- const config=fs.readFileSync(path.join(root,'inquiry/contact-config.js'),'utf8');for(const f of ['formDestinationApproved','privacyApproved','contactDetailsApproved'])assert.match(config,new RegExp(f+': false'));
+ const protectedFiles=execFileSync('git',['ls-tree','-r','--name-only',baseline,'inquiry','assets/images','assets/js/attribution.js','assets/js/clock-gallery.js','assets/js/main.js','assets/css/style.css','assets/css/collection.css','assets/css/product.css','index.html','products','collections/kitchen-hosting','collections/judaica-tradition','collections/gifts-memories'],{cwd:root,encoding:'utf8'}).trim().split('\n');
+ const records=[];
+ for(const file of protectedFiles){const before=execFileSync('git',['show',`${baseline}:${file}`],{cwd:root});const bytes=fs.readFileSync(path.join(root,file));const registration=['inquiry/index.html','inquiry/inquiry.js'].includes(file);const expected=registration?require('./qa-wul021-catalog.cjs').registered(file,before.toString()):before;assert.equal(sha(bytes),sha(expected),file);records.push({file,sha256:sha(bytes),status:'PASS',rule:registration?'Only natural-sign registration added to main':'Byte-identical to updated main'});}
+ require('./qa-wul021-catalog.cjs').assets(protectedFiles.filter(f=>f.endsWith('.webp')));
+ for(const [dest,source] of [['oval-room-signs.webp','workshop.webp'],['oval-room-signs-small.webp','workshop-small.webp']])assert.equal(sha(fs.readFileSync(path.join(root,'assets/images',dest))),sha(fs.readFileSync(path.join(root,'assets/images',source))),'Approved WUL-020 photo copy');
+ for(const file of ['products/natural-edge-door-sign/index.html','assets/css/natural-door-sign.css']){assert.equal(sha(fs.readFileSync(path.join(root,file))),sha(execFileSync('git',['show','c487016:'+file],{cwd:root})),file+': WUL-021 content preserved');records.push({file,status:'PASS',rule:'Byte-identical to original WUL-021 HEAD'});}
+ const config=fs.readFileSync(path.join(root,'inquiry/contact-config.js'),'utf8');for(const flag of ['formDestinationApproved','privacyApproved','contactDetailsApproved'])assert.match(config,new RegExp(flag+': false'));
  return records;
 }
 

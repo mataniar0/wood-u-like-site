@@ -1,5 +1,7 @@
 # WOOD U LIKE
 
+הגרסה המשולבת של WUL-020 ו־WUL-021 כוללת **9 מוצרים, בחלוקה 5/2/1/1**. למפה, בדיקות חדשות ופקודות הרצה ראו [Integration V2](docs/review/wul-021/integration/REPORT_HE.md). הסעיפים ההיסטוריים בהמשך מתעדים את גרסאות המשימות המקוריות.
+
 אתר סטטי עצמאי בסגנון Natural Boutique, עם תמונות המקור של המותג.
 WUL-003 מוסיף עברית ואנגלית; WUL-005 מוסיף Hero מאושר עם גילוי הדמיה.
 WUL-004 מוסיף בירור והצעת מחיר בענף נפרד, עם שליחה ציבורית חסומה בהיעדר הגדרה ואישור פרטיות.
@@ -221,3 +223,19 @@ node tools/check-oval-room-signs.cjs
 ```
 
 [דוח QA ומסירה](docs/review/wul-020/REPORT_HE.md), [סיכום בדיקות](docs/review/wul-020/QA_SUMMARY.json), [מפת המוצרים](docs/review/wul-020/CATEGORY_PRODUCT_MAP.json) ו־[רשימת שינויים](docs/review/wul-020/CHANGED_FILES.txt) כוללים תוצאות, צילומים, פקודות וגבולות בדיקה. אין Merge או Deploy במסגרת המשימה.
+
+## WUL-021 — שלט עץ טבעי לדלת
+
+המוצר השמיני הוא `natural-edge-door-sign`, בשם **שלט עץ טבעי לדלת / Natural Wood Door Sign**, תחת [שלטים ועיצוב לבית](collections/home-decor/). [עמוד המוצר](products/natural-edge-door-sign/) מציג תמונת מוצר נקייה ותצוגה על דלת, שתיהן עריכות AI המבוססות על הצילומים שסופקו ומסומנות כהדמיות ב־HE/EN. שתי התמונות והקישור לטופס זמינים גם ללא JavaScript. אין מפרט התקנה, מידות קבועות או מחיר שלא אומתו.
+
+ה־CTA מפנה ל־`inquiry/?product=natural-edge-door-sign`; שם המוצר הקנוני בטופס הוא `Natural Wood Door Sign`, עם רוחב וגובה מבוקשים אופציונליים. `contact-config.js` וכל דגלי השליחה נשמרו חסומים. המיפוי הנוכחי וכלי הבדיקה משתמשים ב־[חבילת WUL-021](docs/review/wul-021/REPORT_HE.md); הדוחות והמפות ההיסטוריים נשמרו.
+
+```sh
+NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8001/wood-u-like-site/ node tools/check-natural-door-sign.cjs
+```
+
+הבדיקה מכסה HE/EN ו־no-JS ברוחבי 320/390/768/1024/1440, שתי תמונות וחתימות נכסים, גילוי הדמיה, קישורים, נגישות ו־payload מדומה בלבד. תוצאותיה נכתבות ב־`docs/review/wul-021/product/`. פקודות כל הרגרסיות והמגבלות מופיעות בדוח. אין לבצע merge או deploy במסגרת המשימה.
+
+## WUL-021 Integration V2
+
+המבנה המשולב כולל תשעה מוצרים: 5 / 2 / 1 / 1, עם `oval-room-signs` ו־`natural-edge-door-sign` יחד ב־home-decor. הסעיפים לעיל וחבילות WUL-020/WUL-021 מתעדים כל ענף בנפרד לפני האינטגרציה. [דוח האינטגרציה והבדיקות החדשות](docs/review/wul-021/integration/REPORT_HE.md) הוא הראיה למבנה המשולב. אין מיזוג ל־main, Deploy או הפעלת פניות במסגרת משימה זו.

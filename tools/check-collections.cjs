@@ -1,10 +1,10 @@
 "use strict";
-// WUL-020: static three-level navigation, all five widths, both languages,
+// WUL-019: static three-level navigation, all five widths, both languages,
 // no-JS, saved-image pixels, SEO and measured comparison to the starting main.
 const q=require('./qa-collections-shared.cjs');
 const {assert,fs,path,root,base,prefix,groups,products,viewports}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/collections');
-const result={task:'WUL-020',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/collections');
+const result={task:'WUL-021 Integration V2',baseline:q.baseline,startedAt:new Date().toISOString(),scenarios:[],seo:[],metrics:[],routes:[],preservation:[]};
 const cache=new Map(),unique={he:{titles:new Set(),descriptions:new Set()},en:{titles:new Set(),descriptions:new Set()}};
 function save(status,extra={}){q.write(out,'results.json',{...result,status,...extra});}
 async function home(page,language,js){
@@ -41,6 +41,7 @@ async function physicalTab(page,selector){const target=page.locator(selector);fo
   const s=await q.session(browser,{language,javaScriptEnabled:js,width,height});try{const p=s.page,url=new URL(route?`collections/${route.slug}/`:'',base).href;const response=await p.goto(url);assert.equal(response.status(),200);await q.ready(p,language,js);if(route)await collection(p,route,language,js,width);else await home(p,language,js);
    await q.layout(p);await q.links(p,cache);const evidence=await q.capture(p,decoder,out,`${language}-${width}-${route?.slug||'home'}${js?'':'-no-js'}`);const accessibility=js?await q.axe(p):'Static semantics checked; axe requires JavaScript';
    if(!js)for(const button of await p.locator('[data-language]').all())assert.equal(await button.isDisabled(),true);
+   if(!route&&js&&[390,1440].includes(width)){const current=await p.evaluate(()=>({height:document.documentElement.scrollHeight,loadedImages:[...document.images].filter(i=>i.complete&&i.naturalWidth).length,imageResources:performance.getEntriesByType('resource').filter(r=>/\.webp$/.test(r.name)).length}));const before=require('../docs/review/wul-019/stage-a/results.json').scenarios.find(s=>s.mode==='before'&&s.language===language&&s.width===width);assert.ok(current.height<before.height);assert.ok(current.loadedImages<before.loadedImages);assert.ok(current.imageResources<before.imageResources);result.metrics.push({language,width,before:{height:before.height,loadedImages:before.loadedImages,imageResources:before.imageResources},after:current,heightReductionPercent:Math.round((1-current.height/before.height)*1000)/10,status:'PASS'});}
    result.scenarios.push({kind:js?'layout':'no-javascript',route:route?.slug||'home',language,viewport:[width,height],status:'PASS',...evidence,axe:accessibility,errors:s.errors,requests:s.requests});save('RUNNING');console.log(`PASS ${js?'JS':'no-JS'} ${route?.slug||'home'} ${language} ${width}`);await s.finish();
   }catch(e){await s.context.close();throw e;}
  }

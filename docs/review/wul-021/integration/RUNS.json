@@ -1,0 +1,309 @@
+{
+  "task": "WUL-021 Integration V2 / #39",
+  "runs": [
+    {
+      "suite": "contract",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-collection-contract.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:41:36.882800+00:00",
+      "status": "PASS",
+      "log": "run-history/contract-run-1.log",
+      "artifact_dir": "contract",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T06:41:39.724550+00:00"
+    },
+    {
+      "suite": "product-pages",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-product-pages.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:41:36.885401+00:00",
+      "status": "PASS",
+      "log": "run-history/product-pages-run-1.log",
+      "artifact_dir": "product-pages",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:03:04.752033+00:00"
+    },
+    {
+      "suite": "collections",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-collections.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:41:36.888490+00:00",
+      "status": "PASS",
+      "log": "run-history/collections-run-1.log",
+      "artifact_dir": "collections",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:00:10.257087+00:00"
+    },
+    {
+      "suite": "inquiry",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-inquiry.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:41:36.890857+00:00",
+      "status": "PASS",
+      "log": "run-history/inquiry-run-1.log",
+      "artifact_dir": "inquiry",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T06:57:52.669651+00:00"
+    },
+    {
+      "suite": "attribution",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-lead-attribution.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:41:39.729518+00:00",
+      "status": "PASS",
+      "log": "run-history/attribution-run-1.log",
+      "artifact_dir": "attribution",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T06:54:27.017350+00:00"
+    },
+    {
+      "suite": "oval-room-signs",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-oval-room-signs.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:54:27.051260+00:00",
+      "status": "PASS",
+      "log": "run-history/oval-room-signs-run-1.log",
+      "artifact_dir": "oval-room-signs",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T06:57:58.053862+00:00"
+    },
+    {
+      "suite": "natural-door-sign",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-natural-door-sign.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:57:52.677246+00:00",
+      "status": "PASS",
+      "log": "run-history/natural-door-sign-run-1.log",
+      "artifact_dir": "natural-door-sign",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:02:29.502157+00:00"
+    },
+    {
+      "suite": "legacy",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-fragment-navigation.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T06:57:58.058691+00:00",
+      "status": "PASS",
+      "log": "run-history/legacy-run-1.log",
+      "artifact_dir": "legacy",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:04:03.836267+00:00"
+    },
+    {
+      "suite": "accessibility",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-collection-accessibility.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:00:10.271211+00:00",
+      "status": "PASS",
+      "log": "run-history/accessibility-run-1.log",
+      "artifact_dir": "accessibility",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:02:33.951618+00:00"
+    },
+    {
+      "suite": "language",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-language.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:02:29.523435+00:00",
+      "status": "PASS",
+      "log": "run-history/language-run-1.log",
+      "artifact_dir": "language",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:06:27.398463+00:00"
+    },
+    {
+      "suite": "clock",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-clock.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:02:33.953631+00:00",
+      "status": "PASS",
+      "log": "run-history/clock-run-1.log",
+      "artifact_dir": "clock",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:07:49.585770+00:00"
+    },
+    {
+      "suite": "hero",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-hero.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:03:04.771495+00:00",
+      "status": "FAIL",
+      "log": "run-history/hero-run-1.log",
+      "artifact_dir": "hero",
+      "exit_code": 1,
+      "completed_at": "2026-10-19T07:05:21.845026+00:00"
+    },
+    {
+      "suite": "homepage",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-homepage.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:04:03.842172+00:00",
+      "status": "PASS",
+      "log": "run-history/homepage-run-1.log",
+      "artifact_dir": "homepage",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:04:41.663912+00:00"
+    },
+    {
+      "suite": "privacy",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-shared-privacy.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:04:41.665929+00:00",
+      "status": "PASS",
+      "log": "run-history/privacy-run-1.log",
+      "artifact_dir": "privacy",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:05:36.375725+00:00"
+    },
+    {
+      "suite": "family-sign",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-family-sign.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:05:21.850122+00:00",
+      "status": "PASS",
+      "log": "run-history/family-sign-run-1.log",
+      "artifact_dir": "family-sign",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:08:28.074344+00:00"
+    },
+    {
+      "suite": "schwartz-sign",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-schwartz-sign.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:05:36.380742+00:00",
+      "status": "PASS",
+      "log": "run-history/schwartz-sign-run-1.log",
+      "artifact_dir": "schwartz-sign",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:09:45.729505+00:00"
+    },
+    {
+      "suite": "pizza-peel",
+      "attempt": 1,
+      "command": [
+        "node",
+        "tools/check-pizza-peel.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:06:27.402901+00:00",
+      "status": "PASS",
+      "log": "run-history/pizza-peel-run-1.log",
+      "artifact_dir": "pizza-peel",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:11:20.627707+00:00"
+    },
+    {
+      "suite": "assets",
+      "attempt": 1,
+      "command": [
+        "python3",
+        "tools/verify-oval-room-assets.py"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:07:49.609881+00:00",
+      "status": "PASS",
+      "log": "run-history/assets-run-1.log",
+      "artifact_dir": "assets",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:07:49.926171+00:00"
+    },
+    {
+      "suite": "hero",
+      "attempt": 2,
+      "command": [
+        "node",
+        "tools/check-hero.cjs"
+      ],
+      "head": "0f9b834c631a7a964d111f018b2fc13af77b297d",
+      "source_fingerprint": "34764e9a4b3e6a02be29a2aaf3b5d791629efb0acb7f0d349ee27f98bacdaa8e",
+      "started_at": "2026-10-19T07:11:24.139210+00:00",
+      "status": "PASS",
+      "log": "run-history/hero-run-2.log",
+      "artifact_dir": "hero",
+      "exit_code": 0,
+      "completed_at": "2026-10-19T07:13:32.445219+00:00"
+    }
+  ]
+}

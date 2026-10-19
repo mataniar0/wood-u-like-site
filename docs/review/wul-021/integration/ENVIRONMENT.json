@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-19T07:11:05.045110+00:00",
+  "node": "v24.19.0",
+  "python": "Python 3.12.14",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "playwright": "1.62.1",
+  "axe_core": "4.10.3",
+  "suite_workers_first_attempt": 4,
+  "hero_retry_workers": 1,
+  "server_prefix": "/wood-u-like-site/",
+  "deployment": false,
+  "browser_engines": [
+    "Chromium"
+  ],
+  "real_inquiry_authorization": false
+}

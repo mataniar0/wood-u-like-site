@@ -1,0 +1,513 @@
+{
+  "task": "WUL-021",
+  "baseline": "c1242a1f8ad992dbe7a1069bc9781972eda36961",
+  "status": "PASS",
+  "protectedFiles": [
+    {
+      "file": "assets/css/product.css",
+      "sha256": "a6f65c3770631990aafbdcd1b66176c90da5cca003326a68c01dd336f0962dda",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/README.md",
+      "sha256": "706d6dfad63fba325e0f406e2ef24e394910f308a5a33aab50317dc6c18282c6",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign-small.webp",
+      "sha256": "2a6c806bfade741911c34b13d0d7d45ddc5e5f5fc3eccf9cfb63b1d87646692d",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/family-sign.webp",
+      "sha256": "ca03bfdf139eb5ca891148275aa92c128a1d3b885087c8cd9db50a8bae5e7826",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2-small.webp",
+      "sha256": "ad6680bc300c14352c5aa9228ead2df1a6a96e9d7e417b961a390b36ff0472fb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-approved-v2.webp",
+      "sha256": "3c5b095a02ba5075edb8e3aebd8ebd6aa66dbdb8413199197aa4979b8461588f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome-small.webp",
+      "sha256": "78941604250a48507793bfc9cae5110692fa81c67d22224ee8d964c42e47fc5e",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/hero-welcome.webp",
+      "sha256": "78397fb95c0d5e35e104d36c8731bb81cbee46e6d9122ab66d34de9e5fd6e345",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing-small.webp",
+      "sha256": "8dd40846ef2d13ea3f7eabad75986b216df343588ff47bf065abb9337f0ab8b2",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/judaica-blessing.webp",
+      "sha256": "6b900ccab11e8a007738b9f4ce1cf0d40143bf71d8b672297fb8f9df887e4f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board-small.webp",
+      "sha256": "b0706ba19d8594ef7abd9f484e35f0b4fd4483bc9d00dfea2f4ffa051151b2d0",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/kitchen-board.webp",
+      "sha256": "94e93154f6903b9ca78e4cd7e9d1b81871444c6812ae1a250526b23f0e9344a7",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid-small.webp",
+      "sha256": "b61a25e81939c06854b89181c22639b6df5075218afe18294376c652022d9f4c",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/orchid.webp",
+      "sha256": "d74b04c6c4f87ce509ebfe7dc87bed6b1b5ca478578443ff96c21cbb2ae316da",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-front.webp",
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel-small.webp",
+      "sha256": "176e6343a204e588aca5dee693396bb06c8739f77d68d41737e71cf6df04c601",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/pizza-peel.webp",
+      "sha256": "0077b77beb34e88d65ea03ca001013585fde5523424ddf4c3cb791b571e71ede",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign-small.webp",
+      "sha256": "d4d85affd138ff40fd5cf029f1165efbe0431b6938655b45c6e31ebfe47ab31b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/schwartz-home-sign.webp",
+      "sha256": "f78ffe75b976cc46c55396e76a9c643b31f4068ab55bea08ff3c10b2925bb6cb",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop-small.webp",
+      "sha256": "10bae8e8a21326b10d50872b48e9bb38994e001cc386e5328a0af27ec993ab7f",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/images/workshop.webp",
+      "sha256": "1490a7a8f9d4275618e73b7a69391aaab7b27be38e1e038951b7539362d10725",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/attribution.js",
+      "sha256": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
+      "status": "PASS"
+    },
+    {
+      "file": "assets/js/clock-gallery.js",
+      "sha256": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/README.md",
+      "sha256": "e5fb7862edcd2e5425fad2f274837018c4b657c2075f6b75840711050659e6e5",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/contact-config.js",
+      "sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/index.html",
+      "sha256": "8e187eb9381c59769b248705f10f9a72729adf9e93f222e6828f02f26e50e7e4",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.css",
+      "sha256": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
+      "status": "PASS"
+    },
+    {
+      "file": "inquiry/inquiry.js",
+      "sha256": "19a99603d1ec20c4000d6daac1d5e3494191e9a4f4a554e84731f0eaee0693ea",
+      "status": "PASS"
+    }
+  ],
+  "products": [
+    {
+      "id": "welcome",
+      "file": "products/welcome/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "5d5971b5a637f69b111f6b2b5f46fbc359b3139429ad44aa880aba61b3b555be",
+      "afterSha256": "5d5971b5a637f69b111f6b2b5f46fbc359b3139429ad44aa880aba61b3b555be"
+    },
+    {
+      "id": "family-sign",
+      "file": "products/family-sign/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c",
+      "afterSha256": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c"
+    },
+    {
+      "id": "hanging-home-sign",
+      "file": "products/hanging-home-sign/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c",
+      "afterSha256": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c"
+    },
+    {
+      "id": "kitchen",
+      "file": "products/kitchen/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "1c2f92921e6b344ab1540c974951505f013b0c9bbe1ad78958cf10f9eab2076e",
+      "afterSha256": "1c2f92921e6b344ab1540c974951505f013b0c9bbe1ad78958cf10f9eab2076e"
+    },
+    {
+      "id": "pizza-peel",
+      "file": "products/pizza-peel/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "3c9e33bc33ef52bac157a7cef1926fd2e47ddc8f86c24617f74ec8ec070803a9",
+      "afterSha256": "3c9e33bc33ef52bac157a7cef1926fd2e47ddc8f86c24617f74ec8ec070803a9"
+    },
+    {
+      "id": "blessing",
+      "file": "products/blessing/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "563d8889d56a6e890e7e0e9593e64de5b8822e91f699ab6639b50c425e8707e9",
+      "afterSha256": "563d8889d56a6e890e7e0e9593e64de5b8822e91f699ab6639b50c425e8707e9"
+    },
+    {
+      "id": "personalized-clock",
+      "file": "products/personalized-clock/index.html",
+      "status": "PASS",
+      "onlyBreadcrumbBackLinkAndNavigationCopyChanged": true,
+      "beforeSha256": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13",
+      "afterSha256": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13"
+    }
+  ],
+  "collections": [
+    {
+      "slug": "home-decor",
+      "products": [
+        "welcome",
+        "family-sign",
+        "hanging-home-sign",
+        "natural-edge-door-sign"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "kitchen-hosting",
+      "products": [
+        "kitchen",
+        "pizza-peel"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "judaica-tradition",
+      "products": [
+        "blessing"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "gifts-memories",
+      "products": [
+        "personalized-clock"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "translationPreservation": {
+    "status": "PASS",
+    "keys": [
+      "collection.view",
+      "collection.all",
+      "collection.kicker",
+      "legacy.moved",
+      "collection.home-decor.intro",
+      "collection.home-decor.metaTitle",
+      "collection.home-decor.metaDescription",
+      "collection.kitchen-hosting.intro",
+      "collection.kitchen-hosting.metaTitle",
+      "collection.kitchen-hosting.metaDescription",
+      "collection.judaica-tradition.intro",
+      "collection.judaica-tradition.metaTitle",
+      "collection.judaica-tradition.metaDescription",
+      "collection.gifts-memories.intro",
+      "collection.gifts-memories.metaTitle",
+      "collection.gifts-memories.metaDescription",
+      "meta.title",
+      "meta.description",
+      "meta.ogDescription",
+      "skip",
+      "values.summary",
+      "nav.home",
+      "nav.label",
+      "nav.collections",
+      "nav.story",
+      "nav.personal",
+      "menu.open",
+      "menu.close",
+      "menu.label",
+      "hero.eyebrow",
+      "hero.title",
+      "hero.story",
+      "hero.lead",
+      "hero.collections",
+      "hero.ourStory",
+      "hero.craft",
+      "hero.caption",
+      "values.wood",
+      "values.engraving",
+      "values.handmade",
+      "collections.kicker",
+      "collections.title",
+      "collections.subtitle",
+      "collections.lead",
+      "category.homeDecor",
+      "category.kitchenHosting",
+      "category.judaicaTradition",
+      "category.giftsMemories",
+      "category.personal",
+      "category.judaica",
+      "category.kitchen",
+      "category.home",
+      "favorites.kicker",
+      "favorites.title",
+      "favorites.story",
+      "favorites.lead",
+      "product.blessing.tag",
+      "product.blessing.title",
+      "product.blessing.copy",
+      "product.welcome.tag",
+      "product.welcome.title",
+      "product.welcome.copy",
+      "product.kitchen.tag",
+      "product.kitchen.title",
+      "product.kitchen.copy",
+      "favorites.note",
+      "story.kicker",
+      "story.title",
+      "story.wood",
+      "story.copy",
+      "story.detail",
+      "story.personal",
+      "inspiration.title",
+      "inspiration.give",
+      "inspiration.keep",
+      "inspiration.copy",
+      "personal.copy",
+      "personal.notice",
+      "footer.values",
+      "footer.tagline",
+      "footer.top",
+      "image.hero",
+      "image.welcome",
+      "image.blessing",
+      "image.kitchen",
+      "image.workshop",
+      "image.blessingStand",
+      "image.welcomeOval",
+      "image.kitchenUtensils",
+      "image.workshopSigns",
+      "image.orchid",
+      "language.label",
+      "language.he",
+      "language.en",
+      "nav.inquiry",
+      "product.quote",
+      "inquiry.meta.title",
+      "inquiry.meta.description",
+      "inquiry.back",
+      "inquiry.kicker",
+      "inquiry.title",
+      "inquiry.intro",
+      "inquiry.step.choose",
+      "inquiry.step.chooseCopy",
+      "inquiry.step.quote",
+      "inquiry.step.quoteCopy",
+      "inquiry.step.confirm",
+      "inquiry.step.confirmCopy",
+      "inquiry.nonbinding",
+      "inquiry.blocked",
+      "inquiry.required",
+      "inquiry.product",
+      "inquiry.choose",
+      "inquiry.product.blessing",
+      "inquiry.product.welcome",
+      "inquiry.product.kitchen",
+      "inquiry.product.custom",
+      "inquiry.planning",
+      "inquiry.name",
+      "inquiry.contact",
+      "inquiry.contactHelp",
+      "inquiry.quantity",
+      "inquiry.engraving",
+      "inquiry.engravingHelp",
+      "inquiry.engravingPlaceholder",
+      "inquiry.idea",
+      "inquiry.ideaPlaceholder",
+      "inquiry.dimensions",
+      "inquiry.dimensionsHelp",
+      "inquiry.width",
+      "inquiry.height",
+      "inquiry.thickness",
+      "inquiry.diameter",
+      "inquiry.notes",
+      "inquiry.notesPlaceholder",
+      "inquiry.delivery",
+      "inquiry.delivery.none",
+      "inquiry.delivery.collection",
+      "inquiry.delivery.shipping",
+      "inquiry.deliveryHelp",
+      "inquiry.honey",
+      "inquiry.send",
+      "inquiry.sendBlocked",
+      "inquiry.sending",
+      "inquiry.sent",
+      "inquiry.invalid",
+      "inquiry.error.name",
+      "inquiry.error.contact",
+      "inquiry.error.product",
+      "inquiry.error.quantity",
+      "inquiry.error.dimension",
+      "inquiry.error.long",
+      "inquiry.error.request",
+      "inquiry.error.server",
+      "inquiry.error.response",
+      "inquiry.error.network",
+      "inquiry.error.timeout",
+      "inquiry.error.spam",
+      "inquiry.whatsapp",
+      "inquiry.email",
+      "inquiry.external",
+      "inquiry.externalStatus",
+      "inquiry.messageIntro",
+      "inquiry.messageSubject",
+      "inquiry.noscript",
+      "category.signs",
+      "product.family.title",
+      "product.family.copy",
+      "product.family.tag",
+      "image.family",
+      "inquiry.product.family-sign",
+      "category.homeSigns",
+      "product.schwartz.title",
+      "product.schwartz.copy",
+      "image.schwartz",
+      "inquiry.product.hanging-home-sign",
+      "category.originalGifts",
+      "product.pizzaPeel.title",
+      "product.pizzaPeel.copy",
+      "image.pizzaPeel",
+      "inquiry.product.pizza-peel",
+      "inquiry.privacyPreview",
+      "product.clock.title",
+      "product.clock.copy",
+      "product.clock.details",
+      "clock.gallery.previous",
+      "clock.gallery.next",
+      "clock.gallery.position",
+      "clock.gallery.front.caption",
+      "clock.gallery.front.alt",
+      "clock.gallery.detail.caption",
+      "clock.gallery.detail.alt",
+      "clock.gallery.hanging.caption",
+      "clock.gallery.hanging.alt",
+      "inquiry.product.personalized-clock",
+      "product.mockup",
+      "product.view",
+      "product.breadcrumb.label",
+      "product.home",
+      "product.backCollection",
+      "product.customization",
+      "product.arrangement",
+      "catalog.welcome.summary",
+      "page.welcome.details",
+      "page.welcome.metaTitle",
+      "page.welcome.metaDescription",
+      "catalog.family-sign.summary",
+      "page.family-sign.details",
+      "page.family-sign.metaTitle",
+      "page.family-sign.metaDescription",
+      "catalog.hanging-home-sign.summary",
+      "page.hanging-home-sign.details",
+      "page.hanging-home-sign.metaTitle",
+      "page.hanging-home-sign.metaDescription",
+      "catalog.kitchen.summary",
+      "page.kitchen.details",
+      "page.kitchen.metaTitle",
+      "page.kitchen.metaDescription",
+      "catalog.pizza-peel.summary",
+      "page.pizza-peel.details",
+      "page.pizza-peel.metaTitle",
+      "page.pizza-peel.metaDescription",
+      "catalog.blessing.summary",
+      "page.blessing.details",
+      "page.blessing.metaTitle",
+      "page.blessing.metaDescription",
+      "catalog.personalized-clock.summary",
+      "page.personalized-clock.details",
+      "page.personalized-clock.metaTitle",
+      "page.personalized-clock.metaDescription"
+    ],
+    "onlyExistingKeyAllowedToChange": "nav.favorites",
+    "approvedFamilySchwartzPizzaAltChecks": "PASS"
+  },
+  "home": {
+    "heroBytes": "PASS",
+    "storyEditorialPersonalFooterBytes": "PASS",
+    "collectionCards": 4,
+    "productCards": 0
+  },
+  "imageDirectory": {
+    "status": "PASS",
+    "baselineFilesPreserved": true,
+    "addedWebPs": 4,
+    "files": 29
+  }
+}

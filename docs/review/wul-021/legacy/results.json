@@ -1,0 +1,1069 @@
+{
+  "task": "WUL-021",
+  "exactSpecifiedLegacyFragments": 13,
+  "scenarios": [
+    {
+      "fragment": "#favorites",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#original-gifts",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-home-decor",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-kitchen-hosting",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-judaica-tradition",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-gifts-memories",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#welcome-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-welcome.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#family-sign-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-family-sign.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#hanging-home-sign-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-hanging-home-sign.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#kitchen-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-kitchen.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#pizza-peel-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-pizza-peel.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#blessing-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-blessing.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#personalized-clock-work",
+      "javaScript": true,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-personalized-clock.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#favorites",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#original-gifts",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-home-decor",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-kitchen-hosting",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-judaica-tradition",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-gifts-memories",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#welcome-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-welcome.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#family-sign-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-family-sign.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#hanging-home-sign-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-hanging-home-sign.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#kitchen-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-kitchen.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#pizza-peel-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-pizza-peel.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#blessing-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-blessing.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#personalized-clock-work",
+      "javaScript": true,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/en-390-personalized-clock.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#favorites",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#original-gifts",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-home-decor",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-kitchen-hosting",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-judaica-tradition",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-gifts-memories",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#welcome-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-welcome-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#family-sign-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-family-sign-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#hanging-home-sign-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-hanging-home-sign-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#kitchen-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-kitchen-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#pizza-peel-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-pizza-peel-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#blessing-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-blessing-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#personalized-clock-work",
+      "javaScript": false,
+      "requestedLanguage": "he",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "screenshot": "screenshots/he-390-personalized-clock-no-js.png",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#favorites",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#original-gifts",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-home-decor",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-kitchen-hosting",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-judaica-tradition",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#collection-gifts-memories",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#welcome-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#family-sign-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#hanging-home-sign-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#kitchen-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#pizza-peel-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#blessing-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    },
+    {
+      "fragment": "#personalized-clock-work",
+      "javaScript": false,
+      "requestedLanguage": "en",
+      "effectiveLanguage": "he",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "directLoadRefresh": "PASS",
+      "nativeHashEnterFocus": "PASS",
+      "firstTabAndExactDestination": "PASS",
+      "errors": [],
+      "requests": {
+        "unexpectedExternal": 0,
+        "unexpectedSubmissions": 0,
+        "realInquiries": 0
+      }
+    }
+  ],
+  "noJavaScriptLanguagePolicy": "Static Hebrew remains available even when an English preference was previously saved; English requires JavaScript.",
+  "status": "PASS"
+}
