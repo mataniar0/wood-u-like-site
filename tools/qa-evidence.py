@@ -7,6 +7,8 @@ import argparse
 import concurrent.futures
 import datetime
 import json
+import re
+from qa_annotations import unpack
 from pathlib import Path
 import subprocess
 
@@ -28,11 +30,20 @@ def collect(run_id):
     summaries, diagnostics = [], []
     for job in jobs:
         annotations = api(job["check_run_url"] + "/annotations?per_page=100")
+        packed = {}
+        expected_parts = None
         for a in annotations:
+            match = re.fullmatch(r"WUL023_SUMMARY_GZ_([0-9]+)_([0-9]+)", a["title"])
+            if match:
+                packed[int(match[1])] = a["message"]; expected_parts = int(match[2])
+                continue
             if a["title"] == "WUL023_SUMMARY":
-                summaries.append({"job": job["name"], "summary": json.loads(a["message"])})
+                summaries.append({"job": job["name"], "summary": json.loads(a["message"]) if len(a["message"]) < 4096 else {"status": "TRUNCATED_OLD_ANNOTATION"}})
             elif a["title"].startswith("WUL023_FAILURE_"):
                 diagnostics.append({"job": job["name"], "title": a["title"], "message": a["message"]})
+        if packed:
+            assert sorted(packed) == list(range(1, expected_parts + 1)), "Incomplete annotation chunks"
+            summaries.append({"job": job["name"], "summary": unpack([packed[i] for i in sorted(packed)])})
     result = {k: data[k] for k in ("id", "name", "head_sha", "head_branch", "event", "status", "conclusion", "created_at", "updated_at", "run_started_at", "html_url", "run_attempt")}
     result["workflow_wall_seconds"] = seconds(data["created_at"], data["updated_at"]) if data["status"] == "completed" else None
     result["jobs"] = [{k: job[k] for k in ("id", "name", "status", "conclusion", "started_at", "completed_at", "html_url")} for job in jobs]
@@ -40,7 +51,7 @@ def collect(run_id):
     result["artifacts"] = [{k: a[k] for k in ("id", "name", "size_in_bytes", "expired", "digest", "expires_at")} for a in artifacts]
     result["uploaded_compressed_artifact_bytes"] = sum(a["size_in_bytes"] for a in artifacts)
     result["summaries"] = summaries; result["diagnostics"] = diagnostics
-    result["summary"] = next((s["summary"] for s in summaries if "Required QA gate" in s["job"]), None)
+    result["summary"] = next((s["summary"] for s in summaries if "Required QA gate" in s["job"]), next((s["summary"] for s in summaries if s["summary"].get("phase") != "preflight"), None))
     result["artifact_links"] = [f"https://github.com/{REPO}/actions/runs/{run_id}/artifacts/{a['id']}" for a in artifacts]
     return result
 

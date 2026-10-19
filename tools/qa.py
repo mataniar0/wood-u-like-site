@@ -32,9 +32,10 @@ def report(out, result):
     if os.environ.get("GITHUB_ACTIONS") == "true":
         # A compact, non-sensitive index is also readable via Checks API when
         # an author's cloud network cannot download Azure-backed artifacts.
-        payload = json.dumps(result, ensure_ascii=False, separators=(",", ":"))
-        payload = payload.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
-        print("::notice title=WUL023_SUMMARY::" + payload, flush=True)
+        from qa_annotations import chunks
+        parts = chunks(result)
+        for number, part in enumerate(parts, 1):
+            print(f"::notice title=WUL023_SUMMARY_GZ_{number}_{len(parts)}::{part}", flush=True)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a") as stream:
             stream.write((out / "REPORT.md").read_text())

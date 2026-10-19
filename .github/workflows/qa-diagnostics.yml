@@ -1,5 +1,7 @@
 name: QA artifact diagnostics (read only)
 on:
+  push:
+    branches: [feature/wul-023-automated-qa]
   workflow_dispatch:
     inputs:
       run_id:
@@ -14,6 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   inspect:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
@@ -35,18 +38,22 @@ jobs:
       - name: Read JSON and sanitized failure tails; never execute downloaded files
         run: |
           python3 - <<'PY'
-          import pathlib,json,re
+          import pathlib,json,re,gzip,base64
           def notice(title,text):
               text=text.replace('%','%25').replace('\r','%0D').replace('\n','%0A')
               print('::notice title='+title+'::'+text,flush=True)
-          for p in pathlib.Path('evidence').rglob('QA_SUMMARY.json'):
+          summaries=list(pathlib.Path('evidence').rglob('QA_SUMMARY.json'))
+          final=[p for p in summaries if 'qa-summary-' in str(p)]
+          for p in final or summaries[:1]:
               value=json.loads(p.read_text())
-              notice('WUL023_SUMMARY',json.dumps(value,ensure_ascii=False,separators=(',',':')))
+              encoded=base64.b64encode(gzip.compress(json.dumps(value,ensure_ascii=False,separators=(',',':')).encode(),mtime=0)).decode()
+              parts=[encoded[i:i+2800] for i in range(0,len(encoded),2800)]
+              for i,part in enumerate(parts,1):notice(f'WUL023_SUMMARY_GZ_{i}_{len(parts)}',part)
           for p in pathlib.Path('evidence').rglob('receipt.json'):
               value=json.loads(p.read_text())
               if value['status']!='PASS':
                   log=p.parent/'suite.log'
-                  text=log.read_text()[-4000:] if log.exists() else 'Missing suite log'
+                  text=log.read_text()[-2700:] if log.exists() else 'Missing suite log'
                   text=re.sub(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}','[contact-redacted]',text)
                   text=re.sub(r'gh[pousr]_[A-Za-z0-9]{20,}|AKIA[A-Z0-9]{16}','[credential-redacted]',text)
                   notice('WUL023_FAILURE_'+value['suite'],text)

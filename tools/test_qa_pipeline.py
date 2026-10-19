@@ -107,6 +107,25 @@ class GateTests(unittest.TestCase):
         self.plan = {"selected": ["static"], "tested_sha": "a" * 40, "source_fingerprint": "b" * 64}
         self.receipt = {"suite": "static", "status": "PASS", "exit_code": 0, "tested_sha": "a" * 40, "source_fingerprint": "b" * 64, "seconds": 1, "retry_count": 0}
 
+    def test_lossless_long_summary_annotations(self):
+        from qa_annotations import chunks, unpack
+        import hashlib
+        value = {"he": "בדיקה", "values": [hashlib.sha256(str(i).encode()).hexdigest() for i in range(200)]}
+        parts = chunks(value)
+        self.assertGreater(len(parts), 1)
+        self.assertTrue(all(len(p) <= 2800 for p in parts))
+        self.assertEqual(unpack(parts), value)
+        with self.assertRaises(Exception): unpack(parts[:-1])
+
+    def test_negative_control_can_never_be_merge_green(self):
+        result = q.summary({**self.plan, "profile": "negative-control"}, [self.receipt], 2)
+        self.assertEqual(result["status"], "FAIL")
+
+    def test_network_receipt_rechecked_by_gate(self):
+        plan = {**self.plan, "selected": ["smoke"]}
+        for network in (None, {"denied": 1, "realPosts": 0}, {"denied": 0, "realPosts": 1}):
+            self.assertEqual(q.summary(plan, [{**self.receipt, "suite": "smoke", "network": network}], 2)["status"], "FAIL")
+
     def test_exact_complete_receipts_pass(self):
         self.assertEqual(q.summary(self.plan, [self.receipt], 2)["status"], "PASS")
 

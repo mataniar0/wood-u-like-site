@@ -41,17 +41,27 @@ async function api(context){
  }
 }
 async function secureContext(context){
- contexts.add(context);const close=context.close.bind(context);
- context.close=async(...args)=>{await Promise.all(pending);contexts.delete(context);return close(...args);};
+ contexts.add(context);const close=context.close.bind(context),inFlight=new Set();let closing=false,closed;
+ context.close=(...args)=>closed||=(async()=>{
+  closing=true;
+  // route.fetch owns an APIRequestContext. Drain existing handlers before
+  // disposing that context; new requests during teardown are aborted.
+  await Promise.allSettled([...inFlight]);await Promise.all(pending);
+  contexts.delete(context);return close(...args);
+ })();
  await api(context.request);
  const route=context.route.bind(context);
- context.route=async(pattern,handler,options)=>route(pattern,async(r,request)=>{
+ context.route=async(pattern,handler,options)=>route(pattern,(r,request)=>{
+  const task=(async()=>{
+  if(closing)return r.abort();
   if(r.__qaGuarded)return handler(r,request);r.__qaGuarded=true;
   const fetch=r.fetch.bind(r),fulfill=r.fulfill.bind(r);
   r.fetch=async(opts={})=>{allow(opts.url||request.url(),opts.method||request.method());const response=await fetch({...opts,maxRedirects:0});const target=response.headers().location;if(target)allow(new URL(target,request.url()).href);return response;};
   r.continue=async(opts={})=>{const response=await r.fetch(opts);return fulfill({response});};
   r.fulfill=async(opts)=>{if(mock(request.url(),request.method()))stats.mockedPosts++;return fulfill(opts);};
   return handler(r,request);
+  })();
+  inFlight.add(task);task.then(()=>inFlight.delete(task),()=>inFlight.delete(task));return task;
  },options);
  await context.route("**/*",r=>r.continue());
  await context.routeWebSocket("**/*",ws=>{stats.denied++;stats.unexpectedExternal++;ws.close();});
@@ -69,9 +79,8 @@ for(const type of [playwright.chromium,playwright.firefox,playwright.webkit]){
  type.launch=async options=>{
   const browser=await launch(options),create=browser.newContext.bind(browser);
   const close=browser.close.bind(browser);
-  browser.close=async(...args)=>{await Promise.all(pending);return close(...args);};
+  browser.close=async(...args)=>{await Promise.all(browser.contexts().map(c=>c.close()));await Promise.all(pending);return close(...args);};
   browser.newContext=async opts=>secureContext(await create({...opts,serviceWorkers:"block"}));
-  browser.newPage=async opts=>(await browser.newContext(opts)).newPage();
   return browser;
  };
 }
