@@ -99,6 +99,8 @@ def select(changes, catalog, mode="pr", diff_error=False, branch=None):
         if name.startswith((".github/", "qa/")) and not name.startswith("qa/assets/") or name in ("package.json", "package-lock.json", ".gitignore"):
             full = True; manual_review = True; reasons.append("QA configuration/contract change: independent review + full"); continue
         if name.startswith("tools/"):
+            if status == "A" and Path(name).name.startswith("test"):
+                full = True; manual_review = True; reasons.append("new test file: full fallback"); continue
             if name in ("tools/leads_report.py", "tools/test_leads_report.py"):
                 continue
             full = True; manual_review = True; reasons.append("test infrastructure or unclassified tool: full"); continue
@@ -261,6 +263,9 @@ def execute(name, out, baseline, base_url, selection, timeout=2400):
               "log": f"{name}/suite.log", "screenshots": len(list(folder.rglob("*.png")))}
     write(folder / "receipt.json", result)
     print(f"{status} {name}: {result['seconds']}s, exit={code}", flush=True)
+    if status != "PASS" and os.environ.get("GITHUB_ACTIONS") == "true":
+        diagnostic = safe_log[-3000:].replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+        print("::notice title=WUL023_FAILURE_" + name + "::" + diagnostic, flush=True)
     return result
 
 
