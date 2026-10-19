@@ -1,0 +1,53 @@
+name: QA artifact diagnostics (read only)
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Existing run in this repository; read artifacts without executing their contents
+        type: string
+        required: true
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: qa-diagnostics-${{ inputs.run_id }}
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Validate numeric run ID
+        env:
+          QA_RUN_ID: ${{ inputs.run_id }}
+        run: |
+          python3 - <<'PY'
+          import os,re
+          assert re.fullmatch(r'[0-9]{1,20}',os.environ['QA_RUN_ID'])
+          PY
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333
+        with:
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ inputs.run_id }}
+          pattern: qa-*
+          path: evidence
+      - name: Read JSON and sanitized failure tails; never execute downloaded files
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,re
+          def notice(title,text):
+              text=text.replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+              print('::notice title='+title+'::'+text,flush=True)
+          for p in pathlib.Path('evidence').rglob('QA_SUMMARY.json'):
+              value=json.loads(p.read_text())
+              notice('WUL023_SUMMARY',json.dumps(value,ensure_ascii=False,separators=(',',':')))
+          for p in pathlib.Path('evidence').rglob('receipt.json'):
+              value=json.loads(p.read_text())
+              if value['status']!='PASS':
+                  log=p.parent/'suite.log'
+                  text=log.read_text()[-4000:] if log.exists() else 'Missing suite log'
+                  text=re.sub(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}','[contact-redacted]',text)
+                  text=re.sub(r'gh[pousr]_[A-Za-z0-9]{20,}|AKIA[A-Z0-9]{16}','[credential-redacted]',text)
+                  notice('WUL023_FAILURE_'+value['suite'],text)
+          PY
