@@ -1,0 +1,374 @@
+[
+  {
+    "synthetic": true,
+    "id": 10000000001,
+    "run_attempt": 1,
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "qa / Required QA gate",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "artifacts": [
+      {
+        "id": 10000000002,
+        "expired": false
+      }
+    ],
+    "summary": {
+      "status": "PASS",
+      "run_id": "10000000001",
+      "run_attempt": "1",
+      "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "selected": [
+        "static",
+        "contract",
+        "assets",
+        "leads",
+        "pipeline-unit",
+        "language",
+        "hero",
+        "homepage",
+        "legacy",
+        "collections",
+        "accessibility",
+        "product-pages",
+        "inquiry",
+        "privacy",
+        "attribution",
+        "clock",
+        "oval-room-signs",
+        "natural-door-sign",
+        "family-sign",
+        "schwartz-sign",
+        "pizza-peel"
+      ],
+      "suites": [
+        {
+          "suite": "static",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": null
+        },
+        {
+          "suite": "contract",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": null
+        },
+        {
+          "suite": "assets",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": null
+        },
+        {
+          "suite": "leads",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": null
+        },
+        {
+          "suite": "pipeline-unit",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": null
+        },
+        {
+          "suite": "language",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "hero",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "homepage",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "legacy",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "collections",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "accessibility",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "product-pages",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "inquiry",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 4
+          }
+        },
+        {
+          "suite": "privacy",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "attribution",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "clock",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "oval-room-signs",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "natural-door-sign",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "family-sign",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "schwartz-sign",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        },
+        {
+          "suite": "pizza-peel",
+          "status": "PASS",
+          "exit_code": 0,
+          "tested_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "source_fingerprint": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "seconds": 1.0,
+          "retry_count": 0,
+          "network": {
+            "realPosts": 0,
+            "unexpectedExternal": 0,
+            "denied": 0,
+            "mockedPosts": 0
+          }
+        }
+      ],
+      "real_posts": 0,
+      "unexpected_external": 0,
+      "missing": [],
+      "failed": [],
+      "unexpected_receipts": [],
+      "duplicate_receipts": false,
+      "schema_version": 1
+    }
+  }
+]

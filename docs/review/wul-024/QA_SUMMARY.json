@@ -1,0 +1,94 @@
+{
+  "task": "WUL-024",
+  "issue": "https://github.com/mataniar0/wood-u-like-site/issues/44",
+  "base_sha": "e6d92cd53f8fcf482672461701798c3e43997232",
+  "report_kind": "developer handoff, not independent QA",
+  "status": "CI_PASS_SNAPSHOT_AWAITING_INDEPENDENT_REVIEW",
+  "synthetic_acceptance_cases": 27,
+  "new_test_methods": 7,
+  "local_protocol_tests": "PASS: 7 methods, 27 scenarios",
+  "local_combined_tests": "FAIL: 26 methods, one environment error (missing yaml after npm cache failure)",
+  "local_document_and_preservation_checks": "PASS",
+  "independent_review_performed": false,
+  "independent_qa_score": null,
+  "correction_cycles": {
+    "product": 0,
+    "tool_and_docs": 2,
+    "ci": 0
+  },
+  "environment_adjustments": 1,
+  "new_ai_services": 0,
+  "tool_model_api_calls": 0,
+  "total_billing": "UNVERIFIED",
+  "runtime_files_changed": 0,
+  "contact_flags_changed": false,
+  "live_posts": 0,
+  "unexpected_external_requests": 0,
+  "merged": false,
+  "deployed": false,
+  "changed_file_count": 16,
+  "snapshot_tested_sha": "ba0f7b8879da85d38943402195245735e252e49b",
+  "source_fingerprint": "f0e930c936f97ebe3ff8372bb6918bdb35f11bc943bc5e744dfd4f0e34e3f50f",
+  "final_head_evidence": "https://github.com/mataniar0/wood-u-like-site/pull/48/checks",
+  "snapshot_limit": "Committed report records this completed run. Current PR HEAD and its new Actions run must be checked separately; exact final evidence is linked in the PR description.",
+  "ci_snapshot": {
+    "run_id": 39421365392,
+    "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392",
+    "event": "pull_request",
+    "status": "PASS",
+    "profile": "full",
+    "suite_pass_count": 21,
+    "pipeline_unit_methods": 26,
+    "leads_unit_methods": 33,
+    "workflow_wall_seconds": 348.0,
+    "observed_child_cpu_seconds": 438.944,
+    "retry_count": 0,
+    "screenshots": 418,
+    "compressed_artifact_bytes": 152334225,
+    "artifact_urls": [
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12264875122",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12264415083",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12264126436",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12264046458",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12264030984",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12263861257",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12263851079",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12263731544",
+      "https://github.com/mataniar0/wood-u-like-site/actions/runs/39421365392/artifacts/12263339826"
+    ]
+  },
+  "mocked_posts": 242,
+  "counter_scope": {
+    "run_id": 39421365392,
+    "scope": "selected browser suites only",
+    "source": "QA_SUMMARY.suites[].network from WUL-023 selected browser receipts"
+  },
+  "exporter_integration": {
+    "unfinished_run": "BLOCKED, exit 1",
+    "completed_matching_run": "READY_FOR_REVIEW",
+    "score_assigned": false,
+    "review_status_assigned": false,
+    "merge_authorized": false
+  },
+  "tests_not_executed_by_developer": [
+    "Independent ChatGPT review of this PR",
+    "Manual screen reader / Safari / Firefox",
+    "Live public Pages smoke",
+    "Live Formspree POST",
+    "Visual opening of all 418 generated regression PNGs"
+  ],
+  "source_assets": {
+    "runtime_diff": "empty",
+    "approved_asset_check": "PASS: 31 assets"
+  },
+  "privacy": {
+    "synthetic_review_examples_only": true,
+    "customer_data_in_examples": false,
+    "raw_ci_logs_committed": false,
+    "public_form_flags": [
+      false,
+      false,
+      false
+    ]
+  }
+}

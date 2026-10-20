@@ -260,3 +260,9 @@ python3 -B tools/qa.py --mode full --base origin/main --workers 4 --out artifact
 ב־Actions → ריצה → Artifacts נשמרים JSON/Markdown/logs/PNG ל־14 יום; התוצרים תחת `artifacts/` ו־`.cache/` אינם נכנסים ל־Git. כשל nightly מחייב אבחון ותיקון לפי ההשפעה על ה־PR. אין retry כללי שמסתיר assertion/CLS. Required QA gate ירוק על HEAD אינו מחליף סקירת ראש צוות עצמאית ≥90/100 ללא חוסמים. לא הופעלה אכיפת branch protection במשימה; נשמר gate ידני עד אימות הגדרות בידי אדמין.
 
 [מדריך הפעלה ו־troubleshooting](docs/review/wul-023/PIPELINE_RUNBOOK_HE.md), [מטריצת בחירה ומיפוי assertions](docs/review/wul-023/TEST_SELECTION_MATRIX.md), [דוח QA](docs/review/wul-023/REPORT_HE.md). הכיסוי הוא Chromium בלבד, ללא Safari/Firefox או קורא מסך ידני; no-JS שומר עברית סטטית. אין Merge, Deploy או הפעלת Formspree במסגרת המשימה.
+
+## WUL-024 — סקירת ראש צוות ב־ChatGPT
+
+Codex מפתח ומתקן, Actions מריץ בדיקות וראש הצוות ב־ChatGPT סוקר באופן עצמאי: [נוהל](docs/qa-agent/REVIEW_PLAYBOOK_HE.md), [Prompt למסירה](docs/qa-agent/CHATGPT_QA_PROMPT_HE.md), [תבנית דוח](docs/qa-agent/QA_REVIEW_HE.md), [triage לילי](docs/qa-agent/TRIAGE_RULES.md) ו־[דוגמאות סינתטיות](docs/qa-agent/examples/QA_REVIEW_HE.md). אין סוכן QA בתשלום או קריאת מודל אוטומטית; גם nightly FAIL מנותח בצ'אט רק בעקבות בקשה ושיתוף ראיות נגישות.
+
+כלי מקומי אופציונלי `tools/qa_review_bundle.py` מקצר פלט של `qa-evidence.py`, מסמן חוסר בראיות ולא נותן ציון או הרשאת merge. בדיקותיו: `python3 -B tools/test_qa_review_protocol.py`. PASS עצמאי ≥90 בלי חוסמים ו־HEAD/base/checks עדכניים נדרשים לפני החלטת ראש הצוות; nightly main אינו תחליף ל־PR. דגלי הטופס נשארים false. [דוח מסירה](docs/review/wul-024/REPORT_HE.md).

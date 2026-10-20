@@ -1,0 +1,303 @@
+{
+  "synthetic": true,
+  "warning": "Invented data and reviewer role-play, not independent QA of any real PR. Mutation names are test-fixture identifiers, not commands.",
+  "cases": [
+    {
+      "id": "matching_ci",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "PASS_RECOMMENDED",
+      "blocking_gate": false,
+      "manual_reason": null,
+      "qa_score": 94
+    },
+    {
+      "id": "failed_ci",
+      "mutation": "failed",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "new_untested_head",
+      "mutation": "head",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "sha",
+      "qa_score": null
+    },
+    {
+      "id": "moved_base",
+      "mutation": "base",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "base",
+      "qa_score": null
+    },
+    {
+      "id": "missing_check",
+      "mutation": "check",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "preflight_only",
+      "mutation": "preflight",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "missing_receipt",
+      "mutation": "receipt",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "coverage",
+      "qa_score": null
+    },
+    {
+      "id": "stale_receipt",
+      "mutation": "stale_receipt",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "sha",
+      "qa_score": null
+    },
+    {
+      "id": "missing_image",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "INSUFFICIENT_EVIDENCE",
+      "blocking_gate": true,
+      "manual_reason": "image_access",
+      "qa_score": null
+    },
+    {
+      "id": "missing_summary",
+      "mutation": "summary",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "missing_network_counter",
+      "mutation": "network",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "INSUFFICIENT_EVIDENCE",
+      "review_status": "INSUFFICIENT_EVIDENCE",
+      "blocking_gate": true,
+      "manual_reason": "counters",
+      "qa_score": null
+    },
+    {
+      "id": "live_post_even_score_99",
+      "mutation": "live",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "live_post",
+      "qa_score": 99
+    },
+    {
+      "id": "unauthorized_form_flag_score_99",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "form_flags",
+      "qa_score": 99
+    },
+    {
+      "id": "unexpected_external",
+      "mutation": "external",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "external",
+      "qa_score": null
+    },
+    {
+      "id": "nightly_pass_no_ai",
+      "mutation": "nightly",
+      "context": "nightly",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "INSUFFICIENT_EVIDENCE",
+      "blocking_gate": true,
+      "manual_reason": "no_pr_review",
+      "qa_score": null
+    },
+    {
+      "id": "nightly_fail_summary_only",
+      "mutation": "nightly_fail",
+      "context": "nightly",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "nightly_main_not_pr",
+      "mutation": "nightly",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "wrong_target",
+      "qa_score": null
+    },
+    {
+      "id": "weakened_selector_green",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "weakened_assertion",
+      "qa_score": null
+    },
+    {
+      "id": "reviewer_authored_code",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "independence",
+      "qa_score": null
+    },
+    {
+      "id": "private_material",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "privacy",
+      "qa_score": null
+    },
+    {
+      "id": "score_below_90",
+      "mutation": "none",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "CHANGES_REQUIRED",
+      "blocking_gate": true,
+      "manual_reason": "score",
+      "qa_score": 89
+    },
+    {
+      "id": "expired_artifacts",
+      "mutation": "artifacts",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "INSUFFICIENT_EVIDENCE",
+      "review_status": "INSUFFICIENT_EVIDENCE",
+      "blocking_gate": true,
+      "manual_reason": "artifacts",
+      "qa_score": null
+    },
+    {
+      "id": "environment_failure_not_pass",
+      "mutation": "environment",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "ci",
+      "qa_score": null
+    },
+    {
+      "id": "duplicate_receipts",
+      "mutation": "duplicate",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "coverage",
+      "qa_score": null
+    },
+    {
+      "id": "run_identity_mismatch",
+      "mutation": "run_id",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "run",
+      "qa_score": null
+    },
+    {
+      "id": "counter_sum_mismatch",
+      "mutation": "sum",
+      "context": "pr",
+      "risk": "high",
+      "expected_ci_readiness": "BLOCKED",
+      "review_status": "BLOCKED",
+      "blocking_gate": true,
+      "manual_reason": "counters",
+      "qa_score": null
+    },
+    {
+      "id": "docs_no_browser_not_zero",
+      "mutation": "docs",
+      "context": "pr",
+      "risk": "docs",
+      "expected_ci_readiness": "READY_FOR_REVIEW",
+      "review_status": "PASS_RECOMMENDED",
+      "blocking_gate": false,
+      "manual_reason": null,
+      "qa_score": 94
+    }
+  ]
+}

@@ -20,7 +20,7 @@ SUITES = {
     "contract": ["node", "tools/check-collection-contract.cjs"],
     "assets": ["python3", "tools/verify-oval-room-assets.py"],
     "leads": ["python3", "-B", "tools/test_leads_report.py"],
-    "pipeline-unit": ["python3", "-B", "tools/test_qa_pipeline.py"],
+    "pipeline-unit": ["python3", "-B", "-m", "unittest", "discover", "-s", "tools", "-p", "test_qa_*.py", "-v"],
     "collections": ["node", "tools/check-collections.cjs"],
     "product-pages": ["node", "tools/check-product-pages.cjs"],
     "inquiry": ["node", "tools/check-inquiry.cjs"],
