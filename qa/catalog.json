@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "version": "wul-023-v1",
+  "collections": [
+    {
+      "slug": "home-decor",
+      "name": {
+        "he": "שלטים ועיצוב לבית",
+        "en": "Home Signs & Decor"
+      },
+      "route": "collections/home-decor/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/home-decor/",
+      "products": [
+        "welcome",
+        "family-sign",
+        "hanging-home-sign",
+        "oval-room-signs",
+        "natural-edge-door-sign"
+      ]
+    },
+    {
+      "slug": "kitchen-hosting",
+      "name": {
+        "he": "מטבח ואירוח",
+        "en": "Kitchen & Hosting"
+      },
+      "route": "collections/kitchen-hosting/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/kitchen-hosting/",
+      "products": [
+        "kitchen",
+        "pizza-peel"
+      ]
+    },
+    {
+      "slug": "judaica-tradition",
+      "name": {
+        "he": "יודאיקה ומסורת",
+        "en": "Judaica & Tradition"
+      },
+      "route": "collections/judaica-tradition/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/judaica-tradition/",
+      "products": [
+        "blessing"
+      ]
+    },
+    {
+      "slug": "gifts-memories",
+      "name": {
+        "he": "מתנות וזיכרונות",
+        "en": "Gifts & Memories"
+      },
+      "route": "collections/gifts-memories/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/collections/gifts-memories/",
+      "products": [
+        "personalized-clock"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "product_id": "welcome",
+      "collection": "home-decor",
+      "route": "products/welcome/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/welcome/",
+      "inquiry": "../../inquiry/?product=welcome",
+      "name": {
+        "he": "שלט ברוכים הבאים",
+        "en": "Welcome sign"
+      },
+      "title_key": "product.welcome.title",
+      "description_key": "product.welcome.copy",
+      "summary_key": "catalog.welcome.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/hero-welcome.webp",
+          "width": 1024,
+          "height": 771,
+          "small_src": "assets/images/hero-welcome-small.webp",
+          "small_width": 480,
+          "alt_key": "image.welcomeOval"
+        }
+      ],
+      "collection_route": "collections/home-decor/"
+    },
+    {
+      "product_id": "family-sign",
+      "collection": "home-decor",
+      "route": "products/family-sign/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/family-sign/",
+      "inquiry": "../../inquiry/?product=family-sign",
+      "name": {
+        "he": "שלט משפחתי לדלת",
+        "en": "Personalized wooden door sign"
+      },
+      "title_key": "product.family.title",
+      "description_key": "product.family.copy",
+      "summary_key": "catalog.family-sign.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/family-sign.webp",
+          "width": 1410,
+          "height": 920,
+          "small_src": "assets/images/family-sign-small.webp",
+          "small_width": 640,
+          "alt_key": "image.family"
+        }
+      ],
+      "collection_route": "collections/home-decor/"
+    },
+    {
+      "product_id": "hanging-home-sign",
+      "collection": "home-decor",
+      "route": "products/hanging-home-sign/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/hanging-home-sign/",
+      "inquiry": "../../inquiry/?product=hanging-home-sign",
+      "name": {
+        "he": "שלט תלוי לבית",
+        "en": "Personalized hanging wooden home sign"
+      },
+      "title_key": "product.schwartz.title",
+      "description_key": "product.schwartz.copy",
+      "summary_key": "catalog.hanging-home-sign.summary",
+      "mockup": true,
+      "images": [
+        {
+          "src": "assets/images/schwartz-home-sign.webp",
+          "width": 1448,
+          "height": 1086,
+          "small_src": "assets/images/schwartz-home-sign-small.webp",
+          "small_width": 640,
+          "alt_key": "image.schwartz"
+        }
+      ],
+      "collection_route": "collections/home-decor/"
+    },
+    {
+      "product_id": "oval-room-signs",
+      "collection": "home-decor",
+      "route": "products/oval-room-signs/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/oval-room-signs/",
+      "inquiry": "../../inquiry/?product=oval-room-signs",
+      "name": {
+        "he": "שלטי חדר אליפטיים",
+        "en": "Personalized Oval Room Signs"
+      },
+      "title_key": "product.ovalRoomSigns.title",
+      "description_key": "product.ovalRoomSigns.copy",
+      "summary_key": "catalog.oval-room-signs.summary",
+      "mockup": false,
+      "collection_route": "collections/home-decor/",
+      "images": [
+        {
+          "src": "assets/images/oval-room-signs.webp",
+          "width": 1200,
+          "height": 594,
+          "small_src": "assets/images/oval-room-signs-small.webp",
+          "small_width": 480,
+          "alt_key": "image.ovalRoomSigns"
+        }
+      ]
+    },
+    {
+      "product_id": "kitchen",
+      "collection": "kitchen-hosting",
+      "route": "products/kitchen/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/kitchen/",
+      "inquiry": "../../inquiry/?product=kitchen",
+      "name": {
+        "he": "קרש מטבח חרוט",
+        "en": "Engraved kitchen board"
+      },
+      "title_key": "product.kitchen.title",
+      "description_key": "product.kitchen.copy",
+      "summary_key": "catalog.kitchen.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/kitchen-board.webp",
+          "width": 1200,
+          "height": 900,
+          "small_src": "assets/images/kitchen-board-small.webp",
+          "small_width": 480,
+          "alt_key": "image.kitchenUtensils"
+        }
+      ],
+      "collection_route": "collections/kitchen-hosting/"
+    },
+    {
+      "product_id": "pizza-peel",
+      "collection": "kitchen-hosting",
+      "route": "products/pizza-peel/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/pizza-peel/",
+      "inquiry": "../../inquiry/?product=pizza-peel",
+      "name": {
+        "he": "מרדה לפיצה",
+        "en": "Personalized Pizza Peel"
+      },
+      "title_key": "product.pizzaPeel.title",
+      "description_key": "product.pizzaPeel.copy",
+      "summary_key": "catalog.pizza-peel.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/pizza-peel.webp",
+          "width": 1086,
+          "height": 1448,
+          "small_src": "assets/images/pizza-peel-small.webp",
+          "small_width": 640,
+          "alt_key": "image.pizzaPeel"
+        }
+      ],
+      "collection_route": "collections/kitchen-hosting/"
+    },
+    {
+      "product_id": "blessing",
+      "collection": "judaica-tradition",
+      "route": "products/blessing/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/blessing/",
+      "inquiry": "../../inquiry/?product=blessing",
+      "name": {
+        "he": "ברכת הדלקת נרות",
+        "en": "Candle-lighting blessing"
+      },
+      "title_key": "product.blessing.title",
+      "description_key": "product.blessing.copy",
+      "summary_key": "catalog.blessing.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/judaica-blessing.webp",
+          "width": 834,
+          "height": 1024,
+          "small_src": "assets/images/judaica-blessing-small.webp",
+          "small_width": 480,
+          "alt_key": "image.blessingStand"
+        }
+      ],
+      "collection_route": "collections/judaica-tradition/"
+    },
+    {
+      "product_id": "personalized-clock",
+      "collection": "gifts-memories",
+      "route": "products/personalized-clock/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/personalized-clock/",
+      "inquiry": "../../inquiry/?product=personalized-clock",
+      "name": {
+        "he": "שעון עץ בחריטה אישית",
+        "en": "Personalized Engraved Wooden Clock"
+      },
+      "title_key": "product.clock.title",
+      "description_key": "product.clock.copy",
+      "summary_key": "catalog.personalized-clock.summary",
+      "mockup": false,
+      "images": [
+        {
+          "src": "assets/images/personalized-clock-front.webp",
+          "width": 1200,
+          "height": 1259,
+          "small_src": "assets/images/personalized-clock-front-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.front.alt"
+        },
+        {
+          "src": "assets/images/personalized-clock-handheld-detail.webp",
+          "width": 640,
+          "height": 640,
+          "small_src": "assets/images/personalized-clock-handheld-detail-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.detail.alt"
+        },
+        {
+          "src": "assets/images/personalized-clock-hanging.webp",
+          "width": 1200,
+          "height": 1150,
+          "small_src": "assets/images/personalized-clock-hanging-small.webp",
+          "small_width": 600,
+          "alt_key": "clock.gallery.hanging.alt"
+        }
+      ],
+      "collection_route": "collections/gifts-memories/"
+    },
+    {
+      "product_id": "natural-edge-door-sign",
+      "collection": "home-decor",
+      "route": "products/natural-edge-door-sign/",
+      "canonical": "https://mataniar0.github.io/wood-u-like-site/products/natural-edge-door-sign/",
+      "inquiry": "../../inquiry/?product=natural-edge-door-sign",
+      "name": {
+        "he": "שלט עץ טבעי לדלת",
+        "en": "Natural Wood Door Sign"
+      },
+      "title_key": "product.naturalDoor.title",
+      "description_key": "product.naturalDoor.copy",
+      "summary_key": "catalog.natural-edge-door-sign.summary",
+      "mockup": true,
+      "images": [
+        {
+          "src": "assets/images/natural-edge-door-sign-product.webp",
+          "width": 1200,
+          "height": 1200,
+          "small_src": "assets/images/natural-edge-door-sign-product-small.webp",
+          "small_width": 600,
+          "alt_key": "naturalDoor.product.alt"
+        },
+        {
+          "src": "assets/images/natural-edge-door-sign-door.webp",
+          "width": 1122,
+          "height": 1402,
+          "small_src": "assets/images/natural-edge-door-sign-door-small.webp",
+          "small_width": 600,
+          "alt_key": "naturalDoor.door.alt"
+        }
+      ],
+      "collection_route": "collections/home-decor/"
+    }
+  ],
+  "legacy_product_ids": [
+    "blessing",
+    "welcome",
+    "kitchen",
+    "family-sign",
+    "hanging-home-sign",
+    "pizza-peel",
+    "personalized-clock"
+  ]
+}

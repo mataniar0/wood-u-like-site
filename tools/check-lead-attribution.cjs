@@ -1,4 +1,5 @@
 "use strict";
+require("./qa-config.cjs");
 const collectionFor = id => ["welcome","family-sign","hanging-home-sign","oval-room-signs","natural-edge-door-sign"].includes(id) ? "home-decor" : ["kitchen","pizza-peel"].includes(id) ? "kitchen-hosting" : id === "blessing" ? "judaica-tradition" : "gifts-memories";
 
 
@@ -9,12 +10,12 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8008/wood-u-like-site/";
+const base = process.env.WUL_BASE_URL;
 const origin = new URL(base).origin;
 const inquiry = new URL("inquiry/", base).href;
 const endpoint = "https://formspree.io/f/wulqatest";
 const campaignKey = "wood-u-like-campaign";
-const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-012/attribution");
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR);
 const approved = {
   formEndpoint: endpoint,
   formDestinationApproved: true,
@@ -66,7 +67,7 @@ function record(test, language, details = {}) {
 
 (async () => {
   const browser = await chromium.launch({
-    executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium",
+    executablePath: process.env.WUL_CHROMIUM,
     args: ["--no-sandbox"],
   });
   async function setup(lang, options = {}) {

@@ -1,9 +1,10 @@
 "use strict";
+require("./qa-config.cjs");
 // Every specified legacy fragment: direct load, refresh, a physical Enter on a
 // native hash link, target focus, visibility, and the correct natural route.
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups,products}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/legacy');
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR);
 const targets=[{id:'favorites',kind:'collections',next:'#collections'},
  {id:'original-gifts',kind:'collection',slug:'gifts-memories'},
  ...groups.map(g=>({id:'collection-'+g.slug,kind:'collection',slug:g.slug})),

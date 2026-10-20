@@ -1,0 +1,89 @@
+[
+  {
+    "role": "front",
+    "original": "image(20261015-193031).png",
+    "crop_original_coordinates": [
+      105,
+      315,
+      1435,
+      1710
+    ],
+    "full": {
+      "file": "assets/images/personalized-clock-front.webp",
+      "dimensions": [
+        1200,
+        1259
+      ],
+      "bytes": 164802,
+      "sha256": "161a4eeecc69f8eb46a2eeb36d72201dbe8503e6459d8d8d031b45cd575b10c1"
+    },
+    "small": {
+      "file": "assets/images/personalized-clock-front-small.webp",
+      "dimensions": [
+        600,
+        630
+      ],
+      "bytes": 43268,
+      "sha256": "cc6d0800e442a7505d39a91efb79dbc80d81fdd845b2c25e85bffd1b3228b8ac"
+    },
+    "description": "Front view of the engraved round clock"
+  },
+  {
+    "role": "handheld-detail",
+    "original": "image(20261015-193042).png",
+    "crop_original_coordinates": [
+      550,
+      800,
+      1190,
+      1440
+    ],
+    "full": {
+      "file": "assets/images/personalized-clock-handheld-detail.webp",
+      "dimensions": [
+        640,
+        640
+      ],
+      "bytes": 47040,
+      "sha256": "2114c8398b4c3b6850fd08f4c39f37f257a3a5bddae2bf2659ed82f4832bbc13"
+    },
+    "small": {
+      "file": "assets/images/personalized-clock-handheld-detail-small.webp",
+      "dimensions": [
+        600,
+        600
+      ],
+      "bytes": 37730,
+      "sha256": "6ab63f50ad35961750bef4aceb62f7c9f05c918f90e93da0ef580cb2a1795c18"
+    },
+    "description": "Close-up of the clock held in hands"
+  },
+  {
+    "role": "hanging",
+    "original": "image(20261015-193237).png",
+    "crop_original_coordinates": [
+      270,
+      65,
+      1710,
+      1445
+    ],
+    "full": {
+      "file": "assets/images/personalized-clock-hanging.webp",
+      "dimensions": [
+        1200,
+        1150
+      ],
+      "bytes": 110770,
+      "sha256": "729cadae1821da6e31b1b50d81aa4fbe9ecdb925a77c0402bb724d4f4e50e61a"
+    },
+    "small": {
+      "file": "assets/images/personalized-clock-hanging-small.webp",
+      "dimensions": [
+        600,
+        575
+      ],
+      "bytes": 32392,
+      "sha256": "d8d195208d27015ce8fd10486055ef9db8e01f68150827c03a977264b8f60462"
+    },
+    "description": "Clock displayed against a rustic wooden board"
+  }
+]

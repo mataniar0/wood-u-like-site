@@ -1,10 +1,11 @@
 "use strict";
+require("./qa-config.cjs");
 // Shared replacement for the three previously duplicated product regressions.
 // Preserve identity/approved bytes, alt, contain, responsive sources, both
 // navigation paths, blocked requestSubmit, language changes and axe assertions.
 const q=require('./qa-collections-shared.cjs');
 module.exports=async function run(ids,folder){
- const {assert,path,root,base,products,viewports}=q,out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/regression/'+folder);
+ const {assert,path,root,base,products,viewports}=q,out=path.resolve(root,process.env.WUL_REVIEW_DIR);
  const result={task:'WUL-020',products:ids,scenarios:[],requests:{unexpectedSubmissions:0,unexpectedExternal:0,realInquiries:0}};const b=await q.launch();let decoderContext;
  try{decoderContext=await b.newContext();const decoder=await decoderContext.newPage();
   for(const [width,height]of viewports)for(const language of['he','en']){const s=await q.session(b,{width,height,language});try{

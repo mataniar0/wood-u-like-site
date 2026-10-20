@@ -1,0 +1,97 @@
+{
+  "definition": "A correction cycle is an observed failing acceptance/verification, diagnosis, change and affected rerun; superseded cancellations and deliberately red controls are not product failures. Review hardening is listed separately.",
+  "counts": {
+    "product": 0,
+    "harness": 4,
+    "ci_reporting_setup": 2,
+    "code_total": 6,
+    "environment_adaptations": 3
+  },
+  "cycles": [
+    {
+      "id": "H1",
+      "category": "harness",
+      "failure": "Current registry contract assumed quoted object keys; blessing/welcome/kitchen are unquoted",
+      "fix": "Anchored quoted-or-unquoted current registry assertion, unchanged exactly-once requirement",
+      "after": "contract PASS: 9 products, 4 collections, 256 translation keys; all full runs"
+    },
+    {
+      "id": "H2",
+      "category": "harness",
+      "before_run": 39314896172,
+      "failure": "route.fetch request context disposed during image request teardown (17/21 PASS)",
+      "fix": "Drain active guarded route handlers before context.close; abort new teardown requests; retain browser.newPage ownership",
+      "after_run": 39380534612,
+      "after": "21/21 PASS"
+    },
+    {
+      "id": "H3",
+      "category": "harness",
+      "before_run": 39316589744,
+      "failure": "Product navigation checked empty selection before inquiry.js finished (20/21 PASS)",
+      "fix": "Wait for exact inquiry URL and document load before the same ID assertion",
+      "after_run": 39380534612,
+      "after": "21/21 PASS, product-pages PASS"
+    },
+    {
+      "id": "H4",
+      "category": "harness",
+      "before_run": 39316633690,
+      "failure": "Intentional timeout was correctly red/124 but had zero PNG evidence",
+      "fix": "Own SIGTERM capture, pre-wait synthetic screenshot; negative-control-only budget 15s; normal suite budget unchanged",
+      "after_run": 39380566076,
+      "after": "Expected red/124 with two PNGs"
+    },
+    {
+      "id": "C1",
+      "category": "ci_reporting_setup",
+      "failure": "New dispatch-only diagnostics workflow was not registered before default-branch integration (404)",
+      "fix": "Scoped push registration, diagnostic job still manual-only",
+      "after_run": 39316224101,
+      "after": "Read-only diagnostics completed"
+    },
+    {
+      "id": "C2",
+      "category": "ci_reporting_setup",
+      "before_run": 39316224101,
+      "failure": "Raw summary annotation truncated by GitHub 4 KiB limit; JSON decode failed",
+      "fix": "Lossless gzip/base64 chunks <=2800 chars with completeness checks and roundtrip unit test",
+      "after_runs": [
+        39316619195,
+        39316624295
+      ],
+      "after": "Complete original failed and passing full summaries recovered through Checks API"
+    }
+  ],
+  "environment_adaptations": [
+    {
+      "id": "E1",
+      "observed": "Local npm home cache inaccessible",
+      "adaptation": "Explicit temporary local cache; no change to registry TLS/integrity"
+    },
+    {
+      "id": "E2",
+      "observed": "Local Playwright CDN download forbidden (403)",
+      "adaptation": "Explicit installed Chromium override only for local smoke; actual CI proves clean pinned Playwright Chromium provisioning"
+    },
+    {
+      "id": "E3",
+      "observed": "Direct Azure-backed artifact/log downloads forbidden from this cloud, still 403 on retry",
+      "adaptation": "Read-only same-repository Actions diagnostics successfully downloads artifacts and publishes sanitized lossless evidence; no network bypass or credential request"
+    }
+  ],
+  "review_hardening": [
+    "New test A status falls back full even for a known leads-test path",
+    "Unknown PR branch forces full/manual review",
+    "Gate rechecks network receipts and refuses negative controls as green merge proof",
+    "Page/context/API methods and in-memory fulfill use the firewall; redirect/service worker/WebSocket restrictions remain",
+    "YAML rejects null pull_request_target, job permission widening and inherited secrets; official actions use Node24 and immutable SHAs",
+    "Changed HTML/CSS/CSV/TSV and current public HTML/JS/CSS are privacy-scanned; raw documents/media/databases are rejected"
+  ],
+  "superseded_cancelled_runs": [
+    39315799238,
+    39316098202,
+    39316210828
+  ],
+  "automatic_retries": 0
+}

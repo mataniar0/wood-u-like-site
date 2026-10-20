@@ -1,0 +1,24 @@
+name: QA Nightly
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      target_ref:
+        description: Branch or commit (default main); manual branch runs are not scheduled main evidence
+        type: string
+        default: main
+  push:
+    branches: [feature/wul-023-automated-qa]
+permissions:
+  contents: read
+concurrency:
+  group: qa-nightly-${{ inputs.target_ref || 'main' }}
+  cancel-in-progress: false
+jobs:
+  qa:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[qa-full]')
+    uses: ./.github/workflows/qa-run.yml
+    with:
+      mode: full
+      target_ref: ${{ github.event_name == 'push' && github.sha || inputs.target_ref || 'main' }}

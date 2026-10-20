@@ -1,0 +1,19 @@
+{
+  "name": "wood-u-like-qa",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Development-only QA; public site remains static",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "qa:fast": "python3 tools/qa.py --mode pr",
+    "qa:full": "python3 tools/qa.py --mode full",
+    "qa:unit": "python3 -B tools/test_qa_pipeline.py"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "axe-core": "4.10.3",
+    "yaml": "2.8.1"
+  }
+}

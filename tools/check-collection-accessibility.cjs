@@ -1,7 +1,8 @@
 "use strict";
+require("./qa-config.cjs");
 const q=require('./qa-collections-shared.cjs');
 const {assert,path,root,base,groups}=q;
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-021/integration/accessibility');
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR);
 const result={task:'WUL-021 Integration V2',scenarios:[]};
 (async()=>{const b=await q.launch();let decoderContext;try{
  decoderContext=await b.newContext();const decoder=await decoderContext.newPage();

@@ -1,4 +1,5 @@
 "use strict";
+require("./qa-config.cjs");
 
 // Focused WUL-014 QA. Every external request and every POST is intercepted;
 // this runner never enables sending and never contacts a live inquiry service.
@@ -9,12 +10,12 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 
 const root = path.resolve(__dirname, "..");
-const out = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-014");
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8009/wood-u-like-site/";
+const out = path.resolve(root, process.env.WUL_REVIEW_DIR);
+const base = process.env.WUL_BASE_URL;
 const origin = new URL(base).origin;
 const productUrl = new URL("products/personalized-clock/", base).href;
-const approvedReview = path.join(root, "docs/review/wul-014");
-const manifestPath = path.join(approvedReview, "PHOTO_MANIFEST.json");
+const approvedReview = path.join(root, "qa");
+const manifestPath = path.join(approvedReview, "clock-assets.json");
 const names = { he: "שעון עץ בחריטה אישית", en: "Personalized Engraved Wooden Clock" };
 const photoNames = ["front", "handheld-detail", "hanging"];
 const viewports = [[320, 568], [390, 844], [768, 1024], [1024, 768], [1440, 900]];
@@ -201,7 +202,7 @@ async function assertFocus(page, button) {
     return { file: asset.file, sha256: asset.sha256, bytes: bytes.length, dimensions: asset.dimensions, status: "PASS" };
   }));
 
-  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium", args: ["--no-sandbox"] });
+  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM, args: ["--no-sandbox"] });
   try {
     const assetContext = await safeContext(browser);
     const assetPage = await assetContext.newPage();

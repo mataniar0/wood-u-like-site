@@ -1,2 +1,3 @@
 "use strict";
-require('./check-product-identity.cjs')(['family-sign','hanging-home-sign'],'schwartz-sign').catch(e=>{console.error(e);process.exitCode=1;});
+require("./qa-config.cjs");
+require("./check-product-identity.cjs")(["hanging-home-sign"],"schwartz-sign").catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,8 +1,9 @@
 "use strict";
+require("./qa-config.cjs");
 const q=require('./qa-collections-shared.cjs');
 const {assert,fs,path,root,base,products}=q;
 const product=products.find(p=>p.product_id==='oval-room-signs');
-const out=path.resolve(root,process.env.WUL_REVIEW_DIR||'docs/review/wul-020/oval-room-signs');
+const out=path.resolve(root,process.env.WUL_REVIEW_DIR);
 const result={task:'WUL-020',scenarios:[],mockedPosts:0,realInquiries:0};
 function save(status,extra={}){q.write(out,'results.json',{...result,status,...extra});}
 (async()=>{const browser=await q.launch();let decoderContext;

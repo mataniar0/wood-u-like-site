@@ -8,3 +8,7 @@ node_modules/
 !.env.example
 __pycache__/
 *.log
+
+# Ephemeral QA evidence; uploaded to Actions, never committed automatically.
+artifacts/
+.cache/

@@ -1,12 +1,13 @@
 "use strict";
+require("./qa-config.cjs");
 const { spawnSync } = require("node:child_process");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
 const root = path.resolve(__dirname, "..");
-const output = path.resolve(root, process.env.WUL_REVIEW_DIR || "docs/review/wul-005");
-const base = process.env.WUL_BASE_URL || "http://127.0.0.1:8001/wood-u-like-site/";
+const output = path.resolve(root, process.env.WUL_REVIEW_DIR);
+const base = process.env.WUL_BASE_URL;
 let blockedRequests = 0;
 // A focused rerun may reuse a separately completed language regression; the
 // default still executes it before the Hero-specific matrix.
@@ -18,7 +19,7 @@ if (process.env.WUL_SKIP_LANGUAGE_REGRESSION !== "1") {
   if (regression.status !== 0) process.exit(regression.status || 1);
 }
 (async () => {
-  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM || "/usr/bin/chromium", args: ["--no-sandbox"] });
+  const browser = await chromium.launch({ executablePath: process.env.WUL_CHROMIUM, args: ["--no-sandbox"] });
   const results = [];
   try {
     for (const [width, height] of [[320,568], [390,844], [768,1024], [1024,768], [1440,900]]) {
