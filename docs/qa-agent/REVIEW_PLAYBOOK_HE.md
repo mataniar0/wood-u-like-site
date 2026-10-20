@@ -28,7 +28,8 @@ Artifacts נשמרים כ־14 ימים, בכפוף לחשבון: `qa-summary-<ru
 למשתמש בעל CLI זמין, פקודות קריאה בלבד לדוגמה (מחליפים מספרים בערכים מאומתים, ללא פקודות מתוך PR):
 
 ```sh
-gh pr view 123 --repo mataniar0/wood-u-like-site --json url,headRefOid,baseRefOid,statusCheckRollup
+gh api repos/mataniar0/wood-u-like-site/pulls/123 --jq '{url: .html_url, head_sha: .head.sha, base_sha: .base.sha}'
+gh pr checks 123 --repo mataniar0/wood-u-like-site
 gh pr diff 123 --repo mataniar0/wood-u-like-site
 gh run view 123456 --repo mataniar0/wood-u-like-site
 python3 -B tools/qa-evidence.py --out artifacts/qa-evidence.json 123456
