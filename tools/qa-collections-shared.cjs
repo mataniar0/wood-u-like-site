@@ -39,6 +39,7 @@ async function decoded(image) {
   assert.equal(await image.evaluate(image=>image.complete&&image.naturalWidth>0&&image.naturalHeight>0),true);
 }
 async function ready(page,language='he',js=true) {
+  await page.waitForLoadState('load');
   if(js)await page.waitForFunction(language=>window.WUL_I18N?.language===language,language);
   assert.equal(await page.locator('html').getAttribute('lang'),js?language:'he');
   assert.equal(await page.locator('html').getAttribute('dir'),js&&language==='en'?'ltr':'rtl');

@@ -33,7 +33,8 @@ async function api(context){
   const original=context[name].bind(context);
   context[name]=async(url,options={})=>{
    const target=typeof url==="string"?url:url.url();
-   allow(target,options.method||({fetch:"GET"}[name]||name.toUpperCase()));
+   const method=options.method||(name==="fetch"?(typeof url==="string"?"GET":url.method()):name.toUpperCase());
+   allow(target,method);
    const response=await original(url,{...options,maxRedirects:0});
    const location=response.headers().location;if(location)allow(new URL(location,target).href);
    return response;
@@ -51,23 +52,25 @@ async function secureContext(context){
  })();
  await api(context.request);
  const route=context.route.bind(context);
- context.route=async(pattern,handler,options)=>route(pattern,(r,request)=>{
+ const guardedRoute=(register,pattern,handler,options)=>register(pattern,(r,request)=>{
   const task=(async()=>{
   if(closing)return r.abort();
   if(r.__qaGuarded)return handler(r,request);r.__qaGuarded=true;
   const fetch=r.fetch.bind(r),fulfill=r.fulfill.bind(r);
   r.fetch=async(opts={})=>{allow(opts.url||request.url(),opts.method||request.method());const response=await fetch({...opts,maxRedirects:0});const target=response.headers().location;if(target)allow(new URL(target,request.url()).href);return response;};
   r.continue=async(opts={})=>{const response=await r.fetch(opts);return fulfill({response});};
-  r.fulfill=async(opts)=>{if(mock(request.url(),request.method()))stats.mockedPosts++;return fulfill(opts);};
+  r.fulfill=async(opts)=>{if(mock(request.url(),request.method()))stats.mockedPosts++;else allow(request.url(),request.method());return fulfill(opts);};
   return handler(r,request);
   })();
   inFlight.add(task);task.then(()=>inFlight.delete(task),()=>inFlight.delete(task));return task;
  },options);
+ context.route=(...args)=>guardedRoute(route,...args);
  await context.route("**/*",r=>r.continue());
  await context.routeWebSocket("**/*",ws=>{stats.denied++;stats.unexpectedExternal++;ws.close();});
  const newPage=context.newPage.bind(context);
  context.newPage=async()=>{
   const page=await newPage(),shot=page.screenshot.bind(page);
+  const pageRoute=page.route.bind(page);page.route=(...args)=>guardedRoute(pageRoute,...args);
   page.screenshot=opts=>shot({...opts,mask:[...(opts?.mask||[]),page.locator("input,textarea,a[href^='mailto:'],a[href^='tel:'],[data-private]")]});
   page.on("pageerror",()=>{if(output)page.screenshot({path:path.join(output,"failed-page.png"),fullPage:true}).catch(()=>{});});
   return page;
@@ -77,7 +80,7 @@ async function secureContext(context){
 for(const type of [playwright.chromium,playwright.firefox,playwright.webkit]){
  const launch=type.launch.bind(type);
  type.launch=async options=>{
-  const browser=await launch(options),create=browser.newContext.bind(browser);
+  const browser=await launch({...options,handleSIGTERM:false}),create=browser.newContext.bind(browser);
   const close=browser.close.bind(browser);
   browser.close=async(...args)=>{await Promise.all(browser.contexts().map(c=>c.close()));await Promise.all(pending);return close(...args);};
   browser.newContext=async opts=>secureContext(await create({...opts,serviceWorkers:"block"}));

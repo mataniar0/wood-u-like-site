@@ -18,7 +18,7 @@ const products=ids.map(id=>{const p=q.products.find(p=>p.product_id===id);q.asse
     if(js&&width===390)await q.axe(page);
     const evidence=await q.capture(page,decoder,process.env.WUL_REVIEW_DIR,`${product.product_id}-${mode}-${width}`,"main img");
     const cta=page.locator('.product-inquiry').first();q.assert.ok(await cta.getAttribute("href"));await cta.focus();await page.keyboard.press("Enter");
-    await page.waitForURL(new URL("inquiry/?product="+product.product_id,q.base).href);q.assert.equal(await page.locator("#send-request").isDisabled(),true);
+    await page.waitForURL(new URL("inquiry/?product="+product.product_id,q.base).href);await q.ready(page,language,js);q.assert.equal(await page.locator("#send-request").isDisabled(),true);
     if(js)q.assert.equal(await page.locator("#product").inputValue(),product.product_id);
     await s.finish();results.push({product:product.product_id,width,language,javaScript:js,status:"PASS",...evidence});
    }catch(error){await s.context.close();throw error;}
