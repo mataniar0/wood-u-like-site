@@ -1,0 +1,170 @@
+{
+  "synthetic": true,
+  "pr_url": "https://example.invalid/synthetic/pr/1",
+  "issue_url": "https://example.invalid/synthetic/issue/1",
+  "risk": "high",
+  "reviewed_head_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "base_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "run_ids": [
+    "10000000001"
+  ],
+  "reviewed_at": "2026-10-20T12:00:00+03:00",
+  "reviewer": {
+    "role": "independent ChatGPT team lead",
+    "implemented_this_round": null
+  },
+  "status": "PASS_RECOMMENDED",
+  "opened_files_and_assets": [
+    {
+      "path": "synthetic/runtime-diff.txt",
+      "line": 1,
+      "evidence": "https://example.invalid/evidence/runtime-diff",
+      "opened": true
+    },
+    {
+      "path": "synthetic/before-he-390.png",
+      "line": null,
+      "evidence": "https://example.invalid/evidence/before-he-390",
+      "opened": true
+    },
+    {
+      "path": "synthetic/after-en-1440.png",
+      "line": null,
+      "evidence": "https://example.invalid/evidence/after-en-1440",
+      "opened": true
+    },
+    {
+      "path": "synthetic/QA_SUMMARY.json",
+      "line": 1,
+      "evidence": "https://example.invalid/evidence/run-summary",
+      "opened": true
+    }
+  ],
+  "not_verified": [],
+  "tests_executed_by": [
+    {
+      "actor": "GitHub Actions (synthetic)",
+      "tests": "5 preflight + 16 browser suites; HE/EN, 320–1440, no-JS Hebrew, keyboard, axe/SEO/CLS, links, mocked inquiry",
+      "run_id": "10000000001",
+      "evidence": "https://example.invalid/evidence/run-summary"
+    },
+    {
+      "actor": "ChatGPT reviewer (synthetic role-play)",
+      "tests": "read Issue, diff and listed evidence only; no browser execution",
+      "run_id": null,
+      "evidence": "https://example.invalid/evidence/review-notes"
+    }
+  ],
+  "tests_not_executed": [
+    {
+      "test": "Safari/Firefox/manual screen reader/live Pages",
+      "reason": "outside supplied Chromium/local evidence",
+      "blocking": false
+    },
+    {
+      "test": "live Formspree POST",
+      "reason": "not authorized; mocks only",
+      "blocking": false
+    }
+  ],
+  "live_posts": 0,
+  "mocked_posts": 4,
+  "unexpected_external_requests": 0,
+  "counter_evidence": {
+    "scope": "selected browser suites in synthetic run only",
+    "run_id": "10000000001",
+    "receipts": [
+      "synthetic/browser/network-guard.json"
+    ]
+  },
+  "form_flags": {
+    "formDestinationApproved": false,
+    "privacyApproved": false,
+    "contactDetailsApproved": false
+  },
+  "versions": [
+    {
+      "tool": "Playwright",
+      "version": "1.62.1",
+      "evidence": "synthetic/provision.json"
+    },
+    {
+      "tool": "axe-core",
+      "version": "4.10.3",
+      "evidence": "synthetic/provision.json"
+    }
+  ],
+  "baseline_changes": "Synthetic infrastructure-only change: runtime diff empty; selectors and thresholds retained.",
+  "skipped_suites": [],
+  "findings": [
+    {
+      "severity": "note",
+      "file": "synthetic/REPORT.md",
+      "line": 1,
+      "evidence": "https://example.invalid/evidence/run-summary",
+      "impact": "Public smoke not performed; tracked separately.",
+      "recommended_fix": "Team lead performs authorized read-only public smoke after separate publication."
+    }
+  ],
+  "qa_score": 94,
+  "score_breakdown": [
+    {
+      "area": "design",
+      "maximum": 25,
+      "points": 24,
+      "reason": "Preserved UI established by synthetic empty runtime diff and before/after evidence; no new design measured."
+    },
+    {
+      "area": "images",
+      "maximum": 20,
+      "points": 19,
+      "reason": "Approved assets unchanged; synthetic manifest and opened representative images support preservation."
+    },
+    {
+      "area": "responsive",
+      "maximum": 20,
+      "points": 19,
+      "reason": "Synthetic current-SHA full suite and representative opened captures; no manual browser claim."
+    },
+    {
+      "area": "accessibility_seo_performance",
+      "maximum": 15,
+      "points": 14,
+      "reason": "Synthetic axe/SEO/CLS and keyboard evidence; manual screen reader excluded."
+    },
+    {
+      "area": "code",
+      "maximum": 10,
+      "points": 9,
+      "reason": "Synthetic infrastructure diff reviewed; thresholds preserved."
+    },
+    {
+      "area": "tests_docs",
+      "maximum": 10,
+      "points": 9,
+      "reason": "Synthetic matching receipts and documentation; public smoke remains separate."
+    }
+  ],
+  "blocking_gate": {
+    "blocked": false,
+    "reasons": []
+  },
+  "merge_recommendation": "RECOMMEND_ONLY_TEAM_LEAD_RECHECK_SHA_AND_BASE",
+  "issue_close_conditions": [
+    "Independent real review >=90 and no blockers",
+    "All acceptance criteria met",
+    "Current HEAD/base/checks revalidated by authorized team lead",
+    "Public smoke debt tracked separately; no implied form activation"
+  ],
+  "public_smoke_debt": {
+    "status": "NOT_EXECUTED",
+    "owner": "team lead",
+    "impact": "No live-site claim; synthetic scenario only"
+  },
+  "limitations": [
+    "Entire report is synthetic; no real PR/run/image was reviewed",
+    "No automatic approval or merge",
+    "Only listed synthetic evidence is assumed accessible"
+  ],
+  "correction_cycles": 0
+}

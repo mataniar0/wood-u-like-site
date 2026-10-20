@@ -1,0 +1,90 @@
+{
+  "synthetic": false,
+  "pr_url": null,
+  "issue_url": null,
+  "risk": null,
+  "reviewed_head_sha": null,
+  "base_sha": null,
+  "run_ids": [],
+  "reviewed_at": null,
+  "reviewer": {
+    "role": "independent ChatGPT team lead",
+    "implemented_this_round": null
+  },
+  "status": "INSUFFICIENT_EVIDENCE",
+  "opened_files_and_assets": [],
+  "not_verified": [],
+  "tests_executed_by": [],
+  "tests_not_executed": [],
+  "live_posts": "UNVERIFIED",
+  "mocked_posts": "UNVERIFIED",
+  "unexpected_external_requests": "UNVERIFIED",
+  "counter_evidence": {
+    "scope": null,
+    "run_id": null,
+    "receipts": []
+  },
+  "form_flags": {
+    "formDestinationApproved": "UNVERIFIED",
+    "privacyApproved": "UNVERIFIED",
+    "contactDetailsApproved": "UNVERIFIED"
+  },
+  "versions": [],
+  "baseline_changes": null,
+  "skipped_suites": [],
+  "findings": [],
+  "qa_score": null,
+  "score_breakdown": [
+    {
+      "area": "design",
+      "maximum": 25,
+      "points": null,
+      "reason": null
+    },
+    {
+      "area": "images",
+      "maximum": 20,
+      "points": null,
+      "reason": null
+    },
+    {
+      "area": "responsive",
+      "maximum": 20,
+      "points": null,
+      "reason": null
+    },
+    {
+      "area": "accessibility_seo_performance",
+      "maximum": 15,
+      "points": null,
+      "reason": null
+    },
+    {
+      "area": "code",
+      "maximum": 10,
+      "points": null,
+      "reason": null
+    },
+    {
+      "area": "tests_docs",
+      "maximum": 10,
+      "points": null,
+      "reason": null
+    }
+  ],
+  "blocking_gate": {
+    "blocked": true,
+    "reasons": [
+      "independent review not completed"
+    ]
+  },
+  "merge_recommendation": "DO_NOT_MERGE",
+  "issue_close_conditions": [],
+  "public_smoke_debt": {
+    "status": "NOT_EXECUTED",
+    "owner": "team lead",
+    "impact": null
+  },
+  "limitations": [],
+  "correction_cycles": null
+}
