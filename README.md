@@ -241,3 +241,22 @@ NODE_PATH=/tmp/wul-check/node_modules WUL_BASE_URL=http://127.0.0.1:8001/wood-u-
 ## WUL-021 Integration V2
 
 המבנה המשולב כולל תשעה מוצרים: 5 / 2 / 1 / 1, עם `oval-room-signs` ו־`natural-edge-door-sign` יחד ב־home-decor. הסעיפים לעיל וחבילות WUL-020/WUL-021 מתעדים כל ענף בנפרד לפני האינטגרציה. [דוח האינטגרציה והבדיקות החדשות](docs/review/wul-021/integration/REPORT_HE.md) הוא הראיה למבנה המשולב. אין מיזוג ל־main, Deploy או הפעלת פניות במסגרת משימה זו.
+
+## WUL-023 — QA עדכני ב־PR ובכל לילה
+
+הפקודות ההיסטוריות לעיל מתעדות את המשימות הקודמות. להרצה שגרתית משתמשים כעת ב־runner הנייד, במפה העדכנית של ארבע קולקציות ותשעה מוצרים ובכלי פיתוח נעולים בלבד:
+
+```sh
+npm ci --ignore-scripts --no-audit --no-fund
+npx --no-install playwright install --with-deps --no-shell chromium
+python3 -B tools/qa.py --mode pr --base origin/main --out artifacts/local-pr
+python3 -B tools/qa.py --mode full --base origin/main --workers 4 --out artifacts/local-full
+```
+
+השרת המקומי וה־prefix `/wood-u-like-site/` מנוהלים בידי ה־runner. תיעוד/leads בוחר preflight ללא Chromium; מוצר/תמונה בוחר HE/EN/no-JS ורספונסיביות ממוקדים; טופס/פרטיות/attribution/קוד משותף/תשתית/קובץ לא מוכר בוחרים full לפני מיזוג. כל מסלול בודק contact-config זהה ומאושר עם שלושה דגלים false; אין שליחת פניות אמיתיות. ב־Actions תהליכי הבדיקה מבודדים ברשת loopback בלבד.
+
+**QA Nightly** רץ מדי יום ב־03:17 UTC על main (06:17 בישראל בקיץ / 05:17 בחורף), לאחר שה־workflow נמצא ב־main; אפשר להריץ ידנית branch/commit. הרצת ענף אינה ראיית cron על main. שינויים רגישים אינם ממתינים ללילה.
+
+ב־Actions → ריצה → Artifacts נשמרים JSON/Markdown/logs/PNG ל־14 יום; התוצרים תחת `artifacts/` ו־`.cache/` אינם נכנסים ל־Git. כשל nightly מחייב אבחון ותיקון לפי ההשפעה על ה־PR. אין retry כללי שמסתיר assertion/CLS. Required QA gate ירוק על HEAD אינו מחליף סקירת ראש צוות עצמאית ≥90/100 ללא חוסמים. לא הופעלה אכיפת branch protection במשימה; נשמר gate ידני עד אימות הגדרות בידי אדמין.
+
+[מדריך הפעלה ו־troubleshooting](docs/review/wul-023/PIPELINE_RUNBOOK_HE.md), [מטריצת בחירה ומיפוי assertions](docs/review/wul-023/TEST_SELECTION_MATRIX.md), [דוח QA](docs/review/wul-023/REPORT_HE.md). הכיסוי הוא Chromium בלבד, ללא Safari/Firefox או קורא מסך ידני; no-JS שומר עברית סטטית. אין Merge, Deploy או הפעלת Formspree במסגרת המשימה.

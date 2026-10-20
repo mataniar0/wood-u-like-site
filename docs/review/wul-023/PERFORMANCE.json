@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "measurement_date": "2026-10-20",
+  "source": "GitHub Actions run/jobs/artifacts API and lossless QA summaries; actual completed runs only",
+  "definitions": {
+    "workflow_wall": "created_at to updated_at for completed run, includes queue/setup/uploads",
+    "summed_job_wall": "sum job allocated elapsed time; not CPU or workflow wall",
+    "observed_child_cpu": "RUSAGE_CHILDREN from serial suites in separate CI jobs; not billing data",
+    "artifact_bytes": "sum actual compressed upload sizes from Artifacts API; not uncompressed output size"
+  },
+  "before": {
+    "automatic_ci": "absent on baseline main",
+    "historical_four_tool_seconds": [
+      356.65,
+      74.6,
+      1287.47,
+      1725.59
+    ],
+    "historical_sum_seconds": 3444.31,
+    "historical_sum_is_wall": false,
+    "historical_cpu_seconds": null,
+    "historical_artifact_bytes": null,
+    "comparable_ci_speedup_ratio": null,
+    "limitations": "No former PR/nightly workflow existed; no invented before wall/CPU/bytes or causal speedup claim"
+  },
+  "after": {
+    "docs": [
+      {
+        "run_id": 39315086286,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315086286",
+        "event": "pull_request",
+        "head_sha": "a88cd1dc60e20b111c4a55d8dedda56c370882a7",
+        "status": "success",
+        "profile": null,
+        "suite_pass_count": null,
+        "workflow_wall_seconds": 68.0,
+        "summed_job_wall_seconds": 59.0,
+        "observed_child_cpu_seconds": null,
+        "summed_suite_seconds": null,
+        "screenshots": null,
+        "compressed_artifact_bytes": 16925,
+        "real_posts": null,
+        "unexpected_external": null,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315086286/artifacts/12217448202",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315086286/artifacts/12216263986"
+        ]
+      },
+      {
+        "run_id": 39315495346,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315495346",
+        "event": "pull_request",
+        "head_sha": "1da696e3a56ed10fbc520191d64ee552fdbd3418",
+        "status": "success",
+        "profile": null,
+        "suite_pass_count": null,
+        "workflow_wall_seconds": 62.0,
+        "summed_job_wall_seconds": 53.0,
+        "observed_child_cpu_seconds": null,
+        "summed_suite_seconds": null,
+        "screenshots": null,
+        "compressed_artifact_bytes": 16915,
+        "real_posts": null,
+        "unexpected_external": null,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315495346/artifacts/12218600082",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39315495346/artifacts/12216089588"
+        ]
+      },
+      {
+        "run_id": 39316164848,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316164848",
+        "event": "pull_request",
+        "head_sha": "82ab0a9a2ab563a0cad3711528cab4a1002c16bf",
+        "status": "success",
+        "profile": "docs",
+        "suite_pass_count": 5,
+        "workflow_wall_seconds": 64.0,
+        "summed_job_wall_seconds": 56.0,
+        "observed_child_cpu_seconds": 1.386,
+        "summed_suite_seconds": 2.58,
+        "screenshots": 0,
+        "compressed_artifact_bytes": 17004,
+        "real_posts": 0,
+        "unexpected_external": 0,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316164848/artifacts/12218400668",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316164848/artifacts/12217587860"
+        ]
+      }
+    ],
+    "product": [
+      {
+        "run_id": 39316755473,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316755473",
+        "event": "pull_request",
+        "head_sha": "03c46984cfde00f69421d668946d381bd9f18b03",
+        "status": "success",
+        "profile": "product",
+        "suite_pass_count": 6,
+        "workflow_wall_seconds": 152.0,
+        "summed_job_wall_seconds": 143.0,
+        "observed_child_cpu_seconds": 8.593,
+        "summed_suite_seconds": 12.627,
+        "screenshots": 17,
+        "compressed_artifact_bytes": 5784934,
+        "real_posts": 0,
+        "unexpected_external": 0,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316755473/artifacts/12218950758",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316755473/artifacts/12218696684",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39316755473/artifacts/12218535834"
+        ]
+      },
+      {
+        "run_id": 39380660095,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380660095",
+        "event": "pull_request",
+        "head_sha": "01204bf33adeed9a28eb386572c47d78ca022417",
+        "status": "success",
+        "profile": "product",
+        "suite_pass_count": 6,
+        "workflow_wall_seconds": 146.0,
+        "summed_job_wall_seconds": 135.0,
+        "observed_child_cpu_seconds": 10.337,
+        "summed_suite_seconds": 14.742,
+        "screenshots": 17,
+        "compressed_artifact_bytes": 5784947,
+        "real_posts": 0,
+        "unexpected_external": 0,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380660095/artifacts/12244919205",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380660095/artifacts/12244529652",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380660095/artifacts/12244454717"
+        ]
+      },
+      {
+        "run_id": 39381002011,
+        "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39381002011",
+        "event": "pull_request",
+        "head_sha": "18bafb46dd32a6c9716582d6f7c572d924567b0d",
+        "status": "success",
+        "profile": "product",
+        "suite_pass_count": 6,
+        "workflow_wall_seconds": 128.0,
+        "summed_job_wall_seconds": 118.0,
+        "observed_child_cpu_seconds": 11.162,
+        "summed_suite_seconds": 14.951,
+        "screenshots": 17,
+        "compressed_artifact_bytes": 5784968,
+        "real_posts": 0,
+        "unexpected_external": 0,
+        "artifact_links": [
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39381002011/artifacts/12245308145",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39381002011/artifacts/12245148571",
+          "https://github.com/mataniar0/wood-u-like-site/actions/runs/39381002011/artifacts/12244609594"
+        ]
+      }
+    ],
+    "inquiry": {
+      "run_id": 39317273605,
+      "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605",
+      "event": "pull_request",
+      "head_sha": "07d0ab7762a5888a63bd6ca098d04e0005bce358",
+      "status": "success",
+      "profile": "full",
+      "suite_pass_count": 21,
+      "workflow_wall_seconds": 355.0,
+      "summed_job_wall_seconds": 1038.0,
+      "observed_child_cpu_seconds": 451.175,
+      "summed_suite_seconds": 631.406,
+      "screenshots": 418,
+      "compressed_artifact_bytes": 152333413,
+      "real_posts": 0,
+      "unexpected_external": 0,
+      "artifact_links": [
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12219036550",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12218911307",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12218831547",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12218702779",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12218462526",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12218408692",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12217862430",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12217574658",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39317273605/artifacts/12217569583"
+      ]
+    },
+    "full": {
+      "run_id": 39380534612,
+      "url": "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612",
+      "event": "pull_request",
+      "head_sha": "25fea2463f27065d7eef43f03a9986f0a2da3198",
+      "status": "success",
+      "profile": "full",
+      "suite_pass_count": 21,
+      "workflow_wall_seconds": 344.0,
+      "summed_job_wall_seconds": 1015.0,
+      "observed_child_cpu_seconds": 459.603,
+      "summed_suite_seconds": 638.952,
+      "screenshots": 418,
+      "compressed_artifact_bytes": 152334811,
+      "real_posts": 0,
+      "unexpected_external": 0,
+      "artifact_links": [
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12245720465",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12245422840",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12245337498",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12245272292",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12245048858",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12244994281",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12244864667",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12244789764",
+        "https://github.com/mataniar0/wood-u-like-site/actions/runs/39380534612/artifacts/12244734854"
+      ]
+    }
+  },
+  "docs_median_wall_seconds": 64.0,
+  "product_median_wall_seconds": 146.0,
+  "fast_target_seconds": 300,
+  "fast_target_met": true,
+  "install_step_wall_seconds": {
+    "39316164848": [
+      {
+        "job": "qa / plan",
+        "step": "Locked install, measured separately",
+        "wall_seconds": 1.0,
+        "status": "success"
+      }
+    ],
+    "39381002011": [
+      {
+        "job": "qa / plan",
+        "step": "Locked install, measured separately",
+        "wall_seconds": 0.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (targeted)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      }
+    ],
+    "39317273605": [
+      {
+        "job": "qa / plan",
+        "step": "Locked install, measured separately",
+        "wall_seconds": 1.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (identity)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (products)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 15.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (inquiry)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (media)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 13.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (navigation)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (attribution)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 14.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (collections)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 14.0,
+        "status": "success"
+      }
+    ],
+    "39380534612": [
+      {
+        "job": "qa / plan",
+        "step": "Locked install, measured separately",
+        "wall_seconds": 1.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (navigation)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 13.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (inquiry)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 14.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (attribution)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (collections)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 18.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (media)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 13.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (products)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 12.0,
+        "status": "success"
+      },
+      {
+        "job": "qa / browser (identity)",
+        "step": "Locked install and pinned browser provisioning",
+        "wall_seconds": 14.0,
+        "status": "success"
+      }
+    ]
+  },
+  "precise_npm_browser_install_metric_source": "provision.json in plan and each browser artifact; install is outside network-isolated test phase",
+  "cost": {
+    "money_measured": false,
+    "new_paid_service": false,
+    "runner": "standard GitHub-hosted ubuntu-24.04",
+    "full_observed_cpu_minutes": 7.66,
+    "full_summed_job_minutes": 16.917,
+    "retention_days": 14,
+    "fourteen_daily_runs_bytes_at_measured_full_size": 2132687354
+  }
+}

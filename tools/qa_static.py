@@ -63,6 +63,7 @@ def check(root=ROOT, base=None):
     assert sorted(expected_ids) == sorted(id for g in catalog["collections"] for id in g["products"])
     known_docs = {}
     for page in pages:
+        privacy_text(page.read_text(), public_contacts)
         doc = Document(page.read_text()); known_docs[page] = doc
         ids = [attrs["id"] for _, attrs in doc.elements if "id" in attrs]
         assert len(ids) == len(set(ids)), "duplicate HTML ID"
@@ -111,17 +112,21 @@ def check(root=ROOT, base=None):
     for name in changed:
         file = root / name
         if not file.is_file(): continue
-        if file.suffix.lower() in (".png", ".jpg", ".jpeg", ".zip"):
+        if file.suffix.lower() in (".png", ".jpg", ".jpeg", ".zip", ".pdf", ".heic", ".raw", ".psd", ".tif", ".tiff", ".mp4", ".mov", ".xls", ".xlsx", ".doc", ".docx", ".sqlite", ".db", ".parquet"):
             raise AssertionError("new source image/archive forbidden; generated screenshots belong in Actions artifacts")
         if file.suffix.lower() in (".csv", ".tsv"):
             assert name.startswith("docs/leads/templates/") and len(list(csv.reader(file.open()))) == 1, "public data template must contain headers only"
-        if file.suffix in (".md", ".txt", ".json", ".yml", ".yaml", ".js", ".cjs", ".py", ".sh"):
+        if file.suffix in (".md", ".txt", ".json", ".yml", ".yaml", ".js", ".cjs", ".py", ".sh", ".html", ".css", ".csv", ".tsv"):
             # Scan added lines, not previously approved public privacy contacts.
             patch = subprocess.check_output(["git", "diff", "--unified=0", base, "HEAD", "--", name], cwd=root, text=True)
             privacy_text("\n".join(line[1:] for line in patch.splitlines() if line.startswith("+") and not line.startswith("+++")), public_contacts)
     for folder in ("qa", "docs/leads"):
         for file in (root / folder).rglob("*"):
             if file.is_file():
+                privacy_text(file.read_text(), public_contacts)
+    for folder in (root / "assets", root / "inquiry"):
+        for file in folder.rglob("*"):
+            if file.is_file() and file.suffix in (".js", ".css"):
                 privacy_text(file.read_text(), public_contacts)
     for template in (root / "docs/leads/templates").glob("*.csv"):
         assert len(list(csv.reader(template.open()))) == 1
