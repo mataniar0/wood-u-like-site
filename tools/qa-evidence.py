@@ -38,7 +38,11 @@ def collect(run_id):
                 packed[int(match[1])] = a["message"]; expected_parts = int(match[2])
                 continue
             if a["title"] == "WUL023_SUMMARY":
-                summaries.append({"job": job["name"], "summary": json.loads(a["message"]) if len(a["message"]) < 4096 else {"status": "TRUNCATED_OLD_ANNOTATION"}})
+                try:
+                    summary = json.loads(a["message"])
+                except json.JSONDecodeError:
+                    summary = {"status": "TRUNCATED_OLD_ANNOTATION"}
+                summaries.append({"job": job["name"], "summary": summary})
             elif a["title"].startswith("WUL023_FAILURE_"):
                 diagnostics.append({"job": job["name"], "title": a["title"], "message": a["message"]})
         if packed:

@@ -148,7 +148,7 @@ def fault(args, out):
             q.SUITES[name] = ["node", "tools/qa-probe.cjs", args.fault]
             q.BROWSER.add(name)
         with q.local_server() as base_url:
-            receipt = q.execute(name, out, selection["base_sha"], base_url, selection, timeout=5 if args.fault == "timeout" else 45)
+            receipt = q.execute(name, out, selection["base_sha"], base_url, selection, timeout=15 if args.fault == "timeout" else 45)
         selection["selected"] = [name]
         q.write(out / "PLAN.json", selection)
         result = q.summary(selection, [receipt], receipt["seconds"])

@@ -11,7 +11,7 @@ const q=require("./qa-collections-shared.cjs");
    await context.route("**/*",r=>r.continue());await page.goto("https://example.invalid/");
   }else{
    await page.setContent('<html><body><div id="shift" style="height:0"></div><div style="height:1400px;background:#eee">Synthetic QA control only</div></body></html>');
-   if(kind==="timeout"){await new Promise(()=>{});}
+   if(kind==="timeout"){await page.screenshot({path:q.path.join(process.env.WUL_REVIEW_DIR,"failed-timeout-before-wait.png")});await new Promise(()=>{});}
    if(kind==="cls"){
     await page.evaluate(()=>{window.qaCLS=0;new PerformanceObserver(list=>{for(const entry of list.getEntries())if(!entry.hadRecentInput)window.qaCLS+=entry.value;}).observe({type:"layout-shift",buffered:true});});
     await page.waitForTimeout(700);await page.locator("#shift").evaluate(e=>e.style.height="350px");await page.waitForTimeout(300);

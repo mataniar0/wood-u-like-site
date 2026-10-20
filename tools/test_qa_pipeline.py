@@ -92,6 +92,18 @@ class SafetyTests(unittest.TestCase):
                 with self.assertRaises(AssertionError): privacy_text(value)
         privacy_text("fixture@example.invalid")
 
+    def test_workflow_policy_rejects_null_target_trigger_and_permission_escalation(self):
+        import subprocess
+        script = """
+        const {validate}=require('./tools/qa-yaml.cjs'),assert=require('node:assert/strict');
+        const good={permissions:{contents:'read'},on:{pull_request:null},concurrency:{group:'test'},jobs:{test:{'timeout-minutes':10,steps:[]}}};
+        validate(good,'qa-pr.yml');
+        for(const mutate of [x=>x.on.pull_request_target=null,x=>x.permissions.actions='write',x=>x.jobs.test.permissions={contents:'write'},x=>x.jobs.test.secrets='inherit']){
+          const bad=structuredClone(good);mutate(bad);assert.throws(()=>validate(bad,'qa-pr.yml'));
+        }
+        """
+        subprocess.run(["node", "-e", script], cwd=q.ROOT, check=True)
+
     def test_current_catalog_and_registration_inventory(self):
         self.assertEqual(len(CATALOG["products"]), 9)
         self.assertEqual(len(CATALOG["collections"]), 4)

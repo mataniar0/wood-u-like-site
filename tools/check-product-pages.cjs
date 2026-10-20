@@ -75,6 +75,9 @@ function watch(page) {
   return errors;
 }
 async function ready(page, language) {
+  // The translation script initializes before inquiry.js at the document end.
+  // A language match alone does not prove product preselection has run.
+  await page.waitForLoadState("load");
   await page.waitForFunction(lang => window.WUL_I18N?.language === lang, language);
   assert.equal(await page.locator("html").getAttribute("lang"), language);
   assert.equal(await page.locator("html").getAttribute("dir"), language === "he" ? "rtl" : "ltr");
@@ -239,7 +242,7 @@ async function navigation(page, product, language) {
   const direct = page.url(); await page.reload(); await ready(page, language); assert.equal(page.url(), direct);
   await page.locator(".product-collection-link").click(); await ready(page, language); assert.equal(new URL(page.url()).pathname, prefix + `collections/${product.group}/`);
   await page.locator(`#${product.id}-work .product-details-link`).click(); await ready(page, language); assert.equal(new URL(page.url()).pathname, prefix + `products/${product.id}/`);
-  await page.locator(".product-quote-link").click(); await ready(page, language); assert.equal(await page.locator("#product").inputValue(), product.id);
+  await page.locator(".product-quote-link").click(); await page.waitForURL(new URL(`inquiry/?product=${product.id}`, base).href); await ready(page, language); assert.equal(await page.locator("#product").inputValue(), product.id);
   assert.equal(await page.locator("#send-request").isDisabled(), true, "Public sending remains blocked");
   assert.equal(await page.locator("#privacy-notice").isVisible(), true); assert.equal(await page.locator("#privacy-preview").isVisible(), true);
   await page.goBack(); await ready(page, language); assert.equal(new URL(page.url()).pathname, prefix + `products/${product.id}/`);

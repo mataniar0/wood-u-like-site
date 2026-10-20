@@ -1,3 +1,3 @@
 # WUL-023 acceptance fixture
 
-Inquiry comment with matching current runtime lock: must select full, not fast. Never merge this test PR.
+Product timing sample 2: metadata-only WebP change. Synthetic test branch; do not merge.

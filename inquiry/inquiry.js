@@ -392,5 +392,3 @@
   });
   render();
 })();
-
-// WUL-023 synthetic acceptance fixture: behavior unchanged.
