@@ -1,0 +1,52 @@
+{
+  "task": "WUL-EVENT-001-NAV",
+  "issue": 51,
+  "base_sha": "c8de907715ca5e2ff117ef3c3beef2a3dd9e170f",
+  "branch": "feature/wul-event-gifts-nav-001",
+  "status": "LOCAL_QA_PASS_PR_AND_CI_BLOCKED",
+  "pr_url": null,
+  "source_fingerprint": "b84ec04684698cdad1945fbde24c1865e046a35707f0f175ee3d9b4df9a0676a",
+  "local_scenarios": 80,
+  "pages_updated": 16,
+  "added_navigation_links": 32,
+  "preflight_pass_count": 5,
+  "pipeline_unit_methods": 28,
+  "leads_methods": 33,
+  "full_ci_expected_suites": 23,
+  "ci_head_verified": false,
+  "local_full_regression_repeated": false,
+  "network": {
+    "localReads": 1366,
+    "mockedPosts": 0,
+    "denied": 0,
+    "realPosts": 0,
+    "unexpectedExternal": 0,
+    "status": "PASS"
+  },
+  "screenshots_opened": 8,
+  "correction_cycles": {
+    "product": 0,
+    "temporary_qa_check": 1
+  },
+  "preserved": [
+    "Hero and its link",
+    "four collections",
+    "all products and images",
+    "all content outside navigation",
+    "existing navigation links",
+    "form bodies and activation flags",
+    "CSS and JS and translations"
+  ],
+  "blockers": [
+    "api.github.com absent from active cloud network policy; PR creation/CI unavailable"
+  ],
+  "limitations": [
+    "LEAN TASK PLANNING v1.1 text unavailable",
+    "Chromium only; local Pages-prefix tests; no live deploy or manual screen reader"
+  ],
+  "merged": false,
+  "deployed": false,
+  "forms_activated": false,
+  "independent_review_performed": false,
+  "qa_score": null
+}

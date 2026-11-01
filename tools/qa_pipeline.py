@@ -16,6 +16,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "qa/catalog.json"
 SUITES = {
+    "event-navigation": ["node", "tools/check-event-navigation.cjs"],
     "event-gifts": ["node", "tools/check-event-gifts.cjs"],
     "static": ["python3", "-B", "tools/qa_static.py"],
     "contract": ["node", "tools/check-collection-contract.cjs"],
@@ -42,7 +43,7 @@ SUITES = {
 }
 PREFLIGHT = ["static", "contract", "assets", "leads", "pipeline-unit"]
 SHARDS = {
-    "event": ["event-gifts"],
+    "event": ["event-navigation", "event-gifts"],
     "navigation": ["language", "hero", "homepage", "legacy"],
     "collections": ["collections", "accessibility"],
     "products": ["product-pages"],
