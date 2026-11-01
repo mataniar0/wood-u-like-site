@@ -17,6 +17,17 @@ HEAD, BASE = "a" * 40, "b" * 40
 def fixture(mutation):
     run = json.loads((EXAMPLES / "SYNTHETIC_CI.json").read_text())[0]
     s = run["summary"]
+    # Historical WUL-024 evidence stays untouched. Extend the in-memory test
+    # fixture to the current full suite contract when new page suites are added.
+    from qa_pipeline import SHARDS
+    template = next(r for r in s["suites"] if r["network"] is not None)
+    for suite in [name for group in SHARDS.values() for name in group]:
+        if suite not in s["selected"]:
+            receipt = copy.deepcopy(template)
+            receipt["suite"] = suite
+            receipt["network"]["mockedPosts"] = 0
+            s["selected"].append(suite)
+            s["suites"].append(receipt)
     browser = next(r for r in s["suites"] if r["network"] is not None)
     if mutation in ("failed", "nightly_fail", "environment"):
         run["conclusion"] = "failure"

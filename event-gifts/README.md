@@ -1,0 +1,13 @@
+# Event gifts
+
+`catalog.json` describes conceptual families, materials (`wood`, `glass`, `mixed`) and `planned`/`available` status. Current families are concepts, not verified SKUs. Glass examples remain planned, without purchase links or selectable glass interests.
+
+Run `python3 tools/build_event_gifts.py` after a reviewed config/content change. It produces static `event-gifts/index.html` and the isolated `event.*` translation block in the existing language catalogue. It adds the homepage entry only once. It reuses the existing header/footer and translation lifecycle. No runtime fetch is needed; Hebrew content and navigation work without JavaScript. Review generated diffs and update only changed hashes in `qa/runtime-contract.json`, then run QA. Do not relabel a material/family available without business approval.
+
+To extend: add the material/family bilingual data and its reviewed status, regenerate, and review. Cards use the same layout for all materials; planned cards have no ordering actions. Material availability controls inclusion in the demonstration interest selector. `future_examples` is roadmap data only; it is never rendered as an orderable catalogue. An isolated temporary-config check verified both planned glass exclusion and config-only inclusion after an availability change; it did not change production config.
+
+The quote section is an explicitly labelled local demonstration. It uses a labelled `role=form` region with disabled controls in static HTML, not a transmitting HTML form. JavaScript enables validation; buttons are type=button. No endpoint, names on controls, contact fields, consent claim, customer logging, persistence, or success-as-delivery message exists. Enter cannot submit a form. Fields clear on page lifecycle/language changes. Existing public inquiry approvals remain false. Public activation requires a separate privacy review and owner authorization; do not add an endpoint here as a routine config change.
+
+Image: existing approved `assets/images/workshop.webp`, depicting three oval room signs, with accurate alt/caption explaining this is an existing engraving example rather than event-gift imagery. No new image or misleading product mockup was created.
+
+Focused QA: `WUL_CHROMIUM=/usr/bin/chromium WUL_BASE_URL=http://127.0.0.1:8004/wood-u-like-site/ WUL_REVIEW_DIR=artifacts/event-focused node tools/check-event-gifts.cjs`. Start a local read-only server first. Full QA: `WUL_CHROMIUM=/usr/bin/chromium python3 -B tools/qa.py --mode full --base origin/main --workers 4 --out artifacts/event-full`. Chromium path is an explicit local override; CI uses the existing pinned provisioning. Screenshots/logs belong in artifacts, not Git history.
