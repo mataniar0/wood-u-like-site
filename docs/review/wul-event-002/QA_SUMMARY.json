@@ -1,0 +1,33 @@
+{
+  "task": "WUL-EVENT-002",
+  "issue": 53,
+  "pr": 54,
+  "branch": "feature/wul-event-002-wedding-magnet-gallery",
+  "status": "BLOCKED_MISSING_APPROVED_IMAGE_PACKAGE",
+  "starting_head": "e65494eb9d976a867951010790007110730ad83e",
+  "base_sha": "be684852561fcf18083978cae8c88f0a3daf9ebb",
+  "missing_assets": [
+    "wedding-magnets-original.webp",
+    "wedding-magnets-original-small.webp",
+    "wedding-magnets-styled-concept.webp",
+    "wedding-magnets-styled-concept-small.webp"
+  ],
+  "unit_methods": 30,
+  "unit_status": "PASS",
+  "existing_assets_verified": 31,
+  "mandatory_static": "FAIL: referenced images missing",
+  "browser_gallery": "BLOCKED, exit 2",
+  "visual_review": "NOT_VERIFIED",
+  "new_screenshots": 0,
+  "image_hashes_recorded": false,
+  "live_posts": "UNVERIFIED: browser tests blocked, no live request performed",
+  "correction_cycles": 1,
+  "runtime_source_hashes_updated": true,
+  "runtime_asset_hashes_updated": false,
+  "api_pr_body_update": "BLOCKED_NETWORK_POLICY",
+  "independent_review": false,
+  "qa_score": null,
+  "merged": false,
+  "deployed": false,
+  "contact_config_changed": false
+}

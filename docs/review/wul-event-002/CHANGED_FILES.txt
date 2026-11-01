@@ -1,0 +1,12 @@
+assets/css/event-wedding-feature.css
+assets/js/language.js
+docs/review/wul-event-002/CHANGED_FILES.txt
+docs/review/wul-event-002/QA_SUMMARY.json
+docs/review/wul-event-002/REPORT_HE.md
+event-gifts/index.html
+index.html
+qa/runtime-contract.json
+tools/build_event_gifts.py
+tools/check-wedding-magnets.cjs
+tools/qa_pipeline.py
+tools/test_qa_wedding_gallery.py

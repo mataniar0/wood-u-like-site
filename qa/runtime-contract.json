@@ -10,7 +10,7 @@
     "assets/css/collection.css": "6fe2fe4a5bd6d4495487cbe32983b1e00e91ee1fe1f4656e80814b1aa61a9ee2",
     "assets/css/natural-door-sign.css": "19377db4fcc85c54e937bd21627307c274cdb9e99315f5260b03efecdd65dce8",
     "assets/css/style.css": "098b0fc57ebb66e203616e7a9710cbf2b1338555e53fcd4095400e022d89d3de",
-    "assets/js/language.js": "fee2d7c1912043da8b5afe2aac387e2dadc9921786c1b0ef411be7670d25c4f2",
+    "assets/js/language.js": "772e6bc2cc04141f809ce65e0c34aed7c7a7ca60885e5de277f51e15ad48606c",
     "assets/js/main.js": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
     "assets/js/attribution.js": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
     "assets/js/clock-gallery.js": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
@@ -33,11 +33,12 @@
     "products/hanging-home-sign/index.html": "6bf328105f5b2b260dd380485de42d8ef2e10bc3e3eddcca2a577f628fb10797",
     "products/personalized-clock/index.html": "7d898d6840872d4de5d605d79b6fd34544a5f047bc0b65a2f7ea34fecf7ff9d0",
     "products/family-sign/index.html": "645648a0183c79b62b0888f20c6359623e5e53509e77180edf03e7a0cfc8edf8",
-    "index.html": "43fb7ee4306eda2787a63467d212a0ca154b4e7eee78d092fd234390837c056f",
-    "event-gifts/index.html": "691f93f4052956d9cc04bda5d5eb735f49243681e3579036a134147fbebd1ae7",
+    "index.html": "fbca192b546e14baf5ae9d3ef225d39082a7d2fbda72691971a1de6d8d44f5c2",
+    "event-gifts/index.html": "05fe5aa78e2940edf4e29b15487ef80c177800ceff1945110ea965e17ebad923",
     "event-gifts/event-gifts.css": "29264d323e88922b0693aae823f89e371f98cf73611da19c8769f3b7d0981f84",
     "event-gifts/event-gifts.js": "2be36e5d55368a9602cddad34d2a2b53d1696b45cde0ab4f2045a0377c2e88ea",
-    "event-gifts/catalog.json": "232651473eccf752d1b53e5bc56a70cf6ffeefb43b5223118912a3ce2ddfae15"
+    "event-gifts/catalog.json": "232651473eccf752d1b53e5bc56a70cf6ffeefb43b5223118912a3ce2ddfae15",
+    "assets/css/event-wedding-feature.css": "f4a1c9e21fd95205348202719d630eb8e8a60bfba23e5de05be9e00e41b8a009"
   },
   "approved_asset_files": [
     "assets/images/README.md",
