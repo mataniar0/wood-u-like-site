@@ -148,7 +148,7 @@ def select(changes, catalog, mode="pr", diff_error=False, branch=None):
 
 def fingerprint():
     digest = hashlib.sha256()
-    paths = sorted(p for folder in ("assets", "collections", "products", "inquiry", "tools", "qa", ".github")
+    paths = sorted(p for folder in ("assets", "collections", "products", "inquiry", "event-gifts", "tools", "qa", ".github")
                    for p in (ROOT / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts)
     paths += [ROOT / name for name in ("index.html", "package.json", "package-lock.json")]
     for path in paths:

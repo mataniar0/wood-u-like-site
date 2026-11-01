@@ -13,6 +13,45 @@ from qa_static import check, privacy_text
 CATALOG = json.loads(q.CATALOG.read_text())
 
 
+
+class EventExtensionTests(unittest.TestCase):
+    def test_event_files_participate_in_source_fingerprint(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for filename in ('index.html', 'package.json', 'package-lock.json'):
+                (root / filename).write_text('{}')
+            (root / 'event-gifts').mkdir()
+            page = root / 'event-gifts/index.html'
+            page.write_text('first')
+            with patch.object(q, 'ROOT', root):
+                before = q.fingerprint()
+                page.write_text('changed')
+                self.assertNotEqual(before, q.fingerprint())
+
+    def test_glass_extension_is_config_only_and_planned_is_not_selectable(self):
+        import shutil
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for filename in ('tools/build_event_gifts.py', 'collections/home-decor/index.html', 'assets/js/language.js', 'index.html', 'event-gifts/catalog.json'):
+                target = root / filename
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(q.ROOT / filename, target)
+            file = root / 'event-gifts/catalog.json'
+            data = json.loads(file.read_text())
+            data['families'].append({'id':'future-glass', 'material':'glass', 'status':'planned', 'title':{'he':'רעיון עתידי','en':'Future concept'}, 'description':{'he':'להמשך','en':'For later'}})
+            for available in (False, True):
+                data['materials'][1]['status'] = 'available' if available else 'planned'
+                data['families'][-1]['status'] = 'available' if available else 'planned'
+                file.write_text(json.dumps(data, ensure_ascii=False))
+                subprocess.run(['python3', str(root / 'tools/build_event_gifts.py')], check=True)
+                html = (root / 'event-gifts/index.html').read_text()
+                self.assertIn('data-family="future-glass" data-material="glass"', html)
+                self.assertEqual('value="future-glass"' in html, available)
+                first = (root / 'assets/js/language.js').read_bytes()
+                subprocess.run(['python3', str(root / 'tools/build_event_gifts.py')], check=True)
+                self.assertEqual(first, (root / 'assets/js/language.js').read_bytes())
+
 class SelectionTests(unittest.TestCase):
     def selection(self, path, status="M", **kwargs):
         return q.select([{"path": path, "status": status}], CATALOG, **kwargs)

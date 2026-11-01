@@ -8,7 +8,8 @@ head=base[:base.index('    <main')].replace('../../','../').replace('collection-
 head=re.sub(r'<title.*?</title>','<title data-i18n="event.metaTitle">מתנות אישיות לאורחי אירועים | WOOD U LIKE</title>',head)
 for old,new in [('collection.home-decor.metaTitle','event.metaTitle'),('collection.home-decor.metaDescription','event.metaDescription')]:head=head.replace(old,new)
 head=head.replace('שלטים ועיצוב לבית | WOOD U LIKE','מתנות אישיות לאורחי אירועים | WOOD U LIKE').replace('שלטים מעץ עם מילים ושמות שהופכים כניסה לבית לאישית. גלו את קולקציית שלטים ועיצוב לבית של WOOD U LIKE.','רעיונות למתנות אישיות לאורחי אירועים בכמויות. הכירו משפחות עיצוב ואפשרויות התאמה אישית.').replace('collections/home-decor/','event-gifts/').replace('family-sign.webp','workshop.webp')
-head=re.sub(r'<meta property="og:image:alt"[^>]+>', '<meta property="og:image:alt" content="סדנת עץ" data-i18n-content="event.photoAlt" />',head)
+head=re.sub(r'<meta property="og:image:alt"[^>]+>', '<meta property="og:image:alt" content="שלושה שלטי חדר אליפטיים חרוטים, על פרוסת עץ" data-i18n-content="event.photoAlt" />',head)
+head=head.replace('<script src="../assets/js/attribution.js"></script>', '')
 head=head.replace('<script src="../assets/js/language.js">','<link rel="stylesheet" href="event-gifts.css" /><script src="../assets/js/language.js">')
 body='<main id="main" class="wrap event-main" tabindex="-1">'
 body+='<nav class="breadcrumb" aria-label="נתיב ניווט" data-i18n-aria-label="product.breadcrumb.label"><a href="../" data-i18n="product.home">בית</a> / '+t('nav','מתנות לאירועים','Event gifts')+'</nav>'
@@ -50,7 +51,7 @@ for i,(q,a,qe,ae) in enumerate([('מאיזו כמות אפשר לברר?','הט�
 body+='</section></main>'
 footer=base[base.index('    <footer'):].replace('../../','../').replace('</body>','<script src="event-gifts.js"></script></body>')
 translations.update({'event.metaTitle':{'he':'מתנות אישיות לאורחי אירועים | WOOD U LIKE','en':'Personalized Event Guest Gifts | WOOD U LIKE'},'event.metaDescription':{'he':'רעיונות למתנות אישיות לאורחי אירועים בכמויות. הכירו משפחות עיצוב ואפשרויות התאמה אישית.','en':'Explore conceptual personalized event guest gifts and bulk enquiry planning at WOOD U LIKE.'},'event.photoAlt':{'he':'שלושה שלטי חדר אליפטיים חרוטים, על פרוסת עץ','en':'Three engraved oval room signs resting on a wood slice'},'event.invalid':{'he':'בדקו את הבחירה או הערך בשדה זה.','en':'Check the selection or value in this field.'},'event.dateInvalid':{'he':'בחרו תאריך מהיום ועד חמש שנים קדימה.','en':'Choose a date from today up to five years ahead.'},'event.valid':{'he':'בדיקת ההדגמה הסתיימה. דבר לא נשלח או נשמר; זו אינה פנייה לעסק.','en':'The demonstration check is complete. Nothing was sent or saved; this is not an enquiry delivered to the business.'},'event.errors':{'he':'יש לתקן את השדות המסומנים. דבר לא נשלח.','en':'Please correct the marked fields. Nothing was sent.'}})
-(root/'event-gifts/index.html').write_text((head+body+footer).replace('><','>\n<'))
+(root/'event-gifts/index.html').write_text('\n'.join(line.rstrip() for line in (head+body+footer).replace('><','>\n<').splitlines())+'\n')
 p=root/'assets/js/language.js';js=p.read_text();js=re.sub(r'    // EVENT TRANSLATIONS START.*?    // EVENT TRANSLATIONS END\n','',js,flags=re.S)
 js=js.replace('  const catalog = {','  const catalog = {\n    // EVENT TRANSLATIONS START\n'+''.join('    '+json.dumps(k)+': '+json.dumps(v,ensure_ascii=False)+',\n' for k,v in translations.items())+'    // EVENT TRANSLATIONS END')
 p.write_text(js)
