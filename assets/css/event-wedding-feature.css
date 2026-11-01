@@ -9,3 +9,5 @@
 .wul-wedding-gallery img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:15px}
 .wul-wedding-gallery figcaption{font-size:.9rem;margin-block:.65rem;color:#575047}
 @media(max-width:720px){.wul-wedding-feature{grid-template-columns:1fr}.wul-wedding-feature__image{max-height:380px}.wul-wedding-gallery__grid{grid-template-columns:1fr}}
+
+html[lang="he"] .wul-wedding-feature [lang="en"],html[lang="he"] .wul-wedding-gallery [lang="en"],html[lang="en"] .wul-wedding-feature [lang="he"],html[lang="en"] .wul-wedding-gallery [lang="he"]{display:none}
