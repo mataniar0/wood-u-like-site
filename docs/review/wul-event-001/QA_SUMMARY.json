@@ -1,0 +1,116 @@
+{
+  "task": "WUL-EVENT-001",
+  "issue": 49,
+  "branch": "feature/wul-event-gifts-001",
+  "base_sha": "600cf71236828040cb32f8a0b9d102e52c4c4412",
+  "status": "LOCAL_CHECKS_PASS_REMOTE_PR_BLOCKED",
+  "pr_url": null,
+  "full_regression": {
+    "status": "PASS",
+    "tested_sha": "600cf71236828040cb32f8a0b9d102e52c4c4412",
+    "base_sha": "600cf71236828040cb32f8a0b9d102e52c4c4412",
+    "source_fingerprint": "7678b3fee730989622735aeb94b2a549d6d2e94095240a63e57bce4f8c499c30",
+    "suite_pass_count": 22,
+    "wall_seconds": 1054.962,
+    "screenshots": 422,
+    "real_posts": 0,
+    "unexpected_external": 0,
+    "retry_count": 0
+  },
+  "full_regression_head_proof": false,
+  "full_regression_limit": "working-tree snapshot; subsequent privacy/source-identity changes have targeted + preflight verification, not a new full HEAD run",
+  "final_focused": {
+    "status": "PASS",
+    "results": [
+      {
+        "lang": "he",
+        "width": 320,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 768,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1024,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 320,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 768,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1024,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "noJS": true,
+        "width": 320,
+        "status": "PASS"
+      },
+      {
+        "noJS": true,
+        "width": 1440,
+        "status": "PASS"
+      }
+    ],
+    "livePosts": 0,
+    "unexpectedExternal": 0,
+    "errors": []
+  },
+  "final_pipeline_unit_methods": 28,
+  "final_preflight_suites": 5,
+  "correction_cycles": 5,
+  "independent_review_performed": false,
+  "qa_score": null,
+  "blockers": [
+    "GitHub API hostname denied by active cloud network policy; PR creation and Actions inaccessible"
+  ],
+  "limitations": [
+    "LEAN TASK PLANNING v1.1 source unavailable; local interpretation documented",
+    "No Safari/Firefox/manual screen reader/live Pages claim",
+    "No final HEAD Actions run yet"
+  ],
+  "public_form_flags": [
+    false,
+    false,
+    false
+  ],
+  "merged": false,
+  "deployed": false,
+  "screenshot_paths": [
+    "artifacts/event-final-focused/he-390.png",
+    "artifacts/event-final-focused/he-1440.png",
+    "artifacts/event-final-focused/en-390.png",
+    "artifacts/event-final-focused/en-1440.png"
+  ]
+}

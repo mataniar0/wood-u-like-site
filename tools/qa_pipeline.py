@@ -16,6 +16,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "qa/catalog.json"
 SUITES = {
+    "event-gifts": ["node", "tools/check-event-gifts.cjs"],
     "static": ["python3", "-B", "tools/qa_static.py"],
     "contract": ["node", "tools/check-collection-contract.cjs"],
     "assets": ["python3", "tools/verify-oval-room-assets.py"],
@@ -41,6 +42,7 @@ SUITES = {
 }
 PREFLIGHT = ["static", "contract", "assets", "leads", "pipeline-unit"]
 SHARDS = {
+    "event": ["event-gifts"],
     "navigation": ["language", "hero", "homepage", "legacy"],
     "collections": ["collections", "accessibility"],
     "products": ["product-pages"],
@@ -146,7 +148,7 @@ def select(changes, catalog, mode="pr", diff_error=False, branch=None):
 
 def fingerprint():
     digest = hashlib.sha256()
-    paths = sorted(p for folder in ("assets", "collections", "products", "inquiry", "tools", "qa", ".github")
+    paths = sorted(p for folder in ("assets", "collections", "products", "inquiry", "event-gifts", "tools", "qa", ".github")
                    for p in (ROOT / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts)
     paths += [ROOT / name for name in ("index.html", "package.json", "package-lock.json")]
     for path in paths:

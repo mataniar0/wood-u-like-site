@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "materials": [
+    {
+      "id": "wood",
+      "status": "available",
+      "label": {
+        "he": "עץ",
+        "en": "Wood"
+      }
+    },
+    {
+      "id": "glass",
+      "status": "planned",
+      "label": {
+        "he": "זכוכית — בעתיד",
+        "en": "Glass — future only"
+      }
+    },
+    {
+      "id": "mixed",
+      "status": "planned",
+      "label": {
+        "he": "חומרים משולבים — בעתיד",
+        "en": "Mixed materials — future only"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "keychains",
+      "material": "wood",
+      "status": "planned",
+      "title": {
+        "he": "מחזיקי מפתחות מעץ",
+        "en": "Wooden keychains"
+      },
+      "description": {
+        "he": "מילה, שם או סמל קטן שממשיכים עם האורחים.",
+        "en": "A word, name or small symbol for guests to carry."
+      }
+    },
+    {
+      "id": "magnets",
+      "material": "wood",
+      "status": "planned",
+      "title": {
+        "he": "מגנטים מעץ",
+        "en": "Wooden magnets"
+      },
+      "description": {
+        "he": "מזכרת עם הקדשה שמשאירה את הרגע קרוב.",
+        "en": "A dedicated keepsake to keep a moment close."
+      }
+    },
+    {
+      "id": "bookmarks",
+      "material": "wood",
+      "status": "planned",
+      "title": {
+        "he": "סימניות",
+        "en": "Bookmarks"
+      },
+      "description": {
+        "he": "מסר אישי שמלווה את הסיפור הבא.",
+        "en": "A personal message for the next story."
+      }
+    },
+    {
+      "id": "ornaments",
+      "material": "wood",
+      "status": "planned",
+      "title": {
+        "he": "קישוטים דקורטיביים",
+        "en": "Decorative ornaments"
+      },
+      "description": {
+        "he": "פרט קטן שמתחבר לאופי של האירוע.",
+        "en": "A small detail reflecting the character of the event."
+      }
+    }
+  ],
+  "future_examples": [
+    {
+      "id": "shot-glasses",
+      "material": "glass",
+      "status": "planned"
+    },
+    {
+      "id": "whiskey-glasses",
+      "material": "glass",
+      "status": "planned"
+    },
+    {
+      "id": "combined-gifts",
+      "material": "mixed",
+      "status": "planned"
+    }
+  ]
+}

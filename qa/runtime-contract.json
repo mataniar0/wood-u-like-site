@@ -10,7 +10,7 @@
     "assets/css/collection.css": "6fe2fe4a5bd6d4495487cbe32983b1e00e91ee1fe1f4656e80814b1aa61a9ee2",
     "assets/css/natural-door-sign.css": "19377db4fcc85c54e937bd21627307c274cdb9e99315f5260b03efecdd65dce8",
     "assets/css/style.css": "098b0fc57ebb66e203616e7a9710cbf2b1338555e53fcd4095400e022d89d3de",
-    "assets/js/language.js": "6453eed7a143acb487b2b384517e2a83acabdd88452eadb75fe935d35e46bcef",
+    "assets/js/language.js": "fee2d7c1912043da8b5afe2aac387e2dadc9921786c1b0ef411be7670d25c4f2",
     "assets/js/main.js": "9856792b8b2e9a3a3de71eda3a4b22f13dc77927daebd22602392c4c92d996dc",
     "assets/js/attribution.js": "ed0286be505c478c1a809ccf55e69e3de24747171b0618bdf3300d26cef17f3b",
     "assets/js/clock-gallery.js": "ef5e0782faefc8c73ee319c2a5fd73f13657cf0591fdcd9fde9c6609e89f64dc",
@@ -33,7 +33,11 @@
     "products/hanging-home-sign/index.html": "d5352058e8328b4131009c9eed0384b29548f0716d1f739491fec3da163c373c",
     "products/personalized-clock/index.html": "531c1feeed47e290b591ea9a7d03647e6157ce85f29e3fc1978873cc0bd66c13",
     "products/family-sign/index.html": "b809ba5631b2dadfadfbee5b0ffe14fd659712e2ea6c2d8d05993d006fac971c",
-    "index.html": "7a67fe05698579acc588ca3033a7948589f2372ed9eb125ebee31b46cd714954"
+    "index.html": "1fe1bbb1db7d199128ee8306ad47976323509ae5d8590163d6613e9054306ec1",
+    "event-gifts/index.html": "ccd91aff94334c90f45cc5c1ecdca254ff7e0b1064e6e6f8161b9f6ccc862058",
+    "event-gifts/event-gifts.css": "29264d323e88922b0693aae823f89e371f98cf73611da19c8769f3b7d0981f84",
+    "event-gifts/event-gifts.js": "2be36e5d55368a9602cddad34d2a2b53d1696b45cde0ab4f2045a0377c2e88ea",
+    "event-gifts/catalog.json": "232651473eccf752d1b53e5bc56a70cf6ffeefb43b5223118912a3ce2ddfae15"
   },
   "approved_asset_files": [
     "assets/images/README.md",

@@ -55,7 +55,7 @@ def check(root=ROOT, base=None):
     else:
         records.append({"test": "local-guard-mode", "status": "PASS", "os_isolated": False, "note": "CI enforces OS isolation; local run uses mandatory browser guard"})
     catalog = json.loads((root / "qa/catalog.json").read_text())
-    pages = [root / "index.html", root / "inquiry/index.html"]
+    pages = [root / "index.html", root / "inquiry/index.html", root / "event-gifts/index.html"]
     pages += [root / g["route"] / "index.html" for g in catalog["collections"]]
     pages += [root / p["route"] / "index.html" for p in catalog["products"]]
     expected_ids = [p["product_id"] for p in catalog["products"]]
