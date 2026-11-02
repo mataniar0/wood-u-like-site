@@ -1,0 +1,11 @@
+assets/js/language.js
+docs/review/wul-event-003/CHANGED_FILES.txt
+docs/review/wul-event-003/PR_BODY_HE.md
+docs/review/wul-event-003/QA_SUMMARY.json
+docs/review/wul-event-003/REPORT_HE.md
+event-gifts/event-gifts.css
+event-gifts/index.html
+qa/runtime-contract.json
+tools/build_event_gifts.py
+tools/check-wedding-magnets.cjs
+tools/test_qa_wedding_gallery.py

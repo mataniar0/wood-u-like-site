@@ -1,0 +1,92 @@
+{
+  "task": "WUL-EVENT-003",
+  "base_sha": "e50dc1a1d4195c3903bc367afbf996e484f120d0",
+  "branch": "feature/wul-event-003-hero-image",
+  "status": "LOCAL_QA_PASS_PR_AND_CI_BLOCKED",
+  "pr_url": null,
+  "source_fingerprint": "4028cea4a54940e4aa22535ae9e8d8d40aac69abcf9e7c3c1012bfb5055722a9",
+  "gallery_hero_results": {
+    "status": "PASS",
+    "results": [
+      {
+        "lang": "he",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "status": "PASS"
+      }
+    ],
+    "network": {
+      "localReads": 112,
+      "mockedPosts": 0,
+      "denied": 0,
+      "realPosts": 0,
+      "unexpectedExternal": 0
+    }
+  },
+  "form_results": {
+    "status": "PASS",
+    "results": [
+      {
+        "lang": "he",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "status": "PASS"
+      }
+    ],
+    "noJS": "PASS",
+    "posts": 0,
+    "external": 0
+  },
+  "preflight_pass_count": 5,
+  "unit_methods": 30,
+  "leads_methods": 33,
+  "approved_assets_unchanged": 35,
+  "wedding_assets_unchanged": 4,
+  "gallery_byte_identical": true,
+  "quote_and_footer_byte_identical": true,
+  "runtime_hashes_updated": [
+    "event-gifts/index.html",
+    "event-gifts/event-gifts.css",
+    "assets/js/language.js"
+  ],
+  "correction_cycles": 0,
+  "screenshots_opened": 4,
+  "ci_head_verified": false,
+  "ci_expected_suites": 24,
+  "blockers": [
+    "PR API denied by active network policy; current HEAD CI not run"
+  ],
+  "independent_review_performed": false,
+  "qa_score": null,
+  "merged": false,
+  "deployed": false,
+  "forms_activated": false
+}

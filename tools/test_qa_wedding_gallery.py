@@ -28,6 +28,13 @@ class WeddingGallery(unittest.TestCase):
                 self.assertIn('צילום המוצר המקורי',page)
                 self.assertIn('הדמיית קונספט — חריטה להמחשה',page)
                 self.assertIn('../assets/css/event-wedding-feature.css',page)
+                hero=page.split('<section class="event-hero">',1)[1].split('</section>',1)[0]
+                self.assertNotIn('workshop',hero)
+                self.assertIn('<picture>',hero)
+                self.assertIn('wedding-magnets-styled-concept-small.webp',hero)
+                self.assertIn('width="1122" height="1402"',hero)
+                self.assertIn('הדמיית קונספט — חריטה להמחשה.',hero)
+                self.assertIn('Concept visualization — illustrative engraving.',language)
                 self.assertEqual(page.count('data-family='),4)
                 self.assertEqual(home.count('class="wul-wedding-feature wrap"'),1)
                 self.assertIn('data-i18n-alt="event.wedding.styled-concept.alt"',home)

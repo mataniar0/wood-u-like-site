@@ -21,6 +21,18 @@ const sizes={'wedding-magnets-original.webp':[1200,1600],'wedding-magnets-origin
   assert.equal(await feature.locator('img').evaluate(i=>getComputedStyle(i).objectFit),'contain');await feature.locator('img').evaluate(i=>i.decode());
   await p.screenshot({path:path.join(out,`home-${lang}-${width}.png`),fullPage:false});
   await feature.locator('a').click();await p.waitForURL(base+'event-gifts/');
+  const hero=p.locator('.event-hero figure');
+  assert.equal(await hero.locator('picture source').getAttribute('srcset'),'../assets/images/wedding-magnets-styled-concept-small.webp');
+  const heroImg=hero.locator('img');await heroImg.evaluate(i=>i.decode());
+  assert.equal(await heroImg.getAttribute('width'),'1122');assert.equal(await heroImg.getAttribute('height'),'1402');
+  assert.equal(await heroImg.evaluate(i=>i.currentSrc),base+'assets/images/wedding-magnets-styled-concept'+(width<=640?'-small':'')+'.webp');
+  assert.equal(await heroImg.evaluate(i=>getComputedStyle(i).objectFit),'contain');
+  assert.equal(await heroImg.evaluate(i=>getComputedStyle(i).borderTopLeftRadius),'0px');
+  assert.equal(await heroImg.getAttribute('alt'),lang==='he'?'הדמיית קונספט של מגנטי עץ חרוטים לחתונה':'Concept visualization of engraved wooden wedding magnets');
+  assert.equal((await hero.locator('figcaption').textContent()).trim(),lang==='he'?'הדמיית קונספט — חריטה להמחשה.':'Concept visualization — illustrative engraving.');
+  assert(await heroImg.evaluate(i=>{const r=i.getBoundingClientRect();return Math.abs(r.width/r.height-1122/1402)<.005;}));
+  await p.evaluate(()=>scrollTo(0,0));
+  await p.screenshot({path:path.join(out,`hero-${lang}-${width}.png`),fullPage:true});
   for(const file of Object.keys(sizes)){
    const decoded=await p.evaluate(async url=>{const i=new Image();i.src=url;await i.decode();return[i.naturalWidth,i.naturalHeight];},base+'assets/images/'+file);assert.deepEqual(decoded,sizes[file]);
   }
