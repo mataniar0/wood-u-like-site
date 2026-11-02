@@ -1,0 +1,47 @@
+{
+  "source": "user-uploaded wul-event-images.zip",
+  "archive_sha256": "f49a05b2b99b1ed36c6389f2fc4808e729001af9ca4dab5074a675115f361c0b",
+  "files": [
+    {
+      "archive_path": "wul-event-images/wedding-magnets-original.webp",
+      "path": "assets/images/wedding-magnets-original.webp",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "sha256": "7ae2cd381db1c463bd6dc32111b3db1a4444e6b4d1cbf4ab27f744507aaafae4",
+      "bytes": 365834
+    },
+    {
+      "archive_path": "wul-event-images/wedding-magnets-original-small.webp",
+      "path": "assets/images/wedding-magnets-original-small.webp",
+      "dimensions": [
+        600,
+        800
+      ],
+      "sha256": "17ad458b4b5c2668936da618de6eaeb47b14307b58d005414d7b460d64bcd620",
+      "bytes": 82934
+    },
+    {
+      "archive_path": "wul-event-images/wedding-magnets-styled-concept.webp",
+      "path": "assets/images/wedding-magnets-styled-concept.webp",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "ff8714de75dcc400cbb720516687dafe9b49cc0c310c9eb4781a919ff1b7fcf8",
+      "bytes": 467858
+    },
+    {
+      "archive_path": "wul-event-images/wedding-magnets-styled-concept-small.webp",
+      "path": "assets/images/wedding-magnets-styled-concept-small.webp",
+      "dimensions": [
+        600,
+        750
+      ],
+      "sha256": "01c9e9065d6f79557e6b849c784dc878111da1ab7bea464614ced6d73a93d365",
+      "bytes": 125620
+    }
+  ],
+  "processing": "Exact approved WebP bytes copied without alteration"
+}

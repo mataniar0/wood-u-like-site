@@ -1,10 +1,16 @@
 assets/css/event-wedding-feature.css
+assets/images/wedding-magnets-original-small.webp
+assets/images/wedding-magnets-original.webp
+assets/images/wedding-magnets-styled-concept-small.webp
+assets/images/wedding-magnets-styled-concept.webp
 assets/js/language.js
 docs/review/wul-event-002/CHANGED_FILES.txt
+docs/review/wul-event-002/PHOTO_MANIFEST.json
 docs/review/wul-event-002/QA_SUMMARY.json
 docs/review/wul-event-002/REPORT_HE.md
 event-gifts/index.html
 index.html
+qa/assets/wedding-magnets.json
 qa/runtime-contract.json
 tools/build_event_gifts.py
 tools/check-wedding-magnets.cjs
