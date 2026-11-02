@@ -1,0 +1,78 @@
+{
+  "task": "WUL-EVENT-002",
+  "issue": 53,
+  "pr": 54,
+  "branch": "feature/wul-event-002-wedding-magnet-gallery",
+  "status": "LOCAL_QA_PASS_CURRENT_HEAD_CI_PENDING",
+  "starting_head": "e65494eb9d976a867951010790007110730ad83e",
+  "base_sha": "be684852561fcf18083978cae8c88f0a3daf9ebb",
+  "missing_assets": [],
+  "unit_methods": 30,
+  "unit_status": "PASS",
+  "existing_assets_verified": 35,
+  "mandatory_static": "PASS",
+  "browser_gallery": "4/4 PASS",
+  "visual_review": "12 screenshots opened; HE/EN 390/1440",
+  "new_screenshots": 12,
+  "image_hashes_recorded": true,
+  "live_posts": 0,
+  "correction_cycles": 1,
+  "runtime_source_hashes_updated": true,
+  "runtime_asset_hashes_updated": true,
+  "api_pr_body_update": "BLOCKED_NETWORK_POLICY",
+  "independent_review": false,
+  "qa_score": null,
+  "merged": false,
+  "deployed": false,
+  "contact_config_changed": false,
+  "preflight": "5/5 PASS",
+  "source_fingerprint": "18a8dcd3cfe4251dcb2f5e46dea8902a2c1a6b5297adc553a985b05f70e02b06",
+  "gallery_results": {
+    "status": "PASS",
+    "results": [
+      {
+        "lang": "he",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "status": "PASS"
+      }
+    ],
+    "network": {
+      "localReads": 116,
+      "mockedPosts": 0,
+      "denied": 0,
+      "realPosts": 0,
+      "unexpectedExternal": 0
+    }
+  },
+  "network": {
+    "localReads": 116,
+    "mockedPosts": 0,
+    "denied": 0,
+    "realPosts": 0,
+    "unexpectedExternal": 0,
+    "status": "PASS"
+  },
+  "unexpected_external_requests": 0,
+  "counter_scope": "local focused gallery browser run",
+  "full_ci_expected_suites": 24,
+  "ci_head_verified": false,
+  "ci_evidence_url": "https://github.com/mataniar0/wood-u-like-site/pull/54/checks",
+  "correction_cycles_after_asset_receipt": 0,
+  "asset_source_manifest": "PHOTO_MANIFEST.json",
+  "asset_blocker_resolved": true
+}
