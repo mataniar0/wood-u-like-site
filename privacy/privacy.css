@@ -11,4 +11,4 @@
 .privacy-draft{font-weight:700;border-inline-start:4px solid currentColor;padding-inline-start:1rem}
 .privacy-footer{border-top:1px solid var(--line,#dedfd8);padding-block:1rem;overflow-wrap:anywhere}
 .privacy-skip{position:absolute;inset-inline-start:1rem;top:-10rem;background:var(--paper,#fcfaf7);padding:.5rem;z-index:10}.privacy-skip:focus{top:.5rem}
-[data-policy-links]{display:flex;flex-wrap:wrap;gap:.25rem 1rem}[data-policy-links] a{display:inline-flex;align-items:center;min-height:44px}
+[data-policy-links]{display:flex;align-items:center;flex-wrap:wrap;gap:.25rem 1rem}[data-policy-links] a{display:inline-flex;align-items:center;min-height:44px}
