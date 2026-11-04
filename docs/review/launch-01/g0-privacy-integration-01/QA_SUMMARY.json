@@ -1,0 +1,452 @@
+{
+  "task": "LAUNCH-01/G0-PRIVACY-INTEGRATION-01",
+  "repository": "wood-u-like-site",
+  "branch": "feature/launch-01-g0-privacy-integration-01",
+  "tested_code_sha": "f1649fc6c9344aa2221904501d47b26b60772e62",
+  "source_fingerprint": "d2df9d8d08da52b4519e04270e0ec4ee061a0149c27f96f7295994c6932529cf",
+  "local_counts": {
+    "PASS": 33,
+    "FAIL": 0,
+    "BLOCKED": 2
+  },
+  "combined_counts": {
+    "PASS": 59,
+    "FAIL": 0,
+    "BLOCKED": 5
+  },
+  "status": "ALLOWED_FOCUSED_CHECKS_PASS; GOVERNANCE_AND_PUBLIC_GATES_OPEN",
+  "records": [
+    {
+      "id": "wood-u-like-site/S01-three-false-flags-and-unchanged-endpoint",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S02-no-direct-html-post-and-disabled-submit",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S03-isolated-approval-predicate-truth-table-no-submit",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S04-unapproved-alternative-channels-inert",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S05-native-he-en-policy-links-from-all-relevant-forms",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S06-two-complete-static-draft-policies-and-pages-paths",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S07-four-short-full-copy-identities-and-source-parity",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S08-owner-and-vendor-facts-no-unqualified-deletion-promise",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S09-payload-metadata-or-current-main-product-preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S10-policy-and-event-generation-retain-native-links",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S11-unrelated-pages-assets-unchanged-and-runtime-copy-hashes",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/S12-changed-syntax-and-draft-status",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-he-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-he-390-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-en-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-en-390-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-he-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-he-1440-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-en-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/policy-en-1440-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-he-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-en-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-he-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-en-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-he-390-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/inquiry-he-1440-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-he-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-en-390-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-he-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-en-1440-js",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-he-390-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/event-he-1440-nojs",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/EVENT-004-compatibility",
+      "status": "PASS"
+    },
+    {
+      "id": "wood-u-like-site/BLOCKED-1",
+      "status": "BLOCKED",
+      "reason": "Public browser/network audit unavailable"
+    },
+    {
+      "id": "wood-u-like-site/BLOCKED-2",
+      "status": "BLOCKED",
+      "reason": "Any form submission/acknowledgement test prohibited"
+    }
+  ],
+  "browser": {
+    "status": "PASS",
+    "tested_code_sha": "f1649fc6c9344aa2221904501d47b26b60772e62",
+    "unique_cases": 20,
+    "results": [
+      {
+        "id": "policy-he-390-js",
+        "kind": "policy",
+        "width": 390,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-he-390-nojs",
+        "kind": "policy",
+        "width": 390,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-en-390-js",
+        "kind": "policy",
+        "width": 390,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-en-390-nojs",
+        "kind": "policy",
+        "width": 390,
+        "lang": "en",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-he-1440-js",
+        "kind": "policy",
+        "width": 1440,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-he-1440-nojs",
+        "kind": "policy",
+        "width": 1440,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-en-1440-js",
+        "kind": "policy",
+        "width": 1440,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "policy-en-1440-nojs",
+        "kind": "policy",
+        "width": 1440,
+        "lang": "en",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-he-390-js",
+        "kind": "inquiry",
+        "width": 390,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-en-390-js",
+        "kind": "inquiry",
+        "width": 390,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-he-1440-js",
+        "kind": "inquiry",
+        "width": 1440,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-en-1440-js",
+        "kind": "inquiry",
+        "width": 1440,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-he-390-nojs",
+        "kind": "inquiry",
+        "width": 390,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "inquiry-he-1440-nojs",
+        "kind": "inquiry",
+        "width": 1440,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "event-he-390-js",
+        "kind": "event",
+        "width": 390,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "event-en-390-js",
+        "kind": "event",
+        "width": 390,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "event-he-1440-js",
+        "kind": "event",
+        "width": 1440,
+        "lang": "he",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "event-en-1440-js",
+        "kind": "event",
+        "width": 1440,
+        "lang": "en",
+        "js": true,
+        "status": "PASS"
+      },
+      {
+        "id": "event-he-390-nojs",
+        "kind": "event",
+        "width": 390,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      },
+      {
+        "id": "event-he-1440-nojs",
+        "kind": "event",
+        "width": 1440,
+        "lang": "he",
+        "js": false,
+        "status": "PASS"
+      }
+    ],
+    "initial_failures": [
+      {
+        "id": "event-he-390-nojs",
+        "kind": "event",
+        "width": 390,
+        "lang": "he",
+        "js": false,
+        "status": "FAIL",
+        "error": "The expression evaluated to a falsy value:\n\n  assert(await page.locator('#demo-fields').isDisabled())\n"
+      },
+      {
+        "id": "event-he-1440-nojs",
+        "kind": "event",
+        "width": 1440,
+        "lang": "he",
+        "js": false,
+        "status": "FAIL",
+        "error": "The expression evaluated to a falsy value:\n\n  assert(await page.locator('#demo-fields').isDisabled())\n"
+      }
+    ],
+    "network": [
+      {
+        "localGetHead": 234,
+        "prevented": [],
+        "realPosts": 0
+      },
+      {
+        "localGetHead": 180,
+        "prevented": [],
+        "realPosts": 0
+      },
+      {
+        "localGetHead": 180,
+        "prevented": [],
+        "realPosts": 0
+      }
+    ],
+    "application_correction_cycles": 1,
+    "qa_harness_correction_cycles": 1,
+    "environment_recovery_incidents": 1,
+    "form_fill_or_submit_events": 0,
+    "evidence_reuse": "Unaffected static policy cases retain valid initial evidence; only form/event link cases rerun after scoped styling change. Final source/unit checks run at tested_code_sha."
+  },
+  "static": {
+    "status": "PASS",
+    "tested_sha": "f1649fc6c9344aa2221904501d47b26b60772e62",
+    "base_sha": "3a5b855b4bf3b96ad2c8eea28d9d1dbc25caa2d7",
+    "scope": "Focused integration only, not the 31 baseline audit checks. Extracted predicate evaluation never executes application/form handlers.",
+    "form_events": 0,
+    "real_or_mock_posts": 0,
+    "records": [
+      {
+        "test": "S01-three-false-flags-and-unchanged-endpoint",
+        "status": "PASS"
+      },
+      {
+        "test": "S02-no-direct-html-post-and-disabled-submit",
+        "status": "PASS"
+      },
+      {
+        "test": "S03-isolated-approval-predicate-truth-table-no-submit",
+        "status": "PASS"
+      },
+      {
+        "test": "S04-unapproved-alternative-channels-inert",
+        "status": "PASS"
+      },
+      {
+        "test": "S05-native-he-en-policy-links-from-all-relevant-forms",
+        "status": "PASS"
+      },
+      {
+        "test": "S06-two-complete-static-draft-policies-and-pages-paths",
+        "status": "PASS"
+      },
+      {
+        "test": "S07-four-short-full-copy-identities-and-source-parity",
+        "status": "PASS"
+      },
+      {
+        "test": "S08-owner-and-vendor-facts-no-unqualified-deletion-promise",
+        "status": "PASS"
+      },
+      {
+        "test": "S09-payload-metadata-or-current-main-product-preserved",
+        "status": "PASS"
+      },
+      {
+        "test": "S10-policy-and-event-generation-retain-native-links",
+        "status": "PASS"
+      },
+      {
+        "test": "S11-unrelated-pages-assets-unchanged-and-runtime-copy-hashes",
+        "status": "PASS"
+      },
+      {
+        "test": "S12-changed-syntax-and-draft-status",
+        "status": "PASS"
+      }
+    ]
+  },
+  "cycles": {
+    "application_link_alignment": 1,
+    "qa_harness": 1,
+    "environment_recovery": 1
+  },
+  "public_deployed_sha": "NOT_VERIFIED",
+  "draft_pr": null,
+  "public_flags": "all three false in both repositories",
+  "posts_real_or_mock": 0,
+  "event_compatibility": {
+    "status": "PASS",
+    "tested_privacy_sha": "f1649fc6c9344aa2221904501d47b26b60772e62",
+    "event_work_sha": "60789ced359676b2dafdf07057dc2ce30357ceb6",
+    "gallery_byte_equal": true,
+    "catalog_byte_equal": true,
+    "evidence_and_future_sections_preserved": true,
+    "policy_links_regenerated": true,
+    "shared_changed_runtime_entries": [
+      "event-gifts/index.html"
+    ],
+    "combined_generated_event_sha256": "aa3930eb8c97c1eabfdfb92f5d23e917ceda382fea142e1295ac475a8aa38517",
+    "integration_note": "Future approved combination must regenerate event HTML and recalculate its runtime hash. Never select either branch hash blindly. No work branch modified."
+  }
+}
