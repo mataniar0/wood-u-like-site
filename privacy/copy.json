@@ -1,0 +1,147 @@
+{
+  "brand": "WOOD U LIKE",
+  "status": "draft",
+  "source_policy_sha": "f705907e4687c89e0c2d9c6ab76f6c63b24a8ec2",
+  "vendor_evidence": "Owner-provided Formspree reply recorded in AL docs/launch/LAUNCH-01-FORMSPREE-VENDOR-REPLY-2026-11-04.md; not independent supplier/header verification",
+  "site_css": "assets/css/style.css",
+  "short_notice": {
+    "he": "WOOD U LIKE מופעל במסגרת העסק ASSEMBLE LAB. בעל השליטה במידע: מתניה רוזנצויג. הפרטים שתמסרו ישמשו למענה לפנייתכם, לבדיקת התאמה ולהכנת הצעת מחיר ולתיאום הזמנות, ולא לפרסום או לשיווק. מסירת המידע מרצונכם; ללא שם ופרטי קשר לא נוכל להשיב. המידע מעובד באמצעות Formspree, המשמש גם את ASSEMBL LAB, והודעות מגיעות ל־Gmail של העסק. רק בעל העסק מורשה להתחבר לחשבון Formspree; ספקי השירות עשויים לעבד מידע לצורך הפעלתו. לבקשה עשויים להצטרף נתוני מקור, שפה, קמפיין ומועד ניסיון השליחה. לפניות עיון, תיקון או מחיקה בהתאם לדין: labassemble@gmail.com. פנייה אינה הזמנה מחייבת או תשלום.",
+    "en": "WOOD U LIKE operates under ASSEMBLE LAB. Data controller: מתניה רוזנצויג. Information you provide is used to respond, assess customization, prepare a quote and coordinate orders, not for advertising or marketing. Providing information is voluntary; without a name and contact details we cannot respond. Formspree processes inquiries for both brands, including ASSEMBL LAB, and notifications arrive in the business Gmail inbox. Only the owner is authorized to log in to Formspree; service providers may process data to operate it. Source, language, campaign and submission-attempt metadata may accompany your request. For access, correction or deletion requests subject to law: labassemble@gmail.com. An inquiry is not a binding order or payment."
+  },
+  "policies": {
+    "he": [
+      {
+        "heading": "זהות ואחריות למידע",
+        "paragraphs": [
+          "האתר WOOD U LIKE מופעל במסגרת העסק ASSEMBLE LAB. בעל השליטה במידע האישי: מתניה רוזנצויג. לפניות פרטיות: labassemble@gmail.com."
+        ]
+      },
+      {
+        "heading": "מידע בפנייה",
+        "paragraphs": [
+          "פניות עשויות לכלול שם, טלפון או דוא״ל, מוצר וכמות, מידות, תיאור צרכים והערות, בקשות חריטה ורעיון להתאמה אישית. אין למסור מידע רגיש שאינו נחוץ. ספקי תפעול עשויים לעבד מידע טכני לצורכי תפעול ואבטחה.",
+          "לבקשה עשויים להצטרף מזהי המותג והאתר, עמוד המקור ללא פרמטרי שאילתה או fragment, מזהה ושם מוצר, שפת הטופס, תוויות הקמפיין utm_source ו־utm_campaign ומועד ניסיון השליחה submitted_at. אלו נתונים המצורפים לפנייה, בשונה מהשמירה הזמנית של תוויות הקמפיין בדפדפן. אין בכך אישור ששליחה בוצעה או התקבלה."
+        ]
+      },
+      {
+        "heading": "מטרות השימוש",
+        "paragraphs": [
+          "המידע משמש למענה לפניות, לבדיקת התאמה ואפשרויות ייצור, להכנת הצעות מחיר, לתיאום הזמנות ושירות ולאבטחת הפעילות. פרטי הפונים אינם משמשים לפרסום או לשיווק."
+        ]
+      },
+      {
+        "heading": "מסירת מידע מרצון",
+        "paragraphs": [
+          "מסירת הפרטים מרצונכם ואינה חובה חוקית לצורך פנייה. ללא פרטי קשר מתאימים לא נוכל להשיב. פנייה אינה הזמנה מחייבת או תשלום."
+        ]
+      },
+      {
+        "heading": "ספקי שירות והעברה לחו״ל",
+        "paragraphs": [
+          "פניות מעובדות באמצעות Formspree, המשמש גם את ASSEMBL LAB, והודעות מגיעות לתיבת Gmail של העסק: labassemble@gmail.com. רק בעל העסק מורשה להתחבר לחשבון Formspree; ספקי השירות עשויים לעבד מידע טכני ואישי לצורך מתן השירות.",
+          "ייתכן עיבוד מידע מחוץ לישראל. תנאי העברת המידע לחו״ל וההסדרים החלים עדיין בבירור, ונדרש אימותם לפני אישור הפעלה של פניות באתר."
+        ]
+      },
+      {
+        "heading": "שמירה ומחיקה",
+        "paragraphs": [
+          "אחת לשלושה חודשים אנו בוחנים את נחיצות שמירת הפניות ומוחקים מידע שאינו נחוץ עוד, בכפוף לחובות הדין ולצרכים לגיטימיים. זו אינה הבטחה למחיקת כל פנייה תוך 90 יום.",
+          "לפי תשובת Formspree שנמסרה לנו, מידע אינו נמחק אוטומטית לאחר 30 יום. בתוכנית Free מדובר במגבלת גישה להיסטוריה; מידע ישן עשוי להישאר אצל הספק גם כשאינו נגיש בלוח הבקרה.",
+          "לפי תשובת הספק, מחיקה מגיבויים ומרשומות אחרות דורשת פנייה לספק. היקף המחיקה, מועדה והטיפול בעותקים כפופים לתהליכי הספק, לדין ולצרכים לגיטימיים; אין התחייבות בלתי מסויגת למחיקה מיידית או למחיקת כל עותק. גם עותקי Gmail עשויים להיות כפופים לתהליכי מחיקה נפרדים."
+        ]
+      },
+      {
+        "heading": "אבטחת מידע",
+        "paragraphs": [
+          "אנו נוקטים אמצעי הגנה בהתאם לסיכונים ולדין. הגישה לחשבון Formspree מוגבלת לבעל העסק; אין הבטחה לאבטחה מוחלטת."
+        ]
+      },
+      {
+        "heading": "זכויות ופניות פרטיות",
+        "paragraphs": [
+          "בהתאם לדין אפשר לבקש לעיין במידע אישי ולבקש תיקון או מחיקה של מידע שאינו נכון, שלם, ברור או מעודכן. לפניות: labassemble@gmail.com."
+        ]
+      },
+      {
+        "heading": "אחסון בדפדפן",
+        "paragraphs": [
+          "האתר משתמש ב־localStorage להעדפת שפה. נתוני שיוך קמפיין זמניים נשמרים ב־sessionStorage ונקראים לקראת פנייה; קוד האתר מסיר את המפתח בכניסה לעמוד הבירור, אך נתוני השיוך עשויים להישאר בזיכרון לצורך צירוף לפנייה אם תאושר שליחתה. שני המותגים משתמשים באותו origin של GitHub Pages; נתיבי האתר אינם בידוד נפרד של Web Storage.",
+          "ספקי תפעול עשויים לעבד מידע טכני. ביקורת הרשת של האתרים הציבוריים טרם הושלמה, ולכן אין כאן הצהרה סופית בדבר היעדר עוגיות, שירותי מעקב או שירותים חיצוניים נוספים."
+        ]
+      },
+      {
+        "heading": "עדכונים",
+        "paragraphs": [
+          "עדכונים מהותיים במדיניות יפורסמו לפי הצורך והדין. נוסח טיוטה זה טעון אישור בעל העסק בגרסה מדויקת לפני פרסום."
+        ]
+      }
+    ],
+    "en": [
+      {
+        "heading": "Identity and responsibility",
+        "paragraphs": [
+          "WOOD U LIKE is operated under the registered business name ASSEMBLE LAB. Data controller: מתניה רוזנצויג. Privacy contact: labassemble@gmail.com."
+        ]
+      },
+      {
+        "heading": "Information in an inquiry",
+        "paragraphs": [
+          "Inquiries may contain a name, telephone number or email address, product and quantity, dimensions, requirements and notes, engraving requests and customization ideas. Do not provide unnecessary sensitive information. Operational providers may process technical data for operation and security.",
+          "An inquiry may also include brand and site identifiers, its source page without query parameters or fragment, product identifier and name, form language, utm_source and utm_campaign labels, and the submission-attempt timestamp submitted_at. These accompany a request, separately from temporary browser storage of campaign labels. This does not confirm that a submission occurred or was received."
+        ]
+      },
+      {
+        "heading": "Purposes",
+        "paragraphs": [
+          "Information is used to respond to inquiries, assess customization and production, prepare quotes, coordinate orders and services, and protect the service. Inquiry details are not used for advertising or marketing."
+        ]
+      },
+      {
+        "heading": "Voluntary provision",
+        "paragraphs": [
+          "Providing information is voluntary and is not legally required to make an inquiry. Without suitable contact details we cannot respond. An inquiry is not a binding order or payment."
+        ]
+      },
+      {
+        "heading": "Service providers and international transfers",
+        "paragraphs": [
+          "Inquiries are processed through Formspree, also used by ASSEMBL LAB, and notifications arrive in the business Gmail inbox: labassemble@gmail.com. Only the owner is authorized to log in to the Formspree account; service providers may process technical and personal data to provide the service.",
+          "Information may be processed outside Israel. International-transfer terms and applicable arrangements remain under review and must be verified before website inquiry activation is approved."
+        ]
+      },
+      {
+        "heading": "Retention and deletion",
+        "paragraphs": [
+          "Every three months we review whether inquiries still need to be retained and delete information no longer needed, subject to legal obligations and legitimate needs. This is not a promise to delete every inquiry within 90 days.",
+          "According to the Formspree reply provided to us, information is not automatically deleted after 30 days. On the Free plan, this is a history-access limit; older information may remain with the provider even when inaccessible in the dashboard.",
+          "According to the provider reply, deletion from backups and other records requires contacting the provider. The scope, timing and treatment of copies are subject to provider processes, law and legitimate needs; there is no unconditional promise of immediate deletion or erasure of every copy. Gmail copies may also follow separate deletion processes."
+        ]
+      },
+      {
+        "heading": "Security",
+        "paragraphs": [
+          "We apply safeguards appropriate to the risks and law. Access to the Formspree account is restricted to the owner; absolute security cannot be guaranteed."
+        ]
+      },
+      {
+        "heading": "Rights and privacy requests",
+        "paragraphs": [
+          "Subject to applicable law, you may request access to personal information and correction or deletion of information that is inaccurate, incomplete, unclear or outdated. Contact: labassemble@gmail.com."
+        ]
+      },
+      {
+        "heading": "Browser storage",
+        "paragraphs": [
+          "The website uses localStorage for language preference. Temporary campaign attribution is stored in sessionStorage and read for an inquiry; site code removes that key on entering the inquiry page, but attribution may remain in memory for inclusion with an inquiry if sending is approved. Both brands share the same GitHub Pages origin; their paths do not provide separate Web Storage isolation.",
+          "Operational providers may process technical data. The public-site network audit is not complete, so this draft does not make a final claim that cookies, tracking services or additional external services are absent."
+        ]
+      },
+      {
+        "heading": "Updates",
+        "paragraphs": [
+          "Material updates will be published when appropriate or required by law. This draft requires owner approval of an exact revision before publication."
+        ]
+      }
+    ]
+  }
+}

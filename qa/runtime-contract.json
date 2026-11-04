@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "contact_config_sha256": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+  "contact_config_sha256": "0e73c935fe5e5b8602a3a09a7595d22f238e425fc2c5b0d0d5395e5a79cd7f55",
   "approved_runtime": {
     "assets/fonts/noto-sans-hebrew-400.woff2": "330b5c315ebac6a102bea95898207a4fdae4a6180d27783dfbb2a700deb61845",
     "assets/fonts/OFL-serif.txt": "38d5fbc95848cf88131f2611c9f3f3a44f0262141601abf3aee6df2f8c4c71f5",
@@ -18,12 +18,12 @@
     "collections/home-decor/index.html": "bc8f6f944263857c7d9b0bb1b7be64cb2492289d796019050a8df10c37f7bd10",
     "collections/kitchen-hosting/index.html": "5e44bbfda5b90de6079e6c52faead24c14188b1f6da5891a0af68d424dabe2fc",
     "collections/gifts-memories/index.html": "5876089d0075aab207bf3de7d58dfead637c8d0ab0b8a927dbdb1f6313a4effa",
-    "inquiry/contact-config.js": "2544a923b1c35320b300b677ffe460b893545ddffa3a6edd6d6aa83aadb8e05e",
+    "inquiry/contact-config.js": "0e73c935fe5e5b8602a3a09a7595d22f238e425fc2c5b0d0d5395e5a79cd7f55",
     "inquiry/README.md": "6ecc9bc633e841e071a68a31b9da23595293571200893602fb2d871d5651d670",
     "inquiry/inquiry.css": "fafdcef7fbdd6218f5cb78901da3e2079a500f5adb1dbc4dd47f42aef9ccd914",
     "inquiry/ACTIVATION_HE.md": "437923fef6b2b4ad7f55bf5495427a041af2558fb287794baeb4af26ab3d90cd",
     "inquiry/inquiry.js": "69eaf291ca56578a46dd1a16fb6c7658513931c569746df78683d025fc94e695",
-    "inquiry/index.html": "323a20952d94857d71b2faf76dce63bcaf88d2c616a76dedf53a82e35e5db26f",
+    "inquiry/index.html": "12518f13497c00a2b2f87d15f4915a7326555ace30b1d4cfa0fc728a8ddf11d3",
     "products/oval-room-signs/index.html": "3429b5cba96dfb007a58a1265ccf24bb9a0d6104b113c137368c588a4cbd8bba",
     "products/kitchen/index.html": "de84b408c4325a75277aae49403142ad05b6e94e31f0c478b1d3ecc511ad4447",
     "products/welcome/index.html": "f614f72123031bf18051c62eaaf5426dc46311a2361600877c08623ee996cb69",
@@ -34,11 +34,15 @@
     "products/personalized-clock/index.html": "7d898d6840872d4de5d605d79b6fd34544a5f047bc0b65a2f7ea34fecf7ff9d0",
     "products/family-sign/index.html": "645648a0183c79b62b0888f20c6359623e5e53509e77180edf03e7a0cfc8edf8",
     "index.html": "fbca192b546e14baf5ae9d3ef225d39082a7d2fbda72691971a1de6d8d44f5c2",
-    "event-gifts/index.html": "462d87a83ce33087959042ff841812dd18795a56a19c14c12cf12827e5e39c8f",
+    "event-gifts/index.html": "7c757df3e57cee4bfcdf33ff4a0bab529bc701c46f271e7cd3f95af6b7bfc8d6",
     "event-gifts/event-gifts.css": "0e5cf26bd8d38b55e4532c36a35fdf259d6e00c35376b1110150779f3b9411ac",
     "event-gifts/event-gifts.js": "2be36e5d55368a9602cddad34d2a2b53d1696b45cde0ab4f2045a0377c2e88ea",
     "event-gifts/catalog.json": "232651473eccf752d1b53e5bc56a70cf6ffeefb43b5223118912a3ce2ddfae15",
-    "assets/css/event-wedding-feature.css": "f4a1c9e21fd95205348202719d630eb8e8a60bfba23e5de05be9e00e41b8a009"
+    "assets/css/event-wedding-feature.css": "f4a1c9e21fd95205348202719d630eb8e8a60bfba23e5de05be9e00e41b8a009",
+    "privacy/index.html": "9f10e156a939a7052f96650f6222ae6c6a1ca9bff34e42982dbf55714e16b035",
+    "privacy/en/index.html": "4f36a29673a68f47377a154c10997e6aca09e61e0e760c4e2ec2dfdff4bf883c",
+    "privacy/privacy.css": "d172823434aad85476f9633e23056d7ba19004fb8e8df60cfd8e024686c2d751",
+    "privacy/copy.json": "a10be057d60eae089847d0b9cf31da03068829c79f899802b26cef2b9f34820c"
   },
   "approved_asset_files": [
     "assets/images/README.md",
