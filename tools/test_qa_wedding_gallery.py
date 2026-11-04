@@ -49,4 +49,26 @@ class WeddingGallery(unittest.TestCase):
         for flag in ('formDestinationApproved','privacyApproved','contactDetailsApproved'):
             self.assertIn(flag+': false',config)
 
+    def test_photographed_evidence_never_enables_commercial_availability(self):
+        import re
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            for name in ('tools/build_event_gifts.py','collections/home-decor/index.html','assets/js/language.js','index.html','event-gifts/catalog.json'):
+                dst=root/name;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy(ROOT/name,dst)
+            file=root/'event-gifts/catalog.json';data=json.loads(file.read_text());magnet=next(f for f in data['families'] if f['id']=='magnets')
+            self.assertEqual(magnet['status'],'planned')
+            self.assertEqual(magnet['evidence_status'],'photographed_example')
+            for evidence in ('concept_only','photographed_example'):
+                magnet['evidence_status']=evidence;file.write_text(json.dumps(data,ensure_ascii=False))
+                subprocess.run(['python3',str(root/'tools/build_event_gifts.py')],check=True)
+                page=(root/'event-gifts/index.html').read_text()
+                card=re.search(r'<article[^>]+data-family="magnets"[^>]*>.*?</article>',page,re.S).group()
+                self.assertIn('data-status="planned"',card)
+                self.assertEqual('קיימת דוגמה מצולמת' in card,evidence=='photographed_example')
+                self.assertIn('לא זמין להזמנה',card)
+                self.assertLess(page.index('data-event-section="photographed-example"'),page.index('data-event-section="future-ideas"'))
+                self.assertIn('דוגמה ממוצר שיוצר בפועל',page)
+                self.assertNotIn('<form',page)
+                self.assertEqual(len(data['families']),4)
+
 if __name__=='__main__':unittest.main(verbosity=2)
