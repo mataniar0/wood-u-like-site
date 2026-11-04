@@ -37,18 +37,32 @@ const sizes={'wedding-magnets-original.webp':[1200,1600],'wedding-magnets-origin
    const decoded=await p.evaluate(async url=>{const i=new Image();i.src=url;await i.decode();return[i.naturalWidth,i.naturalHeight];},base+'assets/images/'+file);assert.deepEqual(decoded,sizes[file]);
   }
   const gallery=p.locator('.wul-wedding-gallery');assert.equal(await gallery.locator('figure').count(),2);
+  assert.equal((await gallery.locator('[data-i18n="event.wedding.evidence"]').textContent()).trim(),lang==='he'?'דוגמה ממוצר שיוצר בפועל':'Example of a product made');
+  assert.match(await gallery.locator('[data-i18n="event.wedding.availability"]').textContent(),lang==='he'?/טרם אומתו/:/have not been verified/);
+  const future=p.locator('[data-event-section="future-ideas"]');assert.equal(await future.locator('[data-family]').count(),4);
+  const magnets=future.locator('[data-family="magnets"]');assert.equal(await magnets.getAttribute('data-status'),'planned');assert.equal(await magnets.getAttribute('data-evidence-status'),'photographed_example');
+  assert.equal(await future.locator('[data-status="available"]').count(),0);
+  assert(await gallery.evaluate((e)=>e.compareDocumentPosition(document.querySelector('[data-event-section="future-ideas"]'))&4));
+  if(width===1440){const a=await gallery.locator('[data-wedding-photo="original"]').boundingBox(),b=await gallery.locator('[data-wedding-photo="styled-concept"]').boundingBox();assert(a.width>b.width);}
   await gallery.scrollIntoViewIfNeeded();
   for(const kind of ['original','styled-concept']){
    const figure=gallery.locator(`[data-wedding-photo="${kind}"]`);await figure.scrollIntoViewIfNeeded();const img=figure.locator('img');await img.evaluate(i=>i.decode());
    assert.equal(await img.evaluate(i=>getComputedStyle(i).objectFit),'contain');assert((await img.getAttribute('alt')).length>10);
    assert.equal(await img.evaluate(i=>i.currentSrc),base+'assets/images/wedding-magnets-'+kind+(width<=640?'-small':'')+'.webp');
    if(lang==='en')assert(!/[\u0590-\u05ff]/u.test(await img.getAttribute('alt')));
-   await p.screenshot({path:path.join(out,`${kind}-${lang}-${width}.png`),fullPage:false});
+   await figure.screenshot({path:path.join(out,`${kind}-${lang}-${width}.png`),animations:'disabled'});
   }
   assert.equal(await gallery.locator('figure').first().getAttribute('data-wedding-photo'),'original');
   assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   await p.addScriptTag({content:axe.source});const a=await p.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));assert.deepEqual(a.violations.map(v=>v.id),[]);assert.deepEqual(errors,[]);
+  await gallery.screenshot({path:path.join(out,`evidence-${lang}-${width}.png`),animations:'disabled'});
+  await future.screenshot({path:path.join(out,`future-${lang}-${width}.png`),animations:'disabled'});
+  assert.equal(await p.locator('form').count(),0);await p.locator('#event-type').selectOption('0');await p.locator('#interest').selectOption('magnets');await p.locator('#quantity').selectOption('20–49');await p.locator('#event-date').fill(await p.locator('#event-date').getAttribute('min'));await p.locator('#notes').fill('SYNTHETIC QA');await p.locator('#check-demo').click();assert.match(await p.locator('#demo-status').textContent(),lang==='he'?/דבר לא נשלח או נשמר/:/Nothing was sent or saved/);assert.equal(await p.evaluate(()=>sessionStorage.length),0);assert.deepEqual(await p.evaluate(()=>Object.keys(localStorage)),['wood-u-like-language']);
   results.push({lang,width,status:'PASS'});await c.close();
+ }
+ for(const width of [390,1440]){
+  const c=await browser.newContext({javaScriptEnabled:false,viewport:{width,height:900}});const p=await c.newPage();await p.goto(base+'event-gifts/');
+  const gallery=p.locator('[data-event-section="photographed-example"]');assert(await gallery.isVisible());assert.equal(await gallery.locator('figure').count(),2);assert.equal((await gallery.locator('[data-i18n="event.wedding.evidence"]').textContent()).trim(),'דוגמה ממוצר שיוצר בפועל');assert(await p.locator('#check-demo').isDisabled());assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));results.push({width,noJS:true,status:'PASS'});await c.close();
  }
  const network=require('./qa-network.cjs').stats;assert.equal(network.realPosts,0);assert.equal(network.denied,0);assert.equal(network.unexpectedExternal,0);
  fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({status:'PASS',results,network},null,2)+'\n');console.log('PASS wedding magnet assets, HE/EN, responsive gallery and accessibility');

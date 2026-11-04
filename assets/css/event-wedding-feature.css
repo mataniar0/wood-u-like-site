@@ -4,7 +4,7 @@
 .wul-wedding-feature__copy{padding:clamp(1rem,3vw,2.5rem);max-width:48ch}
 .wul-wedding-feature__copy h2{margin:.4em 0;font-size:clamp(1.45rem,3vw,2.35rem)}
 .wul-wedding-gallery{margin-block:2rem}
-.wul-wedding-gallery__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.75rem,2vw,1.5rem)}
+.wul-wedding-gallery__grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);align-items:start;gap:clamp(.75rem,2vw,1.5rem)}
 .wul-wedding-gallery figure{margin:0}
 .wul-wedding-gallery img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;border-radius:15px}
 .wul-wedding-gallery figcaption{font-size:.9rem;margin-block:.65rem;color:#575047}
