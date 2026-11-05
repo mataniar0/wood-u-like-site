@@ -21,6 +21,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out', required=True, type=Path)
     parser.add_argument('--browser', default='/usr/bin/chromium')
+    parser.add_argument('--only', default='', help='Comma-separated failed case IDs for a focused correction rerun')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     out = args.out.resolve()
@@ -48,7 +49,7 @@ def main():
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         options = {'source_sha': source_sha, 'base': f'http://127.0.0.1:{server.server_port}/wood-u-like-site/',
-                   'browser': args.browser, 'out': str(out)}
+                   'browser': args.browser, 'out': str(out), 'only_ids': [item for item in args.only.split(',') if item]}
         (out / 'OPTIONS.json').write_text(json.dumps(options, indent=2) + '\n')
         (out / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
         try:

@@ -14,6 +14,7 @@ const options = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
   try {
     for (const test of cases) {
       const id = `${test.kind}-${test.width}-${test.javascript ? test.language || "he-en" : "nojs"}`;
+      if (options.only_ids?.length && !options.only_ids.includes(id)) continue;
       const context = await browser.newContext({viewport: {width: test.width, height: 900},
         javaScriptEnabled: test.javascript, serviceWorkers: "block", reducedMotion: "reduce"});
       const network = {reads: 0, intentional_config_aborts: 0, denied: []}, errors = [], screenshots = [];
@@ -89,7 +90,21 @@ const options = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
             assert.equal(await img.getAttribute("height"), String(height));
             assert.equal(await img.evaluate(image => image.currentSrc), options.base + `assets/images/wedding-magnets-${kind}${test.width <= 640 ? "-small" : ""}.webp`);
             assert.equal(await img.evaluate(image => getComputedStyle(image).objectFit), "contain");
-            assert(await img.evaluate((image, ratio) => {const rect = image.getBoundingClientRect(); return Math.abs(rect.width / rect.height - ratio) < .006;}, width / height));
+            const geometry = await img.evaluate(image => {
+              const rect = image.getBoundingClientRect(), style = getComputedStyle(image);
+              return {width: rect.width, height: rect.height, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+                objectPosition: style.objectPosition, clipPath: style.clipPath, transform: style.transform,
+                figureOverflow: getComputedStyle(image.closest("figure")).overflow};
+            });
+            const expectedNatural = test.width <= 640 ? [600, kind === "original" ? 800 : 750] : [width, height];
+            assert.deepEqual([geometry.naturalWidth, geometry.naturalHeight], expectedNatural);
+            assert(geometry.width > 0 && geometry.height > 0);
+            assert.equal(geometry.objectPosition, "50% 50%");
+            assert.equal(geometry.clipPath, "none"); assert.equal(geometry.transform, "none");
+            assert.equal(geometry.figureOverflow, "visible");
+            // Gallery frames are intentionally 3:4; centered contain preserves the
+            // full source image inside them. Only the unframed hero follows its ratio.
+            if (figure === figures[0][0]) assert(Math.abs(geometry.width / geometry.height - width / height) < .006);
             assert((await img.getAttribute("alt")).length > 10);
             if (test.language === "en") assert(!/[\u0590-\u05ff]/u.test(await img.getAttribute("alt")));
             if (kind === "styled-concept") assert((await figure.locator("figcaption").textContent()).includes(test.language === "he" ? "הדמיית קונספט" : "Concept visualization"));
