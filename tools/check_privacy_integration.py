@@ -9,7 +9,10 @@ class Doc(HTMLParser):
     def handle_starttag(self,tag,attrs):self.elements.append((tag,dict(attrs)))
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);p.add_argument('--base',required=True);p.add_argument('--out',type=Path,required=True);args=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);p.add_argument('--base',required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--qa03-only',action='store_true',help='Run only the isolated QA03 regression contracts, never the baseline suite');args=p.parse_args()
+    qa03=Path(__file__).with_name('check_privacy_qa03.cjs')
+    qa03_command=['node',str(qa03),'--root',str(args.root.resolve()),'--base',args.base,'--out',str(args.out.resolve())]
+    if args.qa03_only:return subprocess.run(qa03_command,check=False).returncode
     root=args.root.resolve();out=args.out;out.mkdir(parents=True,exist_ok=True);data=json.loads((root/'privacy/copy.json').read_text());wul=data['brand']=='WOOD U LIKE';records=[]
     read=lambda f:(root/f).read_text();config=read('inquiry/contact-config.js');js=read('inquiry/inquiry.js');page=read('inquiry/index.html');doc=Doc(page)
     def check(id,fn):
@@ -27,6 +30,8 @@ def main():
         send=next(a for t,a in doc.elements if a.get('id')=='send-request');require('disabled' in send,'submit not disabled')
     check('S02-no-direct-html-post-and-disabled-submit',html_gate)
     def logic():
+        # Keep the complete fail-closed channel contract in the normal gate too.
+        subprocess.run(qa03_command+['--predicates-only','true'],check=True,capture_output=True,text=True)
         # Evaluate only an extracted Boolean expression in a clean VM. No app,
         # document, form handlers or configuration file is executed or altered.
         expr=(re.search(r'const canSend =\s*([\s\S]*?);',js) if wul else re.search(r'const sendingApproved = (.*);',js)).group(1)

@@ -67,11 +67,14 @@
     /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/u.test(
       config.formEndpoint || "",
     );
+  // Independent channels need privacy and contact approval, not Formspree approval.
   const canEmail =
+    config.privacyApproved === true &&
     config.contactDetailsApproved === true &&
     emailPattern.test(config.email || "") &&
     !/[\r\n]/u.test(config.email);
   const canWhatsApp =
+    config.privacyApproved === true &&
     config.contactDetailsApproved === true &&
     /^[1-9][0-9]{6,14}$/u.test(config.whatsapp || "");
   let submitting = false,
@@ -91,7 +94,8 @@
     );
     control("availability").hidden = canSend;
     const privacyCopy = config.privacyText?.[i18n.language];
-    control("privacy-notice").hidden = !(typeof privacyCopy === "string" && privacyCopy.trim());
+    // Keep the static HE/EN policy links visible even when configuration is absent.
+    control("privacy-copy").hidden = !(typeof privacyCopy === "string" && privacyCopy.trim());
     control("privacy-preview").hidden = privacyReady;
     control("privacy-copy").textContent = typeof privacyCopy === "string" ? privacyCopy : "";
     whatsapp.hidden = !canWhatsApp;
