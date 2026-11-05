@@ -64,5 +64,6 @@
     "owner exact-copy approval",
     "separate EVENT-004 integration"
   ],
-  "recommendation": "Ready for independent review of local QA03 fixes; no production activation approval"
+  "recommendation": "Ready for independent review of local QA03 fixes; no production activation approval",
+  "artifact_storage": "local ignored artifacts only; index is tracked; no download availability claimed"
 }

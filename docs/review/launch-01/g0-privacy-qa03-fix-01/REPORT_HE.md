@@ -47,7 +47,7 @@ Q01: הגדרות ללא שינוי, false ותצורה ריקה. Q02: תנאי 
 
 ## ראיות ופקודות שחזור מותרות
 
-בכל מאגר בתיקיית docs/review/launch-01/g0-privacy-qa03-fix-01 נשמרו הדוח, QA_SUMMARY.json, CHANGED_FILES.txt, EVIDENCE_INDEX.json ותיקיית artifacts. הראיות כוללות קבלת Q01–Q08 לכל מאגר, קבלת דפדפן משולבת, מניפסט SHA של המקורות וצילומים מקומיים ללא מידע אישי. הדוח בצ'אט עצמאי ואינו דורש גישה לקבצים.
+בכל מאגר בתיקיית docs/review/launch-01/g0-privacy-qa03-fix-01 נשמרו הדוח, QA_SUMMARY.json, CHANGED_FILES.txt, EVIDENCE_INDEX.json ותיקיית artifacts. הראיות כוללות קבלת Q01–Q08 לכל מאגר, קבלת דפדפן משולבת, מניפסט SHA של המקורות וצילומים מקומיים ללא מידע אישי. הדוח בצ'אט עצמאי ואינו דורש גישה לקבצים. ב-AL הראיות צורפו לקומיט התיעוד. ב-WUL תיקיות artifacts מוחרגות ב-.gitignore: הראיות נשמרות מקומית ומאונדקסות, ואינן חלק מהקומיט. לא בוצעה עקיפה של ההחרגה ואין טענה שהצילומים זמינים להורדה מהצ'אט או מ-GitHub.
 
 AL: python3 scripts/check_privacy_integration.py --qa03-only --base db9230dc74159b4eefa816978729ef2b1ffe2676 --out /tmp/qa03-al
 

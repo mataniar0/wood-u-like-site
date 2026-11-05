@@ -73,5 +73,6 @@
       "bytes": 58243,
       "sha256": "ae468f53afb91794a5eaf2d1a2ce4eb4c0bc914be265f92a3dbadda7562742dc"
     }
-  ]
+  ],
+  "artifact_storage": "local ignored artifacts only; index is tracked; no download availability claimed"
 }
