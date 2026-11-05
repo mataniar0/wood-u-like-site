@@ -1,0 +1,48 @@
+# assembl-lab-site
+diff --git a/inquiry/inquiry.js b/inquiry/inquiry.js
+index dbce7c7..ab621f5 100644
+--- a/inquiry/inquiry.js
++++ b/inquiry/inquiry.js
+@@ -17,8 +17,9 @@
+   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/u;
+   const phonePattern = /^\+?[0-9() .-]+$/u;
+   const whatsappNumber = String(config.whatsapp || "").replace(/[^0-9]/gu, "");
+-  const hasWhatsApp = config.contactDetailsApproved === true && /^[1-9][0-9]{6,14}$/u.test(whatsappNumber);
+-  const hasEmail = config.contactDetailsApproved === true && emailPattern.test(String(config.email || ""));
++  // Independent channels need privacy and contact approval, not Formspree approval.
++  const hasWhatsApp = config.privacyApproved === true && config.contactDetailsApproved === true && /^[1-9][0-9]{6,14}$/u.test(whatsappNumber);
++  const hasEmail = config.privacyApproved === true && config.contactDetailsApproved === true && emailPattern.test(String(config.email || ""));
+   const hasEndpoint = /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/u.test(String(config.formEndpoint || ""));
+   // Endpoint existence alone never authorizes customer-data transmission.
+   const sendingApproved = hasEndpoint && config.formDestinationApproved === true && config.privacyApproved === true && config.contactDetailsApproved === true;
+
+# wood-u-like-site
+diff --git a/inquiry/inquiry.js b/inquiry/inquiry.js
+index 0d701a0..1862a4c 100644
+--- a/inquiry/inquiry.js
++++ b/inquiry/inquiry.js
+@@ -67,11 +67,14 @@
+     /^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/u.test(
+       config.formEndpoint || "",
+     );
++  // Independent channels need privacy and contact approval, not Formspree approval.
+   const canEmail =
++    config.privacyApproved === true &&
+     config.contactDetailsApproved === true &&
+     emailPattern.test(config.email || "") &&
+     !/[\r\n]/u.test(config.email);
+   const canWhatsApp =
++    config.privacyApproved === true &&
+     config.contactDetailsApproved === true &&
+     /^[1-9][0-9]{6,14}$/u.test(config.whatsapp || "");
+   let submitting = false,
+@@ -91,7 +94,8 @@
+     );
+     control("availability").hidden = canSend;
+     const privacyCopy = config.privacyText?.[i18n.language];
+-    control("privacy-notice").hidden = !(typeof privacyCopy === "string" && privacyCopy.trim());
++    // Keep the static HE/EN policy links visible even when configuration is absent.
++    control("privacy-copy").hidden = !(typeof privacyCopy === "string" && privacyCopy.trim());
+     control("privacy-preview").hidden = privacyReady;
+     control("privacy-copy").textContent = typeof privacyCopy === "string" ? privacyCopy : "";
+     whatsapp.hidden = !canWhatsApp;
