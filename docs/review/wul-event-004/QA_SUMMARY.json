@@ -1,0 +1,253 @@
+{
+  "task": "WUL-EVENT-004",
+  "issue": 56,
+  "status": "BLOCKED_EXTERNAL_HANDOFF",
+  "branch": "feature/wul-event-004",
+  "base_sha": "3a5b855b4bf3b96ad2c8eea28d9d1dbc25caa2d7",
+  "tested_sha": "6b99128530263b9a572178fc27a28db3cbf4701d",
+  "source_fingerprint": "5fbf582aa3a4e3eb5426a80d3cfbeed39327b1ff0fab1227f20e60d54ab15093",
+  "post_test_changes": "review documents only; source fingerprint unchanged",
+  "local_full": {
+    "status": "PASS",
+    "suite_count": 24,
+    "wall_seconds": 1067.906,
+    "screenshots": 453,
+    "suites": [
+      {
+        "suite": "static",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "contract",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "assets",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "leads",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "pipeline-unit",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "event-navigation",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "event-gifts",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "wedding-magnets",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "language",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "hero",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "homepage",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "legacy",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "collections",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "accessibility",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "product-pages",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "inquiry",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "privacy",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "attribution",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "clock",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "oval-room-signs",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "natural-door-sign",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "family-sign",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "schwartz-sign",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      },
+      {
+        "suite": "pizza-peel",
+        "status": "PASS",
+        "exit_code": 0,
+        "retry_count": 0
+      }
+    ],
+    "receipt": "artifacts/wul-event-004/full/QA_SUMMARY.json"
+  },
+  "focused_browser": {
+    "status": "PASS",
+    "results": [
+      {
+        "lang": "he",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "he",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 390,
+        "status": "PASS"
+      },
+      {
+        "lang": "en",
+        "width": 1440,
+        "status": "PASS"
+      },
+      {
+        "width": 390,
+        "noJS": true,
+        "status": "PASS"
+      },
+      {
+        "width": 1440,
+        "noJS": true,
+        "status": "PASS"
+      }
+    ],
+    "network": {
+      "localReads": 130,
+      "mockedPosts": 0,
+      "denied": 0,
+      "realPosts": 0,
+      "unexpectedExternal": 0
+    }
+  },
+  "visual_review": {
+    "status": "PASS",
+    "opened": [
+      "evidence-he-390.png",
+      "evidence-he-1440.png",
+      "evidence-en-390.png",
+      "evidence-en-1440.png",
+      "future-he-390.png",
+      "future-he-1440.png",
+      "future-en-390.png",
+      "future-en-1440.png"
+    ]
+  },
+  "network_full": {
+    "realPosts": 0,
+    "mockedPosts": 242,
+    "denied": 0,
+    "unexpectedExternal": 0
+  },
+  "correction_cycles": {
+    "product": 0,
+    "environment": 1,
+    "environment_failure": "ECONNREFUSED before starting local server; same test passed after server start and HTTP 200 verification; no code or threshold change"
+  },
+  "ci": {
+    "status": "NOT_VERIFIED",
+    "required": "QA PR / Required QA gate on exact latest PR HEAD; all selected suites PASS"
+  },
+  "pull_request": {
+    "status": "BLOCKED",
+    "draft_required": true,
+    "url": null,
+    "reason": "api.github.com POST returns Forbidden, including supported execution permission path",
+    "compare_url": "https://github.com/mataniar0/wood-u-like-site/compare/main...feature/wul-event-004?expand=1"
+  },
+  "constraints": {
+    "approved_images_unchanged": true,
+    "public_submissions_blocked": true,
+    "merge_performed": false,
+    "manual_deploy_performed": false,
+    "issue_closed": false,
+    "branch_deleted": false
+  },
+  "independent_review": {
+    "status": "PENDING",
+    "minimum_score": 90,
+    "blocking_defects_allowed": 0
+  }
+}
